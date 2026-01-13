@@ -2,12 +2,12 @@ import {type IsValidHandle, validateServiceHandle} from '#/lib/strings/handles'
 
 describe('handle validation', () => {
   const valid = [
-    ['ali', 'bsky.social'],
-    ['alice', 'bsky.social'],
-    ['a-lice', 'bsky.social'],
-    ['a-----lice', 'bsky.social'],
-    ['123', 'bsky.social'],
-    ['123456789012345678', 'bsky.social'],
+    ['ali', 'tellus.social'],
+    ['alice', 'tellus.social'],
+    ['a-lice', 'tellus.social'],
+    ['a-----lice', 'tellus.social'],
+    ['123', 'tellus.social'],
+    ['123456789012345678', 'tellus.social'],
     ['alice', 'custom-pds.com'],
     ['alice', 'my-custom-pds-with-long-name.social'],
     ['123456789012345678', 'my-custom-pds-with-long-name.social'],
@@ -18,11 +18,11 @@ describe('handle validation', () => {
   })
 
   const invalid = [
-    ['al', 'bsky.social', 'frontLengthNotTooShort'],
-    ['-alice', 'bsky.social', 'hyphenStartOrEnd'],
-    ['alice-', 'bsky.social', 'hyphenStartOrEnd'],
-    ['%%%', 'bsky.social', 'handleChars'],
-    ['1234567890123456789', 'bsky.social', 'frontLengthNotTooLong'],
+    ['al', 'tellus.social', 'frontLengthNotTooShort'],
+    ['-alice', 'tellus.social', 'hyphenStartOrEnd'],
+    ['alice-', 'tellus.social', 'hyphenStartOrEnd'],
+    ['%%%', 'tellus.social', 'handleChars'],
+    ['1234567890123456789', 'tellus.social', 'frontLengthNotTooLong'],
     [
       '1234567890123456789',
       'my-custom-pds-with-long-name.social',

@@ -14,7 +14,7 @@ import {
 
 import {
   aggregateUserInterests,
-  createBskyTopicsHeader,
+  createTopicsHeader,
 } from '#/lib/api/feed/utils'
 import {getContentLanguages} from '#/state/preferences/languages'
 import {STALE} from '#/state/queries'
@@ -66,7 +66,7 @@ export function useSuggestedFollowsQuery(options?: SuggestedFollowsOptions) {
         },
         {
           headers: {
-            ...createBskyTopicsHeader(aggregateUserInterests(preferences)),
+            ...createTopicsHeader(aggregateUserInterests(preferences)),
             'Accept-Language': contentLangs,
           },
         },

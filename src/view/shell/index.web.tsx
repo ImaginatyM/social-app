@@ -71,6 +71,18 @@ function ShellInner() {
     return unsubscribe
   }, [navigator, closeAllActiveElements])
 
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    if (!showDrawer) return
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setDrawerOpen(false)
+      }
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [showDrawer, setDrawerOpen])
+
   return (
     <>
       <ErrorBoundary>

@@ -239,7 +239,7 @@ export function usePostFeedQuery(
           feedDescParts[0] === 'feedgen' &&
           BSKY_FEED_OWNER_DIDS.includes(feedOwnerDid)
         ) {
-          logger.error(`Bluesky feed may be offline: ${feedOwnerDid}`, {
+          logger.error(`Tellus feed may be offline: ${feedOwnerDid}`, {
             feedDesc,
             jsError: e,
           })

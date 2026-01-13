@@ -6,9 +6,9 @@ import {isNative} from '#/platform/detection'
  * @deprecated use `useBreakpoints` from `#/alf` instead
  */
 export function useWebMediaQueries() {
-  const isDesktop = useMediaQuery({minWidth: 1300})
-  const isTablet = useMediaQuery({minWidth: 800, maxWidth: 1300 - 1})
-  const isMobile = useMediaQuery({maxWidth: 800 - 1})
+  const isDesktop = useMediaQuery({minWidth: 1024})
+  const isTablet = useMediaQuery({minWidth: 768, maxWidth: 1024 - 1})
+  const isMobile = useMediaQuery({maxWidth: 768 - 1})
   const isTabletOrMobile = isMobile || isTablet
   const isTabletOrDesktop = isDesktop || isTablet
   if (isNative) {

@@ -10,7 +10,7 @@ if (isWeb && typeof window !== 'undefined') {
   debugTopics = params.get('debug_topics') ?? ''
 }
 
-export function createBskyTopicsHeader(userInterests?: string) {
+export function createTopicsHeader(userInterests?: string) {
   return {
     'X-Bsky-Topics': debugTopics || userInterests || '',
   }
@@ -22,7 +22,7 @@ export function aggregateUserInterests(
   return preferences?.interests?.tags?.join(',') || ''
 }
 
-export function isBlueskyOwnedFeed(feedUri: string) {
+export function isTellusOwnedFeed(feedUri: string) {
   const uri = new AtUri(feedUri)
   return BSKY_FEED_OWNER_DIDS.includes(uri.host)
 }

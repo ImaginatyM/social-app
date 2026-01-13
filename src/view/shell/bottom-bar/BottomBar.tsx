@@ -218,7 +218,7 @@ export function BottomBar({navigation}: BottomTabBarProps) {
               hasNew={numUnreadMessages.hasNew}
               accessible={true}
               accessibilityRole="tab"
-              accessibilityLabel={_(msg`Chat`)}
+              accessibilityLabel={_(msg`Tellus Chat`)}
               accessibilityHint={
                 numUnreadMessages.count > 0
                   ? _(

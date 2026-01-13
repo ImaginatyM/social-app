@@ -338,7 +338,7 @@ function ValueProposition({
         msg`No more doomscrolling junk-filled algorithms. Find feeds that work for you, not against you.`,
       ),
       alt: _(
-        msg`A collection of popular feeds you can find on Bluesky, including News, Booksky, Game Dev, Blacksky, and Fountain Pens`,
+        msg`A collection of popular feeds you can find on Tellus, including News, Booksky, Game Dev, Blacksky, and Fountain Pens`,
       ),
     },
     {
@@ -353,10 +353,10 @@ function ValueProposition({
     {
       title: _(msg`Forget the noise`),
       description: _(
-        msg`No ads, no invasive tracking, no engagement traps. Bluesky respects your time and attention.`,
+        msg`No ads, no invasive tracking, no engagement traps. Tellus respects your time and attention.`,
       ),
       alt: _(
-        msg`An illustration of several Bluesky posts alongside repost, like, and comment icons`,
+        msg`An illustration of several Tellus posts alongside repost, like, and comment icons`,
       ),
     },
   ][subStep]
@@ -530,7 +530,7 @@ function LegacyFinalStep({
         <Trans>You're ready to go!</Trans>
       </TitleText>
       <DescriptionText>
-        <Trans>We hope you have a wonderful time. Remember, Bluesky is:</Trans>
+        <Trans>We hope you have a wonderful time. Remember, Tellus is:</Trans>
       </DescriptionText>
 
       <View style={[a.pt_5xl, a.gap_3xl]}>

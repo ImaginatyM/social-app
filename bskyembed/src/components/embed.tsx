@@ -467,7 +467,7 @@ function getStarterPackImage(
   starterPack: AppBskyGraphDefs.StarterPackViewBasic,
 ) {
   const rkey = getRkey({uri: starterPack.uri})
-  return `https://ogcard.cdn.bsky.app/start/${starterPack.creator.did}/${rkey}`
+  return `https://ogcard.cdn.tellus.app/start/${starterPack.creator.did}/${rkey}`
 }
 
 function getStarterPackHref(

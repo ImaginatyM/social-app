@@ -28,6 +28,7 @@ import {useProfilesQuery} from '#/state/queries/profile'
 import {type SessionAccount, useSession, useSessionApi} from '#/state/session'
 import {useLoggedOutViewControls} from '#/state/shell/logged-out'
 import {useCloseAllActiveElements} from '#/state/util'
+import {useWalletSettings} from '#/state/preferences'
 import {LoadingPlaceholder} from '#/view/com/util/LoadingPlaceholder'
 import {PressableWithHover} from '#/view/com/util/PressableWithHover'
 import {UserAvatar} from '#/view/com/util/UserAvatar'
@@ -57,6 +58,7 @@ import {
 } from '#/components/icons/HomeOpen'
 import {MagnifyingGlass_Filled_Stroke2_Corner0_Rounded as MagnifyingGlassFilled} from '#/components/icons/MagnifyingGlass'
 import {MagnifyingGlass2_Stroke2_Corner0_Rounded as MagnifyingGlass} from '#/components/icons/MagnifyingGlass2'
+import {Newspaper_Stroke2_Corner2_Rounded as Newspaper} from '#/components/icons/Newspaper'
 import {
   Message_Stroke2_Corner0_Rounded as Message,
   Message_Stroke2_Corner0_Rounded_Filled as MessageFilled,
@@ -66,11 +68,11 @@ import {
   SettingsGear2_Filled_Corner0_Rounded as SettingsFilled,
   SettingsGear2_Stroke2_Corner0_Rounded as Settings,
 } from '#/components/icons/SettingsGear2'
+import {Sparkle_Stroke2_Corner0_Rounded as Sparkle} from '#/components/icons/Sparkle'
 import {
   UserCircle_Filled_Corner0_Rounded as UserCircleFilled,
   UserCircle_Stroke2_Corner0_Rounded as UserCircle,
 } from '#/components/icons/UserCircle'
-import {CENTER_COLUMN_OFFSET} from '#/components/Layout'
 import * as Menu from '#/components/Menu'
 import * as Prompt from '#/components/Prompt'
 import {Text} from '#/components/Typography'
@@ -604,22 +606,31 @@ function ChatNavItem() {
           width={NAV_ICON_WIDTH}
         />
       }
-      label={_(msg`Chat`)}
+      label={_(msg`Tellus Chat`)}
     />
   )
 }
 
-export function DesktopLeftNav() {
+type DesktopLeftNavProps = {
+  hideChrome?: boolean
+}
+
+export function DesktopLeftNav({hideChrome}: DesktopLeftNavProps) {
   const {hasSession, currentAccount} = useSession()
   const pal = usePalette('default')
   const {_} = useLingui()
-  const {isDesktop} = useWebMediaQueries()
-  const {leftNavMinimal, centerColumnOffset} = useLayoutBreakpoints()
+  const {isDesktop, isMobile} = useWebMediaQueries()
+  const {leftNavMinimal} = useLayoutBreakpoints()
   const numUnreadNotifications = useUnreadNotifications()
   const hasHomeBadge = useHomeBadge()
   const gate = useGate()
+  const {showInSidebar} = useWalletSettings()
 
-  if (!hasSession && !isDesktop) {
+  if (hideChrome) {
+    return null
+  }
+
+  if (!hasSession && isMobile) {
     return null
   }
 
@@ -630,16 +641,6 @@ export function DesktopLeftNav() {
         a.px_xl,
         styles.leftNav,
         leftNavMinimal && styles.leftNavMinimal,
-        {
-          transform: [
-            {
-              translateX:
-                -300 + (centerColumnOffset ? CENTER_COLUMN_OFFSET : 0),
-            },
-            {translateX: '-100%'},
-            ...a.scrollbar_offset.transform,
-          ],
-        },
       ]}>
       {hasSession ? (
         <ProfileCard />
@@ -727,6 +728,24 @@ export function DesktopLeftNav() {
             label={_(msg`Feeds`)}
           />
           <NavItem
+            href="/news"
+            icon={
+              <Newspaper
+                style={pal.text}
+                aria-hidden={true}
+                width={NAV_ICON_WIDTH}
+              />
+            }
+            iconFilled={
+              <Newspaper
+                style={pal.text}
+                aria-hidden={true}
+                width={NAV_ICON_WIDTH}
+              />
+            }
+            label={_(msg`News`)}
+          />
+          <NavItem
             href="/lists"
             icon={
               <List
@@ -762,11 +781,31 @@ export function DesktopLeftNav() {
             }
             label={_(
               msg({
-                message: 'Saved',
-                context: 'link to bookmarks screen',
+                message: 'Conservés',
+                context: 'link to saved collections screen',
               }),
             )}
           />
+          {showInSidebar ? (
+            <NavItem
+              href="/wallet"
+              icon={
+                <Sparkle
+                  style={pal.text}
+                  aria-hidden={true}
+                  width={NAV_ICON_WIDTH}
+                />
+              }
+              iconFilled={
+                <Sparkle
+                  style={pal.text}
+                  aria-hidden={true}
+                  width={NAV_ICON_WIDTH}
+                />
+              }
+              label={_(msg`Wallet`)}
+            />
+          ) : null}
           <NavItem
             href={currentAccount ? makeProfileLink(currentAccount) : '/'}
             icon={
@@ -813,15 +852,18 @@ export function DesktopLeftNav() {
 
 const styles = StyleSheet.create({
   leftNav: {
-    ...a.fixed,
-    top: 0,
+    ...web({
+      position: 'sticky',
+      top: 0,
+      alignSelf: 'flex-start',
+    }),
     paddingTop: 10,
     paddingBottom: 10,
-    left: '50%',
     width: 240,
     // @ts-expect-error web only
     maxHeight: '100vh',
     overflowY: 'auto',
+    flexShrink: 0,
   },
   leftNavMinimal: {
     paddingTop: 0,

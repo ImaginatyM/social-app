@@ -37,6 +37,7 @@ export type Device = {
   devMode: boolean
   demoMode: boolean
   activitySubscriptionsNudged?: boolean
+  tellusProfileCache?: Record<string, {matrixId?: string | null; ts: number}>
 
   /**
    * Policy update overlays. New IDs are required for each new announcement.

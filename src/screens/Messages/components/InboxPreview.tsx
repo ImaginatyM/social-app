@@ -19,7 +19,7 @@ export function InboxPreview({
   const t = useTheme()
   return (
     <Link
-      label={_(msg`Chat request inbox`)}
+      label={_(msg`Tellus Chat requests`)}
       style={[
         a.flex_1,
         a.px_xl,
@@ -59,7 +59,7 @@ export function InboxPreview({
       <ButtonText
         style={[a.flex_1, a.font_bold, a.text_left]}
         numberOfLines={1}>
-        <Trans>Chat requests</Trans>
+        <Trans>Tellus Chat requests</Trans>
       </ButtonText>
       <AvatarStack
         profiles={profiles}

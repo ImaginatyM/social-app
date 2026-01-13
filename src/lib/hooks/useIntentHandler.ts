@@ -34,7 +34,7 @@ export function useIntentHandler() {
   React.useEffect(() => {
     const handleIncomingURL = (url: string) => {
       const referrerInfo = Referrer.getReferrerInfo()
-      if (referrerInfo && referrerInfo.hostname !== 'bsky.app') {
+      if (referrerInfo && referrerInfo.hostname !== 'tellus.app') {
         logger.metric('deepLink:referrerReceived', {
           to: url,
           referrer: referrerInfo?.referrer,

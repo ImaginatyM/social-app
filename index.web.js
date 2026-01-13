@@ -1,3 +1,4 @@
+import './global.css'
 import '#/platform/markBundleStartTime'
 import '#/platform/polyfills'
 

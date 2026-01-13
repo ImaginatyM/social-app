@@ -53,7 +53,7 @@ export function MessagesInboxScreen(props: Props) {
   const aaCopy = useAgeAssuranceCopy()
   return (
     <AgeRestrictedScreen
-      screenTitle={_(msg`Chat requests`)}
+      screenTitle={_(msg`Tellus Chat requests`)}
       infoText={aaCopy.chatsInfoText}>
       <MessagesInboxScreenInner {...props} />
     </AgeRestrictedScreen>
@@ -95,7 +95,7 @@ export function MessagesInboxScreenInner({}: Props) {
         <Layout.Header.BackButton />
         <Layout.Header.Content align={gtTablet ? 'left' : 'platform'}>
           <Layout.Header.TitleText>
-            <Trans>Chat requests</Trans>
+            <Trans>Tellus Chat requests</Trans>
           </Layout.Header.TitleText>
         </Layout.Header.Content>
         {hasUnreadConvos && gtTablet ? (

@@ -18,10 +18,10 @@ module.exports = function (_config) {
   const IS_DEV = !IS_TESTFLIGHT || !IS_PRODUCTION
 
   const ASSOCIATED_DOMAINS = [
-    'applinks:bsky.app',
-    'applinks:staging.bsky.app',
-    'appclips:bsky.app',
-    'appclips:go.bsky.app', // Allows App Clip to work when scanning QR codes
+    'applinks:tellus.app',
+    'applinks:staging.tellus.app',
+    'appclips:tellus.app',
+    'appclips:go.tellus.app', // Allows App Clip to work when scanning QR codes
     // When testing local services, enter an ngrok (et al) domain here. It must use a standard HTTP/HTTPS port.
     ...(IS_DEV || IS_TESTFLIGHT ? [] : []),
   ]
@@ -33,16 +33,16 @@ module.exports = function (_config) {
   return {
     expo: {
       version: VERSION,
-      name: 'Bluesky',
-      slug: 'bluesky',
-      scheme: 'bluesky',
-      owner: 'blueskysocial',
+      name: 'Tellus',
+      slug: 'tellus',
+      scheme: 'tellus',
+      owner: 'tellus',
       runtimeVersion: {
         policy: 'appVersion',
       },
-      icon: './assets/app-icons/ios_icon_default_light.png',
+      icon: './assets/icon.png',
       userInterfaceStyle: 'automatic',
-      primaryColor: '#1083fe',
+      primaryColor: '#111827',
       ios: {
         supportsTablet: false,
         bundleIdentifier: 'xyz.blueskyweb.app',
@@ -59,7 +59,7 @@ module.exports = function (_config) {
             'Used to save images to your library.',
           NSPhotoLibraryUsageDescription:
             'Used for profile pictures, posts, and other kinds of content',
-          CFBundleSpokenName: 'Blue Sky',
+          CFBundleSpokenName: 'Tellus',
           CFBundleLocalizations: [
             'en',
             'an',
@@ -146,7 +146,7 @@ module.exports = function (_config) {
           foregroundImage: './assets/icon-android-foreground.png',
           monochromeImage: './assets/icon-android-foreground.png',
           backgroundImage: './assets/icon-android-background.png',
-          backgroundColor: '#1185FE',
+          backgroundColor: '#111827',
         },
         googleServicesFile: './google-services.json',
         package: 'xyz.blueskyweb.app',
@@ -157,7 +157,7 @@ module.exports = function (_config) {
             data: [
               {
                 scheme: 'https',
-                host: 'bsky.app',
+                host: 'tellus.app',
               },
               IS_DEV && {
                 scheme: 'http',
@@ -169,10 +169,14 @@ module.exports = function (_config) {
         ],
       },
       web: {
-        favicon: './assets/favicon.png',
+        name: 'Tellus',
+        shortName: 'Tellus',
+        themeColor: '#111827',
+        backgroundColor: '#ffffff',
+        favicon: './assets/web/favicon.png',
       },
       updates: {
-        url: 'https://updates.bsky.app/manifest',
+        url: 'https://updates.tellus.app/manifest',
         enabled: UPDATES_ENABLED,
         fallbackToCacheTimeout: 30000,
         codeSigningCertificate: UPDATES_ENABLED
@@ -197,7 +201,7 @@ module.exports = function (_config) {
         USE_SENTRY && [
           '@sentry/react-native/expo',
           {
-            organization: 'blueskyweb',
+            organization: 'tellus',
             project: 'app',
             url: 'https://sentry.io',
           },
@@ -221,7 +225,7 @@ module.exports = function (_config) {
           'expo-notifications',
           {
             icon: './assets/icon-android-notification.png',
-            color: '#1185fe',
+            color: '#111827',
             sounds: PLATFORM === 'ios' ? ['assets/dm.aiff'] : ['assets/dm.mp3'],
           },
         ],
@@ -270,17 +274,17 @@ module.exports = function (_config) {
               resizeMode: 'cover',
               dark: {
                 enableFullScreenImage_legacy: true,
-                backgroundColor: '#001429',
+                backgroundColor: '#111827',
                 image: './assets/splash-dark.png',
                 resizeMode: 'cover',
               },
             },
             android: {
-              backgroundColor: '#0c7cff',
+              backgroundColor: '#ffffff',
               image: './assets/splash-android-icon.png',
               imageWidth: 150,
               dark: {
-                backgroundColor: '#0c2a49',
+                backgroundColor: '#111827',
                 image: './assets/splash-android-icon-dark.png',
                 imageWidth: 150,
               },
@@ -310,7 +314,7 @@ module.exports = function (_config) {
             },
 
             /**
-             * Bluesky+ core set
+             * Tellus+ core set
              */
             core_aurora: {
               ios: './assets/app-icons/ios_icon_core_aurora.png',

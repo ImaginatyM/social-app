@@ -56,6 +56,7 @@ export type ContentProps = AnimatedScrollViewProps & {
   style?: StyleProp<ViewStyle>
   contentContainerStyle?: StyleProp<ViewStyle>
   ignoreTabletLayoutOffset?: boolean
+  centerStyle?: StyleProp<ViewStyle>
 }
 
 /**
@@ -68,6 +69,7 @@ export const Content = memo(
       style,
       contentContainerStyle,
       ignoreTabletLayoutOffset,
+      centerStyle,
       ...props
     },
     ref,
@@ -99,7 +101,9 @@ export const Content = memo(
         ]}
         {...props}>
         {isWeb ? (
-          <Center ignoreTabletLayoutOffset={ignoreTabletLayoutOffset}>
+          <Center
+            ignoreTabletLayoutOffset={ignoreTabletLayoutOffset}
+            style={centerStyle}>
             {/* @ts-expect-error web only -esb */}
             {children}
           </Center>
@@ -204,6 +208,7 @@ const WebCenterBorders = memo(function LayoutWebCenterBorders() {
   const {centerColumnOffset} = useLayoutBreakpoints()
   return gtMobile ? (
     <View
+      pointerEvents="none"
       style={[
         a.fixed,
         a.inset_0,
@@ -211,8 +216,10 @@ const WebCenterBorders = memo(function LayoutWebCenterBorders() {
         a.border_r,
         t.atoms.border_contrast_low,
         web({
-          width: 602,
+          width: '100%',
+          maxWidth: 600,
           left: '50%',
+          boxSizing: 'border-box',
           transform: [
             {translateX: '-50%'},
             {translateX: centerColumnOffset ? CENTER_COLUMN_OFFSET : 0},

@@ -279,7 +279,7 @@ function ProvidedHandlePage({
                     context: `english-only-resource`,
                   }),
                 )}
-                to="https://bsky.social/about/blog/4-28-2023-domain-handle-tutorial"
+                to="https://tellus.social/about/blog/4-28-2023-domain-handle-tutorial"
                 style={[a.font_bold]}
                 disableMismatchWarning>
                 Learn more here.
@@ -518,7 +518,7 @@ function OwnHandlePage({goToServiceHandle}: {goToServiceHandle: () => void}) {
         </Animated.View>
       )}
       <Animated.View layout={native(LinearTransition)}>
-        {currentAccount?.handle?.endsWith('.bsky.social') && (
+        {currentAccount?.handle?.endsWith('.tellus.social') && (
           <Admonition type="info" style={[a.mb_md]}>
             <Trans>
               Your current handle{' '}

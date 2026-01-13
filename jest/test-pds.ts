@@ -93,7 +93,7 @@ export async function createServer(
   //   {repo: res.data.did},
   //   {
   //     displayName: 'Dev-env Moderation',
-  //     description: `The pretend version of mod.bsky.app`,
+  //     description: `The pretend version of mod.tellus.app`,
   //   },
   // )
 

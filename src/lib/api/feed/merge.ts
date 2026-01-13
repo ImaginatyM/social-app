@@ -9,7 +9,7 @@ import {FeedParams} from '#/state/queries/post-feed'
 import {FeedTuner} from '../feed-manip'
 import {FeedTunerFn} from '../feed-manip'
 import {FeedAPI, FeedAPIResponse, ReasonFeedSource} from './types'
-import {createBskyTopicsHeader, isBlueskyOwnedFeed} from './utils'
+import {createTopicsHeader, isTellusOwnedFeed} from './utils'
 
 const REQUEST_WAIT_MS = 500 // 500ms
 const POST_AGE_CUTOFF = 60e3 * 60 * 24 // 24hours
@@ -282,7 +282,7 @@ class MergeFeedSource_Custom extends MergeFeedSource {
   ): Promise<AppBskyFeedGetTimeline.Response> {
     try {
       const contentLangs = getContentLanguages().join(',')
-      const isBlueskyOwned = isBlueskyOwnedFeed(this.feedUri)
+      const isTellusOwned = isTellusOwnedFeed(this.feedUri)
       const res = await this.agent.app.bsky.feed.getFeed(
         {
           cursor,
@@ -291,8 +291,8 @@ class MergeFeedSource_Custom extends MergeFeedSource {
         },
         {
           headers: {
-            ...(isBlueskyOwned
-              ? createBskyTopicsHeader(this.userInterests)
+            ...(isTellusOwned
+              ? createTopicsHeader(this.userInterests)
               : {}),
             'Accept-Language': contentLangs,
           },

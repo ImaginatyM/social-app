@@ -81,7 +81,7 @@ msgstr "{0, plural, one {# másodperce} other {# másodperce}}"
 
 #: src/view/shell/bottom-bar/BottomBar.tsx:225
 #: src/view/shell/bottom-bar/BottomBar.tsx:257
-#: src/view/shell/Drawer.tsx:498
+#: src/view/shell/Drawer.tsx:519
 msgid "{0, plural, one {# unread item} other {# unread items}}"
 msgstr "{0, plural, one {# olvasatlan} other {# olvasatlan}}"
 
@@ -124,7 +124,7 @@ msgstr "{0, plural, other {mentés}}"
 msgid "{0, plural, other {{1} posts}}"
 msgstr "{0, plural, other {{1} bejegyzés}}"
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 25) who have joined Tellus using a specific starter pack
 #: src/screens/StarterPack/StarterPackScreen.tsx:490
 msgid "{0, plural, other {# people have}} used this starter pack!"
 msgstr "{0, plural, one {}other {#}} személy regisztrált ezzel a kezdőcsomaggal!"
@@ -221,7 +221,7 @@ msgstr "{0} perce"
 msgid "{0}s"
 msgstr "{0} másodperce"
 
-#: src/view/shell/desktop/LeftNav.tsx:455
+#: src/view/shell/desktop/LeftNav.tsx:457
 msgid "{count, plural, one {# unread item} other {# unread items}}"
 msgstr "{count, plural, one {# olvasatlan} other {# olvasatlan}}"
 
@@ -414,7 +414,7 @@ msgstr "{hours, plural, one {# óra {minutesString}} other {# óra {minutesStrin
 msgid "{hours, plural, one {# hour} other {# hours}}"
 msgstr "{hours, plural, one {# óra} other {# óra}}"
 
-#. Number of users (always at least 50) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 50) who have joined Tellus using a specific starter pack
 #: src/components/StarterPack/StarterPackCard.tsx:101
 msgid "{joinedAllTimeCount, plural, other {# users have}} joined!"
 msgstr "{joinedAllTimeCount, plural, other {#}} felhasználó csatlakozott ezzel!"
@@ -428,12 +428,12 @@ msgid "{notificationCount, plural, one {# unread item} other {# unread items}}"
 msgstr "{notificationCount, plural, one {# olvasatlan értesítés} other {# olvasatlan értesítés}}"
 
 #: src/components/NewskieDialog.tsx:116
-msgid "{profileName} joined Bluesky {0} ago"
-msgstr "{profileName} {0} csatlakozott a Blueskyhoz"
+msgid "{profileName} joined Tellus {0} ago"
+msgstr "{profileName} {0} csatlakozott a Tellushoz"
 
 #: src/components/NewskieDialog.tsx:111
-msgid "{profileName} joined Bluesky using a starter pack {0} ago"
-msgstr "{profileName} {0} csatlakozott a Blueskyhoz egy kezdőcsomag igénybevételével"
+msgid "{profileName} joined Tellus using a starter pack {0} ago"
+msgstr "{profileName} {0} csatlakozott a Tellushoz egy kezdőcsomag igénybevételével"
 
 #. The trending topic rank, i.e. "1. March Madness", "2. The Bachelor"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:111
@@ -458,6 +458,19 @@ msgstr "{userName} hitelesített"
 msgid "{userName}'s verifications"
 msgstr "{userName} hitelesítései"
 
+#: src/screens/Messages/Settings.tsx:187
+msgid "@alice:matrix.org"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:982
+msgid "@alice:tellus.chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1153
+#: src/screens/MessagesMatrix.web.tsx:1564
+msgid "@utilisateur:tellus.chat"
+msgstr ""
+
 #. Indicates the number of additional profiles are in the Starter Pack e.g. +12
 #: src/screens/Search/components/StarterPackCard.tsx:249
 msgid "+{computedTotal}"
@@ -473,11 +486,11 @@ msgctxt "feeds"
 msgid "<0>{0}, </0><1>{1}, </1>and {2, plural, one {# other} other {# others}} are included in your starter pack"
 msgstr "<0>{0}, </0><1>{1} </1>és {2, plural, one {#} other {#}} további személy szerepel a kezdőcsomagodban"
 
-#: src/view/shell/Drawer.tsx:117
+#: src/view/shell/Drawer.tsx:120
 msgid "<0>{0}</0> {1, plural, one {follower} other {followers}}"
 msgstr "<0>{0}</0> {1, plural, one {követő} other {követő}}"
 
-#: src/view/shell/Drawer.tsx:128
+#: src/view/shell/Drawer.tsx:131
 msgid "<0>{0}</0> {1, plural, one {following} other {following}}"
 msgstr "<0>{0}</0> {1, plural, one {követett} other {követett}}"
 
@@ -499,8 +512,8 @@ msgid "<0>{date}</0> at {time}"
 msgstr "<0>{date}</0>, {time}"
 
 #: src/screens/Search/SearchResults.tsx:255
-msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Bluesky.</4>"
-msgstr "<0>Jelentkezz be</0><1> vagy </1><2>regisztrálj</2><3>, </3><4>ha szeretnél a Blueskyon híreket, sport- és politikai bejegyzéseket, vagy bármi mást keresni!</4>"
+msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Tellus.</4>"
+msgstr "<0>Jelentkezz be</0><1> vagy </1><2>regisztrálj</2><3>, </3><4>ha szeretnél a Telluson híreket, sport- és politikai bejegyzéseket, vagy bármi mást keresni!</4>"
 
 #: src/screens/StarterPack/Wizard/index.tsx:502
 msgid "<0>You</0> and<1> </1><2>{0} </2>are included in your starter pack"
@@ -527,8 +540,8 @@ msgid "7 days"
 msgstr "7 napig"
 
 #: src/screens/Onboarding/StepFinished.tsx:341
-msgid "A collection of popular feeds you can find on Bluesky, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
-msgstr "A Bluesky néhány hírfolyamát ábrázoló illusztráció. Az alábbi hírfolyamok vannak megjelenítve: News, Booksky, Game Dev, Blacksky és Fountain Pens"
+msgid "A collection of popular feeds you can find on Tellus, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
+msgstr "A Tellus néhány hírfolyamát ábrázoló illusztráció. Az alábbi hírfolyamok vannak megjelenítve: News, Booksky, Game Dev, Blacksky és Fountain Pens"
 
 #. If last message does not contain text, fall back to "{user} reacted to {a message}"
 #: src/screens/Messages/components/ChatListItem.tsx:210
@@ -540,22 +553,31 @@ msgid "A new form of verification"
 msgstr "A hitelesítés egy új formája"
 
 #: src/components/BlockedGeoOverlay.tsx:50
-msgid "A new Mississippi law requires us to implement age verification for all users before they can access Bluesky. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies."
-msgstr "Egy új mississippi jogszabály megköveteli, hogy minden felhasználó életkorát ellenőrizzük, mielőtt hozzáférhetnének a Blueskyhoz. Szerintünk ez a törvény olyasféle kihívásokat idéz elő, amelyek túlnyúlnak a jogos gyermekvédelmi eszméken, jelentős korlátokat emel a szólásszabadsággal szemben és aránytalanul megnehezíti a kisebb platformok és a fejlődő technológiák létezését."
+msgid "A new Mississippi law requires us to implement age verification for all users before they can access Tellus. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies."
+msgstr "Egy új mississippi jogszabály megköveteli, hogy minden felhasználó életkorát ellenőrizzük, mielőtt hozzáférhetnének a Tellushoz. Szerintünk ez a törvény olyasféle kihívásokat idéz elő, amelyek túlnyúlnak a jogos gyermekvédelmi eszméken, jelentős korlátokat emel a szólásszabadsággal szemben és aránytalanul megnehezíti a kisebb platformok és a fejlődő technológiák létezését."
+
+#: src/screens/MessagesMatrix.web.tsx:1045
+msgid "À propos"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1031
+#: src/screens/MessagesMatrix.web.tsx:1037
+msgid "À propos / avancé"
+msgstr ""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:120
-msgid "A screenshot of a post with a new button next to the share button that allows you to save the post to your bookmarks. The post is from @jcsalterego.bsky.social and reads \"inventing a saturday that immediately follows monday\"."
-msgstr "Bejegyzés egy új gomb társaságában, amely lehetővé teszi egy adott bejegyzés elmentését a felhasználó könyvjelzői közé. A bejegyzést @jcsalterego.bsky.social írta és így szól (angolról fordítva): „Fel fogok találni egy szombatot, ami közvetlenül hétfő után következik”."
+msgid "A screenshot of a post with a new button next to the share button that allows you to save the post to your bookmarks. The post is from @jcsalterego.tellus.social and reads \"inventing a saturday that immediately follows monday\"."
+msgstr "Bejegyzés egy új gomb társaságában, amely lehetővé teszi egy adott bejegyzés elmentését a felhasználó könyvjelzői közé. A bejegyzést @jcsalterego.tellus.social írta és így szól (angolról fordítva): „Fel fogok találni egy szombatot, ami közvetlenül hétfő után következik”."
 
 #: src/components/dialogs/nuxs/ActivitySubscriptions.tsx:113
 msgid "A screenshot of a profile page with a bell icon next to the follow button, indicating the new activity notifications feature."
 msgstr "Képernyőkép egy felhasználói profilról, amelyen egy harang ikon látható a Követés gomb mellett. Ez az új, tevékenységértesítési funkciót ábrázolja."
 
-#: src/Navigation.tsx:524
+#: src/Navigation.tsx:555
 #: src/screens/Settings/AboutSettings.tsx:75
-#: src/screens/Settings/Settings.tsx:244
-#: src/screens/Settings/Settings.tsx:247
+#: src/screens/Settings/Settings.tsx:260
+#: src/screens/Settings/Settings.tsx:263
 msgid "About"
 msgstr "Névjegy"
 
@@ -574,37 +596,37 @@ msgid "Accept Request"
 msgstr "Kérelem elfogadása"
 
 #: src/screens/Settings/AccessibilitySettings.tsx:44
-#: src/screens/Settings/Settings.tsx:220
-#: src/screens/Settings/Settings.tsx:223
+#: src/screens/Settings/Settings.tsx:236
+#: src/screens/Settings/Settings.tsx:239
 msgid "Accessibility"
 msgstr "Kisegítő lehetőségek"
 
-#: src/Navigation.tsx:383
+#: src/Navigation.tsx:414
 msgid "Accessibility Settings"
 msgstr "Kisegítő lehetőségek"
 
-#: src/Navigation.tsx:399
+#: src/Navigation.tsx:430
 #: src/screens/Login/LoginForm.tsx:194
 #: src/screens/Settings/AccountSettings.tsx:51
-#: src/screens/Settings/Settings.tsx:174
-#: src/screens/Settings/Settings.tsx:177
+#: src/screens/Settings/Settings.tsx:176
+#: src/screens/Settings/Settings.tsx:179
 msgid "Account"
 msgstr "Fiók"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:361
 #: src/screens/Messages/components/RequestButtons.tsx:91
-#: src/view/com/profile/ProfileMenu.tsx:161
+#: src/view/com/profile/ProfileMenu.tsx:169
 msgctxt "toast"
 msgid "Account blocked"
 msgstr "Fiók letiltva"
 
-#: src/view/com/profile/ProfileMenu.tsx:174
+#: src/view/com/profile/ProfileMenu.tsx:182
 msgctxt "toast"
 msgid "Account followed"
 msgstr "Mostantól követed a fiókot"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:384
-#: src/view/com/profile/ProfileMenu.tsx:137
+#: src/view/com/profile/ProfileMenu.tsx:145
 msgctxt "toast"
 msgid "Account muted"
 msgstr "Elnémítottad a fiókot"
@@ -618,34 +640,34 @@ msgstr "Elnémított fiók"
 msgid "Account Muted by List"
 msgstr "Elnémított fiók (lista által)"
 
-#: src/screens/Settings/Settings.tsx:624
+#: src/screens/Settings/Settings.tsx:640
 msgid "Account options"
 msgstr "Fióklehetőségek"
 
-#: src/screens/Settings/Settings.tsx:660
+#: src/screens/Settings/Settings.tsx:676
 msgid "Account removed from quick access"
 msgstr "Fiók levéve a listáról"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:132
-#: src/view/com/profile/ProfileMenu.tsx:151
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:136
+#: src/view/com/profile/ProfileMenu.tsx:159
 msgctxt "toast"
 msgid "Account unblocked"
 msgstr "Fiók tiltása feloldva"
 
-#: src/view/com/profile/ProfileMenu.tsx:186
+#: src/view/com/profile/ProfileMenu.tsx:194
 msgctxt "toast"
 msgid "Account unfollowed"
 msgstr "Mostantól már nem követed a fiókot"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:374
-#: src/view/com/profile/ProfileMenu.tsx:127
+#: src/view/com/profile/ProfileMenu.tsx:135
 msgctxt "toast"
 msgid "Account unmuted"
 msgstr "Fiók némítása feloldva"
 
 #: src/components/verification/VerifierDialog.tsx:96
-msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
-msgstr "Másokat hitelesíteni csak a <0><1/></0> recés pipával rendelkező fiókok képesek. Ezeket a megbízható hitelesítőket a Bluesky jelöli ki."
+msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Tellus."
+msgstr "Másokat hitelesíteni csak a <0><1/></0> recés pipával rendelkező fiókok képesek. Ezeket a megbízható hitelesítőket a Tellus jelöli ki."
 
 #: src/lib/hooks/useNotificationHandler.ts:182
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:102
@@ -653,7 +675,7 @@ msgstr "Másokat hitelesíteni csak a <0><1/></0> recés pipával rendelkező fi
 msgid "Activity from others"
 msgstr "Mások tevékenységei"
 
-#: src/Navigation.tsx:492
+#: src/Navigation.tsx:523
 msgid "Activity notifications"
 msgstr "Tevékenységértesítések"
 
@@ -706,10 +728,10 @@ msgstr "Helyettesítő szöveg hozzáadása"
 msgid "Add alt text (optional)"
 msgstr "Helyettesítő szöveg hozzáadása (nem kötelező)"
 
-#: src/screens/Settings/Settings.tsx:564
-#: src/screens/Settings/Settings.tsx:567
-#: src/view/shell/desktop/LeftNav.tsx:262
-#: src/view/shell/desktop/LeftNav.tsx:266
+#: src/screens/Settings/Settings.tsx:580
+#: src/screens/Settings/Settings.tsx:583
+#: src/view/shell/desktop/LeftNav.tsx:264
+#: src/view/shell/desktop/LeftNav.tsx:268
 msgid "Add another account"
 msgstr "Fiók felvétele a listára"
 
@@ -786,8 +808,8 @@ msgstr "Vedd fel az alábbi DNS-rekordot a tartományodhoz:"
 msgid "Add this feed to your feeds"
 msgstr "Add hozzá ezt a hírfolyamot a gyűjteményedhez!"
 
-#: src/view/com/profile/ProfileMenu.tsx:317
-#: src/view/com/profile/ProfileMenu.tsx:320
+#: src/view/com/profile/ProfileMenu.tsx:372
+#: src/view/com/profile/ProfileMenu.tsx:375
 msgid "Add to lists"
 msgstr "Felvétel listára"
 
@@ -796,14 +818,18 @@ msgid "Add to saved posts"
 msgstr "Bejegyzés mentése"
 
 #: src/components/dialogs/StarterPackDialog.tsx:176
-#: src/view/com/profile/ProfileMenu.tsx:308
-#: src/view/com/profile/ProfileMenu.tsx:311
+#: src/view/com/profile/ProfileMenu.tsx:363
+#: src/view/com/profile/ProfileMenu.tsx:366
 msgid "Add to starter packs"
 msgstr "Felvétel kezdőcsomagba"
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:156
 msgid "Add user to list"
 msgstr "Személy felvétele a listára"
+
+#: src/screens/Messages/Settings.tsx:176
+msgid "Add your Tellus Chat ID so others can message you directly."
+msgstr ""
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:109
 #: src/view/com/modals/UserAddRemoveLists.tsx:162
@@ -834,8 +860,8 @@ msgid "Adult Content"
 msgstr "Felnőtt tartalom"
 
 #: src/screens/Moderation/index.tsx:423
-msgid "Adult content can only be enabled via the Web at <0>bsky.app</0>."
-msgstr "A felnőtt tartalmakat csak böngészőből, a <0>bsky.app</0> honlapon engedélyezheted."
+msgid "Adult content can only be enabled via the Web at <0>tellus.app</0>."
+msgstr "A felnőtt tartalmakat csak böngészőből, a <0>tellus.app</0> honlapon engedélyezheted."
 
 #: src/components/moderation/LabelPreference.tsx:247
 msgid "Adult content is disabled."
@@ -849,6 +875,10 @@ msgstr "Felnőtt tartalmi feljegyzések"
 #: src/screens/Moderation/index.tsx:473
 msgid "Advanced"
 msgstr "Haladó beállítások"
+
+#: src/screens/Saved/components.tsx:134
+msgid "Affichage"
+msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceBadge.tsx:42
 msgid "Age Assurance"
@@ -866,6 +896,10 @@ msgstr "Az életkor-igazolási kérelem küldése sikeresen megtörtént"
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:193
 msgid "Age assurance only takes a few minutes"
 msgstr "Az életkor-igazolás általában csupán néhány percet vesz igénybe"
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:44
+msgid "Ajoutez une URL d'image pour personnaliser la collection."
+msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:223
 msgid "alice@example.com"
@@ -902,8 +936,8 @@ msgstr "Hozzáférés megadása a személyes üzenetekhez"
 msgid "Allow location access"
 msgstr "Tartózkodási hely megosztása"
 
-#: src/screens/Messages/Settings.tsx:75
-#: src/screens/Messages/Settings.tsx:78
+#: src/screens/Messages/Settings.tsx:247
+#: src/screens/Messages/Settings.tsx:250
 msgid "Allow new messages from"
 msgstr "Bejövő üzenetek fogadása"
 
@@ -1018,13 +1052,13 @@ msgid "An error occurred while uploading the video."
 msgstr "A videó feltöltése meghiúsult."
 
 #: src/screens/Onboarding/StepFinished.tsx:359
-msgid "An illustration of several Bluesky posts alongside repost, like, and comment icons"
-msgstr "Illusztráció, amely számos Bluesky-bejegyzést ábrázol megosztási-, kedvelési- és hozzászólási ikonok között"
+msgid "An illustration of several Tellus posts alongside repost, like, and comment icons"
+msgstr "Illusztráció, amely számos Tellus-bejegyzést ábrázol megosztási-, kedvelési- és hozzászólási ikonok között"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:84
 #: src/components/verification/VerifierDialog.tsx:86
-msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
-msgstr "A megbízható hitelesítőket a Bluesky jelöli ki, akik ezután képesek más személyeket hitelesíteni."
+msgid "An illustration showing that Tellus selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
+msgstr "A megbízható hitelesítőket a Tellus jelöli ki, akik ezután képesek más személyeket hitelesíteni."
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:28
 #: src/lib/moderation/useReportOptions.ts:28
@@ -1049,8 +1083,8 @@ msgid "An issue occurred, please try again."
 msgstr "Hiba történt. Próbáld újra."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:118
-msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
-msgstr "Egy kék pipával rendelkező felhasználó, az iPhone-os Bluesky alkalmazásban megjelenítve."
+msgid "An mockup of a iPhone showing the Tellus app open to the profile of a verified user with a blue checkmark next to their display name."
+msgstr "Egy kék pipával rendelkező felhasználó, az iPhone-os Tellus alkalmazásban megjelenítve."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:194
 msgid "an unknown error occurred"
@@ -1080,8 +1114,17 @@ msgid "Announcement"
 msgstr "Közlemény"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:37
-msgid "Announcing verification on Bluesky"
-msgstr "Hitelesítés a Blueskyon"
+msgid "Announcing verification on Tellus"
+msgstr "Hitelesítés a Telluson"
+
+#: src/screens/MessagesMatrix.web.tsx:1163
+#: src/screens/MessagesMatrix.web.tsx:1169
+#: src/screens/MessagesMatrix.web.tsx:1225
+#: src/screens/MessagesMatrix.web.tsx:1231
+#: src/screens/Saved/CollectionDetailPage.tsx:56
+#: src/screens/Saved/SavedCollectionsPage.tsx:45
+msgid "Annuler"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:33
 #: src/lib/moderation/useReportOptions.ts:33
@@ -1098,7 +1141,7 @@ msgstr "Bárki kapcsolatba léphet"
 msgid "Anyone who follows me"
 msgstr "Bármelyik követőtől"
 
-#: src/Navigation.tsx:532
+#: src/Navigation.tsx:563
 #: src/screens/Settings/AppIconSettings/index.tsx:67
 #: src/screens/Settings/AppIconSettings/SettingsListItem.tsx:18
 #: src/screens/Settings/AppIconSettings/SettingsListItem.tsx:23
@@ -1135,7 +1178,7 @@ msgstr "Egy alkalmazásjelszónak legalább 4 karakter hosszúnak kell lennie"
 msgid "App passwords"
 msgstr "Alkalmazásjelszók"
 
-#: src/Navigation.tsx:351
+#: src/Navigation.tsx:357
 #: src/screens/Settings/AppPasswords.tsx:51
 msgid "App Passwords"
 msgstr "Alkalmazásjelszók"
@@ -1171,10 +1214,10 @@ msgstr "Felfüggesztés fellebbezése"
 msgid "Appeal this decision"
 msgstr "Döntés fellebbezése"
 
-#: src/Navigation.tsx:391
+#: src/Navigation.tsx:422
 #: src/screens/Settings/AppearanceSettings.tsx:86
-#: src/screens/Settings/Settings.tsx:212
-#: src/screens/Settings/Settings.tsx:215
+#: src/screens/Settings/Settings.tsx:228
+#: src/screens/Settings/Settings.tsx:231
 msgid "Appearance"
 msgstr "Megjelenítés"
 
@@ -1183,8 +1226,8 @@ msgstr "Megjelenítés"
 msgid "Apply default recommended feeds"
 msgstr "Ajánlott hírfolyamok elfogadása"
 
-#: src/screens/Settings/Settings.tsx:498
-#: src/screens/Settings/Settings.tsx:500
+#: src/screens/Settings/Settings.tsx:514
+#: src/screens/Settings/Settings.tsx:516
 msgid "Apply Pull Request"
 msgstr "Lekéréses kérelem alkalmazása"
 
@@ -1254,6 +1297,10 @@ msgstr "Művészi- vagy nem erotikus meztelenség"
 msgid "As a small team, we cannot justify building the expensive infrastructure this requirement demands while legal challenges to this law are pending."
 msgstr "A jogi kihívások feloldódásáig, kis csapatként nem tudjuk kiépíteni az ehhez szükséges infrastruktúrát."
 
+#: src/Navigation.tsx:378
+msgid "Asset"
+msgstr ""
+
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:497
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:499
 msgid "Assign topic for algo"
@@ -1263,10 +1310,43 @@ msgstr "Témakör hozzárendelése"
 msgid "At least 8 characters"
 msgstr "Adj meg legalább 8 karaktert"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:42
+msgid "Aucun élément enregistré"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1554
+msgid "Aucun membre pour le moment."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:444
+#: src/screens/MessagesMatrix.web.tsx:1656
+msgid "Aucun message"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:58
+msgid "Aucun résultat"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:34
+msgid "Aucune collection pour l'instant"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:36
+msgid "Aucune collection trouvée"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1277
+msgid "Aucune discussion"
+msgstr ""
+
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:58
 msgctxt "Name of app icon variant"
 msgid "Aurora"
 msgstr "Sarki Fény"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:39
+msgid "Auteur"
+msgstr ""
 
 #: src/screens/Settings/ContentAndMediaSettings.tsx:116
 #: src/screens/Settings/ContentAndMediaSettings.tsx:122
@@ -1326,7 +1406,7 @@ msgid "Before you can get notifications for {name}'s posts, you must first verif
 msgstr "A feliratkozás előtt vissza kell igazolnod az e-mail-címedet."
 
 #: src/components/dms/dialogs/NewChatDialog.tsx:54
-#: src/components/dms/MessageProfileButton.tsx:58
+#: src/components/dms/MessageProfileButton.tsx:104
 #: src/screens/Messages/ChatList.tsx:369
 #: src/screens/Messages/Conversation.tsx:228
 msgid "Before you can message another user, you must first verify your email."
@@ -1350,8 +1430,8 @@ msgid "Birthday"
 msgstr "Születésnap"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:760
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:328
-#: src/view/com/profile/ProfileMenu.tsx:490
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:386
+#: src/view/com/profile/ProfileMenu.tsx:554
 msgid "Block"
 msgstr "Letiltás"
 
@@ -1361,13 +1441,13 @@ msgstr "Letiltás"
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:647
 #: src/screens/Messages/components/RequestButtons.tsx:144
 #: src/screens/Messages/components/RequestButtons.tsx:146
-#: src/view/com/profile/ProfileMenu.tsx:396
-#: src/view/com/profile/ProfileMenu.tsx:403
+#: src/view/com/profile/ProfileMenu.tsx:451
+#: src/view/com/profile/ProfileMenu.tsx:458
 msgid "Block account"
 msgstr "Fiók letiltása"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:755
-#: src/view/com/profile/ProfileMenu.tsx:473
+#: src/view/com/profile/ProfileMenu.tsx:537
 msgid "Block Account?"
 msgstr "Fiók letiltása"
 
@@ -1412,13 +1492,13 @@ msgstr "Letiltva"
 msgid "Blocked accounts"
 msgstr "Letiltott fiókok"
 
-#: src/Navigation.tsx:192
+#: src/Navigation.tsx:198
 #: src/view/screens/ModerationBlockedAccounts.tsx:104
 msgid "Blocked Accounts"
 msgstr "Letiltott fiókok"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:757
-#: src/view/com/profile/ProfileMenu.tsx:485
+#: src/view/com/profile/ProfileMenu.tsx:549
 msgid "Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr "Az általad letiltott fiókok nem képesek válaszolni a bejegyzéseidre, megemlíteni Téged vagy bármilyen egyéb módon kapcsolatba lépni Veled."
 
@@ -1434,72 +1514,13 @@ msgstr "A feljegyző letiltása nem akadályozza meg abban, hogy feljegyzéseket
 msgid "Blocking is public. Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr "A letiltás nyilvános. Az általad letiltott fiókok nem képesek válaszolni a bejegyzéseidre, megemlíteni Téged vagy bármilyen egyéb módon kapcsolatba lépni Veled."
 
-#: src/view/com/profile/ProfileMenu.tsx:482
+#: src/view/com/profile/ProfileMenu.tsx:546
 msgid "Blocking will not prevent labels from being applied on your account, but it will stop this account from replying in your threads or interacting with you."
 msgstr "A fiók letiltása nem fogja megakadályozni a feljegyzések hozzárendelését a saját fiókodhoz, viszont a letiltott fiók nem lesz képes válaszolni a bejegyzéseidre és egyéb módon kapcsolatba lépni Veled."
 
 #: src/view/com/auth/SplashScreen.web.tsx:175
 msgid "Blog"
 msgstr "Blog"
-
-#: src/view/com/auth/server-input/index.tsx:136
-#: src/view/com/auth/server-input/index.tsx:137
-msgid "Bluesky"
-msgstr "Bluesky"
-
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:690
-msgid "Bluesky cannot confirm the authenticity of the claimed date."
-msgstr "A Bluesky nem tudja megerősíteni a létrehozás dátumát."
-
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:175
-msgctxt "Name of app icon variant"
-msgid "Bluesky Classic™"
-msgstr "Klasszikus Bluesky"
-
-#: src/view/com/auth/server-input/index.tsx:212
-msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr "A Bluesky egy nyílt hálózat, ahol saját szolgáltatót választhatsz. Ha fejlesztő vagy, saját kiszolgálót is üzemeltethetsz."
-
-#: src/view/com/auth/server-input/index.tsx:149
-msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-msgstr "A Bluesky egy nyílt hálózat, ahol saját szolgáltatót választhatsz. Ha kezdő felhasználó vagy, akkor az alapértelmezett Bluesky Social lehetőséget javasoljuk."
-
-#: src/components/ProgressGuide/List.tsx:53
-#: src/components/ProgressGuide/List.tsx:70
-msgid "Bluesky is better with friends!"
-msgstr "A Bluesky ismerősökkel még jobb!"
-
-#: src/screens/Takendown.tsx:217
-msgid "Bluesky Social Terms of Service"
-msgstr "A Bluesky felhasználási feltételei"
-
-#: src/components/StarterPack/ProfileStarterPacks.tsx:310
-msgid "Bluesky will choose a set of recommended accounts from people in your network."
-msgstr "A Bluesky egy javasolt felhasználócsoportot fog kijelölni a hálózatodon."
-
-#: src/screens/Settings/components/PwiOptOut.tsx:99
-msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-msgstr "A Bluesky nem fogja megjeleníteni a profilodat és a bejegyzéseidet a kijelentkezett felhasználók számára. Lehetséges, hogy ezt a kérést nem minden alkalmazás fogja tiszteletben tartani. Ez a beállítás nem teszi priváttá a profilodat."
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
-msgid "Bluesky will proactively verify notable and authentic accounts."
-msgstr "A Bluesky mostantól hitelesíti a jelentős és megbízható fiókokat."
-
-#: src/screens/Signup/StepInfo/Policies.tsx:26
-msgid "Bluesky's Community Guidelines"
-msgstr "A Bluesky közösségi irányelvei"
-
-#: src/screens/Signup/StepInfo/Policies.tsx:32
-msgid "Bluesky's Updated Community Guidelines"
-msgstr "A Bluesky frissített közösségi irányelvei"
-
-#: src/screens/Settings/AppIconSettings/index.tsx:99
-msgid "Bluesky+"
-msgstr "Bluesky+"
-
-#: src/screens/Settings/AppIconSettings/index.tsx:102
-msgid "Bluesky+ icons"
-msgstr "Bluesky+-ikonok"
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:53
 msgid "Blur images"
@@ -1624,7 +1645,7 @@ msgstr "Kamera"
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:85
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:246
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:252
-#: src/screens/Settings/Settings.tsx:289
+#: src/screens/Settings/Settings.tsx:305
 #: src/screens/Takendown.tsx:99
 #: src/screens/Takendown.tsx:102
 #: src/view/com/composer/Composer.tsx:1005
@@ -1633,7 +1654,7 @@ msgstr "Kamera"
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:52
 #: src/view/com/modals/CreateOrEditList.tsx:333
 #: src/view/com/modals/CropImage.web.tsx:97
-#: src/view/shell/desktop/LeftNav.tsx:213
+#: src/view/shell/desktop/LeftNav.tsx:215
 msgid "Cancel"
 msgstr "Mégse"
 
@@ -1681,6 +1702,14 @@ msgstr "Feliratok (.vtt)"
 msgid "Captions & alt text"
 msgstr "Feliratok és helyettesítő szöveg"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:51
+msgid "Cette action est définitive et ne supprime pas les posts de Tellus."
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:76
+msgid "Cette personne n’est pas encore sur Tellus Chat"
+msgstr ""
+
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
 msgid "Change"
 msgstr "Megváltoztatás"
@@ -1724,6 +1753,10 @@ msgstr "Bejegyzés nyelvének megváltoztatása erre: {suggestedLanguageName}"
 msgid "Change report reason"
 msgstr "Jelentési ok megváltoztatása"
 
+#: src/screens/MessagesMatrix.web.tsx:1083
+msgid "Change seulement si tu utilises un autre serveur."
+msgstr ""
+
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:57
 msgid "Change your password"
 msgstr "Jelszó megváltoztatása"
@@ -1741,11 +1774,16 @@ msgstr "Tárhelyszolgáltató megváltoztatása"
 msgid "Changes saved"
 msgstr "Változtatások elmentve"
 
+#: src/screens/MessagesMatrix.web.tsx:1630
+#: src/screens/Saved/CollectionDetailPage.tsx:41
+msgid "Chargement"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:963
+msgid "Chargement des messages"
+msgstr ""
+
 #: src/lib/hooks/useNotificationHandler.ts:99
-#: src/Navigation.tsx:549
-#: src/view/shell/bottom-bar/BottomBar.tsx:221
-#: src/view/shell/desktop/LeftNav.tsx:607
-#: src/view/shell/Drawer.tsx:466
 msgid "Chat"
 msgstr "Csevegés"
 
@@ -1768,39 +1806,10 @@ msgctxt "toast"
 msgid "Chat muted"
 msgstr "Csevegés elnémítva"
 
-#: src/Navigation.tsx:559
-#: src/screens/Messages/components/InboxPreview.tsx:22
-msgid "Chat request inbox"
-msgstr "Csevegési kérelmek"
-
-#: src/screens/Messages/components/InboxPreview.tsx:62
-#: src/screens/Messages/Inbox.tsx:56
-#: src/screens/Messages/Inbox.tsx:98
-msgid "Chat requests"
-msgstr "Csevegési kérelmek"
-
-#: src/components/dms/ConvoMenu.tsx:76
-#: src/Navigation.tsx:554
-#: src/screens/Messages/ChatList.tsx:81
-#: src/screens/Messages/ChatList.tsx:85
-#: src/screens/Messages/ChatList.tsx:378
-msgid "Chat settings"
-msgstr "Csevegések"
-
-#: src/screens/Messages/Settings.tsx:67
-msgid "Chat Settings"
-msgstr "Csevegések"
-
 #: src/components/dms/ConvoMenu.tsx:178
 msgctxt "toast"
 msgid "Chat unmuted"
 msgstr "Csevegés némítása feloldva"
-
-#: src/screens/Messages/ChatList.tsx:76
-#: src/screens/Messages/ChatList.tsx:394
-#: src/screens/Messages/ChatList.tsx:418
-msgid "Chats"
-msgstr "Csevegések"
 
 #: src/screens/SignupQueued.tsx:78
 #: src/screens/SignupQueued.tsx:82
@@ -1814,6 +1823,10 @@ msgstr "Add meg az e-mailben kapott megerősítőkódot."
 #: src/view/com/modals/DeleteAccount.tsx:213
 msgid "Check your inbox for an email with the confirmation code to enter below:"
 msgstr "Küldtünk egy e-mailt. Add meg a benne található ellenőrzőkódot:"
+
+#: src/screens/MessagesMatrix.web.tsx:1624
+msgid "Choisis une discussion pour voir le fil."
+msgstr ""
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:399
 msgid "Choose domain verification method"
@@ -1859,11 +1872,11 @@ msgstr "Jelszó megadása"
 msgid "Choose your username"
 msgstr "Felhasználónév megadása"
 
-#: src/screens/Settings/Settings.tsx:490
+#: src/screens/Settings/Settings.tsx:506
 msgid "Clear all storage data"
 msgstr "Összes adat törlése"
 
-#: src/screens/Settings/Settings.tsx:492
+#: src/screens/Settings/Settings.tsx:508
 msgid "Clear all storage data (restart after this)"
 msgstr "Összes adat törlése (A program újra fog indulni)"
 
@@ -1976,7 +1989,7 @@ msgstr "Alsó kinyíló menü bezárása"
 msgid "Close dialog"
 msgstr "Párbeszédablak bezárása"
 
-#: src/view/shell/index.web.tsx:110
+#: src/view/shell/index.web.tsx:122
 msgid "Close drawer menu"
 msgstr "Oldalsó menü bezárása"
 
@@ -2036,6 +2049,14 @@ msgstr "Lista összecsukása"
 msgid "Collapses list of users for a given notification"
 msgstr "Egy értesítés felhasználólistájának összecsukása"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:53
+msgid "Collection de destination"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:45
+msgid "Collection introuvable"
+msgstr ""
+
 #: src/components/dialogs/Embed.tsx:154
 #: src/screens/Settings/AppearanceSettings.tsx:94
 msgid "Color mode"
@@ -2055,8 +2076,16 @@ msgstr "Humor"
 msgid "Comics"
 msgstr "Képregények"
 
+#: src/screens/MessagesMatrix.web.tsx:1657
+msgid "Commence la discussion."
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:35
+msgid "Commencez par enregistrer des posts pour les retrouver ici."
+msgstr ""
+
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:45
-#: src/Navigation.tsx:341
+#: src/Navigation.tsx:347
 #: src/view/screens/CommunityGuidelines.tsx:34
 msgid "Community Guidelines"
 msgstr "Közösségi irányelvek"
@@ -2064,13 +2093,13 @@ msgstr "Közösségi irányelvek"
 #: src/screens/Onboarding/StepFinished.tsx:473
 #: src/screens/Onboarding/StepFinished.tsx:588
 msgid "Complete onboarding and start using your account"
-msgstr "Regisztrációs varázsló befejezése és a Bluesky használatának megkezdése"
+msgstr "Regisztrációs varázsló befejezése és a Tellus használatának megkezdése"
 
 #: src/screens/Signup/index.tsx:177
 msgid "Complete the challenge"
 msgstr "Biztonsági kihívás"
 
-#: src/view/shell/desktop/LeftNav.tsx:572
+#: src/view/shell/desktop/LeftNav.tsx:574
 msgid "Compose new post"
 msgstr "Új bejegyzés írása"
 
@@ -2140,6 +2169,10 @@ msgstr "GPS-szel kell megerősítened a tartózkodási helyedet. Ezt az informá
 msgid "Confirmation code"
 msgstr "Megerősítőkód"
 
+#: src/screens/MessagesMatrix.web.tsx:1059
+msgid "Connecte ton compte Tellus Chat (propulsé par Matrix)."
+msgstr ""
+
 #: src/screens/Login/LoginForm.tsx:337
 msgid "Connecting..."
 msgstr "Csatlakozás folyamatban…"
@@ -2147,6 +2180,24 @@ msgstr "Csatlakozás folyamatban…"
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:213
 msgid "Connection issue"
 msgstr "Megszakadt a kapcsolat"
+
+#: src/screens/MessagesMatrix.web.tsx:1107
+msgid "Connexion à Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:964
+msgid "Connexion à Tellus Chat en cours..."
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:26
+msgid "Conservés"
+msgstr ""
+
+#: src/view/shell/desktop/LeftNav.tsx:783
+#: src/view/shell/Drawer.tsx:593
+msgctxt "link to saved collections screen"
+msgid "Conservés"
+msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:132
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:29
@@ -2167,12 +2218,12 @@ msgstr "Kapcsolat"
 msgid "Content & Media"
 msgstr "Tartalom és média"
 
-#: src/screens/Settings/Settings.tsx:204
-#: src/screens/Settings/Settings.tsx:207
+#: src/screens/Settings/Settings.tsx:220
+#: src/screens/Settings/Settings.tsx:223
 msgid "Content and media"
 msgstr "Tartalom és média"
 
-#: src/Navigation.tsx:508
+#: src/Navigation.tsx:539
 msgid "Content and Media"
 msgstr "Tartalom és média"
 
@@ -2242,6 +2293,7 @@ msgid "Continue to next step"
 msgstr "Következő lépés"
 
 #: src/screens/Messages/Conversation.tsx:57
+#: src/screens/MessagesMatrix.web.tsx:419
 msgid "Conversation"
 msgstr "Beszélgetés"
 
@@ -2282,6 +2334,11 @@ msgstr "Vágólapra helyezve"
 msgid "Copied!"
 msgstr "Vágólapra helyezve."
 
+#: src/screens/Messages/Invite.tsx:89
+#: src/screens/Messages/Invite.tsx:95
+msgid "Copier le lien d’invitation"
+msgstr ""
+
 #: src/screens/Settings/AboutSettings.tsx:127
 msgid "Copies build version to clipboard"
 msgstr "Buildszám másolása a vágólapra"
@@ -2294,8 +2351,8 @@ msgstr "Másolás"
 msgid "Copy App Password"
 msgstr "Alkalmazásjelszó másolása"
 
-#: src/view/com/profile/ProfileMenu.tsx:433
-#: src/view/com/profile/ProfileMenu.tsx:436
+#: src/view/com/profile/ProfileMenu.tsx:488
+#: src/view/com/profile/ProfileMenu.tsx:491
 msgid "Copy at:// URI"
 msgstr "„at://” URI másolása"
 
@@ -2310,8 +2367,8 @@ msgid "Copy code"
 msgstr "Kód másolása"
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:501
-#: src/view/com/profile/ProfileMenu.tsx:442
-#: src/view/com/profile/ProfileMenu.tsx:445
+#: src/view/com/profile/ProfileMenu.tsx:497
+#: src/view/com/profile/ProfileMenu.tsx:500
 msgid "Copy DID"
 msgstr "DID másolása"
 
@@ -2339,8 +2396,8 @@ msgstr "Lista hivatkozásának másolása"
 msgid "Copy link to post"
 msgstr "Bejegyzés hivatkozásának másolása"
 
-#: src/view/com/profile/ProfileMenu.tsx:246
-#: src/view/com/profile/ProfileMenu.tsx:257
+#: src/view/com/profile/ProfileMenu.tsx:284
+#: src/view/com/profile/ProfileMenu.tsx:295
 msgid "Copy link to profile"
 msgstr "Profil hivatkozásának másolása"
 
@@ -2373,7 +2430,7 @@ msgstr "TXT-rekord értékének másolása"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:40
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:107
-#: src/Navigation.tsx:346
+#: src/Navigation.tsx:352
 #: src/view/screens/CopyrightPolicy.tsx:31
 msgid "Copyright Policy"
 msgstr "Jogi irányelvek"
@@ -2433,7 +2490,7 @@ msgstr "QR-kód létrehozása egy kezdőcsomaghoz"
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:178
 #: src/components/StarterPack/ProfileStarterPacks.tsx:287
-#: src/Navigation.tsx:589
+#: src/Navigation.tsx:630
 msgid "Create a starter pack"
 msgstr "Kezdőcsomag létrehozása"
 
@@ -2502,6 +2559,18 @@ msgstr "Létrehozás dátuma: {0}"
 msgid "Creator has been blocked"
 msgstr "Letiltott szerző"
 
+#: src/screens/MessagesMatrix.web.tsx:1173
+#: src/screens/MessagesMatrix.web.tsx:1180
+#: src/screens/MessagesMatrix.web.tsx:1235
+#: src/screens/MessagesMatrix.web.tsx:1242
+#: src/screens/Saved/SavedCollectionsPage.tsx:47
+msgid "Créer"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:38
+msgid "Créer une collection"
+msgstr ""
+
 #: src/screens/Onboarding/index.tsx:42
 #: src/screens/Onboarding/state.ts:107
 msgid "Culture"
@@ -2521,7 +2590,7 @@ msgid "Customize who can interact with this post."
 msgstr "Add meg, hogy ki léphet kapcsolatba ezzel a bejegyzéssel."
 
 #: src/screens/Onboarding/Layout.tsx:61
-msgid "Customizes your Bluesky experience"
+msgid "Customizes your Tellus experience"
 msgstr "A Bluseky-élményed testreszabása"
 
 #: src/components/dialogs/Embed.tsx:167
@@ -2548,13 +2617,17 @@ msgstr "Sötét téma"
 msgid "Date of birth"
 msgstr "Születési dátum"
 
+#: src/screens/MessagesMatrix.web.tsx:1214
+msgid "De quoi parle ce groupe ?"
+msgstr ""
+
 #: src/screens/Settings/AccountSettings.tsx:161
 #: src/screens/Settings/AccountSettings.tsx:166
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:73
 msgid "Deactivate account"
 msgstr "Fiók deaktiválása"
 
-#: src/screens/Settings/Settings.tsx:455
+#: src/screens/Settings/Settings.tsx:471
 msgid "Debug Moderation"
 msgstr "Moderálási hibakeresés"
 
@@ -2573,6 +2646,8 @@ msgstr "Alapértelmezett ikonok"
 #: src/components/dms/MessageContextMenu.tsx:185
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:704
 #: src/screens/Messages/components/ChatStatusInfo.tsx:55
+#: src/screens/Messages/Settings.tsx:222
+#: src/screens/Messages/Settings.tsx:229
 #: src/screens/Settings/AppPasswords.tsx:212
 #: src/screens/StarterPack/StarterPackScreen.tsx:599
 #: src/screens/StarterPack/StarterPackScreen.tsx:688
@@ -2603,7 +2678,7 @@ msgstr "Alkalmazásjelszó törlése"
 msgid "Delete chat"
 msgstr "Csevegés törlése"
 
-#: src/screens/Settings/Settings.tsx:462
+#: src/screens/Settings/Settings.tsx:478
 msgid "Delete chat declaration record"
 msgstr "Csevegéskijelentési jegyzőkönyv ürítése"
 
@@ -2677,11 +2752,23 @@ msgstr "Törölt fiók"
 msgid "Deleted list"
 msgstr "Törölt lista"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:54
+msgid "Déplacer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:52
+msgid "Déplacer vers"
+msgstr ""
+
 #: src/screens/Profile/Header/EditProfileDialog.tsx:365
 #: src/view/com/modals/CreateOrEditList.tsx:278
 #: src/view/com/modals/CreateOrEditList.tsx:299
 msgid "Description"
 msgstr "Leírás"
+
+#: src/screens/MessagesMatrix.web.tsx:1210
+msgid "Description (optionnelle)"
+msgstr ""
 
 #: src/view/com/composer/GifAltText.tsx:150
 #: src/view/com/composer/photos/ImageAltTextDialog.tsx:113
@@ -2707,8 +2794,8 @@ msgctxt "toast"
 msgid "Developer mode enabled"
 msgstr "Bekapcsoltad a fejlesztői módot"
 
-#: src/screens/Settings/Settings.tsx:271
-#: src/screens/Settings/Settings.tsx:274
+#: src/screens/Settings/Settings.tsx:287
+#: src/screens/Settings/Settings.tsx:290
 msgid "Developer options"
 msgstr "Fejlesztői beállítások"
 
@@ -2745,8 +2832,8 @@ msgstr "Feliratok letiltása"
 #: src/lib/moderation/useLabelBehaviorDescription.ts:32
 #: src/lib/moderation/useLabelBehaviorDescription.ts:42
 #: src/lib/moderation/useLabelBehaviorDescription.ts:68
-#: src/screens/Messages/Settings.tsx:144
-#: src/screens/Messages/Settings.tsx:147
+#: src/screens/Messages/Settings.tsx:316
+#: src/screens/Messages/Settings.tsx:319
 #: src/screens/Moderation/index.tsx:413
 msgid "Disabled"
 msgstr "Letiltva"
@@ -2899,14 +2986,14 @@ msgstr "Koppints kétszer a párbeszédablak bezárásához"
 msgid "Double tap to like"
 msgstr "Koppints kétszer a kedveléshez"
 
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
-msgid "Download Bluesky"
-msgstr "A Bluesky letöltése"
-
 #: src/screens/Settings/components/ExportCarDialog.tsx:79
 #: src/screens/Settings/components/ExportCarDialog.tsx:84
 msgid "Download CAR file"
 msgstr "CAR fájl letöltése"
+
+#: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
+msgid "Download Tellus"
+msgstr "A Tellus letöltése"
 
 #: src/view/com/composer/text-input/TextInput.web.tsx:361
 msgid "Drop to add images"
@@ -2952,6 +3039,14 @@ msgstr "pl.: Akik folyton csak reklámokkal válaszolnak."
 msgid "Each code works once. You'll receive more invite codes periodically."
 msgstr "Mindegyik meghívó csak egyszer használható fel. Időközönként újakat fogsz kapni."
 
+#: src/screens/MessagesMatrix.web.tsx:349
+msgid "Échec de la connexion Tellus Chat."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1759
+msgid "Écrire un message"
+msgstr ""
+
 #: src/screens/Settings/AccountSettings.tsx:145
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:249
 #: src/screens/StarterPack/StarterPackScreen.tsx:588
@@ -2995,8 +3090,8 @@ msgstr "Érdeklődési körök szerkesztése"
 msgid "Edit list details"
 msgstr "Lista szerkesztése"
 
-#: src/view/com/profile/ProfileMenu.tsx:329
-#: src/view/com/profile/ProfileMenu.tsx:335
+#: src/view/com/profile/ProfileMenu.tsx:384
+#: src/view/com/profile/ProfileMenu.tsx:390
 msgid "Edit live status"
 msgstr "Élőadásos állapot szerkesztése"
 
@@ -3004,7 +3099,7 @@ msgstr "Élőadásos állapot szerkesztése"
 msgid "Edit Moderation List"
 msgstr "Moderálólista szerkesztése"
 
-#: src/Navigation.tsx:356
+#: src/Navigation.tsx:362
 #: src/view/screens/Feeds.tsx:518
 msgid "Edit My Feeds"
 msgstr "Hírfolyamgyűjtemény szerkesztése"
@@ -3025,12 +3120,12 @@ msgstr "A bejegyzés kapcsolatbalépési beállításainak szerkesztése"
 #: src/screens/Profile/Header/EditProfileDialog.tsx:270
 #: src/screens/Profile/Header/EditProfileDialog.tsx:276
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:183
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:190
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:205
 msgid "Edit profile"
 msgstr "Profil szerkesztése"
 
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:186
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:193
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:208
 msgid "Edit Profile"
 msgstr "Profil szerkesztése"
 
@@ -3046,7 +3141,7 @@ msgstr "Felhasználólista szerkesztése"
 msgid "Edit who can reply"
 msgstr "Válaszjogosultsági beállítások szerkesztése"
 
-#: src/Navigation.tsx:594
+#: src/Navigation.tsx:635
 msgid "Edit your starter pack"
 msgstr "Kezdőcsomag szerkesztése"
 
@@ -3112,6 +3207,10 @@ msgstr "Jelenítsd meg ezt a bejegyzést a honlapodon! Másold ki az alábbi kó
 msgid "Embedded video player"
 msgstr "Beágyazott videólejátszó"
 
+#: src/screens/MessagesMatrix.web.tsx:1265
+msgid "En attente"
+msgstr ""
+
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:104
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:111
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
@@ -3166,8 +3265,8 @@ msgstr "Felkapott témakörök megjelenítése"
 msgid "Enable trending videos in your Discover feed"
 msgstr "Felkapott videók megjelenítése a Követett hírfolyamon"
 
-#: src/screens/Messages/Settings.tsx:135
-#: src/screens/Messages/Settings.tsx:138
+#: src/screens/Messages/Settings.tsx:307
+#: src/screens/Messages/Settings.tsx:310
 #: src/screens/Moderation/index.tsx:411
 msgid "Enabled"
 msgstr "Engedélyezve"
@@ -3176,6 +3275,15 @@ msgstr "Engedélyezve"
 msgid "End of feed"
 msgstr "A hírfolyam véget ért"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:57
+#: src/screens/Saved/SavedCollectionsPage.tsx:46
+msgid "Enregistrer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:43
+msgid "Enregistrez des posts pour commencer votre collection."
+msgstr ""
+
 #: src/view/com/composer/videos/SubtitleDialog.tsx:158
 msgid "Ensure you have selected a language for each subtitle file."
 msgstr "Minden feliratfájlhoz rendelj hozzá egy nyelvet."
@@ -3183,6 +3291,10 @@ msgstr "Minden feliratfájlhoz rendelj hozzá egy nyelvet."
 #: src/screens/Login/SetNewPasswordForm.tsx:147
 msgid "Enter a password"
 msgstr "Jelszó megadása"
+
+#: src/screens/Messages/Settings.tsx:116
+msgid "Enter a valid Matrix ID (example: @alice:matrix.org)."
+msgstr ""
 
 #: src/components/dialogs/MutedWords.tsx:127
 #: src/components/dialogs/MutedWords.tsx:128
@@ -3224,6 +3336,10 @@ msgstr "Add meg az e-mail-címedet"
 msgid "Enter your password"
 msgstr "Jelszó megadása"
 
+#: src/screens/Messages/Settings.tsx:115
+msgid "Enter your Tellus Chat ID."
+msgstr ""
+
 #: src/screens/Login/index.tsx:123
 msgid "Enter your username and password"
 msgstr "Add meg a felhasználóneved és a jelszavad"
@@ -3235,6 +3351,11 @@ msgstr "Teljes képernyős mód"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:236
 msgid "Entertainment"
 msgstr "Szórakozás"
+
+#: src/screens/MessagesMatrix.web.tsx:1779
+#: src/screens/MessagesMatrix.web.tsx:1786
+msgid "Envoyer"
+msgstr ""
 
 #: src/view/com/composer/Composer.tsx:1843
 #: src/view/com/util/error/ErrorScreen.tsx:42
@@ -3269,6 +3390,11 @@ msgstr "Hiba:"
 msgid "Error: {error}"
 msgstr "Hiba: {error}"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:59
+#: src/screens/Saved/SavedCollectionsPage.tsx:37
+msgid "Essayez un autre terme de recherche."
+msgstr ""
+
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:398
 msgid "Everybody"
 msgstr "Bárkitől"
@@ -3281,8 +3407,8 @@ msgstr "Bárki válaszolhat"
 msgid "Everybody can reply to this post."
 msgstr "Bárki válaszolhat erre a bejegyzésre."
 
-#: src/screens/Messages/Settings.tsx:88
-#: src/screens/Messages/Settings.tsx:91
+#: src/screens/Messages/Settings.tsx:260
+#: src/screens/Messages/Settings.tsx:263
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:164
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:174
 msgid "Everyone"
@@ -3381,10 +3507,10 @@ msgstr "A nyugalom megzavarására alkalmas képek és videók."
 msgid "Explicit sexual images."
 msgstr "Szexuális tartalmakat ábrázoló képek."
 
-#: src/Navigation.tsx:759
+#: src/Navigation.tsx:817
 #: src/screens/Search/Shell.tsx:307
-#: src/view/shell/desktop/LeftNav.tsx:689
-#: src/view/shell/Drawer.tsx:414
+#: src/view/shell/desktop/LeftNav.tsx:690
+#: src/view/shell/Drawer.tsx:435
 msgid "Explore"
 msgstr "Felfedezés"
 
@@ -3392,6 +3518,10 @@ msgstr "Felfedezés"
 #: src/components/WelcomeModal.tsx:177
 msgid "Explore the app"
 msgstr "Az alkalmazás felfedezése"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:44
+msgid "Explorer"
+msgstr ""
 
 #: src/screens/Settings/AccountSettings.tsx:152
 #: src/screens/Settings/AccountSettings.tsx:156
@@ -3417,7 +3547,7 @@ msgstr "Külső médiatartalom"
 msgid "External media may allow websites to collect information about you and your device. No information is sent or requested until you press the \"play\" button."
 msgstr "A külső médiatartalmak engedélyezése lehetővé teszi más honlapok számára az adatgyűjtést Rólad vagy az eszközödről. A „Lejátszás” gomb megnyomásáig semmilyen adatot sem küldünk vagy kérünk le."
 
-#: src/Navigation.tsx:375
+#: src/Navigation.tsx:406
 #: src/screens/Settings/ExternalMediaPreferences.tsx:34
 msgid "External Media Preferences"
 msgstr "Külső médiatartalmak"
@@ -3443,10 +3573,6 @@ msgstr "A felhasználónév megváltoztatása meghiúsult. Próbáld újra."
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:173
 msgid "Failed to create app password. Please try again."
 msgstr "Az alkalmazásjelszó létrehozása meghiúsult. Próbáld újra."
-
-#: src/components/dms/MessageProfileButton.tsx:36
-msgid "Failed to create conversation"
-msgstr "A csevegés törlése meghiúsult"
 
 #: src/screens/StarterPack/Wizard/index.tsx:262
 #: src/screens/StarterPack/Wizard/index.tsx:270
@@ -3602,7 +3728,7 @@ msgstr "A hírfolyamok frissítése meghiúsult"
 msgid "Failed to update notification declaration"
 msgstr "Az értesítési beállítások frissítése meghiúsult"
 
-#: src/screens/Messages/Settings.tsx:39
+#: src/screens/Messages/Settings.tsx:57
 msgid "Failed to update settings"
 msgstr "A beállítások mentése meghiúsult"
 
@@ -3621,7 +3747,7 @@ msgstr "Az e-mail-cím hitelesítése meghiúsult. Próbáld újra."
 msgid "Failed to verify handle. Please try again."
 msgstr "A felhasználónév hitelesítése meghiúsult. Próbáld újra."
 
-#: src/Navigation.tsx:291
+#: src/Navigation.tsx:297
 msgid "Feed"
 msgstr "Hírfolyam"
 
@@ -3650,9 +3776,9 @@ msgstr "Hírfolyam ki/be"
 msgid "Feed unavailable"
 msgstr "A hírfolyam nem elérhető"
 
-#: src/view/shell/desktop/RightNav.tsx:106
-#: src/view/shell/desktop/RightNav.tsx:107
-#: src/view/shell/Drawer.tsx:368
+#: src/view/shell/desktop/RightNav.tsx:94
+#: src/view/shell/desktop/RightNav.tsx:95
+#: src/view/shell/Drawer.tsx:389
 msgid "Feedback"
 msgstr "Visszajelzés"
 
@@ -3662,14 +3788,14 @@ msgctxt "toast"
 msgid "Feedback sent to feed operator"
 msgstr "Elküldtük a visszajelzést az üzemeltetőnek"
 
-#: src/Navigation.tsx:574
+#: src/Navigation.tsx:610
 #: src/screens/Search/SearchResults.tsx:73
 #: src/screens/StarterPack/StarterPackScreen.tsx:190
 #: src/view/screens/Feeds.tsx:511
 #: src/view/screens/Profile.tsx:230
 #: src/view/screens/SavedFeeds.tsx:104
-#: src/view/shell/desktop/LeftNav.tsx:727
-#: src/view/shell/Drawer.tsx:530
+#: src/view/shell/desktop/LeftNav.tsx:728
+#: src/view/shell/Drawer.tsx:551
 msgid "Feeds"
 msgstr "Hírfolyamok"
 
@@ -3737,8 +3863,8 @@ msgid "Find people to follow"
 msgstr "Követendő személyek felfedezése"
 
 #: src/screens/Search/Shell.tsx:476
-msgid "Find posts, users, and feeds on Bluesky"
-msgstr "Bejegyzések, felhasználók és hírfolyamok felfedezése a Blueskyon"
+msgid "Find posts, users, and feeds on Tellus"
+msgstr "Bejegyzések, felhasználók és hírfolyamok felfedezése a Telluson"
 
 #: src/screens/Onboarding/StepFinished.tsx:345
 msgid "Find your people"
@@ -3776,7 +3902,7 @@ msgstr "Rugalmas"
 #: src/components/ProfileHoverCard/index.web.tsx:496
 #: src/components/ProfileHoverCard/index.web.tsx:507
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:131
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:252
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:282
 #: src/screens/VideoFeed/index.tsx:854
 msgid "Follow"
 msgstr "Követés"
@@ -3787,7 +3913,7 @@ msgid "Follow"
 msgstr "Követés"
 
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:113
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:237
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:267
 msgid "Follow {0}"
 msgstr "{0} követése"
 
@@ -3804,8 +3930,8 @@ msgstr "Kövess 10 fiókot!"
 msgid "Follow 7 accounts"
 msgstr "Kövess 7 fiókot!"
 
-#: src/view/com/profile/ProfileMenu.tsx:287
-#: src/view/com/profile/ProfileMenu.tsx:298
+#: src/view/com/profile/ProfileMenu.tsx:342
+#: src/view/com/profile/ProfileMenu.tsx:353
 msgid "Follow account"
 msgstr "Fiók követése"
 
@@ -3822,7 +3948,7 @@ msgstr "Összes fiók követése"
 #. User is not following this account, click to follow back
 #: src/components/ProfileCard.tsx:518
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:129
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:250
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:280
 msgid "Follow back"
 msgstr "Követés kölcsönzése"
 
@@ -3851,7 +3977,7 @@ msgstr "<0>{0}</0> és <1>{1}</1> követi"
 msgid "Followed by <0>{0}</0>, <1>{1}</1>, and {2, plural, one {# other} other {# others}}"
 msgstr "<0>{0}</0>, <1>{1}</1> és {2, plural, one {#} other {#}} további személy követi"
 
-#: src/Navigation.tsx:245
+#: src/Navigation.tsx:251
 msgid "Followers of @{0} that you know"
 msgstr "@{0} általad ismert követői"
 
@@ -3865,7 +3991,7 @@ msgstr "Ismert követők"
 #: src/components/ProfileHoverCard/index.web.tsx:495
 #: src/components/ProfileHoverCard/index.web.tsx:506
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:134
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:248
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:278
 #: src/screens/VideoFeed/index.tsx:852
 msgid "Following"
 msgstr "Követett"
@@ -3877,7 +4003,7 @@ msgid "Following"
 msgstr "Követett"
 
 #: src/components/ProfileCard.tsx:474
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:92
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:96
 msgid "Following {0}"
 msgstr "Mostantól követed: {0}"
 
@@ -3890,7 +4016,7 @@ msgstr "Mostantól követed: {handle}"
 msgid "Following feed preferences"
 msgstr "Követett hírfolyam"
 
-#: src/Navigation.tsx:362
+#: src/Navigation.tsx:393
 #: src/screens/Settings/FollowingFeedPreferences.tsx:56
 msgid "Following Feed Preferences"
 msgstr "Követett hírfolyam"
@@ -3917,8 +4043,8 @@ msgid "Food"
 msgstr "Étel-ital"
 
 #: src/components/BlockedGeoOverlay.tsx:56
-msgid "For now, we have made the difficult decision to block access to Bluesky in the state of Mississippi."
-msgstr "A jelenlegi állás szerint úgy döntöttünk, hogy egyelőre nem vagyunk képesek továbbra is nyújtani a Bluesky szolgáltatását Mississippi államban."
+msgid "For now, we have made the difficult decision to block access to Tellus in the state of Mississippi."
+msgstr "A jelenlegi állás szerint úgy döntöttünk, hogy egyelőre nem vagyunk képesek továbbra is nyújtani a Tellus szolgáltatását Mississippi államban."
 
 #: src/view/com/modals/DeleteAccount.tsx:125
 msgid "For security reasons, we'll need to send a confirmation code to your email address."
@@ -3984,7 +4110,7 @@ msgstr "A(z) <0/> hírfolyamból"
 msgid "Generate a starter pack"
 msgstr "Kezdőcsomag létrehozása"
 
-#: src/view/shell/Drawer.tsx:372
+#: src/view/shell/Drawer.tsx:393
 msgid "Get help"
 msgstr "Súgó"
 
@@ -4116,8 +4242,8 @@ msgstr "Ugrás a kezdőoldalra"
 msgid "Go Home"
 msgstr "Ugrás a kezdőoldalra"
 
-#: src/view/com/profile/ProfileMenu.tsx:330
-#: src/view/com/profile/ProfileMenu.tsx:337
+#: src/view/com/profile/ProfileMenu.tsx:385
+#: src/view/com/profile/ProfileMenu.tsx:392
 msgid "Go live"
 msgstr "Élő adás indítása"
 
@@ -4152,8 +4278,8 @@ msgid "Go to next"
 msgstr "Tovább"
 
 #: src/components/dms/ConvoMenu.tsx:227
-#: src/view/shell/desktop/LeftNav.tsx:317
-#: src/view/shell/desktop/LeftNav.tsx:323
+#: src/view/shell/desktop/LeftNav.tsx:319
+#: src/view/shell/desktop/LeftNav.tsx:325
 msgid "Go to profile"
 msgstr "Profil megnyitása"
 
@@ -4167,6 +4293,14 @@ msgstr "Ugrás a felhasználó profiljára"
 #: src/view/com/composer/labels/LabelsBtn.tsx:204
 msgid "Graphic Media"
 msgstr "Grafikus médiatartalom"
+
+#: src/screens/Saved/components.tsx:141
+msgid "Grille"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:422
+msgid "Groupe"
+msgstr ""
 
 #: src/state/shell/progress-guide.tsx:220
 #: src/state/shell/progress-guide.tsx:230
@@ -4200,7 +4334,7 @@ msgstr "Rezgés"
 msgid "Harassment, trolling, or intolerance"
 msgstr "Zaklatás, gúnyolódás vagy tűrélytelenség"
 
-#: src/Navigation.tsx:539
+#: src/Navigation.tsx:570
 msgid "Hashtag"
 msgstr "Címke"
 
@@ -4217,11 +4351,11 @@ msgstr "Ha már rendelkezel kóddal, <0>kattints ide</0>."
 msgid "Having trouble?"
 msgstr "Problémába ütköztél?"
 
-#: src/screens/Settings/Settings.tsx:236
-#: src/screens/Settings/Settings.tsx:240
-#: src/view/shell/desktop/RightNav.tsx:124
-#: src/view/shell/desktop/RightNav.tsx:125
-#: src/view/shell/Drawer.tsx:381
+#: src/screens/Settings/Settings.tsx:252
+#: src/screens/Settings/Settings.tsx:256
+#: src/view/shell/desktop/RightNav.tsx:112
+#: src/view/shell/desktop/RightNav.tsx:113
+#: src/view/shell/Drawer.tsx:402
 msgid "Help"
 msgstr "Súgó"
 
@@ -4362,11 +4496,11 @@ msgstr "Hmmmm… Ez a moderálási szolgáltatás nem található."
 msgid "Hold up! We’re gradually giving access to video, and you’re still waiting in line. Check back soon!"
 msgstr "Egy pillanat! A videófeltöltés lehetősége még nem mindenki számára elérhető. Próbáld újra később."
 
-#: src/Navigation.tsx:754
-#: src/Navigation.tsx:774
+#: src/Navigation.tsx:812
+#: src/Navigation.tsx:832
 #: src/view/shell/bottom-bar/BottomBar.tsx:178
-#: src/view/shell/desktop/LeftNav.tsx:671
-#: src/view/shell/Drawer.tsx:440
+#: src/view/shell/desktop/LeftNav.tsx:672
+#: src/view/shell/Drawer.tsx:461
 msgid "Home"
 msgstr "Kezdőoldal"
 
@@ -4388,6 +4522,10 @@ msgstr "Felkapott"
 msgid "How should we open this link?"
 msgstr "Hogyan nyissuk meg ezt a hivatkozást?"
 
+#: src/screens/MessagesMatrix.web.tsx:1071
+msgid "https://matrix.org"
+msgstr ""
+
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:133
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:136
 msgid "I have a code"
@@ -4402,6 +4540,15 @@ msgstr "Saját tartománnyal rendelkezem"
 #: src/components/dms/ReportConversationPrompt.tsx:21
 msgid "I understand"
 msgstr "Értettem"
+
+#: src/screens/MessagesMatrix.web.tsx:978
+#: src/screens/MessagesMatrix.web.tsx:1149
+msgid "Identifiant Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:797
+msgid "Identifiant Tellus Chat invalide."
+msgstr ""
 
 #: src/view/com/lightbox/Lightbox.web.tsx:187
 msgid "If alt text is long, toggles alt text expanded state"
@@ -4482,6 +4629,42 @@ msgstr "Megszemélyesítés vagy a kilétéről/hovatartozásáról szóló val�
 #: src/lib/moderation/useReportOptions.ts:68
 msgid "Impersonation, misinformation, or false claims"
 msgstr "Megszemélyesítés, dezinformáció vagy valótlan állítások"
+
+#: src/screens/MessagesMatrix.web.tsx:694
+msgid "Impossible d'envoyer le message."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:808
+msgid "Impossible d’inviter cette personne."
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:89
+msgid "Impossible d’ouvrir Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1636
+msgid "Impossible de charger la conversation"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:647
+msgid "Impossible de charger les messages."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:411
+msgid "Impossible de créer la conversation."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:561
+msgid "Impossible de créer le groupe."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:831
+msgid "Impossible de quitter le groupe."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:252
+msgid "Impossible de se connecter à Tellus Chat."
+msgstr ""
 
 #: src/screens/Settings/NotificationSettings/index.tsx:284
 msgid "In-app"
@@ -4578,6 +4761,10 @@ msgstr "Érvénytelen jelentési ok"
 msgid "Invalid Verification Code"
 msgstr "Érvénytelen ellenőrzőkód"
 
+#: src/screens/MessagesMatrix.web.tsx:1255
+msgid "Invitations"
+msgstr ""
+
 #: src/view/com/modals/InviteCodes.tsx:94
 msgid "Invite a Friend"
 msgstr "Barát meghívása"
@@ -4602,9 +4789,37 @@ msgstr "Meghívókódok: Még 1 felhasználható"
 msgid "Invite people to this starter pack!"
 msgstr "Hívj meg másokat is ebbe a kezdőcsomagba!"
 
+#: src/Navigation.tsx:595
+msgid "Invite to Tellus Chat"
+msgstr ""
+
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:34
 msgid "Invite your friends to follow your favorite feeds and people"
 msgstr "Könnyen oszd meg a barátaiddal a kedvenc hírfolyamaidat és személyeidet!"
+
+#: src/screens/Messages/Invite.tsx:79
+msgid "Invite-la pour démarrer la discussion. Elle pourra créer son compte puis revenir ici."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1586
+#: src/screens/MessagesMatrix.web.tsx:1593
+msgid "Inviter"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:113
+msgid "Inviter {normalizedHandle} sur Tellus Chat"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:114
+#: src/components/dms/MessageProfileButton.tsx:174
+#: src/components/dms/MessageProfileButton.tsx:202
+#: src/screens/Messages/Invite.tsx:65
+msgid "Inviter sur Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1560
+msgid "Inviter un membre"
+msgstr ""
 
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:31
 msgid "Invites, but personal"
@@ -4630,7 +4845,7 @@ msgstr "Még csak Te szerepelsz a kezdőcsomagban. A fenti keresővel másokat i
 msgid "Job ID: {0}"
 msgstr "Állásazonosító: {0}"
 
-#. Link to a page with job openings at Bluesky
+#. Link to a page with job openings at Tellus
 #: src/view/com/auth/SplashScreen.web.tsx:180
 msgid "Jobs"
 msgstr "Karrier"
@@ -4640,8 +4855,8 @@ msgstr "Karrier"
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:211
 #: src/screens/StarterPack/StarterPackScreen.tsx:466
 #: src/screens/StarterPack/StarterPackScreen.tsx:477
-msgid "Join Bluesky"
-msgstr "Csatlakozz a Blueskyhoz!"
+msgid "Join Tellus"
+msgstr "Csatlakozz a Tellushoz!"
 
 #: src/components/StarterPack/QrCode.tsx:68
 #: src/view/shell/NavSignupCard.tsx:40
@@ -4698,13 +4913,17 @@ msgstr "A fiókodra helyezett feljegyzések"
 msgid "Labels on your content"
 msgstr "A tartalmadra helyezett feljegyzések"
 
-#: src/Navigation.tsx:218
+#: src/screens/MessagesMatrix.web.tsx:1278
+msgid "Lance une discussion ou crée un groupe."
+msgstr ""
+
+#: src/Navigation.tsx:224
 msgid "Language Settings"
 msgstr "Nyelvi beállítások"
 
 #: src/screens/Settings/LanguageSettings.tsx:78
-#: src/screens/Settings/Settings.tsx:228
-#: src/screens/Settings/Settings.tsx:231
+#: src/screens/Settings/Settings.tsx:244
+#: src/screens/Settings/Settings.tsx:247
 msgid "Languages"
 msgstr "Nyelvek"
 
@@ -4744,13 +4963,13 @@ msgstr "További információ"
 msgid "Learn more about age assurance"
 msgstr "További információ az életkor-igazolásról"
 
-#: src/view/com/auth/SplashScreen.web.tsx:168
-msgid "Learn more about Bluesky"
-msgstr "További információ a Blueskyról"
-
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
 msgstr "További információ a személyes adatkiszolgálók üzemeltetéséről."
+
+#: src/view/com/auth/SplashScreen.web.tsx:168
+msgid "Learn more about Tellus"
+msgstr "További információ a Tellusról"
 
 #: src/components/moderation/ContentHider.tsx:152
 #: src/components/moderation/ContentHider.tsx:218
@@ -4773,13 +4992,13 @@ msgstr "További információ erről a figyelmeztetésről"
 #: src/components/verification/VerificationsDialog.tsx:151
 #: src/components/verification/VerifierDialog.tsx:118
 msgctxt "english-only-resource"
-msgid "Learn more about verification on Bluesky"
-msgstr "További információ a Blueskyos hitelesítésől"
+msgid "Learn more about verification on Tellus"
+msgstr "További információ a Tellusos hitelesítésől"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:128
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:131
-msgid "Learn more about what is public on Bluesky."
-msgstr "További információ a Bluesky-tartalmak nyilvánosságáról."
+msgid "Learn more about what is public on Tellus."
+msgstr "További információ a Tellus-tartalmak nyilvánosságáról."
 
 #: src/components/ageAssurance/AgeAssuranceAdmonition.tsx:86
 msgid "Learn more in your <0>account settings.</0>"
@@ -4813,12 +5032,16 @@ msgstr "Az összes nyelv megjelenítéséhez kapcsolj ki minden nyelvet."
 
 #: src/components/dialogs/LinkWarning.tsx:67
 #: src/components/dialogs/LinkWarning.tsx:75
-msgid "Leaving Bluesky"
-msgstr "A Bluesky elhagyása"
+msgid "Leaving Tellus"
+msgstr "A Tellus elhagyása"
 
 #: src/screens/SignupQueued.tsx:155
 msgid "left to go."
 msgstr "maradt."
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:42
+msgid "Les posts ne seront pas supprimés de Tellus."
+msgstr ""
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:323
 msgid "Let me choose"
@@ -4833,6 +5056,10 @@ msgstr "Állítsuk helyre a jelszavad!"
 #: src/screens/Onboarding/StepFinished.tsx:591
 msgid "Let's go!"
 msgstr "Gyerünk!"
+
+#: src/screens/Messages/Invite.tsx:48
+msgid "Lien copié"
+msgstr ""
 
 #: src/components/dialogs/Embed.tsx:162
 #: src/components/dialogs/Embed.tsx:164
@@ -4863,7 +5090,7 @@ msgstr "Kedvelj 10 megjegyzést!"
 msgid "Like 10 posts to train the Discover feed"
 msgstr "Kedvelj 10 megjegyzést a Követett hírfolyam idomításához!"
 
-#: src/Navigation.tsx:452
+#: src/Navigation.tsx:483
 msgid "Like notifications"
 msgstr "Értesítések kedvelésekről"
 
@@ -4875,8 +5102,8 @@ msgstr "Hírfolyam kedvelése"
 msgid "Like this labeler"
 msgstr "Feljegyző kedvelése"
 
-#: src/Navigation.tsx:296
-#: src/Navigation.tsx:301
+#: src/Navigation.tsx:302
+#: src/Navigation.tsx:307
 msgid "Liked by"
 msgstr "Kedvelők"
 
@@ -4911,7 +5138,7 @@ msgstr "Kedvelések"
 msgid "Likes of your reposts"
 msgstr "Megosztott bejegyzések kedvelése"
 
-#: src/Navigation.tsx:476
+#: src/Navigation.tsx:507
 msgid "Likes of your reposts notifications"
 msgstr "Értesítések megosztott bejegyzések kedveléséről"
 
@@ -4924,7 +5151,7 @@ msgstr "A bejegyzést kedvelők"
 msgid "Linear"
 msgstr "Egyszerű"
 
-#: src/Navigation.tsx:251
+#: src/Navigation.tsx:257
 msgid "List"
 msgstr "Lista"
 
@@ -4986,12 +5213,16 @@ msgctxt "toast"
 msgid "List unmuted"
 msgstr "Feloldottad a listán szereplő személyek némítását"
 
-#: src/Navigation.tsx:172
+#: src/screens/Saved/components.tsx:149
+msgid "Liste"
+msgstr ""
+
+#: src/Navigation.tsx:178
 #: src/view/screens/Lists.tsx:65
 #: src/view/screens/Profile.tsx:224
 #: src/view/screens/Profile.tsx:232
-#: src/view/shell/desktop/LeftNav.tsx:745
-#: src/view/shell/Drawer.tsx:545
+#: src/view/shell/desktop/LeftNav.tsx:764
+#: src/view/shell/Drawer.tsx:566
 msgid "Lists"
 msgstr "Listák"
 
@@ -5030,16 +5261,20 @@ msgstr "Új értesítések betöltése"
 
 #: src/screens/Profile/ProfileFeed/index.tsx:224
 #: src/screens/Profile/Sections/Feed.tsx:98
-#: src/view/com/feeds/FeedPage.tsx:162
+#: src/view/com/feeds/FeedPage.tsx:174
 #: src/view/screens/ProfileList.tsx:878
 msgid "Load new posts"
 msgstr "Új bejegyzések betöltése"
+
+#: src/screens/Messages/Settings.tsx:204
+msgid "Loading Tellus Chat ID..."
+msgstr ""
 
 #: src/view/com/composer/text-input/mobile/Autocomplete.tsx:61
 msgid "Loading..."
 msgstr "Betöltés…"
 
-#: src/Navigation.tsx:321
+#: src/Navigation.tsx:327
 msgid "Log"
 msgstr "Napló"
 
@@ -5047,14 +5282,14 @@ msgstr "Napló"
 msgid "Logged-out visibility"
 msgstr "Láthatóság kijelentkezett felhasználók számára"
 
-#: src/view/shell/desktop/RightNav.tsx:134
-msgid "Logo by @sawaratsuki.bsky.social"
-msgstr "A logó szerzője: @sawaratsuki.bsky.social"
+#: src/view/shell/desktop/RightNav.tsx:122
+msgid "Logo by @sawaratsuki.tellus.social"
+msgstr "A logó szerzője: @sawaratsuki.tellus.social"
 
-#: src/view/shell/desktop/RightNav.tsx:131
-#: src/view/shell/Drawer.tsx:709
-msgid "Logo by <0>@sawaratsuki.bsky.social</0>"
-msgstr "A logó szerzője: <0>@sawaratsuki.bsky.social</0>"
+#: src/view/shell/desktop/RightNav.tsx:119
+#: src/view/shell/Drawer.tsx:774
+msgid "Logo by <0>@sawaratsuki.tellus.social</0>"
+msgstr "A logó szerzője: <0>@sawaratsuki.tellus.social</0>"
 
 #: src/components/RichTextTag.tsx:53
 msgid "Long press to open tag menu for #{tag}"
@@ -5088,6 +5323,11 @@ msgstr "Automatikus létrehozás"
 msgid "Make sure this is where you intend to go!"
 msgstr "Ellenőrizd, hogy biztosan ide akarsz-e menni!"
 
+#: src/components/PostControls/BookmarkButton.web.tsx:45
+msgctxt "Accessibility label for the save button when item already saved"
+msgid "Manage saved collections"
+msgstr ""
+
 #: src/screens/Settings/ContentAndMediaSettings.tsx:60
 #: src/screens/Settings/ContentAndMediaSettings.tsx:63
 msgid "Manage saved feeds"
@@ -5117,6 +5357,11 @@ msgstr "Megjelölés olvasottként"
 msgid "Marked all as read"
 msgstr "Összes üzenet megjelölve olvasottként"
 
+#: src/screens/MessagesMatrix.web.tsx:1497
+#: src/screens/MessagesMatrix.web.tsx:1506
+msgid "Masquer"
+msgstr ""
+
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:90
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:97
 msgid "Maybe later"
@@ -5130,7 +5375,11 @@ msgstr "Média"
 msgid "Media that may be disturbing or inappropriate for some audiences."
 msgstr "A nyugalom megzavarására alkalmas vagy felnőtt témákat ábrázoló médiatartalom."
 
-#: src/Navigation.tsx:436
+#: src/screens/MessagesMatrix.web.tsx:1520
+msgid "Membres du groupe"
+msgstr ""
+
+#: src/Navigation.tsx:467
 msgid "Mention notifications"
 msgstr "Megemlítési értesítések"
 
@@ -5153,9 +5402,14 @@ msgstr "Említések"
 msgid "Menu"
 msgstr "Menü"
 
-#: src/components/dms/MessageProfileButton.tsx:97
-msgid "Message {0}"
-msgstr "Üzenetküldés neki: {0}"
+#: src/components/dms/MessageProfileButton.tsx:176
+#: src/components/dms/MessageProfileButton.tsx:204
+msgid "Message (Tellus Chat)"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:116
+msgid "Message {normalizedHandle} sur Tellus Chat"
+msgstr ""
 
 #: src/components/dms/MessageContextMenu.tsx:77
 msgctxt "toast"
@@ -5187,16 +5441,16 @@ msgstr "Az üzenet túl hosszú"
 msgid "Message options"
 msgstr "Üzenetlehetőségek"
 
-#: src/Navigation.tsx:769
-msgid "Messages"
-msgstr "Üzenetek"
+#: src/components/dms/MessageProfileButton.tsx:117
+msgid "Message sur Tellus Chat"
+msgstr ""
 
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:111
 msgctxt "Name of app icon variant"
 msgid "Midnight"
 msgstr "Éjfél"
 
-#: src/Navigation.tsx:500
+#: src/Navigation.tsx:531
 msgid "Miscellaneous notifications"
 msgstr "Egyéb értesítések"
 
@@ -5210,10 +5464,10 @@ msgstr "Félrevezető fiók"
 msgid "Misleading Post"
 msgstr "Félrevezető bejegyzés"
 
-#: src/Navigation.tsx:177
+#: src/Navigation.tsx:183
 #: src/screens/Moderation/index.tsx:100
-#: src/screens/Settings/Settings.tsx:188
-#: src/screens/Settings/Settings.tsx:191
+#: src/screens/Settings/Settings.tsx:190
+#: src/screens/Settings/Settings.tsx:193
 msgid "Moderation"
 msgstr "Moderálás"
 
@@ -5249,7 +5503,7 @@ msgstr "Moderálólista frissítve"
 msgid "Moderation lists"
 msgstr "Moderálólisták"
 
-#: src/Navigation.tsx:182
+#: src/Navigation.tsx:188
 #: src/view/screens/ModerationModlists.tsx:65
 msgid "Moderation Lists"
 msgstr "Moderálólisták"
@@ -5258,7 +5512,7 @@ msgstr "Moderálólisták"
 msgid "moderation settings"
 msgstr "moderálási beállítások"
 
-#: src/Navigation.tsx:311
+#: src/Navigation.tsx:317
 msgid "Moderation states"
 msgstr "Moderálási állapotok"
 
@@ -5271,6 +5525,19 @@ msgstr "Moderálási eszközök"
 msgid "Moderator has chosen to set a general warning on the content."
 msgstr "Ezen a tartalmon általános figyelmeztetés van érvényben, egy moderátor döntése alapján."
 
+#: src/screens/Saved/CollectionDetailPage.tsx:48
+msgid "Modifier"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:43
+#: src/screens/Saved/SavedCollectionsPage.tsx:51
+msgid "Modifier la couverture"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1200
+msgid "Mon groupe"
+msgstr ""
+
 #: src/view/shell/desktop/Feeds.tsx:108
 #: src/view/shell/desktop/Feeds.tsx:118
 msgid "More feeds"
@@ -5281,11 +5548,16 @@ msgstr "További hírfolyamok"
 msgid "More languages..."
 msgstr "További nyelvek…"
 
-#: src/view/com/profile/ProfileMenu.tsx:223
-#: src/view/com/profile/ProfileMenu.tsx:229
+#: src/view/com/profile/ProfileMenu.tsx:261
+#: src/view/com/profile/ProfileMenu.tsx:267
 #: src/view/screens/ProfileList.tsx:750
 msgid "More options"
 msgstr "További lehetőségek"
+
+#: src/screens/MessagesMatrix.web.tsx:992
+#: src/screens/MessagesMatrix.web.tsx:996
+msgid "Mot de passe"
+msgstr ""
 
 #: src/screens/Onboarding/state.ts:113
 msgid "Movies"
@@ -5308,8 +5580,8 @@ msgstr "A(z) {tag} címke elnémítása"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:628
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:634
-#: src/view/com/profile/ProfileMenu.tsx:375
-#: src/view/com/profile/ProfileMenu.tsx:382
+#: src/view/com/profile/ProfileMenu.tsx:430
+#: src/view/com/profile/ProfileMenu.tsx:437
 msgid "Mute account"
 msgstr "Fiók elnémítása"
 
@@ -5372,7 +5644,7 @@ msgstr "Szavak és címkék elnémítása"
 msgid "Muted accounts"
 msgstr "Elnémított fiókok"
 
-#: src/Navigation.tsx:187
+#: src/Navigation.tsx:193
 #: src/view/screens/ModerationMutedAccounts.tsx:118
 msgid "Muted Accounts"
 msgstr "Elnémított fiókok"
@@ -5401,6 +5673,10 @@ msgstr "Születésnap megadása"
 #: src/view/screens/Feeds.tsx:704
 msgid "My Feeds"
 msgstr "Hírfolyamgyűjtemény"
+
+#: src/screens/Messages/Settings.tsx:183
+msgid "My Tellus Chat ID (Matrix ID)"
+msgstr ""
 
 #: src/view/com/modals/CreateOrEditList.tsx:268
 msgid "Name"
@@ -5440,7 +5716,7 @@ msgstr "Ugrás a kezdőcsomaghoz"
 msgid "Navigates to the next screen"
 msgstr "Ugrás a következő képernyőre"
 
-#: src/view/shell/Drawer.tsx:78
+#: src/view/shell/Drawer.tsx:81
 msgid "Navigates to your profile"
 msgstr "Ugrás a profilodra"
 
@@ -5495,7 +5771,7 @@ msgstr "Új e-mail-cím"
 msgid "New Feature"
 msgstr "Új funkció"
 
-#: src/Navigation.tsx:468
+#: src/Navigation.tsx:499
 msgid "New follower notifications"
 msgstr "Értesítések új követőkről"
 
@@ -5539,12 +5815,12 @@ msgstr "Új jelszó"
 msgid "New post"
 msgstr "Új bejegyzés"
 
-#: src/view/com/feeds/FeedPage.tsx:173
+#: src/view/com/feeds/FeedPage.tsx:185
 msgctxt "action"
 msgid "New post"
 msgstr "Új bejegyzés"
 
-#: src/view/shell/desktop/LeftNav.tsx:580
+#: src/view/shell/desktop/LeftNav.tsx:582
 msgctxt "action"
 msgid "New Post"
 msgstr "Új bejegyzés"
@@ -5576,9 +5852,12 @@ msgstr "Felhasználólista létrehozása"
 msgid "Newest replies first"
 msgstr "A legújabb válaszok elöl"
 
+#: src/Navigation.tsx:615
 #: src/screens/Onboarding/index.tsx:36
 #: src/screens/Onboarding/state.ts:116
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:238
+#: src/view/shell/desktop/LeftNav.tsx:746
+#: src/view/shell/Drawer.tsx:614
 msgid "News"
 msgstr "Hírek"
 
@@ -5610,8 +5889,8 @@ msgid "Next image"
 msgstr "Következő kép"
 
 #: src/screens/Onboarding/StepFinished.tsx:356
-msgid "No ads, no invasive tracking, no engagement traps. Bluesky respects your time and attention."
-msgstr "Ilyen egy közösségi oldal hirdetések, magánéletsértő nyomonkövetés és visszarángatás nélkül. A Bluesky tiszteletben tartja az idődet és a figyelmedet."
+msgid "No ads, no invasive tracking, no engagement traps. Tellus respects your time and attention."
+msgstr "Ilyen egy közösségi oldal hirdetések, magánéletsértő nyomonkövetés és visszarángatás nélkül. A Tellus tiszteletben tartja az idődet és a figyelmedet."
 
 #: src/screens/Settings/AppPasswords.tsx:108
 msgid "No app passwords yet"
@@ -5644,7 +5923,7 @@ msgid "No likes yet"
 msgstr "Még nincsenek kedvelések"
 
 #: src/components/ProfileCard.tsx:496
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:114
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:118
 msgid "No longer following {0}"
 msgstr "Abbahagytad {0} követését"
 
@@ -5660,8 +5939,8 @@ msgstr "Vess véget a szeméttel teli hírfolyamok örökös görgetésének! In
 msgid "No notifications yet!"
 msgstr "Még nincsenek értesítéseid."
 
-#: src/screens/Messages/Settings.tsx:106
-#: src/screens/Messages/Settings.tsx:109
+#: src/screens/Messages/Settings.tsx:278
+#: src/screens/Messages/Settings.tsx:281
 #: src/screens/Settings/ActivityPrivacySettings.tsx:129
 #: src/screens/Settings/ActivityPrivacySettings.tsx:134
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:160
@@ -5750,6 +6029,18 @@ msgstr "Ezt a tartalmat még senki sem osztotta meg. Talán Te lehetnél az els�
 msgid "Nobody was found. Try searching for someone else."
 msgstr "Nincs találat. Próbálj rákeresni valaki másra."
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:32
+msgid "Nom"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1196
+msgid "Nom du groupe"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:33
+msgid "Nombre d'éléments"
+msgstr ""
+
 #: src/lib/moderation/useGlobalLabelStrings.ts:42
 msgid "Non-sexual Nudity"
 msgstr "Nemszexuális meztelenség"
@@ -5762,7 +6053,7 @@ msgstr "Nincs"
 msgid "Not followed by anyone you're following"
 msgstr "Nincsenek ismert követők"
 
-#: src/Navigation.tsx:167
+#: src/Navigation.tsx:173
 #: src/view/screens/Profile.tsx:125
 msgid "Not Found"
 msgstr "Ez a tartalom nem található"
@@ -5771,13 +6062,13 @@ msgstr "Ez a tartalom nem található"
 msgid "Not in Mississippi?"
 msgstr "Nem Mississippiben tartódkodsz?"
 
-#: src/view/com/profile/ProfileMenu.tsx:497
+#: src/view/com/profile/ProfileMenu.tsx:561
 msgid "Note about sharing"
 msgstr "Korlátozott láthatóság"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:117
-msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
-msgstr "Megjegyzés: A Bluesky egy nyílt és nyilvános hálózat. Ez a beállítás csak a Bluesky alkalmazásban és -honlapon korlátozza a tartalmaid láthatóságát és nem biztos, hogy más alkalmazások is tiszteletben tartják. Lehetséges, hogy más alkalmazásokban és honlapokon ugyanúgy láthatóak maradnak a tartalmaid kijelentkezett felhasználók számára is."
+msgid "Note: Tellus is an open and public network. This setting only limits the visibility of your content on the Tellus app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
+msgstr "Megjegyzés: A Tellus egy nyílt és nyilvános hálózat. Ez a beállítás csak a Tellus alkalmazásban és -honlapon korlátozza a tartalmaid láthatóságát és nem biztos, hogy más alkalmazások is tiszteletben tartják. Lehetséges, hogy más alkalmazásokban és honlapokon ugyanúgy láthatóak maradnak a tartalmaid kijelentkezett felhasználók számára is."
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:134
 msgid "Note: This post is only visible to logged-in users."
@@ -5791,22 +6082,22 @@ msgstr "Nincs itt semmi"
 msgid "Nothing saved yet"
 msgstr "Még nincsenek mentett bejegyzések"
 
-#: src/Navigation.tsx:422
-#: src/Navigation.tsx:569
+#: src/Navigation.tsx:453
+#: src/Navigation.tsx:605
 #: src/view/screens/Notifications.tsx:136
 msgid "Notification settings"
 msgstr "Értesítési beállítások"
 
-#: src/screens/Messages/Settings.tsx:128
+#: src/screens/Messages/Settings.tsx:300
 msgid "Notification sounds"
 msgstr "Értesítési hangok"
 
-#: src/screens/Messages/Settings.tsx:125
+#: src/screens/Messages/Settings.tsx:297
 msgid "Notification Sounds"
 msgstr "Értesítési hangok"
 
-#: src/Navigation.tsx:564
-#: src/Navigation.tsx:764
+#: src/Navigation.tsx:600
+#: src/Navigation.tsx:822
 #: src/screens/Notifications/ActivityList.tsx:29
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:90
 #: src/screens/Settings/NotificationSettings/index.tsx:92
@@ -5819,18 +6110,37 @@ msgstr "Értesítési hangok"
 #: src/screens/Settings/NotificationSettings/ReplyNotificationSettings.tsx:30
 #: src/screens/Settings/NotificationSettings/RepostNotificationSettings.tsx:30
 #: src/screens/Settings/NotificationSettings/RepostsOnRepostsNotificationSettings.tsx:30
-#: src/screens/Settings/Settings.tsx:196
-#: src/screens/Settings/Settings.tsx:199
+#: src/screens/Settings/Settings.tsx:198
+#: src/screens/Settings/Settings.tsx:201
 #: src/view/screens/Notifications.tsx:130
 #: src/view/shell/bottom-bar/BottomBar.tsx:252
-#: src/view/shell/desktop/LeftNav.tsx:708
-#: src/view/shell/Drawer.tsx:493
+#: src/view/shell/desktop/LeftNav.tsx:709
+#: src/view/shell/Drawer.tsx:514
 msgid "Notifications"
 msgstr "Értesítések"
 
 #: src/screens/Settings/NotificationSettings/MiscellaneousNotificationSettings.tsx:43
 msgid "Notifications for everything else, such as when someone joins via one of your starter packs."
 msgstr "Értesítés egyéb történésekről; pl.: ha valaki az egyik kezdőcsomagoddal regisztrál."
+
+#: src/screens/MessagesMatrix.web.tsx:724
+#: src/screens/MessagesMatrix.web.tsx:732
+#: src/screens/MessagesMatrix.web.tsx:1191
+msgid "Nouveau groupe"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:28
+#: src/screens/Saved/SavedCollectionsPage.tsx:40
+msgid "Nouvelle collection"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:712
+#: src/screens/MessagesMatrix.web.tsx:720
+#: src/screens/MessagesMatrix.web.tsx:1145
+#: src/screens/MessagesMatrix.web.tsx:1283
+#: src/screens/MessagesMatrix.web.tsx:1290
+msgid "Nouvelle discussion"
+msgstr ""
 
 #: src/lib/hooks/useTimeAgo.ts:135
 msgid "now"
@@ -5889,7 +6199,7 @@ msgstr "A legrégebbi válaszok elöl"
 msgid "on<0><1/><2><3/></2></0>"
 msgstr "ekkor:<0><1/><2><3/></2></0>"
 
-#: src/screens/Settings/Settings.tsx:388
+#: src/screens/Settings/Settings.tsx:404
 msgid "Onboarding reset"
 msgstr "Regisztrációs varázslót alaphelyzetbe állítva"
 
@@ -5962,6 +6272,7 @@ msgid "Open conversation options"
 msgstr "Beszélgetési beállítások megnyitása"
 
 #: src/components/Layout/Header/index.tsx:160
+#: src/screens/Messages/components/PageShell.tsx:43
 msgid "Open drawer menu"
 msgstr "Oldalsó menü megnyitása"
 
@@ -5991,7 +6302,7 @@ msgstr "A(z) {niceUrl} hivatkozás megnyitása"
 msgid "Open message options"
 msgstr "Üzenetlehetőségek megnyitása"
 
-#: src/screens/Settings/Settings.tsx:453
+#: src/screens/Settings/Settings.tsx:469
 msgid "Open moderation debug page"
 msgstr "Moderálási hibakeresési oldal megnyitása"
 
@@ -6020,12 +6331,12 @@ msgstr "Továbbítási menü megnyitása"
 msgid "Open starter pack menu"
 msgstr "Kezdőcsomag-menü megnyitása"
 
-#: src/screens/Settings/Settings.tsx:446
-#: src/screens/Settings/Settings.tsx:460
+#: src/screens/Settings/Settings.tsx:462
+#: src/screens/Settings/Settings.tsx:476
 msgid "Open storybook page"
 msgstr "Mesekönyv-oldal megnyitása"
 
-#: src/screens/Settings/Settings.tsx:439
+#: src/screens/Settings/Settings.tsx:455
 msgid "Open system log"
 msgstr "Rendszernapló megnyitása"
 
@@ -6072,19 +6383,19 @@ msgstr "Emojiválasztó megnyitása"
 
 #: src/view/com/auth/SplashScreen.tsx:49
 #: src/view/com/auth/SplashScreen.web.tsx:111
-msgid "Opens flow to create a new Bluesky account"
+msgid "Opens flow to create a new Tellus account"
 msgstr "Regisztrációs varázsló indítása"
 
 #: src/view/com/auth/SplashScreen.tsx:63
 #: src/view/com/auth/SplashScreen.web.tsx:125
-msgid "Opens flow to sign in to your existing Bluesky account"
+msgid "Opens flow to sign in to your existing Tellus account"
 msgstr "Bejelentkezési varázsló megnyitása"
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:36
 msgid "Opens GIF select dialog"
 msgstr "GIF-választó párbeszédablak megnyitása"
 
-#: src/screens/Settings/Settings.tsx:237
+#: src/screens/Settings/Settings.tsx:253
 msgid "Opens helpdesk in browser"
 msgstr "Támogatási hivatkozás megnyitása böngészőben"
 
@@ -6169,8 +6480,8 @@ msgid "Our moderation team has received your report."
 msgstr "Megkaptuk a jelentésedet."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:29
-msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
-msgstr "A fiókod ellen jelentések érkeztek, és miután a moderátoraink felülvizsgálták őket, úgy döntöttek, hogy megfosztanak a csevegési jogosultságoktól a Blueskyon."
+msgid "Our moderators have reviewed reports and decided to disable your access to chats on Tellus."
+msgstr "A fiókod ellen jelentések érkeztek, és miután a moderátoraink felülvizsgálták őket, úgy döntöttek, hogy megfosztanak a csevegési jogosultságoktól a Telluson."
 
 #: src/components/Lists.tsx:191
 #: src/view/screens/NotFound.tsx:47
@@ -6180,6 +6491,16 @@ msgstr "Az oldal nem található"
 #: src/view/screens/NotFound.tsx:44
 msgid "Page Not Found"
 msgstr "Az oldal nem található"
+
+#: src/screens/Messages/Invite.tsx:99
+#: src/screens/Messages/Invite.tsx:105
+msgid "Partager le lien"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:109
+#: src/screens/Messages/Invite.tsx:115
+msgid "Partager un message"
+msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:228
 #: src/screens/Settings/AccountSettings.tsx:121
@@ -6222,11 +6543,11 @@ msgstr "Videó szüneteltetése"
 msgid "People"
 msgstr "Személyek"
 
-#: src/Navigation.tsx:238
+#: src/Navigation.tsx:244
 msgid "People followed by @{0}"
 msgstr "A(z) @{0} által követett személyek"
 
-#: src/Navigation.tsx:231
+#: src/Navigation.tsx:237
 msgid "People following @{0}"
 msgstr "Az őt követő személyek: @{0}"
 
@@ -6348,8 +6669,8 @@ msgid "Please choose your password."
 msgstr "Válassz egy jelszót."
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:290
-msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
-msgstr "Kérjük, kattints a tőlünk kapott e-mailben található hivatkozásra a címed visszaigazolásához. Ez fontos, ha továbbra is használni kívánod a Bluesky összes funkcióját."
+msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Tellus."
+msgstr "Kérjük, kattints a tőlünk kapott e-mailben található hivatkozásra a címed visszaigazolásához. Ez fontos, ha továbbra is használni kívánod a Tellus összes funkcióját."
 
 #: src/screens/Signup/state.ts:302
 msgid "Please complete the verification captcha."
@@ -6470,6 +6791,14 @@ msgstr "E-mail-cím visszaigazolása"
 msgid "Please write your message below:"
 msgstr "Üzenet megadása:"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:38
+msgid "Plus anciens"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:37
+msgid "Plus récents"
+msgstr ""
+
 #: src/screens/Onboarding/index.tsx:50
 #: src/screens/Onboarding/state.ts:119
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:232
@@ -6499,10 +6828,10 @@ msgstr "Összes közzététele"
 msgid "Post blocked"
 msgstr "Letiltott bejegyzés"
 
-#: src/Navigation.tsx:264
-#: src/Navigation.tsx:271
-#: src/Navigation.tsx:278
-#: src/Navigation.tsx:285
+#: src/Navigation.tsx:270
+#: src/Navigation.tsx:277
+#: src/Navigation.tsx:284
+#: src/Navigation.tsx:291
 msgid "Post by @{0}"
 msgstr "@{0} bejegyzése"
 
@@ -6536,7 +6865,7 @@ msgstr "Elrejtetted a bejegyzést"
 msgid "Post interaction settings"
 msgstr "Kapcsolatbalépési beállítások"
 
-#: src/Navigation.tsx:198
+#: src/Navigation.tsx:204
 #: src/screens/ModerationInteractionSettings/index.tsx:34
 msgid "Post Interaction Settings"
 msgstr "Kapcsolatbalépési beállítások"
@@ -6594,6 +6923,10 @@ msgstr "Potenciálisan félrevezető hivatkozás"
 msgid "Potentially misleading link warning"
 msgstr "„Potenciálisan félrevezető hivatkozás” figyelmeztetés"
 
+#: src/screens/Messages/Invite.tsx:123
+msgid "Pourquoi l’inviter ?"
+msgstr ""
+
 #: src/screens/Messages/components/MessageListError.tsx:19
 msgid "Press to attempt reconnection"
 msgstr "Az újracsatlakozáshoz kattints ide."
@@ -6622,18 +6955,18 @@ msgstr "Elsődleges nyelv"
 msgid "Prioritize your Follows"
 msgstr "Követett személyek előnyben részesítése"
 
-#: src/view/shell/desktop/RightNav.tsx:114
-#: src/view/shell/desktop/RightNav.tsx:115
+#: src/view/shell/desktop/RightNav.tsx:102
+#: src/view/shell/desktop/RightNav.tsx:103
 msgid "Privacy"
 msgstr "Adatvédelem"
 
-#: src/screens/Settings/Settings.tsx:182
-#: src/screens/Settings/Settings.tsx:185
+#: src/screens/Settings/Settings.tsx:184
+#: src/screens/Settings/Settings.tsx:187
 msgid "Privacy and security"
 msgstr "Adatvédelem és biztonság"
 
-#: src/Navigation.tsx:407
-#: src/Navigation.tsx:415
+#: src/Navigation.tsx:438
+#: src/Navigation.tsx:446
 #: src/screens/Settings/ActivityPrivacySettings.tsx:40
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:45
 msgid "Privacy and Security"
@@ -6645,12 +6978,12 @@ msgstr "Adatvédelmi- és biztonsági beállítások"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:35
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:102
-#: src/Navigation.tsx:331
+#: src/Navigation.tsx:337
 #: src/screens/Settings/AboutSettings.tsx:92
 #: src/screens/Settings/AboutSettings.tsx:95
 #: src/view/screens/PrivacyPolicy.tsx:31
-#: src/view/shell/Drawer.tsx:704
-#: src/view/shell/Drawer.tsx:705
+#: src/view/shell/Drawer.tsx:769
+#: src/view/shell/Drawer.tsx:770
 msgid "Privacy Policy"
 msgstr "Adatvédelmi irányelvek"
 
@@ -6669,9 +7002,9 @@ msgid "profile"
 msgstr "profil"
 
 #: src/view/shell/bottom-bar/BottomBar.tsx:316
-#: src/view/shell/desktop/LeftNav.tsx:786
-#: src/view/shell/Drawer.tsx:77
-#: src/view/shell/Drawer.tsx:596
+#: src/view/shell/desktop/LeftNav.tsx:825
+#: src/view/shell/Drawer.tsx:80
+#: src/view/shell/Drawer.tsx:661
 msgid "Profile"
 msgstr "Profil"
 
@@ -6740,7 +7073,12 @@ msgstr "A QR-kód letöltése megtörtént"
 msgid "QR code saved to your camera roll!"
 msgstr "A QR-kód fényképalbumba mentése megtörtént"
 
-#: src/Navigation.tsx:444
+#: src/screens/MessagesMatrix.web.tsx:1597
+#: src/screens/MessagesMatrix.web.tsx:1603
+msgid "Quitter le groupe"
+msgstr ""
+
+#: src/Navigation.tsx:475
 msgid "Quote notifications"
 msgstr "Értesítések idézésekről"
 
@@ -6825,18 +7163,18 @@ msgid "Read our blog post"
 msgstr "Blogbejegyzés megtekintése"
 
 #: src/view/com/auth/SplashScreen.web.tsx:173
-msgid "Read the Bluesky blog"
-msgstr "A Bluesky blog megnyitása (angolul)"
+msgid "Read the Tellus blog"
+msgstr "A Tellus blog megnyitása (angolul)"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:88
 #: src/screens/Signup/StepInfo/Policies.tsx:114
-msgid "Read the Bluesky Privacy Policy"
-msgstr "A Bluesky adatvédelmi irányelveinek megtekintése"
+msgid "Read the Tellus Privacy Policy"
+msgstr "A Tellus adatvédelmi irányelveinek megtekintése"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:81
 #: src/screens/Signup/StepInfo/Policies.tsx:101
-msgid "Read the Bluesky Terms of Service"
-msgstr "A Bluesky felhasználói feltételeinek megtekintése"
+msgid "Read the Tellus Terms of Service"
+msgstr "A Tellus felhasználói feltételeinek megtekintése"
 
 #: src/components/WelcomeModal.tsx:146
 msgid "Real conversations."
@@ -6867,9 +7205,21 @@ msgstr "Leküldéses értesítések fogadása"
 msgid "Recent Searches"
 msgstr "Keresési előzmények"
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:31
+msgid "Récentes"
+msgstr ""
+
 #: src/view/com/composer/select-language/PostLanguageSelectDialog.tsx:210
 msgid "Recently used"
 msgstr "Legutóbb használt"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:35
+msgid "Rechercher dans la collection"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:29
+msgid "Rechercher une collection"
+msgstr ""
 
 #: src/screens/Search/modules/ExploreRecommendations.tsx:54
 msgid "Recommended"
@@ -6879,6 +7229,19 @@ msgstr "Javasolt"
 msgid "Reconnect"
 msgstr "Újracsatlakozás"
 
+#: src/screens/MessagesMatrix.web.tsx:1631
+msgid "Récupération des messages..."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:947
+#: src/screens/MessagesMatrix.web.tsx:953
+#: src/screens/MessagesMatrix.web.tsx:1124
+#: src/screens/MessagesMatrix.web.tsx:1130
+#: src/screens/MessagesMatrix.web.tsx:1642
+#: src/screens/MessagesMatrix.web.tsx:1648
+msgid "Réessayer"
+msgstr ""
+
 #. Reject a chat request, this opens a menu with options
 #: src/screens/Messages/components/RequestButtons.tsx:124
 msgid "Reject"
@@ -6887,6 +7250,14 @@ msgstr "Elutasítás"
 #: src/screens/Messages/components/RequestButtons.tsx:112
 msgid "Reject chat request"
 msgstr "Csevegési kérelem elutasítása"
+
+#: src/screens/Messages/Invite.tsx:43
+msgid "Rejoins-moi sur Tellus Chat pour discuter : {inviteUrl}"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:40
+msgid "Rejoins-moi sur Tellus Chat pour discuter avec {displayHandle} : {inviteUrl}"
+msgstr ""
 
 #: src/screens/Messages/ChatList.tsx:285
 #: src/screens/Messages/Inbox.tsx:212
@@ -6901,7 +7272,7 @@ msgstr "Beszélgetések újratöltése"
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:104
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:111
 #: src/screens/Bookmarks/index.tsx:255
-#: src/screens/Settings/Settings.tsx:662
+#: src/screens/Settings/Settings.tsx:678
 #: src/view/com/modals/UserAddRemoveLists.tsx:235
 #: src/view/com/posts/PostFeedErrorMessage.tsx:217
 msgid "Remove"
@@ -6915,8 +7286,8 @@ msgstr "{displayName} eltávolítása a kezdőcsomagból"
 msgid "Remove {historyItem}"
 msgstr "{historyItem} törlése"
 
-#: src/screens/Settings/Settings.tsx:641
-#: src/screens/Settings/Settings.tsx:644
+#: src/screens/Settings/Settings.tsx:657
+#: src/screens/Settings/Settings.tsx:660
 msgid "Remove account"
 msgstr "Fiók eltávolítása"
 
@@ -6955,7 +7326,7 @@ msgstr "Hírfolyam eltávolítása"
 msgid "Remove from my feeds"
 msgstr "Eltávolítás a hírfolyamgyűjteményből"
 
-#: src/screens/Settings/Settings.tsx:654
+#: src/screens/Settings/Settings.tsx:670
 msgid "Remove from quick access?"
 msgstr "Eltávolítás a fióklistáról"
 
@@ -7009,8 +7380,8 @@ msgstr "Személy levétele a listáról"
 
 #: src/components/verification/VerificationRemovePrompt.tsx:46
 #: src/components/verification/VerificationsDialog.tsx:252
-#: src/view/com/profile/ProfileMenu.tsx:348
-#: src/view/com/profile/ProfileMenu.tsx:351
+#: src/view/com/profile/ProfileMenu.tsx:403
+#: src/view/com/profile/ProfileMenu.tsx:406
 msgid "Remove verification"
 msgstr "Hitelesítés eltávolítása"
 
@@ -7053,6 +7424,15 @@ msgstr "Eltávolítva a hírfolyamgyűjteményből"
 #: src/components/verification/VerificationRemovePrompt.tsx:32
 msgid "Removed verification"
 msgstr "Hitelesítés eltávolítva"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:47
+#: src/screens/Saved/SavedCollectionsPage.tsx:50
+msgid "Renommer"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:39
+msgid "Renommer la collection"
+msgstr ""
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:129
 #: src/view/com/posts/FeedShutdownMsg.tsx:133
@@ -7117,7 +7497,7 @@ msgstr "Elrejtve a válaszlánc szerzője által"
 msgid "Reply Hidden by You"
 msgstr "Elrejtve Általad"
 
-#: src/Navigation.tsx:428
+#: src/Navigation.tsx:459
 msgid "Reply notifications"
 msgstr "Értesítések válaszokról"
 
@@ -7148,8 +7528,8 @@ msgstr "Elrejtetted a választ"
 msgid "Report"
 msgstr "Jelentés"
 
-#: src/view/com/profile/ProfileMenu.tsx:415
-#: src/view/com/profile/ProfileMenu.tsx:418
+#: src/view/com/profile/ProfileMenu.tsx:470
+#: src/view/com/profile/ProfileMenu.tsx:473
 msgid "Report account"
 msgstr "Fiók jelentése"
 
@@ -7243,7 +7623,7 @@ msgstr "Megosztás"
 msgid "Repost ({0, plural, one {# repost} other {# reposts}})"
 msgstr "Megosztás ({0, plural, one {# megosztás} other {# megosztás}})"
 
-#: src/Navigation.tsx:460
+#: src/Navigation.tsx:491
 msgid "Repost notifications"
 msgstr "Értesítések megosztásokról"
 
@@ -7287,7 +7667,7 @@ msgstr "A bejegyzés megosztásai"
 msgid "Reposts of your reposts"
 msgstr "Megosztott bejegyzések megosztása"
 
-#: src/Navigation.tsx:484
+#: src/Navigation.tsx:515
 msgid "Reposts of your reposts notifications"
 msgstr "Értesítések megosztott bejegyzések megosztásáról"
 
@@ -7330,8 +7710,8 @@ msgstr "E-mail újraküldése"
 msgid "Resend Verification Email"
 msgstr "Visszaigazoló e-mail újraküldése"
 
-#: src/screens/Settings/Settings.tsx:482
-#: src/screens/Settings/Settings.tsx:484
+#: src/screens/Settings/Settings.tsx:498
+#: src/screens/Settings/Settings.tsx:500
 msgid "Reset activity subscription nudge"
 msgstr "Tevékenységértesítés-feliratkozási jelző alaphelyzetbe állítása"
 
@@ -7339,14 +7719,31 @@ msgstr "Tevékenységértesítés-feliratkozási jelző alaphelyzetbe állítás
 msgid "Reset code"
 msgstr "Helyreállítási kód"
 
-#: src/screens/Settings/Settings.tsx:467
-#: src/screens/Settings/Settings.tsx:469
+#: src/screens/Settings/Settings.tsx:483
+#: src/screens/Settings/Settings.tsx:485
 msgid "Reset onboarding state"
 msgstr "Regisztrációs varázsló állapotának alaphelyzetbe állítása"
 
 #: src/screens/Login/ForgotPasswordForm.tsx:80
 msgid "Reset password"
 msgstr "Jelszó helyreállítása"
+
+#: src/screens/MessagesMatrix.web.tsx:1013
+msgid "Rester connecté"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:55
+msgid "Retirer de la collection"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1458
+#: src/screens/Saved/CollectionDetailPage.tsx:34
+msgid "Retour"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:46
+msgid "Retournez à la bibliothèque pour choisir une autre collection."
+msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:324
 msgid "Retries signing in"
@@ -7413,6 +7810,8 @@ msgstr "Vissza az előző lépéshez"
 #: src/components/live/EditLiveDialog.tsx:216
 #: src/components/live/EditLiveDialog.tsx:223
 #: src/components/StarterPack/QrCodeDialog.tsx:192
+#: src/screens/Messages/Settings.tsx:210
+#: src/screens/Messages/Settings.tsx:217
 #: src/screens/Profile/Header/EditProfileDialog.tsx:238
 #: src/screens/Profile/Header/EditProfileDialog.tsx:252
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:267
@@ -7461,23 +7860,29 @@ msgstr "Felhasználónév mentése"
 msgid "Save QR code"
 msgstr "QR-kód mentése"
 
+#: src/components/PostControls/BookmarkButton.web.tsx:51
+msgctxt "Accessibility label for the save button when item not yet saved"
+msgid "Save to collection"
+msgstr ""
+
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:320
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:326
 msgid "Save to my feeds"
 msgstr "Mentés a hírfolyamgyűjteménybe"
 
-#: src/view/shell/desktop/LeftNav.tsx:764
-#: src/view/shell/Drawer.tsx:571
-msgctxt "link to bookmarks screen"
-msgid "Saved"
-msgstr "Mentett"
+#: src/Navigation.tsx:658
+msgid "Saved collection"
+msgstr ""
+
+#: src/Navigation.tsx:649
+msgid "Saved collections"
+msgstr ""
 
 #: src/view/screens/SavedFeeds.tsx:172
 msgid "Saved Feeds"
 msgstr "Mentett hírfolyamok"
 
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:143
-#: src/Navigation.tsx:608
 #: src/screens/Bookmarks/index.tsx:55
 msgid "Saved Posts"
 msgstr "Mentett bejegyzések"
@@ -7519,6 +7924,20 @@ msgstr "Görgetés jobbra"
 msgid "Scroll to top"
 msgstr "Vissza a tetejére"
 
+#: src/screens/MessagesMatrix.web.tsx:1017
+#: src/screens/MessagesMatrix.web.tsx:1024
+msgid "Se connecter"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:973
+msgid "Se connecter à Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:737
+#: src/screens/MessagesMatrix.web.tsx:743
+msgid "Se déconnecter"
+msgstr ""
+
 #: src/components/dialogs/SearchablePeopleList.tsx:514
 #: src/components/forms/SearchInput.tsx:34
 #: src/components/forms/SearchInput.tsx:36
@@ -7528,7 +7947,7 @@ msgstr "Vissza a tetejére"
 msgid "Search"
 msgstr "Keresés"
 
-#: src/Navigation.tsx:257
+#: src/Navigation.tsx:263
 #: src/screens/Profile/ProfileSearch.tsx:37
 msgid "Search @{0}'s posts"
 msgstr "Keresés @{0} bejegyzései között"
@@ -7592,8 +8011,8 @@ msgstr "Keresés a nyelvek között"
 msgid "Search my posts"
 msgstr "Keresés a saját bejegyzések között"
 
-#: src/view/com/profile/ProfileMenu.tsx:266
-#: src/view/com/profile/ProfileMenu.tsx:269
+#: src/view/com/profile/ProfileMenu.tsx:304
+#: src/view/com/profile/ProfileMenu.tsx:307
 msgid "Search posts"
 msgstr "Keresés a bejegyzések között"
 
@@ -7636,8 +8055,8 @@ msgid "See #{tag} posts by user"
 msgstr "A felhasználó #{tag} címkével ellátott bejegyzéseinek megtekintése"
 
 #: src/view/com/auth/SplashScreen.web.tsx:178
-msgid "See jobs at Bluesky"
-msgstr "Állások a Blueskynál"
+msgid "See jobs at Tellus"
+msgstr "Állások a Tellusnál"
 
 #: src/components/FeedInterstitials.tsx:394
 #: src/components/FeedInterstitials.tsx:445
@@ -7802,6 +8221,10 @@ msgstr "Kívánt értesítési csatornák megadása"
 msgid "Selecting multiple media types is not supported."
 msgstr "Egy bejegyzéshez csak egyféle médiatartalom csatolható."
 
+#: src/screens/MessagesMatrix.web.tsx:1623
+msgid "Sélectionne une conversation"
+msgstr ""
+
 #: src/components/dms/ChatEmptyPill.tsx:38
 msgid "Send a neat website!"
 msgstr "Küldj be egy pompás honlapot!"
@@ -7818,7 +8241,7 @@ msgctxt "action"
 msgid "Send Email"
 msgstr "E-mail küldése"
 
-#: src/view/shell/Drawer.tsx:361
+#: src/view/shell/Drawer.tsx:382
 msgid "Send feedback"
 msgstr "Visszajelzés küldése"
 
@@ -7871,6 +8294,14 @@ msgstr "Visszaigazoló e-mail küldése a fiók törlése szempontjából"
 msgid "Server address"
 msgstr "Kiszolgáló címe"
 
+#: src/screens/MessagesMatrix.web.tsx:1067
+msgid "Serveur"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:322
+msgid "Serveur invalide."
+msgstr ""
+
 #: src/screens/Settings/AppIconSettings/index.tsx:178
 msgid "Set app icon to {0}"
 msgstr "Alkalmazásikon megváltoztatása erre: {0}"
@@ -7891,10 +8322,10 @@ msgstr "Fiók beállítása"
 msgid "Sets email for password reset"
 msgstr "E-mail cím beállítása jelszóvisszaállításhoz"
 
-#: src/Navigation.tsx:213
-#: src/screens/Settings/Settings.tsx:99
-#: src/view/shell/desktop/LeftNav.tsx:804
-#: src/view/shell/Drawer.tsx:609
+#: src/Navigation.tsx:219
+#: src/screens/Settings/Settings.tsx:101
+#: src/view/shell/desktop/LeftNav.tsx:843
+#: src/view/shell/Drawer.tsx:674
 msgid "Settings"
 msgstr "Beállítások"
 
@@ -7976,7 +8407,7 @@ msgstr "Meséld el, hogy mi történt Veled!"
 msgid "Share a fun fact!"
 msgstr "Mondj el egy érdekességet!"
 
-#: src/view/com/profile/ProfileMenu.tsx:502
+#: src/view/com/profile/ProfileMenu.tsx:566
 msgid "Share anyway"
 msgstr "Továbbítás mégis"
 
@@ -8015,15 +8446,15 @@ msgid "Share this starter pack"
 msgstr "Kezdőcsomag továbbítása"
 
 #: src/components/StarterPack/ShareDialog.tsx:80
-msgid "Share this starter pack and help people join your community on Bluesky."
-msgstr "Oszd meg ezt a kezdőcsomagot, hogy mások is csatlakozhassanak a Blueskyos közösségedhez!"
+msgid "Share this starter pack and help people join your community on Tellus."
+msgstr "Oszd meg ezt a kezdőcsomagot, hogy mások is csatlakozhassanak a Tellusos közösségedhez!"
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:117
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:120
 #: src/screens/StarterPack/StarterPackScreen.tsx:611
 #: src/screens/StarterPack/StarterPackScreen.tsx:619
-#: src/view/com/profile/ProfileMenu.tsx:246
-#: src/view/com/profile/ProfileMenu.tsx:259
+#: src/view/com/profile/ProfileMenu.tsx:284
+#: src/view/com/profile/ProfileMenu.tsx:297
 msgid "Share via..."
 msgstr "Továbbítás…"
 
@@ -8031,7 +8462,7 @@ msgstr "Továbbítás…"
 msgid "Share your favorite feed!"
 msgstr "Oszd meg a kedvenc hírfolyamod!"
 
-#: src/Navigation.tsx:316
+#: src/Navigation.tsx:322
 msgid "Shared Preferences Tester"
 msgstr "„Megosztott beállítások” tesztelő"
 
@@ -8137,7 +8568,7 @@ msgstr "Figyelmeztetés és kiszűrés a hírfolyamokból"
 msgid "Shows information about when this post was created"
 msgstr "További információ a bejegyzés dátumáról"
 
-#: src/screens/Settings/Settings.tsx:125
+#: src/screens/Settings/Settings.tsx:127
 msgid "Shows other accounts you can switch to"
 msgstr "További fiókok megjelenítése váltás céljából"
 
@@ -8189,23 +8620,23 @@ msgid "Sign in to account that is not listed"
 msgstr "Bejelentkezés egy másik felhasználói fiókba"
 
 #: src/components/dialogs/Signin.tsx:46
-msgid "Sign in to Bluesky or create a new account"
-msgstr "Jelentkezz be vagy hozz létre egy Bluesky-fiókot."
+msgid "Sign in to Tellus or create a new account"
+msgstr "Jelentkezz be vagy hozz létre egy Tellus-fiókot."
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:461
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:463
 msgid "Sign in to view post"
 msgstr "A megtekintéshez bejelentkezés szükséges"
 
-#: src/screens/Settings/Settings.tsx:254
-#: src/screens/Settings/Settings.tsx:256
-#: src/screens/Settings/Settings.tsx:288
+#: src/screens/Settings/Settings.tsx:270
+#: src/screens/Settings/Settings.tsx:272
+#: src/screens/Settings/Settings.tsx:304
 #: src/screens/SignupQueued.tsx:93
 #: src/screens/SignupQueued.tsx:96
 #: src/screens/Takendown.tsx:85
-#: src/view/shell/desktop/LeftNav.tsx:212
-#: src/view/shell/desktop/LeftNav.tsx:269
-#: src/view/shell/desktop/LeftNav.tsx:272
+#: src/view/shell/desktop/LeftNav.tsx:214
+#: src/view/shell/desktop/LeftNav.tsx:271
+#: src/view/shell/desktop/LeftNav.tsx:274
 msgid "Sign out"
 msgstr "Kijelentkezés"
 
@@ -8213,8 +8644,8 @@ msgstr "Kijelentkezés"
 msgid "Sign Out"
 msgstr "Kijelentkezés"
 
-#: src/screens/Settings/Settings.tsx:285
-#: src/view/shell/desktop/LeftNav.tsx:209
+#: src/screens/Settings/Settings.tsx:301
+#: src/view/shell/desktop/LeftNav.tsx:211
 msgid "Sign out?"
 msgstr "Kijelentkezés"
 
@@ -8325,7 +8756,7 @@ msgid "Something wrong? Let us know."
 msgstr "Valami nem stimmel? Vedd fel velünk a kapcsolatot!"
 
 #: src/App.native.tsx:126
-#: src/App.web.tsx:102
+#: src/App.web.tsx:106
 msgid "Sorry! Your session expired. Please sign in again."
 msgstr "Sajnáljuk, de lejárt a munkameneted. Jelentkezz be újra."
 
@@ -8345,6 +8776,10 @@ msgstr "Egy bejegyzés alatti válaszok rendezése:"
 #: src/components/moderation/ModerationDetailsDialog.tsx:186
 msgid "Source: <0>{sourceName}</0>"
 msgstr "Forrás: <0>{sourceName}</0>"
+
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:252
+msgid "Soutenir"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:72
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:85
@@ -8386,8 +8821,8 @@ msgstr "Vegyél fel személyeket!"
 msgid "Start chat with {displayName}"
 msgstr "Csevegés indítása vele: {displayName}"
 
-#: src/Navigation.tsx:579
-#: src/Navigation.tsx:584
+#: src/Navigation.tsx:620
+#: src/Navigation.tsx:625
 #: src/screens/StarterPack/Wizard/index.tsx:209
 msgid "Starter Pack"
 msgstr "Kezdőcsomag"
@@ -8427,12 +8862,12 @@ msgstr "Állapot"
 msgid "Step {0} of {1}"
 msgstr "{1}/{0}. lépés"
 
-#: src/screens/Settings/Settings.tsx:393
+#: src/screens/Settings/Settings.tsx:409
 msgid "Storage cleared, you need to restart the app now."
 msgstr "Adatok törölve. Indítsd újra az alkalmazást."
 
-#: src/Navigation.tsx:306
-#: src/screens/Settings/Settings.tsx:448
+#: src/Navigation.tsx:312
+#: src/screens/Settings/Settings.tsx:464
 msgid "Storybook"
 msgstr "Mesekönyv"
 
@@ -8521,16 +8956,26 @@ msgctxt "Name of app icon variant"
 msgid "Sunset"
 msgstr "Szürkület"
 
-#: src/Navigation.tsx:326
+#: src/Navigation.tsx:332
 #: src/view/screens/Support.tsx:31
 #: src/view/screens/Support.tsx:34
 msgid "Support"
 msgstr "Támogatás"
 
-#: src/screens/Settings/Settings.tsx:123
-#: src/screens/Settings/Settings.tsx:137
-#: src/screens/Settings/Settings.tsx:604
-#: src/view/shell/desktop/LeftNav.tsx:247
+#: src/screens/Saved/CollectionDetailPage.tsx:49
+#: src/screens/Saved/SavedCollectionsPage.tsx:48
+msgid "Supprimer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:50
+#: src/screens/Saved/SavedCollectionsPage.tsx:41
+msgid "Supprimer la collection"
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:125
+#: src/screens/Settings/Settings.tsx:139
+#: src/screens/Settings/Settings.tsx:620
+#: src/view/shell/desktop/LeftNav.tsx:249
 msgid "Switch account"
 msgstr "Fiókváltás"
 
@@ -8539,13 +8984,17 @@ msgstr "Fiókváltás"
 msgid "Switch Account"
 msgstr "Fiókváltás"
 
-#: src/view/shell/desktop/LeftNav.tsx:110
+#: src/view/shell/desktop/LeftNav.tsx:112
 msgid "Switch accounts"
 msgstr "Fiókváltás"
 
-#: src/view/shell/desktop/LeftNav.tsx:346
+#: src/view/shell/desktop/LeftNav.tsx:348
 msgid "Switch to {0}"
 msgstr "Váltás rá: {0}"
+
+#: src/screens/MessagesMatrix.web.tsx:1108
+msgid "Synchronisation des conversations..."
+msgstr ""
 
 #: src/components/dialogs/Embed.tsx:157
 #: src/components/dialogs/Embed.tsx:159
@@ -8557,7 +9006,7 @@ msgstr "Rendszer"
 #: src/screens/Log.tsx:58
 #: src/screens/Settings/AboutSettings.tsx:107
 #: src/screens/Settings/AboutSettings.tsx:110
-#: src/screens/Settings/Settings.tsx:441
+#: src/screens/Settings/Settings.tsx:457
 msgid "System log"
 msgstr "Rendszernapló"
 
@@ -8566,8 +9015,8 @@ msgid "Tags only"
 msgstr "Csak címkék"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:116
-msgid "Tap below to allow Bluesky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
-msgstr "Koppints az alábbi gombra, hogy hozzáférést biztosíts a Blueskynak a tartózkodási helyedhez. Ezzel az információval automatikusan és pontosan meghatározhatjuk a régiódban megjeleníthető tartalmakat és beállításokat."
+msgid "Tap below to allow Tellus to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
+msgstr "Koppints az alábbi gombra, hogy hozzáférést biztosíts a Tellusnak a tartózkodási helyedhez. Ezzel az információval automatikusan és pontosan meghatározhatjuk a régiódban megjeleníthető tartalmakat és beállításokat."
 
 #: src/view/com/feeds/MissingFeed.tsx:89
 msgid "Tap for information"
@@ -8578,8 +9027,8 @@ msgid "Tap for more information"
 msgstr "További információ"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:164
-msgid "Tap to acknowledge that you understand and agree to these updates and continue using Bluesky"
-msgstr "A Blueskyt érintő változtatások megértésének jelzéséhez és elfogadásához koppints ide"
+msgid "Tap to acknowledge that you understand and agree to these updates and continue using Tellus"
+msgstr "A Tellust érintő változtatások megértésének jelzéséhez és elfogadásához koppints ide"
 
 #: src/components/ContextMenu/Backdrop.ios.tsx:54
 #: src/components/ContextMenu/Backdrop.ios.tsx:80
@@ -8622,20 +9071,136 @@ msgstr "Mesélj magadról!"
 msgid "Tell us a little more"
 msgstr "További részletek"
 
-#: src/view/shell/desktop/RightNav.tsx:120
-#: src/view/shell/desktop/RightNav.tsx:121
+#: src/view/com/auth/server-input/index.tsx:136
+#: src/view/com/auth/server-input/index.tsx:137
+msgid "Tellus"
+msgstr "Tellus"
+
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:690
+msgid "Tellus cannot confirm the authenticity of the claimed date."
+msgstr "A Tellus nem tudja megerősíteni a létrehozás dátumát."
+
+#: src/Navigation.tsx:580
+#: src/Navigation.tsx:827
+#: src/screens/Messages/ChatList.tsx:76
+#: src/screens/Messages/ChatList.tsx:394
+#: src/screens/Messages/ChatList.tsx:418
+#: src/screens/Messages/Settings.tsx:173
+#: src/screens/MessagesMatrix.web.tsx:935
+#: src/screens/Settings/Settings.tsx:206
+#: src/screens/Settings/Settings.tsx:209
+#: src/view/shell/bottom-bar/BottomBar.tsx:221
+#: src/view/shell/desktop/LeftNav.tsx:609
+#: src/view/shell/Drawer.tsx:487
+msgid "Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1052
+msgid "Tellus Chat est basé sur Matrix."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:146
+msgid "Tellus Chat ID removed."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:125
+msgid "Tellus Chat ID saved."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:941
+#: src/screens/MessagesMatrix.web.tsx:1118
+msgid "Tellus Chat indisponible"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:620
+msgid "Tellus Chat indisponible."
+msgstr ""
+
+#: src/Navigation.tsx:590
+#: src/screens/Messages/components/InboxPreview.tsx:22
+#: src/screens/Messages/components/InboxPreview.tsx:62
+#: src/screens/Messages/Inbox.tsx:56
+#: src/screens/Messages/Inbox.tsx:98
+msgid "Tellus Chat requests"
+msgstr ""
+
+#: src/components/dms/ConvoMenu.tsx:76
+#: src/Navigation.tsx:585
+#: src/screens/Messages/ChatList.tsx:81
+#: src/screens/Messages/ChatList.tsx:85
+#: src/screens/Messages/ChatList.tsx:378
+#: src/screens/Messages/Settings.tsx:164
+msgid "Tellus Chat settings"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:126
+msgid "Tellus Chat te permet de continuer les discussions initiées sur le réseau social, en privé, avec la même simplicité."
+msgstr ""
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:175
+msgctxt "Name of app icon variant"
+msgid "Tellus Classic™"
+msgstr "Klasszikus Tellus"
+
+#: src/view/com/auth/server-input/index.tsx:212
+msgid "Tellus is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+msgstr "A Tellus egy nyílt hálózat, ahol saját szolgáltatót választhatsz. Ha fejlesztő vagy, saját kiszolgálót is üzemeltethetsz."
+
+#: src/view/com/auth/server-input/index.tsx:149
+msgid "Tellus is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Tellus Social option."
+msgstr "A Tellus egy nyílt hálózat, ahol saját szolgáltatót választhatsz. Ha kezdő felhasználó vagy, akkor az alapértelmezett Tellus Social lehetőséget javasoljuk."
+
+#: src/components/ProgressGuide/List.tsx:53
+#: src/components/ProgressGuide/List.tsx:70
+msgid "Tellus is better with friends!"
+msgstr "A Tellus ismerősökkel még jobb!"
+
+#: src/screens/Takendown.tsx:217
+msgid "Tellus Social Terms of Service"
+msgstr "A Tellus felhasználási feltételei"
+
+#: src/components/StarterPack/ProfileStarterPacks.tsx:310
+msgid "Tellus will choose a set of recommended accounts from people in your network."
+msgstr "A Tellus egy javasolt felhasználócsoportot fog kijelölni a hálózatodon."
+
+#: src/screens/Settings/components/PwiOptOut.tsx:99
+msgid "Tellus will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+msgstr "A Tellus nem fogja megjeleníteni a profilodat és a bejegyzéseidet a kijelentkezett felhasználók számára. Lehetséges, hogy ezt a kérést nem minden alkalmazás fogja tiszteletben tartani. Ez a beállítás nem teszi priváttá a profilodat."
+
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
+msgid "Tellus will proactively verify notable and authentic accounts."
+msgstr "A Tellus mostantól hitelesíti a jelentős és megbízható fiókokat."
+
+#: src/screens/Signup/StepInfo/Policies.tsx:26
+msgid "Tellus's Community Guidelines"
+msgstr "A Tellus közösségi irányelvei"
+
+#: src/screens/Signup/StepInfo/Policies.tsx:32
+msgid "Tellus's Updated Community Guidelines"
+msgstr "A Tellus frissített közösségi irányelvei"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:99
+msgid "Tellus+"
+msgstr "Tellus+"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:102
+msgid "Tellus+ icons"
+msgstr "Tellus+-ikonok"
+
+#: src/view/shell/desktop/RightNav.tsx:108
+#: src/view/shell/desktop/RightNav.tsx:109
 msgid "Terms"
 msgstr "Feltételek"
 
 #: src/components/dialogs/BirthDateSettings.tsx:135
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:30
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:97
-#: src/Navigation.tsx:336
+#: src/Navigation.tsx:342
 #: src/screens/Settings/AboutSettings.tsx:84
 #: src/screens/Settings/AboutSettings.tsx:87
 #: src/view/screens/TermsOfService.tsx:31
-#: src/view/shell/Drawer.tsx:697
-#: src/view/shell/Drawer.tsx:699
+#: src/view/shell/Drawer.tsx:762
+#: src/view/shell/Drawer.tsx:764
 msgid "Terms of Service"
 msgstr "Felhasználási feltételek"
 
@@ -8705,8 +9270,8 @@ msgstr "Ez van, srácok!"
 msgid "That's everything!"
 msgstr "Ez minden!"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:324
-#: src/view/com/profile/ProfileMenu.tsx:478
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:382
+#: src/view/com/profile/ProfileMenu.tsx:542
 msgid "The account will be able to interact with you after unblocking."
 msgstr "A fiók ismét képes lesz kapcsolatba lépni veled, ha feloldod a letiltását."
 
@@ -8722,11 +9287,7 @@ msgstr "A válaszlánc szerzője elrejtette ezt a választ."
 
 #: src/components/dialogs/BirthDateSettings.tsx:122
 msgid "The birthdate you've entered means you are under 18 years old. Certain content and features may be unavailable to you."
-msgstr "A megadott születési dátum szerint még nem vagy felnőttkorú. Ez azt jelenti, hogy a Bluesky bizonyos tartalmai és funkciói nem lesznek elérhetőek Számodra."
-
-#: src/screens/Moderation/index.tsx:426
-msgid "The Bluesky web application"
-msgstr "A Bluesky webalkalmazás"
+msgstr "A megadott születési dátum szerint még nem vagy felnőttkorú. Ez azt jelenti, hogy a Tellus bizonyos tartalmai és funkciói nem lesznek elérhetőek Számodra."
 
 #: src/view/screens/CommunityGuidelines.tsx:38
 msgid "The Community Guidelines have been moved to <0/>"
@@ -8745,8 +9306,8 @@ msgid "The Discover feed now knows what you like"
 msgstr "A Felfedezés hírfolyam olyan tartalmakat jelenít meg, amelyek tetszhetnek Neked"
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:324
-msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
-msgstr "Az alkalmazás jobb. Töltsd le a Blueskyt és onnan folytatjuk, ahol abbahagytad!"
+msgid "The experience is better in the app. Download Tellus now and we'll pick back up where you left off."
+msgstr "Az alkalmazás jobb. Töltsd le a Tellust és onnan folytatjuk, ahol abbahagytad!"
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:67
 msgid "The feed has been replaced with Discover."
@@ -8765,8 +9326,8 @@ msgid "The following settings will be used as your defaults when creating new po
 msgstr "Új bejegyzéseknél az alábbi beállítások lesznek az alapértelmezettek. Ezeket az egyes bejegyzések írása közben felülírhatod."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:11
-msgid "The laws in your location require you to verify you're an adult before accessing certain features on Bluesky, like adult content and direct messaging."
-msgstr "A tartózkodási helyeden érvényes törvények szerint igazolnod kell a felnőttlétedet, mielőtt hozzáférhetnél a Bluesky bizonyos funkcióihoz, mint a felnőtt tartalmak és a személyes üzenetek."
+msgid "The laws in your location require you to verify you're an adult before accessing certain features on Tellus, like adult content and direct messaging."
+msgstr "A tartózkodási helyeden érvényes törvények szerint igazolnod kell a felnőttlétedet, mielőtt hozzáférhetnél a Tellus bizonyos funkcióihoz, mint a felnőtt tartalmak és a személyes üzenetek."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:14
 msgid "The laws in your location require you to verify you're an adult to access certain features. Tap to learn more."
@@ -8801,6 +9362,10 @@ msgstr "A helyi menühöz kapcsolódó személy"
 #: src/view/screens/Support.tsx:37
 msgid "The support form has been moved. If you need help, please <0/> or visit {HELP_DESK_URL} to get in touch with us."
 msgstr "A támogatási űrlap elköltözött. Kérjük, <0/> vagy látogasd meg a(z) {HELP_DESK_URL} honlapot a kapcsolatbalépéshez."
+
+#: src/screens/Moderation/index.tsx:426
+msgid "The Tellus web application"
+msgstr "A Tellus webalkalmazás"
 
 #: src/view/screens/TermsOfService.tsx:35
 msgid "The Terms of Service have been moved to"
@@ -8880,15 +9445,15 @@ msgstr "A hírfolyamok frissítése meghiúsult. Ellenőrizd az internetkapcsola
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:388
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:90
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:101
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:101
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:123
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:136
-#: src/view/com/profile/ProfileMenu.tsx:131
-#: src/view/com/profile/ProfileMenu.tsx:141
-#: src/view/com/profile/ProfileMenu.tsx:155
-#: src/view/com/profile/ProfileMenu.tsx:165
-#: src/view/com/profile/ProfileMenu.tsx:178
-#: src/view/com/profile/ProfileMenu.tsx:190
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:105
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:127
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:140
+#: src/view/com/profile/ProfileMenu.tsx:139
+#: src/view/com/profile/ProfileMenu.tsx:149
+#: src/view/com/profile/ProfileMenu.tsx:163
+#: src/view/com/profile/ProfileMenu.tsx:173
+#: src/view/com/profile/ProfileMenu.tsx:186
+#: src/view/com/profile/ProfileMenu.tsx:198
 msgid "There was an issue! {0}"
 msgstr "Hiba történt! {0}"
 
@@ -8910,8 +9475,8 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr "Váratlan alkalmazáshiba történt. Kérjük jelentsd!"
 
 #: src/screens/SignupQueued.tsx:130
-msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
-msgstr "Jelenleg rengeteg új felhasználó csatlakozik a Blueskyhoz. A fiókodat aktiválni fogjuk, amint tudjuk!"
+msgid "There's been a rush of new users to Tellus! We'll activate your account as soon as we can."
+msgstr "Jelenleg rengeteg új felhasználó csatlakozik a Tellushoz. A fiókodat aktiválni fogjuk, amint tudjuk!"
 
 #: src/screens/Settings/FollowingFeedPreferences.tsx:65
 msgid "These settings only apply to the Following feed."
@@ -8946,8 +9511,8 @@ msgid "This appeal will be sent to <0>{sourceName}</0>."
 msgstr "A fellebbezés címzettje: <0>{sourceName}</0>."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:111
-msgid "This appeal will be sent to Bluesky's moderation service."
-msgstr "Ez a fellebbezés a Bluesky moderálási szolgáltatásához lesz elküldve."
+msgid "This appeal will be sent to Tellus's moderation service."
+msgstr "Ez a fellebbezés a Tellus moderálási szolgáltatásához lesz elküldve."
 
 #: src/screens/Messages/components/MessageListError.tsx:18
 msgid "This chat was disconnected"
@@ -8975,7 +9540,7 @@ msgid "This content is not available because one of the users involved has block
 msgstr "Ez a tartalom jelenleg nem elérhető, mert az egyik kapcsolódó felhasználó letiltotta a másikat."
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:118
-msgid "This content is not viewable without a Bluesky account."
+msgid "This content is not viewable without a Tellus account."
 msgstr "Ezt a tartalmat bejelentkezés nélkül nem tekintheted meg."
 
 #: src/screens/Messages/components/ChatListItem.tsx:362
@@ -9050,12 +9615,12 @@ msgid "This link is taking you to the following website:"
 msgstr "Ez a hivatkozás az alábbi honlapra mutat:"
 
 #: src/screens/List/ListHiddenScreen.tsx:151
-msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Ennek a(z) <0>{0}</0> által létrehozott listának a címe vagy leírása lehetséges, hogy megsérti a Bluesky közösségi irányelveit."
+msgid "This list – created by <0>{0}</0> – contains possible violations of Tellus's community guidelines in its name or description."
+msgstr "Ennek a(z) <0>{0}</0> által létrehozott listának a címe vagy leírása lehetséges, hogy megsérti a Tellus közösségi irányelveit."
 
 #: src/screens/List/ListHiddenScreen.tsx:146
-msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Ennek az Általad létrehozott listának a címe vagy leírása lehetséges, hogy megsérti a Bluesky közösségi irányelveit."
+msgid "This list – created by you – contains possible violations of Tellus's community guidelines in its name or description."
+msgstr "Ennek az Általad létrehozott listának a címe vagy leírása lehetséges, hogy megsérti a Tellus közösségi irányelveit."
 
 #: src/view/screens/ProfileList.tsx:962
 msgid "This list is empty."
@@ -9066,8 +9631,8 @@ msgid "This moderation service is unavailable. See below for more details. If th
 msgstr "Ez a moderálási szolgáltatás jelenleg nem elérhető. A részleteket alább olvashatod. Ha a probléma fennáll, lépj velünk kapcsolatba."
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:676
-msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
-msgstr "A bejegyzés adatai szerint az eredeti létrehozási dátuma <0>{0}</0> volt, de először ekkor jelent meg a Blueskyon: <1>{1}</1>"
+msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Tellus on <1>{1}</1>."
+msgstr "A bejegyzés adatai szerint az eredeti létrehozási dátuma <0>{0}</0> volt, de először ekkor jelent meg a Telluson: <1>{1}</1>"
 
 #: src/components/WhoCanReply.tsx:240
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
@@ -9089,7 +9654,7 @@ msgstr "Ez a bejegyzés el lesz rejtve a hírfolyamokból és a válaszláncokb�
 msgid "This post's author has disabled quote posts."
 msgstr "A szerző letiltotta az idézést."
 
-#: src/view/com/profile/ProfileMenu.tsx:499
+#: src/view/com/profile/ProfileMenu.tsx:563
 msgid "This profile is only visible to logged-in users. It won't be visible to people who aren't signed in."
 msgstr "Ez a profil csak a bejelentkezett felhasználók számára látható; a kijelentkezett felhasználók számára nem."
 
@@ -9150,7 +9715,7 @@ msgstr "Ez a felhasználó még senkit sem követ."
 msgid "This will delete \"{0}\" from your muted words. You can always add it back later."
 msgstr "Ezzel a(z) „{0}” kifejezés el lesz távolítva az elnémított szavak listájáról. Később bármikor újra felveheted."
 
-#: src/screens/Settings/Settings.tsx:656
+#: src/screens/Settings/Settings.tsx:672
 msgid "This will remove @{0} from the quick access list."
 msgstr "Ezzel @{0} el lesz távolítva a fióklistáról."
 
@@ -9177,13 +9742,17 @@ msgstr "Válaszláncok"
 msgid "Threaded"
 msgstr "Egymásba ágyazott"
 
-#: src/Navigation.tsx:369
+#: src/Navigation.tsx:400
 msgid "Threads Preferences"
 msgstr "Válaszlánc-beállítások"
 
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/TimeIndicator.tsx:34
 msgid "Time remaining: {0, plural, one {# second} other {# seconds}}"
 msgstr "Hátralévő idő: {0, plural, one {# másodperc} other {# másodperc}}"
+
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:250
+msgid "Tip this profile"
+msgstr ""
 
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:99
 msgid "To disable the email 2FA method, please verify your access to the email address."
@@ -9227,7 +9796,7 @@ msgstr "Felkapott"
 msgid "Top replies first"
 msgstr "A legjobbra értékelt válaszok elöl"
 
-#: src/Navigation.tsx:544
+#: src/Navigation.tsx:575
 msgid "Topic"
 msgstr "Témakör"
 
@@ -9253,6 +9822,11 @@ msgstr "Felkapott"
 msgid "Trending Videos"
 msgstr "Felkapott videók"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:36
+#: src/screens/Saved/SavedCollectionsPage.tsx:30
+msgid "Trier"
+msgstr ""
+
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:138
 msgid "Trust emerges from relationships, communities, and shared context, so we’re also enabling <0>trusted verifiers</0>: organizations that can directly issue verification."
 msgstr "A bizalom kapcsolatok, közösségek és egy megosztott környezet útján alakul ki, ezért bevezetjük a <0>megbízható hitelesítők</0> rendszerét is – ezek olyan egyesületek, amelyek közvetlenül is képesek hitelesíteni másokat."
@@ -9270,6 +9844,10 @@ msgstr "Televízió"
 msgid "Two-factor authentication (2FA)"
 msgstr "Kétlépcsős azonosítás (2FA)"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:40
+msgid "Type"
+msgstr ""
+
 #: src/screens/Messages/components/MessageInput.tsx:153
 msgid "Type your message here"
 msgstr "Üzenet megadása"
@@ -9279,8 +9857,8 @@ msgid "Type:"
 msgstr "Típus:"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:92
-msgid "Unable to access location. You'll need to visit your system settings to enable location services for Bluesky."
-msgstr "Nincs hozzáférésünk a tartózkodási helyedhez. Engedélyezned kell a Bluesky helyelérését a rendszerbeállításokban."
+msgid "Unable to access location. You'll need to visit your system settings to enable location services for Tellus."
+msgstr "Nincs hozzáférésünk a tartózkodási helyedhez. Engedélyezned kell a Tellus helyelérését a rendszerbeállításokban."
 
 #: src/lib/hooks/useCleanError.ts:27
 #: src/lib/strings/errors.ts:11
@@ -9304,11 +9882,23 @@ msgstr "A szolgáltatással való kapcsolatfelvétel meghiúsult. Ellenőrizd az
 msgid "Unable to delete"
 msgstr "A törlés meghiúsult"
 
-#: src/screens/Settings/Settings.tsx:507
+#: src/screens/Messages/Settings.tsx:151
+msgid "Unable to delete Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:95
+msgid "Unable to load Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:130
+msgid "Unable to save Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:523
 msgid "Unapply Pull Request"
 msgstr "Lekéréses kérelem alkalmazásának visszavonása"
 
-#: src/screens/Settings/Settings.tsx:509
+#: src/screens/Settings/Settings.tsx:525
 msgid "Unapply Pull Request {currentChannel}"
 msgstr "Lekéréses kérelem alkalmazásának visszavonása ({currentChannel})"
 
@@ -9324,27 +9914,27 @@ msgstr "Nincs elérhető hírfolyam-információ"
 #: src/components/dms/MessagesListBlockedFooter.tsx:104
 #: src/components/dms/MessagesListBlockedFooter.tsx:112
 #: src/components/dms/MessagesListBlockedFooter.tsx:119
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:208
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:328
-#: src/view/com/profile/ProfileMenu.tsx:490
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:223
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:386
+#: src/view/com/profile/ProfileMenu.tsx:554
 #: src/view/screens/ProfileList.tsx:723
 msgid "Unblock"
 msgstr "Tiltás feloldása"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:213
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:228
 msgctxt "action"
 msgid "Unblock"
 msgstr "Tiltás feloldása"
 
 #: src/components/dms/ConvoMenu.tsx:247
 #: src/components/dms/ConvoMenu.tsx:250
-#: src/view/com/profile/ProfileMenu.tsx:395
-#: src/view/com/profile/ProfileMenu.tsx:401
+#: src/view/com/profile/ProfileMenu.tsx:450
+#: src/view/com/profile/ProfileMenu.tsx:456
 msgid "Unblock account"
 msgstr "Fiók tiltásának feloldása"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:322
-#: src/view/com/profile/ProfileMenu.tsx:472
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:380
+#: src/view/com/profile/ProfileMenu.tsx:536
 msgid "Unblock Account?"
 msgstr "Fiók tiltásának feloldása"
 
@@ -9372,12 +9962,12 @@ msgctxt "action"
 msgid "Unfollow"
 msgstr "Követés megszüntetése"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:236
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:266
 msgid "Unfollow {0}"
 msgstr "{0} követésének megszüntetése"
 
-#: src/view/com/profile/ProfileMenu.tsx:286
-#: src/view/com/profile/ProfileMenu.tsx:296
+#: src/view/com/profile/ProfileMenu.tsx:341
+#: src/view/com/profile/ProfileMenu.tsx:351
 msgid "Unfollow account"
 msgstr "Fiók követésének megszüntetése"
 
@@ -9385,13 +9975,13 @@ msgstr "Fiók követésének megszüntetése"
 msgid "Unfollows the user"
 msgstr "Követés megszüntetése"
 
-#: src/components/BlockedGeoOverlay.tsx:48
-msgid "Unfortunately, Bluesky is unavailable in Mississippi right now."
-msgstr "A Bluesky sajnos jelenleg nem elérhető Mississippiben."
-
 #: src/components/moderation/ReportDialog/index.tsx:372
 msgid "Unfortunately, none of your subscribed labelers supports this report type."
 msgstr "A feljegyzőid közül egyik sem támogatja ezt a jelentési típust."
+
+#: src/components/BlockedGeoOverlay.tsx:48
+msgid "Unfortunately, Tellus is unavailable in Mississippi right now."
+msgstr "A Tellus sajnos jelenleg nem elérhető Mississippiben."
 
 #: src/components/verification/VerificationsDialog.tsx:211
 msgid "Unknown verifier"
@@ -9423,8 +10013,8 @@ msgstr "A(z) {tag} némításának feloldása"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:627
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:633
-#: src/view/com/profile/ProfileMenu.tsx:374
-#: src/view/com/profile/ProfileMenu.tsx:380
+#: src/view/com/profile/ProfileMenu.tsx:429
+#: src/view/com/profile/ProfileMenu.tsx:435
 msgid "Unmute account"
 msgstr "Fiók némításának feloldása"
 
@@ -9480,8 +10070,8 @@ msgstr "A(z) {0} hírfolyam kitűzése feloldva"
 msgid "Unpinned from your feeds"
 msgstr "Feloldottad a hírfolyam kitűzését"
 
-#: src/screens/Settings/Settings.tsx:474
-#: src/screens/Settings/Settings.tsx:476
+#: src/screens/Settings/Settings.tsx:490
+#: src/screens/Settings/Settings.tsx:492
 msgid "Unsnooze email reminder"
 msgstr "E-mail-cím-emlékeztető elhalasztásának visszavonása"
 
@@ -9592,9 +10182,13 @@ msgstr "Hivatkozás indexképének feltöltése folyamatban…"
 msgid "Uploading video..."
 msgstr "Videó feltöltése folyamatban…"
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:49
+msgid "URL de la couverture"
+msgstr ""
+
 #: src/screens/Settings/AppPasswords.tsx:67
-msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
-msgstr "Egy alkalmazásjelszó használatával bármely egyéb Bluesky-kliensbe bejelentkezhetsz, anélkül hogy teljes hozzáférést biztosítanál a fiókodhoz vagy a valódi jelszavadhoz."
+msgid "Use app passwords to sign in to other Tellus clients without giving full access to your account or password."
+msgstr "Egy alkalmazásjelszó használatával bármely egyéb Tellus-kliensbe bejelentkezhetsz, anélkül hogy teljes hozzáférést biztosítanál a fiókodhoz vagy a valódi jelszavadhoz."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:568
 msgid "Use default provider"
@@ -9624,8 +10218,8 @@ msgid "Use this to sign in to the other app along with your handle."
 msgstr "A másik alkalmazásba a felhasználóneveddel és ezzel jelentkezhetsz be."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:279
-msgid "Use your account email address, or another real email address you control, in case KWS or Bluesky needs to contact you."
-msgstr "Add meg a fiókod e-mail-címét vagy egy másik, tulajdonodat képző e-mail-címet, arra az esetre, ha a jövőben a KWS-nek vagy a Blueskynak fel kell vennie Veled a kapcsolatot."
+msgid "Use your account email address, or another real email address you control, in case KWS or Tellus needs to contact you."
+msgstr "Add meg a fiókod e-mail-címét vagy egy másik, tulajdonodat képző e-mail-címet, arra az esetre, ha a jövőben a KWS-nek vagy a Tellusnak fel kell vennie Veled a kapcsolatot."
 
 #: src/view/com/modals/InviteCodes.tsx:201
 msgid "Used by:"
@@ -9703,8 +10297,8 @@ msgstr "a(z) <0>@{0}</0> által követett felhasználók"
 msgid "users following <0>@{0}</0>"
 msgstr "a(z) <0>@{0}</0> személyt követett felhasználók"
 
-#: src/screens/Messages/Settings.tsx:97
-#: src/screens/Messages/Settings.tsx:100
+#: src/screens/Messages/Settings.tsx:269
+#: src/screens/Messages/Settings.tsx:272
 msgid "Users I follow"
 msgstr "Csak a követett személyektől"
 
@@ -9728,14 +10322,14 @@ msgstr "A hitelesítés meghiúsult. Próbáld újra."
 msgid "Verification settings"
 msgstr "Hitelesítési beállítások"
 
-#: src/Navigation.tsx:206
+#: src/Navigation.tsx:212
 #: src/screens/Moderation/VerificationSettings.tsx:32
 msgid "Verification Settings"
 msgstr "Hitelesítési beállítások"
 
 #: src/screens/Moderation/VerificationSettings.tsx:41
-msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
-msgstr "A Bluesky a megszokottól eltérően kezeli a hitelesítéseket. <0>További információ</0>."
+msgid "Verifications on Tellus work differently than on other platforms. <0>Learn more here.</0>"
+msgstr "A Tellus a megszokottól eltérően kezeli a hitelesítéseket. <0>További információ</0>."
 
 #: src/components/verification/VerificationsDialog.tsx:103
 msgid "Verified by:"
@@ -9743,8 +10337,8 @@ msgstr "Hitelesítő:"
 
 #: src/components/verification/VerificationCreatePrompt.tsx:84
 #: src/components/verification/VerificationCreatePrompt.tsx:86
-#: src/view/com/profile/ProfileMenu.tsx:358
-#: src/view/com/profile/ProfileMenu.tsx:361
+#: src/view/com/profile/ProfileMenu.tsx:413
+#: src/view/com/profile/ProfileMenu.tsx:416
 msgid "Verify account"
 msgstr "Fiók hitelesítése"
 
@@ -9816,11 +10410,15 @@ msgstr "Verziószám: {0}"
 msgid "Video"
 msgstr "Videó"
 
+#: src/screens/Saved/components.tsx:457
+msgid "Vidéo"
+msgstr ""
+
 #: src/view/com/composer/state/video.ts:357
 msgid "Video failed to process"
 msgstr "A videó feldolgozása meghiúsult"
 
-#: src/Navigation.tsx:600
+#: src/Navigation.tsx:641
 msgid "Video Feed"
 msgstr "Videófolyam"
 
@@ -10004,9 +10602,36 @@ msgstr "Honlap felkeresése"
 msgid "Visit your notification settings"
 msgstr "Értesítési beállítások megnyitása"
 
+#: src/screens/MessagesMatrix.web.tsx:1498
+#: src/screens/MessagesMatrix.web.tsx:1508
+msgid "Voir membres"
+msgstr ""
+
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VolumeControl.tsx:81
 msgid "Volume"
 msgstr "Hangerő"
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:27
+msgid "Vos collections, dans un espace calme et organisé."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:442
+msgid "Vous: {0}"
+msgstr ""
+
+#: src/Navigation.tsx:368
+#: src/Navigation.tsx:386
+#: src/screens/Settings/Settings.tsx:212
+#: src/screens/Settings/Settings.tsx:215
+#: src/view/shell/desktop/LeftNav.tsx:806
+#: src/view/shell/Drawer.tsx:635
+msgid "Wallet"
+msgstr ""
+
+#: src/view/com/profile/ProfileMenu.tsx:314
+#: src/view/com/profile/ProfileMenu.tsx:320
+msgid "Wallet / Payer"
+msgstr ""
 
 #: src/components/moderation/LabelPreference.tsx:142
 #: src/lib/moderation/useLabelBehaviorDescription.ts:17
@@ -10052,16 +10677,16 @@ msgid "We estimate {estimatedTime} until your account is ready."
 msgstr "A fiókod elkészültéig becsült hátralévő idő: {estimatedTime}"
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:196
-msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Bluesky."
-msgstr "A felnőttléted igazolásához a <0>KWS</0> szolgáltatását használjuk. Ha rákattintasz az alábbi indítás-gombra, a KWS ellenőrzi, hogy az e-mail-címed már szerepel-e az adatbázisukban. Ha nem, akkor kapni fogsz tőlük egy e-mailt, ami további utasításokat tartalmaz. Amint végeztél, vissza leszel irányítva a Blueskyra."
+msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Tellus."
+msgstr "A felnőttléted igazolásához a <0>KWS</0> szolgáltatását használjuk. Ha rákattintasz az alábbi indítás-gombra, a KWS ellenőrzi, hogy az e-mail-címed már szerepel-e az adatbázisukban. Ha nem, akkor kapni fogsz tőlük egy e-mailt, ami további utasításokat tartalmaz. Amint végeztél, vissza leszel irányítva a Tellusra."
 
 #: src/components/intents/VerifyEmailIntentDialog.tsx:107
 msgid "We have sent another verification email to <0>{0}</0>."
 msgstr "Küldtünk egy új visszaigazoló e-mailt a(z) <0>{0}</0> címre."
 
 #: src/screens/Onboarding/StepFinished.tsx:533
-msgid "We hope you have a wonderful time. Remember, Bluesky is:"
-msgstr "Reméljük, jól érzed magad! Ne feledd; a Bluesky:"
+msgid "We hope you have a wonderful time. Remember, Tellus is:"
+msgstr "Reméljük, jól érzed magad! Ne feledd; a Tellus:"
 
 #: src/view/com/posts/DiscoverFallbackHeader.tsx:29
 msgid "We ran out of posts from your follows. Here's the latest from <0/>."
@@ -10129,7 +10754,7 @@ msgid "We're having network issues, try again"
 msgstr "Hálózati hiba történt. Próbáld újra."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:94
-msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
+msgid "We’re introducing a new layer of verification on Tellus — an easy-to-see checkmark."
 msgstr "Bevezetjük a hitelesítés egy új formáját: egy könnyen látható jelvényt."
 
 #: src/screens/Signup/index.tsx:123
@@ -10142,7 +10767,7 @@ msgstr "Sajnáljuk, de az eszközöd szerint jelenleg egy olyan régióban tart�
 
 #: src/components/BlockedGeoOverlay.tsx:159
 msgid "We're sorry, but based on your device's location, you are currently located in a region where we cannot provide access at this time."
-msgstr "Sajnáljuk, de az eszközöd szerint jelenleg egy olyan régióban tartózkodsz, ahol nem vagyunk képesek hozzáférést biztosítani a Blueskyhoz."
+msgstr "Sajnáljuk, de az eszközöd szerint jelenleg egy olyan régióban tartózkodsz, ahol nem vagyunk képesek hozzáférést biztosítani a Tellushoz."
 
 #: src/view/screens/ProfileList.tsx:117
 msgid "We're sorry, but we were unable to resolve this list. If this persists, please contact the list creator, @{handleOrDid}."
@@ -10342,8 +10967,8 @@ msgid "You"
 msgstr "Te"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:23
-msgid "You also agree to <0>Bluesky’s Community Guidelines</0>. An <1>updated version of our Community Guidelines</1> will take effect on October 15th."
-msgstr "Mindemellett jelzed, hogy elfogadod a <0>Bluesky közösségi irányelveit</0>. A <1>közösségi irányelvek frissített változata</1> október 15-én fog hatályba lépni."
+msgid "You also agree to <0>Tellus’s Community Guidelines</0>. An <1>updated version of our Community Guidelines</1> will take effect on October 15th."
+msgstr "Mindemellett jelzed, hogy elfogadod a <0>Tellus közösségi irányelveit</0>. A <1>közösségi irányelvek frissített változata</1> október 15-én fog hatályba lépni."
 
 #: src/components/verification/VerifierDialog.tsx:59
 msgid "You are a trusted verifier"
@@ -10354,7 +10979,7 @@ msgid "You are creating an account on"
 msgstr "Ez a fiók az alábbi tárhelyszolgáltatónál lesz létrehozva:"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:128
-msgid "You are currently unable to access Bluesky's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
+msgid "You are currently unable to access Tellus's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
 msgstr "Jelenleg nincs hozzáférésed az életkor-igazolási folyamathoz. Ha úgy gondolod, hogy ez hibás megállapítás, vedd fel a kapcsolatot a <0>moderálási csapatunkkal</0>."
 
 #: src/screens/SignupQueued.tsx:157
@@ -10415,7 +11040,7 @@ msgstr "Ha szeretnéd, átmenetileg deaktiválhatod a fiókod, amit aztán bárm
 msgid "You can choose whether chat notifications have sound in the chat settings within the app"
 msgstr "A csevegési értesítések hangosítását/némítását az alkalmazáson belüli csevegési beállításokban szabhatod személyre"
 
-#: src/screens/Messages/Settings.tsx:116
+#: src/screens/Messages/Settings.tsx:288
 msgid "You can continue ongoing conversations regardless of which setting you choose."
 msgstr "A már létező csevegéseket a fenti beállításoktól függetlenül folytathatod."
 
@@ -10468,8 +11093,8 @@ msgid "You don't have any chat requests at the moment."
 msgstr "Jelenleg nincsenek bejövő csevegési kérelmek."
 
 #: src/view/com/modals/InviteCodes.tsx:67
-msgid "You don't have any invite codes yet! We'll send you some when you've been on Bluesky for a little longer."
-msgstr "Még egy meghívókóddal sem rendelkezel. Majd küldünk néhányat, ha már hosszabb ideje leszel a Blueskyon."
+msgid "You don't have any invite codes yet! We'll send you some when you've been on Tellus for a little longer."
+msgstr "Még egy meghívókóddal sem rendelkezel. Majd küldünk néhányat, ha már hosszabb ideje leszel a Telluson."
 
 #: src/view/screens/SavedFeeds.tsx:145
 msgid "You don't have any pinned feeds."
@@ -10591,8 +11216,8 @@ msgid "You must be 13 years of age or older to create an account."
 msgstr "A regisztrációhoz legalább 13 évesnek kell lenned."
 
 #: src/components/dialogs/BirthDateSettings.tsx:131
-msgid "You must be at least 13 years old to use Bluesky. Read our <0>Terms of Service</0> for more information."
-msgstr "A Bluesky használatához be kell töltened a 13. életévedet. További információért olvasd el a <0>felhasználási feltételeket</0>."
+msgid "You must be at least 13 years old to use Tellus. Read our <0>Terms of Service</0> for more information."
+msgstr "A Tellus használatához be kell töltened a 13. életévedet. További információért olvasd el a <0>felhasználási feltételeket</0>."
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:334
 msgid "You must be following at least seven other people to generate a starter pack."
@@ -10631,7 +11256,7 @@ msgstr "Az e-mailes kétlépcsős azonosítás bekapcsolása előtt vissza kell 
 msgid "You previously deactivated @{0}."
 msgstr "Korábban deaktiváltad a(z) @{0} fiókot."
 
-#: src/screens/Settings/Settings.tsx:404
+#: src/screens/Settings/Settings.tsx:420
 msgid "You probably want to restart the app now."
 msgstr "Lehetséges, hogy most előnyös lenne bezárni és újra megnyitni az alkalmazást."
 
@@ -10643,8 +11268,8 @@ msgstr "{0} emojival reagáltál"
 msgid "You reacted {0} to {1}"
 msgstr "{0} emojival reagáltál erre: {1}"
 
-#: src/screens/Settings/Settings.tsx:286
-#: src/view/shell/desktop/LeftNav.tsx:210
+#: src/screens/Settings/Settings.tsx:302
+#: src/view/shell/desktop/LeftNav.tsx:212
 msgid "You will be signed out of all your accounts."
 msgstr "Ezzel az összes fiókból ki fogsz jelentkezni."
 
@@ -10771,8 +11396,8 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr "A fiókod adattára, ami az összes nyilvános adatodat tartalmazza, letölthető egy „CAR” fájlként. Ez a fájl nem tartalmazza a beágyazott médiatartalmakat (pl.: képeket), sem pedig a személyes adataidat, amit külön kell lekérned."
 
 #: src/screens/Takendown.tsx:214
-msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
-msgstr "A fiókod megsértette a <0>Bluesky Social felhasználási feltételeit</0>. Küldtünk Számodra egy e-mailt a felfüggesztésed okáról és (adott esetben) hosszáról. Ha úgy gondolod, hogy a felfüggesztés tévedésből történt, lehetőséged van fellebbezni azt."
+msgid "Your account was found to be in violation of the <0>Tellus Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
+msgstr "A fiókod megsértette a <0>Tellus Social felhasználási feltételeit</0>. Küldtünk Számodra egy e-mailt a felfüggesztésed okáról és (adott esetben) hosszáról. Ha úgy gondolod, hogy a felfüggesztés tévedésből történt, lehetőséged van fellebbezni azt."
 
 #: src/screens/Takendown.tsx:154
 msgid "Your appeal has been submitted. If your appeal succeeds, you will receive an email."
@@ -10816,8 +11441,8 @@ msgid "Your email appears to be invalid."
 msgstr "Az e-mail-címed érvénytelen."
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:65
-msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
-msgstr "A Bluesky teljes funkcionalitásának kihasználásához az e-mail-címed visszaigazolása szükséges."
+msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Tellus."
+msgstr "A Tellus teljes funkcionalitásának kihasználásához az e-mail-címed visszaigazolása szükséges."
 
 #: src/state/shell/progress-guide.tsx:215
 msgid "Your first like!"
@@ -10835,7 +11460,7 @@ msgstr "A Követett hírfolyamod üres. Kövess több felhasználót, hogy lásd
 msgid "Your full handle will be <0>@{0}</0>"
 msgstr "A teljes felhasználóneved: <0>@{0}</0>"
 
-#: src/Navigation.tsx:516
+#: src/Navigation.tsx:547
 #: src/screens/Search/modules/ExploreInterestsCard.tsx:67
 #: src/screens/Settings/ContentAndMediaSettings.tsx:92
 #: src/screens/Settings/ContentAndMediaSettings.tsx:95
@@ -10861,7 +11486,7 @@ msgid "Your muted words"
 msgstr "Elnémított szavak"
 
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:71
-msgid "Your password has been changed successfully! Please use your new password when you sign in to Bluesky from now on."
+msgid "Your password has been changed successfully! Please use your new password when you sign in to Tellus from now on."
 msgstr "A jelszóváltoztatás sikeresen megtörtént. A legközelebbi bejelentkezésor már az új jelszót kell használnod."
 
 #: src/screens/Signup/StepInfo/index.tsx:130
@@ -10893,8 +11518,8 @@ msgid "Your profile picture surrounded by concentric circles of other users' pro
 msgstr "A saját profilképed más fiókok profilképeivel körülvéve, többrétegű gyűrűs elrendezésben"
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
-msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-msgstr "A profilod, bejegyzéseid, hírfolyamaid és listáid mostantól el vannak rejtve a többi Bluesky-felhasználó elől. A fiókod újraaktiválásához jelentkezz be."
+msgid "Your profile, posts, feeds, and lists will no longer be visible to other Tellus users. You can reactivate your account at any time by logging in."
+msgstr "A profilod, bejegyzéseid, hírfolyamaid és listáid mostantól el vannak rejtve a többi Tellus-felhasználó elől. A fiókod újraaktiválásához jelentkezz be."
 
 #: src/view/com/composer/Composer.tsx:536
 msgid "Your reply was sent"
@@ -10905,8 +11530,8 @@ msgid "Your report will be sent to <0>{0}</0>."
 msgstr "A jelentés címzettje: <0>{0}</0>."
 
 #: src/components/dms/ReportDialog.tsx:205
-msgid "Your report will be sent to the Bluesky Moderation Service"
-msgstr "Ez a jelentés a Bluesky moderálási szolgáltatásának lesz elküldve"
+msgid "Your report will be sent to the Tellus Moderation Service"
+msgstr "Ez a jelentés a Tellus moderálási szolgáltatásának lesz elküldve"
 
 #: src/screens/Settings/InterestsSettings.tsx:56
 msgid "Your selected interests help us serve you content you care about."

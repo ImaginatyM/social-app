@@ -64,7 +64,7 @@ export function Label({
   const control = useModerationDetailsDialogControl()
   const desc = useModerationCauseDescription(cause)
   const isLabeler = Boolean(desc.sourceType && desc.sourceDid)
-  const isBlueskyLabel =
+  const isTellusLabel =
     desc.sourceType === 'labeler' && desc.sourceDid === BSKY_LABELER_DID
 
   const {outer, avi, text} = React.useMemo(() => {
@@ -120,7 +120,7 @@ export function Label({
               outer,
               (hovered || pressed) && t.atoms.bg_contrast_50,
             ]}>
-            {isBlueskyLabel || !isLabeler ? (
+            {isTellusLabel || !isLabeler ? (
               <desc.icon
                 width={avi}
                 fill={t.atoms.text_contrast_medium.color}

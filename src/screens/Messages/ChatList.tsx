@@ -73,16 +73,16 @@ export function MessagesScreen(props: Props) {
 
   return (
     <AgeRestrictedScreen
-      screenTitle={_(msg`Chats`)}
+      screenTitle={_(msg`Tellus Chat`)}
       infoText={aaCopy.chatsInfoText}
       rightHeaderSlot={
         <Link
           to="/messages/settings"
-          label={_(msg`Chat settings`)}
+          label={_(msg`Tellus Chat settings`)}
           size="small"
           color="secondary">
           <ButtonText>
-            <Trans>Chat settings</Trans>
+            <Trans>Tellus Chat settings</Trans>
           </ButtonText>
         </Link>
       }>
@@ -375,7 +375,7 @@ function Header({newChatControl}: {newChatControl: DialogControlProps}) {
   const settingsLink = (
     <Link
       to="/messages/settings"
-      label={_(msg`Chat settings`)}
+      label={_(msg`Tellus Chat settings`)}
       size="small"
       variant="ghost"
       color="secondary"
@@ -391,7 +391,7 @@ function Header({newChatControl}: {newChatControl: DialogControlProps}) {
         <>
           <Layout.Header.Content>
             <Layout.Header.TitleText>
-              <Trans>Chats</Trans>
+              <Trans>Tellus Chat</Trans>
             </Layout.Header.TitleText>
           </Layout.Header.Content>
 
@@ -415,7 +415,7 @@ function Header({newChatControl}: {newChatControl: DialogControlProps}) {
           <Layout.Header.MenuButton />
           <Layout.Header.Content>
             <Layout.Header.TitleText>
-              <Trans>Chats</Trans>
+              <Trans>Tellus Chat</Trans>
             </Layout.Header.TitleText>
           </Layout.Header.Content>
           <Layout.Header.Slot>{settingsLink}</Layout.Header.Slot>

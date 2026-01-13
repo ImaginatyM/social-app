@@ -13,8 +13,8 @@ describe('link service', async () => {
     const env = readEnv()
     const cfg = envToCfg({
       ...env,
-      hostnames: ['test.bsky.link'],
-      appHostname: 'test.bsky.app',
+      hostnames: ['test.tellus.link'],
+      appHostname: 'test.tellus.app',
       dbPostgresSchema: 'link_test',
       dbPostgresUrl: process.env.DB_POSTGRES_URL,
       safelinkEnabled: true,
@@ -118,7 +118,7 @@ describe('link service', async () => {
   it('creates a starter pack link', async () => {
     const link = await getLink('/start/did:example:alice/xxx')
     const url = new URL(link)
-    assert.strictEqual(url.origin, 'https://test.bsky.link')
+    assert.strictEqual(url.origin, 'https://test.tellus.link')
     assert.match(url.pathname, /^\/[a-z0-9]+$/i)
   })
 
@@ -150,7 +150,7 @@ describe('link service', async () => {
 
   it('returns 404 for unknown link when requesting json', async () => {
     const [status, json] = await getJsonRedirect(
-      'https://test.bsky.link/unknown',
+      'https://test.tellus.link/unknown',
     )
     assert(json.error)
     assert(json.message)
@@ -286,8 +286,8 @@ describe('link service no safelink', async () => {
     const env = readEnv()
     const cfg = envToCfg({
       ...env,
-      hostnames: ['test.bsky.link'],
-      appHostname: 'test.bsky.app',
+      hostnames: ['test.tellus.link'],
+      appHostname: 'test.tellus.app',
       dbPostgresSchema: 'link_test',
       dbPostgresUrl: process.env.DB_POSTGRES_URL,
       safelinkEnabled: false,

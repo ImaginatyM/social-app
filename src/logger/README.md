@@ -1,6 +1,6 @@
 # Logger
 
-Simple logger for Bluesky.
+Simple logger for Tellus.
 
 ## At a Glance
 

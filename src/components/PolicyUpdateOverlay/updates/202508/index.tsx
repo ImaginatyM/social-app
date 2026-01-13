@@ -26,27 +26,27 @@ export function Content({state}: {state: PolicyUpdateState}) {
   const links = {
     terms: {
       overridePresentation: false,
-      to: `https://bsky.social/about/support/tos`,
+      to: `https://tellus.social/about/support/tos`,
       label: _(msg`Terms of Service`),
     },
     privacy: {
       overridePresentation: false,
-      to: `https://bsky.social/about/support/privacy-policy`,
+      to: `https://tellus.social/about/support/privacy-policy`,
       label: _(msg`Privacy Policy`),
     },
     copyright: {
       overridePresentation: false,
-      to: `https://bsky.social/about/support/copyright`,
+      to: `https://tellus.social/about/support/copyright`,
       label: _(msg`Copyright Policy`),
     },
     guidelines: {
       overridePresentation: false,
-      to: `https://bsky.social/about/support/community-guidelines`,
+      to: `https://tellus.social/about/support/community-guidelines`,
       label: _(msg`Community Guidelines`),
     },
     blog: {
       overridePresentation: false,
-      to: `https://bsky.social/about/blog/08-14-2025-updated-terms-and-policies`,
+      to: `https://tellus.social/about/blog/08-14-2025-updated-terms-and-policies`,
       label: _(msg`Our blog post`),
     },
   }
@@ -161,7 +161,7 @@ export function Content({state}: {state: PolicyUpdateState}) {
           <Button
             label={_(msg`Continue`)}
             accessibilityHint={_(
-              msg`Tap to acknowledge that you understand and agree to these updates and continue using Bluesky`,
+              msg`Tap to acknowledge that you understand and agree to these updates and continue using Tellus`,
             )}
             color="primary"
             size="large"

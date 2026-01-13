@@ -1,15 +1,15 @@
 /**
  * IMPORTANT
  *
- * Some of these styles are duplicated in the `web/index.html` and
- * `bskyweb/templates/base.html` files. Depending on what you're updating, you
+ * Some of these styles are duplicated in the `web/index.html` and the
+ * server-rendered base template. Depending on what you're updating, you
  * may need to touch all three. Ask Eric if you aren't sure.
  */
 
 /**
  * BEGIN STYLES
  *
- * HTML & BODY STYLES IN `web/index.html` and `bskyweb/templates/base.html`
+ * HTML & BODY STYLES IN `web/index.html` and the server-rendered base template
  */
 :root {
   --text: black;

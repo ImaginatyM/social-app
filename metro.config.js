@@ -1,5 +1,6 @@
 // Learn more https://docs.expo.io/guides/customizing-metro
 const {getSentryExpoConfig} = require('@sentry/react-native/metro')
+const {withNativeWind} = require('nativewind/metro')
 const cfg = getSentryExpoConfig(__dirname)
 
 cfg.resolver.sourceExts = process.env.RN_SRC_EXT
@@ -64,4 +65,4 @@ cfg.transformer.getTransformOptions = async () => ({
   },
 })
 
-module.exports = cfg
+module.exports = withNativeWind(cfg, {input: './global.css'})

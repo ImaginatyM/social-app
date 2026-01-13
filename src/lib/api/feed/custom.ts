@@ -10,7 +10,7 @@ import {
   getContentLanguages,
 } from '#/state/preferences/languages'
 import {FeedAPI, FeedAPIResponse} from './types'
-import {createBskyTopicsHeader, isBlueskyOwnedFeed} from './utils'
+import {createTopicsHeader, isTellusOwnedFeed} from './utils'
 
 export class CustomFeedAPI implements FeedAPI {
   agent: BskyAgent
@@ -52,7 +52,7 @@ export class CustomFeedAPI implements FeedAPI {
   }): Promise<FeedAPIResponse> {
     const contentLangs = getContentLanguages().join(',')
     const agent = this.agent
-    const isBlueskyOwned = isBlueskyOwnedFeed(this.params.feed)
+    const isTellusOwned = isTellusOwnedFeed(this.params.feed)
 
     const res = agent.did
       ? await this.agent.app.bsky.feed.getFeed(
@@ -63,8 +63,8 @@ export class CustomFeedAPI implements FeedAPI {
           },
           {
             headers: {
-              ...(isBlueskyOwned
-                ? createBskyTopicsHeader(this.userInterests)
+              ...(isTellusOwned
+                ? createTopicsHeader(this.userInterests)
                 : {}),
               'Accept-Language': contentLangs,
             },

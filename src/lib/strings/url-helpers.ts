@@ -7,12 +7,12 @@ import {isInvalidHandle} from '#/lib/strings/handles'
 import {startUriToStarterPackUri} from '#/lib/strings/starter-pack'
 import {logger} from '#/logger'
 
-export const BSKY_APP_HOST = 'https://bsky.app'
+export const BSKY_APP_HOST = 'https://tellus.app'
 const BSKY_TRUSTED_HOSTS = [
-  'bsky\\.app',
-  'bsky\\.social',
-  'blueskyweb\\.xyz',
-  'blueskyweb\\.zendesk\\.com',
+  'tellus\\.app',
+  'tellus\\.social',
+  'tellusweb\\.xyz',
+  'tellusweb\\.zendesk\\.com',
   ...(__DEV__ ? ['localhost:19006', 'localhost:8100'] : []),
 ]
 
@@ -52,7 +52,7 @@ export function toNiceDomain(url: string): string {
   try {
     const urlp = new URL(url)
     if (`https://${urlp.host}` === BSKY_SERVICE) {
-      return 'Bluesky Social'
+      return 'Tellus Social'
     }
     return urlp.host ? urlp.host : url
   } catch (e) {
@@ -79,7 +79,7 @@ export function toShortUrl(url: string): string {
 
 export function toShareUrl(url: string): string {
   if (!url.startsWith('https')) {
-    const urlp = new URL('https://bsky.app')
+    const urlp = new URL('https://tellus.app')
     urlp.pathname = url
     url = urlp.toString()
   }
@@ -91,7 +91,7 @@ export function toBskyAppUrl(url: string): string {
 }
 
 export function isBskyAppUrl(url: string): boolean {
-  return url.startsWith('https://bsky.app/')
+  return url.startsWith('https://tellus.app/')
 }
 
 export function isRelativeUrl(url: string): boolean {
@@ -100,7 +100,7 @@ export function isRelativeUrl(url: string): boolean {
 
 export function isBskyRSSUrl(url: string): boolean {
   return (
-    (url.startsWith('https://bsky.app/') || isRelativeUrl(url)) &&
+    (url.startsWith('https://tellus.app/') || isRelativeUrl(url)) &&
     /\/rss\/?$/.test(url)
   )
 }
@@ -337,11 +337,11 @@ export function createProxiedUrl(url: string): string {
     return url
   }
 
-  return `https://go.bsky.app/redirect?u=${encodeURIComponent(url)}`
+  return `https://go.tellus.app/redirect?u=${encodeURIComponent(url)}`
 }
 
 export function isShortLink(url: string): boolean {
-  return url.startsWith('https://go.bsky.app/')
+  return url.startsWith('https://go.tellus.app/')
 }
 
 export function shortLinkToHref(url: string): string {

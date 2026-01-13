@@ -6,16 +6,16 @@ import {BLUESKY_PROXY_DID, CHAT_PROXY_DID} from '#/env'
 
 export const LOCAL_DEV_SERVICE =
   Platform.OS === 'android' ? 'http://10.0.2.2:2583' : 'http://localhost:2583'
-export const STAGING_SERVICE = 'https://staging.bsky.dev'
-export const BSKY_SERVICE = 'https://bsky.social'
-export const BSKY_SERVICE_DID = 'did:web:bsky.social'
+export const STAGING_SERVICE = 'https://staging.tellus.dev'
+export const BSKY_SERVICE = 'https://tellus.social'
+export const BSKY_SERVICE_DID = 'did:web:tellus.social'
 export const PUBLIC_BSKY_SERVICE = 'https://public.api.bsky.app'
 export const DEFAULT_SERVICE = BSKY_SERVICE
 const HELP_DESK_LANG = 'en-us'
-export const HELP_DESK_URL = `https://blueskyweb.zendesk.com/hc/${HELP_DESK_LANG}`
-export const EMBED_SERVICE = 'https://embed.bsky.app'
+export const HELP_DESK_URL = `https://tellusweb.zendesk.com/hc/${HELP_DESK_LANG}`
+export const EMBED_SERVICE = 'https://embed.tellus.app'
 export const EMBED_SCRIPT = `${EMBED_SERVICE}/static/embed.js`
-export const BSKY_DOWNLOAD_URL = 'https://bsky.app/download'
+export const BSKY_DOWNLOAD_URL = 'https://tellus.app/download'
 export const STARTER_PACK_MAX_SIZE = 150
 
 // HACK
@@ -29,13 +29,13 @@ export const JOINED_THIS_WEEK = 560000 // estimate as of 12/18/24
 
 export const DISCOVER_DEBUG_DIDS: Record<string, true> = {
   'did:plc:oisofpd7lj26yvgiivf3lxsi': true, // hailey.at
-  'did:plc:p2cp5gopk7mgjegy6wadk3ep': true, // samuel.bsky.team
+  'did:plc:p2cp5gopk7mgjegy6wadk3ep': true, // samuel.tellus.team
   'did:plc:ragtjsm2j2vknwkz3zp4oxrd': true, // pfrazee.com
-  'did:plc:vpkhqolt662uhesyj6nxm7ys': true, // why.bsky.team
+  'did:plc:vpkhqolt662uhesyj6nxm7ys': true, // why.tellus.team
   'did:plc:3jpt2mvvsumj2r7eqk4gzzjz': true, // esb.lol
   'did:plc:vjug55kidv6sye7ykr5faxxn': true, // emilyliu.me
-  'did:plc:tgqseeot47ymot4zro244fj3': true, // iwsmith.bsky.social
-  'did:plc:2dzyut5lxna5ljiaasgeuffz': true, // darrin.bsky.team
+  'did:plc:tgqseeot47ymot4zro244fj3': true, // iwsmith.tellus.social
+  'did:plc:2dzyut5lxna5ljiaasgeuffz': true, // darrin.tellus.team
 }
 
 const BASE_FEEDBACK_FORM_URL = `${HELP_DESK_URL}/requests/new`
@@ -100,7 +100,7 @@ export const POST_IMG_MAX = {
 }
 
 export const STAGING_LINK_META_PROXY =
-  'https://cardyb.staging.bsky.dev/v1/extract?url='
+  'https://cardyb.staging.tellus.dev/v1/extract?url='
 
 export const PROD_LINK_META_PROXY = 'https://cardyb.bsky.app/v1/extract?url='
 
@@ -112,7 +112,7 @@ export function LINK_META_PROXY(serviceUrl: string) {
   return STAGING_LINK_META_PROXY
 }
 
-export const STATUS_PAGE_URL = 'https://status.bsky.app/'
+export const STATUS_PAGE_URL = 'https://status.tellus.app/'
 
 // Hitslop constants
 export const createHitslop = (size: number): Insets => ({
@@ -202,14 +202,14 @@ export const EMOJI_REACTION_LIMIT = 5
 export const urls = {
   website: {
     blog: {
-      initialVerificationAnnouncement: `https://bsky.social/about/blog/04-21-2025-verification`,
+      initialVerificationAnnouncement: `https://tellus.social/about/blog/04-21-2025-verification`,
     },
   },
 }
 
 export const PUBLIC_APPVIEW = 'https://api.bsky.app'
 export const PUBLIC_APPVIEW_DID = 'did:web:api.bsky.app'
-export const PUBLIC_STAGING_APPVIEW_DID = 'did:web:api.staging.bsky.dev'
+export const PUBLIC_STAGING_APPVIEW_DID = 'did:web:api.staging.tellus.dev'
 
 export const DEV_ENV_APPVIEW = `http://localhost:2584` // always the same
 
@@ -233,8 +233,8 @@ export const BLUESKY_MOD_SERVICE_HEADERS = {
 }
 
 export const webLinks = {
-  tos: `https://bsky.social/about/support/tos`,
-  privacy: `https://bsky.social/about/support/privacy-policy`,
-  community: `https://bsky.social/about/support/community-guidelines`,
-  communityDeprecated: `https://bsky.social/about/support/community-guidelines-deprecated`,
+  tos: `https://tellus.social/about/support/tos`,
+  privacy: `https://tellus.social/about/support/privacy-policy`,
+  community: `https://tellus.social/about/support/community-guidelines`,
+  communityDeprecated: `https://tellus.social/about/support/community-guidelines-deprecated`,
 }

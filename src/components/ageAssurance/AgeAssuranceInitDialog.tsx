@@ -208,7 +208,7 @@ function Inner() {
                   this email address for other games/services powered by KWS
                   technology. If not, KWS will email you instructions for
                   verifying your age. When you’re done, you'll be brought back
-                  to continue using Bluesky.
+                  to continue using Tellus.
                 </Trans>
               </Text>
               <Text style={[a.text_sm, a.leading_snug]}>
@@ -278,7 +278,7 @@ function Inner() {
                   <Admonition type="tip" style={[a.mt_sm]}>
                     <Trans>
                       Use your account email address, or another real email
-                      address you control, in case KWS or Bluesky needs to
+                      address you control, in case KWS or Tellus needs to
                       contact you.
                     </Trans>
                   </Admonition>

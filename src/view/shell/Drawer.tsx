@@ -16,6 +16,7 @@ import {colors} from '#/lib/styles'
 import {isWeb} from '#/platform/detection'
 import {emitSoftReset} from '#/state/events'
 import {useKawaiiMode} from '#/state/preferences/kawaii'
+import {useWalletSettings} from '#/state/preferences'
 import {useUnreadNotifications} from '#/state/queries/notifications/unread'
 import {useProfileQuery} from '#/state/queries/profile'
 import {type SessionAccount, useSession} from '#/state/session'
@@ -42,11 +43,13 @@ import {
 } from '#/components/icons/HomeOpen'
 import {MagnifyingGlass_Filled_Stroke2_Corner0_Rounded as MagnifyingGlassFilled} from '#/components/icons/MagnifyingGlass'
 import {MagnifyingGlass2_Stroke2_Corner0_Rounded as MagnifyingGlass} from '#/components/icons/MagnifyingGlass2'
+import {Newspaper_Stroke2_Corner2_Rounded as Newspaper} from '#/components/icons/Newspaper'
 import {
   Message_Stroke2_Corner0_Rounded as Message,
   Message_Stroke2_Corner0_Rounded_Filled as MessageFilled,
 } from '#/components/icons/Message'
 import {SettingsGear2_Stroke2_Corner0_Rounded as Settings} from '#/components/icons/SettingsGear2'
+import {Sparkle_Stroke2_Corner0_Rounded as Sparkle} from '#/components/icons/Sparkle'
 import {
   UserCircle_Filled_Corner0_Rounded as UserCircleFilled,
   UserCircle_Stroke2_Corner0_Rounded as UserCircle,
@@ -151,12 +154,15 @@ let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
     isAtHome,
     isAtSearch,
     isAtFeeds,
+    isAtNews,
     isAtBookmarks,
     isAtNotifications,
     isAtMyProfile,
     isAtMessages,
+    isAtWallet,
   } = useNavigationTabState()
   const {hasSession, currentAccount} = useSession()
+  const {showInSidebar} = useWalletSettings()
 
   // events
   // =
@@ -228,6 +234,11 @@ let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
     setDrawerOpen(false)
   }, [navigation, setDrawerOpen])
 
+  const onPressNews = React.useCallback(() => {
+    navigation.navigate('News')
+    setDrawerOpen(false)
+  }, [navigation, setDrawerOpen])
+
   const onPressLists = React.useCallback(() => {
     navigation.navigate('Lists')
     setDrawerOpen(false)
@@ -235,6 +246,11 @@ let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
 
   const onPressBookmarks = React.useCallback(() => {
     navigation.navigate('Bookmarks')
+    setDrawerOpen(false)
+  }, [navigation, setDrawerOpen])
+
+  const onPressWallet = React.useCallback(() => {
+    navigation.navigate('WalletDashboard')
     setDrawerOpen(false)
   }, [navigation, setDrawerOpen])
 
@@ -298,11 +314,15 @@ let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
               onPress={onPressNotifications}
             />
             <FeedsMenuItem isActive={isAtFeeds} onPress={onPressMyFeeds} />
+            <NewsMenuItem isActive={isAtNews} onPress={onPressNews} />
             <ListsMenuItem onPress={onPressLists} />
             <BookmarksMenuItem
               isActive={isAtBookmarks}
               onPress={onPressBookmarks}
             />
+            {showInSidebar ? (
+              <WalletMenuItem isActive={isAtWallet} onPress={onPressWallet} />
+            ) : null}
             <ProfileMenuItem
               isActive={isAtMyProfile}
               onPress={onPressProfile}
@@ -313,6 +333,7 @@ let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
           <>
             <HomeMenuItem isActive={isAtHome} onPress={onPressHome} />
             <FeedsMenuItem isActive={isAtFeeds} onPress={onPressMyFeeds} />
+            <NewsMenuItem isActive={isAtNews} onPress={onPressNews} />
             <SearchMenuItem isActive={isAtSearch} onPress={onPressSearch} />
           </>
         )}
@@ -463,7 +484,7 @@ let ChatMenuItem = ({
           <Message style={[t.atoms.text]} width={iconWidth} />
         )
       }
-      label={_(msg`Chat`)}
+      label={_(msg`Tellus Chat`)}
       bold={isActive}
       onPress={onPress}
     />
@@ -568,12 +589,56 @@ let BookmarksMenuItem = ({
           <Bookmark style={[t.atoms.text]} width={iconWidth} />
         )
       }
-      label={_(msg({message: 'Saved', context: 'link to bookmarks screen'}))}
+      label={_(
+        msg({message: 'Conservés', context: 'link to saved collections screen'}),
+      )}
       onPress={onPress}
     />
   )
 }
 BookmarksMenuItem = React.memo(BookmarksMenuItem)
+
+let NewsMenuItem = ({
+  isActive,
+  onPress,
+}: {
+  isActive: boolean
+  onPress: () => void
+}): React.ReactNode => {
+  const {_} = useLingui()
+  const t = useTheme()
+
+  return (
+    <MenuItem
+      icon={<Newspaper style={[t.atoms.text]} width={iconWidth} />}
+      label={_(msg`News`)}
+      bold={isActive}
+      onPress={onPress}
+    />
+  )
+}
+NewsMenuItem = React.memo(NewsMenuItem)
+
+let WalletMenuItem = ({
+  isActive,
+  onPress,
+}: {
+  isActive: boolean
+  onPress: () => void
+}): React.ReactNode => {
+  const {_} = useLingui()
+  const t = useTheme()
+
+  return (
+    <MenuItem
+      icon={<Sparkle style={[t.atoms.text]} width={iconWidth} />}
+      label={_(msg`Wallet`)}
+      bold={isActive}
+      onPress={onPress}
+    />
+  )
+}
+WalletMenuItem = React.memo(WalletMenuItem)
 
 let ProfileMenuItem = ({
   isActive,
@@ -695,12 +760,12 @@ function ExtraLinks() {
       <InlineLinkText
         style={[a.text_md]}
         label={_(msg`Terms of Service`)}
-        to="https://bsky.social/about/support/tos">
+        to="https://tellus.social/about/support/tos">
         <Trans>Terms of Service</Trans>
       </InlineLinkText>
       <InlineLinkText
         style={[a.text_md]}
-        to="https://bsky.social/about/support/privacy-policy"
+        to="https://tellus.social/about/support/privacy-policy"
         label={_(msg`Privacy Policy`)}>
         <Trans>Privacy Policy</Trans>
       </InlineLinkText>
@@ -710,9 +775,9 @@ function ExtraLinks() {
             Logo by{' '}
             <InlineLinkText
               style={[a.text_md]}
-              to="/profile/sawaratsuki.bsky.social"
-              label="@sawaratsuki.bsky.social">
-              @sawaratsuki.bsky.social
+              to="/profile/sawaratsuki.tellus.social"
+              label="@sawaratsuki.tellus.social">
+              @sawaratsuki.tellus.social
             </InlineLinkText>
           </Trans>
         </Text>

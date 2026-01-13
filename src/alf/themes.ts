@@ -10,7 +10,7 @@ import {
 
 const themes = createThemes({
   hues: {
-    primary: BLUE_HUE,
+    primary: RED_HUE, // Changé de BLUE_HUE à RED_HUE
     negative: RED_HUE,
     positive: GREEN_HUE,
   },
@@ -127,19 +127,19 @@ export function createThemes({
     black: color.gray_1000,
     like: color.like,
 
-    contrast_25: color.gray_25,
-    contrast_50: color.gray_50,
-    contrast_100: color.gray_100,
-    contrast_200: color.gray_200,
-    contrast_300: color.gray_300,
-    contrast_400: color.gray_400,
-    contrast_500: color.gray_500,
-    contrast_600: color.gray_600,
-    contrast_700: color.gray_700,
-    contrast_800: color.gray_800,
-    contrast_900: color.gray_900,
-    contrast_950: color.gray_950,
-    contrast_975: color.gray_975,
+    contrast_25: '#f8f8f8',
+    contrast_50: '#f0f0f0',
+    contrast_100: '#e0e0e0',
+    contrast_200: '#d0d0d0',
+    contrast_300: '#b0b0b0',
+    contrast_400: '#909090',
+    contrast_500: '#707070',
+    contrast_600: '#505050',
+    contrast_700: '#404040',
+    contrast_800: '#303030',
+    contrast_900: '#202020',
+    contrast_950: '#101010',
+    contrast_975: '#080808',
 
     primary_25: color.primary_25,
     primary_50: color.primary_50,

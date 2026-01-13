@@ -81,7 +81,7 @@ msgstr "{0, plural, one {# sekund} other {# sekunder}}"
 
 #: src/view/shell/bottom-bar/BottomBar.tsx:225
 #: src/view/shell/bottom-bar/BottomBar.tsx:257
-#: src/view/shell/Drawer.tsx:498
+#: src/view/shell/Drawer.tsx:519
 msgid "{0, plural, one {# unread item} other {# unread items}}"
 msgstr "{0, plural, one {# ulæst besked} other {# ulæste beskeder}}"
 
@@ -124,7 +124,7 @@ msgstr "{0, plural, one {gemt} other {gemte}}"
 msgid "{0, plural, other {{1} posts}}"
 msgstr "{0, plural, one {}other {{1} opslag}}"
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 25) who have joined Tellus using a specific starter pack
 #: src/screens/StarterPack/StarterPackScreen.tsx:490
 msgid "{0, plural, other {# people have}} used this starter pack!"
 msgstr "{0, plural, one {}other {# personer have}} har brugt denne startpakke!"
@@ -221,7 +221,7 @@ msgstr "{0}m"
 msgid "{0}s"
 msgstr "{0}s"
 
-#: src/view/shell/desktop/LeftNav.tsx:455
+#: src/view/shell/desktop/LeftNav.tsx:457
 msgid "{count, plural, one {# unread item} other {# unread items}}"
 msgstr "{count, plural, one {# ulæst besked} other {# ulæste beskeder}}"
 
@@ -414,7 +414,7 @@ msgstr "{hours, plural, one {# time {minutesString}} other {# timer {minutesStri
 msgid "{hours, plural, one {# hour} other {# hours}}"
 msgstr "{hours, plural, one {# time} other {# timer}}"
 
-#. Number of users (always at least 50) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 50) who have joined Tellus using a specific starter pack
 #: src/components/StarterPack/StarterPackCard.tsx:101
 msgid "{joinedAllTimeCount, plural, other {# users have}} joined!"
 msgstr "{joinedAllTimeCount, plural, one {}other {# brugere}} har oprettet sig!"
@@ -428,12 +428,12 @@ msgid "{notificationCount, plural, one {# unread item} other {# unread items}}"
 msgstr "{notificationCount, plural, one {# ulæst besked} other {# ulæste beskeder}}"
 
 #: src/components/NewskieDialog.tsx:116
-msgid "{profileName} joined Bluesky {0} ago"
-msgstr "{profileName} blev oprettet på Bluesky for {0} siden"
+msgid "{profileName} joined Tellus {0} ago"
+msgstr "{profileName} blev oprettet på Tellus for {0} siden"
 
 #: src/components/NewskieDialog.tsx:111
-msgid "{profileName} joined Bluesky using a starter pack {0} ago"
-msgstr "{profileName} blev oprettet på Bluesky via en startpakke for {0} siden"
+msgid "{profileName} joined Tellus using a starter pack {0} ago"
+msgstr "{profileName} blev oprettet på Tellus via en startpakke for {0} siden"
 
 #. The trending topic rank, i.e. "1. March Madness", "2. The Bachelor"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:111
@@ -458,6 +458,19 @@ msgstr "{userName} er verificeret"
 msgid "{userName}'s verifications"
 msgstr "{userName}s verifikationer"
 
+#: src/screens/Messages/Settings.tsx:187
+msgid "@alice:matrix.org"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:982
+msgid "@alice:tellus.chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1153
+#: src/screens/MessagesMatrix.web.tsx:1564
+msgid "@utilisateur:tellus.chat"
+msgstr ""
+
 #. Indicates the number of additional profiles are in the Starter Pack e.g. +12
 #: src/screens/Search/components/StarterPackCard.tsx:249
 msgid "+{computedTotal}"
@@ -473,11 +486,11 @@ msgctxt "feeds"
 msgid "<0>{0}, </0><1>{1}, </1>and {2, plural, one {# other} other {# others}} are included in your starter pack"
 msgstr "<0>{0}, </0><1>{1} </1>og {2, plural, one {# anden} other {# andre}} er med i din startpakke"
 
-#: src/view/shell/Drawer.tsx:117
+#: src/view/shell/Drawer.tsx:120
 msgid "<0>{0}</0> {1, plural, one {follower} other {followers}}"
 msgstr "<0>{0}</0> {1, plural, one {følger} other {følgere}}"
 
-#: src/view/shell/Drawer.tsx:128
+#: src/view/shell/Drawer.tsx:131
 msgid "<0>{0}</0> {1, plural, one {following} other {following}}"
 msgstr "<0>{0}</0> {1, plural, one {følger} other {følger}}"
 
@@ -499,8 +512,8 @@ msgid "<0>{date}</0> at {time}"
 msgstr "<0>{date}</0> kl. {time}"
 
 #: src/screens/Search/SearchResults.tsx:255
-msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Bluesky.</4>"
-msgstr "<0>Log ind</0><1> eller </1><2>opret en konto</2><3> </3><4>for at søge efter nyheder, sport, politik og alt andet, der sker på Bluesky.</4>"
+msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Tellus.</4>"
+msgstr "<0>Log ind</0><1> eller </1><2>opret en konto</2><3> </3><4>for at søge efter nyheder, sport, politik og alt andet, der sker på Tellus.</4>"
 
 #: src/screens/StarterPack/Wizard/index.tsx:502
 msgid "<0>You</0> and<1> </1><2>{0} </2>are included in your starter pack"
@@ -527,8 +540,8 @@ msgid "7 days"
 msgstr "7 dage"
 
 #: src/screens/Onboarding/StepFinished.tsx:341
-msgid "A collection of popular feeds you can find on Bluesky, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
-msgstr "En samling af populære feeds, du kan finde på Bluesky, herunder News, Book Sky, Game Dev, Blacksky og Fountain Pens"
+msgid "A collection of popular feeds you can find on Tellus, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
+msgstr "En samling af populære feeds, du kan finde på Tellus, herunder News, Book Sky, Game Dev, Blacksky og Fountain Pens"
 
 #. If last message does not contain text, fall back to "{user} reacted to {a message}"
 #: src/screens/Messages/components/ChatListItem.tsx:210
@@ -540,22 +553,31 @@ msgid "A new form of verification"
 msgstr "En ny form for verifikation"
 
 #: src/components/BlockedGeoOverlay.tsx:50
-msgid "A new Mississippi law requires us to implement age verification for all users before they can access Bluesky. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies."
-msgstr "En ny lov i Mississippi kræver, at vi implementerer alderstjek af alle brugere, før de kan bruge Bluesky. Vi mener, at denne lov skaber en række problemer, der rækker ud over dens mål om at beskytte børn, samt skaber betydelige barrierer, som begrænser ytringsfriheden og skader mindre platforme og nye teknologier uforholdsmæssigt."
+msgid "A new Mississippi law requires us to implement age verification for all users before they can access Tellus. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies."
+msgstr "En ny lov i Mississippi kræver, at vi implementerer alderstjek af alle brugere, før de kan bruge Tellus. Vi mener, at denne lov skaber en række problemer, der rækker ud over dens mål om at beskytte børn, samt skaber betydelige barrierer, som begrænser ytringsfriheden og skader mindre platforme og nye teknologier uforholdsmæssigt."
+
+#: src/screens/MessagesMatrix.web.tsx:1045
+msgid "À propos"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1031
+#: src/screens/MessagesMatrix.web.tsx:1037
+msgid "À propos / avancé"
+msgstr ""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:120
-msgid "A screenshot of a post with a new button next to the share button that allows you to save the post to your bookmarks. The post is from @jcsalterego.bsky.social and reads \"inventing a saturday that immediately follows monday\"."
-msgstr "It screenshot af et opslag med en ny knap ved siden af delingsknappen, der giver mulighed for at gemme opslaget som et bogmærke. Opslaget er af @jcsalterego.bsky.social og lyder: \"Er ved at opfinde en lørdag, der kommer umiddelbart efter mandag\""
+msgid "A screenshot of a post with a new button next to the share button that allows you to save the post to your bookmarks. The post is from @jcsalterego.tellus.social and reads \"inventing a saturday that immediately follows monday\"."
+msgstr "It screenshot af et opslag med en ny knap ved siden af delingsknappen, der giver mulighed for at gemme opslaget som et bogmærke. Opslaget er af @jcsalterego.tellus.social og lyder: \"Er ved at opfinde en lørdag, der kommer umiddelbart efter mandag\""
 
 #: src/components/dialogs/nuxs/ActivitySubscriptions.tsx:113
 msgid "A screenshot of a profile page with a bell icon next to the follow button, indicating the new activity notifications feature."
 msgstr "Et screenshot af en profilside med et klokkeikon ved siden af Følg-knappen, som illustrerer den nye notifikationsfunktion."
 
-#: src/Navigation.tsx:524
+#: src/Navigation.tsx:555
 #: src/screens/Settings/AboutSettings.tsx:75
-#: src/screens/Settings/Settings.tsx:244
-#: src/screens/Settings/Settings.tsx:247
+#: src/screens/Settings/Settings.tsx:260
+#: src/screens/Settings/Settings.tsx:263
 msgid "About"
 msgstr "Om"
 
@@ -574,37 +596,37 @@ msgid "Accept Request"
 msgstr "Accepter anmodning"
 
 #: src/screens/Settings/AccessibilitySettings.tsx:44
-#: src/screens/Settings/Settings.tsx:220
-#: src/screens/Settings/Settings.tsx:223
+#: src/screens/Settings/Settings.tsx:236
+#: src/screens/Settings/Settings.tsx:239
 msgid "Accessibility"
 msgstr "Tilgængelighed"
 
-#: src/Navigation.tsx:383
+#: src/Navigation.tsx:414
 msgid "Accessibility Settings"
 msgstr "Tilgængelighedsindstillinger"
 
-#: src/Navigation.tsx:399
+#: src/Navigation.tsx:430
 #: src/screens/Login/LoginForm.tsx:194
 #: src/screens/Settings/AccountSettings.tsx:51
-#: src/screens/Settings/Settings.tsx:174
-#: src/screens/Settings/Settings.tsx:177
+#: src/screens/Settings/Settings.tsx:176
+#: src/screens/Settings/Settings.tsx:179
 msgid "Account"
 msgstr "Konto"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:361
 #: src/screens/Messages/components/RequestButtons.tsx:91
-#: src/view/com/profile/ProfileMenu.tsx:161
+#: src/view/com/profile/ProfileMenu.tsx:169
 msgctxt "toast"
 msgid "Account blocked"
 msgstr "Konto blokeret"
 
-#: src/view/com/profile/ProfileMenu.tsx:174
+#: src/view/com/profile/ProfileMenu.tsx:182
 msgctxt "toast"
 msgid "Account followed"
 msgstr "Konto fulgt"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:384
-#: src/view/com/profile/ProfileMenu.tsx:137
+#: src/view/com/profile/ProfileMenu.tsx:145
 msgctxt "toast"
 msgid "Account muted"
 msgstr "Konto skjult"
@@ -618,34 +640,34 @@ msgstr "Konto skjult"
 msgid "Account Muted by List"
 msgstr "Konto skjult af liste"
 
-#: src/screens/Settings/Settings.tsx:624
+#: src/screens/Settings/Settings.tsx:640
 msgid "Account options"
 msgstr "Kontoindstillinger"
 
-#: src/screens/Settings/Settings.tsx:660
+#: src/screens/Settings/Settings.tsx:676
 msgid "Account removed from quick access"
 msgstr "Konto fjernet fra kvikadgang"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:132
-#: src/view/com/profile/ProfileMenu.tsx:151
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:136
+#: src/view/com/profile/ProfileMenu.tsx:159
 msgctxt "toast"
 msgid "Account unblocked"
 msgstr "Blokering af konto fjernet"
 
-#: src/view/com/profile/ProfileMenu.tsx:186
+#: src/view/com/profile/ProfileMenu.tsx:194
 msgctxt "toast"
 msgid "Account unfollowed"
 msgstr "Konto følges ikke længere"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:374
-#: src/view/com/profile/ProfileMenu.tsx:127
+#: src/view/com/profile/ProfileMenu.tsx:135
 msgctxt "toast"
 msgid "Account unmuted"
 msgstr "Konto skjules ikke længere"
 
 #: src/components/verification/VerifierDialog.tsx:96
-msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
-msgstr "Konti med et amøbeformet blåt flueben <0><1/></0> kan verificere andre. De autoriserede verifikatorer er udvalgt af Bluesky."
+msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Tellus."
+msgstr "Konti med et amøbeformet blåt flueben <0><1/></0> kan verificere andre. De autoriserede verifikatorer er udvalgt af Tellus."
 
 #: src/lib/hooks/useNotificationHandler.ts:182
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:102
@@ -653,7 +675,7 @@ msgstr "Konti med et amøbeformet blåt flueben <0><1/></0> kan verificere andre
 msgid "Activity from others"
 msgstr "Aktivitet fra andre"
 
-#: src/Navigation.tsx:492
+#: src/Navigation.tsx:523
 msgid "Activity notifications"
 msgstr "Aktivitetsnotifikationer"
 
@@ -706,10 +728,10 @@ msgstr "Tilføj alt-tekst"
 msgid "Add alt text (optional)"
 msgstr "Tilføj alt-tekst (valgfrit)"
 
-#: src/screens/Settings/Settings.tsx:564
-#: src/screens/Settings/Settings.tsx:567
-#: src/view/shell/desktop/LeftNav.tsx:262
-#: src/view/shell/desktop/LeftNav.tsx:266
+#: src/screens/Settings/Settings.tsx:580
+#: src/screens/Settings/Settings.tsx:583
+#: src/view/shell/desktop/LeftNav.tsx:264
+#: src/view/shell/desktop/LeftNav.tsx:268
 msgid "Add another account"
 msgstr "Tilføj endnu en konto"
 
@@ -786,8 +808,8 @@ msgstr "Opret følgende DNS-record for dit domæne:"
 msgid "Add this feed to your feeds"
 msgstr "Føj dette feed til dine feeds"
 
-#: src/view/com/profile/ProfileMenu.tsx:317
-#: src/view/com/profile/ProfileMenu.tsx:320
+#: src/view/com/profile/ProfileMenu.tsx:372
+#: src/view/com/profile/ProfileMenu.tsx:375
 msgid "Add to lists"
 msgstr "Føj til lister"
 
@@ -796,14 +818,18 @@ msgid "Add to saved posts"
 msgstr "Føj til gemte opslag"
 
 #: src/components/dialogs/StarterPackDialog.tsx:176
-#: src/view/com/profile/ProfileMenu.tsx:308
-#: src/view/com/profile/ProfileMenu.tsx:311
+#: src/view/com/profile/ProfileMenu.tsx:363
+#: src/view/com/profile/ProfileMenu.tsx:366
 msgid "Add to starter packs"
 msgstr "Føj til startpakker"
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:156
 msgid "Add user to list"
 msgstr "Tilføj bruger til liste"
+
+#: src/screens/Messages/Settings.tsx:176
+msgid "Add your Tellus Chat ID so others can message you directly."
+msgstr ""
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:109
 #: src/view/com/modals/UserAddRemoveLists.tsx:162
@@ -834,8 +860,8 @@ msgid "Adult Content"
 msgstr "Porno"
 
 #: src/screens/Moderation/index.tsx:423
-msgid "Adult content can only be enabled via the Web at <0>bsky.app</0>."
-msgstr "Voksenindhold kan kun slås til via browserudgaven af <0>bsky.app</0>."
+msgid "Adult content can only be enabled via the Web at <0>tellus.app</0>."
+msgstr "Voksenindhold kan kun slås til via browserudgaven af <0>tellus.app</0>."
 
 #: src/components/moderation/LabelPreference.tsx:247
 msgid "Adult content is disabled."
@@ -849,6 +875,10 @@ msgstr "Voksenindholdsmærkater"
 #: src/screens/Moderation/index.tsx:473
 msgid "Advanced"
 msgstr "Avanceret"
+
+#: src/screens/Saved/components.tsx:134
+msgid "Affichage"
+msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceBadge.tsx:42
 msgid "Age Assurance"
@@ -866,6 +896,10 @@ msgstr "Anmodning om alderstjek"
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:193
 msgid "Age assurance only takes a few minutes"
 msgstr "Alderstjek tager kun et øjeblik"
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:44
+msgid "Ajoutez une URL d'image pour personnaliser la collection."
+msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:223
 msgid "alice@example.com"
@@ -902,8 +936,8 @@ msgstr "Tillad adgang til dine direkte beskeder"
 msgid "Allow location access"
 msgstr "Tillad adgang til lokation"
 
-#: src/screens/Messages/Settings.tsx:75
-#: src/screens/Messages/Settings.tsx:78
+#: src/screens/Messages/Settings.tsx:247
+#: src/screens/Messages/Settings.tsx:250
 msgid "Allow new messages from"
 msgstr "Tillad nye beskeder fra"
 
@@ -1018,13 +1052,13 @@ msgid "An error occurred while uploading the video."
 msgstr "Der opstod en fejl under upload af videoen."
 
 #: src/screens/Onboarding/StepFinished.tsx:359
-msgid "An illustration of several Bluesky posts alongside repost, like, and comment icons"
-msgstr "En illustration af adskillige Bluesky-opslag sammen med ikoner for videredeling, like og kommentar"
+msgid "An illustration of several Tellus posts alongside repost, like, and comment icons"
+msgstr "En illustration af adskillige Tellus-opslag sammen med ikoner for videredeling, like og kommentar"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:84
 #: src/components/verification/VerifierDialog.tsx:86
-msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
-msgstr "Illustration som viser, hvordan Bluesky udvælger autoriserede verifikatorer, som herefter verificerer enkelte brugerkonti."
+msgid "An illustration showing that Tellus selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
+msgstr "Illustration som viser, hvordan Tellus udvælger autoriserede verifikatorer, som herefter verificerer enkelte brugerkonti."
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:28
 #: src/lib/moderation/useReportOptions.ts:28
@@ -1049,8 +1083,8 @@ msgid "An issue occurred, please try again."
 msgstr "Der opstod en fejl. Prøv igen."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:118
-msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
-msgstr "Et mockup af en iPhone, der viser Bluesky-appen åbnet på profilen for en verificeret bruger med et blåt flueben ved siden af profilnavnet."
+msgid "An mockup of a iPhone showing the Tellus app open to the profile of a verified user with a blue checkmark next to their display name."
+msgstr "Et mockup af en iPhone, der viser Tellus-appen åbnet på profilen for en verificeret bruger med et blåt flueben ved siden af profilnavnet."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:194
 msgid "an unknown error occurred"
@@ -1080,8 +1114,17 @@ msgid "Announcement"
 msgstr "Nyhed"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:37
-msgid "Announcing verification on Bluesky"
-msgstr "Bluesky introducerer verificerede konti"
+msgid "Announcing verification on Tellus"
+msgstr "Tellus introducerer verificerede konti"
+
+#: src/screens/MessagesMatrix.web.tsx:1163
+#: src/screens/MessagesMatrix.web.tsx:1169
+#: src/screens/MessagesMatrix.web.tsx:1225
+#: src/screens/MessagesMatrix.web.tsx:1231
+#: src/screens/Saved/CollectionDetailPage.tsx:56
+#: src/screens/Saved/SavedCollectionsPage.tsx:45
+msgid "Annuler"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:33
 #: src/lib/moderation/useReportOptions.ts:33
@@ -1098,7 +1141,7 @@ msgstr "Alle kan interagere"
 msgid "Anyone who follows me"
 msgstr "Alle, som følger mig"
 
-#: src/Navigation.tsx:532
+#: src/Navigation.tsx:563
 #: src/screens/Settings/AppIconSettings/index.tsx:67
 #: src/screens/Settings/AppIconSettings/SettingsListItem.tsx:18
 #: src/screens/Settings/AppIconSettings/SettingsListItem.tsx:23
@@ -1135,7 +1178,7 @@ msgstr "Navne på appadgangskoder skal bestå af mindst 4 tegn"
 msgid "App passwords"
 msgstr "Appadgangskoder"
 
-#: src/Navigation.tsx:351
+#: src/Navigation.tsx:357
 #: src/screens/Settings/AppPasswords.tsx:51
 msgid "App Passwords"
 msgstr "Appadgangskoder"
@@ -1171,10 +1214,10 @@ msgstr "Klag over suspendering"
 msgid "Appeal this decision"
 msgstr "Klag over afgørelse"
 
-#: src/Navigation.tsx:391
+#: src/Navigation.tsx:422
 #: src/screens/Settings/AppearanceSettings.tsx:86
-#: src/screens/Settings/Settings.tsx:212
-#: src/screens/Settings/Settings.tsx:215
+#: src/screens/Settings/Settings.tsx:228
+#: src/screens/Settings/Settings.tsx:231
 msgid "Appearance"
 msgstr "Udseende"
 
@@ -1183,8 +1226,8 @@ msgstr "Udseende"
 msgid "Apply default recommended feeds"
 msgstr "Brug anbefalede standardfeeds"
 
-#: src/screens/Settings/Settings.tsx:498
-#: src/screens/Settings/Settings.tsx:500
+#: src/screens/Settings/Settings.tsx:514
+#: src/screens/Settings/Settings.tsx:516
 msgid "Apply Pull Request"
 msgstr "Anvend pull request"
 
@@ -1254,6 +1297,10 @@ msgstr "Kunstnerisk og ikkeerotisk nøgenhed."
 msgid "As a small team, we cannot justify building the expensive infrastructure this requirement demands while legal challenges to this law are pending."
 msgstr "Vi er et lille team, der ikke kan forsvare at bygge den kostbare infrastruktur, denne nye lov kræver, mens loven udfordres ved domstolene."
 
+#: src/Navigation.tsx:378
+msgid "Asset"
+msgstr ""
+
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:497
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:499
 msgid "Assign topic for algo"
@@ -1263,10 +1310,43 @@ msgstr "Vælg emne for algo"
 msgid "At least 8 characters"
 msgstr "Mindst 8 tegn"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:42
+msgid "Aucun élément enregistré"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1554
+msgid "Aucun membre pour le moment."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:444
+#: src/screens/MessagesMatrix.web.tsx:1656
+msgid "Aucun message"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:58
+msgid "Aucun résultat"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:34
+msgid "Aucune collection pour l'instant"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:36
+msgid "Aucune collection trouvée"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1277
+msgid "Aucune discussion"
+msgstr ""
+
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:58
 msgctxt "Name of app icon variant"
 msgid "Aurora"
 msgstr "Nordlys"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:39
+msgid "Auteur"
+msgstr ""
 
 #: src/screens/Settings/ContentAndMediaSettings.tsx:116
 #: src/screens/Settings/ContentAndMediaSettings.tsx:122
@@ -1326,7 +1406,7 @@ msgid "Before you can get notifications for {name}'s posts, you must first verif
 msgstr "Før du kan modtage notifikationer om opslag fra {name}, skal du først bekræfte din e-mail."
 
 #: src/components/dms/dialogs/NewChatDialog.tsx:54
-#: src/components/dms/MessageProfileButton.tsx:58
+#: src/components/dms/MessageProfileButton.tsx:104
 #: src/screens/Messages/ChatList.tsx:369
 #: src/screens/Messages/Conversation.tsx:228
 msgid "Before you can message another user, you must first verify your email."
@@ -1350,8 +1430,8 @@ msgid "Birthday"
 msgstr "Fødselsdato"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:760
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:328
-#: src/view/com/profile/ProfileMenu.tsx:490
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:386
+#: src/view/com/profile/ProfileMenu.tsx:554
 msgid "Block"
 msgstr "Bloker"
 
@@ -1361,13 +1441,13 @@ msgstr "Bloker"
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:647
 #: src/screens/Messages/components/RequestButtons.tsx:144
 #: src/screens/Messages/components/RequestButtons.tsx:146
-#: src/view/com/profile/ProfileMenu.tsx:396
-#: src/view/com/profile/ProfileMenu.tsx:403
+#: src/view/com/profile/ProfileMenu.tsx:451
+#: src/view/com/profile/ProfileMenu.tsx:458
 msgid "Block account"
 msgstr "Bloker konto"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:755
-#: src/view/com/profile/ProfileMenu.tsx:473
+#: src/view/com/profile/ProfileMenu.tsx:537
 msgid "Block Account?"
 msgstr "Bloker konto?"
 
@@ -1412,13 +1492,13 @@ msgstr "Blokeret"
 msgid "Blocked accounts"
 msgstr "Blokerede konti"
 
-#: src/Navigation.tsx:192
+#: src/Navigation.tsx:198
 #: src/view/screens/ModerationBlockedAccounts.tsx:104
 msgid "Blocked Accounts"
 msgstr "Blokerede konti"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:757
-#: src/view/com/profile/ProfileMenu.tsx:485
+#: src/view/com/profile/ProfileMenu.tsx:549
 msgid "Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr "Blokerede konti kan ikke svare i dine tråde, omtale dig eller på anden måde interagere med dig."
 
@@ -1434,72 +1514,13 @@ msgstr "Blokering forhindrer ikke denne mærkningstjeneste fra at sætte mærkat
 msgid "Blocking is public. Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr "Blokering er offentlig. Blokerede konti kan ikke svare i dine tråde, omtale dig eller på anden måde interagere med dig."
 
-#: src/view/com/profile/ProfileMenu.tsx:482
+#: src/view/com/profile/ProfileMenu.tsx:546
 msgid "Blocking will not prevent labels from being applied on your account, but it will stop this account from replying in your threads or interacting with you."
 msgstr "Blokering vil ikke spærre for, at der bliver sat mærkater på din konto, men det vil forhindre denne konto fra at svare i dine tråde eller interagere med dig."
 
 #: src/view/com/auth/SplashScreen.web.tsx:175
 msgid "Blog"
 msgstr "Blog"
-
-#: src/view/com/auth/server-input/index.tsx:136
-#: src/view/com/auth/server-input/index.tsx:137
-msgid "Bluesky"
-msgstr "Bluesky"
-
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:690
-msgid "Bluesky cannot confirm the authenticity of the claimed date."
-msgstr "Bluesky kan ikke bekræfte den anførte datos gyldighed."
-
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:175
-msgctxt "Name of app icon variant"
-msgid "Bluesky Classic™"
-msgstr "Bluesky Classic™"
-
-#: src/view/com/auth/server-input/index.tsx:212
-msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr "Bluesky er et åbent netværk, hvor du kan vælge din egen udbyder. Hvis du er udvikler, kan du køre din egen server."
-
-#: src/view/com/auth/server-input/index.tsx:149
-msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-msgstr "Bluesky er et åbent netværk, hvor du kan vælge din egen udbyder. Hvis du er ny her, anbefaler vi at bruge standardvalget Bluesky Social."
-
-#: src/components/ProgressGuide/List.tsx:53
-#: src/components/ProgressGuide/List.tsx:70
-msgid "Bluesky is better with friends!"
-msgstr "Bluesky virker bedre med venner!"
-
-#: src/screens/Takendown.tsx:217
-msgid "Bluesky Social Terms of Service"
-msgstr "Bluesky Socials tjenestevilkår"
-
-#: src/components/StarterPack/ProfileStarterPacks.tsx:310
-msgid "Bluesky will choose a set of recommended accounts from people in your network."
-msgstr "Bluesky vil vælge et antal anbefalede konti fra personer i dit netværk."
-
-#: src/screens/Settings/components/PwiOptOut.tsx:99
-msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-msgstr "Bluesky vil ikke vise din profil og dine opslag til udloggede brugere."
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
-msgid "Bluesky will proactively verify notable and authentic accounts."
-msgstr "Bluesky vil løbende verificere populære konti."
-
-#: src/screens/Signup/StepInfo/Policies.tsx:26
-msgid "Bluesky's Community Guidelines"
-msgstr "Blueskys fællesskabsregler"
-
-#: src/screens/Signup/StepInfo/Policies.tsx:32
-msgid "Bluesky's Updated Community Guidelines"
-msgstr "Blueskys opdaterede fællesskabsregler"
-
-#: src/screens/Settings/AppIconSettings/index.tsx:99
-msgid "Bluesky+"
-msgstr "Bluesky+"
-
-#: src/screens/Settings/AppIconSettings/index.tsx:102
-msgid "Bluesky+ icons"
-msgstr "Bluesky+-ikoner"
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:53
 msgid "Blur images"
@@ -1558,7 +1579,7 @@ msgstr "Se emnet {displayName}"
 
 #: src/view/com/auth/SplashScreen.web.tsx:170
 msgid "Business"
-msgstr "Om Bluesky"
+msgstr "Om Tellus"
 
 #: src/components/LabelingServiceCard/index.tsx:62
 #: src/components/moderation/ReportDialog/index.tsx:683
@@ -1624,7 +1645,7 @@ msgstr "Kamera"
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:85
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:246
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:252
-#: src/screens/Settings/Settings.tsx:289
+#: src/screens/Settings/Settings.tsx:305
 #: src/screens/Takendown.tsx:99
 #: src/screens/Takendown.tsx:102
 #: src/view/com/composer/Composer.tsx:1005
@@ -1633,7 +1654,7 @@ msgstr "Kamera"
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:52
 #: src/view/com/modals/CreateOrEditList.tsx:333
 #: src/view/com/modals/CropImage.web.tsx:97
-#: src/view/shell/desktop/LeftNav.tsx:213
+#: src/view/shell/desktop/LeftNav.tsx:215
 msgid "Cancel"
 msgstr "Annuller"
 
@@ -1681,6 +1702,14 @@ msgstr "Undertekster (.vtt)"
 msgid "Captions & alt text"
 msgstr "Undertekster og alt-tekst"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:51
+msgid "Cette action est définitive et ne supprime pas les posts de Tellus."
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:76
+msgid "Cette personne n’est pas encore sur Tellus Chat"
+msgstr ""
+
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
 msgid "Change"
 msgstr "Skift"
@@ -1724,6 +1753,10 @@ msgstr "Skift opslagets sprog til {suggestedLanguageName}"
 msgid "Change report reason"
 msgstr "Skift årsag til anmeldelse"
 
+#: src/screens/MessagesMatrix.web.tsx:1083
+msgid "Change seulement si tu utilises un autre serveur."
+msgstr ""
+
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:57
 msgid "Change your password"
 msgstr "Skift din adgangskode"
@@ -1741,11 +1774,16 @@ msgstr "Skifter udbyder"
 msgid "Changes saved"
 msgstr "Ændringer blev gemt"
 
+#: src/screens/MessagesMatrix.web.tsx:1630
+#: src/screens/Saved/CollectionDetailPage.tsx:41
+msgid "Chargement"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:963
+msgid "Chargement des messages"
+msgstr ""
+
 #: src/lib/hooks/useNotificationHandler.ts:99
-#: src/Navigation.tsx:549
-#: src/view/shell/bottom-bar/BottomBar.tsx:221
-#: src/view/shell/desktop/LeftNav.tsx:607
-#: src/view/shell/Drawer.tsx:466
 msgid "Chat"
 msgstr "Chat"
 
@@ -1768,39 +1806,10 @@ msgctxt "toast"
 msgid "Chat muted"
 msgstr "Chat skjult"
 
-#: src/Navigation.tsx:559
-#: src/screens/Messages/components/InboxPreview.tsx:22
-msgid "Chat request inbox"
-msgstr "Indbakke for chatanmodninger"
-
-#: src/screens/Messages/components/InboxPreview.tsx:62
-#: src/screens/Messages/Inbox.tsx:56
-#: src/screens/Messages/Inbox.tsx:98
-msgid "Chat requests"
-msgstr "Chatanmodninger"
-
-#: src/components/dms/ConvoMenu.tsx:76
-#: src/Navigation.tsx:554
-#: src/screens/Messages/ChatList.tsx:81
-#: src/screens/Messages/ChatList.tsx:85
-#: src/screens/Messages/ChatList.tsx:378
-msgid "Chat settings"
-msgstr "Chatindstillinger"
-
-#: src/screens/Messages/Settings.tsx:67
-msgid "Chat Settings"
-msgstr "Chatindstillinger"
-
 #: src/components/dms/ConvoMenu.tsx:178
 msgctxt "toast"
 msgid "Chat unmuted"
 msgstr "Chat ikke længere skjult"
-
-#: src/screens/Messages/ChatList.tsx:76
-#: src/screens/Messages/ChatList.tsx:394
-#: src/screens/Messages/ChatList.tsx:418
-msgid "Chats"
-msgstr "Chats"
 
 #: src/screens/SignupQueued.tsx:78
 #: src/screens/SignupQueued.tsx:82
@@ -1814,6 +1823,10 @@ msgstr "Tjek din e-mail efter en bekræftelseskode og indtast den her."
 #: src/view/com/modals/DeleteAccount.tsx:213
 msgid "Check your inbox for an email with the confirmation code to enter below:"
 msgstr "Tjek din indbakke for en e-mail med en bekræftelseskode og indtast den herunder:"
+
+#: src/screens/MessagesMatrix.web.tsx:1624
+msgid "Choisis une discussion pour voir le fil."
+msgstr ""
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:399
 msgid "Choose domain verification method"
@@ -1859,11 +1872,11 @@ msgstr "Husk din adgangskode"
 msgid "Choose your username"
 msgstr "Vælg dit brugernavn"
 
-#: src/screens/Settings/Settings.tsx:490
+#: src/screens/Settings/Settings.tsx:506
 msgid "Clear all storage data"
 msgstr "Slet alle gemte oplysninger"
 
-#: src/screens/Settings/Settings.tsx:492
+#: src/screens/Settings/Settings.tsx:508
 msgid "Clear all storage data (restart after this)"
 msgstr "Slet alle gemte oplysninger (genstart efter dette)"
 
@@ -1976,7 +1989,7 @@ msgstr "Luk bundpanel"
 msgid "Close dialog"
 msgstr "Luk dialog"
 
-#: src/view/shell/index.web.tsx:110
+#: src/view/shell/index.web.tsx:122
 msgid "Close drawer menu"
 msgstr "Luk navigation"
 
@@ -2036,6 +2049,14 @@ msgstr "Luk brugerliste"
 msgid "Collapses list of users for a given notification"
 msgstr "Lukker liste over brugere for en given notifikation"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:53
+msgid "Collection de destination"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:45
+msgid "Collection introuvable"
+msgstr ""
+
 #: src/components/dialogs/Embed.tsx:154
 #: src/screens/Settings/AppearanceSettings.tsx:94
 msgid "Color mode"
@@ -2055,8 +2076,16 @@ msgstr "Komik"
 msgid "Comics"
 msgstr "Tegneserier"
 
+#: src/screens/MessagesMatrix.web.tsx:1657
+msgid "Commence la discussion."
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:35
+msgid "Commencez par enregistrer des posts pour les retrouver ici."
+msgstr ""
+
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:45
-#: src/Navigation.tsx:341
+#: src/Navigation.tsx:347
 #: src/view/screens/CommunityGuidelines.tsx:34
 msgid "Community Guidelines"
 msgstr "Fælleskabsregler"
@@ -2070,7 +2099,7 @@ msgstr "Afslut velkomst og kom i gang med at bruge din konto"
 msgid "Complete the challenge"
 msgstr "Løs opgaven"
 
-#: src/view/shell/desktop/LeftNav.tsx:572
+#: src/view/shell/desktop/LeftNav.tsx:574
 msgid "Compose new post"
 msgstr "Skriv nyt opslag"
 
@@ -2140,6 +2169,10 @@ msgstr "Bekræft din lokation med GPS. Dine lokationsoplysninger bliver ikke spo
 msgid "Confirmation code"
 msgstr "Bekræftelseskode"
 
+#: src/screens/MessagesMatrix.web.tsx:1059
+msgid "Connecte ton compte Tellus Chat (propulsé par Matrix)."
+msgstr ""
+
 #: src/screens/Login/LoginForm.tsx:337
 msgid "Connecting..."
 msgstr "Forbinder..."
@@ -2147,6 +2180,24 @@ msgstr "Forbinder..."
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:213
 msgid "Connection issue"
 msgstr "Forbindelsesfejl"
+
+#: src/screens/MessagesMatrix.web.tsx:1107
+msgid "Connexion à Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:964
+msgid "Connexion à Tellus Chat en cours..."
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:26
+msgid "Conservés"
+msgstr ""
+
+#: src/view/shell/desktop/LeftNav.tsx:783
+#: src/view/shell/Drawer.tsx:593
+msgctxt "link to saved collections screen"
+msgid "Conservés"
+msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:132
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:29
@@ -2167,12 +2218,12 @@ msgstr "Kontakt os"
 msgid "Content & Media"
 msgstr "Indhold og medier"
 
-#: src/screens/Settings/Settings.tsx:204
-#: src/screens/Settings/Settings.tsx:207
+#: src/screens/Settings/Settings.tsx:220
+#: src/screens/Settings/Settings.tsx:223
 msgid "Content and media"
 msgstr "Indhold og medier"
 
-#: src/Navigation.tsx:508
+#: src/Navigation.tsx:539
 msgid "Content and Media"
 msgstr "Indhold og medier"
 
@@ -2242,6 +2293,7 @@ msgid "Continue to next step"
 msgstr "Fortsæt til næste trin"
 
 #: src/screens/Messages/Conversation.tsx:57
+#: src/screens/MessagesMatrix.web.tsx:419
 msgid "Conversation"
 msgstr "Samtale"
 
@@ -2282,6 +2334,11 @@ msgstr "Kopieret til udklipsholder"
 msgid "Copied!"
 msgstr "Kopieret!"
 
+#: src/screens/Messages/Invite.tsx:89
+#: src/screens/Messages/Invite.tsx:95
+msgid "Copier le lien d’invitation"
+msgstr ""
+
 #: src/screens/Settings/AboutSettings.tsx:127
 msgid "Copies build version to clipboard"
 msgstr "Kopierer versionsnummer til udklipsholder"
@@ -2294,8 +2351,8 @@ msgstr "Kopier"
 msgid "Copy App Password"
 msgstr "Kopier appadgangskode"
 
-#: src/view/com/profile/ProfileMenu.tsx:433
-#: src/view/com/profile/ProfileMenu.tsx:436
+#: src/view/com/profile/ProfileMenu.tsx:488
+#: src/view/com/profile/ProfileMenu.tsx:491
 msgid "Copy at:// URI"
 msgstr "Kopier at://-URI"
 
@@ -2310,8 +2367,8 @@ msgid "Copy code"
 msgstr "Kopier kode"
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:501
-#: src/view/com/profile/ProfileMenu.tsx:442
-#: src/view/com/profile/ProfileMenu.tsx:445
+#: src/view/com/profile/ProfileMenu.tsx:497
+#: src/view/com/profile/ProfileMenu.tsx:500
 msgid "Copy DID"
 msgstr "Kopier DID"
 
@@ -2339,8 +2396,8 @@ msgstr "Kopier link til liste"
 msgid "Copy link to post"
 msgstr "Kopier link til opslag"
 
-#: src/view/com/profile/ProfileMenu.tsx:246
-#: src/view/com/profile/ProfileMenu.tsx:257
+#: src/view/com/profile/ProfileMenu.tsx:284
+#: src/view/com/profile/ProfileMenu.tsx:295
 msgid "Copy link to profile"
 msgstr "Kopier link til profil"
 
@@ -2373,7 +2430,7 @@ msgstr "Kopier TXT-record"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:40
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:107
-#: src/Navigation.tsx:346
+#: src/Navigation.tsx:352
 #: src/view/screens/CopyrightPolicy.tsx:31
 msgid "Copyright Policy"
 msgstr "Ophavsretspolitik"
@@ -2433,7 +2490,7 @@ msgstr "Opret en QR-kode til en startpakke"
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:178
 #: src/components/StarterPack/ProfileStarterPacks.tsx:287
-#: src/Navigation.tsx:589
+#: src/Navigation.tsx:630
 msgid "Create a starter pack"
 msgstr "Opret en startpakke"
 
@@ -2502,6 +2559,18 @@ msgstr "Oprettet {0}"
 msgid "Creator has been blocked"
 msgstr "Skaber er blokeret"
 
+#: src/screens/MessagesMatrix.web.tsx:1173
+#: src/screens/MessagesMatrix.web.tsx:1180
+#: src/screens/MessagesMatrix.web.tsx:1235
+#: src/screens/MessagesMatrix.web.tsx:1242
+#: src/screens/Saved/SavedCollectionsPage.tsx:47
+msgid "Créer"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:38
+msgid "Créer une collection"
+msgstr ""
+
 #: src/screens/Onboarding/index.tsx:42
 #: src/screens/Onboarding/state.ts:107
 msgid "Culture"
@@ -2521,8 +2590,8 @@ msgid "Customize who can interact with this post."
 msgstr "Tilpas, hvem der kan interagere med dette opslag."
 
 #: src/screens/Onboarding/Layout.tsx:61
-msgid "Customizes your Bluesky experience"
-msgstr "Tilpas din Bluesky-oplevelse"
+msgid "Customizes your Tellus experience"
+msgstr "Tilpas din Tellus-oplevelse"
 
 #: src/components/dialogs/Embed.tsx:167
 #: src/components/dialogs/Embed.tsx:169
@@ -2548,13 +2617,17 @@ msgstr "Mørk tilstand"
 msgid "Date of birth"
 msgstr "Fødselsdato"
 
+#: src/screens/MessagesMatrix.web.tsx:1214
+msgid "De quoi parle ce groupe ?"
+msgstr ""
+
 #: src/screens/Settings/AccountSettings.tsx:161
 #: src/screens/Settings/AccountSettings.tsx:166
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:73
 msgid "Deactivate account"
 msgstr "Deaktiver konto"
 
-#: src/screens/Settings/Settings.tsx:455
+#: src/screens/Settings/Settings.tsx:471
 msgid "Debug Moderation"
 msgstr "Fejlsøg moderation"
 
@@ -2573,6 +2646,8 @@ msgstr "Standardikoner"
 #: src/components/dms/MessageContextMenu.tsx:185
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:704
 #: src/screens/Messages/components/ChatStatusInfo.tsx:55
+#: src/screens/Messages/Settings.tsx:222
+#: src/screens/Messages/Settings.tsx:229
 #: src/screens/Settings/AppPasswords.tsx:212
 #: src/screens/StarterPack/StarterPackScreen.tsx:599
 #: src/screens/StarterPack/StarterPackScreen.tsx:688
@@ -2603,7 +2678,7 @@ msgstr "Slet appadgangskode?"
 msgid "Delete chat"
 msgstr "Slet chat"
 
-#: src/screens/Settings/Settings.tsx:462
+#: src/screens/Settings/Settings.tsx:478
 msgid "Delete chat declaration record"
 msgstr "Slet chatdeklarationsregistrering"
 
@@ -2677,11 +2752,23 @@ msgstr "Slettet konto"
 msgid "Deleted list"
 msgstr "Slettet liste"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:54
+msgid "Déplacer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:52
+msgid "Déplacer vers"
+msgstr ""
+
 #: src/screens/Profile/Header/EditProfileDialog.tsx:365
 #: src/view/com/modals/CreateOrEditList.tsx:278
 #: src/view/com/modals/CreateOrEditList.tsx:299
 msgid "Description"
 msgstr "Beskrivelse"
+
+#: src/screens/MessagesMatrix.web.tsx:1210
+msgid "Description (optionnelle)"
+msgstr ""
 
 #: src/view/com/composer/GifAltText.tsx:150
 #: src/view/com/composer/photos/ImageAltTextDialog.tsx:113
@@ -2707,8 +2794,8 @@ msgctxt "toast"
 msgid "Developer mode enabled"
 msgstr "Udviklertilstand aktiveret"
 
-#: src/screens/Settings/Settings.tsx:271
-#: src/screens/Settings/Settings.tsx:274
+#: src/screens/Settings/Settings.tsx:287
+#: src/screens/Settings/Settings.tsx:290
 msgid "Developer options"
 msgstr "Udviklingerindstillinger"
 
@@ -2745,8 +2832,8 @@ msgstr "Deaktiver undertekster"
 #: src/lib/moderation/useLabelBehaviorDescription.ts:32
 #: src/lib/moderation/useLabelBehaviorDescription.ts:42
 #: src/lib/moderation/useLabelBehaviorDescription.ts:68
-#: src/screens/Messages/Settings.tsx:144
-#: src/screens/Messages/Settings.tsx:147
+#: src/screens/Messages/Settings.tsx:316
+#: src/screens/Messages/Settings.tsx:319
 #: src/screens/Moderation/index.tsx:413
 msgid "Disabled"
 msgstr "Deaktiveret"
@@ -2899,14 +2986,14 @@ msgstr "Tryk dobbelt for at lukke dialogen"
 msgid "Double tap to like"
 msgstr "Tryk dobbelt for at like"
 
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
-msgid "Download Bluesky"
-msgstr "Download Bluesky"
-
 #: src/screens/Settings/components/ExportCarDialog.tsx:79
 #: src/screens/Settings/components/ExportCarDialog.tsx:84
 msgid "Download CAR file"
 msgstr "Download CAR-fil"
+
+#: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
+msgid "Download Tellus"
+msgstr "Download Tellus"
 
 #: src/view/com/composer/text-input/TextInput.web.tsx:361
 msgid "Drop to add images"
@@ -2952,6 +3039,14 @@ msgstr "fx Brugere, der laver for mange reklameopslag."
 msgid "Each code works once. You'll receive more invite codes periodically."
 msgstr "Hver kode virker én gang. Du vil jævnligt blive tildelt flere invitationskoder."
 
+#: src/screens/MessagesMatrix.web.tsx:349
+msgid "Échec de la connexion Tellus Chat."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1759
+msgid "Écrire un message"
+msgstr ""
+
 #: src/screens/Settings/AccountSettings.tsx:145
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:249
 #: src/screens/StarterPack/StarterPackScreen.tsx:588
@@ -2995,8 +3090,8 @@ msgstr "Rediger interesser"
 msgid "Edit list details"
 msgstr "Rediger listeegenskaber"
 
-#: src/view/com/profile/ProfileMenu.tsx:329
-#: src/view/com/profile/ProfileMenu.tsx:335
+#: src/view/com/profile/ProfileMenu.tsx:384
+#: src/view/com/profile/ProfileMenu.tsx:390
 msgid "Edit live status"
 msgstr "Rediger livetilstand"
 
@@ -3004,7 +3099,7 @@ msgstr "Rediger livetilstand"
 msgid "Edit Moderation List"
 msgstr "Rediger modereringsliste"
 
-#: src/Navigation.tsx:356
+#: src/Navigation.tsx:362
 #: src/view/screens/Feeds.tsx:518
 msgid "Edit My Feeds"
 msgstr "Rediger mine feeds"
@@ -3025,12 +3120,12 @@ msgstr "Rediger interaktionsindstillinger"
 #: src/screens/Profile/Header/EditProfileDialog.tsx:270
 #: src/screens/Profile/Header/EditProfileDialog.tsx:276
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:183
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:190
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:205
 msgid "Edit profile"
 msgstr "Rediger profil"
 
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:186
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:193
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:208
 msgid "Edit Profile"
 msgstr "Rediger profil"
 
@@ -3046,7 +3141,7 @@ msgstr "Rediger brugerliste"
 msgid "Edit who can reply"
 msgstr "Rediger, hvem der kan svare"
 
-#: src/Navigation.tsx:594
+#: src/Navigation.tsx:635
 msgid "Edit your starter pack"
 msgstr "Rediger din startpakke"
 
@@ -3112,6 +3207,10 @@ msgstr "Indlejr dette opslag på dit website. Kopier blot følgende kodestump og
 msgid "Embedded video player"
 msgstr "Indlejret videoafspiller"
 
+#: src/screens/MessagesMatrix.web.tsx:1265
+msgid "En attente"
+msgstr ""
+
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:104
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:111
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
@@ -3166,8 +3265,8 @@ msgstr "Aktiver populære emner"
 msgid "Enable trending videos in your Discover feed"
 msgstr "Aktiver populære videoer i dit Discover-feed"
 
-#: src/screens/Messages/Settings.tsx:135
-#: src/screens/Messages/Settings.tsx:138
+#: src/screens/Messages/Settings.tsx:307
+#: src/screens/Messages/Settings.tsx:310
 #: src/screens/Moderation/index.tsx:411
 msgid "Enabled"
 msgstr "Aktiveret"
@@ -3176,6 +3275,15 @@ msgstr "Aktiveret"
 msgid "End of feed"
 msgstr "Slut på feed"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:57
+#: src/screens/Saved/SavedCollectionsPage.tsx:46
+msgid "Enregistrer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:43
+msgid "Enregistrez des posts pour commencer votre collection."
+msgstr ""
+
 #: src/view/com/composer/videos/SubtitleDialog.tsx:158
 msgid "Ensure you have selected a language for each subtitle file."
 msgstr "Husk at angive et sprog for hver enkelt undertekstfil."
@@ -3183,6 +3291,10 @@ msgstr "Husk at angive et sprog for hver enkelt undertekstfil."
 #: src/screens/Login/SetNewPasswordForm.tsx:147
 msgid "Enter a password"
 msgstr "Indtast en adgangskode"
+
+#: src/screens/Messages/Settings.tsx:116
+msgid "Enter a valid Matrix ID (example: @alice:matrix.org)."
+msgstr ""
 
 #: src/components/dialogs/MutedWords.tsx:127
 #: src/components/dialogs/MutedWords.tsx:128
@@ -3224,6 +3336,10 @@ msgstr "Indtast din e-mailadresse"
 msgid "Enter your password"
 msgstr "Indtast din adgangskode"
 
+#: src/screens/Messages/Settings.tsx:115
+msgid "Enter your Tellus Chat ID."
+msgstr ""
+
 #: src/screens/Login/index.tsx:123
 msgid "Enter your username and password"
 msgstr "Indtsat dit brugernavn og din adgangskode"
@@ -3235,6 +3351,11 @@ msgstr "Åbner i fuld skærm"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:236
 msgid "Entertainment"
 msgstr "Underholdning"
+
+#: src/screens/MessagesMatrix.web.tsx:1779
+#: src/screens/MessagesMatrix.web.tsx:1786
+msgid "Envoyer"
+msgstr ""
 
 #: src/view/com/composer/Composer.tsx:1843
 #: src/view/com/util/error/ErrorScreen.tsx:42
@@ -3269,6 +3390,11 @@ msgstr "Fejl:"
 msgid "Error: {error}"
 msgstr "Fejl: {error}"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:59
+#: src/screens/Saved/SavedCollectionsPage.tsx:37
+msgid "Essayez un autre terme de recherche."
+msgstr ""
+
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:398
 msgid "Everybody"
 msgstr "Alle"
@@ -3281,8 +3407,8 @@ msgstr "Alle kan svare"
 msgid "Everybody can reply to this post."
 msgstr "Alle kan besvare dette opslag."
 
-#: src/screens/Messages/Settings.tsx:88
-#: src/screens/Messages/Settings.tsx:91
+#: src/screens/Messages/Settings.tsx:260
+#: src/screens/Messages/Settings.tsx:263
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:164
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:174
 msgid "Everyone"
@@ -3381,10 +3507,10 @@ msgstr "Voldsomme eller stødende medier."
 msgid "Explicit sexual images."
 msgstr "Pornografiske billeder."
 
-#: src/Navigation.tsx:759
+#: src/Navigation.tsx:817
 #: src/screens/Search/Shell.tsx:307
-#: src/view/shell/desktop/LeftNav.tsx:689
-#: src/view/shell/Drawer.tsx:414
+#: src/view/shell/desktop/LeftNav.tsx:690
+#: src/view/shell/Drawer.tsx:435
 msgid "Explore"
 msgstr "Udforsk"
 
@@ -3392,6 +3518,10 @@ msgstr "Udforsk"
 #: src/components/WelcomeModal.tsx:177
 msgid "Explore the app"
 msgstr "Udforsk appen,"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:44
+msgid "Explorer"
+msgstr ""
 
 #: src/screens/Settings/AccountSettings.tsx:152
 #: src/screens/Settings/AccountSettings.tsx:156
@@ -3417,7 +3547,7 @@ msgstr "Eksterne medier"
 msgid "External media may allow websites to collect information about you and your device. No information is sent or requested until you press the \"play\" button."
 msgstr "Afspilning af medier fra eksterne websites muliggør indsamling af oplysninger om dig og din enhed. Der udveksles ingen oplysninger, før du starter afspilningen."
 
-#: src/Navigation.tsx:375
+#: src/Navigation.tsx:406
 #: src/screens/Settings/ExternalMediaPreferences.tsx:34
 msgid "External Media Preferences"
 msgstr "Indstillinger for eksterne medier"
@@ -3443,10 +3573,6 @@ msgstr "Ændring af handle fejlde. Prøv igen."
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:173
 msgid "Failed to create app password. Please try again."
 msgstr "Oprettelse af appadgangskode fejlede. Prøv igen."
-
-#: src/components/dms/MessageProfileButton.tsx:36
-msgid "Failed to create conversation"
-msgstr "Kunne ikke starte samtale"
 
 #: src/screens/StarterPack/Wizard/index.tsx:262
 #: src/screens/StarterPack/Wizard/index.tsx:270
@@ -3602,7 +3728,7 @@ msgstr "Opdatering af feeds fejlede"
 msgid "Failed to update notification declaration"
 msgstr "Kunne ikke opdatere notifikationsbeskrivelse"
 
-#: src/screens/Messages/Settings.tsx:39
+#: src/screens/Messages/Settings.tsx:57
 msgid "Failed to update settings"
 msgstr "Opdatering af indstillinger fejlede"
 
@@ -3621,7 +3747,7 @@ msgstr "Kunne ikke bekræfte e-mail, prøv igen."
 msgid "Failed to verify handle. Please try again."
 msgstr "Kunne ikke verificere handle. Prøv igen."
 
-#: src/Navigation.tsx:291
+#: src/Navigation.tsx:297
 msgid "Feed"
 msgstr "Feed"
 
@@ -3650,9 +3776,9 @@ msgstr "Feed tilføj/fjern"
 msgid "Feed unavailable"
 msgstr "Feed utilgængeligt"
 
-#: src/view/shell/desktop/RightNav.tsx:106
-#: src/view/shell/desktop/RightNav.tsx:107
-#: src/view/shell/Drawer.tsx:368
+#: src/view/shell/desktop/RightNav.tsx:94
+#: src/view/shell/desktop/RightNav.tsx:95
+#: src/view/shell/Drawer.tsx:389
 msgid "Feedback"
 msgstr "Kontakt"
 
@@ -3662,14 +3788,14 @@ msgctxt "toast"
 msgid "Feedback sent to feed operator"
 msgstr "Feedback blev sendt feedets ejer"
 
-#: src/Navigation.tsx:574
+#: src/Navigation.tsx:610
 #: src/screens/Search/SearchResults.tsx:73
 #: src/screens/StarterPack/StarterPackScreen.tsx:190
 #: src/view/screens/Feeds.tsx:511
 #: src/view/screens/Profile.tsx:230
 #: src/view/screens/SavedFeeds.tsx:104
-#: src/view/shell/desktop/LeftNav.tsx:727
-#: src/view/shell/Drawer.tsx:530
+#: src/view/shell/desktop/LeftNav.tsx:728
+#: src/view/shell/Drawer.tsx:551
 msgid "Feeds"
 msgstr "Feeds"
 
@@ -3737,8 +3863,8 @@ msgid "Find people to follow"
 msgstr "Find personer, du kan følge"
 
 #: src/screens/Search/Shell.tsx:476
-msgid "Find posts, users, and feeds on Bluesky"
-msgstr "Find opslag, brugere og feeds på Bluesky"
+msgid "Find posts, users, and feeds on Tellus"
+msgstr "Find opslag, brugere og feeds på Tellus"
 
 #: src/screens/Onboarding/StepFinished.tsx:345
 msgid "Find your people"
@@ -3776,7 +3902,7 @@ msgstr "Fleksibel"
 #: src/components/ProfileHoverCard/index.web.tsx:496
 #: src/components/ProfileHoverCard/index.web.tsx:507
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:131
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:252
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:282
 #: src/screens/VideoFeed/index.tsx:854
 msgid "Follow"
 msgstr "Følg"
@@ -3787,7 +3913,7 @@ msgid "Follow"
 msgstr "Følg"
 
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:113
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:237
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:267
 msgid "Follow {0}"
 msgstr "Følg {0}"
 
@@ -3804,8 +3930,8 @@ msgstr "Følg 10 konti"
 msgid "Follow 7 accounts"
 msgstr "Følg 7 konti"
 
-#: src/view/com/profile/ProfileMenu.tsx:287
-#: src/view/com/profile/ProfileMenu.tsx:298
+#: src/view/com/profile/ProfileMenu.tsx:342
+#: src/view/com/profile/ProfileMenu.tsx:353
 msgid "Follow account"
 msgstr "Følg konto"
 
@@ -3822,7 +3948,7 @@ msgstr "Følg alle konti"
 #. User is not following this account, click to follow back
 #: src/components/ProfileCard.tsx:518
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:129
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:250
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:280
 msgid "Follow back"
 msgstr "Følg tilbage"
 
@@ -3851,7 +3977,7 @@ msgstr "Følges af <0>{0}</0> og <1>{1}</1>"
 msgid "Followed by <0>{0}</0>, <1>{1}</1>, and {2, plural, one {# other} other {# others}}"
 msgstr "Følges af <0>{0}</0>, <1>{1}</1> og {2, plural, one {# anden} other {# andre}}"
 
-#: src/Navigation.tsx:245
+#: src/Navigation.tsx:251
 msgid "Followers of @{0} that you know"
 msgstr "Følgere af @{0}, som du måske kender"
 
@@ -3865,7 +3991,7 @@ msgstr "Følgere du kender"
 #: src/components/ProfileHoverCard/index.web.tsx:495
 #: src/components/ProfileHoverCard/index.web.tsx:506
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:134
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:248
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:278
 #: src/screens/VideoFeed/index.tsx:852
 msgid "Following"
 msgstr "Følger"
@@ -3877,7 +4003,7 @@ msgid "Following"
 msgstr "Følger"
 
 #: src/components/ProfileCard.tsx:474
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:92
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:96
 msgid "Following {0}"
 msgstr "Følger {0}"
 
@@ -3890,7 +4016,7 @@ msgstr "Følger {handle}"
 msgid "Following feed preferences"
 msgstr "Indstillinger for følgerfeed"
 
-#: src/Navigation.tsx:362
+#: src/Navigation.tsx:393
 #: src/screens/Settings/FollowingFeedPreferences.tsx:56
 msgid "Following Feed Preferences"
 msgstr "Indstillinger for følgerfeed"
@@ -3917,8 +4043,8 @@ msgid "Food"
 msgstr "Mad"
 
 #: src/components/BlockedGeoOverlay.tsx:56
-msgid "For now, we have made the difficult decision to block access to Bluesky in the state of Mississippi."
-msgstr "Indtil videre har vi truffet den svære beslutning at blokere for adgang til Bluesky i Mississippi."
+msgid "For now, we have made the difficult decision to block access to Tellus in the state of Mississippi."
+msgstr "Indtil videre har vi truffet den svære beslutning at blokere for adgang til Tellus i Mississippi."
 
 #: src/view/com/modals/DeleteAccount.tsx:125
 msgid "For security reasons, we'll need to send a confirmation code to your email address."
@@ -3984,7 +4110,7 @@ msgstr "Fra <0/>"
 msgid "Generate a starter pack"
 msgstr "Generer en startpakke"
 
-#: src/view/shell/Drawer.tsx:372
+#: src/view/shell/Drawer.tsx:393
 msgid "Get help"
 msgstr "Få hjælp"
 
@@ -4116,8 +4242,8 @@ msgstr "Gå til forside"
 msgid "Go Home"
 msgstr "Gå til forside"
 
-#: src/view/com/profile/ProfileMenu.tsx:330
-#: src/view/com/profile/ProfileMenu.tsx:337
+#: src/view/com/profile/ProfileMenu.tsx:385
+#: src/view/com/profile/ProfileMenu.tsx:392
 msgid "Go live"
 msgstr "Gå live"
 
@@ -4152,8 +4278,8 @@ msgid "Go to next"
 msgstr "Gå til næste"
 
 #: src/components/dms/ConvoMenu.tsx:227
-#: src/view/shell/desktop/LeftNav.tsx:317
-#: src/view/shell/desktop/LeftNav.tsx:323
+#: src/view/shell/desktop/LeftNav.tsx:319
+#: src/view/shell/desktop/LeftNav.tsx:325
 msgid "Go to profile"
 msgstr "Gå til profil"
 
@@ -4167,6 +4293,14 @@ msgstr "Gå til brugers profil"
 #: src/view/com/composer/labels/LabelsBtn.tsx:204
 msgid "Graphic Media"
 msgstr "Vold"
+
+#: src/screens/Saved/components.tsx:141
+msgid "Grille"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:422
+msgid "Groupe"
+msgstr ""
 
 #: src/state/shell/progress-guide.tsx:220
 #: src/state/shell/progress-guide.tsx:230
@@ -4200,7 +4334,7 @@ msgstr "Haptisk feedback"
 msgid "Harassment, trolling, or intolerance"
 msgstr "Chikane, trolling og intolerance"
 
-#: src/Navigation.tsx:539
+#: src/Navigation.tsx:570
 msgid "Hashtag"
 msgstr "Hashtag"
 
@@ -4217,11 +4351,11 @@ msgstr "Har du en kode? <0>Klik her.</0>"
 msgid "Having trouble?"
 msgstr "Har du problemer?"
 
-#: src/screens/Settings/Settings.tsx:236
-#: src/screens/Settings/Settings.tsx:240
-#: src/view/shell/desktop/RightNav.tsx:124
-#: src/view/shell/desktop/RightNav.tsx:125
-#: src/view/shell/Drawer.tsx:381
+#: src/screens/Settings/Settings.tsx:252
+#: src/screens/Settings/Settings.tsx:256
+#: src/view/shell/desktop/RightNav.tsx:112
+#: src/view/shell/desktop/RightNav.tsx:113
+#: src/view/shell/Drawer.tsx:402
 msgid "Help"
 msgstr "Hjælp"
 
@@ -4362,11 +4496,11 @@ msgstr "Hmm, vi kunne ikke indlæse moderationstjenesten."
 msgid "Hold up! We’re gradually giving access to video, and you’re still waiting in line. Check back soon!"
 msgstr "Vent lidt! Vi udruller gradvist adgang til video, og du er stadig i kø. Prøv igen senere!"
 
-#: src/Navigation.tsx:754
-#: src/Navigation.tsx:774
+#: src/Navigation.tsx:812
+#: src/Navigation.tsx:832
 #: src/view/shell/bottom-bar/BottomBar.tsx:178
-#: src/view/shell/desktop/LeftNav.tsx:671
-#: src/view/shell/Drawer.tsx:440
+#: src/view/shell/desktop/LeftNav.tsx:672
+#: src/view/shell/Drawer.tsx:461
 msgid "Home"
 msgstr "Forside"
 
@@ -4388,6 +4522,10 @@ msgstr "Hot"
 msgid "How should we open this link?"
 msgstr "Hvordan skal vi åbne dette link?"
 
+#: src/screens/MessagesMatrix.web.tsx:1071
+msgid "https://matrix.org"
+msgstr ""
+
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:133
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:136
 msgid "I have a code"
@@ -4402,6 +4540,15 @@ msgstr "Jeg har mit eget domæne"
 #: src/components/dms/ReportConversationPrompt.tsx:21
 msgid "I understand"
 msgstr "Jeg forstår"
+
+#: src/screens/MessagesMatrix.web.tsx:978
+#: src/screens/MessagesMatrix.web.tsx:1149
+msgid "Identifiant Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:797
+msgid "Identifiant Tellus Chat invalide."
+msgstr ""
 
 #: src/view/com/lightbox/Lightbox.web.tsx:187
 msgid "If alt text is long, toggles alt text expanded state"
@@ -4482,6 +4629,42 @@ msgstr "Identitetstyveri eller falske oplysninger om identitet eller tilknytning
 #: src/lib/moderation/useReportOptions.ts:68
 msgid "Impersonation, misinformation, or false claims"
 msgstr "Identitetstyveri, misinformation eller falske påstande"
+
+#: src/screens/MessagesMatrix.web.tsx:694
+msgid "Impossible d'envoyer le message."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:808
+msgid "Impossible d’inviter cette personne."
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:89
+msgid "Impossible d’ouvrir Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1636
+msgid "Impossible de charger la conversation"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:647
+msgid "Impossible de charger les messages."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:411
+msgid "Impossible de créer la conversation."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:561
+msgid "Impossible de créer le groupe."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:831
+msgid "Impossible de quitter le groupe."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:252
+msgid "Impossible de se connecter à Tellus Chat."
+msgstr ""
 
 #: src/screens/Settings/NotificationSettings/index.tsx:284
 msgid "In-app"
@@ -4578,6 +4761,10 @@ msgstr "Ugyldigt emne for anmeldelse"
 msgid "Invalid Verification Code"
 msgstr "Ugyldig bekræftelseskode"
 
+#: src/screens/MessagesMatrix.web.tsx:1255
+msgid "Invitations"
+msgstr ""
+
 #: src/view/com/modals/InviteCodes.tsx:94
 msgid "Invite a Friend"
 msgstr "Inviter en ven"
@@ -4602,9 +4789,37 @@ msgstr "Invitationskoder: 1 tilgængelig"
 msgid "Invite people to this starter pack!"
 msgstr "Inviter folk til denne startpakke!"
 
+#: src/Navigation.tsx:595
+msgid "Invite to Tellus Chat"
+msgstr ""
+
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:34
 msgid "Invite your friends to follow your favorite feeds and people"
 msgstr "Inviter dine venner til at følge dine foretrukne feeds og konti"
+
+#: src/screens/Messages/Invite.tsx:79
+msgid "Invite-la pour démarrer la discussion. Elle pourra créer son compte puis revenir ici."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1586
+#: src/screens/MessagesMatrix.web.tsx:1593
+msgid "Inviter"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:113
+msgid "Inviter {normalizedHandle} sur Tellus Chat"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:114
+#: src/components/dms/MessageProfileButton.tsx:174
+#: src/components/dms/MessageProfileButton.tsx:202
+#: src/screens/Messages/Invite.tsx:65
+msgid "Inviter sur Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1560
+msgid "Inviter un membre"
+msgstr ""
 
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:31
 msgid "Invites, but personal"
@@ -4630,7 +4845,7 @@ msgstr "Lige nu er der kun dig! Føj flere personer til din startpakke ved at s�
 msgid "Job ID: {0}"
 msgstr "Job-ID: {0}"
 
-#. Link to a page with job openings at Bluesky
+#. Link to a page with job openings at Tellus
 #: src/view/com/auth/SplashScreen.web.tsx:180
 msgid "Jobs"
 msgstr "Jobs"
@@ -4640,8 +4855,8 @@ msgstr "Jobs"
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:211
 #: src/screens/StarterPack/StarterPackScreen.tsx:466
 #: src/screens/StarterPack/StarterPackScreen.tsx:477
-msgid "Join Bluesky"
-msgstr "Opret dig på Bluesky"
+msgid "Join Tellus"
+msgstr "Opret dig på Tellus"
 
 #: src/components/StarterPack/QrCode.tsx:68
 #: src/view/shell/NavSignupCard.tsx:40
@@ -4698,13 +4913,17 @@ msgstr "Mærkater på din konto"
 msgid "Labels on your content"
 msgstr "Mærkater på dit indhold"
 
-#: src/Navigation.tsx:218
+#: src/screens/MessagesMatrix.web.tsx:1278
+msgid "Lance une discussion ou crée un groupe."
+msgstr ""
+
+#: src/Navigation.tsx:224
 msgid "Language Settings"
 msgstr "Sprogindstillinger"
 
 #: src/screens/Settings/LanguageSettings.tsx:78
-#: src/screens/Settings/Settings.tsx:228
-#: src/screens/Settings/Settings.tsx:231
+#: src/screens/Settings/Settings.tsx:244
+#: src/screens/Settings/Settings.tsx:247
 msgid "Languages"
 msgstr "Sprog"
 
@@ -4744,13 +4963,13 @@ msgstr "Læs mere"
 msgid "Learn more about age assurance"
 msgstr "Læs mere om alderstjek"
 
-#: src/view/com/auth/SplashScreen.web.tsx:168
-msgid "Learn more about Bluesky"
-msgstr "Læs mere om Bluesky"
-
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
 msgstr "Læs mere om at hoste din egen PDS."
+
+#: src/view/com/auth/SplashScreen.web.tsx:168
+msgid "Learn more about Tellus"
+msgstr "Læs mere om Tellus"
 
 #: src/components/moderation/ContentHider.tsx:152
 #: src/components/moderation/ContentHider.tsx:218
@@ -4773,13 +4992,13 @@ msgstr "Læs mere om denne advarsel"
 #: src/components/verification/VerificationsDialog.tsx:151
 #: src/components/verification/VerifierDialog.tsx:118
 msgctxt "english-only-resource"
-msgid "Learn more about verification on Bluesky"
-msgstr "Læs mere om verifikation på Bluesky"
+msgid "Learn more about verification on Tellus"
+msgstr "Læs mere om verifikation på Tellus"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:128
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:131
-msgid "Learn more about what is public on Bluesky."
-msgstr "Læs mere om, hvad der er offentligt på Bluesky."
+msgid "Learn more about what is public on Tellus."
+msgstr "Læs mere om, hvad der er offentligt på Tellus."
 
 #: src/components/ageAssurance/AgeAssuranceAdmonition.tsx:86
 msgid "Learn more in your <0>account settings.</0>"
@@ -4813,12 +5032,16 @@ msgstr "Lad alle være fravalgt for at se alle sprog."
 
 #: src/components/dialogs/LinkWarning.tsx:67
 #: src/components/dialogs/LinkWarning.tsx:75
-msgid "Leaving Bluesky"
-msgstr "Forlader Bluesky"
+msgid "Leaving Tellus"
+msgstr "Forlader Tellus"
 
 #: src/screens/SignupQueued.tsx:155
 msgid "left to go."
 msgstr "foran dig i køen."
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:42
+msgid "Les posts ne seront pas supprimés de Tellus."
+msgstr ""
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:323
 msgid "Let me choose"
@@ -4833,6 +5056,10 @@ msgstr "Lad os få nulstillet din adgangskode!"
 #: src/screens/Onboarding/StepFinished.tsx:591
 msgid "Let's go!"
 msgstr "Lad os komme i gang!"
+
+#: src/screens/Messages/Invite.tsx:48
+msgid "Lien copié"
+msgstr ""
 
 #: src/components/dialogs/Embed.tsx:162
 #: src/components/dialogs/Embed.tsx:164
@@ -4863,7 +5090,7 @@ msgstr "Like 10 opslag"
 msgid "Like 10 posts to train the Discover feed"
 msgstr "Like 10 opslag for at træne Discover-feedet"
 
-#: src/Navigation.tsx:452
+#: src/Navigation.tsx:483
 msgid "Like notifications"
 msgstr "Notifikationer ved likes"
 
@@ -4875,8 +5102,8 @@ msgstr "Like dette feed"
 msgid "Like this labeler"
 msgstr "Like denne mærkningstjeneste"
 
-#: src/Navigation.tsx:296
-#: src/Navigation.tsx:301
+#: src/Navigation.tsx:302
+#: src/Navigation.tsx:307
 msgid "Liked by"
 msgstr "Liket af"
 
@@ -4911,7 +5138,7 @@ msgstr "Likes"
 msgid "Likes of your reposts"
 msgstr "Likes af dine videredelinger"
 
-#: src/Navigation.tsx:476
+#: src/Navigation.tsx:507
 msgid "Likes of your reposts notifications"
 msgstr "Notifikationer ved videredeling af videredelinger"
 
@@ -4924,7 +5151,7 @@ msgstr "Likes af dette opslag"
 msgid "Linear"
 msgstr "Lineært"
 
-#: src/Navigation.tsx:251
+#: src/Navigation.tsx:257
 msgid "List"
 msgstr "Liste"
 
@@ -4986,12 +5213,16 @@ msgctxt "toast"
 msgid "List unmuted"
 msgstr "Liste ikke længere skjult"
 
-#: src/Navigation.tsx:172
+#: src/screens/Saved/components.tsx:149
+msgid "Liste"
+msgstr ""
+
+#: src/Navigation.tsx:178
 #: src/view/screens/Lists.tsx:65
 #: src/view/screens/Profile.tsx:224
 #: src/view/screens/Profile.tsx:232
-#: src/view/shell/desktop/LeftNav.tsx:745
-#: src/view/shell/Drawer.tsx:545
+#: src/view/shell/desktop/LeftNav.tsx:764
+#: src/view/shell/Drawer.tsx:566
 msgid "Lists"
 msgstr "Lister"
 
@@ -5030,16 +5261,20 @@ msgstr "Indlæs nye notifikationer"
 
 #: src/screens/Profile/ProfileFeed/index.tsx:224
 #: src/screens/Profile/Sections/Feed.tsx:98
-#: src/view/com/feeds/FeedPage.tsx:162
+#: src/view/com/feeds/FeedPage.tsx:174
 #: src/view/screens/ProfileList.tsx:878
 msgid "Load new posts"
 msgstr "Indlæs nye opslag"
+
+#: src/screens/Messages/Settings.tsx:204
+msgid "Loading Tellus Chat ID..."
+msgstr ""
 
 #: src/view/com/composer/text-input/mobile/Autocomplete.tsx:61
 msgid "Loading..."
 msgstr "Indlæser..."
 
-#: src/Navigation.tsx:321
+#: src/Navigation.tsx:327
 msgid "Log"
 msgstr "Log"
 
@@ -5047,14 +5282,14 @@ msgstr "Log"
 msgid "Logged-out visibility"
 msgstr "Synlighed for udloggede brugere"
 
-#: src/view/shell/desktop/RightNav.tsx:134
-msgid "Logo by @sawaratsuki.bsky.social"
-msgstr "Logo af @sawaratsuki.bsky.social"
+#: src/view/shell/desktop/RightNav.tsx:122
+msgid "Logo by @sawaratsuki.tellus.social"
+msgstr "Logo af @sawaratsuki.tellus.social"
 
-#: src/view/shell/desktop/RightNav.tsx:131
-#: src/view/shell/Drawer.tsx:709
-msgid "Logo by <0>@sawaratsuki.bsky.social</0>"
-msgstr "Logo af <0>@sawaratsuki.bsky.social</0>"
+#: src/view/shell/desktop/RightNav.tsx:119
+#: src/view/shell/Drawer.tsx:774
+msgid "Logo by <0>@sawaratsuki.tellus.social</0>"
+msgstr "Logo af <0>@sawaratsuki.tellus.social</0>"
 
 #: src/components/RichTextTag.tsx:53
 msgid "Long press to open tag menu for #{tag}"
@@ -5088,6 +5323,11 @@ msgstr "Opret en for mig"
 msgid "Make sure this is where you intend to go!"
 msgstr "Tjek, at det virkelig er dette website, du ønsker at besøge!"
 
+#: src/components/PostControls/BookmarkButton.web.tsx:45
+msgctxt "Accessibility label for the save button when item already saved"
+msgid "Manage saved collections"
+msgstr ""
+
 #: src/screens/Settings/ContentAndMediaSettings.tsx:60
 #: src/screens/Settings/ContentAndMediaSettings.tsx:63
 msgid "Manage saved feeds"
@@ -5117,6 +5357,11 @@ msgstr "Marker som læst"
 msgid "Marked all as read"
 msgstr "Marker alle som læst"
 
+#: src/screens/MessagesMatrix.web.tsx:1497
+#: src/screens/MessagesMatrix.web.tsx:1506
+msgid "Masquer"
+msgstr ""
+
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:90
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:97
 msgid "Maybe later"
@@ -5130,7 +5375,11 @@ msgstr "Medier"
 msgid "Media that may be disturbing or inappropriate for some audiences."
 msgstr "Medier, der kan virke stødende eller upassende for visse personer."
 
-#: src/Navigation.tsx:436
+#: src/screens/MessagesMatrix.web.tsx:1520
+msgid "Membres du groupe"
+msgstr ""
+
+#: src/Navigation.tsx:467
 msgid "Mention notifications"
 msgstr "Omtalenotifikationer"
 
@@ -5153,9 +5402,14 @@ msgstr "Omtaler"
 msgid "Menu"
 msgstr "Menu"
 
-#: src/components/dms/MessageProfileButton.tsx:97
-msgid "Message {0}"
-msgstr "Send besked til {0}"
+#: src/components/dms/MessageProfileButton.tsx:176
+#: src/components/dms/MessageProfileButton.tsx:204
+msgid "Message (Tellus Chat)"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:116
+msgid "Message {normalizedHandle} sur Tellus Chat"
+msgstr ""
 
 #: src/components/dms/MessageContextMenu.tsx:77
 msgctxt "toast"
@@ -5187,16 +5441,16 @@ msgstr "Beskeden er for lang"
 msgid "Message options"
 msgstr "Beskedindstillinger"
 
-#: src/Navigation.tsx:769
-msgid "Messages"
-msgstr "Beskeder"
+#: src/components/dms/MessageProfileButton.tsx:117
+msgid "Message sur Tellus Chat"
+msgstr ""
 
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:111
 msgctxt "Name of app icon variant"
 msgid "Midnight"
 msgstr "Midnat"
 
-#: src/Navigation.tsx:500
+#: src/Navigation.tsx:531
 msgid "Miscellaneous notifications"
 msgstr "Diverse notifikationer"
 
@@ -5210,10 +5464,10 @@ msgstr "Vildledende konto"
 msgid "Misleading Post"
 msgstr "Vildledende opslag"
 
-#: src/Navigation.tsx:177
+#: src/Navigation.tsx:183
 #: src/screens/Moderation/index.tsx:100
-#: src/screens/Settings/Settings.tsx:188
-#: src/screens/Settings/Settings.tsx:191
+#: src/screens/Settings/Settings.tsx:190
+#: src/screens/Settings/Settings.tsx:193
 msgid "Moderation"
 msgstr "Moderation"
 
@@ -5249,7 +5503,7 @@ msgstr "Moderationsliste opdateret"
 msgid "Moderation lists"
 msgstr "Moderationslister"
 
-#: src/Navigation.tsx:182
+#: src/Navigation.tsx:188
 #: src/view/screens/ModerationModlists.tsx:65
 msgid "Moderation Lists"
 msgstr "Moderationslister"
@@ -5258,7 +5512,7 @@ msgstr "Moderationslister"
 msgid "moderation settings"
 msgstr "moderationsindstillinger"
 
-#: src/Navigation.tsx:311
+#: src/Navigation.tsx:317
 msgid "Moderation states"
 msgstr "Moderationstilstande"
 
@@ -5271,6 +5525,19 @@ msgstr "Moderationsværktøjer"
 msgid "Moderator has chosen to set a general warning on the content."
 msgstr "Moderator har besluttet at sætte en generel advarsel på indholdet."
 
+#: src/screens/Saved/CollectionDetailPage.tsx:48
+msgid "Modifier"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:43
+#: src/screens/Saved/SavedCollectionsPage.tsx:51
+msgid "Modifier la couverture"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1200
+msgid "Mon groupe"
+msgstr ""
+
 #: src/view/shell/desktop/Feeds.tsx:108
 #: src/view/shell/desktop/Feeds.tsx:118
 msgid "More feeds"
@@ -5281,11 +5548,16 @@ msgstr "Flere feeds"
 msgid "More languages..."
 msgstr "Flere sprog..."
 
-#: src/view/com/profile/ProfileMenu.tsx:223
-#: src/view/com/profile/ProfileMenu.tsx:229
+#: src/view/com/profile/ProfileMenu.tsx:261
+#: src/view/com/profile/ProfileMenu.tsx:267
 #: src/view/screens/ProfileList.tsx:750
 msgid "More options"
 msgstr "Flere valgmuligheder"
+
+#: src/screens/MessagesMatrix.web.tsx:992
+#: src/screens/MessagesMatrix.web.tsx:996
+msgid "Mot de passe"
+msgstr ""
 
 #: src/screens/Onboarding/state.ts:113
 msgid "Movies"
@@ -5308,8 +5580,8 @@ msgstr "Skjul {tag}"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:628
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:634
-#: src/view/com/profile/ProfileMenu.tsx:375
-#: src/view/com/profile/ProfileMenu.tsx:382
+#: src/view/com/profile/ProfileMenu.tsx:430
+#: src/view/com/profile/ProfileMenu.tsx:437
 msgid "Mute account"
 msgstr "Skjul konto"
 
@@ -5372,7 +5644,7 @@ msgstr "Skjul ord og tags"
 msgid "Muted accounts"
 msgstr "Skjulte konti"
 
-#: src/Navigation.tsx:187
+#: src/Navigation.tsx:193
 #: src/view/screens/ModerationMutedAccounts.tsx:118
 msgid "Muted Accounts"
 msgstr "Skjulte konti"
@@ -5401,6 +5673,10 @@ msgstr "Min fødselsdato"
 #: src/view/screens/Feeds.tsx:704
 msgid "My Feeds"
 msgstr "Mine feeds"
+
+#: src/screens/Messages/Settings.tsx:183
+msgid "My Tellus Chat ID (Matrix ID)"
+msgstr ""
 
 #: src/view/com/modals/CreateOrEditList.tsx:268
 msgid "Name"
@@ -5440,7 +5716,7 @@ msgstr "Gå til startpakke"
 msgid "Navigates to the next screen"
 msgstr "Går til næste skærmbillede"
 
-#: src/view/shell/Drawer.tsx:78
+#: src/view/shell/Drawer.tsx:81
 msgid "Navigates to your profile"
 msgstr "Går til din profil"
 
@@ -5495,7 +5771,7 @@ msgstr "Ny e-mailadresse"
 msgid "New Feature"
 msgstr "Ny feature"
 
-#: src/Navigation.tsx:468
+#: src/Navigation.tsx:499
 msgid "New follower notifications"
 msgstr "Notifikationer ved nye følgere"
 
@@ -5539,12 +5815,12 @@ msgstr "Ny adgangskode"
 msgid "New post"
 msgstr "Nyt opslag"
 
-#: src/view/com/feeds/FeedPage.tsx:173
+#: src/view/com/feeds/FeedPage.tsx:185
 msgctxt "action"
 msgid "New post"
 msgstr "Nyt opslag"
 
-#: src/view/shell/desktop/LeftNav.tsx:580
+#: src/view/shell/desktop/LeftNav.tsx:582
 msgctxt "action"
 msgid "New Post"
 msgstr "Nyt opslag"
@@ -5576,9 +5852,12 @@ msgstr "Ny brugerliste"
 msgid "Newest replies first"
 msgstr "Nyeste svar først"
 
+#: src/Navigation.tsx:615
 #: src/screens/Onboarding/index.tsx:36
 #: src/screens/Onboarding/state.ts:116
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:238
+#: src/view/shell/desktop/LeftNav.tsx:746
+#: src/view/shell/Drawer.tsx:614
 msgid "News"
 msgstr "Nyheder"
 
@@ -5610,8 +5889,8 @@ msgid "Next image"
 msgstr "Næste billede"
 
 #: src/screens/Onboarding/StepFinished.tsx:356
-msgid "No ads, no invasive tracking, no engagement traps. Bluesky respects your time and attention."
-msgstr "Ingen annoncer, ingen tracking, ingen manipulerende algoritme. Bluesky respekter din tid og opmærksomhed."
+msgid "No ads, no invasive tracking, no engagement traps. Tellus respects your time and attention."
+msgstr "Ingen annoncer, ingen tracking, ingen manipulerende algoritme. Tellus respekter din tid og opmærksomhed."
 
 #: src/screens/Settings/AppPasswords.tsx:108
 msgid "No app passwords yet"
@@ -5644,7 +5923,7 @@ msgid "No likes yet"
 msgstr "Ingen likes endnu."
 
 #: src/components/ProfileCard.tsx:496
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:114
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:118
 msgid "No longer following {0}"
 msgstr "Følger ikke længere {0}"
 
@@ -5660,8 +5939,8 @@ msgstr "Ingen algoritmer, der prioriterer spam og belønner doomscrolling. Find 
 msgid "No notifications yet!"
 msgstr "Ingen notifikationer endnu!"
 
-#: src/screens/Messages/Settings.tsx:106
-#: src/screens/Messages/Settings.tsx:109
+#: src/screens/Messages/Settings.tsx:278
+#: src/screens/Messages/Settings.tsx:281
 #: src/screens/Settings/ActivityPrivacySettings.tsx:129
 #: src/screens/Settings/ActivityPrivacySettings.tsx:134
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:160
@@ -5750,6 +6029,18 @@ msgstr "Ingen har videredelt dette endnu. Måske skulle du være den første!"
 msgid "Nobody was found. Try searching for someone else."
 msgstr "Ingen blev fundet. Prøv at søge efter en anden."
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:32
+msgid "Nom"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1196
+msgid "Nom du groupe"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:33
+msgid "Nombre d'éléments"
+msgstr ""
+
 #: src/lib/moderation/useGlobalLabelStrings.ts:42
 msgid "Non-sexual Nudity"
 msgstr "Ikkeseksuel nøgenhed"
@@ -5762,7 +6053,7 @@ msgstr "Ingen"
 msgid "Not followed by anyone you're following"
 msgstr "Følges ikke af nogen, du følger"
 
-#: src/Navigation.tsx:167
+#: src/Navigation.tsx:173
 #: src/view/screens/Profile.tsx:125
 msgid "Not Found"
 msgstr "Ikke fundet"
@@ -5771,13 +6062,13 @@ msgstr "Ikke fundet"
 msgid "Not in Mississippi?"
 msgstr "Ikke i Mississippi?"
 
-#: src/view/com/profile/ProfileMenu.tsx:497
+#: src/view/com/profile/ProfileMenu.tsx:561
 msgid "Note about sharing"
 msgstr "Note vedr. deling"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:117
-msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
-msgstr "OBS: Bluesky er et åbent og offentligt netværk. Denne indstilling begrænser kun synligheden af dit indhold her på Bluesky. Andre apps og websites respekterer ikke nødvendigvis denne indstilling. Dit indhold kan stadig blive vist i andre apps og på andre websites til udloggede brugere."
+msgid "Note: Tellus is an open and public network. This setting only limits the visibility of your content on the Tellus app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
+msgstr "OBS: Tellus er et åbent og offentligt netværk. Denne indstilling begrænser kun synligheden af dit indhold her på Tellus. Andre apps og websites respekterer ikke nødvendigvis denne indstilling. Dit indhold kan stadig blive vist i andre apps og på andre websites til udloggede brugere."
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:134
 msgid "Note: This post is only visible to logged-in users."
@@ -5791,22 +6082,22 @@ msgstr "Ingenting her"
 msgid "Nothing saved yet"
 msgstr "Endnu ingen gemt"
 
-#: src/Navigation.tsx:422
-#: src/Navigation.tsx:569
+#: src/Navigation.tsx:453
+#: src/Navigation.tsx:605
 #: src/view/screens/Notifications.tsx:136
 msgid "Notification settings"
 msgstr "Notifikationindstillinger"
 
-#: src/screens/Messages/Settings.tsx:128
+#: src/screens/Messages/Settings.tsx:300
 msgid "Notification sounds"
 msgstr "Notifikationslyde"
 
-#: src/screens/Messages/Settings.tsx:125
+#: src/screens/Messages/Settings.tsx:297
 msgid "Notification Sounds"
 msgstr "Notifikationslyde"
 
-#: src/Navigation.tsx:564
-#: src/Navigation.tsx:764
+#: src/Navigation.tsx:600
+#: src/Navigation.tsx:822
 #: src/screens/Notifications/ActivityList.tsx:29
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:90
 #: src/screens/Settings/NotificationSettings/index.tsx:92
@@ -5819,18 +6110,37 @@ msgstr "Notifikationslyde"
 #: src/screens/Settings/NotificationSettings/ReplyNotificationSettings.tsx:30
 #: src/screens/Settings/NotificationSettings/RepostNotificationSettings.tsx:30
 #: src/screens/Settings/NotificationSettings/RepostsOnRepostsNotificationSettings.tsx:30
-#: src/screens/Settings/Settings.tsx:196
-#: src/screens/Settings/Settings.tsx:199
+#: src/screens/Settings/Settings.tsx:198
+#: src/screens/Settings/Settings.tsx:201
 #: src/view/screens/Notifications.tsx:130
 #: src/view/shell/bottom-bar/BottomBar.tsx:252
-#: src/view/shell/desktop/LeftNav.tsx:708
-#: src/view/shell/Drawer.tsx:493
+#: src/view/shell/desktop/LeftNav.tsx:709
+#: src/view/shell/Drawer.tsx:514
 msgid "Notifications"
 msgstr "Notifikationer"
 
 #: src/screens/Settings/NotificationSettings/MiscellaneousNotificationSettings.tsx:43
 msgid "Notifications for everything else, such as when someone joins via one of your starter packs."
 msgstr "Notifikationer for alt andet, fx når nogen opretter sig via en af dine startpakker."
+
+#: src/screens/MessagesMatrix.web.tsx:724
+#: src/screens/MessagesMatrix.web.tsx:732
+#: src/screens/MessagesMatrix.web.tsx:1191
+msgid "Nouveau groupe"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:28
+#: src/screens/Saved/SavedCollectionsPage.tsx:40
+msgid "Nouvelle collection"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:712
+#: src/screens/MessagesMatrix.web.tsx:720
+#: src/screens/MessagesMatrix.web.tsx:1145
+#: src/screens/MessagesMatrix.web.tsx:1283
+#: src/screens/MessagesMatrix.web.tsx:1290
+msgid "Nouvelle discussion"
+msgstr ""
 
 #: src/lib/hooks/useTimeAgo.ts:135
 msgid "now"
@@ -5889,7 +6199,7 @@ msgstr "Ældste svar først"
 msgid "on<0><1/><2><3/></2></0>"
 msgstr "på<0><1/><2><3/></2></0>"
 
-#: src/screens/Settings/Settings.tsx:388
+#: src/screens/Settings/Settings.tsx:404
 msgid "Onboarding reset"
 msgstr "Nulstil velkomst"
 
@@ -5962,6 +6272,7 @@ msgid "Open conversation options"
 msgstr "Åbn samtaleindstillinger"
 
 #: src/components/Layout/Header/index.tsx:160
+#: src/screens/Messages/components/PageShell.tsx:43
 msgid "Open drawer menu"
 msgstr "Åbn navigation"
 
@@ -5991,7 +6302,7 @@ msgstr "Åbn link til {niceUrl}"
 msgid "Open message options"
 msgstr "Åbn beskedindstillinger"
 
-#: src/screens/Settings/Settings.tsx:453
+#: src/screens/Settings/Settings.tsx:469
 msgid "Open moderation debug page"
 msgstr "Åbn moderationsfejlsøgningsside"
 
@@ -6020,12 +6331,12 @@ msgstr "Åbn delemenu"
 msgid "Open starter pack menu"
 msgstr "Åbn startpakkemenu"
 
-#: src/screens/Settings/Settings.tsx:446
-#: src/screens/Settings/Settings.tsx:460
+#: src/screens/Settings/Settings.tsx:462
+#: src/screens/Settings/Settings.tsx:476
 msgid "Open storybook page"
 msgstr "Åbn storybook"
 
-#: src/screens/Settings/Settings.tsx:439
+#: src/screens/Settings/Settings.tsx:455
 msgid "Open system log"
 msgstr "Åbn systemlog"
 
@@ -6072,19 +6383,19 @@ msgstr "Åbner emojivælger"
 
 #: src/view/com/auth/SplashScreen.tsx:49
 #: src/view/com/auth/SplashScreen.web.tsx:111
-msgid "Opens flow to create a new Bluesky account"
-msgstr "Åbner formular til oprettelse af en ny Bluesky-konto"
+msgid "Opens flow to create a new Tellus account"
+msgstr "Åbner formular til oprettelse af en ny Tellus-konto"
 
 #: src/view/com/auth/SplashScreen.tsx:63
 #: src/view/com/auth/SplashScreen.web.tsx:125
-msgid "Opens flow to sign in to your existing Bluesky account"
-msgstr "Åbner formular til at logge ind på din eksisterende Bluesky-konto"
+msgid "Opens flow to sign in to your existing Tellus account"
+msgstr "Åbner formular til at logge ind på din eksisterende Tellus-konto"
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:36
 msgid "Opens GIF select dialog"
 msgstr "Åbner GIF-vælger"
 
-#: src/screens/Settings/Settings.tsx:237
+#: src/screens/Settings/Settings.tsx:253
 msgid "Opens helpdesk in browser"
 msgstr "Åbner hjælpeside i browser"
 
@@ -6169,8 +6480,8 @@ msgid "Our moderation team has received your report."
 msgstr "Vores moderatorteam har modtaget din anmeldelse."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:29
-msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
-msgstr "Vores moderatorer har gennemgået anmeldelser og besluttet at spærre din adgang til chats på Bluesky."
+msgid "Our moderators have reviewed reports and decided to disable your access to chats on Tellus."
+msgstr "Vores moderatorer har gennemgået anmeldelser og besluttet at spærre din adgang til chats på Tellus."
 
 #: src/components/Lists.tsx:191
 #: src/view/screens/NotFound.tsx:47
@@ -6180,6 +6491,16 @@ msgstr "Side ikke fundet"
 #: src/view/screens/NotFound.tsx:44
 msgid "Page Not Found"
 msgstr "Side ikke fundet"
+
+#: src/screens/Messages/Invite.tsx:99
+#: src/screens/Messages/Invite.tsx:105
+msgid "Partager le lien"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:109
+#: src/screens/Messages/Invite.tsx:115
+msgid "Partager un message"
+msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:228
 #: src/screens/Settings/AccountSettings.tsx:121
@@ -6222,11 +6543,11 @@ msgstr "Stop afspilning"
 msgid "People"
 msgstr "Personer"
 
-#: src/Navigation.tsx:238
+#: src/Navigation.tsx:244
 msgid "People followed by @{0}"
 msgstr "Personer, som følges af @{0}"
 
-#: src/Navigation.tsx:231
+#: src/Navigation.tsx:237
 msgid "People following @{0}"
 msgstr "Personer, som @{0} følger"
 
@@ -6348,8 +6669,8 @@ msgid "Please choose your password."
 msgstr "Vælg din adgangskode."
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:290
-msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
-msgstr "Klik på linket i den e-mail, vi lige har sendt dig, for at bekræfte din nye e-mailadresse. Dette er nødvendigt for, at du fortsat kan have glæde af alle Blueskys funktioner."
+msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Tellus."
+msgstr "Klik på linket i den e-mail, vi lige har sendt dig, for at bekræfte din nye e-mailadresse. Dette er nødvendigt for, at du fortsat kan have glæde af alle Telluss funktioner."
 
 #: src/screens/Signup/state.ts:302
 msgid "Please complete the verification captcha."
@@ -6470,6 +6791,14 @@ msgstr "Indtast din e-mail"
 msgid "Please write your message below:"
 msgstr "Skriv din besked herunder:"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:38
+msgid "Plus anciens"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:37
+msgid "Plus récents"
+msgstr ""
+
 #: src/screens/Onboarding/index.tsx:50
 #: src/screens/Onboarding/state.ts:119
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:232
@@ -6499,10 +6828,10 @@ msgstr "Slå alle op"
 msgid "Post blocked"
 msgstr "Opslag blokeret"
 
-#: src/Navigation.tsx:264
-#: src/Navigation.tsx:271
-#: src/Navigation.tsx:278
-#: src/Navigation.tsx:285
+#: src/Navigation.tsx:270
+#: src/Navigation.tsx:277
+#: src/Navigation.tsx:284
+#: src/Navigation.tsx:291
 msgid "Post by @{0}"
 msgstr "Opslag af @{0}"
 
@@ -6536,7 +6865,7 @@ msgstr "Opslag skjult af dig"
 msgid "Post interaction settings"
 msgstr "Interaktionsindstillinger"
 
-#: src/Navigation.tsx:198
+#: src/Navigation.tsx:204
 #: src/screens/ModerationInteractionSettings/index.tsx:34
 msgid "Post Interaction Settings"
 msgstr "Interaktionsindstillinger"
@@ -6594,6 +6923,10 @@ msgstr "Potentielt misvisende link"
 msgid "Potentially misleading link warning"
 msgstr "Advarsel om potentielt misvisende link"
 
+#: src/screens/Messages/Invite.tsx:123
+msgid "Pourquoi l’inviter ?"
+msgstr ""
+
 #: src/screens/Messages/components/MessageListError.tsx:19
 msgid "Press to attempt reconnection"
 msgstr "Tryk for at forsøge at forbinde igen"
@@ -6622,18 +6955,18 @@ msgstr "Primært sprog"
 msgid "Prioritize your Follows"
 msgstr "Prioriter konti, du følger"
 
-#: src/view/shell/desktop/RightNav.tsx:114
-#: src/view/shell/desktop/RightNav.tsx:115
+#: src/view/shell/desktop/RightNav.tsx:102
+#: src/view/shell/desktop/RightNav.tsx:103
 msgid "Privacy"
 msgstr "Privatliv"
 
-#: src/screens/Settings/Settings.tsx:182
-#: src/screens/Settings/Settings.tsx:185
+#: src/screens/Settings/Settings.tsx:184
+#: src/screens/Settings/Settings.tsx:187
 msgid "Privacy and security"
 msgstr "Privatliv og sikkerhed"
 
-#: src/Navigation.tsx:407
-#: src/Navigation.tsx:415
+#: src/Navigation.tsx:438
+#: src/Navigation.tsx:446
 #: src/screens/Settings/ActivityPrivacySettings.tsx:40
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:45
 msgid "Privacy and Security"
@@ -6645,12 +6978,12 @@ msgstr "Privatlivs- og sikkerhedsindstillinger"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:35
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:102
-#: src/Navigation.tsx:331
+#: src/Navigation.tsx:337
 #: src/screens/Settings/AboutSettings.tsx:92
 #: src/screens/Settings/AboutSettings.tsx:95
 #: src/view/screens/PrivacyPolicy.tsx:31
-#: src/view/shell/Drawer.tsx:704
-#: src/view/shell/Drawer.tsx:705
+#: src/view/shell/Drawer.tsx:769
+#: src/view/shell/Drawer.tsx:770
 msgid "Privacy Policy"
 msgstr "Privatlivspolitik"
 
@@ -6669,9 +7002,9 @@ msgid "profile"
 msgstr "profil"
 
 #: src/view/shell/bottom-bar/BottomBar.tsx:316
-#: src/view/shell/desktop/LeftNav.tsx:786
-#: src/view/shell/Drawer.tsx:77
-#: src/view/shell/Drawer.tsx:596
+#: src/view/shell/desktop/LeftNav.tsx:825
+#: src/view/shell/Drawer.tsx:80
+#: src/view/shell/Drawer.tsx:661
 msgid "Profile"
 msgstr "Profil"
 
@@ -6740,7 +7073,12 @@ msgstr "QR-kode blev downloadet!"
 msgid "QR code saved to your camera roll!"
 msgstr "QR-kode blev gemt til din kamerarulle!"
 
-#: src/Navigation.tsx:444
+#: src/screens/MessagesMatrix.web.tsx:1597
+#: src/screens/MessagesMatrix.web.tsx:1603
+msgid "Quitter le groupe"
+msgstr ""
+
+#: src/Navigation.tsx:475
 msgid "Quote notifications"
 msgstr "Notifikationer ved citater"
 
@@ -6825,18 +7163,18 @@ msgid "Read our blog post"
 msgstr "Læs vores blogindlæg"
 
 #: src/view/com/auth/SplashScreen.web.tsx:173
-msgid "Read the Bluesky blog"
-msgstr "Læs Blueskys blog"
+msgid "Read the Tellus blog"
+msgstr "Læs Telluss blog"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:88
 #: src/screens/Signup/StepInfo/Policies.tsx:114
-msgid "Read the Bluesky Privacy Policy"
-msgstr "Læs Blueskys privatlivspolitik"
+msgid "Read the Tellus Privacy Policy"
+msgstr "Læs Telluss privatlivspolitik"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:81
 #: src/screens/Signup/StepInfo/Policies.tsx:101
-msgid "Read the Bluesky Terms of Service"
-msgstr "Læs Blueskys tjenestevilkår"
+msgid "Read the Tellus Terms of Service"
+msgstr "Læs Telluss tjenestevilkår"
 
 #: src/components/WelcomeModal.tsx:146
 msgid "Real conversations."
@@ -6867,9 +7205,21 @@ msgstr "Modtag push-notifikationer"
 msgid "Recent Searches"
 msgstr "Seneste søgninger"
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:31
+msgid "Récentes"
+msgstr ""
+
 #: src/view/com/composer/select-language/PostLanguageSelectDialog.tsx:210
 msgid "Recently used"
 msgstr "Senest anvendte"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:35
+msgid "Rechercher dans la collection"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:29
+msgid "Rechercher une collection"
+msgstr ""
 
 #: src/screens/Search/modules/ExploreRecommendations.tsx:54
 msgid "Recommended"
@@ -6879,6 +7229,19 @@ msgstr "Anbefalet"
 msgid "Reconnect"
 msgstr "Forbind igen"
 
+#: src/screens/MessagesMatrix.web.tsx:1631
+msgid "Récupération des messages..."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:947
+#: src/screens/MessagesMatrix.web.tsx:953
+#: src/screens/MessagesMatrix.web.tsx:1124
+#: src/screens/MessagesMatrix.web.tsx:1130
+#: src/screens/MessagesMatrix.web.tsx:1642
+#: src/screens/MessagesMatrix.web.tsx:1648
+msgid "Réessayer"
+msgstr ""
+
 #. Reject a chat request, this opens a menu with options
 #: src/screens/Messages/components/RequestButtons.tsx:124
 msgid "Reject"
@@ -6887,6 +7250,14 @@ msgstr "Afvis"
 #: src/screens/Messages/components/RequestButtons.tsx:112
 msgid "Reject chat request"
 msgstr "Afvis chatanmodning"
+
+#: src/screens/Messages/Invite.tsx:43
+msgid "Rejoins-moi sur Tellus Chat pour discuter : {inviteUrl}"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:40
+msgid "Rejoins-moi sur Tellus Chat pour discuter avec {displayHandle} : {inviteUrl}"
+msgstr ""
 
 #: src/screens/Messages/ChatList.tsx:285
 #: src/screens/Messages/Inbox.tsx:212
@@ -6901,7 +7272,7 @@ msgstr "Genindlæs samtaler"
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:104
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:111
 #: src/screens/Bookmarks/index.tsx:255
-#: src/screens/Settings/Settings.tsx:662
+#: src/screens/Settings/Settings.tsx:678
 #: src/view/com/modals/UserAddRemoveLists.tsx:235
 #: src/view/com/posts/PostFeedErrorMessage.tsx:217
 msgid "Remove"
@@ -6915,8 +7286,8 @@ msgstr "Fjern {displayName} fra startpakke"
 msgid "Remove {historyItem}"
 msgstr "Fjern {historyItem}"
 
-#: src/screens/Settings/Settings.tsx:641
-#: src/screens/Settings/Settings.tsx:644
+#: src/screens/Settings/Settings.tsx:657
+#: src/screens/Settings/Settings.tsx:660
 msgid "Remove account"
 msgstr "Fjern konto"
 
@@ -6955,7 +7326,7 @@ msgstr "Fjern feed?"
 msgid "Remove from my feeds"
 msgstr "Fjern fra mine feeds"
 
-#: src/screens/Settings/Settings.tsx:654
+#: src/screens/Settings/Settings.tsx:670
 msgid "Remove from quick access?"
 msgstr "Fjern fra kvikadgang?"
 
@@ -7009,8 +7380,8 @@ msgstr "Fjern bruger fra liste"
 
 #: src/components/verification/VerificationRemovePrompt.tsx:46
 #: src/components/verification/VerificationsDialog.tsx:252
-#: src/view/com/profile/ProfileMenu.tsx:348
-#: src/view/com/profile/ProfileMenu.tsx:351
+#: src/view/com/profile/ProfileMenu.tsx:403
+#: src/view/com/profile/ProfileMenu.tsx:406
 msgid "Remove verification"
 msgstr "Fjern verifikation"
 
@@ -7053,6 +7424,15 @@ msgstr "Fjernet fra dine feeds"
 #: src/components/verification/VerificationRemovePrompt.tsx:32
 msgid "Removed verification"
 msgstr "Fjernede verifikation"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:47
+#: src/screens/Saved/SavedCollectionsPage.tsx:50
+msgid "Renommer"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:39
+msgid "Renommer la collection"
+msgstr ""
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:129
 #: src/view/com/posts/FeedShutdownMsg.tsx:133
@@ -7117,7 +7497,7 @@ msgstr "Svar skjult af trådens forfatter"
 msgid "Reply Hidden by You"
 msgstr "Svar skjult af dig"
 
-#: src/Navigation.tsx:428
+#: src/Navigation.tsx:459
 msgid "Reply notifications"
 msgstr "Notifikationer ved svar"
 
@@ -7148,8 +7528,8 @@ msgstr "Svar blev skjult"
 msgid "Report"
 msgstr "Anmeld"
 
-#: src/view/com/profile/ProfileMenu.tsx:415
-#: src/view/com/profile/ProfileMenu.tsx:418
+#: src/view/com/profile/ProfileMenu.tsx:470
+#: src/view/com/profile/ProfileMenu.tsx:473
 msgid "Report account"
 msgstr "Anmeld konto"
 
@@ -7243,7 +7623,7 @@ msgstr "Videredel"
 msgid "Repost ({0, plural, one {# repost} other {# reposts}})"
 msgstr "Videredel ({0, plural, one {# deling} other {# delinger}})"
 
-#: src/Navigation.tsx:460
+#: src/Navigation.tsx:491
 msgid "Repost notifications"
 msgstr "Notifikationer ved videredeling"
 
@@ -7287,7 +7667,7 @@ msgstr "Videredelinger af dette opslag"
 msgid "Reposts of your reposts"
 msgstr "Videredeling af dine videredelinger"
 
-#: src/Navigation.tsx:484
+#: src/Navigation.tsx:515
 msgid "Reposts of your reposts notifications"
 msgstr "Notifikationer ved videredeling af videredelinger"
 
@@ -7330,8 +7710,8 @@ msgstr "Gensend e-mail"
 msgid "Resend Verification Email"
 msgstr "Gensend bekræftelseskode"
 
-#: src/screens/Settings/Settings.tsx:482
-#: src/screens/Settings/Settings.tsx:484
+#: src/screens/Settings/Settings.tsx:498
+#: src/screens/Settings/Settings.tsx:500
 msgid "Reset activity subscription nudge"
 msgstr "Nulstil tip om notifikationer om nye opslag"
 
@@ -7339,14 +7719,31 @@ msgstr "Nulstil tip om notifikationer om nye opslag"
 msgid "Reset code"
 msgstr "Nulstil kode"
 
-#: src/screens/Settings/Settings.tsx:467
-#: src/screens/Settings/Settings.tsx:469
+#: src/screens/Settings/Settings.tsx:483
+#: src/screens/Settings/Settings.tsx:485
 msgid "Reset onboarding state"
 msgstr "Nulstil velkomsttilstand"
 
 #: src/screens/Login/ForgotPasswordForm.tsx:80
 msgid "Reset password"
 msgstr "Nulstil adgangskode"
+
+#: src/screens/MessagesMatrix.web.tsx:1013
+msgid "Rester connecté"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:55
+msgid "Retirer de la collection"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1458
+#: src/screens/Saved/CollectionDetailPage.tsx:34
+msgid "Retour"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:46
+msgid "Retournez à la bibliothèque pour choisir une autre collection."
+msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:324
 msgid "Retries signing in"
@@ -7413,6 +7810,8 @@ msgstr "Går tilbage til det forrige trin"
 #: src/components/live/EditLiveDialog.tsx:216
 #: src/components/live/EditLiveDialog.tsx:223
 #: src/components/StarterPack/QrCodeDialog.tsx:192
+#: src/screens/Messages/Settings.tsx:210
+#: src/screens/Messages/Settings.tsx:217
 #: src/screens/Profile/Header/EditProfileDialog.tsx:238
 #: src/screens/Profile/Header/EditProfileDialog.tsx:252
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:267
@@ -7461,23 +7860,29 @@ msgstr "Gem nyt handle"
 msgid "Save QR code"
 msgstr "Gem QR-kode"
 
+#: src/components/PostControls/BookmarkButton.web.tsx:51
+msgctxt "Accessibility label for the save button when item not yet saved"
+msgid "Save to collection"
+msgstr ""
+
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:320
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:326
 msgid "Save to my feeds"
 msgstr "Føj til mine feeds"
 
-#: src/view/shell/desktop/LeftNav.tsx:764
-#: src/view/shell/Drawer.tsx:571
-msgctxt "link to bookmarks screen"
-msgid "Saved"
-msgstr "Gemt"
+#: src/Navigation.tsx:658
+msgid "Saved collection"
+msgstr ""
+
+#: src/Navigation.tsx:649
+msgid "Saved collections"
+msgstr ""
 
 #: src/view/screens/SavedFeeds.tsx:172
 msgid "Saved Feeds"
 msgstr "Gemte feeds"
 
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:143
-#: src/Navigation.tsx:608
 #: src/screens/Bookmarks/index.tsx:55
 msgid "Saved Posts"
 msgstr "Gemte opslag"
@@ -7519,6 +7924,20 @@ msgstr "Rul til højre"
 msgid "Scroll to top"
 msgstr "Rul til toppen"
 
+#: src/screens/MessagesMatrix.web.tsx:1017
+#: src/screens/MessagesMatrix.web.tsx:1024
+msgid "Se connecter"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:973
+msgid "Se connecter à Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:737
+#: src/screens/MessagesMatrix.web.tsx:743
+msgid "Se déconnecter"
+msgstr ""
+
 #: src/components/dialogs/SearchablePeopleList.tsx:514
 #: src/components/forms/SearchInput.tsx:34
 #: src/components/forms/SearchInput.tsx:36
@@ -7528,7 +7947,7 @@ msgstr "Rul til toppen"
 msgid "Search"
 msgstr "Søg"
 
-#: src/Navigation.tsx:257
+#: src/Navigation.tsx:263
 #: src/screens/Profile/ProfileSearch.tsx:37
 msgid "Search @{0}'s posts"
 msgstr "Søg i opslag fra @{0}"
@@ -7592,8 +8011,8 @@ msgstr "Søg efter sprog"
 msgid "Search my posts"
 msgstr "Søg i mine opslag"
 
-#: src/view/com/profile/ProfileMenu.tsx:266
-#: src/view/com/profile/ProfileMenu.tsx:269
+#: src/view/com/profile/ProfileMenu.tsx:304
+#: src/view/com/profile/ProfileMenu.tsx:307
 msgid "Search posts"
 msgstr "Søg opslag"
 
@@ -7636,8 +8055,8 @@ msgid "See #{tag} posts by user"
 msgstr "Se #{tag}-indlæg af bruger"
 
 #: src/view/com/auth/SplashScreen.web.tsx:178
-msgid "See jobs at Bluesky"
-msgstr "Se jobs hos Bluesky"
+msgid "See jobs at Tellus"
+msgstr "Se jobs hos Tellus"
 
 #: src/components/FeedInterstitials.tsx:394
 #: src/components/FeedInterstitials.tsx:445
@@ -7802,6 +8221,10 @@ msgstr "Vælg dine foretrukne notifikationskanaler"
 msgid "Selecting multiple media types is not supported."
 msgstr "Valg af flere medietyper er ikke understøttet."
 
+#: src/screens/MessagesMatrix.web.tsx:1623
+msgid "Sélectionne une conversation"
+msgstr ""
+
 #: src/components/dms/ChatEmptyPill.tsx:38
 msgid "Send a neat website!"
 msgstr "Del et fedt website!"
@@ -7818,7 +8241,7 @@ msgctxt "action"
 msgid "Send Email"
 msgstr "Send e-mail"
 
-#: src/view/shell/Drawer.tsx:361
+#: src/view/shell/Drawer.tsx:382
 msgid "Send feedback"
 msgstr "Send feedback"
 
@@ -7871,6 +8294,14 @@ msgstr "Sender e-mail med bekræftelseskode for kontosletning"
 msgid "Server address"
 msgstr "Serveradresse"
 
+#: src/screens/MessagesMatrix.web.tsx:1067
+msgid "Serveur"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:322
+msgid "Serveur invalide."
+msgstr ""
+
 #: src/screens/Settings/AppIconSettings/index.tsx:178
 msgid "Set app icon to {0}"
 msgstr "Sæt appikon til {0}"
@@ -7891,10 +8322,10 @@ msgstr "Konfigurer din konto"
 msgid "Sets email for password reset"
 msgstr "Angiver e-mail til nulstilling af adgangskode"
 
-#: src/Navigation.tsx:213
-#: src/screens/Settings/Settings.tsx:99
-#: src/view/shell/desktop/LeftNav.tsx:804
-#: src/view/shell/Drawer.tsx:609
+#: src/Navigation.tsx:219
+#: src/screens/Settings/Settings.tsx:101
+#: src/view/shell/desktop/LeftNav.tsx:843
+#: src/view/shell/Drawer.tsx:674
 msgid "Settings"
 msgstr "Indstillinger"
 
@@ -7976,7 +8407,7 @@ msgstr "Del en sjov historie!"
 msgid "Share a fun fact!"
 msgstr "Del noget interessant!"
 
-#: src/view/com/profile/ProfileMenu.tsx:502
+#: src/view/com/profile/ProfileMenu.tsx:566
 msgid "Share anyway"
 msgstr "Del alligevel"
 
@@ -8015,15 +8446,15 @@ msgid "Share this starter pack"
 msgstr "Del denne startpakke"
 
 #: src/components/StarterPack/ShareDialog.tsx:80
-msgid "Share this starter pack and help people join your community on Bluesky."
-msgstr "Del denne startpakke og hjælp andre med at blive en del af fællesskabet på Bluesky."
+msgid "Share this starter pack and help people join your community on Tellus."
+msgstr "Del denne startpakke og hjælp andre med at blive en del af fællesskabet på Tellus."
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:117
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:120
 #: src/screens/StarterPack/StarterPackScreen.tsx:611
 #: src/screens/StarterPack/StarterPackScreen.tsx:619
-#: src/view/com/profile/ProfileMenu.tsx:246
-#: src/view/com/profile/ProfileMenu.tsx:259
+#: src/view/com/profile/ProfileMenu.tsx:284
+#: src/view/com/profile/ProfileMenu.tsx:297
 msgid "Share via..."
 msgstr "Del via..."
 
@@ -8031,7 +8462,7 @@ msgstr "Del via..."
 msgid "Share your favorite feed!"
 msgstr "Del dit yndlingsfeed!"
 
-#: src/Navigation.tsx:316
+#: src/Navigation.tsx:322
 msgid "Shared Preferences Tester"
 msgstr "Test af delte indstillinger"
 
@@ -8137,7 +8568,7 @@ msgstr "Vis advarsel og filtrer fra feeds"
 msgid "Shows information about when this post was created"
 msgstr "Viser, hvornår dette opslag blev oprettet"
 
-#: src/screens/Settings/Settings.tsx:125
+#: src/screens/Settings/Settings.tsx:127
 msgid "Shows other accounts you can switch to"
 msgstr "Viser andre konti, du kan skifte til"
 
@@ -8189,23 +8620,23 @@ msgid "Sign in to account that is not listed"
 msgstr "Log på konto, der ikke er anført"
 
 #: src/components/dialogs/Signin.tsx:46
-msgid "Sign in to Bluesky or create a new account"
-msgstr "Log på Bluesky eller opret en ny konto"
+msgid "Sign in to Tellus or create a new account"
+msgstr "Log på Tellus eller opret en ny konto"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:461
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:463
 msgid "Sign in to view post"
 msgstr "Log ind for at se opslag"
 
-#: src/screens/Settings/Settings.tsx:254
-#: src/screens/Settings/Settings.tsx:256
-#: src/screens/Settings/Settings.tsx:288
+#: src/screens/Settings/Settings.tsx:270
+#: src/screens/Settings/Settings.tsx:272
+#: src/screens/Settings/Settings.tsx:304
 #: src/screens/SignupQueued.tsx:93
 #: src/screens/SignupQueued.tsx:96
 #: src/screens/Takendown.tsx:85
-#: src/view/shell/desktop/LeftNav.tsx:212
-#: src/view/shell/desktop/LeftNav.tsx:269
-#: src/view/shell/desktop/LeftNav.tsx:272
+#: src/view/shell/desktop/LeftNav.tsx:214
+#: src/view/shell/desktop/LeftNav.tsx:271
+#: src/view/shell/desktop/LeftNav.tsx:274
 msgid "Sign out"
 msgstr "Log ud"
 
@@ -8213,8 +8644,8 @@ msgstr "Log ud"
 msgid "Sign Out"
 msgstr "Log ud"
 
-#: src/screens/Settings/Settings.tsx:285
-#: src/view/shell/desktop/LeftNav.tsx:209
+#: src/screens/Settings/Settings.tsx:301
+#: src/view/shell/desktop/LeftNav.tsx:211
 msgid "Sign out?"
 msgstr "Log ud?"
 
@@ -8325,7 +8756,7 @@ msgid "Something wrong? Let us know."
 msgstr "Noget galt? Fortæl os om det."
 
 #: src/App.native.tsx:126
-#: src/App.web.tsx:102
+#: src/App.web.tsx:106
 msgid "Sorry! Your session expired. Please sign in again."
 msgstr "Desværre! Din session er udløbet. Log venligst ind igen."
 
@@ -8345,6 +8776,10 @@ msgstr "Vis svar på et opslag i denne rækkefølge:"
 #: src/components/moderation/ModerationDetailsDialog.tsx:186
 msgid "Source: <0>{sourceName}</0>"
 msgstr "Kilde: <0>{sourceName}</0>"
+
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:252
+msgid "Soutenir"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:72
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:85
@@ -8386,8 +8821,8 @@ msgstr "Kom i gang med at tilføje personer!"
 msgid "Start chat with {displayName}"
 msgstr "Start chat med {displayName}"
 
-#: src/Navigation.tsx:579
-#: src/Navigation.tsx:584
+#: src/Navigation.tsx:620
+#: src/Navigation.tsx:625
 #: src/screens/StarterPack/Wizard/index.tsx:209
 msgid "Starter Pack"
 msgstr "Startpakke"
@@ -8427,12 +8862,12 @@ msgstr "Statusside"
 msgid "Step {0} of {1}"
 msgstr "Trin {0} af {1}"
 
-#: src/screens/Settings/Settings.tsx:393
+#: src/screens/Settings/Settings.tsx:409
 msgid "Storage cleared, you need to restart the app now."
 msgstr "Lager tømt. Genstart appen nu."
 
-#: src/Navigation.tsx:306
-#: src/screens/Settings/Settings.tsx:448
+#: src/Navigation.tsx:312
+#: src/screens/Settings/Settings.tsx:464
 msgid "Storybook"
 msgstr "Storybook"
 
@@ -8521,16 +8956,26 @@ msgctxt "Name of app icon variant"
 msgid "Sunset"
 msgstr "Solnedgang"
 
-#: src/Navigation.tsx:326
+#: src/Navigation.tsx:332
 #: src/view/screens/Support.tsx:31
 #: src/view/screens/Support.tsx:34
 msgid "Support"
 msgstr "Support"
 
-#: src/screens/Settings/Settings.tsx:123
-#: src/screens/Settings/Settings.tsx:137
-#: src/screens/Settings/Settings.tsx:604
-#: src/view/shell/desktop/LeftNav.tsx:247
+#: src/screens/Saved/CollectionDetailPage.tsx:49
+#: src/screens/Saved/SavedCollectionsPage.tsx:48
+msgid "Supprimer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:50
+#: src/screens/Saved/SavedCollectionsPage.tsx:41
+msgid "Supprimer la collection"
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:125
+#: src/screens/Settings/Settings.tsx:139
+#: src/screens/Settings/Settings.tsx:620
+#: src/view/shell/desktop/LeftNav.tsx:249
 msgid "Switch account"
 msgstr "Skift konto"
 
@@ -8539,13 +8984,17 @@ msgstr "Skift konto"
 msgid "Switch Account"
 msgstr "Skift konto"
 
-#: src/view/shell/desktop/LeftNav.tsx:110
+#: src/view/shell/desktop/LeftNav.tsx:112
 msgid "Switch accounts"
 msgstr "Skift konti"
 
-#: src/view/shell/desktop/LeftNav.tsx:346
+#: src/view/shell/desktop/LeftNav.tsx:348
 msgid "Switch to {0}"
 msgstr "Skift til {0}"
+
+#: src/screens/MessagesMatrix.web.tsx:1108
+msgid "Synchronisation des conversations..."
+msgstr ""
 
 #: src/components/dialogs/Embed.tsx:157
 #: src/components/dialogs/Embed.tsx:159
@@ -8557,7 +9006,7 @@ msgstr "System"
 #: src/screens/Log.tsx:58
 #: src/screens/Settings/AboutSettings.tsx:107
 #: src/screens/Settings/AboutSettings.tsx:110
-#: src/screens/Settings/Settings.tsx:441
+#: src/screens/Settings/Settings.tsx:457
 msgid "System log"
 msgstr "Systemlog"
 
@@ -8566,8 +9015,8 @@ msgid "Tags only"
 msgstr "Kun tags"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:116
-msgid "Tap below to allow Bluesky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
-msgstr "Tryk for at give Bluesky adgang til din GPS-lokation. Vi bruger denne oplysning til at styre, hvilket indhold og hvilke funktioner der er tilgængelige i din region."
+msgid "Tap below to allow Tellus to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
+msgstr "Tryk for at give Tellus adgang til din GPS-lokation. Vi bruger denne oplysning til at styre, hvilket indhold og hvilke funktioner der er tilgængelige i din region."
 
 #: src/view/com/feeds/MissingFeed.tsx:89
 msgid "Tap for information"
@@ -8578,8 +9027,8 @@ msgid "Tap for more information"
 msgstr "Tryk for mere info"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:164
-msgid "Tap to acknowledge that you understand and agree to these updates and continue using Bluesky"
-msgstr "Tryk for at bekræfte, at du forstår og accepterer disse ændringer, og fortsæt med at bruge Bluesky"
+msgid "Tap to acknowledge that you understand and agree to these updates and continue using Tellus"
+msgstr "Tryk for at bekræfte, at du forstår og accepterer disse ændringer, og fortsæt med at bruge Tellus"
 
 #: src/components/ContextMenu/Backdrop.ios.tsx:54
 #: src/components/ContextMenu/Backdrop.ios.tsx:80
@@ -8620,20 +9069,136 @@ msgstr "Fortæl os lidt mere om dig selv"
 msgid "Tell us a little more"
 msgstr "Fortæl os lidt mere"
 
-#: src/view/shell/desktop/RightNav.tsx:120
-#: src/view/shell/desktop/RightNav.tsx:121
+#: src/view/com/auth/server-input/index.tsx:136
+#: src/view/com/auth/server-input/index.tsx:137
+msgid "Tellus"
+msgstr "Tellus"
+
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:690
+msgid "Tellus cannot confirm the authenticity of the claimed date."
+msgstr "Tellus kan ikke bekræfte den anførte datos gyldighed."
+
+#: src/Navigation.tsx:580
+#: src/Navigation.tsx:827
+#: src/screens/Messages/ChatList.tsx:76
+#: src/screens/Messages/ChatList.tsx:394
+#: src/screens/Messages/ChatList.tsx:418
+#: src/screens/Messages/Settings.tsx:173
+#: src/screens/MessagesMatrix.web.tsx:935
+#: src/screens/Settings/Settings.tsx:206
+#: src/screens/Settings/Settings.tsx:209
+#: src/view/shell/bottom-bar/BottomBar.tsx:221
+#: src/view/shell/desktop/LeftNav.tsx:609
+#: src/view/shell/Drawer.tsx:487
+msgid "Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1052
+msgid "Tellus Chat est basé sur Matrix."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:146
+msgid "Tellus Chat ID removed."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:125
+msgid "Tellus Chat ID saved."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:941
+#: src/screens/MessagesMatrix.web.tsx:1118
+msgid "Tellus Chat indisponible"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:620
+msgid "Tellus Chat indisponible."
+msgstr ""
+
+#: src/Navigation.tsx:590
+#: src/screens/Messages/components/InboxPreview.tsx:22
+#: src/screens/Messages/components/InboxPreview.tsx:62
+#: src/screens/Messages/Inbox.tsx:56
+#: src/screens/Messages/Inbox.tsx:98
+msgid "Tellus Chat requests"
+msgstr ""
+
+#: src/components/dms/ConvoMenu.tsx:76
+#: src/Navigation.tsx:585
+#: src/screens/Messages/ChatList.tsx:81
+#: src/screens/Messages/ChatList.tsx:85
+#: src/screens/Messages/ChatList.tsx:378
+#: src/screens/Messages/Settings.tsx:164
+msgid "Tellus Chat settings"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:126
+msgid "Tellus Chat te permet de continuer les discussions initiées sur le réseau social, en privé, avec la même simplicité."
+msgstr ""
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:175
+msgctxt "Name of app icon variant"
+msgid "Tellus Classic™"
+msgstr "Tellus Classic™"
+
+#: src/view/com/auth/server-input/index.tsx:212
+msgid "Tellus is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+msgstr "Tellus er et åbent netværk, hvor du kan vælge din egen udbyder. Hvis du er udvikler, kan du køre din egen server."
+
+#: src/view/com/auth/server-input/index.tsx:149
+msgid "Tellus is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Tellus Social option."
+msgstr "Tellus er et åbent netværk, hvor du kan vælge din egen udbyder. Hvis du er ny her, anbefaler vi at bruge standardvalget Tellus Social."
+
+#: src/components/ProgressGuide/List.tsx:53
+#: src/components/ProgressGuide/List.tsx:70
+msgid "Tellus is better with friends!"
+msgstr "Tellus virker bedre med venner!"
+
+#: src/screens/Takendown.tsx:217
+msgid "Tellus Social Terms of Service"
+msgstr "Tellus Socials tjenestevilkår"
+
+#: src/components/StarterPack/ProfileStarterPacks.tsx:310
+msgid "Tellus will choose a set of recommended accounts from people in your network."
+msgstr "Tellus vil vælge et antal anbefalede konti fra personer i dit netværk."
+
+#: src/screens/Settings/components/PwiOptOut.tsx:99
+msgid "Tellus will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+msgstr "Tellus vil ikke vise din profil og dine opslag til udloggede brugere."
+
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
+msgid "Tellus will proactively verify notable and authentic accounts."
+msgstr "Tellus vil løbende verificere populære konti."
+
+#: src/screens/Signup/StepInfo/Policies.tsx:26
+msgid "Tellus's Community Guidelines"
+msgstr "Telluss fællesskabsregler"
+
+#: src/screens/Signup/StepInfo/Policies.tsx:32
+msgid "Tellus's Updated Community Guidelines"
+msgstr "Telluss opdaterede fællesskabsregler"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:99
+msgid "Tellus+"
+msgstr "Tellus+"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:102
+msgid "Tellus+ icons"
+msgstr "Tellus+-ikoner"
+
+#: src/view/shell/desktop/RightNav.tsx:108
+#: src/view/shell/desktop/RightNav.tsx:109
 msgid "Terms"
 msgstr "Tjenestevilkår"
 
 #: src/components/dialogs/BirthDateSettings.tsx:135
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:30
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:97
-#: src/Navigation.tsx:336
+#: src/Navigation.tsx:342
 #: src/screens/Settings/AboutSettings.tsx:84
 #: src/screens/Settings/AboutSettings.tsx:87
 #: src/view/screens/TermsOfService.tsx:31
-#: src/view/shell/Drawer.tsx:697
-#: src/view/shell/Drawer.tsx:699
+#: src/view/shell/Drawer.tsx:762
+#: src/view/shell/Drawer.tsx:764
 msgid "Terms of Service"
 msgstr "Tjenestevilkår"
 
@@ -8703,8 +9268,8 @@ msgstr "Det var alt, folkens!"
 msgid "That's everything!"
 msgstr "Det var alt"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:324
-#: src/view/com/profile/ProfileMenu.tsx:478
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:382
+#: src/view/com/profile/ProfileMenu.tsx:542
 msgid "The account will be able to interact with you after unblocking."
 msgstr "Kontoen vil være i stand til at interagere med dig, når du fjerner blokering."
 
@@ -8721,10 +9286,6 @@ msgstr "Forfatteren af denne tråd har skjult dette svar."
 #: src/components/dialogs/BirthDateSettings.tsx:122
 msgid "The birthdate you've entered means you are under 18 years old. Certain content and features may be unavailable to you."
 msgstr "Ifølge den fødselsdato, du har indtastet, er du under 18 år. Visse opslag og funktioner kan være utilgængelige for dig."
-
-#: src/screens/Moderation/index.tsx:426
-msgid "The Bluesky web application"
-msgstr "Bluesky-webapplikationen"
 
 #: src/view/screens/CommunityGuidelines.tsx:38
 msgid "The Community Guidelines have been moved to <0/>"
@@ -8743,8 +9304,8 @@ msgid "The Discover feed now knows what you like"
 msgstr "Discover-feedet ved nu, hvad du synes om"
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:324
-msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
-msgstr "Oplevelsen er bedre i appen. Download Bluesky nu, så fortsætter vi, hvor du slap."
+msgid "The experience is better in the app. Download Tellus now and we'll pick back up where you left off."
+msgstr "Oplevelsen er bedre i appen. Download Tellus nu, så fortsætter vi, hvor du slap."
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:67
 msgid "The feed has been replaced with Discover."
@@ -8763,8 +9324,8 @@ msgid "The following settings will be used as your defaults when creating new po
 msgstr "Følgende indstillinger vil blive brugt som standard, når du opretter nye opslag. Du kan ændre disse for hvert enkelt opslag fra skrivefeltet."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:11
-msgid "The laws in your location require you to verify you're an adult before accessing certain features on Bluesky, like adult content and direct messaging."
-msgstr "Dit lands lovgivning kræver, at du bekræfter, at du er voksen, før du tilgår visse funktioner på Bluesky, såsom voksenindhold og direkte beskeder."
+msgid "The laws in your location require you to verify you're an adult before accessing certain features on Tellus, like adult content and direct messaging."
+msgstr "Dit lands lovgivning kræver, at du bekræfter, at du er voksen, før du tilgår visse funktioner på Tellus, såsom voksenindhold og direkte beskeder."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:14
 msgid "The laws in your location require you to verify you're an adult to access certain features. Tap to learn more."
@@ -8799,6 +9360,10 @@ msgstr "Kontekstmenuens emne"
 #: src/view/screens/Support.tsx:37
 msgid "The support form has been moved. If you need help, please <0/> or visit {HELP_DESK_URL} to get in touch with us."
 msgstr "Kontaktformularen er flyttet. Hvis du har brug for hjælp, <0/> eller besøg {HELP_DESK_URL} for at kontakte os."
+
+#: src/screens/Moderation/index.tsx:426
+msgid "The Tellus web application"
+msgstr "Tellus-webapplikationen"
 
 #: src/view/screens/TermsOfService.tsx:35
 msgid "The Terms of Service have been moved to"
@@ -8878,15 +9443,15 @@ msgstr "Dine feeds kunne ikke opdateres. Tjek din internetforbindelse og prøv i
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:388
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:90
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:101
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:101
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:123
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:136
-#: src/view/com/profile/ProfileMenu.tsx:131
-#: src/view/com/profile/ProfileMenu.tsx:141
-#: src/view/com/profile/ProfileMenu.tsx:155
-#: src/view/com/profile/ProfileMenu.tsx:165
-#: src/view/com/profile/ProfileMenu.tsx:178
-#: src/view/com/profile/ProfileMenu.tsx:190
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:105
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:127
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:140
+#: src/view/com/profile/ProfileMenu.tsx:139
+#: src/view/com/profile/ProfileMenu.tsx:149
+#: src/view/com/profile/ProfileMenu.tsx:163
+#: src/view/com/profile/ProfileMenu.tsx:173
+#: src/view/com/profile/ProfileMenu.tsx:186
+#: src/view/com/profile/ProfileMenu.tsx:198
 msgid "There was an issue! {0}"
 msgstr "Der opstod en fejl! {0}"
 
@@ -8908,8 +9473,8 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr "Der opstod en uventet fejl i appen. Giv os besked om, at det er sket for dig!"
 
 #: src/screens/SignupQueued.tsx:130
-msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
-msgstr "Der kommer mange nye brugere til Bluesky for tiden! Vi aktiverer din konto, så snart vi kan."
+msgid "There's been a rush of new users to Tellus! We'll activate your account as soon as we can."
+msgstr "Der kommer mange nye brugere til Tellus for tiden! Vi aktiverer din konto, så snart vi kan."
 
 #: src/screens/Settings/FollowingFeedPreferences.tsx:65
 msgid "These settings only apply to the Following feed."
@@ -8944,8 +9509,8 @@ msgid "This appeal will be sent to <0>{sourceName}</0>."
 msgstr "Denne klage vil blive sendt til <0>{sourceName}</0>."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:111
-msgid "This appeal will be sent to Bluesky's moderation service."
-msgstr "Denne klage vil blive sendt til Blueskys moderationstjeneste."
+msgid "This appeal will be sent to Tellus's moderation service."
+msgstr "Denne klage vil blive sendt til Telluss moderationstjeneste."
 
 #: src/screens/Messages/components/MessageListError.tsx:18
 msgid "This chat was disconnected"
@@ -8973,8 +9538,8 @@ msgid "This content is not available because one of the users involved has block
 msgstr "Dette indhold er ikke tilgængeligt, fordi nogle af de involverede brugere har blokeret hinanden."
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:118
-msgid "This content is not viewable without a Bluesky account."
-msgstr "Denne indhold kan ikke ses uden en Bluesky-konto."
+msgid "This content is not viewable without a Tellus account."
+msgstr "Denne indhold kan ikke ses uden en Tellus-konto."
 
 #: src/screens/Messages/components/ChatListItem.tsx:362
 msgid "This conversation is with a deleted or a deactivated account. Press for options"
@@ -9048,12 +9613,12 @@ msgid "This link is taking you to the following website:"
 msgstr "Dette link fører dig til følgende website:"
 
 #: src/screens/List/ListHiddenScreen.tsx:151
-msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Denne liste – oprettet af <0>{0}</0> – overtræder muligvis Blueskys fællesskabsregler med sit navn eller sin beskrivelse."
+msgid "This list – created by <0>{0}</0> – contains possible violations of Tellus's community guidelines in its name or description."
+msgstr "Denne liste – oprettet af <0>{0}</0> – overtræder muligvis Telluss fællesskabsregler med sit navn eller sin beskrivelse."
 
 #: src/screens/List/ListHiddenScreen.tsx:146
-msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Denne liste – oprettet dig – overtræder muligvis Blueskys fællesskabsregler med sit navn eller sin beskrivelse."
+msgid "This list – created by you – contains possible violations of Tellus's community guidelines in its name or description."
+msgstr "Denne liste – oprettet dig – overtræder muligvis Telluss fællesskabsregler med sit navn eller sin beskrivelse."
 
 #: src/view/screens/ProfileList.tsx:962
 msgid "This list is empty."
@@ -9064,8 +9629,8 @@ msgid "This moderation service is unavailable. See below for more details. If th
 msgstr "Denne moderationstjeneste er utilgængelig. Se herunder for flere oplysninger. Kontakt os, hvis dette problem varer ved."
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:676
-msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
-msgstr "Dette opslag er dateret <0>{0}</0>, men det blev først oprettet på Bluesky <1>{1}</1>."
+msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Tellus on <1>{1}</1>."
+msgstr "Dette opslag er dateret <0>{0}</0>, men det blev først oprettet på Tellus <1>{1}</1>."
 
 #: src/components/WhoCanReply.tsx:240
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
@@ -9087,7 +9652,7 @@ msgstr "Dette opslag vil blive skjult fra feeds og tråde. Denne handling kan ik
 msgid "This post's author has disabled quote posts."
 msgstr "Dette opslags forfatter har ikke tilladt citatopslag."
 
-#: src/view/com/profile/ProfileMenu.tsx:499
+#: src/view/com/profile/ProfileMenu.tsx:563
 msgid "This profile is only visible to logged-in users. It won't be visible to people who aren't signed in."
 msgstr "Denne profil er kun synlig for indloggede brugere. Den kan ikke ses af personer, der ikke er logget ind."
 
@@ -9148,7 +9713,7 @@ msgstr "Denne bruger følger ikke nogen."
 msgid "This will delete \"{0}\" from your muted words. You can always add it back later."
 msgstr "Dette vil fjerne \"{0}\" fra dine skjulte ord. Du kan altid tilføje det igen senere."
 
-#: src/screens/Settings/Settings.tsx:656
+#: src/screens/Settings/Settings.tsx:672
 msgid "This will remove @{0} from the quick access list."
 msgstr "Dette vil fjerne @{0} fra din kvikadgangsliste."
 
@@ -9175,13 +9740,17 @@ msgstr "Indstillinger for tråde"
 msgid "Threaded"
 msgstr "Trådet"
 
-#: src/Navigation.tsx:369
+#: src/Navigation.tsx:400
 msgid "Threads Preferences"
 msgstr "Trådindstillinger"
 
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/TimeIndicator.tsx:34
 msgid "Time remaining: {0, plural, one {# second} other {# seconds}}"
 msgstr "Tid tilbage: {0, plural, one {# sekund} other {# sekunder}}"
+
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:250
+msgid "Tip this profile"
+msgstr ""
 
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:99
 msgid "To disable the email 2FA method, please verify your access to the email address."
@@ -9225,7 +9794,7 @@ msgstr "Top"
 msgid "Top replies first"
 msgstr "Mest populære svar først"
 
-#: src/Navigation.tsx:544
+#: src/Navigation.tsx:575
 msgid "Topic"
 msgstr "Emne"
 
@@ -9251,6 +9820,11 @@ msgstr "Trends"
 msgid "Trending Videos"
 msgstr "Populære videoer"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:36
+#: src/screens/Saved/SavedCollectionsPage.tsx:30
+msgid "Trier"
+msgstr ""
+
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:138
 msgid "Trust emerges from relationships, communities, and shared context, so we’re also enabling <0>trusted verifiers</0>: organizations that can directly issue verification."
 msgstr "Tillid opstår gennem forbindelser, fællesskaber og delt indhold, så vi åbner nu for <0>autoriserede verifikatorer</0>, dvs. organisationer, som kan verificere brugerkonto."
@@ -9268,6 +9842,10 @@ msgstr "Tv"
 msgid "Two-factor authentication (2FA)"
 msgstr "Tofaktorgodkendelse (2FA)"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:40
+msgid "Type"
+msgstr ""
+
 #: src/screens/Messages/components/MessageInput.tsx:153
 msgid "Type your message here"
 msgstr "Indtast din besked her"
@@ -9277,8 +9855,8 @@ msgid "Type:"
 msgstr "Type:"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:92
-msgid "Unable to access location. You'll need to visit your system settings to enable location services for Bluesky."
-msgstr "Kunne ikke tilgå lokation. Du skal give Bluesky adgang til lokationsoplysninger under systemindstillinger."
+msgid "Unable to access location. You'll need to visit your system settings to enable location services for Tellus."
+msgstr "Kunne ikke tilgå lokation. Du skal give Tellus adgang til lokationsoplysninger under systemindstillinger."
 
 #: src/lib/hooks/useCleanError.ts:27
 #: src/lib/strings/errors.ts:11
@@ -9302,11 +9880,23 @@ msgstr "Kan ikke kontakte din udbyder. Tjek din internetforbindelse."
 msgid "Unable to delete"
 msgstr "Kan ikke slette"
 
-#: src/screens/Settings/Settings.tsx:507
+#: src/screens/Messages/Settings.tsx:151
+msgid "Unable to delete Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:95
+msgid "Unable to load Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:130
+msgid "Unable to save Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:523
 msgid "Unapply Pull Request"
 msgstr "Anvend ikke længere pull request"
 
-#: src/screens/Settings/Settings.tsx:509
+#: src/screens/Settings/Settings.tsx:525
 msgid "Unapply Pull Request {currentChannel}"
 msgstr "Anvend ikke længere pull requestet {currentChannel}"
 
@@ -9322,27 +9912,27 @@ msgstr "Utilgængelig feedinformation"
 #: src/components/dms/MessagesListBlockedFooter.tsx:104
 #: src/components/dms/MessagesListBlockedFooter.tsx:112
 #: src/components/dms/MessagesListBlockedFooter.tsx:119
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:208
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:328
-#: src/view/com/profile/ProfileMenu.tsx:490
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:223
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:386
+#: src/view/com/profile/ProfileMenu.tsx:554
 #: src/view/screens/ProfileList.tsx:723
 msgid "Unblock"
 msgstr "Bloker ikke længere"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:213
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:228
 msgctxt "action"
 msgid "Unblock"
 msgstr "Bloker ikke længere"
 
 #: src/components/dms/ConvoMenu.tsx:247
 #: src/components/dms/ConvoMenu.tsx:250
-#: src/view/com/profile/ProfileMenu.tsx:395
-#: src/view/com/profile/ProfileMenu.tsx:401
+#: src/view/com/profile/ProfileMenu.tsx:450
+#: src/view/com/profile/ProfileMenu.tsx:456
 msgid "Unblock account"
 msgstr "Bloker ikke længere konto"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:322
-#: src/view/com/profile/ProfileMenu.tsx:472
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:380
+#: src/view/com/profile/ProfileMenu.tsx:536
 msgid "Unblock Account?"
 msgstr "Bloker ikke længere konto?"
 
@@ -9370,12 +9960,12 @@ msgctxt "action"
 msgid "Unfollow"
 msgstr "Følg ikke længere"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:236
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:266
 msgid "Unfollow {0}"
 msgstr "Følg ikke længer {0}"
 
-#: src/view/com/profile/ProfileMenu.tsx:286
-#: src/view/com/profile/ProfileMenu.tsx:296
+#: src/view/com/profile/ProfileMenu.tsx:341
+#: src/view/com/profile/ProfileMenu.tsx:351
 msgid "Unfollow account"
 msgstr "Følg ikke længere konto"
 
@@ -9383,13 +9973,13 @@ msgstr "Følg ikke længere konto"
 msgid "Unfollows the user"
 msgstr "Ophører med at følge brugeren"
 
-#: src/components/BlockedGeoOverlay.tsx:48
-msgid "Unfortunately, Bluesky is unavailable in Mississippi right now."
-msgstr "Bluesky er desværre ikke tilgængelig i Mississippi for tiden."
-
 #: src/components/moderation/ReportDialog/index.tsx:372
 msgid "Unfortunately, none of your subscribed labelers supports this report type."
 msgstr "Ingen af de moderationstjenester, du abonnerer på, understøtter denne anmeldelsestype."
+
+#: src/components/BlockedGeoOverlay.tsx:48
+msgid "Unfortunately, Tellus is unavailable in Mississippi right now."
+msgstr "Tellus er desværre ikke tilgængelig i Mississippi for tiden."
 
 #: src/components/verification/VerificationsDialog.tsx:211
 msgid "Unknown verifier"
@@ -9421,8 +10011,8 @@ msgstr "Skjul ikke længere {tag}"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:627
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:633
-#: src/view/com/profile/ProfileMenu.tsx:374
-#: src/view/com/profile/ProfileMenu.tsx:380
+#: src/view/com/profile/ProfileMenu.tsx:429
+#: src/view/com/profile/ProfileMenu.tsx:435
 msgid "Unmute account"
 msgstr "Skjul ikke længere konto"
 
@@ -9478,8 +10068,8 @@ msgstr "Frigjorde {0} fra forside"
 msgid "Unpinned from your feeds"
 msgstr "Frigjort fra dine feeds"
 
-#: src/screens/Settings/Settings.tsx:474
-#: src/screens/Settings/Settings.tsx:476
+#: src/screens/Settings/Settings.tsx:490
+#: src/screens/Settings/Settings.tsx:492
 msgid "Unsnooze email reminder"
 msgstr "Udsæt ikke længere påmindelsen"
 
@@ -9590,9 +10180,13 @@ msgstr "Uploader forhåndsvisning af link..."
 msgid "Uploading video..."
 msgstr "Uploader video..."
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:49
+msgid "URL de la couverture"
+msgstr ""
+
 #: src/screens/Settings/AppPasswords.tsx:67
-msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
-msgstr "Brug appadgangskoder til at logge ind i andre Bluesky-klienter uden at give fuld adgang til din konto eller adgangskode."
+msgid "Use app passwords to sign in to other Tellus clients without giving full access to your account or password."
+msgstr "Brug appadgangskoder til at logge ind i andre Tellus-klienter uden at give fuld adgang til din konto eller adgangskode."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:568
 msgid "Use default provider"
@@ -9622,8 +10216,8 @@ msgid "Use this to sign in to the other app along with your handle."
 msgstr "Brug denne sammen med dit handle for at logge ind i en anden app."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:279
-msgid "Use your account email address, or another real email address you control, in case KWS or Bluesky needs to contact you."
-msgstr "Brug din kontos e-mailadresse eller en anden gyldig e-mailadresse, såfremt KWS eller Bluesky har brug for at kontakte dig."
+msgid "Use your account email address, or another real email address you control, in case KWS or Tellus needs to contact you."
+msgstr "Brug din kontos e-mailadresse eller en anden gyldig e-mailadresse, såfremt KWS eller Tellus har brug for at kontakte dig."
 
 #: src/view/com/modals/InviteCodes.tsx:201
 msgid "Used by:"
@@ -9701,8 +10295,8 @@ msgstr "brugere, der følges af <0>@{0}</0>"
 msgid "users following <0>@{0}</0>"
 msgstr "brugere, der følger <0>@{0}</0>"
 
-#: src/screens/Messages/Settings.tsx:97
-#: src/screens/Messages/Settings.tsx:100
+#: src/screens/Messages/Settings.tsx:269
+#: src/screens/Messages/Settings.tsx:272
 msgid "Users I follow"
 msgstr "Brugere, jeg følger"
 
@@ -9726,14 +10320,14 @@ msgstr "Verificering fejlede, prøv igen."
 msgid "Verification settings"
 msgstr "Verifikationsindstillinger"
 
-#: src/Navigation.tsx:206
+#: src/Navigation.tsx:212
 #: src/screens/Moderation/VerificationSettings.tsx:32
 msgid "Verification Settings"
 msgstr "Verifikationsindstillinger"
 
 #: src/screens/Moderation/VerificationSettings.tsx:41
-msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
-msgstr "Verificering på Bluesky fungerer anderledes end på andre platforme. <0>Læs mere.</0>"
+msgid "Verifications on Tellus work differently than on other platforms. <0>Learn more here.</0>"
+msgstr "Verificering på Tellus fungerer anderledes end på andre platforme. <0>Læs mere.</0>"
 
 #: src/components/verification/VerificationsDialog.tsx:103
 msgid "Verified by:"
@@ -9741,8 +10335,8 @@ msgstr "Verificeret af:"
 
 #: src/components/verification/VerificationCreatePrompt.tsx:84
 #: src/components/verification/VerificationCreatePrompt.tsx:86
-#: src/view/com/profile/ProfileMenu.tsx:358
-#: src/view/com/profile/ProfileMenu.tsx:361
+#: src/view/com/profile/ProfileMenu.tsx:413
+#: src/view/com/profile/ProfileMenu.tsx:416
 msgid "Verify account"
 msgstr "Bekræft konto"
 
@@ -9814,11 +10408,15 @@ msgstr "Version {0}"
 msgid "Video"
 msgstr "Video"
 
+#: src/screens/Saved/components.tsx:457
+msgid "Vidéo"
+msgstr ""
+
 #: src/view/com/composer/state/video.ts:357
 msgid "Video failed to process"
 msgstr "Videobehandling fejlede"
 
-#: src/Navigation.tsx:600
+#: src/Navigation.tsx:641
 msgid "Video Feed"
 msgstr "Videofeed"
 
@@ -10002,9 +10600,36 @@ msgstr "Besøg website"
 msgid "Visit your notification settings"
 msgstr "Besøg dine notifikationsindstillinger"
 
+#: src/screens/MessagesMatrix.web.tsx:1498
+#: src/screens/MessagesMatrix.web.tsx:1508
+msgid "Voir membres"
+msgstr ""
+
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VolumeControl.tsx:81
 msgid "Volume"
 msgstr "Lydstyrke"
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:27
+msgid "Vos collections, dans un espace calme et organisé."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:442
+msgid "Vous: {0}"
+msgstr ""
+
+#: src/Navigation.tsx:368
+#: src/Navigation.tsx:386
+#: src/screens/Settings/Settings.tsx:212
+#: src/screens/Settings/Settings.tsx:215
+#: src/view/shell/desktop/LeftNav.tsx:806
+#: src/view/shell/Drawer.tsx:635
+msgid "Wallet"
+msgstr ""
+
+#: src/view/com/profile/ProfileMenu.tsx:314
+#: src/view/com/profile/ProfileMenu.tsx:320
+msgid "Wallet / Payer"
+msgstr ""
 
 #: src/components/moderation/LabelPreference.tsx:142
 #: src/lib/moderation/useLabelBehaviorDescription.ts:17
@@ -10050,16 +10675,16 @@ msgid "We estimate {estimatedTime} until your account is ready."
 msgstr "Vi forventer, at din konto vil være klar om {estimatedTime}."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:196
-msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Bluesky."
-msgstr "Vi samarbejder med <0>KWS</0> om alderstjek. Når du klikker \"Start” herunder, vil KWS tjekke, om du tidligere har gennemført alderstjek med denne e-mailadresse i forbindelse med andre spil og tjenester, som benytter sig af KMS. Hvis ikke, vil KMS send dig en e-mail med en instruktioner til, hvordan du bekræfter din alder. Når du er færdig, bliver du sendt tilbage til Bluesky."
+msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Tellus."
+msgstr "Vi samarbejder med <0>KWS</0> om alderstjek. Når du klikker \"Start” herunder, vil KWS tjekke, om du tidligere har gennemført alderstjek med denne e-mailadresse i forbindelse med andre spil og tjenester, som benytter sig af KMS. Hvis ikke, vil KMS send dig en e-mail med en instruktioner til, hvordan du bekræfter din alder. Når du er færdig, bliver du sendt tilbage til Tellus."
 
 #: src/components/intents/VerifyEmailIntentDialog.tsx:107
 msgid "We have sent another verification email to <0>{0}</0>."
 msgstr "Vi har sendt endnu en bekræftelses-e-mail til <0>{0}</0>."
 
 #: src/screens/Onboarding/StepFinished.tsx:533
-msgid "We hope you have a wonderful time. Remember, Bluesky is:"
-msgstr "God fornøjelse. Husk, at Bluesky er:"
+msgid "We hope you have a wonderful time. Remember, Tellus is:"
+msgstr "God fornøjelse. Husk, at Tellus er:"
 
 #: src/view/com/posts/DiscoverFallbackHeader.tsx:29
 msgid "We ran out of posts from your follows. Here's the latest from <0/>."
@@ -10127,8 +10752,8 @@ msgid "We're having network issues, try again"
 msgstr "Vi har netværksproblemer, prøv igen."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:94
-msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
-msgstr "Vi lancerer en nyt system til validering på Bluesky — et tydeligt flueben."
+msgid "We’re introducing a new layer of verification on Tellus — an easy-to-see checkmark."
+msgstr "Vi lancerer en nyt system til validering på Tellus — et tydeligt flueben."
 
 #: src/screens/Signup/index.tsx:123
 msgid "We're so excited to have you join us!"
@@ -10340,8 +10965,8 @@ msgid "You"
 msgstr "Dig"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:23
-msgid "You also agree to <0>Bluesky’s Community Guidelines</0>. An <1>updated version of our Community Guidelines</1> will take effect on October 15th."
-msgstr "Du accepterer også <0>Blueskys fællesskabsregler</0>. En <1>opdateret udgave af vores fællesskabsregler</1> træder i kraft 15. oktober."
+msgid "You also agree to <0>Tellus’s Community Guidelines</0>. An <1>updated version of our Community Guidelines</1> will take effect on October 15th."
+msgstr "Du accepterer også <0>Telluss fællesskabsregler</0>. En <1>opdateret udgave af vores fællesskabsregler</1> træder i kraft 15. oktober."
 
 #: src/components/verification/VerifierDialog.tsx:59
 msgid "You are a trusted verifier"
@@ -10352,8 +10977,8 @@ msgid "You are creating an account on"
 msgstr "Du er ved at oprette en konto på"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:128
-msgid "You are currently unable to access Bluesky's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
-msgstr "Du har i øjeblikket ikke adgang til Blueskys alderstjek. <0>Kontakt vores moderatorteam</0>, hvis du mener, at dette er en fejl."
+msgid "You are currently unable to access Tellus's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
+msgstr "Du har i øjeblikket ikke adgang til Telluss alderstjek. <0>Kontakt vores moderatorteam</0>, hvis du mener, at dette er en fejl."
 
 #: src/screens/SignupQueued.tsx:157
 msgid "You are in line."
@@ -10413,7 +11038,7 @@ msgstr "Du kan også deaktivere din konto midlertidigt og genaktivere den når s
 msgid "You can choose whether chat notifications have sound in the chat settings within the app"
 msgstr "I appen kan du kan vælge, om chatnotifikationer skal være med lyd"
 
-#: src/screens/Messages/Settings.tsx:116
+#: src/screens/Messages/Settings.tsx:288
 msgid "You can continue ongoing conversations regardless of which setting you choose."
 msgstr "Du kan fortsætte igangværende samtaler, uanset hvilken indstilling du vælger."
 
@@ -10466,8 +11091,8 @@ msgid "You don't have any chat requests at the moment."
 msgstr "Du har pt. ingen chatanmodninger."
 
 #: src/view/com/modals/InviteCodes.tsx:67
-msgid "You don't have any invite codes yet! We'll send you some when you've been on Bluesky for a little longer."
-msgstr "Du har endnu ingen invitationskoder. Vi sender dig nogen, når du har været på Bluesky lidt længere."
+msgid "You don't have any invite codes yet! We'll send you some when you've been on Tellus for a little longer."
+msgstr "Du har endnu ingen invitationskoder. Vi sender dig nogen, når du har været på Tellus lidt længere."
 
 #: src/view/screens/SavedFeeds.tsx:145
 msgid "You don't have any pinned feeds."
@@ -10589,8 +11214,8 @@ msgid "You must be 13 years of age or older to create an account."
 msgstr "Du skal være mindst 13 år gammel for at oprette en konto."
 
 #: src/components/dialogs/BirthDateSettings.tsx:131
-msgid "You must be at least 13 years old to use Bluesky. Read our <0>Terms of Service</0> for more information."
-msgstr "Du skal være mindst 13 år gammel for at bruge Bluesky. Læs mere i vores <0>tjenestevilkår</0>."
+msgid "You must be at least 13 years old to use Tellus. Read our <0>Terms of Service</0> for more information."
+msgstr "Du skal være mindst 13 år gammel for at bruge Tellus. Læs mere i vores <0>tjenestevilkår</0>."
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:334
 msgid "You must be following at least seven other people to generate a starter pack."
@@ -10629,7 +11254,7 @@ msgstr "Du skal bekræfte din e-mailadresse, før du kan aktivere 2FA via e-mail
 msgid "You previously deactivated @{0}."
 msgstr "Du har tidligere deaktiveret @{0}."
 
-#: src/screens/Settings/Settings.tsx:404
+#: src/screens/Settings/Settings.tsx:420
 msgid "You probably want to restart the app now."
 msgstr "Du vil nok foretrække at genstarte appen nu."
 
@@ -10641,8 +11266,8 @@ msgstr "Du reagerede med {0}"
 msgid "You reacted {0} to {1}"
 msgstr "Du reagerede med {0} på {1}"
 
-#: src/screens/Settings/Settings.tsx:286
-#: src/view/shell/desktop/LeftNav.tsx:210
+#: src/screens/Settings/Settings.tsx:302
+#: src/view/shell/desktop/LeftNav.tsx:212
 msgid "You will be signed out of all your accounts."
 msgstr "Du vil blive logget ud af alle dine konti."
 
@@ -10769,8 +11394,8 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr "Dit kontoarkiv, som indeholder al din offentlige data, kan downloades som en CAR-fil. Denne fil indeholder ikke vedhæftede medier, fx billeder, eller dine private oplysninger, som skal downloades separat."
 
 #: src/screens/Takendown.tsx:214
-msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
-msgstr "Din konto overtræder <0>Bluesky Socials tjenestevilkår</0>. Du har fået en e-mail, der beskriver, hvad du har gjort forkert, og hvor længe du vil være suspenderet. Du kan klage over denne beslutning, hvis du mener, der er sket en fejl."
+msgid "Your account was found to be in violation of the <0>Tellus Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
+msgstr "Din konto overtræder <0>Tellus Socials tjenestevilkår</0>. Du har fået en e-mail, der beskriver, hvad du har gjort forkert, og hvor længe du vil være suspenderet. Du kan klage over denne beslutning, hvis du mener, der er sket en fejl."
 
 #: src/screens/Takendown.tsx:154
 msgid "Your appeal has been submitted. If your appeal succeeds, you will receive an email."
@@ -10814,8 +11439,8 @@ msgid "Your email appears to be invalid."
 msgstr "Din e-mail ser ud til at være ugyldig."
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:65
-msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
-msgstr "Din e-mail er endnu ikke bekræftet. Bekræft din e-mail for at få glæde af alle Blueskys muligheder."
+msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Tellus."
+msgstr "Din e-mail er endnu ikke bekræftet. Bekræft din e-mail for at få glæde af alle Telluss muligheder."
 
 #: src/state/shell/progress-guide.tsx:215
 msgid "Your first like!"
@@ -10833,7 +11458,7 @@ msgstr "Dit følgerfeed er tomt! Følg flere brugere for at se, hvad der foregå
 msgid "Your full handle will be <0>@{0}</0>"
 msgstr "Dit fulde handle bliver <0>@{0}</0>"
 
-#: src/Navigation.tsx:516
+#: src/Navigation.tsx:547
 #: src/screens/Search/modules/ExploreInterestsCard.tsx:67
 #: src/screens/Settings/ContentAndMediaSettings.tsx:92
 #: src/screens/Settings/ContentAndMediaSettings.tsx:95
@@ -10859,8 +11484,8 @@ msgid "Your muted words"
 msgstr "Dine skjulte ord"
 
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:71
-msgid "Your password has been changed successfully! Please use your new password when you sign in to Bluesky from now on."
-msgstr "Din adgangskode er nu ændret! Fremover skal du bruge din nye adgangskode, når du logger på Bluesky."
+msgid "Your password has been changed successfully! Please use your new password when you sign in to Tellus from now on."
+msgstr "Din adgangskode er nu ændret! Fremover skal du bruge din nye adgangskode, når du logger på Tellus."
 
 #: src/screens/Signup/StepInfo/index.tsx:130
 msgid "Your password must be at least 8 characters long."
@@ -10891,8 +11516,8 @@ msgid "Your profile picture surrounded by concentric circles of other users' pro
 msgstr "Dit profilbillede omgivet af koncentriske cirkler af andre brugeres profilbilleder"
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
-msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-msgstr "Din profil, dine opslag, feeds og lister vil ikke længere kunne ses af andre Bluesky-brugere. Du kan genaktivere din konto når som helst ved at logge ind."
+msgid "Your profile, posts, feeds, and lists will no longer be visible to other Tellus users. You can reactivate your account at any time by logging in."
+msgstr "Din profil, dine opslag, feeds og lister vil ikke længere kunne ses af andre Tellus-brugere. Du kan genaktivere din konto når som helst ved at logge ind."
 
 #: src/view/com/composer/Composer.tsx:536
 msgid "Your reply was sent"
@@ -10903,8 +11528,8 @@ msgid "Your report will be sent to <0>{0}</0>."
 msgstr "Din anmeldelse vil blive sendt til <0>{0}</0>."
 
 #: src/components/dms/ReportDialog.tsx:205
-msgid "Your report will be sent to the Bluesky Moderation Service"
-msgstr "Din anmeldelse vil blive sendt til Bluesky Moderationstjeneste"
+msgid "Your report will be sent to the Tellus Moderation Service"
+msgstr "Din anmeldelse vil blive sendt til Tellus Moderationstjeneste"
 
 #: src/screens/Settings/InterestsSettings.tsx:56
 msgid "Your selected interests help us serve you content you care about."

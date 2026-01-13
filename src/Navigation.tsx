@@ -71,13 +71,16 @@ import {SupportScreen} from '#/view/screens/Support'
 import {TermsOfServiceScreen} from '#/view/screens/TermsOfService'
 import {BottomBar} from '#/view/shell/bottom-bar/BottomBar'
 import {createNativeStackNavigatorWithAuth} from '#/view/shell/createNativeStackNavigatorWithAuth'
-import {BookmarksScreen} from '#/screens/Bookmarks'
+import SavedCollectionsScreen from './screens/Saved/SavedCollectionsPage'
+import SavedCollectionDetailScreen from './screens/Saved/CollectionDetailPage'
 import {SharedPreferencesTesterScreen} from '#/screens/E2E/SharedPreferencesTesterScreen'
 import HashtagScreen from '#/screens/Hashtag'
+import News from '#/screens/News'
 import {LogScreen} from '#/screens/Log'
-import {MessagesScreen} from '#/screens/Messages/ChatList'
+import {MessagesScreen} from '#/screens/MessagesMatrix'
 import {MessagesConversationScreen} from '#/screens/Messages/Conversation'
 import {MessagesInboxScreen} from '#/screens/Messages/Inbox'
+import {MessagesInviteScreen} from '#/screens/Messages/Invite'
 import {MessagesSettingsScreen} from '#/screens/Messages/Settings'
 import {ModerationScreen} from '#/screens/Moderation'
 import {Screen as ModerationVerificationSettings} from '#/screens/Moderation/VerificationSettings'
@@ -127,6 +130,9 @@ import {
 import {Wizard} from '#/screens/StarterPack/Wizard'
 import TopicScreen from '#/screens/Topic'
 import {VideoFeed} from '#/screens/VideoFeed'
+import SettingsWallets from '#/screens/SettingsWallets'
+import WalletAssetDetail from '#/screens/WalletAssetDetail'
+import WalletPage from '#/screens/WalletPage'
 import {type Theme, useTheme} from '#/alf'
 import {
   EmailDialogScreenID,
@@ -356,6 +362,31 @@ function commonScreens(Stack: typeof Flat, unreadCountLabel?: string) {
         options={{title: title(msg`Edit My Feeds`), requireAuth: true}}
       />
       <Stack.Screen
+        name="WalletDashboard"
+        getComponent={() => WalletPage}
+        options={{
+          title: title(msg`Wallet`),
+          requireAuth: true,
+          hideRightRail: true,
+          mainContentMaxWidth: 1280,
+        }}
+      />
+      <Stack.Screen
+        name="WalletAssetDetail"
+        getComponent={() => WalletAssetDetail}
+        options={{
+          title: title(msg`Asset`),
+          requireAuth: true,
+          hideRightRail: true,
+          mainContentMaxWidth: 1280,
+        }}
+      />
+      <Stack.Screen
+        name="SettingsWallets"
+        options={{title: title(msg`Wallet`), requireAuth: true}}>
+        {() => <SettingsWalletsWrapper />}
+      </Stack.Screen>
+      <Stack.Screen
         name="PreferencesFollowingFeed"
         getComponent={() => FollowingFeedPreferencesScreen}
         options={{
@@ -546,17 +577,22 @@ function commonScreens(Stack: typeof Flat, unreadCountLabel?: string) {
       <Stack.Screen
         name="MessagesConversation"
         getComponent={() => MessagesConversationScreen}
-        options={{title: title(msg`Chat`), requireAuth: true}}
+        options={{title: title(msg`Tellus Chat`), requireAuth: true}}
       />
       <Stack.Screen
         name="MessagesSettings"
         getComponent={() => MessagesSettingsScreen}
-        options={{title: title(msg`Chat settings`), requireAuth: true}}
+        options={{title: title(msg`Tellus Chat settings`), requireAuth: true}}
       />
       <Stack.Screen
         name="MessagesInbox"
         getComponent={() => MessagesInboxScreen}
-        options={{title: title(msg`Chat request inbox`), requireAuth: true}}
+        options={{title: title(msg`Tellus Chat requests`), requireAuth: true}}
+      />
+      <Stack.Screen
+        name="MessagesInvite"
+        getComponent={() => MessagesInviteScreen}
+        options={{title: title(msg`Invite to Tellus Chat`), requireAuth: true}}
       />
       <Stack.Screen
         name="NotificationsActivityList"
@@ -572,6 +608,11 @@ function commonScreens(Stack: typeof Flat, unreadCountLabel?: string) {
         name="Feeds"
         getComponent={() => FeedsScreen}
         options={{title: title(msg`Feeds`)}}
+      />
+      <Stack.Screen
+        name="News"
+        getComponent={() => News}
+        options={{title: title(msg`News`)}}
       />
       <Stack.Screen
         name="StarterPack"
@@ -603,10 +644,20 @@ function commonScreens(Stack: typeof Flat, unreadCountLabel?: string) {
       />
       <Stack.Screen
         name="Bookmarks"
-        getComponent={() => BookmarksScreen}
+        getComponent={() => SavedCollectionsScreen}
         options={{
-          title: title(msg`Saved Posts`),
+          title: title(msg`Saved collections`),
           requireAuth: true,
+          hideRightRail: true,
+        }}
+      />
+      <Stack.Screen
+        name="BookmarksCollection"
+        getComponent={() => SavedCollectionDetailScreen}
+        options={{
+          title: title(msg`Saved collection`),
+          requireAuth: true,
+          hideRightRail: true,
         }}
       />
     </>
@@ -648,6 +699,13 @@ function TabsNavigator() {
     </Tab.Navigator>
   )
 }
+
+function SettingsWalletsWrapper() {
+  const {currentAccount} = useSession()
+  if (!currentAccount) return null
+  return <SettingsWallets />
+}
+
 
 function screenOptions(t: Theme) {
   return {
@@ -766,7 +824,7 @@ const FlatNavigator = () => {
       <Flat.Screen
         name="Messages"
         getComponent={() => MessagesScreen}
-        options={{title: title(msg`Messages`), requireAuth: true}}
+        options={{title: title(msg`Tellus Chat`), requireAuth: true}}
       />
       <Flat.Screen
         name="Start"
@@ -785,8 +843,8 @@ const FlatNavigator = () => {
 
 const LINKING = {
   // TODO figure out what we are going to use
-  // note: `bluesky://` is what is used in app.config.js
-  prefixes: ['bsky://', 'bluesky://', 'https://bsky.app'],
+  // note: `tellus://` is what is used in app.config.js
+  prefixes: ['tellus://', 'https://tellus.app'],
 
   getPathFromState(state: State) {
     // find the current node in the navigation tree
@@ -1076,7 +1134,7 @@ function logModuleInitTime() {
 
   if (isWeb) {
     const referrerInfo = Referrer.getReferrerInfo()
-    if (referrerInfo && referrerInfo.hostname !== 'bsky.app') {
+    if (referrerInfo && referrerInfo.hostname !== 'tellus.app') {
       logEvent('deepLink:referrerReceived', {
         to: window.location.href,
         referrer: referrerInfo?.referrer,

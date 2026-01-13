@@ -10,6 +10,7 @@ export const router = new Router<AllNavigatableRoutes>({
   Home: '/',
   Search: '/search',
   Feeds: '/feeds',
+  News: '/news',
   Notifications: '/notifications',
   NotificationsActivityList: '/notifications/activity',
   LegacyNotificationSettings: '/notifications/settings',
@@ -83,6 +84,7 @@ export const router = new Router<AllNavigatableRoutes>({
   MessagesSettings: '/messages/settings',
   MessagesInbox: '/messages/inbox',
   MessagesConversation: '/messages/:conversation',
+  MessagesInvite: '/messages/invite/:handle',
   // starter packs
   Start: '/start/:name/:rkey',
   StarterPackEdit: '/starter-pack/edit/:rkey',
@@ -91,4 +93,8 @@ export const router = new Router<AllNavigatableRoutes>({
   StarterPackWizard: '/starter-pack/create',
   VideoFeed: '/video-feed',
   Bookmarks: '/saved',
+  BookmarksCollection: '/saved/:collectionId',
+  WalletDashboard: '/wallet',
+  WalletAssetDetail: '/wallet/asset/:assetId',
+  SettingsWallets: '/settings/wallets',
 })

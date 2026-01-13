@@ -133,8 +133,8 @@ function DialogInner({
           label="Preferences"
           values={[fixedOption]}
           onChange={values => setFixedOption(values[0])}>
-          <ToggleButton.Button name={BSKY_SERVICE} label={_(msg`Bluesky`)}>
-            <ToggleButton.ButtonText>{_(msg`Bluesky`)}</ToggleButton.ButtonText>
+          <ToggleButton.Button name={BSKY_SERVICE} label={_(msg`Tellus`)}>
+            <ToggleButton.ButtonText>{_(msg`Tellus`)}</ToggleButton.ButtonText>
           </ToggleButton.Button>
           <ToggleButton.Button
             testID="customSelectBtn"
@@ -147,8 +147,8 @@ function DialogInner({
         {fixedOption === BSKY_SERVICE && isFirstTimeUser && (
           <Admonition type="tip">
             <Trans>
-              Bluesky is an open network where you can choose your own provider.
-              If you're new here, we recommend sticking with the default Bluesky
+              Tellus is an open network where you can choose your own provider.
+              If you're new here, we recommend sticking with the default Tellus
               Social option.
             </Trans>
           </Admonition>
@@ -210,7 +210,7 @@ function DialogInner({
               </Trans>
             ) : (
               <Trans>
-                Bluesky is an open network where you can choose your hosting
+                Tellus is an open network where you can choose your hosting
                 provider. If you're a developer, you can host your own server.
               </Trans>
             )}{' '}

@@ -5,14 +5,14 @@ interface Window {
   }
 }
 
-const EMBED_URL = 'https://embed.bsky.app'
+const EMBED_URL = 'https://embed.tellus.app'
 
 window.bluesky = window.bluesky || {
   scan,
 }
 
 /**
- * Listen for messages from the Bluesky embed iframe and adjust the height of
+ * Listen for messages from the Tellus embed iframe and adjust the height of
  * the iframe accordingly.
  */
 window.addEventListener('message', event => {
@@ -43,7 +43,7 @@ window.addEventListener('message', event => {
 
 /**
  * Scan the document for all elements with the data-bluesky-aturi attribute,
- * and initialize them as Bluesky embeds.
+ * and initialize them as Tellus embeds.
  *
  * @param element Only scan this specific element @default document @optional
  * @returns

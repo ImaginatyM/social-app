@@ -123,6 +123,11 @@ const schema = z.object({
   kawaii: z.boolean().optional(),
   hasCheckedForStarterPack: z.boolean().optional(),
   subtitlesEnabled: z.boolean().optional(),
+  wallet: z
+    .object({
+      showInSidebar: z.boolean().optional(),
+    })
+    .optional(),
   /** @deprecated */
   mutedThreads: z.array(z.string()),
   trendingDisabled: z.boolean().optional(),
@@ -172,6 +177,9 @@ export const defaults: Schema = {
   kawaii: false,
   hasCheckedForStarterPack: false,
   subtitlesEnabled: true,
+  wallet: {
+    showInSidebar: true,
+  },
   trendingDisabled: false,
   trendingVideoDisabled: false,
 }

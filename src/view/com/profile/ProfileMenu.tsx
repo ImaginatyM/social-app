@@ -6,6 +6,7 @@ import {useNavigation} from '@react-navigation/native'
 import {useQueryClient} from '@tanstack/react-query'
 
 import {useActorStatus} from '#/lib/actor-status'
+import {getWalletRecord, type WalletRecord} from '#/lib/walletRecord'
 import {HITSLOP_20} from '#/lib/constants'
 import {makeProfileLink} from '#/lib/routes/links'
 import {type NavigationProp} from '#/lib/routes/types'
@@ -22,10 +23,11 @@ import {
   useProfileMuteMutationQueue,
 } from '#/state/queries/profile'
 import {useCanGoLive} from '#/state/service-config'
-import {useSession} from '#/state/session'
+import {useAgent, useSession} from '#/state/session'
 import {EventStopper} from '#/view/com/util/EventStopper'
 import * as Toast from '#/view/com/util/Toast'
 import {Button, ButtonIcon} from '#/components/Button'
+import {MessageProfileMenuItem} from '#/components/dms/MessageProfileButton'
 import {useDialogControl} from '#/components/Dialog'
 import {StarterPackDialog} from '#/components/dialogs/StarterPackDialog'
 import {ArrowOutOfBoxModified_Stroke2_Corner2_Rounded as ArrowOutOfBoxIcon} from '#/components/icons/ArrowOutOfBox'
@@ -45,6 +47,7 @@ import {
   PersonX_Stroke2_Corner0_Rounded as PersonX,
 } from '#/components/icons/Person'
 import {PlusLarge_Stroke2_Corner0_Rounded as Plus} from '#/components/icons/Plus'
+import {QrCode_Stroke2_Corner0_Rounded as QrCodeIcon} from '#/components/icons/QrCode'
 import {SpeakerVolumeFull_Stroke2_Corner0_Rounded as Unmute} from '#/components/icons/Speaker'
 import {StarterPack} from '#/components/icons/StarterPack'
 import {EditLiveDialog} from '#/components/live/EditLiveDialog'
@@ -59,18 +62,23 @@ import {useFullVerificationState} from '#/components/verification'
 import {VerificationCreatePrompt} from '#/components/verification/VerificationCreatePrompt'
 import {VerificationRemovePrompt} from '#/components/verification/VerificationRemovePrompt'
 import {useDevMode} from '#/storage/hooks/dev-mode'
+import WalletReceiveModal from '#/components/WalletReceiveModal'
 
 let ProfileMenu = ({
   profile,
+  showTellusMessageAction = false,
 }: {
   profile: Shadow<AppBskyActorDefs.ProfileViewDetailed>
+  showTellusMessageAction?: boolean
 }): React.ReactNode => {
   const {_} = useLingui()
+  const agent = useAgent()
   const {currentAccount, hasSession} = useSession()
   const {openModal} = useModalControls()
   const reportDialogControl = useReportDialogControl()
   const queryClient = useQueryClient()
   const navigation = useNavigation<NavigationProp>()
+  const menuControl = Menu.useMenuControl()
   const isSelf = currentAccount?.did === profile.did
   const isFollowing = profile.viewer?.following
   const isBlocked = profile.viewer?.blocking || profile.viewer?.blockedBy
@@ -217,9 +225,39 @@ let ProfileMenu = ({
 
   const status = useActorStatus(profile)
 
+  const [walletRecord, setWalletRecord] = React.useState<WalletRecord | null>(
+    null,
+  )
+  const [walletModalOpen, setWalletModalOpen] = React.useState(false)
+
+  React.useEffect(() => {
+    let mounted = true
+    if (!isWeb || !menuControl.isOpen) return
+    setWalletRecord(null)
+    getWalletRecord(agent, profile.did)
+      .then(record => {
+        if (!mounted) return
+        setWalletRecord(record)
+      })
+      .catch(err => {
+        if (!mounted) return
+        console.error('wallet record load failed', err)
+        setWalletRecord(null)
+      })
+    return () => {
+      mounted = false
+    }
+  }, [agent, isWeb, menuControl.isOpen, profile.did])
+
+  const walletAddress = walletRecord?.evmAddress
+  const walletChain = walletRecord?.evmChain || 'base'
+  const showWalletAction = Boolean(
+    isWeb && walletRecord?.enabled && walletAddress,
+  )
+
   return (
     <EventStopper onKeyDown={false}>
-      <Menu.Root>
+      <Menu.Root control={menuControl}>
         <Menu.Trigger label={_(msg`More options`)}>
           {({props}) => {
             return (
@@ -270,12 +308,29 @@ let ProfileMenu = ({
               </Menu.ItemText>
               <Menu.ItemIcon icon={SearchIcon} />
             </Menu.Item>
+            {showWalletAction && (
+              <Menu.Item
+                testID="profileHeaderDropdownWalletBtn"
+                label={_(msg`Wallet / Payer`)}
+                onPress={() => {
+                  setWalletModalOpen(true)
+                  menuControl.close()
+                }}>
+                <Menu.ItemText>
+                  <Trans>Wallet / Payer</Trans>
+                </Menu.ItemText>
+                <Menu.ItemIcon icon={QrCodeIcon} />
+              </Menu.Item>
+            )}
           </Menu.Group>
 
           {hasSession && (
             <>
               <Menu.Divider />
               <Menu.Group>
+                {showTellusMessageAction && !isSelf && (
+                  <MessageProfileMenuItem profile={profile} />
+                )}
                 {!isSelf && (
                   <>
                     {(isLabelerAndNotBlocked || isFollowingBlockedAccount) && (
@@ -464,6 +519,15 @@ let ProfileMenu = ({
           $type: 'app.bsky.actor.defs#profileViewDetailed',
         }}
       />
+
+      {showWalletAction && walletAddress && (
+        <WalletReceiveModal
+          open={walletModalOpen}
+          onClose={() => setWalletModalOpen(false)}
+          address={walletAddress}
+          chain={walletChain}
+        />
+      )}
 
       <Prompt.Basic
         control={blockPromptControl}

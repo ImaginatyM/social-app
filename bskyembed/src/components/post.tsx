@@ -123,11 +123,11 @@ export function Post({thread}: Props) {
             {post.replyCount
               ? `Read ${prettyNumber(post.replyCount)} ${
                   post.replyCount > 1 ? 'replies' : 'reply'
-                } on Bluesky`
-              : `View on Bluesky`}
+                } on Tellus`
+              : `View on Tellus`}
           </p>
           <p className="cursor-pointer text-brand font-bold hover:underline min-[450px]:hidden">
-            <span className="hidden min-[380px]:inline">View on </span>Bluesky
+            <span className="hidden min-[380px]:inline">View on </span>Tellus
           </p>
         </div>
       </div>
@@ -157,8 +157,8 @@ function PostContent({record}: {record: AppBskyFeedPost.Record | null}) {
           href={segment.link.uri}
           className="text-blue-500 hover:underline"
           disableTracking={
-            !segment.link.uri.startsWith('https://bsky.app') &&
-            !segment.link.uri.startsWith('https://go.bsky.app')
+            !segment.link.uri.startsWith('https://tellus.app') &&
+            !segment.link.uri.startsWith('https://go.tellus.app')
           }>
           {segment.text}
         </Link>,

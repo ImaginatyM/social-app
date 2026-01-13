@@ -73,7 +73,7 @@ let ConvoMenu = ({
       <Menu.Root control={control}>
         {!hideTrigger && (
           <View style={[style]}>
-            <Menu.Trigger label={_(msg`Chat settings`)}>
+            <Menu.Trigger label={_(msg`Tellus Chat settings`)}>
               {({props}) => (
                 <Button
                   label={props.accessibilityLabel}

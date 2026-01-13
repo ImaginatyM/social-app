@@ -50,7 +50,7 @@ export function useAppIconSets() {
     ] satisfies AppIconSet[]
 
     /**
-     * Bluesky+
+     * Tellus+
      */
     const core = [
       {
@@ -174,7 +174,7 @@ export function useAppIconSets() {
         name: _(
           msg({
             context: 'Name of app icon variant',
-            message: 'Bluesky Classic™',
+            message: 'Tellus Classic™',
           }),
         ),
         iosImage: () => {

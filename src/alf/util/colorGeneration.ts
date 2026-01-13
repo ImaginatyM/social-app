@@ -1,6 +1,6 @@
 import {logger} from '#/logger'
 
-export const BLUE_HUE = 211
+export const BLUE_HUE = 0 // Changed to pure red (0 degrees in HSL)
 export const RED_HUE = 346
 export const GREEN_HUE = 152
 

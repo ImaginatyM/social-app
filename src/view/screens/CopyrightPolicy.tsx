@@ -36,8 +36,8 @@ export const CopyrightPolicyScreen = (_props: Props) => {
               The Copyright Policy has been moved to{' '}
               <TextLink
                 style={pal.link}
-                href="https://bsky.social/about/support/copyright"
-                text="bsky.social/about/support/copyright"
+                href="https://tellus.social/about/support/copyright"
+                text="tellus.social/about/support/copyright"
               />
             </Trans>
           </Text>

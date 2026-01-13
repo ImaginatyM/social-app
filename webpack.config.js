@@ -3,6 +3,7 @@ const {withAlias} = require('@expo/webpack-config/addons')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const {sentryWebpackPlugin} = require('@sentry/webpack-plugin')
+const path = require('path')
 const {version} = require('./package.json')
 
 const GENERATE_STATS = process.env.EXPO_PUBLIC_GENERATE_STATS === '1'
@@ -60,5 +61,43 @@ module.exports = async function (env, argv) {
       }),
     )
   }
+
+  const ensurePostCssLoader = rule => {
+    if (!rule || !Array.isArray(rule.use)) return
+    const hasPostCss = rule.use.some(entry => {
+      const loader = typeof entry === 'string' ? entry : entry?.loader
+      return typeof loader === 'string' && loader.includes('postcss-loader')
+    })
+    if (hasPostCss) return
+    const cssLoaderIndex = rule.use.findIndex(entry => {
+      const loader = typeof entry === 'string' ? entry : entry?.loader
+      return typeof loader === 'string' && loader.includes('css-loader')
+    })
+    if (cssLoaderIndex === -1) return
+    rule.use.splice(cssLoaderIndex + 1, 0, {
+      loader: require.resolve('postcss-loader'),
+      options: {
+        postcssOptions: {
+          config: path.join(__dirname, 'postcss.config.js'),
+        },
+      },
+    })
+  }
+
+  const visitRules = rules => {
+    if (!Array.isArray(rules)) return
+    for (const rule of rules) {
+      if (rule.oneOf) {
+        visitRules(rule.oneOf)
+        continue
+      }
+      if (rule.test && rule.test.toString().includes('css')) {
+        ensurePostCssLoader(rule)
+      }
+    }
+  }
+
+  visitRules(config.module?.rules)
+
   return config
 }

@@ -49,7 +49,7 @@ export type Modal =
   | CreateOrEditListModal
   | UserAddRemoveListsModal
 
-  // Bluesky access
+  // Tellus access
   | WaitlistModal
   | InviteCodesModal
 

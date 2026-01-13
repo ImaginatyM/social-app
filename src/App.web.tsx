@@ -1,6 +1,10 @@
+import '../global.css'
 import '#/logger/sentry/setup' // must be near top
 import '#/view/icons'
 import './style.css'
+import './styles/feedLayout.css'
+import './styles/feedActions.css'
+import './styles/reels.css'
 
 import React, {useEffect, useState} from 'react'
 import {RootSiblingParent} from 'react-native-root-siblings'

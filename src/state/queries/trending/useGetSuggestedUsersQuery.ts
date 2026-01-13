@@ -6,7 +6,7 @@ import {type QueryClient, useQuery} from '@tanstack/react-query'
 
 import {
   aggregateUserInterests,
-  createBskyTopicsHeader,
+  createTopicsHeader,
 } from '#/lib/api/feed/utils'
 import {getContentLanguages} from '#/state/preferences/languages'
 import {STALE} from '#/state/queries'
@@ -46,7 +46,7 @@ export function useGetSuggestedUsersQuery(props: QueryProps) {
         },
         {
           headers: {
-            ...createBskyTopicsHeader(
+            ...createTopicsHeader(
               props.overrideInterests && props.overrideInterests.length > 0
                 ? props.overrideInterests.join(',')
                 : interests,

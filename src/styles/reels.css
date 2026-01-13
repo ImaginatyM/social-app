@@ -1,0 +1,447 @@
+.home-feed-scroll {
+  overscroll-behavior-y: contain;
+  background: #000;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clipsScroller {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  overscroll-behavior: contain;
+  flex: 1;
+  min-height: 0;
+}
+
+.clipsScroller::-webkit-scrollbar {
+  display: none;
+}
+
+.clipItem {
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.clipItem.load-more-slide {
+  display: grid;
+  place-items: center;
+}
+
+.clipStage {
+  position: relative;
+  height: min(94vh, 940px);
+  height: min(94dvh, 940px);
+  width: min(56vh, 520px);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  background: #000;
+  border-radius: 14px;
+}
+
+.clipStage video,
+.clipStage .reel-video {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  background: #000;
+  display: block;
+  pointer-events: none;
+}
+
+.fitContain {
+  object-fit: contain;
+}
+
+.fitCover {
+  object-fit: cover;
+}
+
+@media (max-width: 768px), (pointer: coarse) {
+  .clipsScroller {
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  .clipItem {
+    align-items: stretch;
+    justify-content: stretch;
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  .clipStage {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    border-radius: 0;
+  }
+}
+
+.reel-actions {
+  position: absolute;
+  right: calc(12px + env(safe-area-inset-right));
+  bottom: calc(96px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+
+.clips-comments-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.clips-comments-backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.clips-comments-sheet {
+  position: relative;
+  width: min(680px, 100vw);
+  height: 75vh;
+  height: 75dvh;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -18px 40px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.clips-comments-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.clips-comments-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d4d7dd;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  color: #1f2937;
+  flex-shrink: 0;
+}
+
+.clips-comments-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.clips-comments-author {
+  font-weight: 600;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.clips-comments-handle {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.clips-comments-close {
+  margin-left: auto;
+  border: none;
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+  border-radius: 999px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.clips-comments-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.clips-comments-loading,
+.clips-comments-empty,
+.clips-comments-error {
+  padding: 16px 18px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.clips-comments-error {
+  color: #dc2626;
+}
+
+.clips-comments-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-thread-comments {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.post-thread-comments[data-variant="detail"] .clips-comments-content {
+  padding-top: 6px;
+}
+
+.post-thread-comments[data-variant="detail"] .comment-action,
+.post-thread-comments[data-variant="detail"] .comment-reply {
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.clips-comment {
+  display: flex;
+  gap: 12px;
+}
+
+.clips-comment[data-depth="1"] {
+  margin-left: 16px;
+  padding-left: 12px;
+  border-left: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.clips-comment.is-pending {
+  opacity: 0.6;
+}
+
+.clips-comment-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #d4d7dd;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  color: #1f2937;
+  flex-shrink: 0;
+}
+
+.clips-comment-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.clips-comment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.clips-comment-author {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.clips-comment-text {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #0f172a;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.clips-comment-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.comment-action {
+  padding: 4px 6px;
+  border-radius: 10px;
+  color: #475569;
+}
+
+.comment-action[data-active="true"] {
+  color: #ef4444;
+}
+
+.comment-reply {
+  border: none;
+  background: none;
+  color: #475569;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 10px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.comment-reply:hover {
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.clips-comments-composer {
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  background: #fff;
+}
+
+.clips-comments-replying {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.clips-comments-replying button {
+  border: none;
+  background: rgba(15, 23, 42, 0.08);
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.clips-comments-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.clips-comments-input {
+  flex: 1;
+  resize: none;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  min-height: 42px;
+}
+
+.clips-comments-send {
+  border: none;
+  border-radius: 999px;
+  background: #0a66ff;
+  color: #fff;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.clips-comments-send:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+html.theme--dark .clips-comments-sheet {
+  background: #0b1220;
+  color: #e2e8f0;
+}
+
+html.theme--dark .clips-comments-header {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+html.theme--dark .clips-comments-author,
+html.theme--dark .clips-comment-author {
+  color: #e2e8f0;
+}
+
+html.theme--dark .clips-comments-handle,
+html.theme--dark .clips-comment-meta {
+  color: rgba(226, 232, 240, 0.6);
+}
+
+html.theme--dark .clips-comments-close {
+  background: rgba(148, 163, 184, 0.18);
+  color: #e2e8f0;
+}
+
+html.theme--dark .clips-comments-list,
+html.theme--dark .clips-comments-composer {
+  background: #0b1220;
+}
+
+html.theme--dark .clips-comments-composer {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+html.theme--dark .clips-comments-input {
+  background: rgba(15, 23, 42, 0.9);
+  color: #e2e8f0;
+  border-color: rgba(148, 163, 184, 0.3);
+}
+
+html.theme--dark .clips-comment[data-depth="1"] {
+  border-left-color: rgba(255, 255, 255, 0.08);
+}
+
+html.theme--dark .comment-reply:hover {
+  background: rgba(148, 163, 184, 0.16);
+  color: #e2e8f0;
+}
+
+html.theme--dark .comment-action {
+  color: rgba(226, 232, 240, 0.7);
+}
+
+html.theme--dark .comment-action[data-active="true"] {
+  color: #f87171;
+}
+
+html.theme--dark .comment-reply {
+  color: rgba(226, 232, 240, 0.7);
+}

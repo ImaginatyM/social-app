@@ -36,7 +36,7 @@ export function BlockedGeoOverlay() {
   const textStyles = [a.text_md, a.leading_normal]
   const links = {
     blog: {
-      to: `https://bsky.social/about/blog/08-22-2025-mississippi-hb1126`,
+      to: `https://tellus.social/about/blog/08-22-2025-mississippi-hb1126`,
       label: _(msg`Read our blog post`),
       overridePresentation: false,
       disableMismatchWarning: true,
@@ -45,15 +45,15 @@ export function BlockedGeoOverlay() {
   }
 
   const blocks = [
-    _(msg`Unfortunately, Bluesky is unavailable in Mississippi right now.`),
+    _(msg`Unfortunately, Tellus is unavailable in Mississippi right now.`),
     _(
-      msg`A new Mississippi law requires us to implement age verification for all users before they can access Bluesky. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies.`,
+      msg`A new Mississippi law requires us to implement age verification for all users before they can access Tellus. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies.`,
     ),
     _(
       msg`As a small team, we cannot justify building the expensive infrastructure this requirement demands while legal challenges to this law are pending.`,
     ),
     _(
-      msg`For now, we have made the difficult decision to block access to Bluesky in the state of Mississippi.`,
+      msg`For now, we have made the difficult decision to block access to Tellus in the state of Mississippi.`,
     ),
     <>
       To learn more, read our{' '}

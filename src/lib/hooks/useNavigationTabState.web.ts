@@ -8,9 +8,15 @@ export function useNavigationTabState() {
     return {
       isAtHome: currentRoute === 'Home',
       isAtSearch: currentRoute === 'Search',
+      isAtFeeds: currentRoute === 'Feeds',
+      isAtNews: currentRoute === 'News',
+      isAtBookmarks:
+        currentRoute === 'Bookmarks' || currentRoute === 'BookmarksCollection',
       isAtNotifications: currentRoute === 'Notifications',
       isAtMyProfile: currentRoute === 'MyProfile',
       isAtMessages: currentRoute === 'Messages',
+      isAtWallet:
+        currentRoute === 'WalletDashboard' || currentRoute === 'WalletAssetDetail',
     }
   })
 }

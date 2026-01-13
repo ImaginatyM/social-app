@@ -44,6 +44,7 @@ export type CommonNavigatorParams = {
   LanguageSettings: undefined
   AppPasswords: undefined
   SavedFeeds: undefined
+  News: undefined
   PreferencesFollowingFeed: undefined
   PreferencesThreads: undefined
   PreferencesExternalEmbeds: undefined
@@ -73,6 +74,7 @@ export type CommonNavigatorParams = {
   MessagesConversation: {conversation: string; embed?: string; accept?: true}
   MessagesSettings: undefined
   MessagesInbox: undefined
+  MessagesInvite: {handle?: string; matrixId?: string}
   NotificationsActivityList: {posts: string}
   LegacyNotificationSettings: undefined
   Feeds: undefined
@@ -87,6 +89,10 @@ export type CommonNavigatorParams = {
   StarterPackEdit: {rkey?: string}
   VideoFeed: VideoFeedSourceContext
   Bookmarks: undefined
+  BookmarksCollection: {collectionId: string}
+  WalletDashboard: undefined
+  WalletAssetDetail: {assetId: string; symbol?: string; chainId?: string}
+  SettingsWallets: undefined
 }
 
 export type BottomTabNavigatorParams = CommonNavigatorParams & {

@@ -15,7 +15,7 @@ must be done as a full release cycle through the app stores.
 > [!TIP]
 > If you're using a TestFlight build, in order to reference the correct build
 > number and to verify the success of an OTA, you will need to delete the
-> TestFlight app itself, delete the Bluesky app entirely, and re-install from
+> TestFlight app itself, delete the Tellus app entirely, and re-install from
 > the App Store.
 
 ### 1. Find the build numbers
@@ -77,7 +77,7 @@ You'll need to run two separate actions: one to deploy the iOS/Android OTA
 itself, and one to build the web Docker container.
 
 **For the iOS/Android OTA,** head to [Actions > Bundle and Deploy EAS
-Update](https://github.com/bluesky-social/social-app/actions/workflows/bundle-deploy-eas-update.yml)
+Update](https://github.com/tellus-social/social-app/actions/workflows/bundle-deploy-eas-update.yml)
 and run the action.
 
 | Steps |     |
@@ -92,7 +92,7 @@ and run the action.
 >   clients in the wild will be able to receive the update.
 
 **For web,** head to [Actions >
-build-and-push-bskyweb-aws](https://github.com/bluesky-social/social-app/actions/workflows/build-and-push-bskyweb-aws.yaml)
+build-and-push-bskyweb-aws](https://github.com/tellus-social/social-app/actions/workflows/build-and-push-bskyweb-aws.yaml)
 and run the action.
 
 | Steps |     |

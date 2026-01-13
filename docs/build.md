@@ -83,7 +83,7 @@ After you do `yarn ios` and `yarn android` once, you can later just run `yarn we
 
 Adding Sentry is NOT required. You can keep `SENTRY_AUTH_TOKEN=` in `.env` which will build the app without Sentry.
 
-However, if you're a part of the Bluesky team and want to enable Sentry, fill in `SENTRY_AUTH_TOKEN` in your `.env`. It can be created on the Sentry dashboard using [these instructions](https://docs.expo.dev/guides/using-sentry/#sign-up-for-a-sentry-account-and-create-a-project).
+However, if you're a part of the Tellus team and want to enable Sentry, fill in `SENTRY_AUTH_TOKEN` in your `.env`. It can be created on the Sentry dashboard using [these instructions](https://docs.expo.dev/guides/using-sentry/#sign-up-for-a-sentry-account-and-create-a-project).
 
 If you change `SENTRY_AUTH_TOKEN`, you need to do `yarn prebuild` before running `yarn ios` or `yarn android` again.
 
@@ -91,7 +91,7 @@ If you change `SENTRY_AUTH_TOKEN`, you need to do `yarn prebuild` before running
 
 Adding bitdrift is NOT required. You can keep `EXPO_PUBLIC_BITDRIFT_API_KEY=` in `.env` which will avoid initializing bitdrift during startup.
 
-However, if you're a part of the Bluesky team and want to enable bitdrift, fill in `EXPO_PUBLIC_BITDRIFT_API_KEY` in your `.env` to enable bitdrift.
+However, if you're a part of the Tellus team and want to enable bitdrift, fill in `EXPO_PUBLIC_BITDRIFT_API_KEY` in your `.env` to enable bitdrift.
 
 ### Adding and Updating Locales
 
@@ -99,7 +99,7 @@ However, if you're a part of the Bluesky team and want to enable bitdrift, fill 
 
 ## Running the Backend Locally
 
-This is NOT required for app development but if you also want to develop the Bluesky *backend* locally too, you'll need this.
+This is NOT required for app development but if you also want to develop the Tellus *backend* locally too, you'll need this.
 
 - Start the dev servers
   - `git clone git@github.com:bluesky-social/atproto.git`
@@ -133,7 +133,7 @@ yarn && yarn build-web
 cd bskyweb/
 go mod tidy
 go build -v -tags timetzdata -o bskyweb ./cmd/bskyweb
-./bskyweb serve --appview-host=https://public.api.bsky.app
+./bskyweb serve --appview-host=https://public.api.tellus.app
 ```
 
 On build success, access the application at [http://localhost:8100/](http://localhost:8100/). Subsequent changes require re-running the above steps in order to be reflected.

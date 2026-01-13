@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {View} from 'react-native'
+import {StyleSheet, View} from 'react-native'
 // Based on @react-navigation/native-stack/src/navigators/createNativeStackNavigator.ts
 // MIT License
 // Copyright (c) 2017 React Navigation Contributors
@@ -47,6 +47,9 @@ import {DesktopRightNav} from './desktop/RightNav'
 
 type NativeStackNavigationOptionsWithAuth = NativeStackNavigationOptions & {
   requireAuth?: boolean
+  hideRightRail?: boolean
+  hideChrome?: boolean
+  mainContentMaxWidth?: number
 }
 
 function NativeStackNavigator({
@@ -107,11 +110,12 @@ function NativeStackNavigator({
   const {hasSession, currentAccount} = useSession()
   const activeRoute = state.routes[state.index]
   const activeDescriptor = descriptors[activeRoute.key]
-  const activeRouteRequiresAuth = activeDescriptor.options.requireAuth ?? false
+  const activeOptions = activeDescriptor.options as NativeStackNavigationOptionsWithAuth
+  const activeRouteRequiresAuth = activeOptions.requireAuth ?? false
   const onboardingState = useOnboardingState()
   const {showLoggedOut} = useLoggedOutView()
   const {setShowLoggedOut} = useLoggedOutViewControls()
-  const {isMobile} = useWebMediaQueries()
+  const {isMobile, isDesktop} = useWebMediaQueries()
   const {leftNavMinimal} = useLayoutBreakpoints()
   if (!hasSession && (!PWI_ENABLED || activeRouteRequiresAuth || isNative)) {
     return <LoggedOut />
@@ -147,26 +151,59 @@ function NativeStackNavigator({
     }
   }
 
-  // Show the bottom bar if we have a session only on mobile web. If we don't have a session, we want to show it
-  // on both tablet and mobile web so that we see the create account CTA.
-  const showBottomBar = hasSession ? isMobile : leftNavMinimal
+  const showBottomBar = isMobile
+  const showLeftNav = !isMobile
+  const showRightNav = isDesktop && !activeOptions.hideRightRail
+  const mainContentStyle = [
+    styles.mainContent,
+    activeOptions.mainContentMaxWidth != null
+      ? {maxWidth: activeOptions.mainContentMaxWidth}
+      : null,
+  ]
 
   return (
     <NavigationContent>
-      <View role="main" style={a.flex_1}>
-        <NativeStackView
-          {...rest}
-          state={state}
-          navigation={navigation}
-          descriptors={descriptors}
-          describe={describe}
-        />
-      </View>
-      {isWeb && (
-        <>
-          {showBottomBar ? <BottomBarWeb /> : <DesktopLeftNav />}
-          {!isMobile && <DesktopRightNav routeName={activeRoute.name} />}
-        </>
+      {isWeb ? (
+        <View style={styles.webShell}>
+          {showLeftNav ? (
+            <View
+              style={[
+                styles.leftColumn,
+                leftNavMinimal && styles.leftColumnMinimal,
+              ]}>
+              <DesktopLeftNav hideChrome={activeOptions.hideChrome} />
+            </View>
+          ) : null}
+
+          <View style={styles.mainColumn}>
+            <View role="main" style={mainContentStyle}>
+              <NativeStackView
+                {...rest}
+                state={state}
+                navigation={navigation}
+                descriptors={descriptors}
+                describe={describe}
+              />
+            </View>
+            {showBottomBar ? <BottomBarWeb /> : null}
+          </View>
+
+          {showRightNav ? (
+            <View style={styles.rightColumn}>
+              <DesktopRightNav routeName={activeRoute.name} />
+            </View>
+          ) : null}
+        </View>
+      ) : (
+        <View role="main" style={a.flex_1}>
+          <NativeStackView
+            {...rest}
+            state={state}
+            navigation={navigation}
+            descriptors={descriptors}
+            describe={describe}
+          />
+        </View>
       )}
 
       {/* Only shown after logged in and onboaring etc are complete */}
@@ -174,6 +211,38 @@ function NativeStackNavigator({
     </NavigationContent>
   )
 }
+
+const styles = StyleSheet.create({
+  webShell: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'stretch',
+    width: '100%',
+    minHeight: '100vh',
+  },
+  leftColumn: {
+    flexShrink: 0,
+    width: 240,
+  },
+  leftColumnMinimal: {
+    width: 86,
+  },
+  mainColumn: {
+    flex: 1,
+    minWidth: 0,
+  },
+  mainContent: {
+    flex: 1,
+    minWidth: 0,
+    width: '100%',
+    maxWidth: 900,
+    alignSelf: 'center',
+    paddingHorizontal: 16,
+  },
+  rightColumn: {
+    flexShrink: 0,
+  },
+})
 
 export function createNativeStackNavigatorWithAuth<
   const ParamList extends ParamListBase,

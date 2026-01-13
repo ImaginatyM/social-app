@@ -36,6 +36,8 @@ import * as Prompt from '#/components/Prompt'
 import {RichText} from '#/components/RichText'
 import {Text} from '#/components/Typography'
 import {VerificationCheckButton} from '#/components/verification/VerificationCheckButton'
+import TipModal from '#/components/TipModal'
+import {parseWalletsFromBio} from '#/lib/profileWallets'
 import {EditProfileDialog} from './EditProfileDialog'
 import {ProfileHeaderHandle} from './Handle'
 import {ProfileHeaderMetrics} from './Metrics'
@@ -75,12 +77,14 @@ let ProfileHeaderStandard = ({
   const unblockPromptControl = Prompt.usePromptControl()
   const requireAuth = useRequireAuth()
   const [showSuggestedFollows, setShowSuggestedFollows] = useState(false)
+  const [tipOpen, setTipOpen] = useState(false)
   const isBlockedUser =
     profile.viewer?.blocking ||
     profile.viewer?.blockedBy ||
     profile.viewer?.blockingByList
 
   const editProfileControl = useDialogControl()
+  const showInlineTellusMessage = gtMobile
 
   const onPressFollow = () => {
     setShowSuggestedFollows(true)
@@ -158,6 +162,17 @@ let ProfileHeaderStandard = ({
     }
   }, [profile])
 
+  const parsedWallets = useMemo(
+    () => parseWalletsFromBio(profile.description || ''),
+    [profile.description],
+  )
+  const hasTipTarget = Boolean(
+    parsedWallets.evm?.address ||
+      parsedWallets.lightning?.address ||
+      parsedWallets.solana?.address ||
+      parsedWallets.bitcoin?.address,
+  )
+
   return (
     <>
       <ProfileHeaderShell
@@ -222,7 +237,22 @@ let ProfileHeaderStandard = ({
                     moderationOpts={moderationOpts}
                   />
                 )}
-                {hasSession && <MessageProfileButton profile={profile} />}
+                {hasSession && showInlineTellusMessage && (
+                  <MessageProfileButton profile={profile} />
+                )}
+                {hasTipTarget && (
+                  <Button
+                    size="small"
+                    color="secondary"
+                    variant="solid"
+                    onPress={() => setTipOpen(true)}
+                    style={[a.rounded_full]}
+                    label={_(msg`Tip this profile`)}>
+                    <ButtonText>
+                      <Trans>Soutenir</Trans>
+                    </ButtonText>
+                  </Button>
+                )}
 
                 <Button
                   testID={
@@ -255,7 +285,10 @@ let ProfileHeaderStandard = ({
                 </Button>
               </>
             ) : null}
-            <ProfileMenu profile={profile} />
+            <ProfileMenu
+              profile={profile}
+              showTellusMessageAction={!showInlineTellusMessage}
+            />
           </View>
           <View
             style={[a.flex_col, a.gap_xs, a.pb_sm, live ? a.pt_sm : a.pt_2xs]}>
@@ -302,6 +335,31 @@ let ProfileHeaderStandard = ({
                   />
                 </View>
               ) : undefined}
+              {hasTipTarget && (
+                <View style={[a.gap_xs]}>
+                  {parsedWallets.evm?.address && (
+                    <Text style={[a.text_sm, t.atoms.text_contrast_medium]}>
+                      {`ETH(${(parsedWallets.evm.network || 'base').toUpperCase()}): `}
+                      {parsedWallets.evm.address}
+                    </Text>
+                  )}
+                  {parsedWallets.solana?.address && (
+                    <Text style={[a.text_sm, t.atoms.text_contrast_medium]}>
+                      {`SOL: ${parsedWallets.solana.address}`}
+                    </Text>
+                  )}
+                  {parsedWallets.bitcoin?.address && (
+                    <Text style={[a.text_sm, t.atoms.text_contrast_medium]}>
+                      {`BTC(${(parsedWallets.bitcoin.network || 'mainnet').toUpperCase()}): ${parsedWallets.bitcoin.address}`}
+                    </Text>
+                  )}
+                  {parsedWallets.lightning?.address && (
+                    <Text style={[a.text_sm, t.atoms.text_contrast_medium]}>
+                      {`Lightning: ${parsedWallets.lightning.address}`}
+                    </Text>
+                  )}
+                </View>
+              )}
 
               {!isMe &&
                 !isBlockedUser &&
@@ -334,6 +392,26 @@ let ProfileHeaderStandard = ({
       <AnimatedProfileHeaderSuggestedFollows
         isExpanded={showSuggestedFollows}
         actorDid={profile.did}
+      />
+      <TipModal
+        open={tipOpen}
+        onClose={() => setTipOpen(false)}
+        target={{
+          evm: parsedWallets.evm
+            ? {
+                address: parsedWallets.evm.address,
+                network: parsedWallets.evm.network,
+              }
+            : undefined,
+          solana: parsedWallets.solana?.address,
+          bitcoin: parsedWallets.bitcoin
+            ? {
+                address: parsedWallets.bitcoin.address,
+                network: parsedWallets.bitcoin.network,
+              }
+            : undefined,
+          lightning: parsedWallets.lightning?.address,
+        }}
       />
     </>
   )

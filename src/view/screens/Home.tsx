@@ -38,6 +38,8 @@ import {FollowingEndOfFeed} from '#/view/com/posts/FollowingEndOfFeed'
 import {NoFeedsPinned} from '#/screens/Home/NoFeedsPinned'
 import * as Layout from '#/components/Layout'
 import {useDemoMode} from '#/storage/hooks/demo-mode'
+import {useFeedLayout} from '#/state/feedLayout'
+import HomeFeed from '#/screens/HomeFeed'
 
 type Props = NativeStackScreenProps<HomeTabNavigatorParams, 'Home' | 'Start'>
 export function HomeScreen(props: Props) {
@@ -105,6 +107,7 @@ function HomeScreenReady({
   preferences: UsePreferencesQueryResponse
   pinnedFeedInfos: SavedFeedSourceInfo[]
 }) {
+  const {layout} = useFeedLayout()
   const allFeeds = React.useMemo(
     () => pinnedFeedInfos.map(f => f.feedDescriptor),
     [pinnedFeedInfos],
@@ -221,12 +224,19 @@ function HomeScreenReady({
     [onPressSelected, pinnedFeedInfos, demoMode],
   )
 
+  const altLayoutMode = layout === 'gallery' || layout === 'tiktok' ? layout : 'twitter'
+  const useAltLayout = isWeb && altLayoutMode !== 'twitter'
+
   const renderFollowingEmptyState = React.useCallback(() => {
     return <FollowingEmptyState />
   }, [])
 
   const renderCustomFeedEmptyState = React.useCallback(() => {
     return <CustomFeedEmptyState />
+  }, [])
+
+  const renderFollowingEndOfFeed = React.useCallback(() => {
+    return <FollowingEndOfFeed />
   }, [])
 
   const homeFeedParams = React.useMemo<FeedParams>(() => {
@@ -281,6 +291,18 @@ function HomeScreenReady({
       {pinnedFeedInfos.length ? (
         pinnedFeedInfos.map((feedInfo, index) => {
           const feed = feedInfo.feedDescriptor
+
+          if (useAltLayout) {
+            return (
+              <HomeFeed
+                key={feed}
+                feedDescriptor={feed}
+                feedInfo={feedInfo}
+                layout={altLayoutMode === 'gallery' ? 'gallery' : 'tiktok'}
+              />
+            )
+          }
+
           if (feed === 'following') {
             return (
               <FeedPage
@@ -291,11 +313,12 @@ function HomeScreenReady({
                 feed={feed}
                 feedParams={homeFeedParams}
                 renderEmptyState={renderFollowingEmptyState}
-                renderEndOfFeed={FollowingEndOfFeed}
+                renderEndOfFeed={renderFollowingEndOfFeed}
                 feedInfo={feedInfo}
               />
             )
           }
+
           const savedFeedConfig = feedInfo.savedFeed
           return (
             <FeedPage

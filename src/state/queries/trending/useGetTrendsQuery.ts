@@ -4,7 +4,7 @@ import {useQuery} from '@tanstack/react-query'
 
 import {
   aggregateUserInterests,
-  createBskyTopicsHeader,
+  createTopicsHeader,
 } from '#/lib/api/feed/utils'
 import {getContentLanguages} from '#/state/preferences/languages'
 import {STALE} from '#/state/queries'
@@ -34,7 +34,7 @@ export function useGetTrendsQuery() {
         },
         {
           headers: {
-            ...createBskyTopicsHeader(aggregateUserInterests(preferences)),
+            ...createTopicsHeader(aggregateUserInterests(preferences)),
             'Accept-Language': contentLangs,
           },
         },

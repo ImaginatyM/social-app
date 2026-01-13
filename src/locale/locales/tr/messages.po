@@ -81,7 +81,7 @@ msgstr "{0, plural, other {# saniye}}"
 
 #: src/view/shell/bottom-bar/BottomBar.tsx:225
 #: src/view/shell/bottom-bar/BottomBar.tsx:257
-#: src/view/shell/Drawer.tsx:498
+#: src/view/shell/Drawer.tsx:519
 msgid "{0, plural, one {# unread item} other {# unread items}}"
 msgstr "{0, plural, other {# okunmamış öğe}}"
 
@@ -124,7 +124,7 @@ msgstr "{0, plural, other {kaydedilme}}"
 msgid "{0, plural, other {{1} posts}}"
 msgstr "{0, plural, other {{1} gönderi}}"
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 25) who have joined Tellus using a specific starter pack
 #: src/screens/StarterPack/StarterPackScreen.tsx:490
 msgid "{0, plural, other {# people have}} used this starter pack!"
 msgstr "{0, plural, other {# kişi}} bu başlangıç paketini kullandı!"
@@ -221,7 +221,7 @@ msgstr "{0}dk"
 msgid "{0}s"
 msgstr "{0}sn"
 
-#: src/view/shell/desktop/LeftNav.tsx:455
+#: src/view/shell/desktop/LeftNav.tsx:457
 msgid "{count, plural, one {# unread item} other {# unread items}}"
 msgstr "{count, plural, other {# okunmamış öğe}}"
 
@@ -414,7 +414,7 @@ msgstr "{hours, plural, other {# saat {minutesString}}}"
 msgid "{hours, plural, one {# hour} other {# hours}}"
 msgstr "{hours, plural, other {# saat}}"
 
-#. Number of users (always at least 50) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 50) who have joined Tellus using a specific starter pack
 #: src/components/StarterPack/StarterPackCard.tsx:101
 msgid "{joinedAllTimeCount, plural, other {# users have}} joined!"
 msgstr "{joinedAllTimeCount, plural, other {# kullanıcı}} katıldı!"
@@ -428,12 +428,12 @@ msgid "{notificationCount, plural, one {# unread item} other {# unread items}}"
 msgstr "{notificationCount, plural, other {# okunmamış öğe}}"
 
 #: src/components/NewskieDialog.tsx:116
-msgid "{profileName} joined Bluesky {0} ago"
-msgstr "{profileName} Bluesky'a {0} önce katıldı"
+msgid "{profileName} joined Tellus {0} ago"
+msgstr "{profileName} Tellus'a {0} önce katıldı"
 
 #: src/components/NewskieDialog.tsx:111
-msgid "{profileName} joined Bluesky using a starter pack {0} ago"
-msgstr "{profileName} Bluesky'a başlangıç paketi kullanarak {0} önce katıldı"
+msgid "{profileName} joined Tellus using a starter pack {0} ago"
+msgstr "{profileName} Tellus'a başlangıç paketi kullanarak {0} önce katıldı"
 
 #. The trending topic rank, i.e. "1. March Madness", "2. The Bachelor"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:111
@@ -458,6 +458,19 @@ msgstr "{userName} doğrulanmış"
 msgid "{userName}'s verifications"
 msgstr "{userName} kullanıcısının doğrulamaları"
 
+#: src/screens/Messages/Settings.tsx:187
+msgid "@alice:matrix.org"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:982
+msgid "@alice:tellus.chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1153
+#: src/screens/MessagesMatrix.web.tsx:1564
+msgid "@utilisateur:tellus.chat"
+msgstr ""
+
 #. Indicates the number of additional profiles are in the Starter Pack e.g. +12
 #: src/screens/Search/components/StarterPackCard.tsx:249
 msgid "+{computedTotal}"
@@ -473,11 +486,11 @@ msgctxt "feeds"
 msgid "<0>{0}, </0><1>{1}, </1>and {2, plural, one {# other} other {# others}} are included in your starter pack"
 msgstr "<0>{0}, </0><1>{1} </1>ve {2, plural, other {# kişi daha}} başlangıç paketinizde yer alıyor"
 
-#: src/view/shell/Drawer.tsx:117
+#: src/view/shell/Drawer.tsx:120
 msgid "<0>{0}</0> {1, plural, one {follower} other {followers}}"
 msgstr "<0>{0}</0> {1, plural, other {takipçi}}"
 
-#: src/view/shell/Drawer.tsx:128
+#: src/view/shell/Drawer.tsx:131
 msgid "<0>{0}</0> {1, plural, one {following} other {following}}"
 msgstr "<0>{0}</0> {1, plural, other {takip edilen}}"
 
@@ -499,8 +512,8 @@ msgid "<0>{date}</0> at {time}"
 msgstr "<0>{date}</0> {time}"
 
 #: src/screens/Search/SearchResults.tsx:255
-msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Bluesky.</4>"
-msgstr "<4>Bluesky'da haber, spor, siyaset ve diğer olan biteni aramak için</4><3> </3><0>giriş yapın</0><1> veya </1><2>bir hesap oluşturun.</2>"
+msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Tellus.</4>"
+msgstr "<4>Tellus'da haber, spor, siyaset ve diğer olan biteni aramak için</4><3> </3><0>giriş yapın</0><1> veya </1><2>bir hesap oluşturun.</2>"
 
 #: src/screens/StarterPack/Wizard/index.tsx:502
 msgid "<0>You</0> and<1> </1><2>{0} </2>are included in your starter pack"
@@ -527,8 +540,8 @@ msgid "7 days"
 msgstr "7 gün"
 
 #: src/screens/Onboarding/StepFinished.tsx:341
-msgid "A collection of popular feeds you can find on Bluesky, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
-msgstr "Bluesky'da bulabileceğiniz bazı popüler akışların derlenmiş hali"
+msgid "A collection of popular feeds you can find on Tellus, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
+msgstr "Tellus'da bulabileceğiniz bazı popüler akışların derlenmiş hali"
 
 #. If last message does not contain text, fall back to "{user} reacted to {a message}"
 #: src/screens/Messages/components/ChatListItem.tsx:210
@@ -540,22 +553,31 @@ msgid "A new form of verification"
 msgstr "Yeni bir doğrulama biçimi"
 
 #: src/components/BlockedGeoOverlay.tsx:50
-msgid "A new Mississippi law requires us to implement age verification for all users before they can access Bluesky. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies."
-msgstr "Yeni bir Mississippi kanunu Bluesky'ın erişebilir olması için tüm kullanıcılara yönelik yaş doğrulaması geliştirmemizi gerektiriyor. Bu kanunun çocukların güvenliğine yönelik hedeflerinden öteye giden sıkıntılar yarattığını, özgür ifadeyi kısıtlayan kayda değer engellere yol açtığını ve küçük platformlara ve ortaya çıkmakta olan teknolojilere orantısız olarak zarar verdiğini düşünüyoruz."
+msgid "A new Mississippi law requires us to implement age verification for all users before they can access Tellus. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies."
+msgstr "Yeni bir Mississippi kanunu Tellus'ın erişebilir olması için tüm kullanıcılara yönelik yaş doğrulaması geliştirmemizi gerektiriyor. Bu kanunun çocukların güvenliğine yönelik hedeflerinden öteye giden sıkıntılar yarattığını, özgür ifadeyi kısıtlayan kayda değer engellere yol açtığını ve küçük platformlara ve ortaya çıkmakta olan teknolojilere orantısız olarak zarar verdiğini düşünüyoruz."
+
+#: src/screens/MessagesMatrix.web.tsx:1045
+msgid "À propos"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1031
+#: src/screens/MessagesMatrix.web.tsx:1037
+msgid "À propos / avancé"
+msgstr ""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:120
-msgid "A screenshot of a post with a new button next to the share button that allows you to save the post to your bookmarks. The post is from @jcsalterego.bsky.social and reads \"inventing a saturday that immediately follows monday\"."
-msgstr "Paylaş düğmesinin yanında gönderiyi yer imlerine kaydedebilmenizi sağlayan bir butonun olduğu bir gönderinin ekran görüntüsü. Gönderi @jcsalterego.bsky.social hesabından ve içinde İngilizce \"inventing a saturday that immediately follows monday\" yazıyor."
+msgid "A screenshot of a post with a new button next to the share button that allows you to save the post to your bookmarks. The post is from @jcsalterego.tellus.social and reads \"inventing a saturday that immediately follows monday\"."
+msgstr "Paylaş düğmesinin yanında gönderiyi yer imlerine kaydedebilmenizi sağlayan bir butonun olduğu bir gönderinin ekran görüntüsü. Gönderi @jcsalterego.tellus.social hesabından ve içinde İngilizce \"inventing a saturday that immediately follows monday\" yazıyor."
 
 #: src/components/dialogs/nuxs/ActivitySubscriptions.tsx:113
 msgid "A screenshot of a profile page with a bell icon next to the follow button, indicating the new activity notifications feature."
 msgstr "Takip et butonunun yanında bir zil simgesi bulunan bir profil sayfasının ekran görüntüsü; bu, yeni etkinlik bildirimleri özelliğini göstermektedir."
 
-#: src/Navigation.tsx:524
+#: src/Navigation.tsx:555
 #: src/screens/Settings/AboutSettings.tsx:75
-#: src/screens/Settings/Settings.tsx:244
-#: src/screens/Settings/Settings.tsx:247
+#: src/screens/Settings/Settings.tsx:260
+#: src/screens/Settings/Settings.tsx:263
 msgid "About"
 msgstr "Hakkında"
 
@@ -574,37 +596,37 @@ msgid "Accept Request"
 msgstr "İsteği kabul et"
 
 #: src/screens/Settings/AccessibilitySettings.tsx:44
-#: src/screens/Settings/Settings.tsx:220
-#: src/screens/Settings/Settings.tsx:223
+#: src/screens/Settings/Settings.tsx:236
+#: src/screens/Settings/Settings.tsx:239
 msgid "Accessibility"
 msgstr "Erişilebilirlik"
 
-#: src/Navigation.tsx:383
+#: src/Navigation.tsx:414
 msgid "Accessibility Settings"
 msgstr "Erişilebilirlik Ayarları"
 
-#: src/Navigation.tsx:399
+#: src/Navigation.tsx:430
 #: src/screens/Login/LoginForm.tsx:194
 #: src/screens/Settings/AccountSettings.tsx:51
-#: src/screens/Settings/Settings.tsx:174
-#: src/screens/Settings/Settings.tsx:177
+#: src/screens/Settings/Settings.tsx:176
+#: src/screens/Settings/Settings.tsx:179
 msgid "Account"
 msgstr "Hesap"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:361
 #: src/screens/Messages/components/RequestButtons.tsx:91
-#: src/view/com/profile/ProfileMenu.tsx:161
+#: src/view/com/profile/ProfileMenu.tsx:169
 msgctxt "toast"
 msgid "Account blocked"
 msgstr "Hesap engellendi"
 
-#: src/view/com/profile/ProfileMenu.tsx:174
+#: src/view/com/profile/ProfileMenu.tsx:182
 msgctxt "toast"
 msgid "Account followed"
 msgstr "Hesap takip edildi"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:384
-#: src/view/com/profile/ProfileMenu.tsx:137
+#: src/view/com/profile/ProfileMenu.tsx:145
 msgctxt "toast"
 msgid "Account muted"
 msgstr "Hesap susturuldu"
@@ -618,34 +640,34 @@ msgstr "Hesap Susturuldu"
 msgid "Account Muted by List"
 msgstr "Liste Tarafından Hesap Susturuldu"
 
-#: src/screens/Settings/Settings.tsx:624
+#: src/screens/Settings/Settings.tsx:640
 msgid "Account options"
 msgstr "Hesap seçenekleri"
 
-#: src/screens/Settings/Settings.tsx:660
+#: src/screens/Settings/Settings.tsx:676
 msgid "Account removed from quick access"
 msgstr "Hesap hızlı erişimden kaldırıldı"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:132
-#: src/view/com/profile/ProfileMenu.tsx:151
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:136
+#: src/view/com/profile/ProfileMenu.tsx:159
 msgctxt "toast"
 msgid "Account unblocked"
 msgstr "Hesap engeli kaldırıldı"
 
-#: src/view/com/profile/ProfileMenu.tsx:186
+#: src/view/com/profile/ProfileMenu.tsx:194
 msgctxt "toast"
 msgid "Account unfollowed"
 msgstr "Hesap takibi bırakıldı"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:374
-#: src/view/com/profile/ProfileMenu.tsx:127
+#: src/view/com/profile/ProfileMenu.tsx:135
 msgctxt "toast"
 msgid "Account unmuted"
 msgstr "Hesap susturulması kaldırıldı"
 
 #: src/components/verification/VerifierDialog.tsx:96
-msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
-msgstr "Çıkıntılı onay tikine sahip hesaplar <0><1/></0> başka hesapları doğrulayabilir. Bu güvenilir doğrulayıcılar Bluesky tarafından seçilir."
+msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Tellus."
+msgstr "Çıkıntılı onay tikine sahip hesaplar <0><1/></0> başka hesapları doğrulayabilir. Bu güvenilir doğrulayıcılar Tellus tarafından seçilir."
 
 #: src/lib/hooks/useNotificationHandler.ts:182
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:102
@@ -653,7 +675,7 @@ msgstr "Çıkıntılı onay tikine sahip hesaplar <0><1/></0> başka hesapları 
 msgid "Activity from others"
 msgstr "Başkalarının etkinlikleri"
 
-#: src/Navigation.tsx:492
+#: src/Navigation.tsx:523
 msgid "Activity notifications"
 msgstr "Etkinlik bildirimleri"
 
@@ -706,10 +728,10 @@ msgstr "Alternatif metin ekle"
 msgid "Add alt text (optional)"
 msgstr "Alternatif metin ekle (isteğe bağlı)"
 
-#: src/screens/Settings/Settings.tsx:564
-#: src/screens/Settings/Settings.tsx:567
-#: src/view/shell/desktop/LeftNav.tsx:262
-#: src/view/shell/desktop/LeftNav.tsx:266
+#: src/screens/Settings/Settings.tsx:580
+#: src/screens/Settings/Settings.tsx:583
+#: src/view/shell/desktop/LeftNav.tsx:264
+#: src/view/shell/desktop/LeftNav.tsx:268
 msgid "Add another account"
 msgstr "Başka hesap ekle"
 
@@ -786,8 +808,8 @@ msgstr "Alan adınıza aşağıdaki DNS kaydını ekleyin:"
 msgid "Add this feed to your feeds"
 msgstr "Akışlarınıza bu akışı ekleyin"
 
-#: src/view/com/profile/ProfileMenu.tsx:317
-#: src/view/com/profile/ProfileMenu.tsx:320
+#: src/view/com/profile/ProfileMenu.tsx:372
+#: src/view/com/profile/ProfileMenu.tsx:375
 msgid "Add to lists"
 msgstr "Listelere ekle"
 
@@ -796,14 +818,18 @@ msgid "Add to saved posts"
 msgstr "Kayıtlı gönderilere ekle"
 
 #: src/components/dialogs/StarterPackDialog.tsx:176
-#: src/view/com/profile/ProfileMenu.tsx:308
-#: src/view/com/profile/ProfileMenu.tsx:311
+#: src/view/com/profile/ProfileMenu.tsx:363
+#: src/view/com/profile/ProfileMenu.tsx:366
 msgid "Add to starter packs"
 msgstr "Başlangıç paketlerine ekle"
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:156
 msgid "Add user to list"
 msgstr "Kullanıcıyı listeye ekle"
+
+#: src/screens/Messages/Settings.tsx:176
+msgid "Add your Tellus Chat ID so others can message you directly."
+msgstr ""
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:109
 #: src/view/com/modals/UserAddRemoveLists.tsx:162
@@ -834,8 +860,8 @@ msgid "Adult Content"
 msgstr "Yetişkin İçerik"
 
 #: src/screens/Moderation/index.tsx:423
-msgid "Adult content can only be enabled via the Web at <0>bsky.app</0>."
-msgstr "Yetişkin içerik yalnızca Web üzerinden <0>bsky.app</0> etkinleştirilebilir."
+msgid "Adult content can only be enabled via the Web at <0>tellus.app</0>."
+msgstr "Yetişkin içerik yalnızca Web üzerinden <0>tellus.app</0> etkinleştirilebilir."
 
 #: src/components/moderation/LabelPreference.tsx:247
 msgid "Adult content is disabled."
@@ -849,6 +875,10 @@ msgstr "Yetişkin İçerik işaretleri"
 #: src/screens/Moderation/index.tsx:473
 msgid "Advanced"
 msgstr "Gelişmiş"
+
+#: src/screens/Saved/components.tsx:134
+msgid "Affichage"
+msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceBadge.tsx:42
 msgid "Age Assurance"
@@ -866,6 +896,10 @@ msgstr "Yaş güvencesi sorgusu yollandı"
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:193
 msgid "Age assurance only takes a few minutes"
 msgstr "Yaş güvencesi sadece birkaç dakika alacaktır"
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:44
+msgid "Ajoutez une URL d'image pour personnaliser la collection."
+msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:223
 msgid "alice@example.com"
@@ -902,8 +936,8 @@ msgstr "Doğrudan mesajlarınıza erişime izin verin"
 msgid "Allow location access"
 msgstr "Konum erişimine izin ver"
 
-#: src/screens/Messages/Settings.tsx:75
-#: src/screens/Messages/Settings.tsx:78
+#: src/screens/Messages/Settings.tsx:247
+#: src/screens/Messages/Settings.tsx:250
 msgid "Allow new messages from"
 msgstr "Yeni mesajlara izin ver"
 
@@ -1018,13 +1052,13 @@ msgid "An error occurred while uploading the video."
 msgstr "Video yüklenirken bir hata oluştu."
 
 #: src/screens/Onboarding/StepFinished.tsx:359
-msgid "An illustration of several Bluesky posts alongside repost, like, and comment icons"
-msgstr "Birkaç Bluesky gönderisinin yeniden gönderi, beğeni ve yorum yapma simgeleriyle beraber çizimi"
+msgid "An illustration of several Tellus posts alongside repost, like, and comment icons"
+msgstr "Birkaç Tellus gönderisinin yeniden gönderi, beğeni ve yorum yapma simgeleriyle beraber çizimi"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:84
 #: src/components/verification/VerifierDialog.tsx:86
-msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
-msgstr "Bluesky'ın güvenilir doğrulayıcıları seçmesini ve güvenilir doğrulayıcıların da bireysel hesapları doğrulamasını gösteren bir çizim."
+msgid "An illustration showing that Tellus selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
+msgstr "Tellus'ın güvenilir doğrulayıcıları seçmesini ve güvenilir doğrulayıcıların da bireysel hesapları doğrulamasını gösteren bir çizim."
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:28
 #: src/lib/moderation/useReportOptions.ts:28
@@ -1049,8 +1083,8 @@ msgid "An issue occurred, please try again."
 msgstr "Bir sorun oluştu, lütfen tekrar deneyin."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:118
-msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
-msgstr "Bir kurgu iPhone açık Bluesky uygulamasında doğrulanmış bir kullanıcıyı adının yanındaki doğrulanma tikiyle birlikte gösteriyor."
+msgid "An mockup of a iPhone showing the Tellus app open to the profile of a verified user with a blue checkmark next to their display name."
+msgstr "Bir kurgu iPhone açık Tellus uygulamasında doğrulanmış bir kullanıcıyı adının yanındaki doğrulanma tikiyle birlikte gösteriyor."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:194
 msgid "an unknown error occurred"
@@ -1080,8 +1114,17 @@ msgid "Announcement"
 msgstr "Duyuru"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:37
-msgid "Announcing verification on Bluesky"
-msgstr "Bluesky'da doğrulamayı duyurma"
+msgid "Announcing verification on Tellus"
+msgstr "Tellus'da doğrulamayı duyurma"
+
+#: src/screens/MessagesMatrix.web.tsx:1163
+#: src/screens/MessagesMatrix.web.tsx:1169
+#: src/screens/MessagesMatrix.web.tsx:1225
+#: src/screens/MessagesMatrix.web.tsx:1231
+#: src/screens/Saved/CollectionDetailPage.tsx:56
+#: src/screens/Saved/SavedCollectionsPage.tsx:45
+msgid "Annuler"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:33
 #: src/lib/moderation/useReportOptions.ts:33
@@ -1098,7 +1141,7 @@ msgstr "Herkes etkileşime geçebilir"
 msgid "Anyone who follows me"
 msgstr "Beni takip eden herkes"
 
-#: src/Navigation.tsx:532
+#: src/Navigation.tsx:563
 #: src/screens/Settings/AppIconSettings/index.tsx:67
 #: src/screens/Settings/AppIconSettings/SettingsListItem.tsx:18
 #: src/screens/Settings/AppIconSettings/SettingsListItem.tsx:23
@@ -1135,7 +1178,7 @@ msgstr "Uygulama şifresi isimleri en az 4 karakter uzunluğunda olmalıdır"
 msgid "App passwords"
 msgstr "Uygulama şifreleri"
 
-#: src/Navigation.tsx:351
+#: src/Navigation.tsx:357
 #: src/screens/Settings/AppPasswords.tsx:51
 msgid "App Passwords"
 msgstr "Uygulama Şifreleri"
@@ -1171,10 +1214,10 @@ msgstr "Askıya Alınmaya İtiraz Et"
 msgid "Appeal this decision"
 msgstr "Bu karara itiraz et"
 
-#: src/Navigation.tsx:391
+#: src/Navigation.tsx:422
 #: src/screens/Settings/AppearanceSettings.tsx:86
-#: src/screens/Settings/Settings.tsx:212
-#: src/screens/Settings/Settings.tsx:215
+#: src/screens/Settings/Settings.tsx:228
+#: src/screens/Settings/Settings.tsx:231
 msgid "Appearance"
 msgstr "Görünüm"
 
@@ -1183,8 +1226,8 @@ msgstr "Görünüm"
 msgid "Apply default recommended feeds"
 msgstr "Önerilen öntanımlı akışları uygula"
 
-#: src/screens/Settings/Settings.tsx:498
-#: src/screens/Settings/Settings.tsx:500
+#: src/screens/Settings/Settings.tsx:514
+#: src/screens/Settings/Settings.tsx:516
 msgid "Apply Pull Request"
 msgstr "Pull Request'i uygula"
 
@@ -1254,6 +1297,10 @@ msgstr "Sanatsal veya erotik olmayan çıplaklık."
 msgid "As a small team, we cannot justify building the expensive infrastructure this requirement demands while legal challenges to this law are pending."
 msgstr "Bu kanuna itiraz süreçleri henüz devam etmekteyken bu gereksinimin getirdiği pahalı altyapının geliştirilmesini küçük bir ekip olarak makul kılamıyoruz."
 
+#: src/Navigation.tsx:378
+msgid "Asset"
+msgstr ""
+
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:497
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:499
 msgid "Assign topic for algo"
@@ -1263,10 +1310,43 @@ msgstr "Algoritmaya başlık ata"
 msgid "At least 8 characters"
 msgstr "En az 8 karakter"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:42
+msgid "Aucun élément enregistré"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1554
+msgid "Aucun membre pour le moment."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:444
+#: src/screens/MessagesMatrix.web.tsx:1656
+msgid "Aucun message"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:58
+msgid "Aucun résultat"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:34
+msgid "Aucune collection pour l'instant"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:36
+msgid "Aucune collection trouvée"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1277
+msgid "Aucune discussion"
+msgstr ""
+
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:58
 msgctxt "Name of app icon variant"
 msgid "Aurora"
 msgstr "Kuzey Işıkları"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:39
+msgid "Auteur"
+msgstr ""
 
 #: src/screens/Settings/ContentAndMediaSettings.tsx:116
 #: src/screens/Settings/ContentAndMediaSettings.tsx:122
@@ -1326,7 +1406,7 @@ msgid "Before you can get notifications for {name}'s posts, you must first verif
 msgstr "{name} kullanıcısının gönderilerinden bildirim alabilmeniz için öncelikle e-posta adresinizi doğrulamanız gerekiyor."
 
 #: src/components/dms/dialogs/NewChatDialog.tsx:54
-#: src/components/dms/MessageProfileButton.tsx:58
+#: src/components/dms/MessageProfileButton.tsx:104
 #: src/screens/Messages/ChatList.tsx:369
 #: src/screens/Messages/Conversation.tsx:228
 msgid "Before you can message another user, you must first verify your email."
@@ -1350,8 +1430,8 @@ msgid "Birthday"
 msgstr "Doğum günü"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:760
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:328
-#: src/view/com/profile/ProfileMenu.tsx:490
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:386
+#: src/view/com/profile/ProfileMenu.tsx:554
 msgid "Block"
 msgstr "Engelle"
 
@@ -1361,13 +1441,13 @@ msgstr "Engelle"
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:647
 #: src/screens/Messages/components/RequestButtons.tsx:144
 #: src/screens/Messages/components/RequestButtons.tsx:146
-#: src/view/com/profile/ProfileMenu.tsx:396
-#: src/view/com/profile/ProfileMenu.tsx:403
+#: src/view/com/profile/ProfileMenu.tsx:451
+#: src/view/com/profile/ProfileMenu.tsx:458
 msgid "Block account"
 msgstr "Hesabı engelle"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:755
-#: src/view/com/profile/ProfileMenu.tsx:473
+#: src/view/com/profile/ProfileMenu.tsx:537
 msgid "Block Account?"
 msgstr "Hesabı Engelle?"
 
@@ -1412,13 +1492,13 @@ msgstr "Engellendi"
 msgid "Blocked accounts"
 msgstr "Engellenen hesaplar"
 
-#: src/Navigation.tsx:192
+#: src/Navigation.tsx:198
 #: src/view/screens/ModerationBlockedAccounts.tsx:104
 msgid "Blocked Accounts"
 msgstr "Engellenen Hesaplar"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:757
-#: src/view/com/profile/ProfileMenu.tsx:485
+#: src/view/com/profile/ProfileMenu.tsx:549
 msgid "Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr "Engellenen hesaplar, konularınıza yanıt veremez, sizi bahsedemez veya başka şekilde sizinle etkileşime giremez."
 
@@ -1434,72 +1514,13 @@ msgstr "Engellemeniz bu işaretleyicinin hesabınıza işaret koymasına engel o
 msgid "Blocking is public. Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr "Engelleme herkese açıktır. Engellenen hesaplar, konularınıza yanıt veremez, sizi bahsedemez veya başka şekilde sizinle etkileşime giremez."
 
-#: src/view/com/profile/ProfileMenu.tsx:482
+#: src/view/com/profile/ProfileMenu.tsx:546
 msgid "Blocking will not prevent labels from being applied on your account, but it will stop this account from replying in your threads or interacting with you."
 msgstr "Engellemeniz hesabınıza işaretlerin uygulanmasını önlemeyecektir fakat bu hesabın sizin konularınıza yanıt vermesini ya da sizle etkileşime geçmesini önleyecektir."
 
 #: src/view/com/auth/SplashScreen.web.tsx:175
 msgid "Blog"
 msgstr "Blog"
-
-#: src/view/com/auth/server-input/index.tsx:136
-#: src/view/com/auth/server-input/index.tsx:137
-msgid "Bluesky"
-msgstr "Bluesky"
-
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:690
-msgid "Bluesky cannot confirm the authenticity of the claimed date."
-msgstr "Bluesky iddia edilen tarihin doğruluğunu onaylayamaz."
-
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:175
-msgctxt "Name of app icon variant"
-msgid "Bluesky Classic™"
-msgstr "Bluesky Klasik™"
-
-#: src/view/com/auth/server-input/index.tsx:212
-msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr "Bluesky, barındırma sağlayıcınızı seçebileceğiniz açık bir ağdır. Geliştiriciyseniz kendi sunucunuzu barındırabilirsiniz."
-
-#: src/view/com/auth/server-input/index.tsx:149
-msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-msgstr "Bluesky kendi sağlayıcınızı seçebildiğiniz açık bir ağdır. Eğer burada yeniyseniz varsayılan \"Bluesky Social\" seçeneğinde kalmanızı öneririz."
-
-#: src/components/ProgressGuide/List.tsx:53
-#: src/components/ProgressGuide/List.tsx:70
-msgid "Bluesky is better with friends!"
-msgstr "Bluesky arkadaşlarla daha güzel!"
-
-#: src/screens/Takendown.tsx:217
-msgid "Bluesky Social Terms of Service"
-msgstr "Bluesky Social Hizmet Şartları"
-
-#: src/components/StarterPack/ProfileStarterPacks.tsx:310
-msgid "Bluesky will choose a set of recommended accounts from people in your network."
-msgstr "Bluesky, ağınızdaki kişilerden bir dizi önerilen hesap seçecektir."
-
-#: src/screens/Settings/components/PwiOptOut.tsx:99
-msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-msgstr "Bluesky, profilinizi ve gönderilerinizi oturum açmamış kullanıcılara göstermeyecektir. Diğer uygulamalar bu isteği yerine getirmeyebilir. Bu, hesabınızı özel yapmaz."
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
-msgid "Bluesky will proactively verify notable and authentic accounts."
-msgstr "Bluesky, kayda değer ve gerçek hesapları inisiyatif alarak doğrulayacaktır."
-
-#: src/screens/Signup/StepInfo/Policies.tsx:26
-msgid "Bluesky's Community Guidelines"
-msgstr "Bluesky'ın Topluluk Kuralları"
-
-#: src/screens/Signup/StepInfo/Policies.tsx:32
-msgid "Bluesky's Updated Community Guidelines"
-msgstr "Bluesky'ın Güncel Topluluk Kuralları"
-
-#: src/screens/Settings/AppIconSettings/index.tsx:99
-msgid "Bluesky+"
-msgstr "Bluesky+"
-
-#: src/screens/Settings/AppIconSettings/index.tsx:102
-msgid "Bluesky+ icons"
-msgstr "Bluesky+ simgeleri"
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:53
 msgid "Blur images"
@@ -1624,7 +1645,7 @@ msgstr "Kamera"
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:85
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:246
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:252
-#: src/screens/Settings/Settings.tsx:289
+#: src/screens/Settings/Settings.tsx:305
 #: src/screens/Takendown.tsx:99
 #: src/screens/Takendown.tsx:102
 #: src/view/com/composer/Composer.tsx:1005
@@ -1633,7 +1654,7 @@ msgstr "Kamera"
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:52
 #: src/view/com/modals/CreateOrEditList.tsx:333
 #: src/view/com/modals/CropImage.web.tsx:97
-#: src/view/shell/desktop/LeftNav.tsx:213
+#: src/view/shell/desktop/LeftNav.tsx:215
 msgid "Cancel"
 msgstr "İptal"
 
@@ -1681,6 +1702,14 @@ msgstr "Altyazılar (.vtt)"
 msgid "Captions & alt text"
 msgstr "Altyazılar ve alternatif metin"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:51
+msgid "Cette action est définitive et ne supprime pas les posts de Tellus."
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:76
+msgid "Cette personne n’est pas encore sur Tellus Chat"
+msgstr ""
+
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
 msgid "Change"
 msgstr "Değiştir"
@@ -1724,6 +1753,10 @@ msgstr "Gönderi dilini {suggestedLanguageName} olarak değiştir"
 msgid "Change report reason"
 msgstr "Rapor gerekçesini değiştir"
 
+#: src/screens/MessagesMatrix.web.tsx:1083
+msgid "Change seulement si tu utilises un autre serveur."
+msgstr ""
+
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:57
 msgid "Change your password"
 msgstr "Şifrenizi değiştirin"
@@ -1741,11 +1774,16 @@ msgstr "Yer sağlayıcıyı değiştirir"
 msgid "Changes saved"
 msgstr "Değişiklikler kaydedildi"
 
+#: src/screens/MessagesMatrix.web.tsx:1630
+#: src/screens/Saved/CollectionDetailPage.tsx:41
+msgid "Chargement"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:963
+msgid "Chargement des messages"
+msgstr ""
+
 #: src/lib/hooks/useNotificationHandler.ts:99
-#: src/Navigation.tsx:549
-#: src/view/shell/bottom-bar/BottomBar.tsx:221
-#: src/view/shell/desktop/LeftNav.tsx:607
-#: src/view/shell/Drawer.tsx:466
 msgid "Chat"
 msgstr "Mesajlar"
 
@@ -1768,39 +1806,10 @@ msgctxt "toast"
 msgid "Chat muted"
 msgstr "Sohbet sessize alındı"
 
-#: src/Navigation.tsx:559
-#: src/screens/Messages/components/InboxPreview.tsx:22
-msgid "Chat request inbox"
-msgstr "Sohbet istekleri gelen kutusu"
-
-#: src/screens/Messages/components/InboxPreview.tsx:62
-#: src/screens/Messages/Inbox.tsx:56
-#: src/screens/Messages/Inbox.tsx:98
-msgid "Chat requests"
-msgstr "Sohbet istekleri"
-
-#: src/components/dms/ConvoMenu.tsx:76
-#: src/Navigation.tsx:554
-#: src/screens/Messages/ChatList.tsx:81
-#: src/screens/Messages/ChatList.tsx:85
-#: src/screens/Messages/ChatList.tsx:378
-msgid "Chat settings"
-msgstr "Mesajlaşma ayarları"
-
-#: src/screens/Messages/Settings.tsx:67
-msgid "Chat Settings"
-msgstr "Mesajlaşma Ayarları"
-
 #: src/components/dms/ConvoMenu.tsx:178
 msgctxt "toast"
 msgid "Chat unmuted"
 msgstr "Sohbet sessizden çıkarıldı"
-
-#: src/screens/Messages/ChatList.tsx:76
-#: src/screens/Messages/ChatList.tsx:394
-#: src/screens/Messages/ChatList.tsx:418
-msgid "Chats"
-msgstr "Sohbetler"
 
 #: src/screens/SignupQueued.tsx:78
 #: src/screens/SignupQueued.tsx:82
@@ -1814,6 +1823,10 @@ msgstr "E-postanıza gelen giriş kodunu buraya girin."
 #: src/view/com/modals/DeleteAccount.tsx:213
 msgid "Check your inbox for an email with the confirmation code to enter below:"
 msgstr "Aşağıya gireceğiniz onay kodu içeren bir e-posta için gelen kutunuzu kontrol edin:"
+
+#: src/screens/MessagesMatrix.web.tsx:1624
+msgid "Choisis une discussion pour voir le fil."
+msgstr ""
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:399
 msgid "Choose domain verification method"
@@ -1859,11 +1872,11 @@ msgstr "Şifrenizi seçin"
 msgid "Choose your username"
 msgstr "Kullanıcı adınız"
 
-#: src/screens/Settings/Settings.tsx:490
+#: src/screens/Settings/Settings.tsx:506
 msgid "Clear all storage data"
 msgstr "Tüm depolama verilerini temizle"
 
-#: src/screens/Settings/Settings.tsx:492
+#: src/screens/Settings/Settings.tsx:508
 msgid "Clear all storage data (restart after this)"
 msgstr "Tüm depolama verilerini temizle (bundan sonra yeniden başlat)"
 
@@ -1976,7 +1989,7 @@ msgstr "Alt çekmeceyi kapat"
 msgid "Close dialog"
 msgstr "Diyalogu kapat"
 
-#: src/view/shell/index.web.tsx:110
+#: src/view/shell/index.web.tsx:122
 msgid "Close drawer menu"
 msgstr "Çekmece menüyü kapat"
 
@@ -2036,6 +2049,14 @@ msgstr "Kullanıcı listesini daralt"
 msgid "Collapses list of users for a given notification"
 msgstr "Belirli bir bildirim için kullanıcı listesini daraltır"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:53
+msgid "Collection de destination"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:45
+msgid "Collection introuvable"
+msgstr ""
+
 #: src/components/dialogs/Embed.tsx:154
 #: src/screens/Settings/AppearanceSettings.tsx:94
 msgid "Color mode"
@@ -2055,8 +2076,16 @@ msgstr "Komedi"
 msgid "Comics"
 msgstr "Çizgi romanlar"
 
+#: src/screens/MessagesMatrix.web.tsx:1657
+msgid "Commence la discussion."
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:35
+msgid "Commencez par enregistrer des posts pour les retrouver ici."
+msgstr ""
+
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:45
-#: src/Navigation.tsx:341
+#: src/Navigation.tsx:347
 #: src/view/screens/CommunityGuidelines.tsx:34
 msgid "Community Guidelines"
 msgstr "Topluluk Kuralları"
@@ -2070,7 +2099,7 @@ msgstr "Onboarding'i tamamlayın ve hesabınızı kullanmaya başlayın"
 msgid "Complete the challenge"
 msgstr "Meydan okumayı tamamlayın"
 
-#: src/view/shell/desktop/LeftNav.tsx:572
+#: src/view/shell/desktop/LeftNav.tsx:574
 msgid "Compose new post"
 msgstr "Yeni gönderi oluştur"
 
@@ -2140,6 +2169,10 @@ msgstr "Konumunuzu GPS ile onaylayın. Konum bilginiz takip edilmez ve cihazın�
 msgid "Confirmation code"
 msgstr "Onay kodu"
 
+#: src/screens/MessagesMatrix.web.tsx:1059
+msgid "Connecte ton compte Tellus Chat (propulsé par Matrix)."
+msgstr ""
+
 #: src/screens/Login/LoginForm.tsx:337
 msgid "Connecting..."
 msgstr "Bağlanıyor..."
@@ -2147,6 +2180,24 @@ msgstr "Bağlanıyor..."
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:213
 msgid "Connection issue"
 msgstr "Bağlantı sorunu"
+
+#: src/screens/MessagesMatrix.web.tsx:1107
+msgid "Connexion à Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:964
+msgid "Connexion à Tellus Chat en cours..."
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:26
+msgid "Conservés"
+msgstr ""
+
+#: src/view/shell/desktop/LeftNav.tsx:783
+#: src/view/shell/Drawer.tsx:593
+msgctxt "link to saved collections screen"
+msgid "Conservés"
+msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:132
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:29
@@ -2167,12 +2218,12 @@ msgstr "Bize ulaşın"
 msgid "Content & Media"
 msgstr "İçerik ve Medya"
 
-#: src/screens/Settings/Settings.tsx:204
-#: src/screens/Settings/Settings.tsx:207
+#: src/screens/Settings/Settings.tsx:220
+#: src/screens/Settings/Settings.tsx:223
 msgid "Content and media"
 msgstr "İçerik ve medya"
 
-#: src/Navigation.tsx:508
+#: src/Navigation.tsx:539
 msgid "Content and Media"
 msgstr "İçerik ve Medya"
 
@@ -2242,6 +2293,7 @@ msgid "Continue to next step"
 msgstr "Sonraki adıma devam et"
 
 #: src/screens/Messages/Conversation.tsx:57
+#: src/screens/MessagesMatrix.web.tsx:419
 msgid "Conversation"
 msgstr "Yazışma"
 
@@ -2282,6 +2334,11 @@ msgstr "Panoya kopyalandı"
 msgid "Copied!"
 msgstr "Kopyalandı!"
 
+#: src/screens/Messages/Invite.tsx:89
+#: src/screens/Messages/Invite.tsx:95
+msgid "Copier le lien d’invitation"
+msgstr ""
+
 #: src/screens/Settings/AboutSettings.tsx:127
 msgid "Copies build version to clipboard"
 msgstr "Geliştirme sürümünü panoya kopyalar"
@@ -2294,8 +2351,8 @@ msgstr "Kopyala"
 msgid "Copy App Password"
 msgstr "Uygulama Şifresini Kopyala"
 
-#: src/view/com/profile/ProfileMenu.tsx:433
-#: src/view/com/profile/ProfileMenu.tsx:436
+#: src/view/com/profile/ProfileMenu.tsx:488
+#: src/view/com/profile/ProfileMenu.tsx:491
 msgid "Copy at:// URI"
 msgstr "Bu at:// URI'sini kopyala"
 
@@ -2310,8 +2367,8 @@ msgid "Copy code"
 msgstr "Kodu kopyala"
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:501
-#: src/view/com/profile/ProfileMenu.tsx:442
-#: src/view/com/profile/ProfileMenu.tsx:445
+#: src/view/com/profile/ProfileMenu.tsx:497
+#: src/view/com/profile/ProfileMenu.tsx:500
 msgid "Copy DID"
 msgstr "DID'i kopyala"
 
@@ -2339,8 +2396,8 @@ msgstr "Liste bağlantısını kopyala"
 msgid "Copy link to post"
 msgstr "Gönderi bağlantısını kopyala"
 
-#: src/view/com/profile/ProfileMenu.tsx:246
-#: src/view/com/profile/ProfileMenu.tsx:257
+#: src/view/com/profile/ProfileMenu.tsx:284
+#: src/view/com/profile/ProfileMenu.tsx:295
 msgid "Copy link to profile"
 msgstr "Profil bağlantısını kopyala"
 
@@ -2373,7 +2430,7 @@ msgstr "TXT kayıt değerini kopyala"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:40
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:107
-#: src/Navigation.tsx:346
+#: src/Navigation.tsx:352
 #: src/view/screens/CopyrightPolicy.tsx:31
 msgid "Copyright Policy"
 msgstr "Telif Hakkı Politikası"
@@ -2433,7 +2490,7 @@ msgstr "Başlangıç paketi için QR kod oluşturun"
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:178
 #: src/components/StarterPack/ProfileStarterPacks.tsx:287
-#: src/Navigation.tsx:589
+#: src/Navigation.tsx:630
 msgid "Create a starter pack"
 msgstr "Bir başlangıç paketi oluştur"
 
@@ -2502,6 +2559,18 @@ msgstr "{0} oluşturuldu"
 msgid "Creator has been blocked"
 msgstr "Oluşturucu engellendi"
 
+#: src/screens/MessagesMatrix.web.tsx:1173
+#: src/screens/MessagesMatrix.web.tsx:1180
+#: src/screens/MessagesMatrix.web.tsx:1235
+#: src/screens/MessagesMatrix.web.tsx:1242
+#: src/screens/Saved/SavedCollectionsPage.tsx:47
+msgid "Créer"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:38
+msgid "Créer une collection"
+msgstr ""
+
 #: src/screens/Onboarding/index.tsx:42
 #: src/screens/Onboarding/state.ts:107
 msgid "Culture"
@@ -2521,8 +2590,8 @@ msgid "Customize who can interact with this post."
 msgstr "Bu gönderiyle kimin etkileşime geçebileceğini özelleştirin."
 
 #: src/screens/Onboarding/Layout.tsx:61
-msgid "Customizes your Bluesky experience"
-msgstr "Bluesky deneyiminizi özelleştirir"
+msgid "Customizes your Tellus experience"
+msgstr "Tellus deneyiminizi özelleştirir"
 
 #: src/components/dialogs/Embed.tsx:167
 #: src/components/dialogs/Embed.tsx:169
@@ -2548,13 +2617,17 @@ msgstr "Karanlık tema"
 msgid "Date of birth"
 msgstr "Doğum tarihi"
 
+#: src/screens/MessagesMatrix.web.tsx:1214
+msgid "De quoi parle ce groupe ?"
+msgstr ""
+
 #: src/screens/Settings/AccountSettings.tsx:161
 #: src/screens/Settings/AccountSettings.tsx:166
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:73
 msgid "Deactivate account"
 msgstr "Hesabı devre dışı bırak"
 
-#: src/screens/Settings/Settings.tsx:455
+#: src/screens/Settings/Settings.tsx:471
 msgid "Debug Moderation"
 msgstr "Moderasyon Hata Ayıklama"
 
@@ -2573,6 +2646,8 @@ msgstr "Varsayılan simgeler"
 #: src/components/dms/MessageContextMenu.tsx:185
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:704
 #: src/screens/Messages/components/ChatStatusInfo.tsx:55
+#: src/screens/Messages/Settings.tsx:222
+#: src/screens/Messages/Settings.tsx:229
 #: src/screens/Settings/AppPasswords.tsx:212
 #: src/screens/StarterPack/StarterPackScreen.tsx:599
 #: src/screens/StarterPack/StarterPackScreen.tsx:688
@@ -2603,7 +2678,7 @@ msgstr "Uygulama şifresi silinsin mi?"
 msgid "Delete chat"
 msgstr "Sohbeti sil"
 
-#: src/screens/Settings/Settings.tsx:462
+#: src/screens/Settings/Settings.tsx:478
 msgid "Delete chat declaration record"
 msgstr "Sohbet beyan kaydını sil"
 
@@ -2677,11 +2752,23 @@ msgstr "Silinen Hesap"
 msgid "Deleted list"
 msgstr "Silinmiş liste"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:54
+msgid "Déplacer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:52
+msgid "Déplacer vers"
+msgstr ""
+
 #: src/screens/Profile/Header/EditProfileDialog.tsx:365
 #: src/view/com/modals/CreateOrEditList.tsx:278
 #: src/view/com/modals/CreateOrEditList.tsx:299
 msgid "Description"
 msgstr "Açıklama"
+
+#: src/screens/MessagesMatrix.web.tsx:1210
+msgid "Description (optionnelle)"
+msgstr ""
 
 #: src/view/com/composer/GifAltText.tsx:150
 #: src/view/com/composer/photos/ImageAltTextDialog.tsx:113
@@ -2707,8 +2794,8 @@ msgctxt "toast"
 msgid "Developer mode enabled"
 msgstr "Geliştirici modu devreye alındı"
 
-#: src/screens/Settings/Settings.tsx:271
-#: src/screens/Settings/Settings.tsx:274
+#: src/screens/Settings/Settings.tsx:287
+#: src/screens/Settings/Settings.tsx:290
 msgid "Developer options"
 msgstr "Geliştirici seçenekleri"
 
@@ -2745,8 +2832,8 @@ msgstr "Altyazıları devre dışı bırak"
 #: src/lib/moderation/useLabelBehaviorDescription.ts:32
 #: src/lib/moderation/useLabelBehaviorDescription.ts:42
 #: src/lib/moderation/useLabelBehaviorDescription.ts:68
-#: src/screens/Messages/Settings.tsx:144
-#: src/screens/Messages/Settings.tsx:147
+#: src/screens/Messages/Settings.tsx:316
+#: src/screens/Messages/Settings.tsx:319
 #: src/screens/Moderation/index.tsx:413
 msgid "Disabled"
 msgstr "Devre dışı"
@@ -2899,14 +2986,14 @@ msgstr "Bu diyalogu kapatmak için çift dokunun"
 msgid "Double tap to like"
 msgstr "Beğenmek için çift dokunun"
 
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
-msgid "Download Bluesky"
-msgstr "Bluesky'ı İndir"
-
 #: src/screens/Settings/components/ExportCarDialog.tsx:79
 #: src/screens/Settings/components/ExportCarDialog.tsx:84
 msgid "Download CAR file"
 msgstr "CAR dosyasını indir"
+
+#: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
+msgid "Download Tellus"
+msgstr "Tellus'ı İndir"
 
 #: src/view/com/composer/text-input/TextInput.web.tsx:361
 msgid "Drop to add images"
@@ -2952,6 +3039,14 @@ msgstr "örn: Reklamlarla tekrar tekrar yanıt veren kullanıcılar."
 msgid "Each code works once. You'll receive more invite codes periodically."
 msgstr "Her kod bir kez çalışır. Düzenli aralıklarla daha fazla davet kodu alacaksınız."
 
+#: src/screens/MessagesMatrix.web.tsx:349
+msgid "Échec de la connexion Tellus Chat."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1759
+msgid "Écrire un message"
+msgstr ""
+
 #: src/screens/Settings/AccountSettings.tsx:145
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:249
 #: src/screens/StarterPack/StarterPackScreen.tsx:588
@@ -2995,8 +3090,8 @@ msgstr "İlgi alanlarını düzenle"
 msgid "Edit list details"
 msgstr "Liste ayrıntılarını düzenle"
 
-#: src/view/com/profile/ProfileMenu.tsx:329
-#: src/view/com/profile/ProfileMenu.tsx:335
+#: src/view/com/profile/ProfileMenu.tsx:384
+#: src/view/com/profile/ProfileMenu.tsx:390
 msgid "Edit live status"
 msgstr "Canlı yayın durumunu düzenle"
 
@@ -3004,7 +3099,7 @@ msgstr "Canlı yayın durumunu düzenle"
 msgid "Edit Moderation List"
 msgstr "Düzenleme Listesini Düzenle"
 
-#: src/Navigation.tsx:356
+#: src/Navigation.tsx:362
 #: src/view/screens/Feeds.tsx:518
 msgid "Edit My Feeds"
 msgstr "Akışlarımı Düzenle"
@@ -3025,12 +3120,12 @@ msgstr "Gönderi etkileşim ayarlarını düzenle"
 #: src/screens/Profile/Header/EditProfileDialog.tsx:270
 #: src/screens/Profile/Header/EditProfileDialog.tsx:276
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:183
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:190
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:205
 msgid "Edit profile"
 msgstr "Profil düzenle"
 
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:186
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:193
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:208
 msgid "Edit Profile"
 msgstr "Profil Düzenle"
 
@@ -3046,7 +3141,7 @@ msgstr "Kullanıcı Listesini Düzenle"
 msgid "Edit who can reply"
 msgstr "Kimin yanıtlayabileceğini düzenle"
 
-#: src/Navigation.tsx:594
+#: src/Navigation.tsx:635
 msgid "Edit your starter pack"
 msgstr "Başlangıç paketini düzenle"
 
@@ -3112,6 +3207,10 @@ msgstr "Bu gönderiyi web sitenize gömün. Aşağıdaki kod parçasını kopyal
 msgid "Embedded video player"
 msgstr "Gömülü video oynatıcı"
 
+#: src/screens/MessagesMatrix.web.tsx:1265
+msgid "En attente"
+msgstr ""
+
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:104
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:111
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
@@ -3166,8 +3265,8 @@ msgstr "Gündem başlıklarını etkinleştir"
 msgid "Enable trending videos in your Discover feed"
 msgstr "Keşif akışında (\"Discover\") gündem videolarını etkinleştir"
 
-#: src/screens/Messages/Settings.tsx:135
-#: src/screens/Messages/Settings.tsx:138
+#: src/screens/Messages/Settings.tsx:307
+#: src/screens/Messages/Settings.tsx:310
 #: src/screens/Moderation/index.tsx:411
 msgid "Enabled"
 msgstr "Etkinleştirildi"
@@ -3176,6 +3275,15 @@ msgstr "Etkinleştirildi"
 msgid "End of feed"
 msgstr "Akış sonu"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:57
+#: src/screens/Saved/SavedCollectionsPage.tsx:46
+msgid "Enregistrer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:43
+msgid "Enregistrez des posts pour commencer votre collection."
+msgstr ""
+
 #: src/view/com/composer/videos/SubtitleDialog.tsx:158
 msgid "Ensure you have selected a language for each subtitle file."
 msgstr "Her altyazı dosyası için bir dil seçtiğinizden emin olun."
@@ -3183,6 +3291,10 @@ msgstr "Her altyazı dosyası için bir dil seçtiğinizden emin olun."
 #: src/screens/Login/SetNewPasswordForm.tsx:147
 msgid "Enter a password"
 msgstr "Bir şifre girin"
+
+#: src/screens/Messages/Settings.tsx:116
+msgid "Enter a valid Matrix ID (example: @alice:matrix.org)."
+msgstr ""
 
 #: src/components/dialogs/MutedWords.tsx:127
 #: src/components/dialogs/MutedWords.tsx:128
@@ -3224,6 +3336,10 @@ msgstr "E-posta adresinizi girin"
 msgid "Enter your password"
 msgstr "Şifrenizi girin"
 
+#: src/screens/Messages/Settings.tsx:115
+msgid "Enter your Tellus Chat ID."
+msgstr ""
+
 #: src/screens/Login/index.tsx:123
 msgid "Enter your username and password"
 msgstr "Kullanıcı adınızı ve şifrenizi girin"
@@ -3235,6 +3351,11 @@ msgstr "Tam ekrana geçer"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:236
 msgid "Entertainment"
 msgstr "Eğlence"
+
+#: src/screens/MessagesMatrix.web.tsx:1779
+#: src/screens/MessagesMatrix.web.tsx:1786
+msgid "Envoyer"
+msgstr ""
 
 #: src/view/com/composer/Composer.tsx:1843
 #: src/view/com/util/error/ErrorScreen.tsx:42
@@ -3269,6 +3390,11 @@ msgstr "Hata:"
 msgid "Error: {error}"
 msgstr "Hata: {error}"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:59
+#: src/screens/Saved/SavedCollectionsPage.tsx:37
+msgid "Essayez un autre terme de recherche."
+msgstr ""
+
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:398
 msgid "Everybody"
 msgstr "Herkes"
@@ -3281,8 +3407,8 @@ msgstr "Herkes yanıtlayabilir"
 msgid "Everybody can reply to this post."
 msgstr "Bu gönderiyi herkes yanıtlayabilir."
 
-#: src/screens/Messages/Settings.tsx:88
-#: src/screens/Messages/Settings.tsx:91
+#: src/screens/Messages/Settings.tsx:260
+#: src/screens/Messages/Settings.tsx:263
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:164
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:174
 msgid "Everyone"
@@ -3381,10 +3507,10 @@ msgstr "Açık veya rahatsız edici olabilecek medya."
 msgid "Explicit sexual images."
 msgstr "Açık cinsel içerikli görseller."
 
-#: src/Navigation.tsx:759
+#: src/Navigation.tsx:817
 #: src/screens/Search/Shell.tsx:307
-#: src/view/shell/desktop/LeftNav.tsx:689
-#: src/view/shell/Drawer.tsx:414
+#: src/view/shell/desktop/LeftNav.tsx:690
+#: src/view/shell/Drawer.tsx:435
 msgid "Explore"
 msgstr "Keşfet"
 
@@ -3392,6 +3518,10 @@ msgstr "Keşfet"
 #: src/components/WelcomeModal.tsx:177
 msgid "Explore the app"
 msgstr "Uygulamayı keşfet"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:44
+msgid "Explorer"
+msgstr ""
 
 #: src/screens/Settings/AccountSettings.tsx:152
 #: src/screens/Settings/AccountSettings.tsx:156
@@ -3417,7 +3547,7 @@ msgstr "Harici Medya"
 msgid "External media may allow websites to collect information about you and your device. No information is sent or requested until you press the \"play\" button."
 msgstr "Harici medya, web sitelerinin siz ve cihazınız hakkında bilgi toplamasına izin verebilir. Bilgi, \"oynat\" düğmesine basana kadar gönderilmez veya istenmez."
 
-#: src/Navigation.tsx:375
+#: src/Navigation.tsx:406
 #: src/screens/Settings/ExternalMediaPreferences.tsx:34
 msgid "External Media Preferences"
 msgstr "Harici Medya Tercihleri"
@@ -3443,10 +3573,6 @@ msgstr "Kullanıcı adı değiştirilemedi. Lütfen tekrar deneyin."
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:173
 msgid "Failed to create app password. Please try again."
 msgstr "Uygulama şifresi oluşturulamadı. Lütfen tekrar deneyin."
-
-#: src/components/dms/MessageProfileButton.tsx:36
-msgid "Failed to create conversation"
-msgstr "Yazışma oluşturulamadı"
 
 #: src/screens/StarterPack/Wizard/index.tsx:262
 #: src/screens/StarterPack/Wizard/index.tsx:270
@@ -3602,7 +3728,7 @@ msgstr "Akışlar güncellenemedi"
 msgid "Failed to update notification declaration"
 msgstr "Bildirim beyanı güncellenemedi"
 
-#: src/screens/Messages/Settings.tsx:39
+#: src/screens/Messages/Settings.tsx:57
 msgid "Failed to update settings"
 msgstr "Ayarlar güncellenemedi"
 
@@ -3621,7 +3747,7 @@ msgstr "E-posta doğrulanamadı, lütfen tekrar deneyin."
 msgid "Failed to verify handle. Please try again."
 msgstr "Kullanıcı adı doğrulanamadı. Lütfen yeniden deneyin."
 
-#: src/Navigation.tsx:291
+#: src/Navigation.tsx:297
 msgid "Feed"
 msgstr "Akış"
 
@@ -3650,9 +3776,9 @@ msgstr "Akış aç/kapa"
 msgid "Feed unavailable"
 msgstr "Akış kullanılamıyor"
 
-#: src/view/shell/desktop/RightNav.tsx:106
-#: src/view/shell/desktop/RightNav.tsx:107
-#: src/view/shell/Drawer.tsx:368
+#: src/view/shell/desktop/RightNav.tsx:94
+#: src/view/shell/desktop/RightNav.tsx:95
+#: src/view/shell/Drawer.tsx:389
 msgid "Feedback"
 msgstr "Geribildirim"
 
@@ -3662,14 +3788,14 @@ msgctxt "toast"
 msgid "Feedback sent to feed operator"
 msgstr "Geribildiriminiz akış operatörüne yollandı"
 
-#: src/Navigation.tsx:574
+#: src/Navigation.tsx:610
 #: src/screens/Search/SearchResults.tsx:73
 #: src/screens/StarterPack/StarterPackScreen.tsx:190
 #: src/view/screens/Feeds.tsx:511
 #: src/view/screens/Profile.tsx:230
 #: src/view/screens/SavedFeeds.tsx:104
-#: src/view/shell/desktop/LeftNav.tsx:727
-#: src/view/shell/Drawer.tsx:530
+#: src/view/shell/desktop/LeftNav.tsx:728
+#: src/view/shell/Drawer.tsx:551
 msgid "Feeds"
 msgstr "Akışlar"
 
@@ -3737,8 +3863,8 @@ msgid "Find people to follow"
 msgstr "Takip edilecek kişiler bulun"
 
 #: src/screens/Search/Shell.tsx:476
-msgid "Find posts, users, and feeds on Bluesky"
-msgstr "Bluesky'da gönderileri, kullanıcıları ve akışları bulun"
+msgid "Find posts, users, and feeds on Tellus"
+msgstr "Tellus'da gönderileri, kullanıcıları ve akışları bulun"
 
 #: src/screens/Onboarding/StepFinished.tsx:345
 msgid "Find your people"
@@ -3776,7 +3902,7 @@ msgstr "Esnek"
 #: src/components/ProfileHoverCard/index.web.tsx:496
 #: src/components/ProfileHoverCard/index.web.tsx:507
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:131
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:252
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:282
 #: src/screens/VideoFeed/index.tsx:854
 msgid "Follow"
 msgstr "Takip et"
@@ -3787,7 +3913,7 @@ msgid "Follow"
 msgstr "Takip et"
 
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:113
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:237
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:267
 msgid "Follow {0}"
 msgstr "{0} takip et"
 
@@ -3804,8 +3930,8 @@ msgstr "10 hesabı takip et"
 msgid "Follow 7 accounts"
 msgstr "7 Hesabı takip et"
 
-#: src/view/com/profile/ProfileMenu.tsx:287
-#: src/view/com/profile/ProfileMenu.tsx:298
+#: src/view/com/profile/ProfileMenu.tsx:342
+#: src/view/com/profile/ProfileMenu.tsx:353
 msgid "Follow account"
 msgstr "Hesabı takip et"
 
@@ -3822,7 +3948,7 @@ msgstr "Tüm hesapları takip et"
 #. User is not following this account, click to follow back
 #: src/components/ProfileCard.tsx:518
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:129
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:250
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:280
 msgid "Follow back"
 msgstr "Geri takip et"
 
@@ -3851,7 +3977,7 @@ msgstr "<0>{0}</0> ve <1>{1}</1> tarafından takip ediliyor"
 msgid "Followed by <0>{0}</0>, <1>{1}</1>, and {2, plural, one {# other} other {# others}}"
 msgstr "<0>{0}</0>, <1>{1}</1> ve {2, plural, other {# kişi daha}} tarafından takip ediliyor"
 
-#: src/Navigation.tsx:245
+#: src/Navigation.tsx:251
 msgid "Followers of @{0} that you know"
 msgstr "Tanıdığınız @{0} takipçileri"
 
@@ -3865,7 +3991,7 @@ msgstr "Tanıdığın takipçiler"
 #: src/components/ProfileHoverCard/index.web.tsx:495
 #: src/components/ProfileHoverCard/index.web.tsx:506
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:134
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:248
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:278
 #: src/screens/VideoFeed/index.tsx:852
 msgid "Following"
 msgstr "Takip ediliyor"
@@ -3877,7 +4003,7 @@ msgid "Following"
 msgstr "Takiptekiler"
 
 #: src/components/ProfileCard.tsx:474
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:92
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:96
 msgid "Following {0}"
 msgstr "{0} takip ediliyor"
 
@@ -3890,7 +4016,7 @@ msgstr "{handle} takip ediliyor"
 msgid "Following feed preferences"
 msgstr "Takip edilenler akışı tercihleri"
 
-#: src/Navigation.tsx:362
+#: src/Navigation.tsx:393
 #: src/screens/Settings/FollowingFeedPreferences.tsx:56
 msgid "Following Feed Preferences"
 msgstr "Takip Edilenler Akışı Tercihleri"
@@ -3917,8 +4043,8 @@ msgid "Food"
 msgstr "Yiyecek"
 
 #: src/components/BlockedGeoOverlay.tsx:56
-msgid "For now, we have made the difficult decision to block access to Bluesky in the state of Mississippi."
-msgstr "Şimdilik, Bluesky'ı Mississippi eyaletinde engellemek gibi zor bir karar verdik."
+msgid "For now, we have made the difficult decision to block access to Tellus in the state of Mississippi."
+msgstr "Şimdilik, Tellus'ı Mississippi eyaletinde engellemek gibi zor bir karar verdik."
 
 #: src/view/com/modals/DeleteAccount.tsx:125
 msgid "For security reasons, we'll need to send a confirmation code to your email address."
@@ -3984,7 +4110,7 @@ msgstr "<0/> tarafından"
 msgid "Generate a starter pack"
 msgstr "Bir başlangıç ​​paketi oluşturun"
 
-#: src/view/shell/Drawer.tsx:372
+#: src/view/shell/Drawer.tsx:393
 msgid "Get help"
 msgstr "Yardım al"
 
@@ -4116,8 +4242,8 @@ msgstr "Ana sayfaya git"
 msgid "Go Home"
 msgstr "Ana Sayfaya Git"
 
-#: src/view/com/profile/ProfileMenu.tsx:330
-#: src/view/com/profile/ProfileMenu.tsx:337
+#: src/view/com/profile/ProfileMenu.tsx:385
+#: src/view/com/profile/ProfileMenu.tsx:392
 msgid "Go live"
 msgstr "Canlı yayını başlat"
 
@@ -4152,8 +4278,8 @@ msgid "Go to next"
 msgstr "Sonrakine git"
 
 #: src/components/dms/ConvoMenu.tsx:227
-#: src/view/shell/desktop/LeftNav.tsx:317
-#: src/view/shell/desktop/LeftNav.tsx:323
+#: src/view/shell/desktop/LeftNav.tsx:319
+#: src/view/shell/desktop/LeftNav.tsx:325
 msgid "Go to profile"
 msgstr "Profile git"
 
@@ -4167,6 +4293,14 @@ msgstr "Kullanıcının profiline git"
 #: src/view/com/composer/labels/LabelsBtn.tsx:204
 msgid "Graphic Media"
 msgstr "Sarsıcı Olabilecek Medya"
+
+#: src/screens/Saved/components.tsx:141
+msgid "Grille"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:422
+msgid "Groupe"
+msgstr ""
 
 #: src/state/shell/progress-guide.tsx:220
 #: src/state/shell/progress-guide.tsx:230
@@ -4200,7 +4334,7 @@ msgstr "Dokunuş"
 msgid "Harassment, trolling, or intolerance"
 msgstr "Taciz, trolleme veya hoşgörüsüzlük"
 
-#: src/Navigation.tsx:539
+#: src/Navigation.tsx:570
 msgid "Hashtag"
 msgstr "Etiket"
 
@@ -4217,11 +4351,11 @@ msgstr "Kodunuz var mı? <0>Buraya tıklayın.</0>"
 msgid "Having trouble?"
 msgstr "Sorun mu yaşıyorsunuz?"
 
-#: src/screens/Settings/Settings.tsx:236
-#: src/screens/Settings/Settings.tsx:240
-#: src/view/shell/desktop/RightNav.tsx:124
-#: src/view/shell/desktop/RightNav.tsx:125
-#: src/view/shell/Drawer.tsx:381
+#: src/screens/Settings/Settings.tsx:252
+#: src/screens/Settings/Settings.tsx:256
+#: src/view/shell/desktop/RightNav.tsx:112
+#: src/view/shell/desktop/RightNav.tsx:113
+#: src/view/shell/Drawer.tsx:402
 msgid "Help"
 msgstr "Yardım"
 
@@ -4362,11 +4496,11 @@ msgstr "Hmmmm, o moderasyon hizmetini yükleyemedik."
 msgid "Hold up! We’re gradually giving access to video, and you’re still waiting in line. Check back soon!"
 msgstr "Bekleyin! Videoya kademeli olarak erişim veriyoruz ve siz hâlâ sıradasınız. Birazdan tekrar kontrol edin!"
 
-#: src/Navigation.tsx:754
-#: src/Navigation.tsx:774
+#: src/Navigation.tsx:812
+#: src/Navigation.tsx:832
 #: src/view/shell/bottom-bar/BottomBar.tsx:178
-#: src/view/shell/desktop/LeftNav.tsx:671
-#: src/view/shell/Drawer.tsx:440
+#: src/view/shell/desktop/LeftNav.tsx:672
+#: src/view/shell/Drawer.tsx:461
 msgid "Home"
 msgstr "Ana Sayfa"
 
@@ -4388,6 +4522,10 @@ msgstr "İlgi çeken"
 msgid "How should we open this link?"
 msgstr "Bu bağlantıyı nasıl açmalıyız?"
 
+#: src/screens/MessagesMatrix.web.tsx:1071
+msgid "https://matrix.org"
+msgstr ""
+
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:133
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:136
 msgid "I have a code"
@@ -4402,6 +4540,15 @@ msgstr "Kendi alan adım var"
 #: src/components/dms/ReportConversationPrompt.tsx:21
 msgid "I understand"
 msgstr "Anladım"
+
+#: src/screens/MessagesMatrix.web.tsx:978
+#: src/screens/MessagesMatrix.web.tsx:1149
+msgid "Identifiant Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:797
+msgid "Identifiant Tellus Chat invalide."
+msgstr ""
 
 #: src/view/com/lightbox/Lightbox.web.tsx:187
 msgid "If alt text is long, toggles alt text expanded state"
@@ -4482,6 +4629,42 @@ msgstr "Kimlik veya kurumsal ilişkilerle ilgili sahtecilik veya yanlış beyanl
 #: src/lib/moderation/useReportOptions.ts:68
 msgid "Impersonation, misinformation, or false claims"
 msgstr "Kimlik dolandırıcılığı, yanlış bilgilendirme veya yanlış iddialar"
+
+#: src/screens/MessagesMatrix.web.tsx:694
+msgid "Impossible d'envoyer le message."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:808
+msgid "Impossible d’inviter cette personne."
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:89
+msgid "Impossible d’ouvrir Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1636
+msgid "Impossible de charger la conversation"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:647
+msgid "Impossible de charger les messages."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:411
+msgid "Impossible de créer la conversation."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:561
+msgid "Impossible de créer le groupe."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:831
+msgid "Impossible de quitter le groupe."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:252
+msgid "Impossible de se connecter à Tellus Chat."
+msgstr ""
 
 #: src/screens/Settings/NotificationSettings/index.tsx:284
 msgid "In-app"
@@ -4578,6 +4761,10 @@ msgstr "Geçersiz rapor konusu"
 msgid "Invalid Verification Code"
 msgstr "Geçersiz Doğrulama Kodu"
 
+#: src/screens/MessagesMatrix.web.tsx:1255
+msgid "Invitations"
+msgstr ""
+
 #: src/view/com/modals/InviteCodes.tsx:94
 msgid "Invite a Friend"
 msgstr "Arkadaşını Davet Et"
@@ -4602,9 +4789,37 @@ msgstr "Davet kodları: 1 kullanılabilir"
 msgid "Invite people to this starter pack!"
 msgstr "İnsanları bu başlangıç ​​paketine davet edin!"
 
+#: src/Navigation.tsx:595
+msgid "Invite to Tellus Chat"
+msgstr ""
+
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:34
 msgid "Invite your friends to follow your favorite feeds and people"
 msgstr "Arkadaşlarınızı, beğendiğiniz akışları ve kişileri takip etmeye davet edin"
+
+#: src/screens/Messages/Invite.tsx:79
+msgid "Invite-la pour démarrer la discussion. Elle pourra créer son compte puis revenir ici."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1586
+#: src/screens/MessagesMatrix.web.tsx:1593
+msgid "Inviter"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:113
+msgid "Inviter {normalizedHandle} sur Tellus Chat"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:114
+#: src/components/dms/MessageProfileButton.tsx:174
+#: src/components/dms/MessageProfileButton.tsx:202
+#: src/screens/Messages/Invite.tsx:65
+msgid "Inviter sur Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1560
+msgid "Inviter un membre"
+msgstr ""
 
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:31
 msgid "Invites, but personal"
@@ -4630,7 +4845,7 @@ msgstr "Şu anda yalnızca siz varsınız! Yukarıdan arama yaparak başlangıç
 msgid "Job ID: {0}"
 msgstr "İş ID: {0}"
 
-#. Link to a page with job openings at Bluesky
+#. Link to a page with job openings at Tellus
 #: src/view/com/auth/SplashScreen.web.tsx:180
 msgid "Jobs"
 msgstr "İşler"
@@ -4640,8 +4855,8 @@ msgstr "İşler"
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:211
 #: src/screens/StarterPack/StarterPackScreen.tsx:466
 #: src/screens/StarterPack/StarterPackScreen.tsx:477
-msgid "Join Bluesky"
-msgstr "Bluesky'a Katıl"
+msgid "Join Tellus"
+msgstr "Tellus'a Katıl"
 
 #: src/components/StarterPack/QrCode.tsx:68
 #: src/view/shell/NavSignupCard.tsx:40
@@ -4698,13 +4913,17 @@ msgstr "Hesabınızdaki işaretler"
 msgid "Labels on your content"
 msgstr "İçeriğinizdeki işaretler"
 
-#: src/Navigation.tsx:218
+#: src/screens/MessagesMatrix.web.tsx:1278
+msgid "Lance une discussion ou crée un groupe."
+msgstr ""
+
+#: src/Navigation.tsx:224
 msgid "Language Settings"
 msgstr "Dil Ayarları"
 
 #: src/screens/Settings/LanguageSettings.tsx:78
-#: src/screens/Settings/Settings.tsx:228
-#: src/screens/Settings/Settings.tsx:231
+#: src/screens/Settings/Settings.tsx:244
+#: src/screens/Settings/Settings.tsx:247
 msgid "Languages"
 msgstr "Diller"
 
@@ -4744,13 +4963,13 @@ msgstr "Daha Fazla Bilgi Edinin"
 msgid "Learn more about age assurance"
 msgstr "Yaş güvencesiyle ilgili daha çok bilgi edinin"
 
-#: src/view/com/auth/SplashScreen.web.tsx:168
-msgid "Learn more about Bluesky"
-msgstr "Bluesky hakkında daha fazlasını öğren"
-
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
 msgstr "PDS'nizi kendiniz barındırmayla ilgili daha çok bilgi edinin."
+
+#: src/view/com/auth/SplashScreen.web.tsx:168
+msgid "Learn more about Tellus"
+msgstr "Tellus hakkında daha fazlasını öğren"
 
 #: src/components/moderation/ContentHider.tsx:152
 #: src/components/moderation/ContentHider.tsx:218
@@ -4773,13 +4992,13 @@ msgstr "Bu uyarı hakkında daha fazla bilgi edinin"
 #: src/components/verification/VerificationsDialog.tsx:151
 #: src/components/verification/VerifierDialog.tsx:118
 msgctxt "english-only-resource"
-msgid "Learn more about verification on Bluesky"
-msgstr "Bluesky'da doğrulama ile ilgili daha fazla bilgi edinin"
+msgid "Learn more about verification on Tellus"
+msgstr "Tellus'da doğrulama ile ilgili daha fazla bilgi edinin"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:128
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:131
-msgid "Learn more about what is public on Bluesky."
-msgstr "Bluesky'da neyin herkese açık olduğu hakkında daha fazla bilgi edinin."
+msgid "Learn more about what is public on Tellus."
+msgstr "Tellus'da neyin herkese açık olduğu hakkında daha fazla bilgi edinin."
 
 #: src/components/ageAssurance/AgeAssuranceAdmonition.tsx:86
 msgid "Learn more in your <0>account settings.</0>"
@@ -4813,12 +5032,16 @@ msgstr "Tüm dilleri görmek için burada hiçbirini seçmeyin."
 
 #: src/components/dialogs/LinkWarning.tsx:67
 #: src/components/dialogs/LinkWarning.tsx:75
-msgid "Leaving Bluesky"
-msgstr "Bluesky'dan ayrılıyor"
+msgid "Leaving Tellus"
+msgstr "Tellus'dan ayrılıyor"
 
 #: src/screens/SignupQueued.tsx:155
 msgid "left to go."
 msgstr "kaldı."
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:42
+msgid "Les posts ne seront pas supprimés de Tellus."
+msgstr ""
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:323
 msgid "Let me choose"
@@ -4833,6 +5056,10 @@ msgstr "Şifrenizi sıfırlamaya başlayalım!"
 #: src/screens/Onboarding/StepFinished.tsx:591
 msgid "Let's go!"
 msgstr "Hadi gidelim!"
+
+#: src/screens/Messages/Invite.tsx:48
+msgid "Lien copié"
+msgstr ""
 
 #: src/components/dialogs/Embed.tsx:162
 #: src/components/dialogs/Embed.tsx:164
@@ -4863,7 +5090,7 @@ msgstr "10 gönderiyi beğen"
 msgid "Like 10 posts to train the Discover feed"
 msgstr "Keşif akışını (\"Discover\") eğitmek için 10 gönderiyi beğenin"
 
-#: src/Navigation.tsx:452
+#: src/Navigation.tsx:483
 msgid "Like notifications"
 msgstr "Beğeni bildirimleri"
 
@@ -4875,8 +5102,8 @@ msgstr "Bu akışı beğen"
 msgid "Like this labeler"
 msgstr "Bu işaretleyiciyi beğen"
 
-#: src/Navigation.tsx:296
-#: src/Navigation.tsx:301
+#: src/Navigation.tsx:302
+#: src/Navigation.tsx:307
 msgid "Liked by"
 msgstr "Beğenenler"
 
@@ -4911,7 +5138,7 @@ msgstr "Beğeniler"
 msgid "Likes of your reposts"
 msgstr "Yeniden gönderilerinize dair beğeniler"
 
-#: src/Navigation.tsx:476
+#: src/Navigation.tsx:507
 msgid "Likes of your reposts notifications"
 msgstr "Yeniden gönderilerinize dair beğenilerin bildirimleri"
 
@@ -4924,7 +5151,7 @@ msgstr "Bu gönderideki beğeniler"
 msgid "Linear"
 msgstr "Düz"
 
-#: src/Navigation.tsx:251
+#: src/Navigation.tsx:257
 msgid "List"
 msgstr "Liste"
 
@@ -4986,12 +5213,16 @@ msgctxt "toast"
 msgid "List unmuted"
 msgstr "Liste sessizden çıkarıldı"
 
-#: src/Navigation.tsx:172
+#: src/screens/Saved/components.tsx:149
+msgid "Liste"
+msgstr ""
+
+#: src/Navigation.tsx:178
 #: src/view/screens/Lists.tsx:65
 #: src/view/screens/Profile.tsx:224
 #: src/view/screens/Profile.tsx:232
-#: src/view/shell/desktop/LeftNav.tsx:745
-#: src/view/shell/Drawer.tsx:545
+#: src/view/shell/desktop/LeftNav.tsx:764
+#: src/view/shell/Drawer.tsx:566
 msgid "Lists"
 msgstr "Listeler"
 
@@ -5030,16 +5261,20 @@ msgstr "Yeni bildirimleri yükle"
 
 #: src/screens/Profile/ProfileFeed/index.tsx:224
 #: src/screens/Profile/Sections/Feed.tsx:98
-#: src/view/com/feeds/FeedPage.tsx:162
+#: src/view/com/feeds/FeedPage.tsx:174
 #: src/view/screens/ProfileList.tsx:878
 msgid "Load new posts"
 msgstr "Yeni gönderileri yükle"
+
+#: src/screens/Messages/Settings.tsx:204
+msgid "Loading Tellus Chat ID..."
+msgstr ""
 
 #: src/view/com/composer/text-input/mobile/Autocomplete.tsx:61
 msgid "Loading..."
 msgstr "Yükleniyor..."
 
-#: src/Navigation.tsx:321
+#: src/Navigation.tsx:327
 msgid "Log"
 msgstr "Log"
 
@@ -5047,14 +5282,14 @@ msgstr "Log"
 msgid "Logged-out visibility"
 msgstr "Çıkış yapan görünürlüğü"
 
-#: src/view/shell/desktop/RightNav.tsx:134
-msgid "Logo by @sawaratsuki.bsky.social"
-msgstr "Logo: @sawaratsuki.bsky.social"
+#: src/view/shell/desktop/RightNav.tsx:122
+msgid "Logo by @sawaratsuki.tellus.social"
+msgstr "Logo: @sawaratsuki.tellus.social"
 
-#: src/view/shell/desktop/RightNav.tsx:131
-#: src/view/shell/Drawer.tsx:709
-msgid "Logo by <0>@sawaratsuki.bsky.social</0>"
-msgstr "Logo: <0>@sawaratsuki.bsky.social</0>"
+#: src/view/shell/desktop/RightNav.tsx:119
+#: src/view/shell/Drawer.tsx:774
+msgid "Logo by <0>@sawaratsuki.tellus.social</0>"
+msgstr "Logo: <0>@sawaratsuki.tellus.social</0>"
 
 #: src/components/RichTextTag.tsx:53
 msgid "Long press to open tag menu for #{tag}"
@@ -5088,6 +5323,11 @@ msgstr "Benim için bir tane yap"
 msgid "Make sure this is where you intend to go!"
 msgstr "Bu gitmek istediğiniz yer olduğundan emin olun!"
 
+#: src/components/PostControls/BookmarkButton.web.tsx:45
+msgctxt "Accessibility label for the save button when item already saved"
+msgid "Manage saved collections"
+msgstr ""
+
 #: src/screens/Settings/ContentAndMediaSettings.tsx:60
 #: src/screens/Settings/ContentAndMediaSettings.tsx:63
 msgid "Manage saved feeds"
@@ -5117,6 +5357,11 @@ msgstr "Okundu olarak işaretle"
 msgid "Marked all as read"
 msgstr "Tümü okunmuş olarak işaretlendi"
 
+#: src/screens/MessagesMatrix.web.tsx:1497
+#: src/screens/MessagesMatrix.web.tsx:1506
+msgid "Masquer"
+msgstr ""
+
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:90
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:97
 msgid "Maybe later"
@@ -5130,7 +5375,11 @@ msgstr "Medya"
 msgid "Media that may be disturbing or inappropriate for some audiences."
 msgstr "Bazı gruplar için rahatsız edici ya da uygunsuz olabilecek medya."
 
-#: src/Navigation.tsx:436
+#: src/screens/MessagesMatrix.web.tsx:1520
+msgid "Membres du groupe"
+msgstr ""
+
+#: src/Navigation.tsx:467
 msgid "Mention notifications"
 msgstr "Bahsetme bildirimleri"
 
@@ -5153,9 +5402,14 @@ msgstr "Bahsedenler"
 msgid "Menu"
 msgstr "Menü"
 
-#: src/components/dms/MessageProfileButton.tsx:97
-msgid "Message {0}"
-msgstr "Mesaj {0}"
+#: src/components/dms/MessageProfileButton.tsx:176
+#: src/components/dms/MessageProfileButton.tsx:204
+msgid "Message (Tellus Chat)"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:116
+msgid "Message {normalizedHandle} sur Tellus Chat"
+msgstr ""
 
 #: src/components/dms/MessageContextMenu.tsx:77
 msgctxt "toast"
@@ -5187,16 +5441,16 @@ msgstr "Mesaj çok uzun"
 msgid "Message options"
 msgstr "Mesaj seçenekleri"
 
-#: src/Navigation.tsx:769
-msgid "Messages"
-msgstr "Mesajlar"
+#: src/components/dms/MessageProfileButton.tsx:117
+msgid "Message sur Tellus Chat"
+msgstr ""
 
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:111
 msgctxt "Name of app icon variant"
 msgid "Midnight"
 msgstr "Gece yarısı"
 
-#: src/Navigation.tsx:500
+#: src/Navigation.tsx:531
 msgid "Miscellaneous notifications"
 msgstr "Diğer bildirimler"
 
@@ -5210,10 +5464,10 @@ msgstr "Yanıltıcı Hesap"
 msgid "Misleading Post"
 msgstr "Yanıltıcı Gönderi"
 
-#: src/Navigation.tsx:177
+#: src/Navigation.tsx:183
 #: src/screens/Moderation/index.tsx:100
-#: src/screens/Settings/Settings.tsx:188
-#: src/screens/Settings/Settings.tsx:191
+#: src/screens/Settings/Settings.tsx:190
+#: src/screens/Settings/Settings.tsx:193
 msgid "Moderation"
 msgstr "Moderasyon"
 
@@ -5249,7 +5503,7 @@ msgstr "Moderasyon listesi güncellendi"
 msgid "Moderation lists"
 msgstr "Moderasyon listeleri"
 
-#: src/Navigation.tsx:182
+#: src/Navigation.tsx:188
 #: src/view/screens/ModerationModlists.tsx:65
 msgid "Moderation Lists"
 msgstr "Moderasyon Listeleri"
@@ -5258,7 +5512,7 @@ msgstr "Moderasyon Listeleri"
 msgid "moderation settings"
 msgstr "moderasyon araçları"
 
-#: src/Navigation.tsx:311
+#: src/Navigation.tsx:317
 msgid "Moderation states"
 msgstr "Moderasyon durumları"
 
@@ -5271,6 +5525,19 @@ msgstr "Moderasyon araçları"
 msgid "Moderator has chosen to set a general warning on the content."
 msgstr "Moderatör, içeriğe genel bir uyarı koymayı seçti."
 
+#: src/screens/Saved/CollectionDetailPage.tsx:48
+msgid "Modifier"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:43
+#: src/screens/Saved/SavedCollectionsPage.tsx:51
+msgid "Modifier la couverture"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1200
+msgid "Mon groupe"
+msgstr ""
+
 #: src/view/shell/desktop/Feeds.tsx:108
 #: src/view/shell/desktop/Feeds.tsx:118
 msgid "More feeds"
@@ -5281,11 +5548,16 @@ msgstr "Daha fazla akış"
 msgid "More languages..."
 msgstr "Diğer diller..."
 
-#: src/view/com/profile/ProfileMenu.tsx:223
-#: src/view/com/profile/ProfileMenu.tsx:229
+#: src/view/com/profile/ProfileMenu.tsx:261
+#: src/view/com/profile/ProfileMenu.tsx:267
 #: src/view/screens/ProfileList.tsx:750
 msgid "More options"
 msgstr "Daha fazla seçenek"
+
+#: src/screens/MessagesMatrix.web.tsx:992
+#: src/screens/MessagesMatrix.web.tsx:996
+msgid "Mot de passe"
+msgstr ""
 
 #: src/screens/Onboarding/state.ts:113
 msgid "Movies"
@@ -5308,8 +5580,8 @@ msgstr "{tag} etiketini sessize al"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:628
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:634
-#: src/view/com/profile/ProfileMenu.tsx:375
-#: src/view/com/profile/ProfileMenu.tsx:382
+#: src/view/com/profile/ProfileMenu.tsx:430
+#: src/view/com/profile/ProfileMenu.tsx:437
 msgid "Mute account"
 msgstr "Hesabı sessize al"
 
@@ -5372,7 +5644,7 @@ msgstr "Kelimeleri ve etiketleri sustur"
 msgid "Muted accounts"
 msgstr "Sessize alınan hesaplar"
 
-#: src/Navigation.tsx:187
+#: src/Navigation.tsx:193
 #: src/view/screens/ModerationMutedAccounts.tsx:118
 msgid "Muted Accounts"
 msgstr "Sessize Alınan Hesaplar"
@@ -5401,6 +5673,10 @@ msgstr "Doğum Günüm"
 #: src/view/screens/Feeds.tsx:704
 msgid "My Feeds"
 msgstr "Akışlarım"
+
+#: src/screens/Messages/Settings.tsx:183
+msgid "My Tellus Chat ID (Matrix ID)"
+msgstr ""
 
 #: src/view/com/modals/CreateOrEditList.tsx:268
 msgid "Name"
@@ -5440,7 +5716,7 @@ msgstr "Başlangıç paketine git"
 msgid "Navigates to the next screen"
 msgstr "Sonraki ekrana yönlendirir"
 
-#: src/view/shell/Drawer.tsx:78
+#: src/view/shell/Drawer.tsx:81
 msgid "Navigates to your profile"
 msgstr "Profilinize yönlendirir"
 
@@ -5495,7 +5771,7 @@ msgstr "Yeni e-posta adresi"
 msgid "New Feature"
 msgstr "Yeni Özellik"
 
-#: src/Navigation.tsx:468
+#: src/Navigation.tsx:499
 msgid "New follower notifications"
 msgstr "Yeni takipçi bildirimleri"
 
@@ -5539,12 +5815,12 @@ msgstr "Yeni şifre"
 msgid "New post"
 msgstr "Yeni gönderi"
 
-#: src/view/com/feeds/FeedPage.tsx:173
+#: src/view/com/feeds/FeedPage.tsx:185
 msgctxt "action"
 msgid "New post"
 msgstr "Yeni gönderi"
 
-#: src/view/shell/desktop/LeftNav.tsx:580
+#: src/view/shell/desktop/LeftNav.tsx:582
 msgctxt "action"
 msgid "New Post"
 msgstr "Yeni Gönderi"
@@ -5576,9 +5852,12 @@ msgstr "Yeni Kullanıcı Listesi"
 msgid "Newest replies first"
 msgstr "Önce en yeni yanıtlar"
 
+#: src/Navigation.tsx:615
 #: src/screens/Onboarding/index.tsx:36
 #: src/screens/Onboarding/state.ts:116
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:238
+#: src/view/shell/desktop/LeftNav.tsx:746
+#: src/view/shell/Drawer.tsx:614
 msgid "News"
 msgstr "Haberler"
 
@@ -5610,8 +5889,8 @@ msgid "Next image"
 msgstr "Sonraki resim"
 
 #: src/screens/Onboarding/StepFinished.tsx:356
-msgid "No ads, no invasive tracking, no engagement traps. Bluesky respects your time and attention."
-msgstr "Reklam yok, gizliliği ihlal eden kullanıcı izleme mekanizmaları yok, etkileşim tuzakları yok. Bluesky vaktinize ve ilginize saygı duyar."
+msgid "No ads, no invasive tracking, no engagement traps. Tellus respects your time and attention."
+msgstr "Reklam yok, gizliliği ihlal eden kullanıcı izleme mekanizmaları yok, etkileşim tuzakları yok. Tellus vaktinize ve ilginize saygı duyar."
 
 #: src/screens/Settings/AppPasswords.tsx:108
 msgid "No app passwords yet"
@@ -5644,7 +5923,7 @@ msgid "No likes yet"
 msgstr "Henüz beğeni yok"
 
 #: src/components/ProfileCard.tsx:496
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:114
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:118
 msgid "No longer following {0}"
 msgstr "{0} artık takip edilmiyor"
 
@@ -5660,8 +5939,8 @@ msgstr "Çöp dolu algoritmalarla felaket kaydırmalarına son! Size karşı de�
 msgid "No notifications yet!"
 msgstr "Henüz bildirim yok!"
 
-#: src/screens/Messages/Settings.tsx:106
-#: src/screens/Messages/Settings.tsx:109
+#: src/screens/Messages/Settings.tsx:278
+#: src/screens/Messages/Settings.tsx:281
 #: src/screens/Settings/ActivityPrivacySettings.tsx:129
 #: src/screens/Settings/ActivityPrivacySettings.tsx:134
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:160
@@ -5750,6 +6029,18 @@ msgstr "Henüz bunu kimse yeniden göndermedi. Belki de ilk sen olmalısın!"
 msgid "Nobody was found. Try searching for someone else."
 msgstr "Kimse bulunamadı. Başka birini aramayı deneyin."
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:32
+msgid "Nom"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1196
+msgid "Nom du groupe"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:33
+msgid "Nombre d'éléments"
+msgstr ""
+
 #: src/lib/moderation/useGlobalLabelStrings.ts:42
 msgid "Non-sexual Nudity"
 msgstr "Cinsel olmayan çıplaklık"
@@ -5762,7 +6053,7 @@ msgstr "Hiçbiri"
 msgid "Not followed by anyone you're following"
 msgstr "Takip ettiğiniz hiçkimse tarafından takip edilmiyor"
 
-#: src/Navigation.tsx:167
+#: src/Navigation.tsx:173
 #: src/view/screens/Profile.tsx:125
 msgid "Not Found"
 msgstr "Bulunamadı"
@@ -5771,13 +6062,13 @@ msgstr "Bulunamadı"
 msgid "Not in Mississippi?"
 msgstr "Mississippi'de değil misiniz?"
 
-#: src/view/com/profile/ProfileMenu.tsx:497
+#: src/view/com/profile/ProfileMenu.tsx:561
 msgid "Note about sharing"
 msgstr "Paylaşıma dair dikkatinize"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:117
-msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
-msgstr "Not: Bluesky açık ve kamusal bir ağdır. Bu ayar yalnızca içeriğinizin Bluesky uygulaması ve web sitesindeki görünürlüğünü sınırlar, diğer uygulamalar bu ayarı dikkate almayabilir. İçeriğiniz hala diğer uygulamalar ve web siteleri tarafından çıkış yapan kullanıcılara gösterilebilir."
+msgid "Note: Tellus is an open and public network. This setting only limits the visibility of your content on the Tellus app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
+msgstr "Not: Tellus açık ve kamusal bir ağdır. Bu ayar yalnızca içeriğinizin Tellus uygulaması ve web sitesindeki görünürlüğünü sınırlar, diğer uygulamalar bu ayarı dikkate almayabilir. İçeriğiniz hala diğer uygulamalar ve web siteleri tarafından çıkış yapan kullanıcılara gösterilebilir."
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:134
 msgid "Note: This post is only visible to logged-in users."
@@ -5791,22 +6082,22 @@ msgstr "Burada bir şey yok"
 msgid "Nothing saved yet"
 msgstr "Henüz hiçbir şey kaydedilmedi"
 
-#: src/Navigation.tsx:422
-#: src/Navigation.tsx:569
+#: src/Navigation.tsx:453
+#: src/Navigation.tsx:605
 #: src/view/screens/Notifications.tsx:136
 msgid "Notification settings"
 msgstr "Bildirim ayarları"
 
-#: src/screens/Messages/Settings.tsx:128
+#: src/screens/Messages/Settings.tsx:300
 msgid "Notification sounds"
 msgstr "Bildirim sesleri"
 
-#: src/screens/Messages/Settings.tsx:125
+#: src/screens/Messages/Settings.tsx:297
 msgid "Notification Sounds"
 msgstr "Bildirim Sesleri"
 
-#: src/Navigation.tsx:564
-#: src/Navigation.tsx:764
+#: src/Navigation.tsx:600
+#: src/Navigation.tsx:822
 #: src/screens/Notifications/ActivityList.tsx:29
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:90
 #: src/screens/Settings/NotificationSettings/index.tsx:92
@@ -5819,18 +6110,37 @@ msgstr "Bildirim Sesleri"
 #: src/screens/Settings/NotificationSettings/ReplyNotificationSettings.tsx:30
 #: src/screens/Settings/NotificationSettings/RepostNotificationSettings.tsx:30
 #: src/screens/Settings/NotificationSettings/RepostsOnRepostsNotificationSettings.tsx:30
-#: src/screens/Settings/Settings.tsx:196
-#: src/screens/Settings/Settings.tsx:199
+#: src/screens/Settings/Settings.tsx:198
+#: src/screens/Settings/Settings.tsx:201
 #: src/view/screens/Notifications.tsx:130
 #: src/view/shell/bottom-bar/BottomBar.tsx:252
-#: src/view/shell/desktop/LeftNav.tsx:708
-#: src/view/shell/Drawer.tsx:493
+#: src/view/shell/desktop/LeftNav.tsx:709
+#: src/view/shell/Drawer.tsx:514
 msgid "Notifications"
 msgstr "Bildirimler"
 
 #: src/screens/Settings/NotificationSettings/MiscellaneousNotificationSettings.tsx:43
 msgid "Notifications for everything else, such as when someone joins via one of your starter packs."
 msgstr "Geri kalan her şey için bildirimler, mesela birinin başlangıç paketinizle katılması gibi."
+
+#: src/screens/MessagesMatrix.web.tsx:724
+#: src/screens/MessagesMatrix.web.tsx:732
+#: src/screens/MessagesMatrix.web.tsx:1191
+msgid "Nouveau groupe"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:28
+#: src/screens/Saved/SavedCollectionsPage.tsx:40
+msgid "Nouvelle collection"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:712
+#: src/screens/MessagesMatrix.web.tsx:720
+#: src/screens/MessagesMatrix.web.tsx:1145
+#: src/screens/MessagesMatrix.web.tsx:1283
+#: src/screens/MessagesMatrix.web.tsx:1290
+msgid "Nouvelle discussion"
+msgstr ""
 
 #: src/lib/hooks/useTimeAgo.ts:135
 msgid "now"
@@ -5889,7 +6199,7 @@ msgstr "Önce en eski yanıtlar"
 msgid "on<0><1/><2><3/></2></0>"
 msgstr "<0><1/><2><3/></2></0>"
 
-#: src/screens/Settings/Settings.tsx:388
+#: src/screens/Settings/Settings.tsx:404
 msgid "Onboarding reset"
 msgstr "Onboarding sıfırlama"
 
@@ -5962,6 +6272,7 @@ msgid "Open conversation options"
 msgstr "Yazışma seçeneklerini aç"
 
 #: src/components/Layout/Header/index.tsx:160
+#: src/screens/Messages/components/PageShell.tsx:43
 msgid "Open drawer menu"
 msgstr "Çekmece menüyü aç"
 
@@ -5991,7 +6302,7 @@ msgstr "{niceUrl} web bağlantısını aç"
 msgid "Open message options"
 msgstr "Mesaj seçeneklerini aç"
 
-#: src/screens/Settings/Settings.tsx:453
+#: src/screens/Settings/Settings.tsx:469
 msgid "Open moderation debug page"
 msgstr "Moderasyon hata ayıklama sayfasını aç"
 
@@ -6020,12 +6331,12 @@ msgstr "Paylaş menüsünü aç"
 msgid "Open starter pack menu"
 msgstr "Başlangıç paketi menüsününü aç"
 
-#: src/screens/Settings/Settings.tsx:446
-#: src/screens/Settings/Settings.tsx:460
+#: src/screens/Settings/Settings.tsx:462
+#: src/screens/Settings/Settings.tsx:476
 msgid "Open storybook page"
 msgstr "Storybook sayfasını aç"
 
-#: src/screens/Settings/Settings.tsx:439
+#: src/screens/Settings/Settings.tsx:455
 msgid "Open system log"
 msgstr "Sistem günlüğünü aç"
 
@@ -6072,19 +6383,19 @@ msgstr "Emoji seçiciyi açar"
 
 #: src/view/com/auth/SplashScreen.tsx:49
 #: src/view/com/auth/SplashScreen.web.tsx:111
-msgid "Opens flow to create a new Bluesky account"
-msgstr "Yeni bir Bluesky hesabı oluşturma adımlarını açar"
+msgid "Opens flow to create a new Tellus account"
+msgstr "Yeni bir Tellus hesabı oluşturma adımlarını açar"
 
 #: src/view/com/auth/SplashScreen.tsx:63
 #: src/view/com/auth/SplashScreen.web.tsx:125
-msgid "Opens flow to sign in to your existing Bluesky account"
-msgstr "Var olan Bluesky hesabınıza giriş yapma adımlarını açar"
+msgid "Opens flow to sign in to your existing Tellus account"
+msgstr "Var olan Tellus hesabınıza giriş yapma adımlarını açar"
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:36
 msgid "Opens GIF select dialog"
 msgstr "GIF seçim diyaloğunu açar"
 
-#: src/screens/Settings/Settings.tsx:237
+#: src/screens/Settings/Settings.tsx:253
 msgid "Opens helpdesk in browser"
 msgstr "Tarayıcıda yardım masasını açar"
 
@@ -6169,8 +6480,8 @@ msgid "Our moderation team has received your report."
 msgstr "Moderasyon ekibimiz raporunuzu aldı."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:29
-msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
-msgstr "Moderatörlerimiz raporları inceledi ve Bluesky'daki sohbetlere erişiminizi engellemeye karar verdi."
+msgid "Our moderators have reviewed reports and decided to disable your access to chats on Tellus."
+msgstr "Moderatörlerimiz raporları inceledi ve Tellus'daki sohbetlere erişiminizi engellemeye karar verdi."
 
 #: src/components/Lists.tsx:191
 #: src/view/screens/NotFound.tsx:47
@@ -6180,6 +6491,16 @@ msgstr "Sayfa bulunamadı"
 #: src/view/screens/NotFound.tsx:44
 msgid "Page Not Found"
 msgstr "Sayfa Bulunamadı"
+
+#: src/screens/Messages/Invite.tsx:99
+#: src/screens/Messages/Invite.tsx:105
+msgid "Partager le lien"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:109
+#: src/screens/Messages/Invite.tsx:115
+msgid "Partager un message"
+msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:228
 #: src/screens/Settings/AccountSettings.tsx:121
@@ -6222,11 +6543,11 @@ msgstr "Videoyu duraklat"
 msgid "People"
 msgstr "Kişiler"
 
-#: src/Navigation.tsx:238
+#: src/Navigation.tsx:244
 msgid "People followed by @{0}"
 msgstr "@{0} tarafından takip edilenler"
 
-#: src/Navigation.tsx:231
+#: src/Navigation.tsx:237
 msgid "People following @{0}"
 msgstr "@{0} tarafından takip edilenler"
 
@@ -6348,8 +6669,8 @@ msgid "Please choose your password."
 msgstr "Şifrenizi seçin."
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:290
-msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
-msgstr "Yeni e-posta adresinizi doğrulamak için lütfen size şimdi yolladığımız e-postadaki bağlantıya tıklayın. Bu, Bluesky'ın tüm özelliklerinin tadını çıkarabilmeniz için önemli bir adımdır."
+msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Tellus."
+msgstr "Yeni e-posta adresinizi doğrulamak için lütfen size şimdi yolladığımız e-postadaki bağlantıya tıklayın. Bu, Tellus'ın tüm özelliklerinin tadını çıkarabilmeniz için önemli bir adımdır."
 
 #: src/screens/Signup/state.ts:302
 msgid "Please complete the verification captcha."
@@ -6470,6 +6791,14 @@ msgstr "Lütfen e-postanızı doğrulayın"
 msgid "Please write your message below:"
 msgstr "Lütfen mesajınızı aşağıya yazın:"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:38
+msgid "Plus anciens"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:37
+msgid "Plus récents"
+msgstr ""
+
 #: src/screens/Onboarding/index.tsx:50
 #: src/screens/Onboarding/state.ts:119
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:232
@@ -6499,10 +6828,10 @@ msgstr "Hepsini Gönder"
 msgid "Post blocked"
 msgstr "Gönderi engellendi"
 
-#: src/Navigation.tsx:264
-#: src/Navigation.tsx:271
-#: src/Navigation.tsx:278
-#: src/Navigation.tsx:285
+#: src/Navigation.tsx:270
+#: src/Navigation.tsx:277
+#: src/Navigation.tsx:284
+#: src/Navigation.tsx:291
 msgid "Post by @{0}"
 msgstr "@{0} tarafından gönderi"
 
@@ -6536,7 +6865,7 @@ msgstr "Gönderi Sizin Tarafınızdan Gizlenmiş"
 msgid "Post interaction settings"
 msgstr "Gönderi etkileşim ayarları"
 
-#: src/Navigation.tsx:198
+#: src/Navigation.tsx:204
 #: src/screens/ModerationInteractionSettings/index.tsx:34
 msgid "Post Interaction Settings"
 msgstr "Gönderi Etkileşim Ayarları"
@@ -6594,6 +6923,10 @@ msgstr "Muhtemelen yanıltıcı bağlantı"
 msgid "Potentially misleading link warning"
 msgstr "Muhtemelen yanıltıcı bağlantı uyarısı"
 
+#: src/screens/Messages/Invite.tsx:123
+msgid "Pourquoi l’inviter ?"
+msgstr ""
+
 #: src/screens/Messages/components/MessageListError.tsx:19
 msgid "Press to attempt reconnection"
 msgstr "Yeniden bağlanmak için basın"
@@ -6622,18 +6955,18 @@ msgstr "Birincil Dil"
 msgid "Prioritize your Follows"
 msgstr "Takip ettiklerimi önceliklendir"
 
-#: src/view/shell/desktop/RightNav.tsx:114
-#: src/view/shell/desktop/RightNav.tsx:115
+#: src/view/shell/desktop/RightNav.tsx:102
+#: src/view/shell/desktop/RightNav.tsx:103
 msgid "Privacy"
 msgstr "Gizlilik"
 
-#: src/screens/Settings/Settings.tsx:182
-#: src/screens/Settings/Settings.tsx:185
+#: src/screens/Settings/Settings.tsx:184
+#: src/screens/Settings/Settings.tsx:187
 msgid "Privacy and security"
 msgstr "Gizlilik ve güvenlik"
 
-#: src/Navigation.tsx:407
-#: src/Navigation.tsx:415
+#: src/Navigation.tsx:438
+#: src/Navigation.tsx:446
 #: src/screens/Settings/ActivityPrivacySettings.tsx:40
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:45
 msgid "Privacy and Security"
@@ -6645,12 +6978,12 @@ msgstr "Gizlilik ve Güvenlik ayarları"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:35
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:102
-#: src/Navigation.tsx:331
+#: src/Navigation.tsx:337
 #: src/screens/Settings/AboutSettings.tsx:92
 #: src/screens/Settings/AboutSettings.tsx:95
 #: src/view/screens/PrivacyPolicy.tsx:31
-#: src/view/shell/Drawer.tsx:704
-#: src/view/shell/Drawer.tsx:705
+#: src/view/shell/Drawer.tsx:769
+#: src/view/shell/Drawer.tsx:770
 msgid "Privacy Policy"
 msgstr "Gizlilik Politikası"
 
@@ -6669,9 +7002,9 @@ msgid "profile"
 msgstr "profil"
 
 #: src/view/shell/bottom-bar/BottomBar.tsx:316
-#: src/view/shell/desktop/LeftNav.tsx:786
-#: src/view/shell/Drawer.tsx:77
-#: src/view/shell/Drawer.tsx:596
+#: src/view/shell/desktop/LeftNav.tsx:825
+#: src/view/shell/Drawer.tsx:80
+#: src/view/shell/Drawer.tsx:661
 msgid "Profile"
 msgstr "Profil"
 
@@ -6740,7 +7073,12 @@ msgstr "Karekod indirildi!"
 msgid "QR code saved to your camera roll!"
 msgstr "Karekod fotoğraflarınıza kaydedildi!"
 
-#: src/Navigation.tsx:444
+#: src/screens/MessagesMatrix.web.tsx:1597
+#: src/screens/MessagesMatrix.web.tsx:1603
+msgid "Quitter le groupe"
+msgstr ""
+
+#: src/Navigation.tsx:475
 msgid "Quote notifications"
 msgstr "Alıntı bildirimleri"
 
@@ -6825,18 +7163,18 @@ msgid "Read our blog post"
 msgstr "Blog gönderimizi okuyun"
 
 #: src/view/com/auth/SplashScreen.web.tsx:173
-msgid "Read the Bluesky blog"
-msgstr "Bluesky blog'unu oku"
+msgid "Read the Tellus blog"
+msgstr "Tellus blog'unu oku"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:88
 #: src/screens/Signup/StepInfo/Policies.tsx:114
-msgid "Read the Bluesky Privacy Policy"
-msgstr "Bluesky Gizlilik Politikasını Oku"
+msgid "Read the Tellus Privacy Policy"
+msgstr "Tellus Gizlilik Politikasını Oku"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:81
 #: src/screens/Signup/StepInfo/Policies.tsx:101
-msgid "Read the Bluesky Terms of Service"
-msgstr "Bluesky Hizmet Şartlarını Oku"
+msgid "Read the Tellus Terms of Service"
+msgstr "Tellus Hizmet Şartlarını Oku"
 
 #: src/components/WelcomeModal.tsx:146
 msgid "Real conversations."
@@ -6867,9 +7205,21 @@ msgstr "Anında bildirimleri al"
 msgid "Recent Searches"
 msgstr "Son Aramalar"
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:31
+msgid "Récentes"
+msgstr ""
+
 #: src/view/com/composer/select-language/PostLanguageSelectDialog.tsx:210
 msgid "Recently used"
 msgstr "Yakın zamanda kullanılmış"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:35
+msgid "Rechercher dans la collection"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:29
+msgid "Rechercher une collection"
+msgstr ""
 
 #: src/screens/Search/modules/ExploreRecommendations.tsx:54
 msgid "Recommended"
@@ -6879,6 +7229,19 @@ msgstr "Öneriler"
 msgid "Reconnect"
 msgstr "Yeniden bağlan"
 
+#: src/screens/MessagesMatrix.web.tsx:1631
+msgid "Récupération des messages..."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:947
+#: src/screens/MessagesMatrix.web.tsx:953
+#: src/screens/MessagesMatrix.web.tsx:1124
+#: src/screens/MessagesMatrix.web.tsx:1130
+#: src/screens/MessagesMatrix.web.tsx:1642
+#: src/screens/MessagesMatrix.web.tsx:1648
+msgid "Réessayer"
+msgstr ""
+
 #. Reject a chat request, this opens a menu with options
 #: src/screens/Messages/components/RequestButtons.tsx:124
 msgid "Reject"
@@ -6887,6 +7250,14 @@ msgstr "Reddet"
 #: src/screens/Messages/components/RequestButtons.tsx:112
 msgid "Reject chat request"
 msgstr "Sohbet isteğini reddet"
+
+#: src/screens/Messages/Invite.tsx:43
+msgid "Rejoins-moi sur Tellus Chat pour discuter : {inviteUrl}"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:40
+msgid "Rejoins-moi sur Tellus Chat pour discuter avec {displayHandle} : {inviteUrl}"
+msgstr ""
 
 #: src/screens/Messages/ChatList.tsx:285
 #: src/screens/Messages/Inbox.tsx:212
@@ -6901,7 +7272,7 @@ msgstr "Yazışmaları yeniden yükle"
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:104
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:111
 #: src/screens/Bookmarks/index.tsx:255
-#: src/screens/Settings/Settings.tsx:662
+#: src/screens/Settings/Settings.tsx:678
 #: src/view/com/modals/UserAddRemoveLists.tsx:235
 #: src/view/com/posts/PostFeedErrorMessage.tsx:217
 msgid "Remove"
@@ -6915,8 +7286,8 @@ msgstr "Başlangıç paketinden {displayName} kullanıcısını çıkart"
 msgid "Remove {historyItem}"
 msgstr "{historyItem} öğesini çıkart"
 
-#: src/screens/Settings/Settings.tsx:641
-#: src/screens/Settings/Settings.tsx:644
+#: src/screens/Settings/Settings.tsx:657
+#: src/screens/Settings/Settings.tsx:660
 msgid "Remove account"
 msgstr "Hesabı kaldır"
 
@@ -6955,7 +7326,7 @@ msgstr "Akış kaldırılsın mı?"
 msgid "Remove from my feeds"
 msgstr "Akışlarımdan kaldır"
 
-#: src/screens/Settings/Settings.tsx:654
+#: src/screens/Settings/Settings.tsx:670
 msgid "Remove from quick access?"
 msgstr "Hızlı erişimden kaldırılsın mı?"
 
@@ -7009,8 +7380,8 @@ msgstr "Kullanıcıyı listeden çıkar"
 
 #: src/components/verification/VerificationRemovePrompt.tsx:46
 #: src/components/verification/VerificationsDialog.tsx:252
-#: src/view/com/profile/ProfileMenu.tsx:348
-#: src/view/com/profile/ProfileMenu.tsx:351
+#: src/view/com/profile/ProfileMenu.tsx:403
+#: src/view/com/profile/ProfileMenu.tsx:406
 msgid "Remove verification"
 msgstr "Doğrulamayı kaldır"
 
@@ -7053,6 +7424,15 @@ msgstr "Akışlarınızdan kaldırıldı"
 #: src/components/verification/VerificationRemovePrompt.tsx:32
 msgid "Removed verification"
 msgstr "Doğrulama kaldırıldı"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:47
+#: src/screens/Saved/SavedCollectionsPage.tsx:50
+msgid "Renommer"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:39
+msgid "Renommer la collection"
+msgstr ""
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:129
 #: src/view/com/posts/FeedShutdownMsg.tsx:133
@@ -7117,7 +7497,7 @@ msgstr "Konu Yazarı Tarafından Gizlenmiş Yanıt"
 msgid "Reply Hidden by You"
 msgstr "Yanıt Tarafınızdan Gizlenmiş"
 
-#: src/Navigation.tsx:428
+#: src/Navigation.tsx:459
 msgid "Reply notifications"
 msgstr "Yanıt bildirimlerini al"
 
@@ -7148,8 +7528,8 @@ msgstr "Yanıt başarıyla gizlendi"
 msgid "Report"
 msgstr "Raporla"
 
-#: src/view/com/profile/ProfileMenu.tsx:415
-#: src/view/com/profile/ProfileMenu.tsx:418
+#: src/view/com/profile/ProfileMenu.tsx:470
+#: src/view/com/profile/ProfileMenu.tsx:473
 msgid "Report account"
 msgstr "Hesabı raporla"
 
@@ -7243,7 +7623,7 @@ msgstr "Yeniden gönder"
 msgid "Repost ({0, plural, one {# repost} other {# reposts}})"
 msgstr "Yeniden gönder ({0, plural, other {# defa yeniden gönderilmiş}})"
 
-#: src/Navigation.tsx:460
+#: src/Navigation.tsx:491
 msgid "Repost notifications"
 msgstr "Yeniden gönderi bildirimleri"
 
@@ -7287,7 +7667,7 @@ msgstr "Bu gönderinin yeniden gönderilmesi"
 msgid "Reposts of your reposts"
 msgstr "Yeniden gönderilerinizin yeniden gönderileri"
 
-#: src/Navigation.tsx:484
+#: src/Navigation.tsx:515
 msgid "Reposts of your reposts notifications"
 msgstr "Yeniden gönderilerinizin yeniden gönderilme bildirimleri"
 
@@ -7330,8 +7710,8 @@ msgstr "E-postayı Tekrar Gönder"
 msgid "Resend Verification Email"
 msgstr "Onay E-postasını Tekrar Gönder"
 
-#: src/screens/Settings/Settings.tsx:482
-#: src/screens/Settings/Settings.tsx:484
+#: src/screens/Settings/Settings.tsx:498
+#: src/screens/Settings/Settings.tsx:500
 msgid "Reset activity subscription nudge"
 msgstr "Etkinlik aboneliği hatırlatıcısını sıfırla"
 
@@ -7339,14 +7719,31 @@ msgstr "Etkinlik aboneliği hatırlatıcısını sıfırla"
 msgid "Reset code"
 msgstr "Sıfırlama kodu"
 
-#: src/screens/Settings/Settings.tsx:467
-#: src/screens/Settings/Settings.tsx:469
+#: src/screens/Settings/Settings.tsx:483
+#: src/screens/Settings/Settings.tsx:485
 msgid "Reset onboarding state"
 msgstr "Onboarding durumunu sıfırla"
 
 #: src/screens/Login/ForgotPasswordForm.tsx:80
 msgid "Reset password"
 msgstr "Şifreyi sıfırla"
+
+#: src/screens/MessagesMatrix.web.tsx:1013
+msgid "Rester connecté"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:55
+msgid "Retirer de la collection"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1458
+#: src/screens/Saved/CollectionDetailPage.tsx:34
+msgid "Retour"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:46
+msgid "Retournez à la bibliothèque pour choisir une autre collection."
+msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:324
 msgid "Retries signing in"
@@ -7413,6 +7810,8 @@ msgstr "Önceki adıma döner"
 #: src/components/live/EditLiveDialog.tsx:216
 #: src/components/live/EditLiveDialog.tsx:223
 #: src/components/StarterPack/QrCodeDialog.tsx:192
+#: src/screens/Messages/Settings.tsx:210
+#: src/screens/Messages/Settings.tsx:217
 #: src/screens/Profile/Header/EditProfileDialog.tsx:238
 #: src/screens/Profile/Header/EditProfileDialog.tsx:252
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:267
@@ -7461,23 +7860,29 @@ msgstr "Yeni kullanıcı adını kaydet"
 msgid "Save QR code"
 msgstr "QR kodu kaydet"
 
+#: src/components/PostControls/BookmarkButton.web.tsx:51
+msgctxt "Accessibility label for the save button when item not yet saved"
+msgid "Save to collection"
+msgstr ""
+
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:320
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:326
 msgid "Save to my feeds"
 msgstr "Akışlarıma kaydet"
 
-#: src/view/shell/desktop/LeftNav.tsx:764
-#: src/view/shell/Drawer.tsx:571
-msgctxt "link to bookmarks screen"
-msgid "Saved"
-msgstr "Kayıtlı"
+#: src/Navigation.tsx:658
+msgid "Saved collection"
+msgstr ""
+
+#: src/Navigation.tsx:649
+msgid "Saved collections"
+msgstr ""
 
 #: src/view/screens/SavedFeeds.tsx:172
 msgid "Saved Feeds"
 msgstr "Kayıtlı Akışlar"
 
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:143
-#: src/Navigation.tsx:608
 #: src/screens/Bookmarks/index.tsx:55
 msgid "Saved Posts"
 msgstr "Kayıtlı Gönderiler"
@@ -7519,6 +7924,20 @@ msgstr "Sağa kaydır"
 msgid "Scroll to top"
 msgstr "Başa kaydır"
 
+#: src/screens/MessagesMatrix.web.tsx:1017
+#: src/screens/MessagesMatrix.web.tsx:1024
+msgid "Se connecter"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:973
+msgid "Se connecter à Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:737
+#: src/screens/MessagesMatrix.web.tsx:743
+msgid "Se déconnecter"
+msgstr ""
+
 #: src/components/dialogs/SearchablePeopleList.tsx:514
 #: src/components/forms/SearchInput.tsx:34
 #: src/components/forms/SearchInput.tsx:36
@@ -7528,7 +7947,7 @@ msgstr "Başa kaydır"
 msgid "Search"
 msgstr "Ara"
 
-#: src/Navigation.tsx:257
+#: src/Navigation.tsx:263
 #: src/screens/Profile/ProfileSearch.tsx:37
 msgid "Search @{0}'s posts"
 msgstr "@{0} gönderilerini ara"
@@ -7592,8 +8011,8 @@ msgstr "Dil ara"
 msgid "Search my posts"
 msgstr "Gönderilerimi ara"
 
-#: src/view/com/profile/ProfileMenu.tsx:266
-#: src/view/com/profile/ProfileMenu.tsx:269
+#: src/view/com/profile/ProfileMenu.tsx:304
+#: src/view/com/profile/ProfileMenu.tsx:307
 msgid "Search posts"
 msgstr "Gönderileri ara"
 
@@ -7636,8 +8055,8 @@ msgid "See #{tag} posts by user"
 msgstr "Kullanıcının #{tag} gönderilerini gör"
 
 #: src/view/com/auth/SplashScreen.web.tsx:178
-msgid "See jobs at Bluesky"
-msgstr "Bluesky'daki iş fırsatlarını görün"
+msgid "See jobs at Tellus"
+msgstr "Tellus'daki iş fırsatlarını görün"
 
 #: src/components/FeedInterstitials.tsx:394
 #: src/components/FeedInterstitials.tsx:445
@@ -7802,6 +8221,10 @@ msgstr "Tercih ettiğiniz bildirim kanallarını seçiniz"
 msgid "Selecting multiple media types is not supported."
 msgstr "Farklı türlerde medya seçimi desteklenmemektedir."
 
+#: src/screens/MessagesMatrix.web.tsx:1623
+msgid "Sélectionne une conversation"
+msgstr ""
+
 #: src/components/dms/ChatEmptyPill.tsx:38
 msgid "Send a neat website!"
 msgstr "Güzel bir web sitesi gönderin!"
@@ -7818,7 +8241,7 @@ msgctxt "action"
 msgid "Send Email"
 msgstr "E-posta Gönder"
 
-#: src/view/shell/Drawer.tsx:361
+#: src/view/shell/Drawer.tsx:382
 msgid "Send feedback"
 msgstr "Geribildirim gönder"
 
@@ -7871,6 +8294,14 @@ msgstr "Hesap silme için onay kodu içeren e-posta gönderir"
 msgid "Server address"
 msgstr "Sunucu Adresi"
 
+#: src/screens/MessagesMatrix.web.tsx:1067
+msgid "Serveur"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:322
+msgid "Serveur invalide."
+msgstr ""
+
 #: src/screens/Settings/AppIconSettings/index.tsx:178
 msgid "Set app icon to {0}"
 msgstr "Uygulama simgesini {0} olarak belirle"
@@ -7891,10 +8322,10 @@ msgstr "Hesabınızı ayarlayın"
 msgid "Sets email for password reset"
 msgstr "Şifre sıfırlama için e-posta ayarlar"
 
-#: src/Navigation.tsx:213
-#: src/screens/Settings/Settings.tsx:99
-#: src/view/shell/desktop/LeftNav.tsx:804
-#: src/view/shell/Drawer.tsx:609
+#: src/Navigation.tsx:219
+#: src/screens/Settings/Settings.tsx:101
+#: src/view/shell/desktop/LeftNav.tsx:843
+#: src/view/shell/Drawer.tsx:674
 msgid "Settings"
 msgstr "Ayarlar"
 
@@ -7976,7 +8407,7 @@ msgstr "Havalı bir hikaye paylaş!"
 msgid "Share a fun fact!"
 msgstr "Eğlenceli bir gerçeği paylaş!"
 
-#: src/view/com/profile/ProfileMenu.tsx:502
+#: src/view/com/profile/ProfileMenu.tsx:566
 msgid "Share anyway"
 msgstr "Yine de paylaş"
 
@@ -8015,15 +8446,15 @@ msgid "Share this starter pack"
 msgstr "Bu başlangıç paketini paylaş"
 
 #: src/components/StarterPack/ShareDialog.tsx:80
-msgid "Share this starter pack and help people join your community on Bluesky."
-msgstr "Bu başlangıç paketini paylaş ve insanların Bluesky'deki topluluğunuza katılmasına yardımcı ol."
+msgid "Share this starter pack and help people join your community on Tellus."
+msgstr "Bu başlangıç paketini paylaş ve insanların Tellus'deki topluluğunuza katılmasına yardımcı ol."
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:117
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:120
 #: src/screens/StarterPack/StarterPackScreen.tsx:611
 #: src/screens/StarterPack/StarterPackScreen.tsx:619
-#: src/view/com/profile/ProfileMenu.tsx:246
-#: src/view/com/profile/ProfileMenu.tsx:259
+#: src/view/com/profile/ProfileMenu.tsx:284
+#: src/view/com/profile/ProfileMenu.tsx:297
 msgid "Share via..."
 msgstr "Paylaş..."
 
@@ -8031,7 +8462,7 @@ msgstr "Paylaş..."
 msgid "Share your favorite feed!"
 msgstr "En sevdiğiniz akışı paylaşın!"
 
-#: src/Navigation.tsx:316
+#: src/Navigation.tsx:322
 msgid "Shared Preferences Tester"
 msgstr "Paylaşılan Tercihler Test Edicisi"
 
@@ -8137,7 +8568,7 @@ msgstr "Uyarı göster ve akışlardan filtrele"
 msgid "Shows information about when this post was created"
 msgstr "Bu gönderinin ne zaman oluşturulduğuna dair bilgileri gösterir"
 
-#: src/screens/Settings/Settings.tsx:125
+#: src/screens/Settings/Settings.tsx:127
 msgid "Shows other accounts you can switch to"
 msgstr "Geçiş yapabileceğiniz diğer hesapları gösterir"
 
@@ -8189,23 +8620,23 @@ msgid "Sign in to account that is not listed"
 msgstr "Listelenmeyen bir hesaba giriş yap"
 
 #: src/components/dialogs/Signin.tsx:46
-msgid "Sign in to Bluesky or create a new account"
-msgstr "Bluesky'da oturum aç veya yeni bir üyelik oluştur"
+msgid "Sign in to Tellus or create a new account"
+msgstr "Tellus'da oturum aç veya yeni bir üyelik oluştur"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:461
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:463
 msgid "Sign in to view post"
 msgstr "Gönderiyi görmek için giriş yap"
 
-#: src/screens/Settings/Settings.tsx:254
-#: src/screens/Settings/Settings.tsx:256
-#: src/screens/Settings/Settings.tsx:288
+#: src/screens/Settings/Settings.tsx:270
+#: src/screens/Settings/Settings.tsx:272
+#: src/screens/Settings/Settings.tsx:304
 #: src/screens/SignupQueued.tsx:93
 #: src/screens/SignupQueued.tsx:96
 #: src/screens/Takendown.tsx:85
-#: src/view/shell/desktop/LeftNav.tsx:212
-#: src/view/shell/desktop/LeftNav.tsx:269
-#: src/view/shell/desktop/LeftNav.tsx:272
+#: src/view/shell/desktop/LeftNav.tsx:214
+#: src/view/shell/desktop/LeftNav.tsx:271
+#: src/view/shell/desktop/LeftNav.tsx:274
 msgid "Sign out"
 msgstr "Çıkış yap"
 
@@ -8213,8 +8644,8 @@ msgstr "Çıkış yap"
 msgid "Sign Out"
 msgstr "Çıkış Yap"
 
-#: src/screens/Settings/Settings.tsx:285
-#: src/view/shell/desktop/LeftNav.tsx:209
+#: src/screens/Settings/Settings.tsx:301
+#: src/view/shell/desktop/LeftNav.tsx:211
 msgid "Sign out?"
 msgstr "Çıkış yap?"
 
@@ -8325,7 +8756,7 @@ msgid "Something wrong? Let us know."
 msgstr "Bir sorun mu var? Bize bildirin."
 
 #: src/App.native.tsx:126
-#: src/App.web.tsx:102
+#: src/App.web.tsx:106
 msgid "Sorry! Your session expired. Please sign in again."
 msgstr "Maalesef oturumunuzun süresi doldu. Lütfen tekrar giriş yapın."
 
@@ -8345,6 +8776,10 @@ msgstr "Aynı gönderiye verilen yanıtları şuna göre sırala:"
 #: src/components/moderation/ModerationDetailsDialog.tsx:186
 msgid "Source: <0>{sourceName}</0>"
 msgstr "Kaynak: <0>{sourceName}</0>"
+
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:252
+msgid "Soutenir"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:72
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:85
@@ -8386,8 +8821,8 @@ msgstr "Kişileri eklemeye başla!"
 msgid "Start chat with {displayName}"
 msgstr "{displayName} ile sohbet başlat"
 
-#: src/Navigation.tsx:579
-#: src/Navigation.tsx:584
+#: src/Navigation.tsx:620
+#: src/Navigation.tsx:625
 #: src/screens/StarterPack/Wizard/index.tsx:209
 msgid "Starter Pack"
 msgstr "Başlangıç Paketi"
@@ -8427,12 +8862,12 @@ msgstr "Durum Sayfası"
 msgid "Step {0} of {1}"
 msgstr "Adım {0} / {1}"
 
-#: src/screens/Settings/Settings.tsx:393
+#: src/screens/Settings/Settings.tsx:409
 msgid "Storage cleared, you need to restart the app now."
 msgstr "Depolama temizlendi, şimdi uygulamayı yeniden başlatmanız gerekiyor."
 
-#: src/Navigation.tsx:306
-#: src/screens/Settings/Settings.tsx:448
+#: src/Navigation.tsx:312
+#: src/screens/Settings/Settings.tsx:464
 msgid "Storybook"
 msgstr "Storybook"
 
@@ -8521,16 +8956,26 @@ msgctxt "Name of app icon variant"
 msgid "Sunset"
 msgstr "Gün batımı"
 
-#: src/Navigation.tsx:326
+#: src/Navigation.tsx:332
 #: src/view/screens/Support.tsx:31
 #: src/view/screens/Support.tsx:34
 msgid "Support"
 msgstr "Destek"
 
-#: src/screens/Settings/Settings.tsx:123
-#: src/screens/Settings/Settings.tsx:137
-#: src/screens/Settings/Settings.tsx:604
-#: src/view/shell/desktop/LeftNav.tsx:247
+#: src/screens/Saved/CollectionDetailPage.tsx:49
+#: src/screens/Saved/SavedCollectionsPage.tsx:48
+msgid "Supprimer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:50
+#: src/screens/Saved/SavedCollectionsPage.tsx:41
+msgid "Supprimer la collection"
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:125
+#: src/screens/Settings/Settings.tsx:139
+#: src/screens/Settings/Settings.tsx:620
+#: src/view/shell/desktop/LeftNav.tsx:249
 msgid "Switch account"
 msgstr "Hesap değiştir"
 
@@ -8539,13 +8984,17 @@ msgstr "Hesap değiştir"
 msgid "Switch Account"
 msgstr "Hesap Değiştir"
 
-#: src/view/shell/desktop/LeftNav.tsx:110
+#: src/view/shell/desktop/LeftNav.tsx:112
 msgid "Switch accounts"
 msgstr "Hesap değiştir"
 
-#: src/view/shell/desktop/LeftNav.tsx:346
+#: src/view/shell/desktop/LeftNav.tsx:348
 msgid "Switch to {0}"
 msgstr "{0} hesabına geç"
+
+#: src/screens/MessagesMatrix.web.tsx:1108
+msgid "Synchronisation des conversations..."
+msgstr ""
 
 #: src/components/dialogs/Embed.tsx:157
 #: src/components/dialogs/Embed.tsx:159
@@ -8557,7 +9006,7 @@ msgstr "Sistem"
 #: src/screens/Log.tsx:58
 #: src/screens/Settings/AboutSettings.tsx:107
 #: src/screens/Settings/AboutSettings.tsx:110
-#: src/screens/Settings/Settings.tsx:441
+#: src/screens/Settings/Settings.tsx:457
 msgid "System log"
 msgstr "Sistem günlüğü"
 
@@ -8566,8 +9015,8 @@ msgid "Tags only"
 msgstr "Yalnızca etiketler"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:116
-msgid "Tap below to allow Bluesky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
-msgstr "Bluesky'ın GPS konumunuza erişmesine izin vermek için aşağıya dokunun. Sonrasında bu veriyi bölgenizde erişilebilir içerik ve özelliklerin daha isabetli belirlenebilmesi için kullanacağız."
+msgid "Tap below to allow Tellus to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
+msgstr "Tellus'ın GPS konumunuza erişmesine izin vermek için aşağıya dokunun. Sonrasında bu veriyi bölgenizde erişilebilir içerik ve özelliklerin daha isabetli belirlenebilmesi için kullanacağız."
 
 #: src/view/com/feeds/MissingFeed.tsx:89
 msgid "Tap for information"
@@ -8578,8 +9027,8 @@ msgid "Tap for more information"
 msgstr "Daha fazla bilgi için dokunun"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:164
-msgid "Tap to acknowledge that you understand and agree to these updates and continue using Bluesky"
-msgstr "Bu güncellemeleri anladığınızı ve onayladığınızı kabul etmek ve Bluesky'ı kullanmaya devam etmek için dokunun"
+msgid "Tap to acknowledge that you understand and agree to these updates and continue using Tellus"
+msgstr "Bu güncellemeleri anladığınızı ve onayladığınızı kabul etmek ve Tellus'ı kullanmaya devam etmek için dokunun"
 
 #: src/components/ContextMenu/Backdrop.ios.tsx:54
 #: src/components/ContextMenu/Backdrop.ios.tsx:80
@@ -8620,20 +9069,136 @@ msgstr "Bize biraz kendinden bahset"
 msgid "Tell us a little more"
 msgstr "Biraz daha anlatın"
 
-#: src/view/shell/desktop/RightNav.tsx:120
-#: src/view/shell/desktop/RightNav.tsx:121
+#: src/view/com/auth/server-input/index.tsx:136
+#: src/view/com/auth/server-input/index.tsx:137
+msgid "Tellus"
+msgstr "Tellus"
+
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:690
+msgid "Tellus cannot confirm the authenticity of the claimed date."
+msgstr "Tellus iddia edilen tarihin doğruluğunu onaylayamaz."
+
+#: src/Navigation.tsx:580
+#: src/Navigation.tsx:827
+#: src/screens/Messages/ChatList.tsx:76
+#: src/screens/Messages/ChatList.tsx:394
+#: src/screens/Messages/ChatList.tsx:418
+#: src/screens/Messages/Settings.tsx:173
+#: src/screens/MessagesMatrix.web.tsx:935
+#: src/screens/Settings/Settings.tsx:206
+#: src/screens/Settings/Settings.tsx:209
+#: src/view/shell/bottom-bar/BottomBar.tsx:221
+#: src/view/shell/desktop/LeftNav.tsx:609
+#: src/view/shell/Drawer.tsx:487
+msgid "Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1052
+msgid "Tellus Chat est basé sur Matrix."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:146
+msgid "Tellus Chat ID removed."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:125
+msgid "Tellus Chat ID saved."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:941
+#: src/screens/MessagesMatrix.web.tsx:1118
+msgid "Tellus Chat indisponible"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:620
+msgid "Tellus Chat indisponible."
+msgstr ""
+
+#: src/Navigation.tsx:590
+#: src/screens/Messages/components/InboxPreview.tsx:22
+#: src/screens/Messages/components/InboxPreview.tsx:62
+#: src/screens/Messages/Inbox.tsx:56
+#: src/screens/Messages/Inbox.tsx:98
+msgid "Tellus Chat requests"
+msgstr ""
+
+#: src/components/dms/ConvoMenu.tsx:76
+#: src/Navigation.tsx:585
+#: src/screens/Messages/ChatList.tsx:81
+#: src/screens/Messages/ChatList.tsx:85
+#: src/screens/Messages/ChatList.tsx:378
+#: src/screens/Messages/Settings.tsx:164
+msgid "Tellus Chat settings"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:126
+msgid "Tellus Chat te permet de continuer les discussions initiées sur le réseau social, en privé, avec la même simplicité."
+msgstr ""
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:175
+msgctxt "Name of app icon variant"
+msgid "Tellus Classic™"
+msgstr "Tellus Klasik™"
+
+#: src/view/com/auth/server-input/index.tsx:212
+msgid "Tellus is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+msgstr "Tellus, barındırma sağlayıcınızı seçebileceğiniz açık bir ağdır. Geliştiriciyseniz kendi sunucunuzu barındırabilirsiniz."
+
+#: src/view/com/auth/server-input/index.tsx:149
+msgid "Tellus is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Tellus Social option."
+msgstr "Tellus kendi sağlayıcınızı seçebildiğiniz açık bir ağdır. Eğer burada yeniyseniz varsayılan \"Tellus Social\" seçeneğinde kalmanızı öneririz."
+
+#: src/components/ProgressGuide/List.tsx:53
+#: src/components/ProgressGuide/List.tsx:70
+msgid "Tellus is better with friends!"
+msgstr "Tellus arkadaşlarla daha güzel!"
+
+#: src/screens/Takendown.tsx:217
+msgid "Tellus Social Terms of Service"
+msgstr "Tellus Social Hizmet Şartları"
+
+#: src/components/StarterPack/ProfileStarterPacks.tsx:310
+msgid "Tellus will choose a set of recommended accounts from people in your network."
+msgstr "Tellus, ağınızdaki kişilerden bir dizi önerilen hesap seçecektir."
+
+#: src/screens/Settings/components/PwiOptOut.tsx:99
+msgid "Tellus will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+msgstr "Tellus, profilinizi ve gönderilerinizi oturum açmamış kullanıcılara göstermeyecektir. Diğer uygulamalar bu isteği yerine getirmeyebilir. Bu, hesabınızı özel yapmaz."
+
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
+msgid "Tellus will proactively verify notable and authentic accounts."
+msgstr "Tellus, kayda değer ve gerçek hesapları inisiyatif alarak doğrulayacaktır."
+
+#: src/screens/Signup/StepInfo/Policies.tsx:26
+msgid "Tellus's Community Guidelines"
+msgstr "Tellus'ın Topluluk Kuralları"
+
+#: src/screens/Signup/StepInfo/Policies.tsx:32
+msgid "Tellus's Updated Community Guidelines"
+msgstr "Tellus'ın Güncel Topluluk Kuralları"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:99
+msgid "Tellus+"
+msgstr "Tellus+"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:102
+msgid "Tellus+ icons"
+msgstr "Tellus+ simgeleri"
+
+#: src/view/shell/desktop/RightNav.tsx:108
+#: src/view/shell/desktop/RightNav.tsx:109
 msgid "Terms"
 msgstr "Şartlar"
 
 #: src/components/dialogs/BirthDateSettings.tsx:135
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:30
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:97
-#: src/Navigation.tsx:336
+#: src/Navigation.tsx:342
 #: src/screens/Settings/AboutSettings.tsx:84
 #: src/screens/Settings/AboutSettings.tsx:87
 #: src/view/screens/TermsOfService.tsx:31
-#: src/view/shell/Drawer.tsx:697
-#: src/view/shell/Drawer.tsx:699
+#: src/view/shell/Drawer.tsx:762
+#: src/view/shell/Drawer.tsx:764
 msgid "Terms of Service"
 msgstr "Hizmet Şartları"
 
@@ -8703,8 +9268,8 @@ msgstr "Hepsi bu kadar!"
 msgid "That's everything!"
 msgstr "Hepsi bu kadar!"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:324
-#: src/view/com/profile/ProfileMenu.tsx:478
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:382
+#: src/view/com/profile/ProfileMenu.tsx:542
 msgid "The account will be able to interact with you after unblocking."
 msgstr "Hesap, engeli kaldırdıktan sonra sizinle etkileşime geçebilecek."
 
@@ -8721,10 +9286,6 @@ msgstr "Bu konunun yazarı bu yanıtı gizlemiş."
 #: src/components/dialogs/BirthDateSettings.tsx:122
 msgid "The birthdate you've entered means you are under 18 years old. Certain content and features may be unavailable to you."
 msgstr "Girdiğiniz doğum tarihi 18 yaşından küçük olduğunuz anlamına geliyor. Belli içerik ve özellikler size sunulmayabilir."
-
-#: src/screens/Moderation/index.tsx:426
-msgid "The Bluesky web application"
-msgstr "Bluesky web uygulaması"
 
 #: src/view/screens/CommunityGuidelines.tsx:38
 msgid "The Community Guidelines have been moved to <0/>"
@@ -8743,8 +9304,8 @@ msgid "The Discover feed now knows what you like"
 msgstr "Keşif akışı (\"Discover\") artık ne beğendiğinizi biliyor"
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:324
-msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
-msgstr "Uygulama deneyimi daha iyi. Bluesky'ı şimdi indirin ve kaldığınız yerden devam edelim."
+msgid "The experience is better in the app. Download Tellus now and we'll pick back up where you left off."
+msgstr "Uygulama deneyimi daha iyi. Tellus'ı şimdi indirin ve kaldığınız yerden devam edelim."
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:67
 msgid "The feed has been replaced with Discover."
@@ -8763,8 +9324,8 @@ msgid "The following settings will be used as your defaults when creating new po
 msgstr "Aşağıdaki ayarlar yeni gönderi oluştururken varsayılan olarak kullanılacaktır. Bunları içerik üreticisine ait belirli bir gönderi için düzenleyebilirsiniz."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:11
-msgid "The laws in your location require you to verify you're an adult before accessing certain features on Bluesky, like adult content and direct messaging."
-msgstr "Bulunduğunuz bölgedeki yasalar Bluesky'daki yetişkin içerik ve doğrudan mesajlaşma gibi belirli özelliklere ulaşmadan önce bir yetişkin olduğunuzu onaylamanızı gerektirmektedir."
+msgid "The laws in your location require you to verify you're an adult before accessing certain features on Tellus, like adult content and direct messaging."
+msgstr "Bulunduğunuz bölgedeki yasalar Tellus'daki yetişkin içerik ve doğrudan mesajlaşma gibi belirli özelliklere ulaşmadan önce bir yetişkin olduğunuzu onaylamanızı gerektirmektedir."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:14
 msgid "The laws in your location require you to verify you're an adult to access certain features. Tap to learn more."
@@ -8799,6 +9360,10 @@ msgstr "Bağlam menüsünün konusu"
 #: src/view/screens/Support.tsx:37
 msgid "The support form has been moved. If you need help, please <0/> or visit {HELP_DESK_URL} to get in touch with us."
 msgstr "Destek formu taşındı. Yardıma ihtiyacınız varsa, lütfen <0/> veya bize ulaşmak için {HELP_DESK_URL} adresini ziyaret edin."
+
+#: src/screens/Moderation/index.tsx:426
+msgid "The Tellus web application"
+msgstr "Tellus web uygulaması"
 
 #: src/view/screens/TermsOfService.tsx:35
 msgid "The Terms of Service have been moved to"
@@ -8878,15 +9443,15 @@ msgstr "Akışlarınızı güncellerken bir sorun oldu, lütfen internet bağlan
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:388
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:90
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:101
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:101
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:123
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:136
-#: src/view/com/profile/ProfileMenu.tsx:131
-#: src/view/com/profile/ProfileMenu.tsx:141
-#: src/view/com/profile/ProfileMenu.tsx:155
-#: src/view/com/profile/ProfileMenu.tsx:165
-#: src/view/com/profile/ProfileMenu.tsx:178
-#: src/view/com/profile/ProfileMenu.tsx:190
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:105
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:127
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:140
+#: src/view/com/profile/ProfileMenu.tsx:139
+#: src/view/com/profile/ProfileMenu.tsx:149
+#: src/view/com/profile/ProfileMenu.tsx:163
+#: src/view/com/profile/ProfileMenu.tsx:173
+#: src/view/com/profile/ProfileMenu.tsx:186
+#: src/view/com/profile/ProfileMenu.tsx:198
 msgid "There was an issue! {0}"
 msgstr "Bir sorun oluştu! {0}"
 
@@ -8908,8 +9473,8 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr "Uygulamada beklenmeyen bir sorun oluştu. Bu size de olduysa lütfen bize bildirin!"
 
 #: src/screens/SignupQueued.tsx:130
-msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
-msgstr "Bluesky'e bir dizi yeni kullanıcı geldi! Hesabınızı en kısa sürede etkinleştireceğiz."
+msgid "There's been a rush of new users to Tellus! We'll activate your account as soon as we can."
+msgstr "Tellus'e bir dizi yeni kullanıcı geldi! Hesabınızı en kısa sürede etkinleştireceğiz."
 
 #: src/screens/Settings/FollowingFeedPreferences.tsx:65
 msgid "These settings only apply to the Following feed."
@@ -8944,8 +9509,8 @@ msgid "This appeal will be sent to <0>{sourceName}</0>."
 msgstr "Bu itiraz <0>{sourceName}</0> hesabına yollanacaktır."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:111
-msgid "This appeal will be sent to Bluesky's moderation service."
-msgstr "Bu itiraz Bluesky'ın moderasyon hizmetine gönderilecektir."
+msgid "This appeal will be sent to Tellus's moderation service."
+msgstr "Bu itiraz Tellus'ın moderasyon hizmetine gönderilecektir."
 
 #: src/screens/Messages/components/MessageListError.tsx:18
 msgid "This chat was disconnected"
@@ -8973,8 +9538,8 @@ msgid "This content is not available because one of the users involved has block
 msgstr "Bu içerik, içerikte yer alan kullanıcılardan biri diğerini engellediği için mevcut değil."
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:118
-msgid "This content is not viewable without a Bluesky account."
-msgstr "Bu içerik, bir Bluesky hesabı olmadan görüntülenemez."
+msgid "This content is not viewable without a Tellus account."
+msgstr "Bu içerik, bir Tellus hesabı olmadan görüntülenemez."
 
 #: src/screens/Messages/components/ChatListItem.tsx:362
 msgid "This conversation is with a deleted or a deactivated account. Press for options"
@@ -9048,12 +9613,12 @@ msgid "This link is taking you to the following website:"
 msgstr "Bu bağlantı sizi aşağıdaki web sitesine götürüyor:"
 
 #: src/screens/List/ListHiddenScreen.tsx:151
-msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "<0>{0}</0> tarafından oluşturulan bu liste, adında ya da açıklamasında Bluesky topluluk kuralları ihlalleri içeriyor olabilir."
+msgid "This list – created by <0>{0}</0> – contains possible violations of Tellus's community guidelines in its name or description."
+msgstr "<0>{0}</0> tarafından oluşturulan bu liste, adında ya da açıklamasında Tellus topluluk kuralları ihlalleri içeriyor olabilir."
 
 #: src/screens/List/ListHiddenScreen.tsx:146
-msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Sizin tarafınızdan oluşturulan bu liste, adında ya da açıklamasında Bluesky topluluk kuralları ihlalleri içeriyor olabilir."
+msgid "This list – created by you – contains possible violations of Tellus's community guidelines in its name or description."
+msgstr "Sizin tarafınızdan oluşturulan bu liste, adında ya da açıklamasında Tellus topluluk kuralları ihlalleri içeriyor olabilir."
 
 #: src/view/screens/ProfileList.tsx:962
 msgid "This list is empty."
@@ -9064,8 +9629,8 @@ msgid "This moderation service is unavailable. See below for more details. If th
 msgstr "Bu moderasyon hizmeti kullanılamıyor. Daha fazla ayrıntı için aşağıya bakın. Bu sorun devam ederse bizimle iletişime geçin."
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:676
-msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
-msgstr "Bu gönderi <0>{0}</0> tarihinde oluşturulduğunu beyan ediyor, ancak Bluesky'da ilk olarak <1>{1}</1> tarihinde görüldü."
+msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Tellus on <1>{1}</1>."
+msgstr "Bu gönderi <0>{0}</0> tarihinde oluşturulduğunu beyan ediyor, ancak Tellus'da ilk olarak <1>{1}</1> tarihinde görüldü."
 
 #: src/components/WhoCanReply.tsx:240
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
@@ -9087,7 +9652,7 @@ msgstr "Bu gönderi akışlarınızdan ve konularınızdan gizlenecektir. Bu iş
 msgid "This post's author has disabled quote posts."
 msgstr "Bu gönderinin yazarı alıntılanmasını engellemiş."
 
-#: src/view/com/profile/ProfileMenu.tsx:499
+#: src/view/com/profile/ProfileMenu.tsx:563
 msgid "This profile is only visible to logged-in users. It won't be visible to people who aren't signed in."
 msgstr "Bu profil sadece giriş yapmış kullanıcılara görünür. Giriş yapmamış kullanıcılara görünmeyecektir."
 
@@ -9148,7 +9713,7 @@ msgstr "Bu kullanıcı kimseyi takip etmiyor."
 msgid "This will delete \"{0}\" from your muted words. You can always add it back later."
 msgstr "Bu \"{0}\" kelimesini sessize alınmış kelimlerden silecek. Sonra her zaman geri ekleyebilirsiniz."
 
-#: src/screens/Settings/Settings.tsx:656
+#: src/screens/Settings/Settings.tsx:672
 msgid "This will remove @{0} from the quick access list."
 msgstr "Bu @{0} kullanıcısını çabuk erişim listesinden kaldıracak."
 
@@ -9175,13 +9740,17 @@ msgstr "Konu Tercihleri"
 msgid "Threaded"
 msgstr "Dallanmalı"
 
-#: src/Navigation.tsx:369
+#: src/Navigation.tsx:400
 msgid "Threads Preferences"
 msgstr "Konu Tercihleri"
 
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/TimeIndicator.tsx:34
 msgid "Time remaining: {0, plural, one {# second} other {# seconds}}"
 msgstr "Kalan zaman: {0, plural, other {# saniye}}"
+
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:250
+msgid "Tip this profile"
+msgstr ""
 
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:99
 msgid "To disable the email 2FA method, please verify your access to the email address."
@@ -9225,7 +9794,7 @@ msgstr "En öne çıkan"
 msgid "Top replies first"
 msgstr "Önce en öne çıkan yanıtlar"
 
-#: src/Navigation.tsx:544
+#: src/Navigation.tsx:575
 msgid "Topic"
 msgstr "Konu başlığı"
 
@@ -9251,6 +9820,11 @@ msgstr "Gündem"
 msgid "Trending Videos"
 msgstr "Gündemdeki Videolar"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:36
+#: src/screens/Saved/SavedCollectionsPage.tsx:30
+msgid "Trier"
+msgstr ""
+
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:138
 msgid "Trust emerges from relationships, communities, and shared context, so we’re also enabling <0>trusted verifiers</0>: organizations that can directly issue verification."
 msgstr "Güven ilişkilerden, topluluklardan ve paylaşılan bağlamdan gelir. Dolayısıyla <0>güvenilir doğrulayıcıları</0> yani direkt doğrulama yapabilen kurumları devreye alıyoruz."
@@ -9268,6 +9842,10 @@ msgstr "TV"
 msgid "Two-factor authentication (2FA)"
 msgstr "İki adımlı doğrulama (2FA)"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:40
+msgid "Type"
+msgstr ""
+
 #: src/screens/Messages/components/MessageInput.tsx:153
 msgid "Type your message here"
 msgstr "Mesajınızı buraya yazın"
@@ -9277,8 +9855,8 @@ msgid "Type:"
 msgstr "Tip:"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:92
-msgid "Unable to access location. You'll need to visit your system settings to enable location services for Bluesky."
-msgstr "Konuma erişilemedi. Bluesky için konum hizmetlerini etkinleştirmek için sistem ayarlarınıza göz atmanız gerekiyor."
+msgid "Unable to access location. You'll need to visit your system settings to enable location services for Tellus."
+msgstr "Konuma erişilemedi. Tellus için konum hizmetlerini etkinleştirmek için sistem ayarlarınıza göz atmanız gerekiyor."
 
 #: src/lib/hooks/useCleanError.ts:27
 #: src/lib/strings/errors.ts:11
@@ -9302,11 +9880,23 @@ msgstr "Hizmetinize ulaşılamıyor. Lütfen internet bağlantınızı kontrol e
 msgid "Unable to delete"
 msgstr "Silinemedi"
 
-#: src/screens/Settings/Settings.tsx:507
+#: src/screens/Messages/Settings.tsx:151
+msgid "Unable to delete Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:95
+msgid "Unable to load Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:130
+msgid "Unable to save Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:523
 msgid "Unapply Pull Request"
 msgstr "Pull Request'i sök"
 
-#: src/screens/Settings/Settings.tsx:509
+#: src/screens/Settings/Settings.tsx:525
 msgid "Unapply Pull Request {currentChannel}"
 msgstr "Pull Request'i sök {currentChannel}"
 
@@ -9322,27 +9912,27 @@ msgstr "Erişilemeyen akış bilgisi"
 #: src/components/dms/MessagesListBlockedFooter.tsx:104
 #: src/components/dms/MessagesListBlockedFooter.tsx:112
 #: src/components/dms/MessagesListBlockedFooter.tsx:119
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:208
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:328
-#: src/view/com/profile/ProfileMenu.tsx:490
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:223
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:386
+#: src/view/com/profile/ProfileMenu.tsx:554
 #: src/view/screens/ProfileList.tsx:723
 msgid "Unblock"
 msgstr "Engeli kaldır"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:213
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:228
 msgctxt "action"
 msgid "Unblock"
 msgstr "Engeli kaldır"
 
 #: src/components/dms/ConvoMenu.tsx:247
 #: src/components/dms/ConvoMenu.tsx:250
-#: src/view/com/profile/ProfileMenu.tsx:395
-#: src/view/com/profile/ProfileMenu.tsx:401
+#: src/view/com/profile/ProfileMenu.tsx:450
+#: src/view/com/profile/ProfileMenu.tsx:456
 msgid "Unblock account"
 msgstr "Hesabın engelini kaldır"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:322
-#: src/view/com/profile/ProfileMenu.tsx:472
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:380
+#: src/view/com/profile/ProfileMenu.tsx:536
 msgid "Unblock Account?"
 msgstr "Hesabı Engelle?"
 
@@ -9370,12 +9960,12 @@ msgctxt "action"
 msgid "Unfollow"
 msgstr "Takibi bırak"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:236
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:266
 msgid "Unfollow {0}"
 msgstr "{0} adresini takibi bırak"
 
-#: src/view/com/profile/ProfileMenu.tsx:286
-#: src/view/com/profile/ProfileMenu.tsx:296
+#: src/view/com/profile/ProfileMenu.tsx:341
+#: src/view/com/profile/ProfileMenu.tsx:351
 msgid "Unfollow account"
 msgstr "Hesabı takibi bırak"
 
@@ -9383,13 +9973,13 @@ msgstr "Hesabı takibi bırak"
 msgid "Unfollows the user"
 msgstr "Kullanıcıyı takipten çıkarır"
 
-#: src/components/BlockedGeoOverlay.tsx:48
-msgid "Unfortunately, Bluesky is unavailable in Mississippi right now."
-msgstr "Maalesef Bluesky an itibariyle Mississippi'de kullanılamamaktadır."
-
 #: src/components/moderation/ReportDialog/index.tsx:372
 msgid "Unfortunately, none of your subscribed labelers supports this report type."
 msgstr "Maalesef abone olduğunuz işaretleyicilerin hiçbiri bu rapor türünü desteklemiyor."
+
+#: src/components/BlockedGeoOverlay.tsx:48
+msgid "Unfortunately, Tellus is unavailable in Mississippi right now."
+msgstr "Maalesef Tellus an itibariyle Mississippi'de kullanılamamaktadır."
 
 #: src/components/verification/VerificationsDialog.tsx:211
 msgid "Unknown verifier"
@@ -9421,8 +10011,8 @@ msgstr "{tag} etiketini sessizden çıkar"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:627
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:633
-#: src/view/com/profile/ProfileMenu.tsx:374
-#: src/view/com/profile/ProfileMenu.tsx:380
+#: src/view/com/profile/ProfileMenu.tsx:429
+#: src/view/com/profile/ProfileMenu.tsx:435
 msgid "Unmute account"
 msgstr "Hesabı sessizden çıkar"
 
@@ -9478,8 +10068,8 @@ msgstr "{0} akışının ana sayfadan sabitlemesi kaldırıldı"
 msgid "Unpinned from your feeds"
 msgstr "Akışlarınızdan sabitlemesi kaldırıldı"
 
-#: src/screens/Settings/Settings.tsx:474
-#: src/screens/Settings/Settings.tsx:476
+#: src/screens/Settings/Settings.tsx:490
+#: src/screens/Settings/Settings.tsx:492
 msgid "Unsnooze email reminder"
 msgstr "E-posta hatırlatıcısını ertelemeyi kaldır"
 
@@ -9590,9 +10180,13 @@ msgstr "Web bağlantısının görseli gönderiliyor..."
 msgid "Uploading video..."
 msgstr "Video yükleniyor..."
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:49
+msgid "URL de la couverture"
+msgstr ""
+
 #: src/screens/Settings/AppPasswords.tsx:67
-msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
-msgstr "Hesabınıza veya şifrenize tam erişim vermeden diğer Bluesky istemcilerine giriş yapmak için uygulama şifrelerini kullanın."
+msgid "Use app passwords to sign in to other Tellus clients without giving full access to your account or password."
+msgstr "Hesabınıza veya şifrenize tam erişim vermeden diğer Tellus istemcilerine giriş yapmak için uygulama şifrelerini kullanın."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:568
 msgid "Use default provider"
@@ -9622,8 +10216,8 @@ msgid "Use this to sign in to the other app along with your handle."
 msgstr "Bunu, kullanıcı adınızla birlikte diğer uygulamada giriş yapmak için kullanın."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:279
-msgid "Use your account email address, or another real email address you control, in case KWS or Bluesky needs to contact you."
-msgstr "KWS veya Bluesky'ın size ulaşma ihtimaline karşın hesabınızın e-posta adresini ya da sizin kontrolünüzde olan başka bir gerçek e-posta adresi kullanın."
+msgid "Use your account email address, or another real email address you control, in case KWS or Tellus needs to contact you."
+msgstr "KWS veya Tellus'ın size ulaşma ihtimaline karşın hesabınızın e-posta adresini ya da sizin kontrolünüzde olan başka bir gerçek e-posta adresi kullanın."
 
 #: src/view/com/modals/InviteCodes.tsx:201
 msgid "Used by:"
@@ -9701,8 +10295,8 @@ msgstr "<0>@{0}</0> tarafından takip edilen kullanıcılar"
 msgid "users following <0>@{0}</0>"
 msgstr "<0>@{0}</0> kullanıcısını takip edenler"
 
-#: src/screens/Messages/Settings.tsx:97
-#: src/screens/Messages/Settings.tsx:100
+#: src/screens/Messages/Settings.tsx:269
+#: src/screens/Messages/Settings.tsx:272
 msgid "Users I follow"
 msgstr "Takip ettiğim kişiler"
 
@@ -9726,14 +10320,14 @@ msgstr "Doğrulama başarısız, lütfen tekrar deneyin."
 msgid "Verification settings"
 msgstr "Doğrulama ayarları"
 
-#: src/Navigation.tsx:206
+#: src/Navigation.tsx:212
 #: src/screens/Moderation/VerificationSettings.tsx:32
 msgid "Verification Settings"
 msgstr "Doğrulama Ayarları"
 
 #: src/screens/Moderation/VerificationSettings.tsx:41
-msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
-msgstr "Bluesky'daki doğrulamalar diğer platformlardan farklı çalışır. <0>Buradan daha fazlasını öğrenin.</0>"
+msgid "Verifications on Tellus work differently than on other platforms. <0>Learn more here.</0>"
+msgstr "Tellus'daki doğrulamalar diğer platformlardan farklı çalışır. <0>Buradan daha fazlasını öğrenin.</0>"
 
 #: src/components/verification/VerificationsDialog.tsx:103
 msgid "Verified by:"
@@ -9741,8 +10335,8 @@ msgstr "Doğrulayan:"
 
 #: src/components/verification/VerificationCreatePrompt.tsx:84
 #: src/components/verification/VerificationCreatePrompt.tsx:86
-#: src/view/com/profile/ProfileMenu.tsx:358
-#: src/view/com/profile/ProfileMenu.tsx:361
+#: src/view/com/profile/ProfileMenu.tsx:413
+#: src/view/com/profile/ProfileMenu.tsx:416
 msgid "Verify account"
 msgstr "Hesabı doğrula"
 
@@ -9814,11 +10408,15 @@ msgstr "Sürüm {0}"
 msgid "Video"
 msgstr "Video"
 
+#: src/screens/Saved/components.tsx:457
+msgid "Vidéo"
+msgstr ""
+
 #: src/view/com/composer/state/video.ts:357
 msgid "Video failed to process"
 msgstr "Video işlenemedi"
 
-#: src/Navigation.tsx:600
+#: src/Navigation.tsx:641
 msgid "Video Feed"
 msgstr "Video Akışı"
 
@@ -10002,9 +10600,36 @@ msgstr "Siteyi ziyaret et"
 msgid "Visit your notification settings"
 msgstr "Bildirim ayarlarınızı ziyaret edin"
 
+#: src/screens/MessagesMatrix.web.tsx:1498
+#: src/screens/MessagesMatrix.web.tsx:1508
+msgid "Voir membres"
+msgstr ""
+
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VolumeControl.tsx:81
 msgid "Volume"
 msgstr "Ses"
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:27
+msgid "Vos collections, dans un espace calme et organisé."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:442
+msgid "Vous: {0}"
+msgstr ""
+
+#: src/Navigation.tsx:368
+#: src/Navigation.tsx:386
+#: src/screens/Settings/Settings.tsx:212
+#: src/screens/Settings/Settings.tsx:215
+#: src/view/shell/desktop/LeftNav.tsx:806
+#: src/view/shell/Drawer.tsx:635
+msgid "Wallet"
+msgstr ""
+
+#: src/view/com/profile/ProfileMenu.tsx:314
+#: src/view/com/profile/ProfileMenu.tsx:320
+msgid "Wallet / Payer"
+msgstr ""
 
 #: src/components/moderation/LabelPreference.tsx:142
 #: src/lib/moderation/useLabelBehaviorDescription.ts:17
@@ -10050,16 +10675,16 @@ msgid "We estimate {estimatedTime} until your account is ready."
 msgstr "Hesabınızın hazır olmasına {estimatedTime} tahmin ediyoruz."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:196
-msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Bluesky."
-msgstr "Yetişkin olduğunuzu onaylamak için <0>KWS</0> ile işbirliği yapmaktayız. Aşağıdaki \"Başla\"ya tıkladığınızda KWS verdiğiniz email adresini kullanarak KWS teknolojisi kullanan başka oyunlar/hizmetler tarafından daha önce onaylı olup olmadığınızı kontrol edecektir. Eğer değilse, KWS size yaşınızı onaylama adımlarını e-posta ile yollayacaktır. Bitirdiğinizde Bluesky'ı kullanmaya devam etmeniz için geri yönlendirileceksiniz."
+msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Tellus."
+msgstr "Yetişkin olduğunuzu onaylamak için <0>KWS</0> ile işbirliği yapmaktayız. Aşağıdaki \"Başla\"ya tıkladığınızda KWS verdiğiniz email adresini kullanarak KWS teknolojisi kullanan başka oyunlar/hizmetler tarafından daha önce onaylı olup olmadığınızı kontrol edecektir. Eğer değilse, KWS size yaşınızı onaylama adımlarını e-posta ile yollayacaktır. Bitirdiğinizde Tellus'ı kullanmaya devam etmeniz için geri yönlendirileceksiniz."
 
 #: src/components/intents/VerifyEmailIntentDialog.tsx:107
 msgid "We have sent another verification email to <0>{0}</0>."
 msgstr "<0>{0}</0> adresine başka bir doğrulama e-postası gönderdik."
 
 #: src/screens/Onboarding/StepFinished.tsx:533
-msgid "We hope you have a wonderful time. Remember, Bluesky is:"
-msgstr "Harika vakit geçirmenizi umuyoruz. Unutmayın, Bluesky:"
+msgid "We hope you have a wonderful time. Remember, Tellus is:"
+msgstr "Harika vakit geçirmenizi umuyoruz. Unutmayın, Tellus:"
 
 #: src/view/com/posts/DiscoverFallbackHeader.tsx:29
 msgid "We ran out of posts from your follows. Here's the latest from <0/>."
@@ -10127,8 +10752,8 @@ msgid "We're having network issues, try again"
 msgstr "Ağ sorunları yaşıyoruz, tekrar deneyin"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:94
-msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
-msgstr "Bluesky'da yeni bir doğrulama katmanı sunuyoruz - kolay görülebilen bir onay işareti."
+msgid "We’re introducing a new layer of verification on Tellus — an easy-to-see checkmark."
+msgstr "Tellus'da yeni bir doğrulama katmanı sunuyoruz - kolay görülebilen bir onay işareti."
 
 #: src/screens/Signup/index.tsx:123
 msgid "We're so excited to have you join us!"
@@ -10340,8 +10965,8 @@ msgid "You"
 msgstr "Siz"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:23
-msgid "You also agree to <0>Bluesky’s Community Guidelines</0>. An <1>updated version of our Community Guidelines</1> will take effect on October 15th."
-msgstr "Ayrıca <0>Bluesky’ın Topluluk Kuralları</0>nı da kabul ediyorsunuz. <1>Topluluk Kurallarımızın güncel sürümü</1> 15 Ekim'de devreye girecektir."
+msgid "You also agree to <0>Tellus’s Community Guidelines</0>. An <1>updated version of our Community Guidelines</1> will take effect on October 15th."
+msgstr "Ayrıca <0>Tellus’ın Topluluk Kuralları</0>nı da kabul ediyorsunuz. <1>Topluluk Kurallarımızın güncel sürümü</1> 15 Ekim'de devreye girecektir."
 
 #: src/components/verification/VerifierDialog.tsx:59
 msgid "You are a trusted verifier"
@@ -10352,8 +10977,8 @@ msgid "You are creating an account on"
 msgstr "Hesabınızın oluşturulacağı yer sağlayıcı"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:128
-msgid "You are currently unable to access Bluesky's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
-msgstr "Şu anda Bluesky'ın Yaş Güvencesi işlemine erişemiyorsunuz. Bunun bir hatadan kaynaklı olduğunu düşünüyorsanız lütfen <0>moderasyon ekibimize ulaşın</0>."
+msgid "You are currently unable to access Tellus's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
+msgstr "Şu anda Tellus'ın Yaş Güvencesi işlemine erişemiyorsunuz. Bunun bir hatadan kaynaklı olduğunu düşünüyorsanız lütfen <0>moderasyon ekibimize ulaşın</0>."
 
 #: src/screens/SignupQueued.tsx:157
 msgid "You are in line."
@@ -10413,7 +11038,7 @@ msgstr "Ayrıca hesabınızı geçici olarak devre dışı bırakabilir ve isted
 msgid "You can choose whether chat notifications have sound in the chat settings within the app"
 msgstr "Uygulama içindeki sohbet ayarlarından sohbet bildirimlerinin sesli olup olmayacağını seçebilirsiniz"
 
-#: src/screens/Messages/Settings.tsx:116
+#: src/screens/Messages/Settings.tsx:288
 msgid "You can continue ongoing conversations regardless of which setting you choose."
 msgstr "Hangi ayarı seçerseniz seçin devam eden yazışmaları sürdürebilirsiniz."
 
@@ -10466,8 +11091,8 @@ msgid "You don't have any chat requests at the moment."
 msgstr "Şu anda herhangi bir sohbet isteğiniz yok."
 
 #: src/view/com/modals/InviteCodes.tsx:67
-msgid "You don't have any invite codes yet! We'll send you some when you've been on Bluesky for a little longer."
-msgstr "Henüz hiç davet kodunuz yok! Bluesky'de biraz daha uzun süre kaldıktan sonra size bazı kodlar göndereceğiz."
+msgid "You don't have any invite codes yet! We'll send you some when you've been on Tellus for a little longer."
+msgstr "Henüz hiç davet kodunuz yok! Tellus'de biraz daha uzun süre kaldıktan sonra size bazı kodlar göndereceğiz."
 
 #: src/view/screens/SavedFeeds.tsx:145
 msgid "You don't have any pinned feeds."
@@ -10589,8 +11214,8 @@ msgid "You must be 13 years of age or older to create an account."
 msgstr "Hesap oluşturmak için 13 yaşında veya daha büyük olmanız gerekir."
 
 #: src/components/dialogs/BirthDateSettings.tsx:131
-msgid "You must be at least 13 years old to use Bluesky. Read our <0>Terms of Service</0> for more information."
-msgstr "Bluesky'ı kullanmak için en az 13 yaşında olmanız gerekmektedir. Daha fazla ilgi için <0>Hizmet Şartları</0>'nı okuyun."
+msgid "You must be at least 13 years old to use Tellus. Read our <0>Terms of Service</0> for more information."
+msgstr "Tellus'ı kullanmak için en az 13 yaşında olmanız gerekmektedir. Daha fazla ilgi için <0>Hizmet Şartları</0>'nı okuyun."
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:334
 msgid "You must be following at least seven other people to generate a starter pack."
@@ -10629,7 +11254,7 @@ msgstr "E-posta iki adımlı doğrulamasını etkinleştirebilmeniz için öncel
 msgid "You previously deactivated @{0}."
 msgstr "@{0} kullanıcısını önceden devre dışı bırakmıştınız."
 
-#: src/screens/Settings/Settings.tsx:404
+#: src/screens/Settings/Settings.tsx:420
 msgid "You probably want to restart the app now."
 msgstr "Şimdi uygulamayı yeniden başlatmak isteyebilirsiniz."
 
@@ -10641,8 +11266,8 @@ msgstr "{0} tepkisi verdiniz"
 msgid "You reacted {0} to {1}"
 msgstr "Şuna {0} tepkisi verdiniz: {1}"
 
-#: src/screens/Settings/Settings.tsx:286
-#: src/view/shell/desktop/LeftNav.tsx:210
+#: src/screens/Settings/Settings.tsx:302
+#: src/view/shell/desktop/LeftNav.tsx:212
 msgid "You will be signed out of all your accounts."
 msgstr "Tüm hesaplarınızdan çıkış yapacaksınız."
 
@@ -10769,8 +11394,8 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr "Herkese açık tüm veri kayıtlarınızı içeren hesap deponuz bir \"CAR\" dosyası olarak indirilebilir. Bu dosya görselleri, özel verilerinizi veya gömülü medyayı içermez; onların ayrıca indirilmeleri gerekir."
 
 #: src/screens/Takendown.tsx:214
-msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
-msgstr "Hesabınızın <0>Bluesky Social Hizmet Şartları</0>'nı ihlal ettiği tespit edildi. Size, varsa belirli ihlali ve askıya alma süresini özetleyen bir e-posta gönderildi. Hatalı olduğuna inanıyorsanız bu karara itiraz edebilirsiniz."
+msgid "Your account was found to be in violation of the <0>Tellus Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
+msgstr "Hesabınızın <0>Tellus Social Hizmet Şartları</0>'nı ihlal ettiği tespit edildi. Size, varsa belirli ihlali ve askıya alma süresini özetleyen bir e-posta gönderildi. Hatalı olduğuna inanıyorsanız bu karara itiraz edebilirsiniz."
 
 #: src/screens/Takendown.tsx:154
 msgid "Your appeal has been submitted. If your appeal succeeds, you will receive an email."
@@ -10814,8 +11439,8 @@ msgid "Your email appears to be invalid."
 msgstr "E-postanız geçersiz gibi görünüyor."
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:65
-msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
-msgstr "E-posta adresiniz doğrulanmamış. Lütfen Bluesky'ın tüm özelliklerinin tadını çıkarabilmek için e-postanızı doğrulayın."
+msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Tellus."
+msgstr "E-posta adresiniz doğrulanmamış. Lütfen Tellus'ın tüm özelliklerinin tadını çıkarabilmek için e-postanızı doğrulayın."
 
 #: src/state/shell/progress-guide.tsx:215
 msgid "Your first like!"
@@ -10833,7 +11458,7 @@ msgstr "Takip ettiğiniz akış boş! Neler olduğunu görmek için daha fazla k
 msgid "Your full handle will be <0>@{0}</0>"
 msgstr "Tam kullanıcı adınız <0>@{0}</0> olacak"
 
-#: src/Navigation.tsx:516
+#: src/Navigation.tsx:547
 #: src/screens/Search/modules/ExploreInterestsCard.tsx:67
 #: src/screens/Settings/ContentAndMediaSettings.tsx:92
 #: src/screens/Settings/ContentAndMediaSettings.tsx:95
@@ -10859,8 +11484,8 @@ msgid "Your muted words"
 msgstr "Sessize aldığınız kelimeler"
 
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:71
-msgid "Your password has been changed successfully! Please use your new password when you sign in to Bluesky from now on."
-msgstr "Şifreniz başarıyla değiştirildi! Lütfen bundan sonra Bluesky'a giriş yaparken yeni şifrenizi kullanın."
+msgid "Your password has been changed successfully! Please use your new password when you sign in to Tellus from now on."
+msgstr "Şifreniz başarıyla değiştirildi! Lütfen bundan sonra Tellus'a giriş yaparken yeni şifrenizi kullanın."
 
 #: src/screens/Signup/StepInfo/index.tsx:130
 msgid "Your password must be at least 8 characters long."
@@ -10891,8 +11516,8 @@ msgid "Your profile picture surrounded by concentric circles of other users' pro
 msgstr "Başka kullanıcıların profil resimleri tarafından çerçevelenmiş profil resminiz"
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
-msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-msgstr "Profiliniz, gönderileriniz, akışlarınız ve listeleriniz artık diğer Bluesky kullanıcıları tarafından görülemeyecek. Hesabınızı istediğiniz zaman oturum açarak yeniden etkinleştirebilirsiniz."
+msgid "Your profile, posts, feeds, and lists will no longer be visible to other Tellus users. You can reactivate your account at any time by logging in."
+msgstr "Profiliniz, gönderileriniz, akışlarınız ve listeleriniz artık diğer Tellus kullanıcıları tarafından görülemeyecek. Hesabınızı istediğiniz zaman oturum açarak yeniden etkinleştirebilirsiniz."
 
 #: src/view/com/composer/Composer.tsx:536
 msgid "Your reply was sent"
@@ -10903,8 +11528,8 @@ msgid "Your report will be sent to <0>{0}</0>."
 msgstr "Raporunuz <0>{0}</0> işaretleyicisine gönderilecektir."
 
 #: src/components/dms/ReportDialog.tsx:205
-msgid "Your report will be sent to the Bluesky Moderation Service"
-msgstr "Raporunuz Bluesky Moderasyon Hizmetine gönderilecektir"
+msgid "Your report will be sent to the Tellus Moderation Service"
+msgstr "Raporunuz Tellus Moderasyon Hizmetine gönderilecektir"
 
 #: src/screens/Settings/InterestsSettings.tsx:56
 msgid "Your selected interests help us serve you content you care about."

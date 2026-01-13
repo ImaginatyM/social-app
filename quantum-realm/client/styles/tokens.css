@@ -1,0 +1,51 @@
+:root{
+  --sidebar-width: 17rem;
+  --sidebar-width-icon: 3.5rem;
+  --sidebar-width-mobile: 18rem;
+
+  --background: 222.2 47.4% 10%;
+  --foreground: 210 20% 96%;
+  --muted: 215 16% 27%;
+  --muted-foreground: 214 15% 70%;
+  --popover: 220 27% 12%;
+  --popover-foreground: 210 20% 96%;
+  --card: 220 27% 12%;
+  --card-foreground: 210 20% 96%;
+  --border: 217 19% 24%;
+  --input: 217 19% 24%;
+  --ring: 221 83% 53%;
+  --primary: 221 83% 53%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 18% 17%;
+  --secondary-foreground: 210 20% 96%;
+  --accent: 220 18% 17%;
+  --accent-foreground: 210 20% 96%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --success: 142 71% 45%;
+  --warning: 40 96% 56%;
+
+  --radius: 16px;
+  --shadow-card: 0 22px 48px -30px rgba(0,0,0,.60);
+
+  /* palette consommée par la sidebar shadcn */
+  --sidebar-background: 220 27% 12%;
+  --sidebar-foreground: 210 20% 96%;
+  --sidebar-primary: 221 83% 53%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 220 18% 17%;
+  --sidebar-accent-foreground: 210 20% 96%;
+  --sidebar-border: 217 19% 24%;
+  --sidebar-ring: 221 83% 53%;
+  --sidebar-muted: 215 16% 27%;
+  --sidebar-muted-foreground: 214 15% 70%;
+}
+
+html, body, #root { height: 100% }
+body{
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+}
+
+.container-dashboard{ max-width:1200px; margin-inline:auto; padding:24px }

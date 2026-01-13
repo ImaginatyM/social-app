@@ -10,16 +10,9 @@ import {useSession} from '#/state/session'
 import {DesktopFeeds} from '#/view/shell/desktop/Feeds'
 import {DesktopSearch} from '#/view/shell/desktop/Search'
 import {SidebarTrendingTopics} from '#/view/shell/desktop/SidebarTrendingTopics'
-import {
-  atoms as a,
-  useGutters,
-  useLayoutBreakpoints,
-  useTheme,
-  web,
-} from '#/alf'
+import {atoms as a, useGutters, useLayoutBreakpoints, useTheme, web} from '#/alf'
 import {AppLanguageDropdown} from '#/components/AppLanguageDropdown'
 import {Divider} from '#/components/Divider'
-import {CENTER_COLUMN_OFFSET} from '#/components/Layout'
 import {InlineLinkText} from '#/components/Link'
 import {ProgressGuideList} from '#/components/ProgressGuide/List'
 import {Text} from '#/components/Typography'
@@ -51,14 +44,13 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
   const webqueryParams = useWebQueryParams()
   const searchQuery = webqueryParams?.q
   const showTrending = !isSearchScreen || (isSearchScreen && !!searchQuery)
-  const {rightNavVisible, centerColumnOffset, leftNavMinimal} =
-    useLayoutBreakpoints()
+  const {rightNavVisible, leftNavMinimal} = useLayoutBreakpoints()
 
   if (!rightNavVisible) {
     return null
   }
 
-  const width = centerColumnOffset ? 250 : 300
+  const width = leftNavMinimal ? 260 : 300
 
   return (
     <View
@@ -67,20 +59,16 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
         a.gap_lg,
         a.pr_2xs,
         web({
-          position: 'fixed',
-          left: '50%',
-          transform: [
-            {
-              translateX: 300 + (centerColumnOffset ? CENTER_COLUMN_OFFSET : 0),
-            },
-            ...a.scrollbar_offset.transform,
-          ],
+          position: 'sticky',
+          top: 0,
           /**
            * Compensate for the right padding above (2px) to retain intended width.
            */
           width: width + gutters.paddingLeft + 2,
-          maxHeight: '100%',
+          maxHeight: '100vh',
           overflowY: 'auto',
+          alignSelf: 'flex-start',
+          flexShrink: 0,
         }),
       ]}>
       {!isSearchScreen && <DesktopSearch />}
@@ -110,13 +98,13 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
           </>
         )}
         <InlineLinkText
-          to="https://bsky.social/about/support/privacy-policy"
+          to="https://tellus.social/about/support/privacy-policy"
           label={_(msg`Privacy`)}>
           {_(msg`Privacy`)}
         </InlineLinkText>
         {' • '}
         <InlineLinkText
-          to="https://bsky.social/about/support/tos"
+          to="https://tellus.social/about/support/tos"
           label={_(msg`Terms`)}>
           {_(msg`Terms`)}
         </InlineLinkText>
@@ -131,9 +119,9 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
           <Trans>
             Logo by{' '}
             <InlineLinkText
-              label={_(msg`Logo by @sawaratsuki.bsky.social`)}
-              to="/profile/sawaratsuki.bsky.social">
-              @sawaratsuki.bsky.social
+              label={_(msg`Logo by @sawaratsuki.tellus.social`)}
+              to="/profile/sawaratsuki.tellus.social">
+              @sawaratsuki.tellus.social
             </InlineLinkText>
           </Trans>
         </Text>

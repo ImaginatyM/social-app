@@ -1,5 +1,6 @@
 import {useCallback, useEffect, useMemo, useRef, useState} from 'react'
 import {View} from 'react-native'
+import clsx from 'clsx'
 import {type AppBskyActorDefs, AppBskyFeedDefs} from '@atproto/api'
 import {msg} from '@lingui/macro'
 import {useLingui} from '@lingui/react'
@@ -13,7 +14,7 @@ import {getRootNavigation, getTabState, TabState} from '#/lib/routes/helpers'
 import {type AllNavigatorParams} from '#/lib/routes/types'
 import {logEvent} from '#/lib/statsig/statsig'
 import {s} from '#/lib/styles'
-import {isNative} from '#/platform/detection'
+import {isNative, isWeb} from '#/platform/detection'
 import {listenSoftReset} from '#/state/events'
 import {FeedFeedbackProvider, useFeedFeedback} from '#/state/feed-feedback'
 import {useSetHomeBadge} from '#/state/home-badge'
@@ -26,6 +27,7 @@ import {
 import {truncateAndInvalidate} from '#/state/queries/util'
 import {useSession} from '#/state/session'
 import {useSetMinimalShellMode} from '#/state/shell'
+import {useFeedLayout} from '#/state/feedLayout'
 import {useHeaderOffset} from '#/components/hooks/useHeaderOffset'
 import {PostFeed} from '../posts/PostFeed'
 import {FAB} from '../util/fab/FAB'
@@ -68,6 +70,13 @@ export function FeedPage({
   const scrollElRef = useRef<ListMethods>(null)
   const [hasNew, setHasNew] = useState(false)
   const setHomeBadge = useSetHomeBadge()
+  const {layout} = useFeedLayout()
+  const feedContainerClassName = useMemo(() => {
+    if (!isWeb) {
+      return undefined
+    }
+    return clsx('feed-container', `layout-${layout}`)
+  }, [layout])
   const isVideoFeed = useMemo(() => {
     const isBskyVideoFeed = VIDEO_FEED_URIS.includes(feedInfo.uri)
     const feedIsVideoMode =
@@ -134,6 +143,9 @@ export function FeedPage({
   return (
     <View
       testID={testID}
+      {...(isWeb && feedContainerClassName
+        ? ({className: feedContainerClassName} as any)
+        : {})}
       // @ts-expect-error web only -sfn
       dataSet={{nosnippet: isDiscoverFeed ? '' : undefined}}>
       <MainScrollProvider>

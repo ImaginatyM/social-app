@@ -81,7 +81,7 @@ msgstr "{0, plural, one {# segundo} other {# segundos}}"
 
 #: src/view/shell/bottom-bar/BottomBar.tsx:225
 #: src/view/shell/bottom-bar/BottomBar.tsx:257
-#: src/view/shell/Drawer.tsx:498
+#: src/view/shell/Drawer.tsx:519
 msgid "{0, plural, one {# unread item} other {# unread items}}"
 msgstr "{0, plural, one {# item não lido} other {# itens não lidos}}"
 
@@ -124,7 +124,7 @@ msgstr "{0, plural, one {guardado} other {guardados}}"
 msgid "{0, plural, other {{1} posts}}"
 msgstr "{0, plural, other {{1} publicações}}"
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 25) who have joined Tellus using a specific starter pack
 #: src/screens/StarterPack/StarterPackScreen.tsx:490
 msgid "{0, plural, other {# people have}} used this starter pack!"
 msgstr "{0, plural, other {# pessoas usaram}} este pacote de iniciante!"
@@ -221,7 +221,7 @@ msgstr "{0}min"
 msgid "{0}s"
 msgstr "{0}seg"
 
-#: src/view/shell/desktop/LeftNav.tsx:455
+#: src/view/shell/desktop/LeftNav.tsx:457
 msgid "{count, plural, one {# unread item} other {# unread items}}"
 msgstr "{count, plural, one {# item não lido} other {# itens não lidos}}"
 
@@ -414,7 +414,7 @@ msgstr "{hours, plural, one {# hora {minutesString}} other {# horas {minutesStri
 msgid "{hours, plural, one {# hour} other {# hours}}"
 msgstr "{hours, plural, one {# hora} other {# horas}}"
 
-#. Number of users (always at least 50) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 50) who have joined Tellus using a specific starter pack
 #: src/components/StarterPack/StarterPackCard.tsx:101
 msgid "{joinedAllTimeCount, plural, other {# users have}} joined!"
 msgstr "{joinedAllTimeCount, plural, other {# utilizadores aderiram}}!"
@@ -428,12 +428,12 @@ msgid "{notificationCount, plural, one {# unread item} other {# unread items}}"
 msgstr "{notificationCount, plural, one {# item não lido} other {# itens não lidos}}"
 
 #: src/components/NewskieDialog.tsx:116
-msgid "{profileName} joined Bluesky {0} ago"
-msgstr "{profileName} aderiu ao Bluesky há {0}"
+msgid "{profileName} joined Tellus {0} ago"
+msgstr "{profileName} aderiu ao Tellus há {0}"
 
 #: src/components/NewskieDialog.tsx:111
-msgid "{profileName} joined Bluesky using a starter pack {0} ago"
-msgstr "{profileName} aderiu ao Bluesky utilizando um pacote de iniciante há {0}"
+msgid "{profileName} joined Tellus using a starter pack {0} ago"
+msgstr "{profileName} aderiu ao Tellus utilizando um pacote de iniciante há {0}"
 
 #. The trending topic rank, i.e. "1. March Madness", "2. The Bachelor"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:111
@@ -458,6 +458,19 @@ msgstr "{userName} é verificado"
 msgid "{userName}'s verifications"
 msgstr "Verificações de {userName}"
 
+#: src/screens/Messages/Settings.tsx:187
+msgid "@alice:matrix.org"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:982
+msgid "@alice:tellus.chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1153
+#: src/screens/MessagesMatrix.web.tsx:1564
+msgid "@utilisateur:tellus.chat"
+msgstr ""
+
 #. Indicates the number of additional profiles are in the Starter Pack e.g. +12
 #: src/screens/Search/components/StarterPackCard.tsx:249
 msgid "+{computedTotal}"
@@ -473,11 +486,11 @@ msgctxt "feeds"
 msgid "<0>{0}, </0><1>{1}, </1>and {2, plural, one {# other} other {# others}} are included in your starter pack"
 msgstr "<0>{0}, </0><1>{1}, </1> {2, plural, one {# outro} other {# outros}} estão incluídos no seu pacote de iniciante"
 
-#: src/view/shell/Drawer.tsx:117
+#: src/view/shell/Drawer.tsx:120
 msgid "<0>{0}</0> {1, plural, one {follower} other {followers}}"
 msgstr "<0>{0}</0> {1, plural, one {seguidor} other {seguidores}}"
 
-#: src/view/shell/Drawer.tsx:128
+#: src/view/shell/Drawer.tsx:131
 msgid "<0>{0}</0> {1, plural, one {following} other {following}}"
 msgstr "<0>{0}</0> {1, plural, one {a seguir} other {a seguir}}"
 
@@ -499,8 +512,8 @@ msgid "<0>{date}</0> at {time}"
 msgstr "<0>{date}</0> às {time}"
 
 #: src/screens/Search/SearchResults.tsx:255
-msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Bluesky.</4>"
-msgstr "<0>Inicie sessão</0><1> ou </1><2>crie uma conta</2><3> </3><4>para procurar por notícias, desporto, política e tudo resto que acontece no Bluesky.</4>"
+msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Tellus.</4>"
+msgstr "<0>Inicie sessão</0><1> ou </1><2>crie uma conta</2><3> </3><4>para procurar por notícias, desporto, política e tudo resto que acontece no Tellus.</4>"
 
 #: src/screens/StarterPack/Wizard/index.tsx:502
 msgid "<0>You</0> and<1> </1><2>{0} </2>are included in your starter pack"
@@ -527,8 +540,8 @@ msgid "7 days"
 msgstr "7 dias"
 
 #: src/screens/Onboarding/StepFinished.tsx:341
-msgid "A collection of popular feeds you can find on Bluesky, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
-msgstr "Uma coleção de feeds populares que pode encontrar no Bluesky, incluindo News, Booksky, Game Dev, Blacksky, e Fountain Pens"
+msgid "A collection of popular feeds you can find on Tellus, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
+msgstr "Uma coleção de feeds populares que pode encontrar no Tellus, incluindo News, Booksky, Game Dev, Blacksky, e Fountain Pens"
 
 #. If last message does not contain text, fall back to "{user} reacted to {a message}"
 #: src/screens/Messages/components/ChatListItem.tsx:210
@@ -540,22 +553,31 @@ msgid "A new form of verification"
 msgstr "Uma nova forma de verificação"
 
 #: src/components/BlockedGeoOverlay.tsx:50
-msgid "A new Mississippi law requires us to implement age verification for all users before they can access Bluesky. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies."
-msgstr "Uma nova lei do Mississippi exige que apliquemos a verificação de idade para todos os utilizadores antes que eles possam aceder ao Bluesky. Pensamos que esta lei cria desafios que vão além dos seus objectivos de proteger as crianças e cria barreiras significativas que limitam a liberdade de expressão e prejudicam desproporcionalmente as plataformas mais pequenas e tecnologias emergentes."
+msgid "A new Mississippi law requires us to implement age verification for all users before they can access Tellus. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies."
+msgstr "Uma nova lei do Mississippi exige que apliquemos a verificação de idade para todos os utilizadores antes que eles possam aceder ao Tellus. Pensamos que esta lei cria desafios que vão além dos seus objectivos de proteger as crianças e cria barreiras significativas que limitam a liberdade de expressão e prejudicam desproporcionalmente as plataformas mais pequenas e tecnologias emergentes."
+
+#: src/screens/MessagesMatrix.web.tsx:1045
+msgid "À propos"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1031
+#: src/screens/MessagesMatrix.web.tsx:1037
+msgid "À propos / avancé"
+msgstr ""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:120
-msgid "A screenshot of a post with a new button next to the share button that allows you to save the post to your bookmarks. The post is from @jcsalterego.bsky.social and reads \"inventing a saturday that immediately follows monday\"."
-msgstr "Uma captura de ecrã de uma publicação com um novo botão ao lado do botão compartilhar que lhe permite guardar a publicação. A publicação é de @jcsalterego.bsky.social e diz \"a inventar um sábado que imediatamente segue segunda-feira\"."
+msgid "A screenshot of a post with a new button next to the share button that allows you to save the post to your bookmarks. The post is from @jcsalterego.tellus.social and reads \"inventing a saturday that immediately follows monday\"."
+msgstr "Uma captura de ecrã de uma publicação com um novo botão ao lado do botão compartilhar que lhe permite guardar a publicação. A publicação é de @jcsalterego.tellus.social e diz \"a inventar um sábado que imediatamente segue segunda-feira\"."
 
 #: src/components/dialogs/nuxs/ActivitySubscriptions.tsx:113
 msgid "A screenshot of a profile page with a bell icon next to the follow button, indicating the new activity notifications feature."
 msgstr "Uma captura de ecrã de uma página de perfil com um ícone de sino ao lado do botão seguir, indicando a nova funcionalidade de notificações de atividade."
 
-#: src/Navigation.tsx:524
+#: src/Navigation.tsx:555
 #: src/screens/Settings/AboutSettings.tsx:75
-#: src/screens/Settings/Settings.tsx:244
-#: src/screens/Settings/Settings.tsx:247
+#: src/screens/Settings/Settings.tsx:260
+#: src/screens/Settings/Settings.tsx:263
 msgid "About"
 msgstr "Sobre"
 
@@ -574,37 +596,37 @@ msgid "Accept Request"
 msgstr "Aceitar Pedido"
 
 #: src/screens/Settings/AccessibilitySettings.tsx:44
-#: src/screens/Settings/Settings.tsx:220
-#: src/screens/Settings/Settings.tsx:223
+#: src/screens/Settings/Settings.tsx:236
+#: src/screens/Settings/Settings.tsx:239
 msgid "Accessibility"
 msgstr "Acessibilidade"
 
-#: src/Navigation.tsx:383
+#: src/Navigation.tsx:414
 msgid "Accessibility Settings"
 msgstr "Definições de acessibilidade"
 
-#: src/Navigation.tsx:399
+#: src/Navigation.tsx:430
 #: src/screens/Login/LoginForm.tsx:194
 #: src/screens/Settings/AccountSettings.tsx:51
-#: src/screens/Settings/Settings.tsx:174
-#: src/screens/Settings/Settings.tsx:177
+#: src/screens/Settings/Settings.tsx:176
+#: src/screens/Settings/Settings.tsx:179
 msgid "Account"
 msgstr "Conta"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:361
 #: src/screens/Messages/components/RequestButtons.tsx:91
-#: src/view/com/profile/ProfileMenu.tsx:161
+#: src/view/com/profile/ProfileMenu.tsx:169
 msgctxt "toast"
 msgid "Account blocked"
 msgstr "Conta bloqueada"
 
-#: src/view/com/profile/ProfileMenu.tsx:174
+#: src/view/com/profile/ProfileMenu.tsx:182
 msgctxt "toast"
 msgid "Account followed"
 msgstr "Conta seguida"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:384
-#: src/view/com/profile/ProfileMenu.tsx:137
+#: src/view/com/profile/ProfileMenu.tsx:145
 msgctxt "toast"
 msgid "Account muted"
 msgstr "Conta silenciada"
@@ -618,34 +640,34 @@ msgstr "Conta silenciada"
 msgid "Account Muted by List"
 msgstr "Conta silenciada pela Lista"
 
-#: src/screens/Settings/Settings.tsx:624
+#: src/screens/Settings/Settings.tsx:640
 msgid "Account options"
 msgstr "Definições da conta"
 
-#: src/screens/Settings/Settings.tsx:660
+#: src/screens/Settings/Settings.tsx:676
 msgid "Account removed from quick access"
 msgstr "Conta removida do acesso rápido"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:132
-#: src/view/com/profile/ProfileMenu.tsx:151
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:136
+#: src/view/com/profile/ProfileMenu.tsx:159
 msgctxt "toast"
 msgid "Account unblocked"
 msgstr "Conta desbloqueada"
 
-#: src/view/com/profile/ProfileMenu.tsx:186
+#: src/view/com/profile/ProfileMenu.tsx:194
 msgctxt "toast"
 msgid "Account unfollowed"
 msgstr "Deixou de seguir conta"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:374
-#: src/view/com/profile/ProfileMenu.tsx:127
+#: src/view/com/profile/ProfileMenu.tsx:135
 msgctxt "toast"
 msgid "Account unmuted"
 msgstr "Removeu silenciamento da conta"
 
 #: src/components/verification/VerifierDialog.tsx:96
-msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
-msgstr "Contas com um selo de verificação azul recortado <0><1/></0> podem verificar outras. Estes verificadores confiáveis são selecionados pelo Bluesky."
+msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Tellus."
+msgstr "Contas com um selo de verificação azul recortado <0><1/></0> podem verificar outras. Estes verificadores confiáveis são selecionados pelo Tellus."
 
 #: src/lib/hooks/useNotificationHandler.ts:182
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:102
@@ -653,7 +675,7 @@ msgstr "Contas com um selo de verificação azul recortado <0><1/></0> podem ver
 msgid "Activity from others"
 msgstr "Atividade de outros"
 
-#: src/Navigation.tsx:492
+#: src/Navigation.tsx:523
 msgid "Activity notifications"
 msgstr "Notificações de atividade"
 
@@ -706,10 +728,10 @@ msgstr "Adicionar texto alternativo"
 msgid "Add alt text (optional)"
 msgstr "Adicionar texto alternativo (opcional)"
 
-#: src/screens/Settings/Settings.tsx:564
-#: src/screens/Settings/Settings.tsx:567
-#: src/view/shell/desktop/LeftNav.tsx:262
-#: src/view/shell/desktop/LeftNav.tsx:266
+#: src/screens/Settings/Settings.tsx:580
+#: src/screens/Settings/Settings.tsx:583
+#: src/view/shell/desktop/LeftNav.tsx:264
+#: src/view/shell/desktop/LeftNav.tsx:268
 msgid "Add another account"
 msgstr "Adicionar outra conta"
 
@@ -786,8 +808,8 @@ msgstr "Adicione o seguinte registo DNS ao seu domínio:"
 msgid "Add this feed to your feeds"
 msgstr "Adicionar este feed aos seus feeds"
 
-#: src/view/com/profile/ProfileMenu.tsx:317
-#: src/view/com/profile/ProfileMenu.tsx:320
+#: src/view/com/profile/ProfileMenu.tsx:372
+#: src/view/com/profile/ProfileMenu.tsx:375
 msgid "Add to lists"
 msgstr "Adicionar a Listas"
 
@@ -796,14 +818,18 @@ msgid "Add to saved posts"
 msgstr "Adicionar a publicações guardadas"
 
 #: src/components/dialogs/StarterPackDialog.tsx:176
-#: src/view/com/profile/ProfileMenu.tsx:308
-#: src/view/com/profile/ProfileMenu.tsx:311
+#: src/view/com/profile/ProfileMenu.tsx:363
+#: src/view/com/profile/ProfileMenu.tsx:366
 msgid "Add to starter packs"
 msgstr "Adicionar a pacotes de iniciante"
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:156
 msgid "Add user to list"
 msgstr "Adicionar utilizador à lista"
+
+#: src/screens/Messages/Settings.tsx:176
+msgid "Add your Tellus Chat ID so others can message you directly."
+msgstr ""
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:109
 #: src/view/com/modals/UserAddRemoveLists.tsx:162
@@ -834,8 +860,8 @@ msgid "Adult Content"
 msgstr "Conteúdo adulto"
 
 #: src/screens/Moderation/index.tsx:423
-msgid "Adult content can only be enabled via the Web at <0>bsky.app</0>."
-msgstr "O conteúdo adulto só pode ser permitido através da Web em <0>bsky.app</0>."
+msgid "Adult content can only be enabled via the Web at <0>tellus.app</0>."
+msgstr "O conteúdo adulto só pode ser permitido através da Web em <0>tellus.app</0>."
 
 #: src/components/moderation/LabelPreference.tsx:247
 msgid "Adult content is disabled."
@@ -849,6 +875,10 @@ msgstr "Rótulos de Conteúdo Adulto"
 #: src/screens/Moderation/index.tsx:473
 msgid "Advanced"
 msgstr "Avançado"
+
+#: src/screens/Saved/components.tsx:134
+msgid "Affichage"
+msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceBadge.tsx:42
 msgid "Age Assurance"
@@ -866,6 +896,10 @@ msgstr "O inquérito de verificação de idade foi enviado"
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:193
 msgid "Age assurance only takes a few minutes"
 msgstr "A verificação de idade demora apenas alguns minutos"
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:44
+msgid "Ajoutez une URL d'image pour personnaliser la collection."
+msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:223
 msgid "alice@example.com"
@@ -902,8 +936,8 @@ msgstr "Permitir acesso às suas mensagens diretas"
 msgid "Allow location access"
 msgstr "Permitir acesso à localização"
 
-#: src/screens/Messages/Settings.tsx:75
-#: src/screens/Messages/Settings.tsx:78
+#: src/screens/Messages/Settings.tsx:247
+#: src/screens/Messages/Settings.tsx:250
 msgid "Allow new messages from"
 msgstr "Permitir novas mensagens de"
 
@@ -1018,13 +1052,13 @@ msgid "An error occurred while uploading the video."
 msgstr "Ocorreu um erro enquanto transferia o vídeo."
 
 #: src/screens/Onboarding/StepFinished.tsx:359
-msgid "An illustration of several Bluesky posts alongside repost, like, and comment icons"
-msgstr "Uma ilustração de várias publicações do Bluesky ao lado dos ícones de republicar, gostar e comentar"
+msgid "An illustration of several Tellus posts alongside repost, like, and comment icons"
+msgstr "Uma ilustração de várias publicações do Tellus ao lado dos ícones de republicar, gostar e comentar"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:84
 #: src/components/verification/VerifierDialog.tsx:86
-msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
-msgstr "Uma imagem a mostrar que o Bluesky seleciona verificadores confiáveis e, por sua vez, verificadores confiáveis verificam contas de utilizadores individuais."
+msgid "An illustration showing that Tellus selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
+msgstr "Uma imagem a mostrar que o Tellus seleciona verificadores confiáveis e, por sua vez, verificadores confiáveis verificam contas de utilizadores individuais."
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:28
 #: src/lib/moderation/useReportOptions.ts:28
@@ -1049,8 +1083,8 @@ msgid "An issue occurred, please try again."
 msgstr "Ocorreu um problema, tente novamente."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:118
-msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
-msgstr "Uma réplica de um iPhone a mostrar a aplicação Bluesky aberta no perfil de um utilizador verificado com um selo de verificação azul ao lado do seu nome de exibição."
+msgid "An mockup of a iPhone showing the Tellus app open to the profile of a verified user with a blue checkmark next to their display name."
+msgstr "Uma réplica de um iPhone a mostrar a aplicação Tellus aberta no perfil de um utilizador verificado com um selo de verificação azul ao lado do seu nome de exibição."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:194
 msgid "an unknown error occurred"
@@ -1080,8 +1114,17 @@ msgid "Announcement"
 msgstr "Comunicado"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:37
-msgid "Announcing verification on Bluesky"
-msgstr "Anunciando verificação no Bluesky"
+msgid "Announcing verification on Tellus"
+msgstr "Anunciando verificação no Tellus"
+
+#: src/screens/MessagesMatrix.web.tsx:1163
+#: src/screens/MessagesMatrix.web.tsx:1169
+#: src/screens/MessagesMatrix.web.tsx:1225
+#: src/screens/MessagesMatrix.web.tsx:1231
+#: src/screens/Saved/CollectionDetailPage.tsx:56
+#: src/screens/Saved/SavedCollectionsPage.tsx:45
+msgid "Annuler"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:33
 #: src/lib/moderation/useReportOptions.ts:33
@@ -1098,7 +1141,7 @@ msgstr "Qualquer um pode interagir"
 msgid "Anyone who follows me"
 msgstr "Qualquer um que me segue"
 
-#: src/Navigation.tsx:532
+#: src/Navigation.tsx:563
 #: src/screens/Settings/AppIconSettings/index.tsx:67
 #: src/screens/Settings/AppIconSettings/SettingsListItem.tsx:18
 #: src/screens/Settings/AppIconSettings/SettingsListItem.tsx:23
@@ -1135,7 +1178,7 @@ msgstr "A palavra-passe da aplicação deve conter pelo menos 4 caracteres"
 msgid "App passwords"
 msgstr "Palavras-passe da Aplicação"
 
-#: src/Navigation.tsx:351
+#: src/Navigation.tsx:357
 #: src/screens/Settings/AppPasswords.tsx:51
 msgid "App Passwords"
 msgstr "Palavras-passe da Aplicação"
@@ -1171,10 +1214,10 @@ msgstr "Recorrer da Suspensão"
 msgid "Appeal this decision"
 msgstr "Recorrer desta decisão"
 
-#: src/Navigation.tsx:391
+#: src/Navigation.tsx:422
 #: src/screens/Settings/AppearanceSettings.tsx:86
-#: src/screens/Settings/Settings.tsx:212
-#: src/screens/Settings/Settings.tsx:215
+#: src/screens/Settings/Settings.tsx:228
+#: src/screens/Settings/Settings.tsx:231
 msgid "Appearance"
 msgstr "Aparência"
 
@@ -1183,8 +1226,8 @@ msgstr "Aparência"
 msgid "Apply default recommended feeds"
 msgstr "Utilizar feeds recomendados"
 
-#: src/screens/Settings/Settings.tsx:498
-#: src/screens/Settings/Settings.tsx:500
+#: src/screens/Settings/Settings.tsx:514
+#: src/screens/Settings/Settings.tsx:516
 msgid "Apply Pull Request"
 msgstr "Aplicar Pull Request"
 
@@ -1254,6 +1297,10 @@ msgstr "Nudez artística ou não erótica."
 msgid "As a small team, we cannot justify building the expensive infrastructure this requirement demands while legal challenges to this law are pending."
 msgstr "Sendo uma pequena equipa, não podemos justificar o desenvolvimento da dispendiosa infraestrutura que este requisito exige, enquanto objecções legais a esta lei estão pendentes."
 
+#: src/Navigation.tsx:378
+msgid "Asset"
+msgstr ""
+
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:497
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:499
 msgid "Assign topic for algo"
@@ -1263,10 +1310,43 @@ msgstr "Atribuir tópico para o algoritmo"
 msgid "At least 8 characters"
 msgstr "No mínimo 8 caracteres"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:42
+msgid "Aucun élément enregistré"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1554
+msgid "Aucun membre pour le moment."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:444
+#: src/screens/MessagesMatrix.web.tsx:1656
+msgid "Aucun message"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:58
+msgid "Aucun résultat"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:34
+msgid "Aucune collection pour l'instant"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:36
+msgid "Aucune collection trouvée"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1277
+msgid "Aucune discussion"
+msgstr ""
+
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:58
 msgctxt "Name of app icon variant"
 msgid "Aurora"
 msgstr "Aurora"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:39
+msgid "Auteur"
+msgstr ""
 
 #: src/screens/Settings/ContentAndMediaSettings.tsx:116
 #: src/screens/Settings/ContentAndMediaSettings.tsx:122
@@ -1326,7 +1406,7 @@ msgid "Before you can get notifications for {name}'s posts, you must first verif
 msgstr "Antes de poder receber notificações de publicações de {name}, primeiro tem de confirmar o seu e-mail."
 
 #: src/components/dms/dialogs/NewChatDialog.tsx:54
-#: src/components/dms/MessageProfileButton.tsx:58
+#: src/components/dms/MessageProfileButton.tsx:104
 #: src/screens/Messages/ChatList.tsx:369
 #: src/screens/Messages/Conversation.tsx:228
 msgid "Before you can message another user, you must first verify your email."
@@ -1350,8 +1430,8 @@ msgid "Birthday"
 msgstr "Aniversário"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:760
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:328
-#: src/view/com/profile/ProfileMenu.tsx:490
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:386
+#: src/view/com/profile/ProfileMenu.tsx:554
 msgid "Block"
 msgstr "Bloquear"
 
@@ -1361,13 +1441,13 @@ msgstr "Bloquear"
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:647
 #: src/screens/Messages/components/RequestButtons.tsx:144
 #: src/screens/Messages/components/RequestButtons.tsx:146
-#: src/view/com/profile/ProfileMenu.tsx:396
-#: src/view/com/profile/ProfileMenu.tsx:403
+#: src/view/com/profile/ProfileMenu.tsx:451
+#: src/view/com/profile/ProfileMenu.tsx:458
 msgid "Block account"
 msgstr "Bloquear conta"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:755
-#: src/view/com/profile/ProfileMenu.tsx:473
+#: src/view/com/profile/ProfileMenu.tsx:537
 msgid "Block Account?"
 msgstr "Bloquear conta?"
 
@@ -1412,13 +1492,13 @@ msgstr "Bloqueado"
 msgid "Blocked accounts"
 msgstr "Contas bloqueadas"
 
-#: src/Navigation.tsx:192
+#: src/Navigation.tsx:198
 #: src/view/screens/ModerationBlockedAccounts.tsx:104
 msgid "Blocked Accounts"
 msgstr "Contas Bloqueadas"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:757
-#: src/view/com/profile/ProfileMenu.tsx:485
+#: src/view/com/profile/ProfileMenu.tsx:549
 msgid "Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr "Contas bloqueadas não conseguem responder aos seus fios, mencionar ou interagir de qualquer outra forma consigo."
 
@@ -1434,72 +1514,13 @@ msgstr "Bloquear não impede o rotulador de aplicar rótulos na sua conta."
 msgid "Blocking is public. Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr "A lista de contas que bloqueou é pública. Contas bloqueadas não podem responder aos seus fios, mencionar ou interagir de qualquer outra forma consigo."
 
-#: src/view/com/profile/ProfileMenu.tsx:482
+#: src/view/com/profile/ProfileMenu.tsx:546
 msgid "Blocking will not prevent labels from being applied on your account, but it will stop this account from replying in your threads or interacting with you."
 msgstr "Bloquear não impedirá a aplicação de rótulos na sua conta, mas impedirá esta conta de responder aos seus fios ou de interagir consigo."
 
 #: src/view/com/auth/SplashScreen.web.tsx:175
 msgid "Blog"
 msgstr "Blog"
-
-#: src/view/com/auth/server-input/index.tsx:136
-#: src/view/com/auth/server-input/index.tsx:137
-msgid "Bluesky"
-msgstr "Bluesky"
-
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:690
-msgid "Bluesky cannot confirm the authenticity of the claimed date."
-msgstr "O Bluesky não pode confirmar a veracidade da data aplicada."
-
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:175
-msgctxt "Name of app icon variant"
-msgid "Bluesky Classic™"
-msgstr "Bluesky Classic™"
-
-#: src/view/com/auth/server-input/index.tsx:212
-msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr "O Bluesky é uma rede aberta em que pode escolher o seu fornecedor de hospedagem. Se for um programador, pode hospedar o seu próprio servidor."
-
-#: src/view/com/auth/server-input/index.tsx:149
-msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-msgstr "Bluesky é uma rede aberta em que pode escolher o seu provedor de hospedagem. Se é novo aqui, recomendamos que continue com a configuração padrão do Bluesky Social."
-
-#: src/components/ProgressGuide/List.tsx:53
-#: src/components/ProgressGuide/List.tsx:70
-msgid "Bluesky is better with friends!"
-msgstr "Bluesky é melhor com amigos!"
-
-#: src/screens/Takendown.tsx:217
-msgid "Bluesky Social Terms of Service"
-msgstr "Termos de Serviço de Bluesky Social"
-
-#: src/components/StarterPack/ProfileStarterPacks.tsx:310
-msgid "Bluesky will choose a set of recommended accounts from people in your network."
-msgstr "O Bluesky escolherá um conjunto de contas recomendadas de pessoas na sua rede."
-
-#: src/screens/Settings/components/PwiOptOut.tsx:99
-msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-msgstr "O Bluesky não exibirá o seu perfil e publicações para utilizadores que não tenham sessão iniciada. Outras aplicações talvez não respeitem esta solicitação. Isto não torna a sua conta privada."
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
-msgid "Bluesky will proactively verify notable and authentic accounts."
-msgstr "O Bluesky irá verificar proativamente contas notáveis e autênticas."
-
-#: src/screens/Signup/StepInfo/Policies.tsx:26
-msgid "Bluesky's Community Guidelines"
-msgstr "Diretrizes da Comunidade do Bluesky"
-
-#: src/screens/Signup/StepInfo/Policies.tsx:32
-msgid "Bluesky's Updated Community Guidelines"
-msgstr "Diretrizes da Comunidade do Bluesky Atualizadas"
-
-#: src/screens/Settings/AppIconSettings/index.tsx:99
-msgid "Bluesky+"
-msgstr "Bluesky+"
-
-#: src/screens/Settings/AppIconSettings/index.tsx:102
-msgid "Bluesky+ icons"
-msgstr "Ícones Bluesky+"
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:53
 msgid "Blur images"
@@ -1624,7 +1645,7 @@ msgstr "Câmara"
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:85
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:246
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:252
-#: src/screens/Settings/Settings.tsx:289
+#: src/screens/Settings/Settings.tsx:305
 #: src/screens/Takendown.tsx:99
 #: src/screens/Takendown.tsx:102
 #: src/view/com/composer/Composer.tsx:1005
@@ -1633,7 +1654,7 @@ msgstr "Câmara"
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:52
 #: src/view/com/modals/CreateOrEditList.tsx:333
 #: src/view/com/modals/CropImage.web.tsx:97
-#: src/view/shell/desktop/LeftNav.tsx:213
+#: src/view/shell/desktop/LeftNav.tsx:215
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -1681,6 +1702,14 @@ msgstr "Legendas (.vtt)"
 msgid "Captions & alt text"
 msgstr "Legendas e texto alternativo"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:51
+msgid "Cette action est définitive et ne supprime pas les posts de Tellus."
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:76
+msgid "Cette personne n’est pas encore sur Tellus Chat"
+msgstr ""
+
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
 msgid "Change"
 msgstr "Alterar"
@@ -1724,6 +1753,10 @@ msgstr "Alterar idioma da publicação para {suggestedLanguageName}"
 msgid "Change report reason"
 msgstr "Alterar motivo da denúncia"
 
+#: src/screens/MessagesMatrix.web.tsx:1083
+msgid "Change seulement si tu utilises un autre serveur."
+msgstr ""
+
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:57
 msgid "Change your password"
 msgstr "Alterar a sua palavra-passe"
@@ -1741,11 +1774,16 @@ msgstr "Muda o fornecedor de hospedagem"
 msgid "Changes saved"
 msgstr "Alterações guardadas"
 
+#: src/screens/MessagesMatrix.web.tsx:1630
+#: src/screens/Saved/CollectionDetailPage.tsx:41
+msgid "Chargement"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:963
+msgid "Chargement des messages"
+msgstr ""
+
 #: src/lib/hooks/useNotificationHandler.ts:99
-#: src/Navigation.tsx:549
-#: src/view/shell/bottom-bar/BottomBar.tsx:221
-#: src/view/shell/desktop/LeftNav.tsx:607
-#: src/view/shell/Drawer.tsx:466
 msgid "Chat"
 msgstr "Conversa"
 
@@ -1768,39 +1806,10 @@ msgctxt "toast"
 msgid "Chat muted"
 msgstr "Conversa silenciada"
 
-#: src/Navigation.tsx:559
-#: src/screens/Messages/components/InboxPreview.tsx:22
-msgid "Chat request inbox"
-msgstr "Caixa de pedidos de conversa"
-
-#: src/screens/Messages/components/InboxPreview.tsx:62
-#: src/screens/Messages/Inbox.tsx:56
-#: src/screens/Messages/Inbox.tsx:98
-msgid "Chat requests"
-msgstr "Pedidos de conversa"
-
-#: src/components/dms/ConvoMenu.tsx:76
-#: src/Navigation.tsx:554
-#: src/screens/Messages/ChatList.tsx:81
-#: src/screens/Messages/ChatList.tsx:85
-#: src/screens/Messages/ChatList.tsx:378
-msgid "Chat settings"
-msgstr "Definições da conversa"
-
-#: src/screens/Messages/Settings.tsx:67
-msgid "Chat Settings"
-msgstr "Definições da Conversa"
-
 #: src/components/dms/ConvoMenu.tsx:178
 msgctxt "toast"
 msgid "Chat unmuted"
 msgstr "Removeu o silenciamento da conversa"
-
-#: src/screens/Messages/ChatList.tsx:76
-#: src/screens/Messages/ChatList.tsx:394
-#: src/screens/Messages/ChatList.tsx:418
-msgid "Chats"
-msgstr "Conversas"
 
 #: src/screens/SignupQueued.tsx:78
 #: src/screens/SignupQueued.tsx:82
@@ -1814,6 +1823,10 @@ msgstr "Procure no seu e-mail por um código de registo e insira-o aqui."
 #: src/view/com/modals/DeleteAccount.tsx:213
 msgid "Check your inbox for an email with the confirmation code to enter below:"
 msgstr "Procure na sua caixa de entrada por um e-mail com o código de confirmação para introduzir abaixo:"
+
+#: src/screens/MessagesMatrix.web.tsx:1624
+msgid "Choisis une discussion pour voir le fil."
+msgstr ""
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:399
 msgid "Choose domain verification method"
@@ -1859,11 +1872,11 @@ msgstr "Escolha a sua palavra-passe"
 msgid "Choose your username"
 msgstr "Escolha o seu nome de utilizador"
 
-#: src/screens/Settings/Settings.tsx:490
+#: src/screens/Settings/Settings.tsx:506
 msgid "Clear all storage data"
 msgstr "Limpar todos os dados armazenados"
 
-#: src/screens/Settings/Settings.tsx:492
+#: src/screens/Settings/Settings.tsx:508
 msgid "Clear all storage data (restart after this)"
 msgstr "Limpar todos os dados armazenados (e reiniciar)"
 
@@ -1976,7 +1989,7 @@ msgstr "Fechar parte inferior"
 msgid "Close dialog"
 msgstr "Fechar janela de diálogo"
 
-#: src/view/shell/index.web.tsx:110
+#: src/view/shell/index.web.tsx:122
 msgid "Close drawer menu"
 msgstr "Fechar menu lateral"
 
@@ -2036,6 +2049,14 @@ msgstr "Colapsar lista de utilizadores"
 msgid "Collapses list of users for a given notification"
 msgstr "Colapsa lista de utilizadores para uma notificação"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:53
+msgid "Collection de destination"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:45
+msgid "Collection introuvable"
+msgstr ""
+
 #: src/components/dialogs/Embed.tsx:154
 #: src/screens/Settings/AppearanceSettings.tsx:94
 msgid "Color mode"
@@ -2055,8 +2076,16 @@ msgstr "Comédia"
 msgid "Comics"
 msgstr "Banda Desenhada"
 
+#: src/screens/MessagesMatrix.web.tsx:1657
+msgid "Commence la discussion."
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:35
+msgid "Commencez par enregistrer des posts pour les retrouver ici."
+msgstr ""
+
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:45
-#: src/Navigation.tsx:341
+#: src/Navigation.tsx:347
 #: src/view/screens/CommunityGuidelines.tsx:34
 msgid "Community Guidelines"
 msgstr "Diretrizes da Comunidade"
@@ -2070,7 +2099,7 @@ msgstr "Complete e comece a utilizar a sua conta"
 msgid "Complete the challenge"
 msgstr "Conclua o desafio"
 
-#: src/view/shell/desktop/LeftNav.tsx:572
+#: src/view/shell/desktop/LeftNav.tsx:574
 msgid "Compose new post"
 msgstr "Escrever nova publicação"
 
@@ -2140,6 +2169,10 @@ msgstr "Confirme a sua localização com o GPS. Os seus dados de localização n
 msgid "Confirmation code"
 msgstr "Código de confirmação"
 
+#: src/screens/MessagesMatrix.web.tsx:1059
+msgid "Connecte ton compte Tellus Chat (propulsé par Matrix)."
+msgstr ""
+
 #: src/screens/Login/LoginForm.tsx:337
 msgid "Connecting..."
 msgstr "A conectar..."
@@ -2147,6 +2180,24 @@ msgstr "A conectar..."
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:213
 msgid "Connection issue"
 msgstr "Problema de conexão"
+
+#: src/screens/MessagesMatrix.web.tsx:1107
+msgid "Connexion à Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:964
+msgid "Connexion à Tellus Chat en cours..."
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:26
+msgid "Conservés"
+msgstr ""
+
+#: src/view/shell/desktop/LeftNav.tsx:783
+#: src/view/shell/Drawer.tsx:593
+msgctxt "link to saved collections screen"
+msgid "Conservés"
+msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:132
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:29
@@ -2167,12 +2218,12 @@ msgstr "Contacte-nos"
 msgid "Content & Media"
 msgstr "Conteúdo e Multimédia"
 
-#: src/screens/Settings/Settings.tsx:204
-#: src/screens/Settings/Settings.tsx:207
+#: src/screens/Settings/Settings.tsx:220
+#: src/screens/Settings/Settings.tsx:223
 msgid "Content and media"
 msgstr "Conteúdo e multimédia"
 
-#: src/Navigation.tsx:508
+#: src/Navigation.tsx:539
 msgid "Content and Media"
 msgstr "Conteúdo e Multimédia"
 
@@ -2242,6 +2293,7 @@ msgid "Continue to next step"
 msgstr "Continuar para o próximo passo"
 
 #: src/screens/Messages/Conversation.tsx:57
+#: src/screens/MessagesMatrix.web.tsx:419
 msgid "Conversation"
 msgstr "Conversa"
 
@@ -2282,6 +2334,11 @@ msgstr "Copiado para a área de transferência"
 msgid "Copied!"
 msgstr "Copiado!"
 
+#: src/screens/Messages/Invite.tsx:89
+#: src/screens/Messages/Invite.tsx:95
+msgid "Copier le lien d’invitation"
+msgstr ""
+
 #: src/screens/Settings/AboutSettings.tsx:127
 msgid "Copies build version to clipboard"
 msgstr "Copia a versão de compilação para a área de transferência"
@@ -2294,8 +2351,8 @@ msgstr "Copiar"
 msgid "Copy App Password"
 msgstr "Copiar Palavra-passe da Aplicação"
 
-#: src/view/com/profile/ProfileMenu.tsx:433
-#: src/view/com/profile/ProfileMenu.tsx:436
+#: src/view/com/profile/ProfileMenu.tsx:488
+#: src/view/com/profile/ProfileMenu.tsx:491
 msgid "Copy at:// URI"
 msgstr "Copiar at:// URI"
 
@@ -2310,8 +2367,8 @@ msgid "Copy code"
 msgstr "Copiar código"
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:501
-#: src/view/com/profile/ProfileMenu.tsx:442
-#: src/view/com/profile/ProfileMenu.tsx:445
+#: src/view/com/profile/ProfileMenu.tsx:497
+#: src/view/com/profile/ProfileMenu.tsx:500
 msgid "Copy DID"
 msgstr "Copiar DID"
 
@@ -2339,8 +2396,8 @@ msgstr "Copiar Link para a Lista"
 msgid "Copy link to post"
 msgstr "Copiar Link para a Publicação"
 
-#: src/view/com/profile/ProfileMenu.tsx:246
-#: src/view/com/profile/ProfileMenu.tsx:257
+#: src/view/com/profile/ProfileMenu.tsx:284
+#: src/view/com/profile/ProfileMenu.tsx:295
 msgid "Copy link to profile"
 msgstr "Copiar link para o perfil"
 
@@ -2373,7 +2430,7 @@ msgstr "Copiar valor de registo TXT"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:40
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:107
-#: src/Navigation.tsx:346
+#: src/Navigation.tsx:352
 #: src/view/screens/CopyrightPolicy.tsx:31
 msgid "Copyright Policy"
 msgstr "Política de Direitos de Autor"
@@ -2433,7 +2490,7 @@ msgstr "Criar um código QR para um pacote de iniciante"
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:178
 #: src/components/StarterPack/ProfileStarterPacks.tsx:287
-#: src/Navigation.tsx:589
+#: src/Navigation.tsx:630
 msgid "Create a starter pack"
 msgstr "Criar um pacote de iniciante"
 
@@ -2502,6 +2559,18 @@ msgstr "Criado {0}"
 msgid "Creator has been blocked"
 msgstr "O criador foi bloqueado"
 
+#: src/screens/MessagesMatrix.web.tsx:1173
+#: src/screens/MessagesMatrix.web.tsx:1180
+#: src/screens/MessagesMatrix.web.tsx:1235
+#: src/screens/MessagesMatrix.web.tsx:1242
+#: src/screens/Saved/SavedCollectionsPage.tsx:47
+msgid "Créer"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:38
+msgid "Créer une collection"
+msgstr ""
+
 #: src/screens/Onboarding/index.tsx:42
 #: src/screens/Onboarding/state.ts:107
 msgid "Culture"
@@ -2521,8 +2590,8 @@ msgid "Customize who can interact with this post."
 msgstr "Personalize quem pode interagir com esta publicação."
 
 #: src/screens/Onboarding/Layout.tsx:61
-msgid "Customizes your Bluesky experience"
-msgstr "Personaliza a sua experiência Bluesky"
+msgid "Customizes your Tellus experience"
+msgstr "Personaliza a sua experiência Tellus"
 
 #: src/components/dialogs/Embed.tsx:167
 #: src/components/dialogs/Embed.tsx:169
@@ -2548,13 +2617,17 @@ msgstr "Tema escuro"
 msgid "Date of birth"
 msgstr "Data de nascimento"
 
+#: src/screens/MessagesMatrix.web.tsx:1214
+msgid "De quoi parle ce groupe ?"
+msgstr ""
+
 #: src/screens/Settings/AccountSettings.tsx:161
 #: src/screens/Settings/AccountSettings.tsx:166
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:73
 msgid "Deactivate account"
 msgstr "Desativar conta"
 
-#: src/screens/Settings/Settings.tsx:455
+#: src/screens/Settings/Settings.tsx:471
 msgid "Debug Moderation"
 msgstr "Debug de Moderação"
 
@@ -2573,6 +2646,8 @@ msgstr "Ícones padrões"
 #: src/components/dms/MessageContextMenu.tsx:185
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:704
 #: src/screens/Messages/components/ChatStatusInfo.tsx:55
+#: src/screens/Messages/Settings.tsx:222
+#: src/screens/Messages/Settings.tsx:229
 #: src/screens/Settings/AppPasswords.tsx:212
 #: src/screens/StarterPack/StarterPackScreen.tsx:599
 #: src/screens/StarterPack/StarterPackScreen.tsx:688
@@ -2603,7 +2678,7 @@ msgstr "Eliminar palavra-passe da aplicação?"
 msgid "Delete chat"
 msgstr "Eliminar conversa"
 
-#: src/screens/Settings/Settings.tsx:462
+#: src/screens/Settings/Settings.tsx:478
 msgid "Delete chat declaration record"
 msgstr "Eliminar registo da conversa"
 
@@ -2677,11 +2752,23 @@ msgstr "Conta Eliminada"
 msgid "Deleted list"
 msgstr "Lista eliminada"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:54
+msgid "Déplacer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:52
+msgid "Déplacer vers"
+msgstr ""
+
 #: src/screens/Profile/Header/EditProfileDialog.tsx:365
 #: src/view/com/modals/CreateOrEditList.tsx:278
 #: src/view/com/modals/CreateOrEditList.tsx:299
 msgid "Description"
 msgstr "Descrição"
+
+#: src/screens/MessagesMatrix.web.tsx:1210
+msgid "Description (optionnelle)"
+msgstr ""
 
 #: src/view/com/composer/GifAltText.tsx:150
 #: src/view/com/composer/photos/ImageAltTextDialog.tsx:113
@@ -2707,8 +2794,8 @@ msgctxt "toast"
 msgid "Developer mode enabled"
 msgstr "Modo programador habilitado"
 
-#: src/screens/Settings/Settings.tsx:271
-#: src/screens/Settings/Settings.tsx:274
+#: src/screens/Settings/Settings.tsx:287
+#: src/screens/Settings/Settings.tsx:290
 msgid "Developer options"
 msgstr "Definições de programador"
 
@@ -2745,8 +2832,8 @@ msgstr "Desativar legendas"
 #: src/lib/moderation/useLabelBehaviorDescription.ts:32
 #: src/lib/moderation/useLabelBehaviorDescription.ts:42
 #: src/lib/moderation/useLabelBehaviorDescription.ts:68
-#: src/screens/Messages/Settings.tsx:144
-#: src/screens/Messages/Settings.tsx:147
+#: src/screens/Messages/Settings.tsx:316
+#: src/screens/Messages/Settings.tsx:319
 #: src/screens/Moderation/index.tsx:413
 msgid "Disabled"
 msgstr "Desativado"
@@ -2899,14 +2986,14 @@ msgstr "Toque duplo para fechar janela de diálogo"
 msgid "Double tap to like"
 msgstr "Toque duplo para dar um gosto"
 
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
-msgid "Download Bluesky"
-msgstr "Transferir Bluesky"
-
 #: src/screens/Settings/components/ExportCarDialog.tsx:79
 #: src/screens/Settings/components/ExportCarDialog.tsx:84
 msgid "Download CAR file"
 msgstr "Transferir ficheiro CAR"
+
+#: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
+msgid "Download Tellus"
+msgstr "Transferir Tellus"
 
 #: src/view/com/composer/text-input/TextInput.web.tsx:361
 msgid "Drop to add images"
@@ -2952,6 +3039,14 @@ msgstr "p. e.x. Utilizadores que respondem com anúncios repetidamente."
 msgid "Each code works once. You'll receive more invite codes periodically."
 msgstr "Cada código funciona uma única vez. Receberá mais convites periodicamente."
 
+#: src/screens/MessagesMatrix.web.tsx:349
+msgid "Échec de la connexion Tellus Chat."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1759
+msgid "Écrire un message"
+msgstr ""
+
 #: src/screens/Settings/AccountSettings.tsx:145
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:249
 #: src/screens/StarterPack/StarterPackScreen.tsx:588
@@ -2995,8 +3090,8 @@ msgstr "Editar interesses"
 msgid "Edit list details"
 msgstr "Editar detalhes da lista"
 
-#: src/view/com/profile/ProfileMenu.tsx:329
-#: src/view/com/profile/ProfileMenu.tsx:335
+#: src/view/com/profile/ProfileMenu.tsx:384
+#: src/view/com/profile/ProfileMenu.tsx:390
 msgid "Edit live status"
 msgstr "Editar estado \"em direto\""
 
@@ -3004,7 +3099,7 @@ msgstr "Editar estado \"em direto\""
 msgid "Edit Moderation List"
 msgstr "Editar lista de Moderação"
 
-#: src/Navigation.tsx:356
+#: src/Navigation.tsx:362
 #: src/view/screens/Feeds.tsx:518
 msgid "Edit My Feeds"
 msgstr "Editar os Meus Feeds"
@@ -3025,12 +3120,12 @@ msgstr "Editar definições de interação da publicação"
 #: src/screens/Profile/Header/EditProfileDialog.tsx:270
 #: src/screens/Profile/Header/EditProfileDialog.tsx:276
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:183
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:190
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:205
 msgid "Edit profile"
 msgstr "Editar perfil"
 
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:186
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:193
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:208
 msgid "Edit Profile"
 msgstr "Editar Perfil"
 
@@ -3046,7 +3141,7 @@ msgstr "Editar Lista de Utilizadores"
 msgid "Edit who can reply"
 msgstr "Editar quem pode responder"
 
-#: src/Navigation.tsx:594
+#: src/Navigation.tsx:635
 msgid "Edit your starter pack"
 msgstr "Editar o seu pacote de iniciante"
 
@@ -3112,6 +3207,10 @@ msgstr "Incorpore esta publicação no seu site. Simplesmente copie o seguinte e
 msgid "Embedded video player"
 msgstr "Reprodutor de vídeos incorporado"
 
+#: src/screens/MessagesMatrix.web.tsx:1265
+msgid "En attente"
+msgstr ""
+
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:104
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:111
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
@@ -3166,8 +3265,8 @@ msgstr "Ativar assuntos do momento"
 msgid "Enable trending videos in your Discover feed"
 msgstr "Permitir vídeos do momento no seu feed Descobrir"
 
-#: src/screens/Messages/Settings.tsx:135
-#: src/screens/Messages/Settings.tsx:138
+#: src/screens/Messages/Settings.tsx:307
+#: src/screens/Messages/Settings.tsx:310
 #: src/screens/Moderation/index.tsx:411
 msgid "Enabled"
 msgstr "Permitido"
@@ -3176,6 +3275,15 @@ msgstr "Permitido"
 msgid "End of feed"
 msgstr "Fim do feed"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:57
+#: src/screens/Saved/SavedCollectionsPage.tsx:46
+msgid "Enregistrer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:43
+msgid "Enregistrez des posts pour commencer votre collection."
+msgstr ""
+
 #: src/view/com/composer/videos/SubtitleDialog.tsx:158
 msgid "Ensure you have selected a language for each subtitle file."
 msgstr "Certifique-se de que selecionou um idioma para cada ficheiro de legendas."
@@ -3183,6 +3291,10 @@ msgstr "Certifique-se de que selecionou um idioma para cada ficheiro de legendas
 #: src/screens/Login/SetNewPasswordForm.tsx:147
 msgid "Enter a password"
 msgstr "Insira uma palavra-passe"
+
+#: src/screens/Messages/Settings.tsx:116
+msgid "Enter a valid Matrix ID (example: @alice:matrix.org)."
+msgstr ""
 
 #: src/components/dialogs/MutedWords.tsx:127
 #: src/components/dialogs/MutedWords.tsx:128
@@ -3224,6 +3336,10 @@ msgstr "Insira o seu e-mail"
 msgid "Enter your password"
 msgstr "Insira a sua palavra-passe"
 
+#: src/screens/Messages/Settings.tsx:115
+msgid "Enter your Tellus Chat ID."
+msgstr ""
+
 #: src/screens/Login/index.tsx:123
 msgid "Enter your username and password"
 msgstr "Insira o seu nome de utilizador e palavra-passe"
@@ -3235,6 +3351,11 @@ msgstr "Entra em ecrã cheio"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:236
 msgid "Entertainment"
 msgstr "Entretenimento"
+
+#: src/screens/MessagesMatrix.web.tsx:1779
+#: src/screens/MessagesMatrix.web.tsx:1786
+msgid "Envoyer"
+msgstr ""
 
 #: src/view/com/composer/Composer.tsx:1843
 #: src/view/com/util/error/ErrorScreen.tsx:42
@@ -3269,6 +3390,11 @@ msgstr "Erro:"
 msgid "Error: {error}"
 msgstr "Erro: {error}"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:59
+#: src/screens/Saved/SavedCollectionsPage.tsx:37
+msgid "Essayez un autre terme de recherche."
+msgstr ""
+
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:398
 msgid "Everybody"
 msgstr "Todos"
@@ -3281,8 +3407,8 @@ msgstr "Todos podem responder"
 msgid "Everybody can reply to this post."
 msgstr "Todos podem responder a esta publicação."
 
-#: src/screens/Messages/Settings.tsx:88
-#: src/screens/Messages/Settings.tsx:91
+#: src/screens/Messages/Settings.tsx:260
+#: src/screens/Messages/Settings.tsx:263
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:164
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:174
 msgid "Everyone"
@@ -3381,10 +3507,10 @@ msgstr "Conteúdo multimédia explícito ou perturbador."
 msgid "Explicit sexual images."
 msgstr "Imagens sexuais explícitas."
 
-#: src/Navigation.tsx:759
+#: src/Navigation.tsx:817
 #: src/screens/Search/Shell.tsx:307
-#: src/view/shell/desktop/LeftNav.tsx:689
-#: src/view/shell/Drawer.tsx:414
+#: src/view/shell/desktop/LeftNav.tsx:690
+#: src/view/shell/Drawer.tsx:435
 msgid "Explore"
 msgstr "Explorar"
 
@@ -3392,6 +3518,10 @@ msgstr "Explorar"
 #: src/components/WelcomeModal.tsx:177
 msgid "Explore the app"
 msgstr "Explorar a aplicação"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:44
+msgid "Explorer"
+msgstr ""
 
 #: src/screens/Settings/AccountSettings.tsx:152
 #: src/screens/Settings/AccountSettings.tsx:156
@@ -3417,7 +3547,7 @@ msgstr "Conteúdo Multimédia Externo"
 msgid "External media may allow websites to collect information about you and your device. No information is sent or requested until you press the \"play\" button."
 msgstr "O conteúdo multimédia externo pode permitir que sites recolham informações sobre si ou o seu dispositivo. Nenhuma informação é enviada ou solicitada até pressionar o botão \"Reproduzir\"."
 
-#: src/Navigation.tsx:375
+#: src/Navigation.tsx:406
 #: src/screens/Settings/ExternalMediaPreferences.tsx:34
 msgid "External Media Preferences"
 msgstr "Preferências de Conteúdo Multimédia Externo"
@@ -3443,10 +3573,6 @@ msgstr "Falha ao tentar alterar nome de utilizador. Tente novamente."
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:173
 msgid "Failed to create app password. Please try again."
 msgstr "Falha ao criar uma palavra-passe da aplicação. Tente novamente."
-
-#: src/components/dms/MessageProfileButton.tsx:36
-msgid "Failed to create conversation"
-msgstr "Falha ao criar conversa"
 
 #: src/screens/StarterPack/Wizard/index.tsx:262
 #: src/screens/StarterPack/Wizard/index.tsx:270
@@ -3602,7 +3728,7 @@ msgstr "Falhou ao atualizar feeds"
 msgid "Failed to update notification declaration"
 msgstr "Falha ao atualizar declaração de notificação"
 
-#: src/screens/Messages/Settings.tsx:39
+#: src/screens/Messages/Settings.tsx:57
 msgid "Failed to update settings"
 msgstr "Falhou ao atualizar definições"
 
@@ -3621,7 +3747,7 @@ msgstr "Falha ao verificar o e-mail. Por favor, tente novamente."
 msgid "Failed to verify handle. Please try again."
 msgstr "Falhou ao tentar alterar o nome de utilizador. Por favor, tente novamente."
 
-#: src/Navigation.tsx:291
+#: src/Navigation.tsx:297
 msgid "Feed"
 msgstr "Feed"
 
@@ -3650,9 +3776,9 @@ msgstr "Alternar feed"
 msgid "Feed unavailable"
 msgstr "Feed indisponível"
 
-#: src/view/shell/desktop/RightNav.tsx:106
-#: src/view/shell/desktop/RightNav.tsx:107
-#: src/view/shell/Drawer.tsx:368
+#: src/view/shell/desktop/RightNav.tsx:94
+#: src/view/shell/desktop/RightNav.tsx:95
+#: src/view/shell/Drawer.tsx:389
 msgid "Feedback"
 msgstr "Feedback"
 
@@ -3662,14 +3788,14 @@ msgctxt "toast"
 msgid "Feedback sent to feed operator"
 msgstr "Feedback enviado ao operador do feed"
 
-#: src/Navigation.tsx:574
+#: src/Navigation.tsx:610
 #: src/screens/Search/SearchResults.tsx:73
 #: src/screens/StarterPack/StarterPackScreen.tsx:190
 #: src/view/screens/Feeds.tsx:511
 #: src/view/screens/Profile.tsx:230
 #: src/view/screens/SavedFeeds.tsx:104
-#: src/view/shell/desktop/LeftNav.tsx:727
-#: src/view/shell/Drawer.tsx:530
+#: src/view/shell/desktop/LeftNav.tsx:728
+#: src/view/shell/Drawer.tsx:551
 msgid "Feeds"
 msgstr "Feeds"
 
@@ -3737,8 +3863,8 @@ msgid "Find people to follow"
 msgstr "Encontrar pessoas para seguir"
 
 #: src/screens/Search/Shell.tsx:476
-msgid "Find posts, users, and feeds on Bluesky"
-msgstr "Procure publicações, utilizadores, e feeds no Bluesky"
+msgid "Find posts, users, and feeds on Tellus"
+msgstr "Procure publicações, utilizadores, e feeds no Tellus"
 
 #: src/screens/Onboarding/StepFinished.tsx:345
 msgid "Find your people"
@@ -3776,7 +3902,7 @@ msgstr "Flexível"
 #: src/components/ProfileHoverCard/index.web.tsx:496
 #: src/components/ProfileHoverCard/index.web.tsx:507
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:131
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:252
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:282
 #: src/screens/VideoFeed/index.tsx:854
 msgid "Follow"
 msgstr "Seguir"
@@ -3787,7 +3913,7 @@ msgid "Follow"
 msgstr "Seguir"
 
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:113
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:237
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:267
 msgid "Follow {0}"
 msgstr "Seguir {0}"
 
@@ -3804,8 +3930,8 @@ msgstr "Siga 10 contas"
 msgid "Follow 7 accounts"
 msgstr "Siga 7 contas"
 
-#: src/view/com/profile/ProfileMenu.tsx:287
-#: src/view/com/profile/ProfileMenu.tsx:298
+#: src/view/com/profile/ProfileMenu.tsx:342
+#: src/view/com/profile/ProfileMenu.tsx:353
 msgid "Follow account"
 msgstr "Seguir conta"
 
@@ -3822,7 +3948,7 @@ msgstr "Seguir todas as contas"
 #. User is not following this account, click to follow back
 #: src/components/ProfileCard.tsx:518
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:129
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:250
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:280
 msgid "Follow back"
 msgstr "Seguir de volta"
 
@@ -3851,7 +3977,7 @@ msgstr "Seguido por <0>{0}</0> e <1>{1}</1>"
 msgid "Followed by <0>{0}</0>, <1>{1}</1>, and {2, plural, one {# other} other {# others}}"
 msgstr "Seguido por <0>{0}</0>, <1>{1}</1> e {2, plural, one {# outro} other {# outros}}"
 
-#: src/Navigation.tsx:245
+#: src/Navigation.tsx:251
 msgid "Followers of @{0} that you know"
 msgstr "Seguidores de @{0} que conhece"
 
@@ -3865,7 +3991,7 @@ msgstr "Seguidores que conhece"
 #: src/components/ProfileHoverCard/index.web.tsx:495
 #: src/components/ProfileHoverCard/index.web.tsx:506
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:134
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:248
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:278
 #: src/screens/VideoFeed/index.tsx:852
 msgid "Following"
 msgstr "A seguir"
@@ -3877,7 +4003,7 @@ msgid "Following"
 msgstr "A seguir"
 
 #: src/components/ProfileCard.tsx:474
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:92
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:96
 msgid "Following {0}"
 msgstr "A seguir {0}"
 
@@ -3890,7 +4016,7 @@ msgstr "A seguir {handle}"
 msgid "Following feed preferences"
 msgstr "Preferências do feed A seguir"
 
-#: src/Navigation.tsx:362
+#: src/Navigation.tsx:393
 #: src/screens/Settings/FollowingFeedPreferences.tsx:56
 msgid "Following Feed Preferences"
 msgstr "Preferências do feed A seguir"
@@ -3917,8 +4043,8 @@ msgid "Food"
 msgstr "Comida"
 
 #: src/components/BlockedGeoOverlay.tsx:56
-msgid "For now, we have made the difficult decision to block access to Bluesky in the state of Mississippi."
-msgstr "Por agora, tomámos a difícil decisão de bloquear o acesso ao Bluesky no estado do Mississippi."
+msgid "For now, we have made the difficult decision to block access to Tellus in the state of Mississippi."
+msgstr "Por agora, tomámos a difícil decisão de bloquear o acesso ao Tellus no estado do Mississippi."
 
 #: src/view/com/modals/DeleteAccount.tsx:125
 msgid "For security reasons, we'll need to send a confirmation code to your email address."
@@ -3984,7 +4110,7 @@ msgstr "De <0/>"
 msgid "Generate a starter pack"
 msgstr "Gerar um pacote de iniciante"
 
-#: src/view/shell/Drawer.tsx:372
+#: src/view/shell/Drawer.tsx:393
 msgid "Get help"
 msgstr "Obter ajuda"
 
@@ -4116,8 +4242,8 @@ msgstr "Ir para o início"
 msgid "Go Home"
 msgstr "Ir para o Início"
 
-#: src/view/com/profile/ProfileMenu.tsx:330
-#: src/view/com/profile/ProfileMenu.tsx:337
+#: src/view/com/profile/ProfileMenu.tsx:385
+#: src/view/com/profile/ProfileMenu.tsx:392
 msgid "Go live"
 msgstr "Entrar em direto"
 
@@ -4152,8 +4278,8 @@ msgid "Go to next"
 msgstr "Ir para o próximo"
 
 #: src/components/dms/ConvoMenu.tsx:227
-#: src/view/shell/desktop/LeftNav.tsx:317
-#: src/view/shell/desktop/LeftNav.tsx:323
+#: src/view/shell/desktop/LeftNav.tsx:319
+#: src/view/shell/desktop/LeftNav.tsx:325
 msgid "Go to profile"
 msgstr "Ir para o perfil"
 
@@ -4167,6 +4293,14 @@ msgstr "Ir para o perfil do utilizador"
 #: src/view/com/composer/labels/LabelsBtn.tsx:204
 msgid "Graphic Media"
 msgstr "Conteúdo Multimédia Gráfico"
+
+#: src/screens/Saved/components.tsx:141
+msgid "Grille"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:422
+msgid "Groupe"
+msgstr ""
 
 #: src/state/shell/progress-guide.tsx:220
 #: src/state/shell/progress-guide.tsx:230
@@ -4200,7 +4334,7 @@ msgstr "Vibração"
 msgid "Harassment, trolling, or intolerance"
 msgstr "Assédio, \"trolling\" ou intolerância"
 
-#: src/Navigation.tsx:539
+#: src/Navigation.tsx:570
 msgid "Hashtag"
 msgstr "Hashtag"
 
@@ -4217,11 +4351,11 @@ msgstr "Tem um código? <0>Clique aqui.</0>"
 msgid "Having trouble?"
 msgstr "Está com problemas?"
 
-#: src/screens/Settings/Settings.tsx:236
-#: src/screens/Settings/Settings.tsx:240
-#: src/view/shell/desktop/RightNav.tsx:124
-#: src/view/shell/desktop/RightNav.tsx:125
-#: src/view/shell/Drawer.tsx:381
+#: src/screens/Settings/Settings.tsx:252
+#: src/screens/Settings/Settings.tsx:256
+#: src/view/shell/desktop/RightNav.tsx:112
+#: src/view/shell/desktop/RightNav.tsx:113
+#: src/view/shell/Drawer.tsx:402
 msgid "Help"
 msgstr "Ajuda"
 
@@ -4362,11 +4496,11 @@ msgstr "Hmmmm, não foi possível carregar esse serviço de moderação."
 msgid "Hold up! We’re gradually giving access to video, and you’re still waiting in line. Check back soon!"
 msgstr "Aguarde! Estamos a dar acesso a vídeo gradualmente e ainda está em fila de espera. Volte mais tarde!"
 
-#: src/Navigation.tsx:754
-#: src/Navigation.tsx:774
+#: src/Navigation.tsx:812
+#: src/Navigation.tsx:832
 #: src/view/shell/bottom-bar/BottomBar.tsx:178
-#: src/view/shell/desktop/LeftNav.tsx:671
-#: src/view/shell/Drawer.tsx:440
+#: src/view/shell/desktop/LeftNav.tsx:672
+#: src/view/shell/Drawer.tsx:461
 msgid "Home"
 msgstr "Início"
 
@@ -4388,6 +4522,10 @@ msgstr "Popular"
 msgid "How should we open this link?"
 msgstr "Como devemos abrir este link?"
 
+#: src/screens/MessagesMatrix.web.tsx:1071
+msgid "https://matrix.org"
+msgstr ""
+
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:133
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:136
 msgid "I have a code"
@@ -4402,6 +4540,15 @@ msgstr "Tenho o meu próprio domínio"
 #: src/components/dms/ReportConversationPrompt.tsx:21
 msgid "I understand"
 msgstr "Entendo"
+
+#: src/screens/MessagesMatrix.web.tsx:978
+#: src/screens/MessagesMatrix.web.tsx:1149
+msgid "Identifiant Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:797
+msgid "Identifiant Tellus Chat invalide."
+msgstr ""
 
 #: src/view/com/lightbox/Lightbox.web.tsx:187
 msgid "If alt text is long, toggles alt text expanded state"
@@ -4482,6 +4629,42 @@ msgstr "Identidade falsa ou falsas afirmações sobre identidade ou afiliação"
 #: src/lib/moderation/useReportOptions.ts:68
 msgid "Impersonation, misinformation, or false claims"
 msgstr "Identidade falsa, desinformação ou afirmações falsas"
+
+#: src/screens/MessagesMatrix.web.tsx:694
+msgid "Impossible d'envoyer le message."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:808
+msgid "Impossible d’inviter cette personne."
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:89
+msgid "Impossible d’ouvrir Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1636
+msgid "Impossible de charger la conversation"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:647
+msgid "Impossible de charger les messages."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:411
+msgid "Impossible de créer la conversation."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:561
+msgid "Impossible de créer le groupe."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:831
+msgid "Impossible de quitter le groupe."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:252
+msgid "Impossible de se connecter à Tellus Chat."
+msgstr ""
 
 #: src/screens/Settings/NotificationSettings/index.tsx:284
 msgid "In-app"
@@ -4578,6 +4761,10 @@ msgstr "Motivo de denúncia inválido"
 msgid "Invalid Verification Code"
 msgstr "Código de Verificação Inválido"
 
+#: src/screens/MessagesMatrix.web.tsx:1255
+msgid "Invitations"
+msgstr ""
+
 #: src/view/com/modals/InviteCodes.tsx:94
 msgid "Invite a Friend"
 msgstr "Convidar um amigo"
@@ -4602,9 +4789,37 @@ msgstr "Códigos de convite: 1 disponível"
 msgid "Invite people to this starter pack!"
 msgstr "Convide pessoas para este pacote de iniciante!"
 
+#: src/Navigation.tsx:595
+msgid "Invite to Tellus Chat"
+msgstr ""
+
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:34
 msgid "Invite your friends to follow your favorite feeds and people"
 msgstr "Convide os seus amigos para seguirem os seus feeds e pessoas favoritas"
+
+#: src/screens/Messages/Invite.tsx:79
+msgid "Invite-la pour démarrer la discussion. Elle pourra créer son compte puis revenir ici."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1586
+#: src/screens/MessagesMatrix.web.tsx:1593
+msgid "Inviter"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:113
+msgid "Inviter {normalizedHandle} sur Tellus Chat"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:114
+#: src/components/dms/MessageProfileButton.tsx:174
+#: src/components/dms/MessageProfileButton.tsx:202
+#: src/screens/Messages/Invite.tsx:65
+msgid "Inviter sur Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1560
+msgid "Inviter un membre"
+msgstr ""
 
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:31
 msgid "Invites, but personal"
@@ -4630,7 +4845,7 @@ msgstr "De momento é só você! Adicione mais pessoas ao seu pacote de iniciant
 msgid "Job ID: {0}"
 msgstr "ID do trabalho: {0}"
 
-#. Link to a page with job openings at Bluesky
+#. Link to a page with job openings at Tellus
 #: src/view/com/auth/SplashScreen.web.tsx:180
 msgid "Jobs"
 msgstr "Empregos"
@@ -4640,8 +4855,8 @@ msgstr "Empregos"
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:211
 #: src/screens/StarterPack/StarterPackScreen.tsx:466
 #: src/screens/StarterPack/StarterPackScreen.tsx:477
-msgid "Join Bluesky"
-msgstr "Junte-se ao Bluesky"
+msgid "Join Tellus"
+msgstr "Junte-se ao Tellus"
 
 #: src/components/StarterPack/QrCode.tsx:68
 #: src/view/shell/NavSignupCard.tsx:40
@@ -4698,13 +4913,17 @@ msgstr "Rótulos na sua conta"
 msgid "Labels on your content"
 msgstr "Rótulos no seu conteúdo"
 
-#: src/Navigation.tsx:218
+#: src/screens/MessagesMatrix.web.tsx:1278
+msgid "Lance une discussion ou crée un groupe."
+msgstr ""
+
+#: src/Navigation.tsx:224
 msgid "Language Settings"
 msgstr "Definições de Idioma"
 
 #: src/screens/Settings/LanguageSettings.tsx:78
-#: src/screens/Settings/Settings.tsx:228
-#: src/screens/Settings/Settings.tsx:231
+#: src/screens/Settings/Settings.tsx:244
+#: src/screens/Settings/Settings.tsx:247
 msgid "Languages"
 msgstr "Idiomas"
 
@@ -4744,13 +4963,13 @@ msgstr "Saber mais"
 msgid "Learn more about age assurance"
 msgstr "Saiba mais sobre a verificação de idade"
 
-#: src/view/com/auth/SplashScreen.web.tsx:168
-msgid "Learn more about Bluesky"
-msgstr "Saiba mais sobre o Bluesky"
-
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
 msgstr "Saiba mais sobre como hospedar o seu PDS."
+
+#: src/view/com/auth/SplashScreen.web.tsx:168
+msgid "Learn more about Tellus"
+msgstr "Saiba mais sobre o Tellus"
 
 #: src/components/moderation/ContentHider.tsx:152
 #: src/components/moderation/ContentHider.tsx:218
@@ -4773,13 +4992,13 @@ msgstr "Saiba mais sobre este aviso"
 #: src/components/verification/VerificationsDialog.tsx:151
 #: src/components/verification/VerifierDialog.tsx:118
 msgctxt "english-only-resource"
-msgid "Learn more about verification on Bluesky"
-msgstr "Saiba mais sobre a verificação no Bluesky (em inglês)"
+msgid "Learn more about verification on Tellus"
+msgstr "Saiba mais sobre a verificação no Tellus (em inglês)"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:128
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:131
-msgid "Learn more about what is public on Bluesky."
-msgstr "Saiba mais sobre o que é público no Bluesky."
+msgid "Learn more about what is public on Tellus."
+msgstr "Saiba mais sobre o que é público no Tellus."
 
 #: src/components/ageAssurance/AgeAssuranceAdmonition.tsx:86
 msgid "Learn more in your <0>account settings.</0>"
@@ -4813,12 +5032,16 @@ msgstr "Deixe todos por selecionar para ver qualquer idioma."
 
 #: src/components/dialogs/LinkWarning.tsx:67
 #: src/components/dialogs/LinkWarning.tsx:75
-msgid "Leaving Bluesky"
-msgstr "Sair do Bluesky"
+msgid "Leaving Tellus"
+msgstr "Sair do Tellus"
 
 #: src/screens/SignupQueued.tsx:155
 msgid "left to go."
 msgstr "à sua frente na fila."
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:42
+msgid "Les posts ne seront pas supprimés de Tellus."
+msgstr ""
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:323
 msgid "Let me choose"
@@ -4833,6 +5056,10 @@ msgstr "Vamos redefinir a sua palavra-passe!"
 #: src/screens/Onboarding/StepFinished.tsx:591
 msgid "Let's go!"
 msgstr "Vamos lá!"
+
+#: src/screens/Messages/Invite.tsx:48
+msgid "Lien copié"
+msgstr ""
 
 #: src/components/dialogs/Embed.tsx:162
 #: src/components/dialogs/Embed.tsx:164
@@ -4863,7 +5090,7 @@ msgstr "Deixe um \"gosto\" em 10 publicações"
 msgid "Like 10 posts to train the Discover feed"
 msgstr "Deixe um \"gosto\" em 10 publicações para ajudar a treinar o seu feed \"Descobrir\""
 
-#: src/Navigation.tsx:452
+#: src/Navigation.tsx:483
 msgid "Like notifications"
 msgstr "Notificações de gostos"
 
@@ -4875,8 +5102,8 @@ msgstr "Gostar deste feed"
 msgid "Like this labeler"
 msgstr "Gostar deste rotulador"
 
-#: src/Navigation.tsx:296
-#: src/Navigation.tsx:301
+#: src/Navigation.tsx:302
+#: src/Navigation.tsx:307
 msgid "Liked by"
 msgstr "Gostado por"
 
@@ -4911,7 +5138,7 @@ msgstr "Gostos"
 msgid "Likes of your reposts"
 msgstr "Gostos das suas republicações"
 
-#: src/Navigation.tsx:476
+#: src/Navigation.tsx:507
 msgid "Likes of your reposts notifications"
 msgstr "Notificações de gostos nas suas republicações"
 
@@ -4924,7 +5151,7 @@ msgstr "Gostos nesta publicação"
 msgid "Linear"
 msgstr "Linear"
 
-#: src/Navigation.tsx:251
+#: src/Navigation.tsx:257
 msgid "List"
 msgstr "Lista"
 
@@ -4986,12 +5213,16 @@ msgctxt "toast"
 msgid "List unmuted"
 msgstr "Silenciamento da lista removido "
 
-#: src/Navigation.tsx:172
+#: src/screens/Saved/components.tsx:149
+msgid "Liste"
+msgstr ""
+
+#: src/Navigation.tsx:178
 #: src/view/screens/Lists.tsx:65
 #: src/view/screens/Profile.tsx:224
 #: src/view/screens/Profile.tsx:232
-#: src/view/shell/desktop/LeftNav.tsx:745
-#: src/view/shell/Drawer.tsx:545
+#: src/view/shell/desktop/LeftNav.tsx:764
+#: src/view/shell/Drawer.tsx:566
 msgid "Lists"
 msgstr "Listas"
 
@@ -5030,16 +5261,20 @@ msgstr "Carregar novas notificações"
 
 #: src/screens/Profile/ProfileFeed/index.tsx:224
 #: src/screens/Profile/Sections/Feed.tsx:98
-#: src/view/com/feeds/FeedPage.tsx:162
+#: src/view/com/feeds/FeedPage.tsx:174
 #: src/view/screens/ProfileList.tsx:878
 msgid "Load new posts"
 msgstr "Carregar novas publicações"
+
+#: src/screens/Messages/Settings.tsx:204
+msgid "Loading Tellus Chat ID..."
+msgstr ""
 
 #: src/view/com/composer/text-input/mobile/Autocomplete.tsx:61
 msgid "Loading..."
 msgstr "A carregar..."
 
-#: src/Navigation.tsx:321
+#: src/Navigation.tsx:327
 msgid "Log"
 msgstr "Registo"
 
@@ -5047,14 +5282,14 @@ msgstr "Registo"
 msgid "Logged-out visibility"
 msgstr "Visibilidade do perfil"
 
-#: src/view/shell/desktop/RightNav.tsx:134
-msgid "Logo by @sawaratsuki.bsky.social"
-msgstr "Logótipo por @sawaratsuki.bsky.social"
+#: src/view/shell/desktop/RightNav.tsx:122
+msgid "Logo by @sawaratsuki.tellus.social"
+msgstr "Logótipo por @sawaratsuki.tellus.social"
 
-#: src/view/shell/desktop/RightNav.tsx:131
-#: src/view/shell/Drawer.tsx:709
-msgid "Logo by <0>@sawaratsuki.bsky.social</0>"
-msgstr "Logótipo por <0>@sawaratsuki.bsky.social</0>"
+#: src/view/shell/desktop/RightNav.tsx:119
+#: src/view/shell/Drawer.tsx:774
+msgid "Logo by <0>@sawaratsuki.tellus.social</0>"
+msgstr "Logótipo por <0>@sawaratsuki.tellus.social</0>"
 
 #: src/components/RichTextTag.tsx:53
 msgid "Long press to open tag menu for #{tag}"
@@ -5088,6 +5323,11 @@ msgstr "Faça um para mim"
 msgid "Make sure this is where you intend to go!"
 msgstr "Certifique-se de que é para aqui que pretende ir!"
 
+#: src/components/PostControls/BookmarkButton.web.tsx:45
+msgctxt "Accessibility label for the save button when item already saved"
+msgid "Manage saved collections"
+msgstr ""
+
 #: src/screens/Settings/ContentAndMediaSettings.tsx:60
 #: src/screens/Settings/ContentAndMediaSettings.tsx:63
 msgid "Manage saved feeds"
@@ -5117,6 +5357,11 @@ msgstr "Marcar como lido"
 msgid "Marked all as read"
 msgstr "Tudo marcado como lido"
 
+#: src/screens/MessagesMatrix.web.tsx:1497
+#: src/screens/MessagesMatrix.web.tsx:1506
+msgid "Masquer"
+msgstr ""
+
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:90
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:97
 msgid "Maybe later"
@@ -5130,7 +5375,11 @@ msgstr "Multimédia"
 msgid "Media that may be disturbing or inappropriate for some audiences."
 msgstr "Conteúdo multimédia que pode ser perturbador ou inapropriado para algumas audiências."
 
-#: src/Navigation.tsx:436
+#: src/screens/MessagesMatrix.web.tsx:1520
+msgid "Membres du groupe"
+msgstr ""
+
+#: src/Navigation.tsx:467
 msgid "Mention notifications"
 msgstr "Notificações de menções"
 
@@ -5153,9 +5402,14 @@ msgstr "Menções"
 msgid "Menu"
 msgstr "Menu"
 
-#: src/components/dms/MessageProfileButton.tsx:97
-msgid "Message {0}"
-msgstr "Mensagem {0}"
+#: src/components/dms/MessageProfileButton.tsx:176
+#: src/components/dms/MessageProfileButton.tsx:204
+msgid "Message (Tellus Chat)"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:116
+msgid "Message {normalizedHandle} sur Tellus Chat"
+msgstr ""
 
 #: src/components/dms/MessageContextMenu.tsx:77
 msgctxt "toast"
@@ -5187,16 +5441,16 @@ msgstr "A mensagem é demasiado longa"
 msgid "Message options"
 msgstr "Opções de mensagem"
 
-#: src/Navigation.tsx:769
-msgid "Messages"
-msgstr "Mensagens"
+#: src/components/dms/MessageProfileButton.tsx:117
+msgid "Message sur Tellus Chat"
+msgstr ""
 
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:111
 msgctxt "Name of app icon variant"
 msgid "Midnight"
 msgstr "Meia-noite"
 
-#: src/Navigation.tsx:500
+#: src/Navigation.tsx:531
 msgid "Miscellaneous notifications"
 msgstr "Notificações diversas"
 
@@ -5210,10 +5464,10 @@ msgstr "Conta enganadora"
 msgid "Misleading Post"
 msgstr "Publicação enganadora"
 
-#: src/Navigation.tsx:177
+#: src/Navigation.tsx:183
 #: src/screens/Moderation/index.tsx:100
-#: src/screens/Settings/Settings.tsx:188
-#: src/screens/Settings/Settings.tsx:191
+#: src/screens/Settings/Settings.tsx:190
+#: src/screens/Settings/Settings.tsx:193
 msgid "Moderation"
 msgstr "Moderação"
 
@@ -5249,7 +5503,7 @@ msgstr "Lista de moderação atualizada"
 msgid "Moderation lists"
 msgstr "Listas de moderação"
 
-#: src/Navigation.tsx:182
+#: src/Navigation.tsx:188
 #: src/view/screens/ModerationModlists.tsx:65
 msgid "Moderation Lists"
 msgstr "Listas de Moderação"
@@ -5258,7 +5512,7 @@ msgstr "Listas de Moderação"
 msgid "moderation settings"
 msgstr "definições de moderação"
 
-#: src/Navigation.tsx:311
+#: src/Navigation.tsx:317
 msgid "Moderation states"
 msgstr "Estados de moderação"
 
@@ -5271,6 +5525,19 @@ msgstr "Ferramentas de moderação"
 msgid "Moderator has chosen to set a general warning on the content."
 msgstr "O moderador optou por definir um aviso geral sobre o conteúdo."
 
+#: src/screens/Saved/CollectionDetailPage.tsx:48
+msgid "Modifier"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:43
+#: src/screens/Saved/SavedCollectionsPage.tsx:51
+msgid "Modifier la couverture"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1200
+msgid "Mon groupe"
+msgstr ""
+
 #: src/view/shell/desktop/Feeds.tsx:108
 #: src/view/shell/desktop/Feeds.tsx:118
 msgid "More feeds"
@@ -5281,11 +5548,16 @@ msgstr "Mais feeds"
 msgid "More languages..."
 msgstr "Mais idiomas..."
 
-#: src/view/com/profile/ProfileMenu.tsx:223
-#: src/view/com/profile/ProfileMenu.tsx:229
+#: src/view/com/profile/ProfileMenu.tsx:261
+#: src/view/com/profile/ProfileMenu.tsx:267
 #: src/view/screens/ProfileList.tsx:750
 msgid "More options"
 msgstr "Mais opções"
+
+#: src/screens/MessagesMatrix.web.tsx:992
+#: src/screens/MessagesMatrix.web.tsx:996
+msgid "Mot de passe"
+msgstr ""
 
 #: src/screens/Onboarding/state.ts:113
 msgid "Movies"
@@ -5308,8 +5580,8 @@ msgstr "Silenciar {tag}"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:628
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:634
-#: src/view/com/profile/ProfileMenu.tsx:375
-#: src/view/com/profile/ProfileMenu.tsx:382
+#: src/view/com/profile/ProfileMenu.tsx:430
+#: src/view/com/profile/ProfileMenu.tsx:437
 msgid "Mute account"
 msgstr "Silenciar conta"
 
@@ -5372,7 +5644,7 @@ msgstr "Silenciar palavras e tags"
 msgid "Muted accounts"
 msgstr "Contas silenciadas"
 
-#: src/Navigation.tsx:187
+#: src/Navigation.tsx:193
 #: src/view/screens/ModerationMutedAccounts.tsx:118
 msgid "Muted Accounts"
 msgstr "Contas Silenciadas"
@@ -5401,6 +5673,10 @@ msgstr "O meu aniversário"
 #: src/view/screens/Feeds.tsx:704
 msgid "My Feeds"
 msgstr "Os Meus Feeds"
+
+#: src/screens/Messages/Settings.tsx:183
+msgid "My Tellus Chat ID (Matrix ID)"
+msgstr ""
 
 #: src/view/com/modals/CreateOrEditList.tsx:268
 msgid "Name"
@@ -5440,7 +5716,7 @@ msgstr "Navegar até ao pacote de iniciante"
 msgid "Navigates to the next screen"
 msgstr "Navega para o próximo ecrã"
 
-#: src/view/shell/Drawer.tsx:78
+#: src/view/shell/Drawer.tsx:81
 msgid "Navigates to your profile"
 msgstr "Navega para o seu perfil"
 
@@ -5495,7 +5771,7 @@ msgstr "Novo endereço de e-mail"
 msgid "New Feature"
 msgstr "Nova Funcionalidade"
 
-#: src/Navigation.tsx:468
+#: src/Navigation.tsx:499
 msgid "New follower notifications"
 msgstr "Notificações de novo seguidor"
 
@@ -5539,12 +5815,12 @@ msgstr "Nova palavra-passe"
 msgid "New post"
 msgstr "Nova publicação"
 
-#: src/view/com/feeds/FeedPage.tsx:173
+#: src/view/com/feeds/FeedPage.tsx:185
 msgctxt "action"
 msgid "New post"
 msgstr "Nova publicação"
 
-#: src/view/shell/desktop/LeftNav.tsx:580
+#: src/view/shell/desktop/LeftNav.tsx:582
 msgctxt "action"
 msgid "New Post"
 msgstr "Nova Publicação"
@@ -5576,9 +5852,12 @@ msgstr "Nova Lista de Utilizadores"
 msgid "Newest replies first"
 msgstr "Respostas mais recentes primeiro"
 
+#: src/Navigation.tsx:615
 #: src/screens/Onboarding/index.tsx:36
 #: src/screens/Onboarding/state.ts:116
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:238
+#: src/view/shell/desktop/LeftNav.tsx:746
+#: src/view/shell/Drawer.tsx:614
 msgid "News"
 msgstr "Notícias"
 
@@ -5610,8 +5889,8 @@ msgid "Next image"
 msgstr "Imagem seguinte"
 
 #: src/screens/Onboarding/StepFinished.tsx:356
-msgid "No ads, no invasive tracking, no engagement traps. Bluesky respects your time and attention."
-msgstr "Sem anúncios, sem rastreamento invasivo, sem armadilhas de engajamento. O Bluesky respeita o seu tempo e atenção."
+msgid "No ads, no invasive tracking, no engagement traps. Tellus respects your time and attention."
+msgstr "Sem anúncios, sem rastreamento invasivo, sem armadilhas de engajamento. O Tellus respeita o seu tempo e atenção."
 
 #: src/screens/Settings/AppPasswords.tsx:108
 msgid "No app passwords yet"
@@ -5644,7 +5923,7 @@ msgid "No likes yet"
 msgstr "Sem gostos ainda"
 
 #: src/components/ProfileCard.tsx:496
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:114
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:118
 msgid "No longer following {0}"
 msgstr "Já não segue {0}"
 
@@ -5660,8 +5939,8 @@ msgstr "Chega de \"doomscrolling\" em algoritmos cheios de lixo. Encontre feeds 
 msgid "No notifications yet!"
 msgstr "Sem notificações ainda!"
 
-#: src/screens/Messages/Settings.tsx:106
-#: src/screens/Messages/Settings.tsx:109
+#: src/screens/Messages/Settings.tsx:278
+#: src/screens/Messages/Settings.tsx:281
 #: src/screens/Settings/ActivityPrivacySettings.tsx:129
 #: src/screens/Settings/ActivityPrivacySettings.tsx:134
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:160
@@ -5750,6 +6029,18 @@ msgstr "Ainda ninguém republicou isto. Talvez deva ser o primeiro!"
 msgid "Nobody was found. Try searching for someone else."
 msgstr "Ninguém foi encontrado. Tente pesquisar por outra pessoa."
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:32
+msgid "Nom"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1196
+msgid "Nom du groupe"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:33
+msgid "Nombre d'éléments"
+msgstr ""
+
 #: src/lib/moderation/useGlobalLabelStrings.ts:42
 msgid "Non-sexual Nudity"
 msgstr "Nudez não sexual"
@@ -5762,7 +6053,7 @@ msgstr "Nenhuma"
 msgid "Not followed by anyone you're following"
 msgstr "Não é seguido por ninguém que está a seguir"
 
-#: src/Navigation.tsx:167
+#: src/Navigation.tsx:173
 #: src/view/screens/Profile.tsx:125
 msgid "Not Found"
 msgstr "Não Encontrado"
@@ -5771,13 +6062,13 @@ msgstr "Não Encontrado"
 msgid "Not in Mississippi?"
 msgstr "Não está no Mississippi?"
 
-#: src/view/com/profile/ProfileMenu.tsx:497
+#: src/view/com/profile/ProfileMenu.tsx:561
 msgid "Note about sharing"
 msgstr "Nota sobre partilhar"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:117
-msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
-msgstr "Nota: o Bluesky é uma rede aberta e pública. Esta definição limita somente a visibilidade do seu conteúdo no site e aplicação do Bluesky, e outras aplicações podem não respeitar essa definição. O seu conteúdo pode ainda ser exibido para utilizadores sem sessão iniciada através de outras aplicações e sites."
+msgid "Note: Tellus is an open and public network. This setting only limits the visibility of your content on the Tellus app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
+msgstr "Nota: o Tellus é uma rede aberta e pública. Esta definição limita somente a visibilidade do seu conteúdo no site e aplicação do Tellus, e outras aplicações podem não respeitar essa definição. O seu conteúdo pode ainda ser exibido para utilizadores sem sessão iniciada através de outras aplicações e sites."
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:134
 msgid "Note: This post is only visible to logged-in users."
@@ -5791,22 +6082,22 @@ msgstr "Nada por aqui"
 msgid "Nothing saved yet"
 msgstr "Nada foi guardado ainda"
 
-#: src/Navigation.tsx:422
-#: src/Navigation.tsx:569
+#: src/Navigation.tsx:453
+#: src/Navigation.tsx:605
 #: src/view/screens/Notifications.tsx:136
 msgid "Notification settings"
 msgstr "Definições de notificações"
 
-#: src/screens/Messages/Settings.tsx:128
+#: src/screens/Messages/Settings.tsx:300
 msgid "Notification sounds"
 msgstr "Sons de notificações"
 
-#: src/screens/Messages/Settings.tsx:125
+#: src/screens/Messages/Settings.tsx:297
 msgid "Notification Sounds"
 msgstr "Sons de Notificações"
 
-#: src/Navigation.tsx:564
-#: src/Navigation.tsx:764
+#: src/Navigation.tsx:600
+#: src/Navigation.tsx:822
 #: src/screens/Notifications/ActivityList.tsx:29
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:90
 #: src/screens/Settings/NotificationSettings/index.tsx:92
@@ -5819,18 +6110,37 @@ msgstr "Sons de Notificações"
 #: src/screens/Settings/NotificationSettings/ReplyNotificationSettings.tsx:30
 #: src/screens/Settings/NotificationSettings/RepostNotificationSettings.tsx:30
 #: src/screens/Settings/NotificationSettings/RepostsOnRepostsNotificationSettings.tsx:30
-#: src/screens/Settings/Settings.tsx:196
-#: src/screens/Settings/Settings.tsx:199
+#: src/screens/Settings/Settings.tsx:198
+#: src/screens/Settings/Settings.tsx:201
 #: src/view/screens/Notifications.tsx:130
 #: src/view/shell/bottom-bar/BottomBar.tsx:252
-#: src/view/shell/desktop/LeftNav.tsx:708
-#: src/view/shell/Drawer.tsx:493
+#: src/view/shell/desktop/LeftNav.tsx:709
+#: src/view/shell/Drawer.tsx:514
 msgid "Notifications"
 msgstr "Notificações"
 
 #: src/screens/Settings/NotificationSettings/MiscellaneousNotificationSettings.tsx:43
 msgid "Notifications for everything else, such as when someone joins via one of your starter packs."
 msgstr "Notificações de tudo o resto, como quando alguém adere através de um dos seus pacotes de iniciante."
+
+#: src/screens/MessagesMatrix.web.tsx:724
+#: src/screens/MessagesMatrix.web.tsx:732
+#: src/screens/MessagesMatrix.web.tsx:1191
+msgid "Nouveau groupe"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:28
+#: src/screens/Saved/SavedCollectionsPage.tsx:40
+msgid "Nouvelle collection"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:712
+#: src/screens/MessagesMatrix.web.tsx:720
+#: src/screens/MessagesMatrix.web.tsx:1145
+#: src/screens/MessagesMatrix.web.tsx:1283
+#: src/screens/MessagesMatrix.web.tsx:1290
+msgid "Nouvelle discussion"
+msgstr ""
 
 #: src/lib/hooks/useTimeAgo.ts:135
 msgid "now"
@@ -5889,7 +6199,7 @@ msgstr "Respostas mais antigas primeiro"
 msgid "on<0><1/><2><3/></2></0>"
 msgstr "em<0><1/><2><3/></2></0>"
 
-#: src/screens/Settings/Settings.tsx:388
+#: src/screens/Settings/Settings.tsx:404
 msgid "Onboarding reset"
 msgstr "Reiniciar a introdução"
 
@@ -5962,6 +6272,7 @@ msgid "Open conversation options"
 msgstr "Abrir opções de conversa"
 
 #: src/components/Layout/Header/index.tsx:160
+#: src/screens/Messages/components/PageShell.tsx:43
 msgid "Open drawer menu"
 msgstr "Abrir menu lateral"
 
@@ -5991,7 +6302,7 @@ msgstr "Abrir link para {niceUrl}"
 msgid "Open message options"
 msgstr "Abrir opções de mensagem"
 
-#: src/screens/Settings/Settings.tsx:453
+#: src/screens/Settings/Settings.tsx:469
 msgid "Open moderation debug page"
 msgstr "Abrir página de debug da moderação"
 
@@ -6020,12 +6331,12 @@ msgstr "Abrir menu de partilha"
 msgid "Open starter pack menu"
 msgstr "Abrir menu de pacote de iniciante"
 
-#: src/screens/Settings/Settings.tsx:446
-#: src/screens/Settings/Settings.tsx:460
+#: src/screens/Settings/Settings.tsx:462
+#: src/screens/Settings/Settings.tsx:476
 msgid "Open storybook page"
 msgstr "Abrir página do storybook"
 
-#: src/screens/Settings/Settings.tsx:439
+#: src/screens/Settings/Settings.tsx:455
 msgid "Open system log"
 msgstr "Abrir registo do sistema"
 
@@ -6072,19 +6383,19 @@ msgstr "Abre selecionador de emojis"
 
 #: src/view/com/auth/SplashScreen.tsx:49
 #: src/view/com/auth/SplashScreen.web.tsx:111
-msgid "Opens flow to create a new Bluesky account"
-msgstr "Abre processo para criar uma nova conta no Bluesky"
+msgid "Opens flow to create a new Tellus account"
+msgstr "Abre processo para criar uma nova conta no Tellus"
 
 #: src/view/com/auth/SplashScreen.tsx:63
 #: src/view/com/auth/SplashScreen.web.tsx:125
-msgid "Opens flow to sign in to your existing Bluesky account"
-msgstr "Abre o processo para iniciar sessão com a sua conta Bluesky existente"
+msgid "Opens flow to sign in to your existing Tellus account"
+msgstr "Abre o processo para iniciar sessão com a sua conta Tellus existente"
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:36
 msgid "Opens GIF select dialog"
 msgstr "Abre janela de diálogo para seleção de GIF"
 
-#: src/screens/Settings/Settings.tsx:237
+#: src/screens/Settings/Settings.tsx:253
 msgid "Opens helpdesk in browser"
 msgstr "Abre central de suporte no navegador"
 
@@ -6169,8 +6480,8 @@ msgid "Our moderation team has received your report."
 msgstr "A nossa equipa de moderação recebeu a sua denúncia."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:29
-msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
-msgstr "Os nossos moderadores analisaram as denúncias e decidiram desativar o seu acesso a conversas no Bluesky."
+msgid "Our moderators have reviewed reports and decided to disable your access to chats on Tellus."
+msgstr "Os nossos moderadores analisaram as denúncias e decidiram desativar o seu acesso a conversas no Tellus."
 
 #: src/components/Lists.tsx:191
 #: src/view/screens/NotFound.tsx:47
@@ -6180,6 +6491,16 @@ msgstr "Página não encontrada"
 #: src/view/screens/NotFound.tsx:44
 msgid "Page Not Found"
 msgstr "Página Não Encontrada"
+
+#: src/screens/Messages/Invite.tsx:99
+#: src/screens/Messages/Invite.tsx:105
+msgid "Partager le lien"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:109
+#: src/screens/Messages/Invite.tsx:115
+msgid "Partager un message"
+msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:228
 #: src/screens/Settings/AccountSettings.tsx:121
@@ -6222,11 +6543,11 @@ msgstr "Pausar vídeo"
 msgid "People"
 msgstr "Pessoas"
 
-#: src/Navigation.tsx:238
+#: src/Navigation.tsx:244
 msgid "People followed by @{0}"
 msgstr "Pessoas seguidas por @{0}"
 
-#: src/Navigation.tsx:231
+#: src/Navigation.tsx:237
 msgid "People following @{0}"
 msgstr "Pessoas a seguir @{0}"
 
@@ -6348,8 +6669,8 @@ msgid "Please choose your password."
 msgstr "Por favor, escolha a sua palavra-passe."
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:290
-msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
-msgstr "Por favor, clique no link contido no e-mail que lhe acabamos de enviar para verificar o seu novo endereço de e-mail. Este é um passo importante para permitir que possa continuar a desfrutar de todas as funcionalidades do Bluesky."
+msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Tellus."
+msgstr "Por favor, clique no link contido no e-mail que lhe acabamos de enviar para verificar o seu novo endereço de e-mail. Este é um passo importante para permitir que possa continuar a desfrutar de todas as funcionalidades do Tellus."
 
 #: src/screens/Signup/state.ts:302
 msgid "Please complete the verification captcha."
@@ -6470,6 +6791,14 @@ msgstr "Por favor, verifique o seu e-mail"
 msgid "Please write your message below:"
 msgstr "Por favor, escreva a sua mensagem abaixo:"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:38
+msgid "Plus anciens"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:37
+msgid "Plus récents"
+msgstr ""
+
 #: src/screens/Onboarding/index.tsx:50
 #: src/screens/Onboarding/state.ts:119
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:232
@@ -6499,10 +6828,10 @@ msgstr "Publicar tudo"
 msgid "Post blocked"
 msgstr "Publicação bloqueada"
 
-#: src/Navigation.tsx:264
-#: src/Navigation.tsx:271
-#: src/Navigation.tsx:278
-#: src/Navigation.tsx:285
+#: src/Navigation.tsx:270
+#: src/Navigation.tsx:277
+#: src/Navigation.tsx:284
+#: src/Navigation.tsx:291
 msgid "Post by @{0}"
 msgstr "Publicação por @{0}"
 
@@ -6536,7 +6865,7 @@ msgstr "Publicação ocultada por si"
 msgid "Post interaction settings"
 msgstr "Definições de interação com publicação"
 
-#: src/Navigation.tsx:198
+#: src/Navigation.tsx:204
 #: src/screens/ModerationInteractionSettings/index.tsx:34
 msgid "Post Interaction Settings"
 msgstr "Definições de Interação com Publicação"
@@ -6594,6 +6923,10 @@ msgstr "Link potencialmente enganador"
 msgid "Potentially misleading link warning"
 msgstr "Aviso de link potencialmente enganador"
 
+#: src/screens/Messages/Invite.tsx:123
+msgid "Pourquoi l’inviter ?"
+msgstr ""
+
 #: src/screens/Messages/components/MessageListError.tsx:19
 msgid "Press to attempt reconnection"
 msgstr "Pressione para tentar reconectar-se"
@@ -6622,18 +6955,18 @@ msgstr "Idioma Principal"
 msgid "Prioritize your Follows"
 msgstr "Dar prioridade aos seus seguidores"
 
-#: src/view/shell/desktop/RightNav.tsx:114
-#: src/view/shell/desktop/RightNav.tsx:115
+#: src/view/shell/desktop/RightNav.tsx:102
+#: src/view/shell/desktop/RightNav.tsx:103
 msgid "Privacy"
 msgstr "Privacidade"
 
-#: src/screens/Settings/Settings.tsx:182
-#: src/screens/Settings/Settings.tsx:185
+#: src/screens/Settings/Settings.tsx:184
+#: src/screens/Settings/Settings.tsx:187
 msgid "Privacy and security"
 msgstr "Privacidade e segurança"
 
-#: src/Navigation.tsx:407
-#: src/Navigation.tsx:415
+#: src/Navigation.tsx:438
+#: src/Navigation.tsx:446
 #: src/screens/Settings/ActivityPrivacySettings.tsx:40
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:45
 msgid "Privacy and Security"
@@ -6645,12 +6978,12 @@ msgstr "Definições de privacidade e segurança"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:35
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:102
-#: src/Navigation.tsx:331
+#: src/Navigation.tsx:337
 #: src/screens/Settings/AboutSettings.tsx:92
 #: src/screens/Settings/AboutSettings.tsx:95
 #: src/view/screens/PrivacyPolicy.tsx:31
-#: src/view/shell/Drawer.tsx:704
-#: src/view/shell/Drawer.tsx:705
+#: src/view/shell/Drawer.tsx:769
+#: src/view/shell/Drawer.tsx:770
 msgid "Privacy Policy"
 msgstr "Política de Privacidade"
 
@@ -6669,9 +7002,9 @@ msgid "profile"
 msgstr "perfil"
 
 #: src/view/shell/bottom-bar/BottomBar.tsx:316
-#: src/view/shell/desktop/LeftNav.tsx:786
-#: src/view/shell/Drawer.tsx:77
-#: src/view/shell/Drawer.tsx:596
+#: src/view/shell/desktop/LeftNav.tsx:825
+#: src/view/shell/Drawer.tsx:80
+#: src/view/shell/Drawer.tsx:661
 msgid "Profile"
 msgstr "Perfil"
 
@@ -6740,7 +7073,12 @@ msgstr "O código QR foi transferido!"
 msgid "QR code saved to your camera roll!"
 msgstr "O código QR foi guardado no rolo da sua câmara!"
 
-#: src/Navigation.tsx:444
+#: src/screens/MessagesMatrix.web.tsx:1597
+#: src/screens/MessagesMatrix.web.tsx:1603
+msgid "Quitter le groupe"
+msgstr ""
+
+#: src/Navigation.tsx:475
 msgid "Quote notifications"
 msgstr "Notificações de citação"
 
@@ -6825,18 +7163,18 @@ msgid "Read our blog post"
 msgstr "Ler a nossa publicação no blog"
 
 #: src/view/com/auth/SplashScreen.web.tsx:173
-msgid "Read the Bluesky blog"
-msgstr "Leia o blogue do Bluesky"
+msgid "Read the Tellus blog"
+msgstr "Leia o blogue do Tellus"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:88
 #: src/screens/Signup/StepInfo/Policies.tsx:114
-msgid "Read the Bluesky Privacy Policy"
-msgstr "Leia a Política de Privacidade do Bluesky"
+msgid "Read the Tellus Privacy Policy"
+msgstr "Leia a Política de Privacidade do Tellus"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:81
 #: src/screens/Signup/StepInfo/Policies.tsx:101
-msgid "Read the Bluesky Terms of Service"
-msgstr "Leia os Termos de Serviço do Bluesky"
+msgid "Read the Tellus Terms of Service"
+msgstr "Leia os Termos de Serviço do Tellus"
 
 #: src/components/WelcomeModal.tsx:146
 msgid "Real conversations."
@@ -6867,9 +7205,21 @@ msgstr "Receber notificações push"
 msgid "Recent Searches"
 msgstr "Pesquisas Recentes"
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:31
+msgid "Récentes"
+msgstr ""
+
 #: src/view/com/composer/select-language/PostLanguageSelectDialog.tsx:210
 msgid "Recently used"
 msgstr "Usados recentemente"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:35
+msgid "Rechercher dans la collection"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:29
+msgid "Rechercher une collection"
+msgstr ""
 
 #: src/screens/Search/modules/ExploreRecommendations.tsx:54
 msgid "Recommended"
@@ -6879,6 +7229,19 @@ msgstr "Recomendados"
 msgid "Reconnect"
 msgstr "Reconectar"
 
+#: src/screens/MessagesMatrix.web.tsx:1631
+msgid "Récupération des messages..."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:947
+#: src/screens/MessagesMatrix.web.tsx:953
+#: src/screens/MessagesMatrix.web.tsx:1124
+#: src/screens/MessagesMatrix.web.tsx:1130
+#: src/screens/MessagesMatrix.web.tsx:1642
+#: src/screens/MessagesMatrix.web.tsx:1648
+msgid "Réessayer"
+msgstr ""
+
 #. Reject a chat request, this opens a menu with options
 #: src/screens/Messages/components/RequestButtons.tsx:124
 msgid "Reject"
@@ -6887,6 +7250,14 @@ msgstr "Rejeitar"
 #: src/screens/Messages/components/RequestButtons.tsx:112
 msgid "Reject chat request"
 msgstr "Rejeitar solicitação de conversa"
+
+#: src/screens/Messages/Invite.tsx:43
+msgid "Rejoins-moi sur Tellus Chat pour discuter : {inviteUrl}"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:40
+msgid "Rejoins-moi sur Tellus Chat pour discuter avec {displayHandle} : {inviteUrl}"
+msgstr ""
 
 #: src/screens/Messages/ChatList.tsx:285
 #: src/screens/Messages/Inbox.tsx:212
@@ -6901,7 +7272,7 @@ msgstr "Recarregar conversas"
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:104
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:111
 #: src/screens/Bookmarks/index.tsx:255
-#: src/screens/Settings/Settings.tsx:662
+#: src/screens/Settings/Settings.tsx:678
 #: src/view/com/modals/UserAddRemoveLists.tsx:235
 #: src/view/com/posts/PostFeedErrorMessage.tsx:217
 msgid "Remove"
@@ -6915,8 +7286,8 @@ msgstr "Remover {displayName} do pacote de iniciante"
 msgid "Remove {historyItem}"
 msgstr "Remover {historyItem}"
 
-#: src/screens/Settings/Settings.tsx:641
-#: src/screens/Settings/Settings.tsx:644
+#: src/screens/Settings/Settings.tsx:657
+#: src/screens/Settings/Settings.tsx:660
 msgid "Remove account"
 msgstr "Remover conta"
 
@@ -6955,7 +7326,7 @@ msgstr "Remover feed?"
 msgid "Remove from my feeds"
 msgstr "Remover dos meus feeds"
 
-#: src/screens/Settings/Settings.tsx:654
+#: src/screens/Settings/Settings.tsx:670
 msgid "Remove from quick access?"
 msgstr "Remover de acesso rápido?"
 
@@ -7009,8 +7380,8 @@ msgstr "Remover utilizador da lista"
 
 #: src/components/verification/VerificationRemovePrompt.tsx:46
 #: src/components/verification/VerificationsDialog.tsx:252
-#: src/view/com/profile/ProfileMenu.tsx:348
-#: src/view/com/profile/ProfileMenu.tsx:351
+#: src/view/com/profile/ProfileMenu.tsx:403
+#: src/view/com/profile/ProfileMenu.tsx:406
 msgid "Remove verification"
 msgstr "Remover verificação"
 
@@ -7053,6 +7424,15 @@ msgstr "Removido dos seus feeds"
 #: src/components/verification/VerificationRemovePrompt.tsx:32
 msgid "Removed verification"
 msgstr "Verificação removida"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:47
+#: src/screens/Saved/SavedCollectionsPage.tsx:50
+msgid "Renommer"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:39
+msgid "Renommer la collection"
+msgstr ""
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:129
 #: src/view/com/posts/FeedShutdownMsg.tsx:133
@@ -7117,7 +7497,7 @@ msgstr "Resposta ocultada pelo autor do fio"
 msgid "Reply Hidden by You"
 msgstr "Resposta ocultada por você"
 
-#: src/Navigation.tsx:428
+#: src/Navigation.tsx:459
 msgid "Reply notifications"
 msgstr "Notificações de respostas"
 
@@ -7148,8 +7528,8 @@ msgstr "A resposta foi ocultada com sucesso"
 msgid "Report"
 msgstr "Denunciar"
 
-#: src/view/com/profile/ProfileMenu.tsx:415
-#: src/view/com/profile/ProfileMenu.tsx:418
+#: src/view/com/profile/ProfileMenu.tsx:470
+#: src/view/com/profile/ProfileMenu.tsx:473
 msgid "Report account"
 msgstr "Denunciar conta"
 
@@ -7243,7 +7623,7 @@ msgstr "Republicar"
 msgid "Repost ({0, plural, one {# repost} other {# reposts}})"
 msgstr "Republicar ({0, plural, one {# republicação} other {# republicações}})"
 
-#: src/Navigation.tsx:460
+#: src/Navigation.tsx:491
 msgid "Repost notifications"
 msgstr "Notificações de republicações"
 
@@ -7287,7 +7667,7 @@ msgstr "Republicações desta publicação"
 msgid "Reposts of your reposts"
 msgstr "Republicações das suas republicações"
 
-#: src/Navigation.tsx:484
+#: src/Navigation.tsx:515
 msgid "Reposts of your reposts notifications"
 msgstr "Notificações de republicações das suas republicações"
 
@@ -7330,8 +7710,8 @@ msgstr "Reenviar Email"
 msgid "Resend Verification Email"
 msgstr "Reenviar Email de Verificação"
 
-#: src/screens/Settings/Settings.tsx:482
-#: src/screens/Settings/Settings.tsx:484
+#: src/screens/Settings/Settings.tsx:498
+#: src/screens/Settings/Settings.tsx:500
 msgid "Reset activity subscription nudge"
 msgstr "Repor toque de subscrição de atividade"
 
@@ -7339,14 +7719,31 @@ msgstr "Repor toque de subscrição de atividade"
 msgid "Reset code"
 msgstr "Código de redefinição"
 
-#: src/screens/Settings/Settings.tsx:467
-#: src/screens/Settings/Settings.tsx:469
+#: src/screens/Settings/Settings.tsx:483
+#: src/screens/Settings/Settings.tsx:485
 msgid "Reset onboarding state"
 msgstr "Redefinir estado da introdução"
 
 #: src/screens/Login/ForgotPasswordForm.tsx:80
 msgid "Reset password"
 msgstr "Redefinir palavra-passe"
+
+#: src/screens/MessagesMatrix.web.tsx:1013
+msgid "Rester connecté"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:55
+msgid "Retirer de la collection"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1458
+#: src/screens/Saved/CollectionDetailPage.tsx:34
+msgid "Retour"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:46
+msgid "Retournez à la bibliothèque pour choisir une autre collection."
+msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:324
 msgid "Retries signing in"
@@ -7413,6 +7810,8 @@ msgstr "Regressa ao passo anterior"
 #: src/components/live/EditLiveDialog.tsx:216
 #: src/components/live/EditLiveDialog.tsx:223
 #: src/components/StarterPack/QrCodeDialog.tsx:192
+#: src/screens/Messages/Settings.tsx:210
+#: src/screens/Messages/Settings.tsx:217
 #: src/screens/Profile/Header/EditProfileDialog.tsx:238
 #: src/screens/Profile/Header/EditProfileDialog.tsx:252
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:267
@@ -7461,23 +7860,29 @@ msgstr "Guardar novo nome de utilizador"
 msgid "Save QR code"
 msgstr "Guardar código QR"
 
+#: src/components/PostControls/BookmarkButton.web.tsx:51
+msgctxt "Accessibility label for the save button when item not yet saved"
+msgid "Save to collection"
+msgstr ""
+
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:320
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:326
 msgid "Save to my feeds"
 msgstr "Guardar nos meus feeds"
 
-#: src/view/shell/desktop/LeftNav.tsx:764
-#: src/view/shell/Drawer.tsx:571
-msgctxt "link to bookmarks screen"
-msgid "Saved"
-msgstr "Guardado"
+#: src/Navigation.tsx:658
+msgid "Saved collection"
+msgstr ""
+
+#: src/Navigation.tsx:649
+msgid "Saved collections"
+msgstr ""
 
 #: src/view/screens/SavedFeeds.tsx:172
 msgid "Saved Feeds"
 msgstr "Feeds Guardados"
 
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:143
-#: src/Navigation.tsx:608
 #: src/screens/Bookmarks/index.tsx:55
 msgid "Saved Posts"
 msgstr "Publicações Guardadas"
@@ -7519,6 +7924,20 @@ msgstr "Scroll para a direita"
 msgid "Scroll to top"
 msgstr "Voltar ao topo"
 
+#: src/screens/MessagesMatrix.web.tsx:1017
+#: src/screens/MessagesMatrix.web.tsx:1024
+msgid "Se connecter"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:973
+msgid "Se connecter à Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:737
+#: src/screens/MessagesMatrix.web.tsx:743
+msgid "Se déconnecter"
+msgstr ""
+
 #: src/components/dialogs/SearchablePeopleList.tsx:514
 #: src/components/forms/SearchInput.tsx:34
 #: src/components/forms/SearchInput.tsx:36
@@ -7528,7 +7947,7 @@ msgstr "Voltar ao topo"
 msgid "Search"
 msgstr "Procurar"
 
-#: src/Navigation.tsx:257
+#: src/Navigation.tsx:263
 #: src/screens/Profile/ProfileSearch.tsx:37
 msgid "Search @{0}'s posts"
 msgstr "Pesquisar nas publicações de @{0}"
@@ -7592,8 +8011,8 @@ msgstr "Procurar idiomas"
 msgid "Search my posts"
 msgstr "Procurar nas minhas publicações"
 
-#: src/view/com/profile/ProfileMenu.tsx:266
-#: src/view/com/profile/ProfileMenu.tsx:269
+#: src/view/com/profile/ProfileMenu.tsx:304
+#: src/view/com/profile/ProfileMenu.tsx:307
 msgid "Search posts"
 msgstr "Procurar publicações"
 
@@ -7636,8 +8055,8 @@ msgid "See #{tag} posts by user"
 msgstr "Ver publicações em #{tag} por utilizador"
 
 #: src/view/com/auth/SplashScreen.web.tsx:178
-msgid "See jobs at Bluesky"
-msgstr "Ver empregos no Bluesky"
+msgid "See jobs at Tellus"
+msgstr "Ver empregos no Tellus"
 
 #: src/components/FeedInterstitials.tsx:394
 #: src/components/FeedInterstitials.tsx:445
@@ -7802,6 +8221,10 @@ msgstr "Selecione os seus canais de notificação preferidos"
 msgid "Selecting multiple media types is not supported."
 msgstr "A seleção de vários tipos de conteúdo multimédia não é suportada."
 
+#: src/screens/MessagesMatrix.web.tsx:1623
+msgid "Sélectionne une conversation"
+msgstr ""
+
 #: src/components/dms/ChatEmptyPill.tsx:38
 msgid "Send a neat website!"
 msgstr "Envia um website interessante!"
@@ -7818,7 +8241,7 @@ msgctxt "action"
 msgid "Send Email"
 msgstr "Enviar E-mail"
 
-#: src/view/shell/Drawer.tsx:361
+#: src/view/shell/Drawer.tsx:382
 msgid "Send feedback"
 msgstr "Enviar feedback"
 
@@ -7871,6 +8294,14 @@ msgstr "Envia e-mail com o código de confirmação para eliminação da conta"
 msgid "Server address"
 msgstr "Endereço do servidor"
 
+#: src/screens/MessagesMatrix.web.tsx:1067
+msgid "Serveur"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:322
+msgid "Serveur invalide."
+msgstr ""
+
 #: src/screens/Settings/AppIconSettings/index.tsx:178
 msgid "Set app icon to {0}"
 msgstr "Definir ícone da aplicação para {0}"
@@ -7891,10 +8322,10 @@ msgstr "Configure a sua conta"
 msgid "Sets email for password reset"
 msgstr "Define o e-mail para recuperação de senha"
 
-#: src/Navigation.tsx:213
-#: src/screens/Settings/Settings.tsx:99
-#: src/view/shell/desktop/LeftNav.tsx:804
-#: src/view/shell/Drawer.tsx:609
+#: src/Navigation.tsx:219
+#: src/screens/Settings/Settings.tsx:101
+#: src/view/shell/desktop/LeftNav.tsx:843
+#: src/view/shell/Drawer.tsx:674
 msgid "Settings"
 msgstr "Definições"
 
@@ -7976,7 +8407,7 @@ msgstr "Partilhe uma história interessante!"
 msgid "Share a fun fact!"
 msgstr "Partilhe um facto divertido!"
 
-#: src/view/com/profile/ProfileMenu.tsx:502
+#: src/view/com/profile/ProfileMenu.tsx:566
 msgid "Share anyway"
 msgstr "Partilhar mesmo assim"
 
@@ -8015,15 +8446,15 @@ msgid "Share this starter pack"
 msgstr "Partilhar este pacote de iniciante"
 
 #: src/components/StarterPack/ShareDialog.tsx:80
-msgid "Share this starter pack and help people join your community on Bluesky."
-msgstr "Partilhe este pacote de iniciante e ajude pessoas a juntarem-se à sua comunidade no Bluesky."
+msgid "Share this starter pack and help people join your community on Tellus."
+msgstr "Partilhe este pacote de iniciante e ajude pessoas a juntarem-se à sua comunidade no Tellus."
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:117
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:120
 #: src/screens/StarterPack/StarterPackScreen.tsx:611
 #: src/screens/StarterPack/StarterPackScreen.tsx:619
-#: src/view/com/profile/ProfileMenu.tsx:246
-#: src/view/com/profile/ProfileMenu.tsx:259
+#: src/view/com/profile/ProfileMenu.tsx:284
+#: src/view/com/profile/ProfileMenu.tsx:297
 msgid "Share via..."
 msgstr "Partilhar via..."
 
@@ -8031,7 +8462,7 @@ msgstr "Partilhar via..."
 msgid "Share your favorite feed!"
 msgstr "Partilhe o seu feed favorito!"
 
-#: src/Navigation.tsx:316
+#: src/Navigation.tsx:322
 msgid "Shared Preferences Tester"
 msgstr "Testador de Preferências Partilhadas"
 
@@ -8137,7 +8568,7 @@ msgstr "Mostrar aviso e filtrar de feeds"
 msgid "Shows information about when this post was created"
 msgstr "Mostra informação sobre quando esta publicação foi criada"
 
-#: src/screens/Settings/Settings.tsx:125
+#: src/screens/Settings/Settings.tsx:127
 msgid "Shows other accounts you can switch to"
 msgstr "Mostra outras contas para as quais pode mudar"
 
@@ -8189,23 +8620,23 @@ msgid "Sign in to account that is not listed"
 msgstr "Iniciar sessão com uma conta que não está na lista"
 
 #: src/components/dialogs/Signin.tsx:46
-msgid "Sign in to Bluesky or create a new account"
-msgstr "Inicie sessão no Bluesky ou crie uma conta nova"
+msgid "Sign in to Tellus or create a new account"
+msgstr "Inicie sessão no Tellus ou crie uma conta nova"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:461
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:463
 msgid "Sign in to view post"
 msgstr "Inicie sessão para ver esta publicação"
 
-#: src/screens/Settings/Settings.tsx:254
-#: src/screens/Settings/Settings.tsx:256
-#: src/screens/Settings/Settings.tsx:288
+#: src/screens/Settings/Settings.tsx:270
+#: src/screens/Settings/Settings.tsx:272
+#: src/screens/Settings/Settings.tsx:304
 #: src/screens/SignupQueued.tsx:93
 #: src/screens/SignupQueued.tsx:96
 #: src/screens/Takendown.tsx:85
-#: src/view/shell/desktop/LeftNav.tsx:212
-#: src/view/shell/desktop/LeftNav.tsx:269
-#: src/view/shell/desktop/LeftNav.tsx:272
+#: src/view/shell/desktop/LeftNav.tsx:214
+#: src/view/shell/desktop/LeftNav.tsx:271
+#: src/view/shell/desktop/LeftNav.tsx:274
 msgid "Sign out"
 msgstr "Terminar sessão"
 
@@ -8213,8 +8644,8 @@ msgstr "Terminar sessão"
 msgid "Sign Out"
 msgstr "Terminar Sessão"
 
-#: src/screens/Settings/Settings.tsx:285
-#: src/view/shell/desktop/LeftNav.tsx:209
+#: src/screens/Settings/Settings.tsx:301
+#: src/view/shell/desktop/LeftNav.tsx:211
 msgid "Sign out?"
 msgstr "Terminar sessão?"
 
@@ -8325,7 +8756,7 @@ msgid "Something wrong? Let us know."
 msgstr "Aconteceu algo de errado? Informe-nos."
 
 #: src/App.native.tsx:126
-#: src/App.web.tsx:102
+#: src/App.web.tsx:106
 msgid "Sorry! Your session expired. Please sign in again."
 msgstr "Desculpe! A sua sessão expirou. Por favor, inicie sessão novamente."
 
@@ -8345,6 +8776,10 @@ msgstr "Ordenar respostas à mesma publicação por:"
 #: src/components/moderation/ModerationDetailsDialog.tsx:186
 msgid "Source: <0>{sourceName}</0>"
 msgstr "Origem: <0>{sourceName}</0>"
+
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:252
+msgid "Soutenir"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:72
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:85
@@ -8386,8 +8821,8 @@ msgstr "Comece a adicionar pessoas!"
 msgid "Start chat with {displayName}"
 msgstr "Iniciar conversa com {displayName}"
 
-#: src/Navigation.tsx:579
-#: src/Navigation.tsx:584
+#: src/Navigation.tsx:620
+#: src/Navigation.tsx:625
 #: src/screens/StarterPack/Wizard/index.tsx:209
 msgid "Starter Pack"
 msgstr "Pacote de Iniciante"
@@ -8427,12 +8862,12 @@ msgstr "Página de estado"
 msgid "Step {0} of {1}"
 msgstr "Passo {0} de {1}"
 
-#: src/screens/Settings/Settings.tsx:393
+#: src/screens/Settings/Settings.tsx:409
 msgid "Storage cleared, you need to restart the app now."
 msgstr "Armazenamento limpo, precisa de reiniciar a aplicação agora."
 
-#: src/Navigation.tsx:306
-#: src/screens/Settings/Settings.tsx:448
+#: src/Navigation.tsx:312
+#: src/screens/Settings/Settings.tsx:464
 msgid "Storybook"
 msgstr "Storybook"
 
@@ -8521,16 +8956,26 @@ msgctxt "Name of app icon variant"
 msgid "Sunset"
 msgstr "Pôr do sol"
 
-#: src/Navigation.tsx:326
+#: src/Navigation.tsx:332
 #: src/view/screens/Support.tsx:31
 #: src/view/screens/Support.tsx:34
 msgid "Support"
 msgstr "Suporte"
 
-#: src/screens/Settings/Settings.tsx:123
-#: src/screens/Settings/Settings.tsx:137
-#: src/screens/Settings/Settings.tsx:604
-#: src/view/shell/desktop/LeftNav.tsx:247
+#: src/screens/Saved/CollectionDetailPage.tsx:49
+#: src/screens/Saved/SavedCollectionsPage.tsx:48
+msgid "Supprimer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:50
+#: src/screens/Saved/SavedCollectionsPage.tsx:41
+msgid "Supprimer la collection"
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:125
+#: src/screens/Settings/Settings.tsx:139
+#: src/screens/Settings/Settings.tsx:620
+#: src/view/shell/desktop/LeftNav.tsx:249
 msgid "Switch account"
 msgstr "Mudar de conta"
 
@@ -8539,13 +8984,17 @@ msgstr "Mudar de conta"
 msgid "Switch Account"
 msgstr "Mudar de Conta"
 
-#: src/view/shell/desktop/LeftNav.tsx:110
+#: src/view/shell/desktop/LeftNav.tsx:112
 msgid "Switch accounts"
 msgstr "Trocar de conta"
 
-#: src/view/shell/desktop/LeftNav.tsx:346
+#: src/view/shell/desktop/LeftNav.tsx:348
 msgid "Switch to {0}"
 msgstr "Trocar para {0}"
+
+#: src/screens/MessagesMatrix.web.tsx:1108
+msgid "Synchronisation des conversations..."
+msgstr ""
 
 #: src/components/dialogs/Embed.tsx:157
 #: src/components/dialogs/Embed.tsx:159
@@ -8557,7 +9006,7 @@ msgstr "Sistema"
 #: src/screens/Log.tsx:58
 #: src/screens/Settings/AboutSettings.tsx:107
 #: src/screens/Settings/AboutSettings.tsx:110
-#: src/screens/Settings/Settings.tsx:441
+#: src/screens/Settings/Settings.tsx:457
 msgid "System log"
 msgstr "Registo do sistema"
 
@@ -8566,8 +9015,8 @@ msgid "Tags only"
 msgstr "Apenas tags"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:116
-msgid "Tap below to allow Bluesky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
-msgstr "Toque abaixo para permitir que o Bluesky aceda à sua localização GPS. Em seguida, usaremos esses dados para determinar com maior precisão o conteúdo e as funcionalidades disponíveis na sua região."
+msgid "Tap below to allow Tellus to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
+msgstr "Toque abaixo para permitir que o Tellus aceda à sua localização GPS. Em seguida, usaremos esses dados para determinar com maior precisão o conteúdo e as funcionalidades disponíveis na sua região."
 
 #: src/view/com/feeds/MissingFeed.tsx:89
 msgid "Tap for information"
@@ -8578,8 +9027,8 @@ msgid "Tap for more information"
 msgstr "Toque para mais informação"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:164
-msgid "Tap to acknowledge that you understand and agree to these updates and continue using Bluesky"
-msgstr "Toque para confirmar que entende e concorda com estas atualizações e continue a usar o Bluesky"
+msgid "Tap to acknowledge that you understand and agree to these updates and continue using Tellus"
+msgstr "Toque para confirmar que entende e concorda com estas atualizações e continue a usar o Tellus"
 
 #: src/components/ContextMenu/Backdrop.ios.tsx:54
 #: src/components/ContextMenu/Backdrop.ios.tsx:80
@@ -8620,20 +9069,136 @@ msgstr "Conte-nos um pouco sobre si"
 msgid "Tell us a little more"
 msgstr "Conte-nos um pouco mais"
 
-#: src/view/shell/desktop/RightNav.tsx:120
-#: src/view/shell/desktop/RightNav.tsx:121
+#: src/view/com/auth/server-input/index.tsx:136
+#: src/view/com/auth/server-input/index.tsx:137
+msgid "Tellus"
+msgstr "Tellus"
+
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:690
+msgid "Tellus cannot confirm the authenticity of the claimed date."
+msgstr "O Tellus não pode confirmar a veracidade da data aplicada."
+
+#: src/Navigation.tsx:580
+#: src/Navigation.tsx:827
+#: src/screens/Messages/ChatList.tsx:76
+#: src/screens/Messages/ChatList.tsx:394
+#: src/screens/Messages/ChatList.tsx:418
+#: src/screens/Messages/Settings.tsx:173
+#: src/screens/MessagesMatrix.web.tsx:935
+#: src/screens/Settings/Settings.tsx:206
+#: src/screens/Settings/Settings.tsx:209
+#: src/view/shell/bottom-bar/BottomBar.tsx:221
+#: src/view/shell/desktop/LeftNav.tsx:609
+#: src/view/shell/Drawer.tsx:487
+msgid "Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1052
+msgid "Tellus Chat est basé sur Matrix."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:146
+msgid "Tellus Chat ID removed."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:125
+msgid "Tellus Chat ID saved."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:941
+#: src/screens/MessagesMatrix.web.tsx:1118
+msgid "Tellus Chat indisponible"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:620
+msgid "Tellus Chat indisponible."
+msgstr ""
+
+#: src/Navigation.tsx:590
+#: src/screens/Messages/components/InboxPreview.tsx:22
+#: src/screens/Messages/components/InboxPreview.tsx:62
+#: src/screens/Messages/Inbox.tsx:56
+#: src/screens/Messages/Inbox.tsx:98
+msgid "Tellus Chat requests"
+msgstr ""
+
+#: src/components/dms/ConvoMenu.tsx:76
+#: src/Navigation.tsx:585
+#: src/screens/Messages/ChatList.tsx:81
+#: src/screens/Messages/ChatList.tsx:85
+#: src/screens/Messages/ChatList.tsx:378
+#: src/screens/Messages/Settings.tsx:164
+msgid "Tellus Chat settings"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:126
+msgid "Tellus Chat te permet de continuer les discussions initiées sur le réseau social, en privé, avec la même simplicité."
+msgstr ""
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:175
+msgctxt "Name of app icon variant"
+msgid "Tellus Classic™"
+msgstr "Tellus Classic™"
+
+#: src/view/com/auth/server-input/index.tsx:212
+msgid "Tellus is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+msgstr "O Tellus é uma rede aberta em que pode escolher o seu fornecedor de hospedagem. Se for um programador, pode hospedar o seu próprio servidor."
+
+#: src/view/com/auth/server-input/index.tsx:149
+msgid "Tellus is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Tellus Social option."
+msgstr "Tellus é uma rede aberta em que pode escolher o seu provedor de hospedagem. Se é novo aqui, recomendamos que continue com a configuração padrão do Tellus Social."
+
+#: src/components/ProgressGuide/List.tsx:53
+#: src/components/ProgressGuide/List.tsx:70
+msgid "Tellus is better with friends!"
+msgstr "Tellus é melhor com amigos!"
+
+#: src/screens/Takendown.tsx:217
+msgid "Tellus Social Terms of Service"
+msgstr "Termos de Serviço de Tellus Social"
+
+#: src/components/StarterPack/ProfileStarterPacks.tsx:310
+msgid "Tellus will choose a set of recommended accounts from people in your network."
+msgstr "O Tellus escolherá um conjunto de contas recomendadas de pessoas na sua rede."
+
+#: src/screens/Settings/components/PwiOptOut.tsx:99
+msgid "Tellus will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+msgstr "O Tellus não exibirá o seu perfil e publicações para utilizadores que não tenham sessão iniciada. Outras aplicações talvez não respeitem esta solicitação. Isto não torna a sua conta privada."
+
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
+msgid "Tellus will proactively verify notable and authentic accounts."
+msgstr "O Tellus irá verificar proativamente contas notáveis e autênticas."
+
+#: src/screens/Signup/StepInfo/Policies.tsx:26
+msgid "Tellus's Community Guidelines"
+msgstr "Diretrizes da Comunidade do Tellus"
+
+#: src/screens/Signup/StepInfo/Policies.tsx:32
+msgid "Tellus's Updated Community Guidelines"
+msgstr "Diretrizes da Comunidade do Tellus Atualizadas"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:99
+msgid "Tellus+"
+msgstr "Tellus+"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:102
+msgid "Tellus+ icons"
+msgstr "Ícones Tellus+"
+
+#: src/view/shell/desktop/RightNav.tsx:108
+#: src/view/shell/desktop/RightNav.tsx:109
 msgid "Terms"
 msgstr "Termos"
 
 #: src/components/dialogs/BirthDateSettings.tsx:135
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:30
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:97
-#: src/Navigation.tsx:336
+#: src/Navigation.tsx:342
 #: src/screens/Settings/AboutSettings.tsx:84
 #: src/screens/Settings/AboutSettings.tsx:87
 #: src/view/screens/TermsOfService.tsx:31
-#: src/view/shell/Drawer.tsx:697
-#: src/view/shell/Drawer.tsx:699
+#: src/view/shell/Drawer.tsx:762
+#: src/view/shell/Drawer.tsx:764
 msgid "Terms of Service"
 msgstr "Termos de Serviço"
 
@@ -8703,8 +9268,8 @@ msgstr "É tudo!"
 msgid "That's everything!"
 msgstr "É tudo!"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:324
-#: src/view/com/profile/ProfileMenu.tsx:478
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:382
+#: src/view/com/profile/ProfileMenu.tsx:542
 msgid "The account will be able to interact with you after unblocking."
 msgstr "A conta poderá interagir consigo após a desbloquear."
 
@@ -8721,10 +9286,6 @@ msgstr "O autor deste fio ocultou a sua resposta."
 #: src/components/dialogs/BirthDateSettings.tsx:122
 msgid "The birthdate you've entered means you are under 18 years old. Certain content and features may be unavailable to you."
 msgstr "A data de nascimento que inseriu indica que tem menos de 18 anos. Certos conteúdos e funcionalidades podem estar indisponíveis para si."
-
-#: src/screens/Moderation/index.tsx:426
-msgid "The Bluesky web application"
-msgstr "A aplicação web do Bluesky"
 
 #: src/view/screens/CommunityGuidelines.tsx:38
 msgid "The Community Guidelines have been moved to <0/>"
@@ -8743,8 +9304,8 @@ msgid "The Discover feed now knows what you like"
 msgstr "O feed \"Descobrir\" sabe o que gosta"
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:324
-msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
-msgstr "A experiência é melhor na aplicação. Faça download do Bluesky agora e retomaremos onde parou."
+msgid "The experience is better in the app. Download Tellus now and we'll pick back up where you left off."
+msgstr "A experiência é melhor na aplicação. Faça download do Tellus agora e retomaremos onde parou."
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:67
 msgid "The feed has been replaced with Discover."
@@ -8763,8 +9324,8 @@ msgid "The following settings will be used as your defaults when creating new po
 msgstr "As seguintes definições serão usadas como definições padrão ao criar novas publicações. Pode editar estas para uma publicação específica a partir do compositor."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:11
-msgid "The laws in your location require you to verify you're an adult before accessing certain features on Bluesky, like adult content and direct messaging."
-msgstr "As leis na sua localização exigem que verifique ser um adulto antes de aceder a certos recursos no Bluesky, como conteúdo adulto e mensagens diretas."
+msgid "The laws in your location require you to verify you're an adult before accessing certain features on Tellus, like adult content and direct messaging."
+msgstr "As leis na sua localização exigem que verifique ser um adulto antes de aceder a certos recursos no Tellus, como conteúdo adulto e mensagens diretas."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:14
 msgid "The laws in your location require you to verify you're an adult to access certain features. Tap to learn more."
@@ -8799,6 +9360,10 @@ msgstr "O assunto do menu de contexto"
 #: src/view/screens/Support.tsx:37
 msgid "The support form has been moved. If you need help, please <0/> or visit {HELP_DESK_URL} to get in touch with us."
 msgstr "O formulário de suporte foi movido. Se precisar de ajuda, por favor <0/> ou visite {HELP_DESK_URL} para entrar em contacto connosco."
+
+#: src/screens/Moderation/index.tsx:426
+msgid "The Tellus web application"
+msgstr "A aplicação web do Tellus"
 
 #: src/view/screens/TermsOfService.tsx:35
 msgid "The Terms of Service have been moved to"
@@ -8878,15 +9443,15 @@ msgstr "Ocorreu um problema ao atualizar os seus feeds. Por favor, verifique a s
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:388
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:90
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:101
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:101
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:123
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:136
-#: src/view/com/profile/ProfileMenu.tsx:131
-#: src/view/com/profile/ProfileMenu.tsx:141
-#: src/view/com/profile/ProfileMenu.tsx:155
-#: src/view/com/profile/ProfileMenu.tsx:165
-#: src/view/com/profile/ProfileMenu.tsx:178
-#: src/view/com/profile/ProfileMenu.tsx:190
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:105
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:127
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:140
+#: src/view/com/profile/ProfileMenu.tsx:139
+#: src/view/com/profile/ProfileMenu.tsx:149
+#: src/view/com/profile/ProfileMenu.tsx:163
+#: src/view/com/profile/ProfileMenu.tsx:173
+#: src/view/com/profile/ProfileMenu.tsx:186
+#: src/view/com/profile/ProfileMenu.tsx:198
 msgid "There was an issue! {0}"
 msgstr "Ocorreu um problema! {0}"
 
@@ -8908,8 +9473,8 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr "Houve um problema inesperado com a aplicação. Por favor, informe-nos se isto se passou consigo!"
 
 #: src/screens/SignupQueued.tsx:130
-msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
-msgstr "Houve um largo influxo de novos utilizadores para o Bluesky! Iremos ativar a sua conta assim que possível."
+msgid "There's been a rush of new users to Tellus! We'll activate your account as soon as we can."
+msgstr "Houve um largo influxo de novos utilizadores para o Tellus! Iremos ativar a sua conta assim que possível."
 
 #: src/screens/Settings/FollowingFeedPreferences.tsx:65
 msgid "These settings only apply to the Following feed."
@@ -8944,8 +9509,8 @@ msgid "This appeal will be sent to <0>{sourceName}</0>."
 msgstr "Este recurso será enviado para <0>{sourceName}</0>."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:111
-msgid "This appeal will be sent to Bluesky's moderation service."
-msgstr "Este recurso será enviado para o serviço de moderação do Bluesky."
+msgid "This appeal will be sent to Tellus's moderation service."
+msgstr "Este recurso será enviado para o serviço de moderação do Tellus."
 
 #: src/screens/Messages/components/MessageListError.tsx:18
 msgid "This chat was disconnected"
@@ -8973,8 +9538,8 @@ msgid "This content is not available because one of the users involved has block
 msgstr "Este conteúdo não está disponível porque um dos utilizadores envolvidos bloqueou o outro."
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:118
-msgid "This content is not viewable without a Bluesky account."
-msgstr "Este conteúdo não pode ser visualizado sem uma conta Bluesky."
+msgid "This content is not viewable without a Tellus account."
+msgstr "Este conteúdo não pode ser visualizado sem uma conta Tellus."
 
 #: src/screens/Messages/components/ChatListItem.tsx:362
 msgid "This conversation is with a deleted or a deactivated account. Press for options"
@@ -9048,12 +9613,12 @@ msgid "This link is taking you to the following website:"
 msgstr "Esse link está a levá-lo para o seguinte site:"
 
 #: src/screens/List/ListHiddenScreen.tsx:151
-msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Esta lista - criada por <0>{0}</0> - contém possíveis violações das diretrizes da comunidade do Bluesky no seu nome ou descrição."
+msgid "This list – created by <0>{0}</0> – contains possible violations of Tellus's community guidelines in its name or description."
+msgstr "Esta lista - criada por <0>{0}</0> - contém possíveis violações das diretrizes da comunidade do Tellus no seu nome ou descrição."
 
 #: src/screens/List/ListHiddenScreen.tsx:146
-msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Esta lista - criada por si - contém possíveis violações das diretrizes da comunidade do Bluesky no seu nome ou descrição."
+msgid "This list – created by you – contains possible violations of Tellus's community guidelines in its name or description."
+msgstr "Esta lista - criada por si - contém possíveis violações das diretrizes da comunidade do Tellus no seu nome ou descrição."
 
 #: src/view/screens/ProfileList.tsx:962
 msgid "This list is empty."
@@ -9064,8 +9629,8 @@ msgid "This moderation service is unavailable. See below for more details. If th
 msgstr "Este serviço de moderação não está disponível. Veja mais detalhes abaixo. Se este problema persistir, entre em contacto connosco."
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:676
-msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
-msgstr "Este post afirma ter sido criado em <0>{0}</0>, mas foi primeiro visto por Bluesky em <1>{1}</1>."
+msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Tellus on <1>{1}</1>."
+msgstr "Este post afirma ter sido criado em <0>{0}</0>, mas foi primeiro visto por Tellus em <1>{1}</1>."
 
 #: src/components/WhoCanReply.tsx:240
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
@@ -9087,7 +9652,7 @@ msgstr "Esta publicação será ocultada de feeds e fios. Isto não pode ser rev
 msgid "This post's author has disabled quote posts."
 msgstr "O autor desta publicação desativou as citações."
 
-#: src/view/com/profile/ProfileMenu.tsx:499
+#: src/view/com/profile/ProfileMenu.tsx:563
 msgid "This profile is only visible to logged-in users. It won't be visible to people who aren't signed in."
 msgstr "Este perfil é apenas visível para utilizadores com sessão iniciada. Não será visível para quem não tenha sessão iniciada."
 
@@ -9148,7 +9713,7 @@ msgstr "Este utilizador não segue ninguém."
 msgid "This will delete \"{0}\" from your muted words. You can always add it back later."
 msgstr "Isto irá apagar \"{0}\" das suas palavras silenciadas. Pode sempre adicioná-la de volta mais tarde."
 
-#: src/screens/Settings/Settings.tsx:656
+#: src/screens/Settings/Settings.tsx:672
 msgid "This will remove @{0} from the quick access list."
 msgstr "Isto irá remover @{0} da lista de acesso rápido."
 
@@ -9175,13 +9740,17 @@ msgstr "Preferências de Resposta"
 msgid "Threaded"
 msgstr "Em fio"
 
-#: src/Navigation.tsx:369
+#: src/Navigation.tsx:400
 msgid "Threads Preferences"
 msgstr "Preferências de Fios"
 
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/TimeIndicator.tsx:34
 msgid "Time remaining: {0, plural, one {# second} other {# seconds}}"
 msgstr "Tempo restante: {0, plural, one {# segundo} other {# segundos}}"
+
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:250
+msgid "Tip this profile"
+msgstr ""
 
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:99
 msgid "To disable the email 2FA method, please verify your access to the email address."
@@ -9225,7 +9794,7 @@ msgstr "Melhor"
 msgid "Top replies first"
 msgstr "Respostas principais primeiro"
 
-#: src/Navigation.tsx:544
+#: src/Navigation.tsx:575
 msgid "Topic"
 msgstr "Tópico"
 
@@ -9251,6 +9820,11 @@ msgstr "Tendências"
 msgid "Trending Videos"
 msgstr "Vídeos do Momento"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:36
+#: src/screens/Saved/SavedCollectionsPage.tsx:30
+msgid "Trier"
+msgstr ""
+
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:138
 msgid "Trust emerges from relationships, communities, and shared context, so we’re also enabling <0>trusted verifiers</0>: organizations that can directly issue verification."
 msgstr "A confiança surge de relações, comunidades e contexto compartilhado, por isso também estamos a permitir <0>verificadores de confiança</0>: organizações que podem fornecer verificações diretamente."
@@ -9268,6 +9842,10 @@ msgstr "Televisão"
 msgid "Two-factor authentication (2FA)"
 msgstr "Autenticação de dois fatores (2FA)"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:40
+msgid "Type"
+msgstr ""
+
 #: src/screens/Messages/components/MessageInput.tsx:153
 msgid "Type your message here"
 msgstr "Digite a sua mensagem aqui"
@@ -9277,8 +9855,8 @@ msgid "Type:"
 msgstr "Tipo:"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:92
-msgid "Unable to access location. You'll need to visit your system settings to enable location services for Bluesky."
-msgstr "Não foi possível aceder à localização. Vai ter de visitar as suas definições do sistema para ativar os serviços de localização para o Bluesky."
+msgid "Unable to access location. You'll need to visit your system settings to enable location services for Tellus."
+msgstr "Não foi possível aceder à localização. Vai ter de visitar as suas definições do sistema para ativar os serviços de localização para o Tellus."
 
 #: src/lib/hooks/useCleanError.ts:27
 #: src/lib/strings/errors.ts:11
@@ -9302,11 +9880,23 @@ msgstr "Não foi possível contactar o seu serviço. Verifique a sua conexão à
 msgid "Unable to delete"
 msgstr "Não é possível eliminar"
 
-#: src/screens/Settings/Settings.tsx:507
+#: src/screens/Messages/Settings.tsx:151
+msgid "Unable to delete Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:95
+msgid "Unable to load Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:130
+msgid "Unable to save Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:523
 msgid "Unapply Pull Request"
 msgstr "Retirar Pull Request"
 
-#: src/screens/Settings/Settings.tsx:509
+#: src/screens/Settings/Settings.tsx:525
 msgid "Unapply Pull Request {currentChannel}"
 msgstr "Retirar Pull Request {currentChannel}"
 
@@ -9322,27 +9912,27 @@ msgstr "Informação do feed indisponível"
 #: src/components/dms/MessagesListBlockedFooter.tsx:104
 #: src/components/dms/MessagesListBlockedFooter.tsx:112
 #: src/components/dms/MessagesListBlockedFooter.tsx:119
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:208
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:328
-#: src/view/com/profile/ProfileMenu.tsx:490
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:223
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:386
+#: src/view/com/profile/ProfileMenu.tsx:554
 #: src/view/screens/ProfileList.tsx:723
 msgid "Unblock"
 msgstr "Desbloquear"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:213
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:228
 msgctxt "action"
 msgid "Unblock"
 msgstr "Desbloquear"
 
 #: src/components/dms/ConvoMenu.tsx:247
 #: src/components/dms/ConvoMenu.tsx:250
-#: src/view/com/profile/ProfileMenu.tsx:395
-#: src/view/com/profile/ProfileMenu.tsx:401
+#: src/view/com/profile/ProfileMenu.tsx:450
+#: src/view/com/profile/ProfileMenu.tsx:456
 msgid "Unblock account"
 msgstr "Desbloquear conta"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:322
-#: src/view/com/profile/ProfileMenu.tsx:472
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:380
+#: src/view/com/profile/ProfileMenu.tsx:536
 msgid "Unblock Account?"
 msgstr "Desbloquear conta?"
 
@@ -9370,12 +9960,12 @@ msgctxt "action"
 msgid "Unfollow"
 msgstr "Deixar de seguir"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:236
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:266
 msgid "Unfollow {0}"
 msgstr "Deixar de seguir {0}"
 
-#: src/view/com/profile/ProfileMenu.tsx:286
-#: src/view/com/profile/ProfileMenu.tsx:296
+#: src/view/com/profile/ProfileMenu.tsx:341
+#: src/view/com/profile/ProfileMenu.tsx:351
 msgid "Unfollow account"
 msgstr "Deixar de seguir conta"
 
@@ -9383,13 +9973,13 @@ msgstr "Deixar de seguir conta"
 msgid "Unfollows the user"
 msgstr "Deixa de seguir o utilizador"
 
-#: src/components/BlockedGeoOverlay.tsx:48
-msgid "Unfortunately, Bluesky is unavailable in Mississippi right now."
-msgstr "Infelizmente, o Bluesky não está atualmente disponível no Mississippi."
-
 #: src/components/moderation/ReportDialog/index.tsx:372
 msgid "Unfortunately, none of your subscribed labelers supports this report type."
 msgstr "Infelizmente, nenhum dos rotuladores que subscreve suportam este tipo de denúncia."
+
+#: src/components/BlockedGeoOverlay.tsx:48
+msgid "Unfortunately, Tellus is unavailable in Mississippi right now."
+msgstr "Infelizmente, o Tellus não está atualmente disponível no Mississippi."
 
 #: src/components/verification/VerificationsDialog.tsx:211
 msgid "Unknown verifier"
@@ -9421,8 +10011,8 @@ msgstr "Remover silenciamento de {tag}"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:627
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:633
-#: src/view/com/profile/ProfileMenu.tsx:374
-#: src/view/com/profile/ProfileMenu.tsx:380
+#: src/view/com/profile/ProfileMenu.tsx:429
+#: src/view/com/profile/ProfileMenu.tsx:435
 msgid "Unmute account"
 msgstr "Remover silenciamento da conta"
 
@@ -9478,8 +10068,8 @@ msgstr "{0} desafixado de início"
 msgid "Unpinned from your feeds"
 msgstr "Desafixado dos seus feeds"
 
-#: src/screens/Settings/Settings.tsx:474
-#: src/screens/Settings/Settings.tsx:476
+#: src/screens/Settings/Settings.tsx:490
+#: src/screens/Settings/Settings.tsx:492
 msgid "Unsnooze email reminder"
 msgstr "Deixar de adiar lembrete de e-mail"
 
@@ -9590,9 +10180,13 @@ msgstr "A carregar miniatura do link..."
 msgid "Uploading video..."
 msgstr "A carregar vídeo..."
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:49
+msgid "URL de la couverture"
+msgstr ""
+
 #: src/screens/Settings/AppPasswords.tsx:67
-msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
-msgstr "Use palavras-passe de aplicação para iniciar sessão em outros clientes Bluesky sem lhes dar acesso à sua conta ou palavra-passe."
+msgid "Use app passwords to sign in to other Tellus clients without giving full access to your account or password."
+msgstr "Use palavras-passe de aplicação para iniciar sessão em outros clientes Tellus sem lhes dar acesso à sua conta ou palavra-passe."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:568
 msgid "Use default provider"
@@ -9622,8 +10216,8 @@ msgid "Use this to sign in to the other app along with your handle."
 msgstr "Use isto para iniciar sessão na outra aplicação em conjunto com o seu nome de utilizador."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:279
-msgid "Use your account email address, or another real email address you control, in case KWS or Bluesky needs to contact you."
-msgstr "Use o seu endereço de e-mail ou outro endereço de e-mail real que controle, caso a KWS ou o Bluesky precisem de entrar em contacto consigo."
+msgid "Use your account email address, or another real email address you control, in case KWS or Tellus needs to contact you."
+msgstr "Use o seu endereço de e-mail ou outro endereço de e-mail real que controle, caso a KWS ou o Tellus precisem de entrar em contacto consigo."
 
 #: src/view/com/modals/InviteCodes.tsx:201
 msgid "Used by:"
@@ -9701,8 +10295,8 @@ msgstr "utilizadores seguidos por <0>@{0}</0>"
 msgid "users following <0>@{0}</0>"
 msgstr "utilizadores que seguem <0>@{0}</0>"
 
-#: src/screens/Messages/Settings.tsx:97
-#: src/screens/Messages/Settings.tsx:100
+#: src/screens/Messages/Settings.tsx:269
+#: src/screens/Messages/Settings.tsx:272
 msgid "Users I follow"
 msgstr "Utilizadores que eu sigo"
 
@@ -9726,14 +10320,14 @@ msgstr "Falha na verificação. Por favor, tente novamente."
 msgid "Verification settings"
 msgstr "Definições de verificação"
 
-#: src/Navigation.tsx:206
+#: src/Navigation.tsx:212
 #: src/screens/Moderation/VerificationSettings.tsx:32
 msgid "Verification Settings"
 msgstr "Definições de Verificação"
 
 #: src/screens/Moderation/VerificationSettings.tsx:41
-msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
-msgstr "As verificações no Bluesky funcionam de forma diferente das outras plataformas. <0>Saiba mais aqui.</0>"
+msgid "Verifications on Tellus work differently than on other platforms. <0>Learn more here.</0>"
+msgstr "As verificações no Tellus funcionam de forma diferente das outras plataformas. <0>Saiba mais aqui.</0>"
 
 #: src/components/verification/VerificationsDialog.tsx:103
 msgid "Verified by:"
@@ -9741,8 +10335,8 @@ msgstr "Verificado por:"
 
 #: src/components/verification/VerificationCreatePrompt.tsx:84
 #: src/components/verification/VerificationCreatePrompt.tsx:86
-#: src/view/com/profile/ProfileMenu.tsx:358
-#: src/view/com/profile/ProfileMenu.tsx:361
+#: src/view/com/profile/ProfileMenu.tsx:413
+#: src/view/com/profile/ProfileMenu.tsx:416
 msgid "Verify account"
 msgstr "Verificar conta"
 
@@ -9814,11 +10408,15 @@ msgstr "Versão {0}"
 msgid "Video"
 msgstr "Vídeo"
 
+#: src/screens/Saved/components.tsx:457
+msgid "Vidéo"
+msgstr ""
+
 #: src/view/com/composer/state/video.ts:357
 msgid "Video failed to process"
 msgstr "Falha ao processar o vídeo"
 
-#: src/Navigation.tsx:600
+#: src/Navigation.tsx:641
 msgid "Video Feed"
 msgstr "Feed de Vídeo"
 
@@ -10002,9 +10600,36 @@ msgstr "Visitar site"
 msgid "Visit your notification settings"
 msgstr "Visitar as suas definições de notificações"
 
+#: src/screens/MessagesMatrix.web.tsx:1498
+#: src/screens/MessagesMatrix.web.tsx:1508
+msgid "Voir membres"
+msgstr ""
+
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VolumeControl.tsx:81
 msgid "Volume"
 msgstr "Volume"
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:27
+msgid "Vos collections, dans un espace calme et organisé."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:442
+msgid "Vous: {0}"
+msgstr ""
+
+#: src/Navigation.tsx:368
+#: src/Navigation.tsx:386
+#: src/screens/Settings/Settings.tsx:212
+#: src/screens/Settings/Settings.tsx:215
+#: src/view/shell/desktop/LeftNav.tsx:806
+#: src/view/shell/Drawer.tsx:635
+msgid "Wallet"
+msgstr ""
+
+#: src/view/com/profile/ProfileMenu.tsx:314
+#: src/view/com/profile/ProfileMenu.tsx:320
+msgid "Wallet / Payer"
+msgstr ""
 
 #: src/components/moderation/LabelPreference.tsx:142
 #: src/lib/moderation/useLabelBehaviorDescription.ts:17
@@ -10050,16 +10675,16 @@ msgid "We estimate {estimatedTime} until your account is ready."
 msgstr "Estimamos que a sua conta estará pronta em aproximadamente {estimatedTime}."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:196
-msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Bluesky."
-msgstr "Fizemos uma parceria com a <0>KWS</0> para verificar se você é um adulto. Quando clicar em \"Começar\" abaixo, a KWS vai ver se já verificou anteriormente a sua idade usando este endereço de e-mail para outros jogos/serviços que utilizam a tecnologia da KWS. Se não, a KWS vai-lhe enviar um e-mail com instruções para verificar a sua idade. Quando terminar, será trazido de volta para continuar a utilizar o Bluesky."
+msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Tellus."
+msgstr "Fizemos uma parceria com a <0>KWS</0> para verificar se você é um adulto. Quando clicar em \"Começar\" abaixo, a KWS vai ver se já verificou anteriormente a sua idade usando este endereço de e-mail para outros jogos/serviços que utilizam a tecnologia da KWS. Se não, a KWS vai-lhe enviar um e-mail com instruções para verificar a sua idade. Quando terminar, será trazido de volta para continuar a utilizar o Tellus."
 
 #: src/components/intents/VerifyEmailIntentDialog.tsx:107
 msgid "We have sent another verification email to <0>{0}</0>."
 msgstr "Enviámos outro e-mail de verificação para <0>{0}</0>."
 
 #: src/screens/Onboarding/StepFinished.tsx:533
-msgid "We hope you have a wonderful time. Remember, Bluesky is:"
-msgstr "Esperamos que tenha uma experiência maravilhosa. Lembre-se, o Bluesky é:"
+msgid "We hope you have a wonderful time. Remember, Tellus is:"
+msgstr "Esperamos que tenha uma experiência maravilhosa. Lembre-se, o Tellus é:"
 
 #: src/view/com/posts/DiscoverFallbackHeader.tsx:29
 msgid "We ran out of posts from your follows. Here's the latest from <0/>."
@@ -10127,8 +10752,8 @@ msgid "We're having network issues, try again"
 msgstr "Estamos com problemas de rede, tente novamente"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:94
-msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
-msgstr "Estamos a introduzir uma nova camada de verificação no Bluesky — um selo de verificação fácil de ver."
+msgid "We’re introducing a new layer of verification on Tellus — an easy-to-see checkmark."
+msgstr "Estamos a introduzir uma nova camada de verificação no Tellus — um selo de verificação fácil de ver."
 
 #: src/screens/Signup/index.tsx:123
 msgid "We're so excited to have you join us!"
@@ -10340,8 +10965,8 @@ msgid "You"
 msgstr "Você"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:23
-msgid "You also agree to <0>Bluesky’s Community Guidelines</0>. An <1>updated version of our Community Guidelines</1> will take effect on October 15th."
-msgstr "Concorda também com as <0>Diretrizes da Comunidade do Bluesky</0>. Uma <1>versão atualizada das nossas Diretrizes da Comunidade</1> entrará em vigor no dia 15 de outubro."
+msgid "You also agree to <0>Tellus’s Community Guidelines</0>. An <1>updated version of our Community Guidelines</1> will take effect on October 15th."
+msgstr "Concorda também com as <0>Diretrizes da Comunidade do Tellus</0>. Uma <1>versão atualizada das nossas Diretrizes da Comunidade</1> entrará em vigor no dia 15 de outubro."
 
 #: src/components/verification/VerifierDialog.tsx:59
 msgid "You are a trusted verifier"
@@ -10352,8 +10977,8 @@ msgid "You are creating an account on"
 msgstr "Está a criar uma conta em"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:128
-msgid "You are currently unable to access Bluesky's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
-msgstr "De momento não pode aceder ao processo de verificação de idade do Bluesky. Por favor, <0>contacte a nossa equipa de moderação</0> se acredita que isto é um erro."
+msgid "You are currently unable to access Tellus's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
+msgstr "De momento não pode aceder ao processo de verificação de idade do Tellus. Por favor, <0>contacte a nossa equipa de moderação</0> se acredita que isto é um erro."
 
 #: src/screens/SignupQueued.tsx:157
 msgid "You are in line."
@@ -10413,7 +11038,7 @@ msgstr "Pode também desativar temporariamente a sua conta e reativá-la a qualq
 msgid "You can choose whether chat notifications have sound in the chat settings within the app"
 msgstr "Pode escolher se as notificações de conversas têm som ou não nas definições de conversas na aplicação"
 
-#: src/screens/Messages/Settings.tsx:116
+#: src/screens/Messages/Settings.tsx:288
 msgid "You can continue ongoing conversations regardless of which setting you choose."
 msgstr "Pode continuar com as conversas que tem em curso, independentemente da definição que escolher."
 
@@ -10466,8 +11091,8 @@ msgid "You don't have any chat requests at the moment."
 msgstr "Não tem nenhuma solicitação de conversa no momento."
 
 #: src/view/com/modals/InviteCodes.tsx:67
-msgid "You don't have any invite codes yet! We'll send you some when you've been on Bluesky for a little longer."
-msgstr "Ainda não tem nenhum código de convite! Iremos enviar-lhe alguns quando já tiver mais algum tempo de Bluesky."
+msgid "You don't have any invite codes yet! We'll send you some when you've been on Tellus for a little longer."
+msgstr "Ainda não tem nenhum código de convite! Iremos enviar-lhe alguns quando já tiver mais algum tempo de Tellus."
 
 #: src/view/screens/SavedFeeds.tsx:145
 msgid "You don't have any pinned feeds."
@@ -10589,8 +11214,8 @@ msgid "You must be 13 years of age or older to create an account."
 msgstr "Deve ter pelo menos 13 anos para criar uma conta."
 
 #: src/components/dialogs/BirthDateSettings.tsx:131
-msgid "You must be at least 13 years old to use Bluesky. Read our <0>Terms of Service</0> for more information."
-msgstr "Tem de ter pelo menos 13 anos para usar o Bluesky. Leia os nossos <0>Termos de Serviço</0> para mais informação."
+msgid "You must be at least 13 years old to use Tellus. Read our <0>Terms of Service</0> for more information."
+msgstr "Tem de ter pelo menos 13 anos para usar o Tellus. Leia os nossos <0>Termos de Serviço</0> para mais informação."
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:334
 msgid "You must be following at least seven other people to generate a starter pack."
@@ -10629,7 +11254,7 @@ msgstr "Precisa de verificar o seu endereço de e-mail antes de poder ativar a 2
 msgid "You previously deactivated @{0}."
 msgstr "Desativou @{0} anteriormente."
 
-#: src/screens/Settings/Settings.tsx:404
+#: src/screens/Settings/Settings.tsx:420
 msgid "You probably want to restart the app now."
 msgstr "Provavelmente quer reiniciar a aplicação agora."
 
@@ -10641,8 +11266,8 @@ msgstr "Reagiu {0}"
 msgid "You reacted {0} to {1}"
 msgstr "Reagiu {0} a {1}"
 
-#: src/screens/Settings/Settings.tsx:286
-#: src/view/shell/desktop/LeftNav.tsx:210
+#: src/screens/Settings/Settings.tsx:302
+#: src/view/shell/desktop/LeftNav.tsx:212
 msgid "You will be signed out of all your accounts."
 msgstr "A sua sessão será terminada em todas as suas contas."
 
@@ -10769,8 +11394,8 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr "O repositório da sua conta, que contém todos os registos de dados públicos, pode ser transferido como um ficheiro \"CAR\". Este ficheiro não inclui conteúdo multimédia incorporado, como imagens, ou os seus dados privados, que devem ser obtidos separadamente."
 
 #: src/screens/Takendown.tsx:214
-msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
-msgstr "A sua conta foi identificada como estando em violação dos <0>Termos Sociais de Serviço do Bluesky </0>. Foi-lhe enviado um e-mail a descrever a violação específica e o período de suspensão, se aplicável. Pode recorrer desta decisão se acredita que foi tomada por engano."
+msgid "Your account was found to be in violation of the <0>Tellus Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
+msgstr "A sua conta foi identificada como estando em violação dos <0>Termos Sociais de Serviço do Tellus </0>. Foi-lhe enviado um e-mail a descrever a violação específica e o período de suspensão, se aplicável. Pode recorrer desta decisão se acredita que foi tomada por engano."
 
 #: src/screens/Takendown.tsx:154
 msgid "Your appeal has been submitted. If your appeal succeeds, you will receive an email."
@@ -10814,8 +11439,8 @@ msgid "Your email appears to be invalid."
 msgstr "O seu e-mail parece ser inválido."
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:65
-msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
-msgstr "O seu email ainda não foi verificado. Por favor, verifique o seu email para poder usufruir de todas as funcionalidades do Bluesky."
+msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Tellus."
+msgstr "O seu email ainda não foi verificado. Por favor, verifique o seu email para poder usufruir de todas as funcionalidades do Tellus."
 
 #: src/state/shell/progress-guide.tsx:215
 msgid "Your first like!"
@@ -10833,7 +11458,7 @@ msgstr "O seu feed \"A seguir\" está vazio! Siga mais utilizadores para ver o q
 msgid "Your full handle will be <0>@{0}</0>"
 msgstr "O seu nome de utilizador completo será <0>@{0}</0>"
 
-#: src/Navigation.tsx:516
+#: src/Navigation.tsx:547
 #: src/screens/Search/modules/ExploreInterestsCard.tsx:67
 #: src/screens/Settings/ContentAndMediaSettings.tsx:92
 #: src/screens/Settings/ContentAndMediaSettings.tsx:95
@@ -10859,8 +11484,8 @@ msgid "Your muted words"
 msgstr "As suas palavras silenciadas"
 
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:71
-msgid "Your password has been changed successfully! Please use your new password when you sign in to Bluesky from now on."
-msgstr "A sua palavra-passe foi alterada com sucesso! Por favor, use a sua nova palavra-passe quando entrar no Bluesky a partir de agora."
+msgid "Your password has been changed successfully! Please use your new password when you sign in to Tellus from now on."
+msgstr "A sua palavra-passe foi alterada com sucesso! Por favor, use a sua nova palavra-passe quando entrar no Tellus a partir de agora."
 
 #: src/screens/Signup/StepInfo/index.tsx:130
 msgid "Your password must be at least 8 characters long."
@@ -10891,8 +11516,8 @@ msgid "Your profile picture surrounded by concentric circles of other users' pro
 msgstr "A sua foto de perfil cercada por círculos concêntricos com as fotos de perfil de outros utilizadores"
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
-msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-msgstr "O seu perfil, publicações, feeds e listas não serão mais visíveis para outros utilizadores do Bluesky. Pode reativar a sua conta a qualquer momento ao fazer login novamente."
+msgid "Your profile, posts, feeds, and lists will no longer be visible to other Tellus users. You can reactivate your account at any time by logging in."
+msgstr "O seu perfil, publicações, feeds e listas não serão mais visíveis para outros utilizadores do Tellus. Pode reativar a sua conta a qualquer momento ao fazer login novamente."
 
 #: src/view/com/composer/Composer.tsx:536
 msgid "Your reply was sent"
@@ -10903,8 +11528,8 @@ msgid "Your report will be sent to <0>{0}</0>."
 msgstr "A sua denúncia será enviada para <0>{0}</0>."
 
 #: src/components/dms/ReportDialog.tsx:205
-msgid "Your report will be sent to the Bluesky Moderation Service"
-msgstr "A sua denúncia será enviada para o Serviço de Moderação do Bluesky"
+msgid "Your report will be sent to the Tellus Moderation Service"
+msgstr "A sua denúncia será enviada para o Serviço de Moderação do Tellus"
 
 #: src/screens/Settings/InterestsSettings.tsx:56
 msgid "Your selected interests help us serve you content you care about."

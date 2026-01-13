@@ -2,9 +2,9 @@
 
 {% block head_title %}
 {%- if postView -%}
-  @{{ postView.Author.Handle }} on Bluesky
+  @{{ postView.Author.Handle }} on Tellus
 {%- else -%}
-  Bluesky
+  Tellus
 {%- endif -%}
 {% endblock %}
 
@@ -41,7 +41,7 @@
   <meta name="twitter:value1" content="{{ postView.IndexedAt }}">
   <meta name="article:published_time" content="{{ postView.IndexedAt }}">
   <meta name="article:published_time" content="{{ postView.IndexedAt }}">
-  <link rel="alternate" type="application/json+oembed" href="https://embed.bsky.app/oembed?format=json&url={{ postView.Uri | urlencode }}" />
+  <link rel="alternate" type="application/json+oembed" href="https://embed.tellus.app/oembed?format=json&url={{ postView.Uri | urlencode }}" />
   <link rel="alternate" href="{{ postView.Uri }}" />
 {% endif -%}
 {%- endblock %}

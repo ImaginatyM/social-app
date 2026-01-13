@@ -14,28 +14,28 @@ func TestCanonicalizeURLFilter(t *testing.T) {
 	}{
 		{
 			name:     "clean URL",
-			input:    "https://bsky.app/profile/user",
-			expected: "https://bsky.app/profile/user",
+			input:    "https://tellus.app/profile/user",
+			expected: "https://tellus.app/profile/user",
 		},
 		{
 			name:     "URL with query params",
-			input:    "https://bsky.app/profile/user?utm_source=test",
-			expected: "https://bsky.app/profile/user",
+			input:    "https://tellus.app/profile/user?utm_source=test",
+			expected: "https://tellus.app/profile/user",
 		},
 		{
 			name:     "URL with multiple params",
-			input:    "https://bsky.app/profile/user?utm_source=twitter&utm_campaign=test",
-			expected: "https://bsky.app/profile/user",
+			input:    "https://tellus.app/profile/user?utm_source=twitter&utm_campaign=test",
+			expected: "https://tellus.app/profile/user",
 		},
 		{
 			name:     "URL with fragment",
-			input:    "https://bsky.app/profile/user#section",
-			expected: "https://bsky.app/profile/user",
+			input:    "https://tellus.app/profile/user#section",
+			expected: "https://tellus.app/profile/user",
 		},
 		{
 			name:     "URL with both params and fragment",
-			input:    "https://bsky.app/profile/user?param=1#section",
-			expected: "https://bsky.app/profile/user",
+			input:    "https://tellus.app/profile/user?param=1#section",
+			expected: "https://tellus.app/profile/user",
 		},
 		{
 			name:     "malformed URL",

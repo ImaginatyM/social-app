@@ -81,7 +81,7 @@ msgstr "{0, plural, one {# eiliad} other {# eiliad}}"
 
 #: src/view/shell/bottom-bar/BottomBar.tsx:225
 #: src/view/shell/bottom-bar/BottomBar.tsx:257
-#: src/view/shell/Drawer.tsx:498
+#: src/view/shell/Drawer.tsx:519
 msgid "{0, plural, one {# unread item} other {# unread items}}"
 msgstr "{0, plural, one {# eitem heb ei ddarllen} other {# eitem heb ei ddarllen}}"
 
@@ -124,7 +124,7 @@ msgstr "{0, plural, zero {}one {cadw} two {cadw} few {cadw} many {cadw} other {c
 msgid "{0, plural, other {{1} posts}}"
 msgstr "{0, plural, zero {} one {{1} postiad} two {{1} bostiad} few {{1} postiad} many {{1} postiad}other {{1} postiad}}"
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 25) who have joined Tellus using a specific starter pack
 #: src/screens/StarterPack/StarterPackScreen.tsx:490
 msgid "{0, plural, other {# people have}} used this starter pack!"
 msgstr "{0, plural, other {# person wedi}} defnyddio'r tecyn cychwyn hwn!"
@@ -221,7 +221,7 @@ msgstr "{0}m"
 msgid "{0}s"
 msgstr "{0}e"
 
-#: src/view/shell/desktop/LeftNav.tsx:455
+#: src/view/shell/desktop/LeftNav.tsx:457
 msgid "{count, plural, one {# unread item} other {# unread items}}"
 msgstr "{count, plural, one {# eitem heb ei ddarllen} other {# eitemau heb eu darllen}}"
 
@@ -414,7 +414,7 @@ msgstr "{hours, plural, zero {}one {# awr {minutesString}} two {# awr {minutesSt
 msgid "{hours, plural, one {# hour} other {# hours}}"
 msgstr "{hours, plural, zero {}one {# awr} two {# awr} few {# awr} many {# hours} other {# awr}}"
 
-#. Number of users (always at least 50) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 50) who have joined Tellus using a specific starter pack
 #: src/components/StarterPack/StarterPackCard.tsx:101
 msgid "{joinedAllTimeCount, plural, other {# users have}} joined!"
 msgstr "{joinedAllTimeCount, plural, other {Mae # eraill}} wedi ymuno!"
@@ -428,12 +428,12 @@ msgid "{notificationCount, plural, one {# unread item} other {# unread items}}"
 msgstr "{notificationCount, plural, one {# eitem heb ei darllen} other {# eitem heb eu darllen}}"
 
 #: src/components/NewskieDialog.tsx:116
-msgid "{profileName} joined Bluesky {0} ago"
-msgstr "Ymunodd {profileName} â Bluesky {0} yn ôl"
+msgid "{profileName} joined Tellus {0} ago"
+msgstr "Ymunodd {profileName} â Tellus {0} yn ôl"
 
 #: src/components/NewskieDialog.tsx:111
-msgid "{profileName} joined Bluesky using a starter pack {0} ago"
-msgstr "Ymunodd {profileName} â Bluesky gan ddefnyddio pecyn cychwyn {0} yn ôl"
+msgid "{profileName} joined Tellus using a starter pack {0} ago"
+msgstr "Ymunodd {profileName} â Tellus gan ddefnyddio pecyn cychwyn {0} yn ôl"
 
 #. The trending topic rank, i.e. "1. March Madness", "2. The Bachelor"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:111
@@ -458,6 +458,19 @@ msgstr "Mae {userName} wedi'i ddilysu"
 msgid "{userName}'s verifications"
 msgstr "Dilysiadau {userName}"
 
+#: src/screens/Messages/Settings.tsx:187
+msgid "@alice:matrix.org"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:982
+msgid "@alice:tellus.chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1153
+#: src/screens/MessagesMatrix.web.tsx:1564
+msgid "@utilisateur:tellus.chat"
+msgstr ""
+
 #. Indicates the number of additional profiles are in the Starter Pack e.g. +12
 #: src/screens/Search/components/StarterPackCard.tsx:249
 msgid "+{computedTotal}"
@@ -473,11 +486,11 @@ msgctxt "feeds"
 msgid "<0>{0}, </0><1>{1}, </1>and {2, plural, one {# other} other {# others}} are included in your starter pack"
 msgstr "Mae <0>{0}, </0><1>{1}, </1>a {2, plural, one {# arall} other {# arall}} wedi'u cynnwys yn eich pecyn cychwyn"
 
-#: src/view/shell/Drawer.tsx:117
+#: src/view/shell/Drawer.tsx:120
 msgid "<0>{0}</0> {1, plural, one {follower} other {followers}}"
 msgstr "<0>{0}</0> {1, plural, one {dilynwr} other {dilynwyr}}"
 
-#: src/view/shell/Drawer.tsx:128
+#: src/view/shell/Drawer.tsx:131
 msgid "<0>{0}</0> {1, plural, one {following} other {following}}"
 msgstr "<0>{0}</0> {1, plural, one {yn dilyn} other {yn dilyn}}Crybwyll"
 
@@ -499,8 +512,8 @@ msgid "<0>{date}</0> at {time}"
 msgstr "<0>{date}</0> am {time}"
 
 #: src/screens/Search/SearchResults.tsx:255
-msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Bluesky.</4>"
-msgstr "<0>Mewngofnodwch</0><1> neu </1><2>grëwch cyfrif</2><3> </3><4>i chwilio am newyddion, chwaraeon, gwleidyddiaeth, a phopeth arall sy'n digwydd ar Bluesky.</4>"
+msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Tellus.</4>"
+msgstr "<0>Mewngofnodwch</0><1> neu </1><2>grëwch cyfrif</2><3> </3><4>i chwilio am newyddion, chwaraeon, gwleidyddiaeth, a phopeth arall sy'n digwydd ar Tellus.</4>"
 
 #: src/screens/StarterPack/Wizard/index.tsx:502
 msgid "<0>You</0> and<1> </1><2>{0} </2>are included in your starter pack"
@@ -527,8 +540,8 @@ msgid "7 days"
 msgstr "7 diwrnod"
 
 #: src/screens/Onboarding/StepFinished.tsx:341
-msgid "A collection of popular feeds you can find on Bluesky, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
-msgstr "Casgliad o ffrydiau poblogaidd sydd i'w cael ar Bluesky, gan gynnwys Newyddion, Booksky, Game Dev, Blacksky, a Fountain Pens"
+msgid "A collection of popular feeds you can find on Tellus, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
+msgstr "Casgliad o ffrydiau poblogaidd sydd i'w cael ar Tellus, gan gynnwys Newyddion, Booksky, Game Dev, Blacksky, a Fountain Pens"
 
 #. If last message does not contain text, fall back to "{user} reacted to {a message}"
 #: src/screens/Messages/components/ChatListItem.tsx:210
@@ -540,22 +553,31 @@ msgid "A new form of verification"
 msgstr "Math newydd o ddilysu"
 
 #: src/components/BlockedGeoOverlay.tsx:50
-msgid "A new Mississippi law requires us to implement age verification for all users before they can access Bluesky. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies."
-msgstr "Mae cyfraith newydd ym Mississippi yn disgwyl i ni weithredu dilysu oedran pob defnyddiwr cyn bod modd iddyn nhw gael mynediad at Bluesky. Rydych ni'n credu fod y ddeddf hon yn creu heriau sy'n mynd tu hwnt i'w amcanion diogelu plant ac yn creu rhwystrau arwyddocaol sy'n cyfyngu ar ryddid ymadrodd ac yn niweidio platfformau llai a thechnolegau newydd."
+msgid "A new Mississippi law requires us to implement age verification for all users before they can access Tellus. We think this law creates challenges that go beyond its child safety goals, and creates significant barriers that limit free speech and disproportionately harm smaller platforms and emerging technologies."
+msgstr "Mae cyfraith newydd ym Mississippi yn disgwyl i ni weithredu dilysu oedran pob defnyddiwr cyn bod modd iddyn nhw gael mynediad at Tellus. Rydych ni'n credu fod y ddeddf hon yn creu heriau sy'n mynd tu hwnt i'w amcanion diogelu plant ac yn creu rhwystrau arwyddocaol sy'n cyfyngu ar ryddid ymadrodd ac yn niweidio platfformau llai a thechnolegau newydd."
+
+#: src/screens/MessagesMatrix.web.tsx:1045
+msgid "À propos"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1031
+#: src/screens/MessagesMatrix.web.tsx:1037
+msgid "À propos / avancé"
+msgstr ""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:120
-msgid "A screenshot of a post with a new button next to the share button that allows you to save the post to your bookmarks. The post is from @jcsalterego.bsky.social and reads \"inventing a saturday that immediately follows monday\"."
-msgstr "Llun sgrin o bostiad gyda botwm newydd nesaf at y botwm rhannu sy'n caniatáu i chi gadw'r postiad i'ch nodau tudalen. Mae'r postiad gan @jcsalterego.bsky.social ac yn dweud \"inventing a saturday that immediately follows monday\"."
+msgid "A screenshot of a post with a new button next to the share button that allows you to save the post to your bookmarks. The post is from @jcsalterego.tellus.social and reads \"inventing a saturday that immediately follows monday\"."
+msgstr "Llun sgrin o bostiad gyda botwm newydd nesaf at y botwm rhannu sy'n caniatáu i chi gadw'r postiad i'ch nodau tudalen. Mae'r postiad gan @jcsalterego.tellus.social ac yn dweud \"inventing a saturday that immediately follows monday\"."
 
 #: src/components/dialogs/nuxs/ActivitySubscriptions.tsx:113
 msgid "A screenshot of a profile page with a bell icon next to the follow button, indicating the new activity notifications feature."
 msgstr "Llun sgrin o dudalen proffil gydag eicon cloch wrth ymyl y botwm dilyn, yn dangos y nodwedd hysbysiadau gweithgaredd newydd."
 
-#: src/Navigation.tsx:524
+#: src/Navigation.tsx:555
 #: src/screens/Settings/AboutSettings.tsx:75
-#: src/screens/Settings/Settings.tsx:244
-#: src/screens/Settings/Settings.tsx:247
+#: src/screens/Settings/Settings.tsx:260
+#: src/screens/Settings/Settings.tsx:263
 msgid "About"
 msgstr "Ynghylch"
 
@@ -574,37 +596,37 @@ msgid "Accept Request"
 msgstr "Derbyn y cais"
 
 #: src/screens/Settings/AccessibilitySettings.tsx:44
-#: src/screens/Settings/Settings.tsx:220
-#: src/screens/Settings/Settings.tsx:223
+#: src/screens/Settings/Settings.tsx:236
+#: src/screens/Settings/Settings.tsx:239
 msgid "Accessibility"
 msgstr "Hygyrchedd"
 
-#: src/Navigation.tsx:383
+#: src/Navigation.tsx:414
 msgid "Accessibility Settings"
 msgstr "Gosodiadau Hygyrchedd"
 
-#: src/Navigation.tsx:399
+#: src/Navigation.tsx:430
 #: src/screens/Login/LoginForm.tsx:194
 #: src/screens/Settings/AccountSettings.tsx:51
-#: src/screens/Settings/Settings.tsx:174
-#: src/screens/Settings/Settings.tsx:177
+#: src/screens/Settings/Settings.tsx:176
+#: src/screens/Settings/Settings.tsx:179
 msgid "Account"
 msgstr "Cyfrif"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:361
 #: src/screens/Messages/components/RequestButtons.tsx:91
-#: src/view/com/profile/ProfileMenu.tsx:161
+#: src/view/com/profile/ProfileMenu.tsx:169
 msgctxt "toast"
 msgid "Account blocked"
 msgstr "Cyfrif wedi'i rwystro"
 
-#: src/view/com/profile/ProfileMenu.tsx:174
+#: src/view/com/profile/ProfileMenu.tsx:182
 msgctxt "toast"
 msgid "Account followed"
 msgstr "Cyfrif yn ei ddilyn"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:384
-#: src/view/com/profile/ProfileMenu.tsx:137
+#: src/view/com/profile/ProfileMenu.tsx:145
 msgctxt "toast"
 msgid "Account muted"
 msgstr "Cyfrif wedi'i dewi"
@@ -618,34 +640,34 @@ msgstr "Wedi Tewi'r Cyfrif"
 msgid "Account Muted by List"
 msgstr "Cyfrif wedi'i Dewi gan y Rhestr"
 
-#: src/screens/Settings/Settings.tsx:624
+#: src/screens/Settings/Settings.tsx:640
 msgid "Account options"
 msgstr "Dewisiadau cyfrif"
 
-#: src/screens/Settings/Settings.tsx:660
+#: src/screens/Settings/Settings.tsx:676
 msgid "Account removed from quick access"
 msgstr "Cyfrif wedi'i dynnu o fynediad cyflym"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:132
-#: src/view/com/profile/ProfileMenu.tsx:151
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:136
+#: src/view/com/profile/ProfileMenu.tsx:159
 msgctxt "toast"
 msgid "Account unblocked"
 msgstr "Cyfrif wedi'i ddadrwystro"
 
-#: src/view/com/profile/ProfileMenu.tsx:186
+#: src/view/com/profile/ProfileMenu.tsx:194
 msgctxt "toast"
 msgid "Account unfollowed"
 msgstr "Peidio dilyn y cyfrif"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:374
-#: src/view/com/profile/ProfileMenu.tsx:127
+#: src/view/com/profile/ProfileMenu.tsx:135
 msgctxt "toast"
 msgid "Account unmuted"
 msgstr "Dad-dewi cyfrif"
 
 #: src/components/verification/VerifierDialog.tsx:96
-msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
-msgstr "Mae cyfrifon gyda marc siec glas cregynog <0><1/></0> yn gallu dilysu eraill. Mae'r dilyswyr dibynadwy hyn yn cael eu dewis gan Bluesky."
+msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Tellus."
+msgstr "Mae cyfrifon gyda marc siec glas cregynog <0><1/></0> yn gallu dilysu eraill. Mae'r dilyswyr dibynadwy hyn yn cael eu dewis gan Tellus."
 
 #: src/lib/hooks/useNotificationHandler.ts:182
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:102
@@ -653,7 +675,7 @@ msgstr "Mae cyfrifon gyda marc siec glas cregynog <0><1/></0> yn gallu dilysu er
 msgid "Activity from others"
 msgstr "Gweithgaredd gan eraill"
 
-#: src/Navigation.tsx:492
+#: src/Navigation.tsx:523
 msgid "Activity notifications"
 msgstr "Hysbysiadau gweithgareddau"
 
@@ -706,10 +728,10 @@ msgstr "Ychwanegu testun amgen"
 msgid "Add alt text (optional)"
 msgstr "Ychwanegu testun amgen (dewisol)"
 
-#: src/screens/Settings/Settings.tsx:564
-#: src/screens/Settings/Settings.tsx:567
-#: src/view/shell/desktop/LeftNav.tsx:262
-#: src/view/shell/desktop/LeftNav.tsx:266
+#: src/screens/Settings/Settings.tsx:580
+#: src/screens/Settings/Settings.tsx:583
+#: src/view/shell/desktop/LeftNav.tsx:264
+#: src/view/shell/desktop/LeftNav.tsx:268
 msgid "Add another account"
 msgstr "Ychwanegu cyfrif arall"
 
@@ -786,8 +808,8 @@ msgstr "Ychwanegwch y cofnod DNS canlynol i'ch parth:"
 msgid "Add this feed to your feeds"
 msgstr "Ychwanegu'r ffrwd hon at eich ffrydiau"
 
-#: src/view/com/profile/ProfileMenu.tsx:317
-#: src/view/com/profile/ProfileMenu.tsx:320
+#: src/view/com/profile/ProfileMenu.tsx:372
+#: src/view/com/profile/ProfileMenu.tsx:375
 msgid "Add to lists"
 msgstr "Ychwanegu at y rhestrau"
 
@@ -796,14 +818,18 @@ msgid "Add to saved posts"
 msgstr "Ychwanegu i'r postiadau wedi'u cadw"
 
 #: src/components/dialogs/StarterPackDialog.tsx:176
-#: src/view/com/profile/ProfileMenu.tsx:308
-#: src/view/com/profile/ProfileMenu.tsx:311
+#: src/view/com/profile/ProfileMenu.tsx:363
+#: src/view/com/profile/ProfileMenu.tsx:366
 msgid "Add to starter packs"
 msgstr "Ychwanegu at y pecynnau cychwyn"
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:156
 msgid "Add user to list"
 msgstr "Ychwanegu defnyddiwr at y rhestr"
+
+#: src/screens/Messages/Settings.tsx:176
+msgid "Add your Tellus Chat ID so others can message you directly."
+msgstr ""
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:109
 #: src/view/com/modals/UserAddRemoveLists.tsx:162
@@ -834,8 +860,8 @@ msgid "Adult Content"
 msgstr "Cynnwys Oedolion"
 
 #: src/screens/Moderation/index.tsx:423
-msgid "Adult content can only be enabled via the Web at <0>bsky.app</0>."
-msgstr "Dim ond trwy'r We yn <0>bsky.app</0> y mae modd galluogi cynnwys oedolion."
+msgid "Adult content can only be enabled via the Web at <0>tellus.app</0>."
+msgstr "Dim ond trwy'r We yn <0>tellus.app</0> y mae modd galluogi cynnwys oedolion."
 
 #: src/components/moderation/LabelPreference.tsx:247
 msgid "Adult content is disabled."
@@ -849,6 +875,10 @@ msgstr "Labeli Cynnwys Oedolion"
 #: src/screens/Moderation/index.tsx:473
 msgid "Advanced"
 msgstr "Uwch"
+
+#: src/screens/Saved/components.tsx:134
+msgid "Affichage"
+msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceBadge.tsx:42
 msgid "Age Assurance"
@@ -866,6 +896,10 @@ msgstr "Wedi cyflwyno ymholiad sicrwydd oed"
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:193
 msgid "Age assurance only takes a few minutes"
 msgstr "Dim ond ychydig funudau fydd yr ymholiad Sicrwydd Oed yn ei gymryd"
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:44
+msgid "Ajoutez une URL d'image pour personnaliser la collection."
+msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:223
 msgid "alice@example.com"
@@ -902,8 +936,8 @@ msgstr "Caniatáu mynediad i'ch negeseuon uniongyrchol"
 msgid "Allow location access"
 msgstr "Caniatáu mynediad lleoliad"
 
-#: src/screens/Messages/Settings.tsx:75
-#: src/screens/Messages/Settings.tsx:78
+#: src/screens/Messages/Settings.tsx:247
+#: src/screens/Messages/Settings.tsx:250
 msgid "Allow new messages from"
 msgstr "Caniatáu negeseuon newydd oddi wrth"
 
@@ -1018,13 +1052,13 @@ msgid "An error occurred while uploading the video."
 msgstr "Digwyddodd gwall wrth lwytho'r fideo i fyny."
 
 #: src/screens/Onboarding/StepFinished.tsx:359
-msgid "An illustration of several Bluesky posts alongside repost, like, and comment icons"
-msgstr "Darlun o nifer o bostiadau Bluesky ynghyd ag eiconau ailbostiadau, hoffi a sylwadau"
+msgid "An illustration of several Tellus posts alongside repost, like, and comment icons"
+msgstr "Darlun o nifer o bostiadau Tellus ynghyd ag eiconau ailbostiadau, hoffi a sylwadau"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:84
 #: src/components/verification/VerifierDialog.tsx:86
-msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
-msgstr "Darlun yn dangos bod Bluesky yn dewis dilyswyr dibynadwy, a dilyswyr dibynadwy yn eu tro yn gwirio cyfrifon defnyddwyr unigol."
+msgid "An illustration showing that Tellus selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
+msgstr "Darlun yn dangos bod Tellus yn dewis dilyswyr dibynadwy, a dilyswyr dibynadwy yn eu tro yn gwirio cyfrifon defnyddwyr unigol."
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:28
 #: src/lib/moderation/useReportOptions.ts:28
@@ -1049,8 +1083,8 @@ msgid "An issue occurred, please try again."
 msgstr "Digwyddodd mater, ceisiwch eto."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:118
-msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
-msgstr "Darlun bras o iPhone yn dangos ap Bluesky ar agor i broffil defnyddiwr dilys gyda marc ticio nesaf at eu henw dangos."
+msgid "An mockup of a iPhone showing the Tellus app open to the profile of a verified user with a blue checkmark next to their display name."
+msgstr "Darlun bras o iPhone yn dangos ap Tellus ar agor i broffil defnyddiwr dilys gyda marc ticio nesaf at eu henw dangos."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:194
 msgid "an unknown error occurred"
@@ -1080,8 +1114,17 @@ msgid "Announcement"
 msgstr "Cyhoeddiad"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:37
-msgid "Announcing verification on Bluesky"
-msgstr "Mae dilysu nawr ar gael ar Bluesky"
+msgid "Announcing verification on Tellus"
+msgstr "Mae dilysu nawr ar gael ar Tellus"
+
+#: src/screens/MessagesMatrix.web.tsx:1163
+#: src/screens/MessagesMatrix.web.tsx:1169
+#: src/screens/MessagesMatrix.web.tsx:1225
+#: src/screens/MessagesMatrix.web.tsx:1231
+#: src/screens/Saved/CollectionDetailPage.tsx:56
+#: src/screens/Saved/SavedCollectionsPage.tsx:45
+msgid "Annuler"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:33
 #: src/lib/moderation/useReportOptions.ts:33
@@ -1098,7 +1141,7 @@ msgstr "Gall unrhyw un ryngweithio"
 msgid "Anyone who follows me"
 msgstr "Unrhyw un sy'n fy nilyn"
 
-#: src/Navigation.tsx:532
+#: src/Navigation.tsx:563
 #: src/screens/Settings/AppIconSettings/index.tsx:67
 #: src/screens/Settings/AppIconSettings/SettingsListItem.tsx:18
 #: src/screens/Settings/AppIconSettings/SettingsListItem.tsx:23
@@ -1135,7 +1178,7 @@ msgstr "Rhaid i enwau cyfrinair ap fod o leiaf 4 nod"
 msgid "App passwords"
 msgstr "Cyfrineiriau apiau"
 
-#: src/Navigation.tsx:351
+#: src/Navigation.tsx:357
 #: src/screens/Settings/AppPasswords.tsx:51
 msgid "App Passwords"
 msgstr "Cyfrineiriau Apiau"
@@ -1171,10 +1214,10 @@ msgstr "Apelio yn erbyn yr Atal"
 msgid "Appeal this decision"
 msgstr "Apelio'r penderfyniad hwn"
 
-#: src/Navigation.tsx:391
+#: src/Navigation.tsx:422
 #: src/screens/Settings/AppearanceSettings.tsx:86
-#: src/screens/Settings/Settings.tsx:212
-#: src/screens/Settings/Settings.tsx:215
+#: src/screens/Settings/Settings.tsx:228
+#: src/screens/Settings/Settings.tsx:231
 msgid "Appearance"
 msgstr "Gwedd"
 
@@ -1183,8 +1226,8 @@ msgstr "Gwedd"
 msgid "Apply default recommended feeds"
 msgstr "Gosod y ffrydiau rhagosodedig sy'n cael eu hargymell"
 
-#: src/screens/Settings/Settings.tsx:498
-#: src/screens/Settings/Settings.tsx:500
+#: src/screens/Settings/Settings.tsx:514
+#: src/screens/Settings/Settings.tsx:516
 msgid "Apply Pull Request"
 msgstr "Gosod Cais Tynnu"
 
@@ -1254,6 +1297,10 @@ msgstr "Noethni artistig neu anerotig."
 msgid "As a small team, we cannot justify building the expensive infrastructure this requirement demands while legal challenges to this law are pending."
 msgstr "Fel tîm bychan, does dim modd i ni gyfiawnhau adeiladu'r seilwaith drud mae'r angen yma'n ei fynnu tra bod heriau cyfreithiol yn yr arfaeth."
 
+#: src/Navigation.tsx:378
+msgid "Asset"
+msgstr ""
+
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:497
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:499
 msgid "Assign topic for algo"
@@ -1263,10 +1310,43 @@ msgstr "Neilltuo pwnc ar gyfer algo"
 msgid "At least 8 characters"
 msgstr "O leiaf 8 nod"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:42
+msgid "Aucun élément enregistré"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1554
+msgid "Aucun membre pour le moment."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:444
+#: src/screens/MessagesMatrix.web.tsx:1656
+msgid "Aucun message"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:58
+msgid "Aucun résultat"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:34
+msgid "Aucune collection pour l'instant"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:36
+msgid "Aucune collection trouvée"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1277
+msgid "Aucune discussion"
+msgstr ""
+
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:58
 msgctxt "Name of app icon variant"
 msgid "Aurora"
 msgstr "Aurora"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:39
+msgid "Auteur"
+msgstr ""
 
 #: src/screens/Settings/ContentAndMediaSettings.tsx:116
 #: src/screens/Settings/ContentAndMediaSettings.tsx:122
@@ -1326,7 +1406,7 @@ msgid "Before you can get notifications for {name}'s posts, you must first verif
 msgstr "Cyn i chi dderbyn hysbysiadau am bostiadau {name}, rhaid i chi yn gyntaf ddilysu eich e-bost."
 
 #: src/components/dms/dialogs/NewChatDialog.tsx:54
-#: src/components/dms/MessageProfileButton.tsx:58
+#: src/components/dms/MessageProfileButton.tsx:104
 #: src/screens/Messages/ChatList.tsx:369
 #: src/screens/Messages/Conversation.tsx:228
 msgid "Before you can message another user, you must first verify your email."
@@ -1350,8 +1430,8 @@ msgid "Birthday"
 msgstr "Penblwydd"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:760
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:328
-#: src/view/com/profile/ProfileMenu.tsx:490
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:386
+#: src/view/com/profile/ProfileMenu.tsx:554
 msgid "Block"
 msgstr "Rhwystro"
 
@@ -1361,13 +1441,13 @@ msgstr "Rhwystro"
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:647
 #: src/screens/Messages/components/RequestButtons.tsx:144
 #: src/screens/Messages/components/RequestButtons.tsx:146
-#: src/view/com/profile/ProfileMenu.tsx:396
-#: src/view/com/profile/ProfileMenu.tsx:403
+#: src/view/com/profile/ProfileMenu.tsx:451
+#: src/view/com/profile/ProfileMenu.tsx:458
 msgid "Block account"
 msgstr "Rhwystro cyfrif"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:755
-#: src/view/com/profile/ProfileMenu.tsx:473
+#: src/view/com/profile/ProfileMenu.tsx:537
 msgid "Block Account?"
 msgstr "Rhwystro Cyfrif?"
 
@@ -1412,13 +1492,13 @@ msgstr "Ddim ar gael"
 msgid "Blocked accounts"
 msgstr "Cyfrifon wedi'u rhwystro"
 
-#: src/Navigation.tsx:192
+#: src/Navigation.tsx:198
 #: src/view/screens/ModerationBlockedAccounts.tsx:104
 msgid "Blocked Accounts"
 msgstr "Cyfrifon wedi'u Rhwystro"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:757
-#: src/view/com/profile/ProfileMenu.tsx:485
+#: src/view/com/profile/ProfileMenu.tsx:549
 msgid "Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr "Does dim modd i gyfrifon sydd wedi'u rhwystro ymateb yn eich trywyddau, eich crybwyllidau, na rhyngweithio â chi fel arall."
 
@@ -1434,72 +1514,13 @@ msgstr "Nid yw rhwystro'n atal y labelwr hwn rhag gosod labeli ar eich cyfrif."
 msgid "Blocking is public. Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr "Mae rhwystro'n beth cyhoeddus. Nid oes modd i gyfrifon sydd wedi'u rhwystro ymateb yn eich trywyddau, eich crybwylliadau, na rhyngweithio â chi fel arall."
 
-#: src/view/com/profile/ProfileMenu.tsx:482
+#: src/view/com/profile/ProfileMenu.tsx:546
 msgid "Blocking will not prevent labels from being applied on your account, but it will stop this account from replying in your threads or interacting with you."
 msgstr "Fydd rhwystro ddim yn atal labeli rhag cael eu gosod ar eich cyfrif, ond bydd yn atal y cyfrif hwn rhag ateb yn eich trywyddau neu ryngweithio â chi."
 
 #: src/view/com/auth/SplashScreen.web.tsx:175
 msgid "Blog"
 msgstr "Blog"
-
-#: src/view/com/auth/server-input/index.tsx:136
-#: src/view/com/auth/server-input/index.tsx:137
-msgid "Bluesky"
-msgstr "Bluesky"
-
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:690
-msgid "Bluesky cannot confirm the authenticity of the claimed date."
-msgstr "Dyw Bluesky ddim yn gallu cadarnhau dilysrwydd y dyddiad honedig."
-
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:175
-msgctxt "Name of app icon variant"
-msgid "Bluesky Classic™"
-msgstr "Bluesky Classic ™"
-
-#: src/view/com/auth/server-input/index.tsx:212
-msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr "Mae Bluesky yn rhwydwaith agored lle gallwch ddewis eich darparwr gwesteio. Os ydych chi'n ddatblygwr, gallwch chi gynnal eich gweinydd eich hun."
-
-#: src/view/com/auth/server-input/index.tsx:149
-msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-msgstr "Mae Bluesky yn rhwydwaith agored lle gallwch ddewis eich darparwr gwesteio. Os ydych chi'n newydd yma, rydym yn argymell cadw at y dewis Bluesky Social rhagosodedig."
-
-#: src/components/ProgressGuide/List.tsx:53
-#: src/components/ProgressGuide/List.tsx:70
-msgid "Bluesky is better with friends!"
-msgstr "Mae Bluesky yn well gyda ffrindiau!"
-
-#: src/screens/Takendown.tsx:217
-msgid "Bluesky Social Terms of Service"
-msgstr "Telerau Gwasanaeth Cymdeithasol Bluesky"
-
-#: src/components/StarterPack/ProfileStarterPacks.tsx:310
-msgid "Bluesky will choose a set of recommended accounts from people in your network."
-msgstr "Bydd Bluesky yn dewis set o gyfrifon wedi'u hargymhell gan bobl yn eich rhwydwaith."
-
-#: src/screens/Settings/components/PwiOptOut.tsx:99
-msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-msgstr "Ni fydd Bluesky yn dangos eich proffil na'ch postiadau i ddefnyddwyr sydd wedi allgofnodi. Mae'n bosibl na fydd apiau eraill yn parchu'r gofyniad hwn. Nid yw hyn yn gwneud eich cyfrif yn breifat."
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
-msgid "Bluesky will proactively verify notable and authentic accounts."
-msgstr "Bydd Bluesky yn rhagweithiol yn dilysu cyfrifon nodedig a dilys."
-
-#: src/screens/Signup/StepInfo/Policies.tsx:26
-msgid "Bluesky's Community Guidelines"
-msgstr "Canllawiau Cymunedol Bluesky"
-
-#: src/screens/Signup/StepInfo/Policies.tsx:32
-msgid "Bluesky's Updated Community Guidelines"
-msgstr "Canllawiau Cymunedol Diweddaraf Bluesky"
-
-#: src/screens/Settings/AppIconSettings/index.tsx:99
-msgid "Bluesky+"
-msgstr "Bluesky+"
-
-#: src/screens/Settings/AppIconSettings/index.tsx:102
-msgid "Bluesky+ icons"
-msgstr "Eiconau Bluesky+"
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:53
 msgid "Blur images"
@@ -1624,7 +1645,7 @@ msgstr "Camera"
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:85
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:246
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:252
-#: src/screens/Settings/Settings.tsx:289
+#: src/screens/Settings/Settings.tsx:305
 #: src/screens/Takendown.tsx:99
 #: src/screens/Takendown.tsx:102
 #: src/view/com/composer/Composer.tsx:1005
@@ -1633,7 +1654,7 @@ msgstr "Camera"
 #: src/view/com/composer/photos/EditImageDialog.web.tsx:52
 #: src/view/com/modals/CreateOrEditList.tsx:333
 #: src/view/com/modals/CropImage.web.tsx:97
-#: src/view/shell/desktop/LeftNav.tsx:213
+#: src/view/shell/desktop/LeftNav.tsx:215
 msgid "Cancel"
 msgstr "Diddymu"
 
@@ -1681,6 +1702,14 @@ msgstr "Capsiynau (.vtt)"
 msgid "Captions & alt text"
 msgstr "Capsiynau a thestun amgen"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:51
+msgid "Cette action est définitive et ne supprime pas les posts de Tellus."
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:76
+msgid "Cette personne n’est pas encore sur Tellus Chat"
+msgstr ""
+
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
 msgid "Change"
 msgstr "Newid"
@@ -1724,6 +1753,10 @@ msgstr "Newid iaith postiad i {suggestedLanguageName}"
 msgid "Change report reason"
 msgstr "Newid y rheswm am adrodd"
 
+#: src/screens/MessagesMatrix.web.tsx:1083
+msgid "Change seulement si tu utilises un autre serveur."
+msgstr ""
+
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:57
 msgid "Change your password"
 msgstr "Newidiwch eich cyfrinair"
@@ -1741,11 +1774,16 @@ msgstr "Yn newid darparwr gwesteiwr"
 msgid "Changes saved"
 msgstr "Newidiadau wedi'u cadw"
 
+#: src/screens/MessagesMatrix.web.tsx:1630
+#: src/screens/Saved/CollectionDetailPage.tsx:41
+msgid "Chargement"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:963
+msgid "Chargement des messages"
+msgstr ""
+
 #: src/lib/hooks/useNotificationHandler.ts:99
-#: src/Navigation.tsx:549
-#: src/view/shell/bottom-bar/BottomBar.tsx:221
-#: src/view/shell/desktop/LeftNav.tsx:607
-#: src/view/shell/Drawer.tsx:466
 msgid "Chat"
 msgstr "Sgyrsiau"
 
@@ -1768,39 +1806,10 @@ msgctxt "toast"
 msgid "Chat muted"
 msgstr "Sgwrs wedi'i thewi"
 
-#: src/Navigation.tsx:559
-#: src/screens/Messages/components/InboxPreview.tsx:22
-msgid "Chat request inbox"
-msgstr "Dewch derbyn cais am sgwrs"
-
-#: src/screens/Messages/components/InboxPreview.tsx:62
-#: src/screens/Messages/Inbox.tsx:56
-#: src/screens/Messages/Inbox.tsx:98
-msgid "Chat requests"
-msgstr "Ceisiadau am sgyrsiau"
-
-#: src/components/dms/ConvoMenu.tsx:76
-#: src/Navigation.tsx:554
-#: src/screens/Messages/ChatList.tsx:81
-#: src/screens/Messages/ChatList.tsx:85
-#: src/screens/Messages/ChatList.tsx:378
-msgid "Chat settings"
-msgstr "Gosodiadau sgyrsiau"
-
-#: src/screens/Messages/Settings.tsx:67
-msgid "Chat Settings"
-msgstr "Gosodiadau Sgyrsiau"
-
 #: src/components/dms/ConvoMenu.tsx:178
 msgctxt "toast"
 msgid "Chat unmuted"
 msgstr "Dad-dewi sgyrsiau"
-
-#: src/screens/Messages/ChatList.tsx:76
-#: src/screens/Messages/ChatList.tsx:394
-#: src/screens/Messages/ChatList.tsx:418
-msgid "Chats"
-msgstr "Sgyrsiau"
 
 #: src/screens/SignupQueued.tsx:78
 #: src/screens/SignupQueued.tsx:82
@@ -1814,6 +1823,10 @@ msgstr "Gwiriwch eich e-bost am god mewngofnodi a rhowch ef yma."
 #: src/view/com/modals/DeleteAccount.tsx:213
 msgid "Check your inbox for an email with the confirmation code to enter below:"
 msgstr "Gwiriwch eich blwch derbyn am e-bost gyda'r cod cadarnhau i'w roi isod:"
+
+#: src/screens/MessagesMatrix.web.tsx:1624
+msgid "Choisis une discussion pour voir le fil."
+msgstr ""
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:399
 msgid "Choose domain verification method"
@@ -1859,11 +1872,11 @@ msgstr "Dewiswch eich cyfrinair"
 msgid "Choose your username"
 msgstr "Dewiswch eich enw defnyddiwr"
 
-#: src/screens/Settings/Settings.tsx:490
+#: src/screens/Settings/Settings.tsx:506
 msgid "Clear all storage data"
 msgstr "Clirio'r holl ddata storio"
 
-#: src/screens/Settings/Settings.tsx:492
+#: src/screens/Settings/Settings.tsx:508
 msgid "Clear all storage data (restart after this)"
 msgstr "Clirio'r holl ddata storio (ailgychwyn ar ôl hyn)"
 
@@ -1976,7 +1989,7 @@ msgstr "Cau'r y drôr gwaelod"
 msgid "Close dialog"
 msgstr "Cau'r ddeialog"
 
-#: src/view/shell/index.web.tsx:110
+#: src/view/shell/index.web.tsx:122
 msgid "Close drawer menu"
 msgstr "Cau'r ddewislen drôr"
 
@@ -2036,6 +2049,14 @@ msgstr "Lleihau'r rhestr o ddefnyddwyr"
 msgid "Collapses list of users for a given notification"
 msgstr "Yn lleihau'r rhestr o ddefnyddwyr hysbysiad penodol"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:53
+msgid "Collection de destination"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:45
+msgid "Collection introuvable"
+msgstr ""
+
 #: src/components/dialogs/Embed.tsx:154
 #: src/screens/Settings/AppearanceSettings.tsx:94
 msgid "Color mode"
@@ -2055,8 +2076,16 @@ msgstr "Comedi"
 msgid "Comics"
 msgstr "Comics"
 
+#: src/screens/MessagesMatrix.web.tsx:1657
+msgid "Commence la discussion."
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:35
+msgid "Commencez par enregistrer des posts pour les retrouver ici."
+msgstr ""
+
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:45
-#: src/Navigation.tsx:341
+#: src/Navigation.tsx:347
 #: src/view/screens/CommunityGuidelines.tsx:34
 msgid "Community Guidelines"
 msgstr "Canllawiau Cymunedol"
@@ -2070,7 +2099,7 @@ msgstr "Cwblhewch y cyflwyniad a dechreuwch ddefnyddio'ch cyfrif"
 msgid "Complete the challenge"
 msgstr "Cwblhewch yr her"
 
-#: src/view/shell/desktop/LeftNav.tsx:572
+#: src/view/shell/desktop/LeftNav.tsx:574
 msgid "Compose new post"
 msgstr "Cyfansoddi postiad newydd"
 
@@ -2140,6 +2169,10 @@ msgstr "Cadarnhau eich lleoliad gyda GPS. Dyw eich data lleoliad ddim yn cael ei
 msgid "Confirmation code"
 msgstr "Cod cadarnhau"
 
+#: src/screens/MessagesMatrix.web.tsx:1059
+msgid "Connecte ton compte Tellus Chat (propulsé par Matrix)."
+msgstr ""
+
 #: src/screens/Login/LoginForm.tsx:337
 msgid "Connecting..."
 msgstr "Yn cysylltu..."
@@ -2147,6 +2180,24 @@ msgstr "Yn cysylltu..."
 #: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:213
 msgid "Connection issue"
 msgstr "Mater cysylltu"
+
+#: src/screens/MessagesMatrix.web.tsx:1107
+msgid "Connexion à Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:964
+msgid "Connexion à Tellus Chat en cours..."
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:26
+msgid "Conservés"
+msgstr ""
+
+#: src/view/shell/desktop/LeftNav.tsx:783
+#: src/view/shell/Drawer.tsx:593
+msgctxt "link to saved collections screen"
+msgid "Conservés"
+msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:132
 #: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:29
@@ -2167,12 +2218,12 @@ msgstr "Cysylltwch â ni"
 msgid "Content & Media"
 msgstr "Cynnwys a Chyfryngau"
 
-#: src/screens/Settings/Settings.tsx:204
-#: src/screens/Settings/Settings.tsx:207
+#: src/screens/Settings/Settings.tsx:220
+#: src/screens/Settings/Settings.tsx:223
 msgid "Content and media"
 msgstr "Cynnwys a chyfryngau"
 
-#: src/Navigation.tsx:508
+#: src/Navigation.tsx:539
 msgid "Content and Media"
 msgstr "Cynnwys a Chyfryngau"
 
@@ -2242,6 +2293,7 @@ msgid "Continue to next step"
 msgstr "Ymlaen i'r cam nesaf"
 
 #: src/screens/Messages/Conversation.tsx:57
+#: src/screens/MessagesMatrix.web.tsx:419
 msgid "Conversation"
 msgstr "Sgwrs"
 
@@ -2282,6 +2334,11 @@ msgstr "Wedi'i gopïo i'r clipfwrdd"
 msgid "Copied!"
 msgstr "Wedi'i gopïo!"
 
+#: src/screens/Messages/Invite.tsx:89
+#: src/screens/Messages/Invite.tsx:95
+msgid "Copier le lien d’invitation"
+msgstr ""
+
 #: src/screens/Settings/AboutSettings.tsx:127
 msgid "Copies build version to clipboard"
 msgstr "Copïau adeiladu fersiwn i'r clipfwrdd"
@@ -2294,8 +2351,8 @@ msgstr "Copïo"
 msgid "Copy App Password"
 msgstr "Copïo Cyfrinair Ap"
 
-#: src/view/com/profile/ProfileMenu.tsx:433
-#: src/view/com/profile/ProfileMenu.tsx:436
+#: src/view/com/profile/ProfileMenu.tsx:488
+#: src/view/com/profile/ProfileMenu.tsx:491
 msgid "Copy at:// URI"
 msgstr "Copïwch yn: // URI"
 
@@ -2310,8 +2367,8 @@ msgid "Copy code"
 msgstr "Copïo cod"
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:501
-#: src/view/com/profile/ProfileMenu.tsx:442
-#: src/view/com/profile/ProfileMenu.tsx:445
+#: src/view/com/profile/ProfileMenu.tsx:497
+#: src/view/com/profile/ProfileMenu.tsx:500
 msgid "Copy DID"
 msgstr "Copïo DID"
 
@@ -2339,8 +2396,8 @@ msgstr "Copïo dolen i'r rhestr"
 msgid "Copy link to post"
 msgstr "Copïo dolen i'r postiad"
 
-#: src/view/com/profile/ProfileMenu.tsx:246
-#: src/view/com/profile/ProfileMenu.tsx:257
+#: src/view/com/profile/ProfileMenu.tsx:284
+#: src/view/com/profile/ProfileMenu.tsx:295
 msgid "Copy link to profile"
 msgstr "Copïo'r ddolen i'r proffil"
 
@@ -2373,7 +2430,7 @@ msgstr "Copïo gwerth cofnod TXT"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:40
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:107
-#: src/Navigation.tsx:346
+#: src/Navigation.tsx:352
 #: src/view/screens/CopyrightPolicy.tsx:31
 msgid "Copyright Policy"
 msgstr "Polisi Hawlfraint"
@@ -2433,7 +2490,7 @@ msgstr "Creu cod QR ar gyfer pecyn cychwyn"
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:178
 #: src/components/StarterPack/ProfileStarterPacks.tsx:287
-#: src/Navigation.tsx:589
+#: src/Navigation.tsx:630
 msgid "Create a starter pack"
 msgstr "Creu pecyn cychwyn"
 
@@ -2502,6 +2559,18 @@ msgstr "Wedi creu {0}"
 msgid "Creator has been blocked"
 msgstr "Mae'r crëwr wedi'i rwystro"
 
+#: src/screens/MessagesMatrix.web.tsx:1173
+#: src/screens/MessagesMatrix.web.tsx:1180
+#: src/screens/MessagesMatrix.web.tsx:1235
+#: src/screens/MessagesMatrix.web.tsx:1242
+#: src/screens/Saved/SavedCollectionsPage.tsx:47
+msgid "Créer"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:38
+msgid "Créer une collection"
+msgstr ""
+
 #: src/screens/Onboarding/index.tsx:42
 #: src/screens/Onboarding/state.ts:107
 msgid "Culture"
@@ -2521,8 +2590,8 @@ msgid "Customize who can interact with this post."
 msgstr "Addasu pwy all ryngweithio â'r postiad hwn."
 
 #: src/screens/Onboarding/Layout.tsx:61
-msgid "Customizes your Bluesky experience"
-msgstr "Yn addasu eich profiad Bluesky"
+msgid "Customizes your Tellus experience"
+msgstr "Yn addasu eich profiad Tellus"
 
 #: src/components/dialogs/Embed.tsx:167
 #: src/components/dialogs/Embed.tsx:169
@@ -2548,13 +2617,17 @@ msgstr "Thema dywyll"
 msgid "Date of birth"
 msgstr "Dyddiad geni"
 
+#: src/screens/MessagesMatrix.web.tsx:1214
+msgid "De quoi parle ce groupe ?"
+msgstr ""
+
 #: src/screens/Settings/AccountSettings.tsx:161
 #: src/screens/Settings/AccountSettings.tsx:166
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:73
 msgid "Deactivate account"
 msgstr "Cau cyfrif"
 
-#: src/screens/Settings/Settings.tsx:455
+#: src/screens/Settings/Settings.tsx:471
 msgid "Debug Moderation"
 msgstr "Cymedroli Dadfygio"
 
@@ -2573,6 +2646,8 @@ msgstr "Eiconau rhagosodedig"
 #: src/components/dms/MessageContextMenu.tsx:185
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:704
 #: src/screens/Messages/components/ChatStatusInfo.tsx:55
+#: src/screens/Messages/Settings.tsx:222
+#: src/screens/Messages/Settings.tsx:229
 #: src/screens/Settings/AppPasswords.tsx:212
 #: src/screens/StarterPack/StarterPackScreen.tsx:599
 #: src/screens/StarterPack/StarterPackScreen.tsx:688
@@ -2603,7 +2678,7 @@ msgstr "Dileu cyfrinair ap?"
 msgid "Delete chat"
 msgstr "Dileu sgwrs"
 
-#: src/screens/Settings/Settings.tsx:462
+#: src/screens/Settings/Settings.tsx:478
 msgid "Delete chat declaration record"
 msgstr "Dileu cofnod datganiad sgwrs"
 
@@ -2677,11 +2752,23 @@ msgstr "Cyfrif wedi'i ddileu"
 msgid "Deleted list"
 msgstr "Rhestr dilëwyd"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:54
+msgid "Déplacer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:52
+msgid "Déplacer vers"
+msgstr ""
+
 #: src/screens/Profile/Header/EditProfileDialog.tsx:365
 #: src/view/com/modals/CreateOrEditList.tsx:278
 #: src/view/com/modals/CreateOrEditList.tsx:299
 msgid "Description"
 msgstr "Disgrifiad"
+
+#: src/screens/MessagesMatrix.web.tsx:1210
+msgid "Description (optionnelle)"
+msgstr ""
 
 #: src/view/com/composer/GifAltText.tsx:150
 #: src/view/com/composer/photos/ImageAltTextDialog.tsx:113
@@ -2707,8 +2794,8 @@ msgctxt "toast"
 msgid "Developer mode enabled"
 msgstr "Modd datblygwr wedi'i alluogi"
 
-#: src/screens/Settings/Settings.tsx:271
-#: src/screens/Settings/Settings.tsx:274
+#: src/screens/Settings/Settings.tsx:287
+#: src/screens/Settings/Settings.tsx:290
 msgid "Developer options"
 msgstr "Dewisiadau datblygwr"
 
@@ -2745,8 +2832,8 @@ msgstr "Analluogi isdeitlau"
 #: src/lib/moderation/useLabelBehaviorDescription.ts:32
 #: src/lib/moderation/useLabelBehaviorDescription.ts:42
 #: src/lib/moderation/useLabelBehaviorDescription.ts:68
-#: src/screens/Messages/Settings.tsx:144
-#: src/screens/Messages/Settings.tsx:147
+#: src/screens/Messages/Settings.tsx:316
+#: src/screens/Messages/Settings.tsx:319
 #: src/screens/Moderation/index.tsx:413
 msgid "Disabled"
 msgstr "Analluogwyd"
@@ -2899,14 +2986,14 @@ msgstr "Tapiwch ddwywaith i gau'r ddeialog"
 msgid "Double tap to like"
 msgstr "Tapio dwywaith i'w hoffi"
 
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
-msgid "Download Bluesky"
-msgstr "Llwythwch Bluesky i Lawr"
-
 #: src/screens/Settings/components/ExportCarDialog.tsx:79
 #: src/screens/Settings/components/ExportCarDialog.tsx:84
 msgid "Download CAR file"
 msgstr "Llwythwch ffeil CAR i lawr"
+
+#: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
+msgid "Download Tellus"
+msgstr "Llwythwch Tellus i Lawr"
 
 #: src/view/com/composer/text-input/TextInput.web.tsx:361
 msgid "Drop to add images"
@@ -2952,6 +3039,14 @@ msgstr "e.e. Defnyddwyr sy'n ateb dro ar ôl tro gyda hysbysebion."
 msgid "Each code works once. You'll receive more invite codes periodically."
 msgstr "Mae pob cod yn gweithio unwaith. Byddwch yn derbyn mwy o godau gwahoddiad o bryd i'w gilydd."
 
+#: src/screens/MessagesMatrix.web.tsx:349
+msgid "Échec de la connexion Tellus Chat."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1759
+msgid "Écrire un message"
+msgstr ""
+
 #: src/screens/Settings/AccountSettings.tsx:145
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:249
 #: src/screens/StarterPack/StarterPackScreen.tsx:588
@@ -2995,8 +3090,8 @@ msgstr "Golygu diddordebau"
 msgid "Edit list details"
 msgstr "Golygu manylion y rhestr"
 
-#: src/view/com/profile/ProfileMenu.tsx:329
-#: src/view/com/profile/ProfileMenu.tsx:335
+#: src/view/com/profile/ProfileMenu.tsx:384
+#: src/view/com/profile/ProfileMenu.tsx:390
 msgid "Edit live status"
 msgstr "Golygu statws byw"
 
@@ -3004,7 +3099,7 @@ msgstr "Golygu statws byw"
 msgid "Edit Moderation List"
 msgstr "Golygu Rhestr Cymedroli"
 
-#: src/Navigation.tsx:356
+#: src/Navigation.tsx:362
 #: src/view/screens/Feeds.tsx:518
 msgid "Edit My Feeds"
 msgstr "Golygu Fy Ffrydiau"
@@ -3025,12 +3120,12 @@ msgstr "Golygu gosodiadau rhyngweithio postiad"
 #: src/screens/Profile/Header/EditProfileDialog.tsx:270
 #: src/screens/Profile/Header/EditProfileDialog.tsx:276
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:183
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:190
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:205
 msgid "Edit profile"
 msgstr "Golygu proffil"
 
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:186
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:193
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:208
 msgid "Edit Profile"
 msgstr "Golygu Proffil"
 
@@ -3046,7 +3141,7 @@ msgstr "Golygu Rhestr Defnyddwyr"
 msgid "Edit who can reply"
 msgstr "Golygu pwy all ateb"
 
-#: src/Navigation.tsx:594
+#: src/Navigation.tsx:635
 msgid "Edit your starter pack"
 msgstr "Golygu eich pecyn cychwyn"
 
@@ -3112,6 +3207,10 @@ msgstr "Mewnblanwch y postiad hon yn eich gwefan. Copïwch y pwt canlynol a'i gl
 msgid "Embedded video player"
 msgstr "Chwaraewr fideo wedi'i fewnblannu"
 
+#: src/screens/MessagesMatrix.web.tsx:1265
+msgid "En attente"
+msgstr ""
+
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:104
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:111
 #: src/screens/Settings/components/Email2FAToggle.tsx:31
@@ -3166,8 +3265,8 @@ msgstr "Galluogi pynciau tueddol"
 msgid "Enable trending videos in your Discover feed"
 msgstr "Galluogi fideos tueddol yn eich ffrwd Darganfod"
 
-#: src/screens/Messages/Settings.tsx:135
-#: src/screens/Messages/Settings.tsx:138
+#: src/screens/Messages/Settings.tsx:307
+#: src/screens/Messages/Settings.tsx:310
 #: src/screens/Moderation/index.tsx:411
 msgid "Enabled"
 msgstr "Galluogwyd"
@@ -3176,6 +3275,15 @@ msgstr "Galluogwyd"
 msgid "End of feed"
 msgstr "Diwedd y ffrwd"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:57
+#: src/screens/Saved/SavedCollectionsPage.tsx:46
+msgid "Enregistrer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:43
+msgid "Enregistrez des posts pour commencer votre collection."
+msgstr ""
+
 #: src/view/com/composer/videos/SubtitleDialog.tsx:158
 msgid "Ensure you have selected a language for each subtitle file."
 msgstr "Gwnewch yn siŵr eich bod wedi dewis iaith ar gyfer pob ffeil isdeitlau."
@@ -3183,6 +3291,10 @@ msgstr "Gwnewch yn siŵr eich bod wedi dewis iaith ar gyfer pob ffeil isdeitlau.
 #: src/screens/Login/SetNewPasswordForm.tsx:147
 msgid "Enter a password"
 msgstr "Rhowch gyfrinair"
+
+#: src/screens/Messages/Settings.tsx:116
+msgid "Enter a valid Matrix ID (example: @alice:matrix.org)."
+msgstr ""
 
 #: src/components/dialogs/MutedWords.tsx:127
 #: src/components/dialogs/MutedWords.tsx:128
@@ -3224,6 +3336,10 @@ msgstr "Rhowch eich cyfeiriad e-bost"
 msgid "Enter your password"
 msgstr "Rhowch eich cyfrinair"
 
+#: src/screens/Messages/Settings.tsx:115
+msgid "Enter your Tellus Chat ID."
+msgstr ""
+
 #: src/screens/Login/index.tsx:123
 msgid "Enter your username and password"
 msgstr "Rhowch eich enw defnyddiwr a chyfrinair"
@@ -3235,6 +3351,11 @@ msgstr "Yn mynd i'r sgrin lawn"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:236
 msgid "Entertainment"
 msgstr "Adloniant"
+
+#: src/screens/MessagesMatrix.web.tsx:1779
+#: src/screens/MessagesMatrix.web.tsx:1786
+msgid "Envoyer"
+msgstr ""
 
 #: src/view/com/composer/Composer.tsx:1843
 #: src/view/com/util/error/ErrorScreen.tsx:42
@@ -3269,6 +3390,11 @@ msgstr "Gwall:"
 msgid "Error: {error}"
 msgstr "Gwall: {error}"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:59
+#: src/screens/Saved/SavedCollectionsPage.tsx:37
+msgid "Essayez un autre terme de recherche."
+msgstr ""
+
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:398
 msgid "Everybody"
 msgstr "Pawb"
@@ -3281,8 +3407,8 @@ msgstr "Gall pawb ateb"
 msgid "Everybody can reply to this post."
 msgstr "Gall pawb ateb i'r postiad hwn."
 
-#: src/screens/Messages/Settings.tsx:88
-#: src/screens/Messages/Settings.tsx:91
+#: src/screens/Messages/Settings.tsx:260
+#: src/screens/Messages/Settings.tsx:263
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:164
 #: src/screens/Settings/NotificationSettings/components/PreferenceControls.tsx:174
 msgid "Everyone"
@@ -3381,10 +3507,10 @@ msgstr "Cyfryngau di-noethol neu a allai beri gofid."
 msgid "Explicit sexual images."
 msgstr "Delweddau di-noethol amlwg."
 
-#: src/Navigation.tsx:759
+#: src/Navigation.tsx:817
 #: src/screens/Search/Shell.tsx:307
-#: src/view/shell/desktop/LeftNav.tsx:689
-#: src/view/shell/Drawer.tsx:414
+#: src/view/shell/desktop/LeftNav.tsx:690
+#: src/view/shell/Drawer.tsx:435
 msgid "Explore"
 msgstr "Darganfod"
 
@@ -3392,6 +3518,10 @@ msgstr "Darganfod"
 #: src/components/WelcomeModal.tsx:177
 msgid "Explore the app"
 msgstr "Archwilio'r ap"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:44
+msgid "Explorer"
+msgstr ""
 
 #: src/screens/Settings/AccountSettings.tsx:152
 #: src/screens/Settings/AccountSettings.tsx:156
@@ -3417,7 +3547,7 @@ msgstr "Cyfryngau Allanol"
 msgid "External media may allow websites to collect information about you and your device. No information is sent or requested until you press the \"play\" button."
 msgstr "Gall cyfryngau allanol ganiatáu i wefannau gasglu gwybodaeth amdanoch chi a'ch dyfais. Nid oes unrhyw wybodaeth yn cael ei anfon na gofyn amdano nes i chi bwyso'r botwm \"chwarae\"."
 
-#: src/Navigation.tsx:375
+#: src/Navigation.tsx:406
 #: src/screens/Settings/ExternalMediaPreferences.tsx:34
 msgid "External Media Preferences"
 msgstr "Dewisiadau Cyfryngau Allanol"
@@ -3443,10 +3573,6 @@ msgstr "Wedi methu newid enw dangos. Ceisiwch eto."
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:173
 msgid "Failed to create app password. Please try again."
 msgstr "Wedi methu creu cyfrinair ap. Ceisiwch eto."
-
-#: src/components/dms/MessageProfileButton.tsx:36
-msgid "Failed to create conversation"
-msgstr "Wedi methu creu sgwrs"
 
 #: src/screens/StarterPack/Wizard/index.tsx:262
 #: src/screens/StarterPack/Wizard/index.tsx:270
@@ -3602,7 +3728,7 @@ msgstr "Wedi methu diweddaru ffrydiau"
 msgid "Failed to update notification declaration"
 msgstr "Methu diweddaru datganiad hysbysiad"
 
-#: src/screens/Messages/Settings.tsx:39
+#: src/screens/Messages/Settings.tsx:57
 msgid "Failed to update settings"
 msgstr "Wedi methu diweddaru gosodiadau"
 
@@ -3621,7 +3747,7 @@ msgstr "Wedi methu dilysu'r e-bost, ceisiwch eto."
 msgid "Failed to verify handle. Please try again."
 msgstr "Wedi methu dilysu enw dangos. Ceisiwch eto."
 
-#: src/Navigation.tsx:291
+#: src/Navigation.tsx:297
 msgid "Feed"
 msgstr "Ffrwd"
 
@@ -3650,9 +3776,9 @@ msgstr "Toglo ffrwd"
 msgid "Feed unavailable"
 msgstr "Dyw'r ffrwd ddim ar gael"
 
-#: src/view/shell/desktop/RightNav.tsx:106
-#: src/view/shell/desktop/RightNav.tsx:107
-#: src/view/shell/Drawer.tsx:368
+#: src/view/shell/desktop/RightNav.tsx:94
+#: src/view/shell/desktop/RightNav.tsx:95
+#: src/view/shell/Drawer.tsx:389
 msgid "Feedback"
 msgstr "Adborth"
 
@@ -3662,14 +3788,14 @@ msgctxt "toast"
 msgid "Feedback sent to feed operator"
 msgstr "Adborth wedi'i anfon at weithredwr ffrwd"
 
-#: src/Navigation.tsx:574
+#: src/Navigation.tsx:610
 #: src/screens/Search/SearchResults.tsx:73
 #: src/screens/StarterPack/StarterPackScreen.tsx:190
 #: src/view/screens/Feeds.tsx:511
 #: src/view/screens/Profile.tsx:230
 #: src/view/screens/SavedFeeds.tsx:104
-#: src/view/shell/desktop/LeftNav.tsx:727
-#: src/view/shell/Drawer.tsx:530
+#: src/view/shell/desktop/LeftNav.tsx:728
+#: src/view/shell/Drawer.tsx:551
 msgid "Feeds"
 msgstr "Ffrydiau"
 
@@ -3737,8 +3863,8 @@ msgid "Find people to follow"
 msgstr "Chwilio am bobl i'w dilyn"
 
 #: src/screens/Search/Shell.tsx:476
-msgid "Find posts, users, and feeds on Bluesky"
-msgstr "Canfod postiadau, defnyddwyr a ffrydiau ar Bluesky"
+msgid "Find posts, users, and feeds on Tellus"
+msgstr "Canfod postiadau, defnyddwyr a ffrydiau ar Tellus"
 
 #: src/screens/Onboarding/StepFinished.tsx:345
 msgid "Find your people"
@@ -3776,7 +3902,7 @@ msgstr "Hyblyg"
 #: src/components/ProfileHoverCard/index.web.tsx:496
 #: src/components/ProfileHoverCard/index.web.tsx:507
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:131
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:252
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:282
 #: src/screens/VideoFeed/index.tsx:854
 msgid "Follow"
 msgstr "Dilyn"
@@ -3787,7 +3913,7 @@ msgid "Follow"
 msgstr "Dilyn"
 
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:113
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:237
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:267
 msgid "Follow {0}"
 msgstr "Dilynwch {0}"
 
@@ -3804,8 +3930,8 @@ msgstr "Dilynwch 10 cyfrif"
 msgid "Follow 7 accounts"
 msgstr "Dilynwch 7 cyfrif"
 
-#: src/view/com/profile/ProfileMenu.tsx:287
-#: src/view/com/profile/ProfileMenu.tsx:298
+#: src/view/com/profile/ProfileMenu.tsx:342
+#: src/view/com/profile/ProfileMenu.tsx:353
 msgid "Follow account"
 msgstr "Dilynwch y cyfrif"
 
@@ -3822,7 +3948,7 @@ msgstr "Dilynwch bob cyfrif"
 #. User is not following this account, click to follow back
 #: src/components/ProfileCard.tsx:518
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:129
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:250
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:280
 msgid "Follow back"
 msgstr "Dilynwch Nôl"
 
@@ -3851,7 +3977,7 @@ msgstr "Yn cael ei ddilyn gan <0>{0}</0> a <1>{1}</1>"
 msgid "Followed by <0>{0}</0>, <1>{1}</1>, and {2, plural, one {# other} other {# others}}"
 msgstr "Yn cael ei ddilyn gan <0>{0}</0>, <1>{1}</1>, and {2, plural, one {# arall} other {# arall}}"
 
-#: src/Navigation.tsx:245
+#: src/Navigation.tsx:251
 msgid "Followers of @{0} that you know"
 msgstr "Dilynwyr @{0} rydych chi'n eu hadnabod"
 
@@ -3865,7 +3991,7 @@ msgstr "Dilynwyr rydych chi'n eu hadnabod"
 #: src/components/ProfileHoverCard/index.web.tsx:495
 #: src/components/ProfileHoverCard/index.web.tsx:506
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:134
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:248
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:278
 #: src/screens/VideoFeed/index.tsx:852
 msgid "Following"
 msgstr "Yn Dilyn"
@@ -3877,7 +4003,7 @@ msgid "Following"
 msgstr "Yn Dilyn"
 
 #: src/components/ProfileCard.tsx:474
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:92
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:96
 msgid "Following {0}"
 msgstr "Yn dilyn {0}"
 
@@ -3890,7 +4016,7 @@ msgstr "Yn dilyn {handle}"
 msgid "Following feed preferences"
 msgstr "Dewisiadau ffrydio Yn Dilyn"
 
-#: src/Navigation.tsx:362
+#: src/Navigation.tsx:393
 #: src/screens/Settings/FollowingFeedPreferences.tsx:56
 msgid "Following Feed Preferences"
 msgstr "Dewisiadau Ffrydio Yn Dilyn"
@@ -3917,8 +4043,8 @@ msgid "Food"
 msgstr "Bwyd"
 
 #: src/components/BlockedGeoOverlay.tsx:56
-msgid "For now, we have made the difficult decision to block access to Bluesky in the state of Mississippi."
-msgstr "Am nawr, rydym wedi gwneud y penderfyniad anodd i rwystro mynediad Bluesky i dalaith Mississippi."
+msgid "For now, we have made the difficult decision to block access to Tellus in the state of Mississippi."
+msgstr "Am nawr, rydym wedi gwneud y penderfyniad anodd i rwystro mynediad Tellus i dalaith Mississippi."
 
 #: src/view/com/modals/DeleteAccount.tsx:125
 msgid "For security reasons, we'll need to send a confirmation code to your email address."
@@ -3984,7 +4110,7 @@ msgstr "Oddi wrth <0/>"
 msgid "Generate a starter pack"
 msgstr "Creu pecyn cychwyn"
 
-#: src/view/shell/Drawer.tsx:372
+#: src/view/shell/Drawer.tsx:393
 msgid "Get help"
 msgstr "Cael cymorth"
 
@@ -4116,8 +4242,8 @@ msgstr "Ewch adref"
 msgid "Go Home"
 msgstr "Ewch Adref"
 
-#: src/view/com/profile/ProfileMenu.tsx:330
-#: src/view/com/profile/ProfileMenu.tsx:337
+#: src/view/com/profile/ProfileMenu.tsx:385
+#: src/view/com/profile/ProfileMenu.tsx:392
 msgid "Go live"
 msgstr "Ewch yn fyw"
 
@@ -4152,8 +4278,8 @@ msgid "Go to next"
 msgstr "Ewch i'r nesaf"
 
 #: src/components/dms/ConvoMenu.tsx:227
-#: src/view/shell/desktop/LeftNav.tsx:317
-#: src/view/shell/desktop/LeftNav.tsx:323
+#: src/view/shell/desktop/LeftNav.tsx:319
+#: src/view/shell/desktop/LeftNav.tsx:325
 msgid "Go to profile"
 msgstr "Ewch i'r proffil"
 
@@ -4167,6 +4293,14 @@ msgstr "Ewch i broffil y defnyddiwr"
 #: src/view/com/composer/labels/LabelsBtn.tsx:204
 msgid "Graphic Media"
 msgstr "Cyfryngau Graffig"
+
+#: src/screens/Saved/components.tsx:141
+msgid "Grille"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:422
+msgid "Groupe"
+msgstr ""
 
 #: src/state/shell/progress-guide.tsx:220
 #: src/state/shell/progress-guide.tsx:230
@@ -4200,7 +4334,7 @@ msgstr "Hapteg"
 msgid "Harassment, trolling, or intolerance"
 msgstr "Aflonyddu, trolio, neu anoddefgarwch"
 
-#: src/Navigation.tsx:539
+#: src/Navigation.tsx:570
 msgid "Hashtag"
 msgstr "Hashnod"
 
@@ -4217,11 +4351,11 @@ msgstr "Oes gennych chi god? <0>Cliciwch yma.</0>"
 msgid "Having trouble?"
 msgstr "Yn cael trafferth?"
 
-#: src/screens/Settings/Settings.tsx:236
-#: src/screens/Settings/Settings.tsx:240
-#: src/view/shell/desktop/RightNav.tsx:124
-#: src/view/shell/desktop/RightNav.tsx:125
-#: src/view/shell/Drawer.tsx:381
+#: src/screens/Settings/Settings.tsx:252
+#: src/screens/Settings/Settings.tsx:256
+#: src/view/shell/desktop/RightNav.tsx:112
+#: src/view/shell/desktop/RightNav.tsx:113
+#: src/view/shell/Drawer.tsx:402
 msgid "Help"
 msgstr "Cymorth"
 
@@ -4362,11 +4496,11 @@ msgstr "Hmmmm, dydyn ni ddim wedi gallu llwytho'r gwasanaeth cymedroli hwnnw."
 msgid "Hold up! We’re gradually giving access to video, and you’re still waiting in line. Check back soon!"
 msgstr "Daliwch ati! Rydyn ni'n rhoi mynediad i fideo yn raddol, ac rydych chi'n dal i aros yn unol. Dewch nôl cyn hir!"
 
-#: src/Navigation.tsx:754
-#: src/Navigation.tsx:774
+#: src/Navigation.tsx:812
+#: src/Navigation.tsx:832
 #: src/view/shell/bottom-bar/BottomBar.tsx:178
-#: src/view/shell/desktop/LeftNav.tsx:671
-#: src/view/shell/Drawer.tsx:440
+#: src/view/shell/desktop/LeftNav.tsx:672
+#: src/view/shell/Drawer.tsx:461
 msgid "Home"
 msgstr "Cartref"
 
@@ -4388,6 +4522,10 @@ msgstr "Difyr"
 msgid "How should we open this link?"
 msgstr "Sut dylen ni agor y ddolen hon?"
 
+#: src/screens/MessagesMatrix.web.tsx:1071
+msgid "https://matrix.org"
+msgstr ""
+
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:133
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:136
 msgid "I have a code"
@@ -4402,6 +4540,15 @@ msgstr "Mae gen i fy mharth fy hun"
 #: src/components/dms/ReportConversationPrompt.tsx:21
 msgid "I understand"
 msgstr "Rwy'n deall"
+
+#: src/screens/MessagesMatrix.web.tsx:978
+#: src/screens/MessagesMatrix.web.tsx:1149
+msgid "Identifiant Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:797
+msgid "Identifiant Tellus Chat invalide."
+msgstr ""
 
 #: src/view/com/lightbox/Lightbox.web.tsx:187
 msgid "If alt text is long, toggles alt text expanded state"
@@ -4482,6 +4629,42 @@ msgstr "Dynwared neu honiadau ffug am hunaniaeth neu ymlyniad"
 #: src/lib/moderation/useReportOptions.ts:68
 msgid "Impersonation, misinformation, or false claims"
 msgstr "Dynwared, gwybodaeth anghywir, neu honiadau ffug"
+
+#: src/screens/MessagesMatrix.web.tsx:694
+msgid "Impossible d'envoyer le message."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:808
+msgid "Impossible d’inviter cette personne."
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:89
+msgid "Impossible d’ouvrir Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1636
+msgid "Impossible de charger la conversation"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:647
+msgid "Impossible de charger les messages."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:411
+msgid "Impossible de créer la conversation."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:561
+msgid "Impossible de créer le groupe."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:831
+msgid "Impossible de quitter le groupe."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:252
+msgid "Impossible de se connecter à Tellus Chat."
+msgstr ""
 
 #: src/screens/Settings/NotificationSettings/index.tsx:284
 msgid "In-app"
@@ -4578,6 +4761,10 @@ msgstr "Pwnc adrodd annilys"
 msgid "Invalid Verification Code"
 msgstr "Cod Dilysu Annilys"
 
+#: src/screens/MessagesMatrix.web.tsx:1255
+msgid "Invitations"
+msgstr ""
+
 #: src/view/com/modals/InviteCodes.tsx:94
 msgid "Invite a Friend"
 msgstr "Gwahodd Ffrind"
@@ -4602,9 +4789,37 @@ msgstr "Codau gwahoddiad: 1 ar gael"
 msgid "Invite people to this starter pack!"
 msgstr "Gwahoddwch bobl i'r pecyn cychwyn hwn!"
 
+#: src/Navigation.tsx:595
+msgid "Invite to Tellus Chat"
+msgstr ""
+
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:34
 msgid "Invite your friends to follow your favorite feeds and people"
 msgstr "Gwahoddwch eich ffrindiau i ddilyn eich hoff ffrydiau a phobl"
+
+#: src/screens/Messages/Invite.tsx:79
+msgid "Invite-la pour démarrer la discussion. Elle pourra créer son compte puis revenir ici."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1586
+#: src/screens/MessagesMatrix.web.tsx:1593
+msgid "Inviter"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:113
+msgid "Inviter {normalizedHandle} sur Tellus Chat"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:114
+#: src/components/dms/MessageProfileButton.tsx:174
+#: src/components/dms/MessageProfileButton.tsx:202
+#: src/screens/Messages/Invite.tsx:65
+msgid "Inviter sur Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1560
+msgid "Inviter un membre"
+msgstr ""
 
 #: src/screens/StarterPack/Wizard/StepDetails.tsx:31
 msgid "Invites, but personal"
@@ -4630,7 +4845,7 @@ msgstr "Dim ond chi ar hyn o bryd! Ychwanegwch fwy o bobl at eich pecyn cychwyn 
 msgid "Job ID: {0}"
 msgstr "ID gwaith: {0}"
 
-#. Link to a page with job openings at Bluesky
+#. Link to a page with job openings at Tellus
 #: src/view/com/auth/SplashScreen.web.tsx:180
 msgid "Jobs"
 msgstr "Swyddi"
@@ -4640,8 +4855,8 @@ msgstr "Swyddi"
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:211
 #: src/screens/StarterPack/StarterPackScreen.tsx:466
 #: src/screens/StarterPack/StarterPackScreen.tsx:477
-msgid "Join Bluesky"
-msgstr "Ymunwch â Bluesky"
+msgid "Join Tellus"
+msgstr "Ymunwch â Tellus"
 
 #: src/components/StarterPack/QrCode.tsx:68
 #: src/view/shell/NavSignupCard.tsx:40
@@ -4698,13 +4913,17 @@ msgstr "Labeli ar eich cyfrif"
 msgid "Labels on your content"
 msgstr "Labeli ar eich cynnwys"
 
-#: src/Navigation.tsx:218
+#: src/screens/MessagesMatrix.web.tsx:1278
+msgid "Lance une discussion ou crée un groupe."
+msgstr ""
+
+#: src/Navigation.tsx:224
 msgid "Language Settings"
 msgstr "Gosodiadau Iaith"
 
 #: src/screens/Settings/LanguageSettings.tsx:78
-#: src/screens/Settings/Settings.tsx:228
-#: src/screens/Settings/Settings.tsx:231
+#: src/screens/Settings/Settings.tsx:244
+#: src/screens/Settings/Settings.tsx:247
 msgid "Languages"
 msgstr "Ieithoedd"
 
@@ -4744,13 +4963,13 @@ msgstr "Dysgu Rhagor"
 msgid "Learn more about age assurance"
 msgstr "Rhagor o wybodaeth am sicrwydd oed"
 
-#: src/view/com/auth/SplashScreen.web.tsx:168
-msgid "Learn more about Bluesky"
-msgstr "Dysgwch ragor am Bluesky"
-
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
 msgstr "Dysgu rhagor am hunan westeio eich PDS."
+
+#: src/view/com/auth/SplashScreen.web.tsx:168
+msgid "Learn more about Tellus"
+msgstr "Dysgwch ragor am Tellus"
 
 #: src/components/moderation/ContentHider.tsx:152
 #: src/components/moderation/ContentHider.tsx:218
@@ -4773,13 +4992,13 @@ msgstr "Dysgwch ragor am y rhybudd hwn"
 #: src/components/verification/VerificationsDialog.tsx:151
 #: src/components/verification/VerifierDialog.tsx:118
 msgctxt "english-only-resource"
-msgid "Learn more about verification on Bluesky"
-msgstr "Dysgu rhagor am ddilysu ar Bluesky"
+msgid "Learn more about verification on Tellus"
+msgstr "Dysgu rhagor am ddilysu ar Tellus"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:128
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:131
-msgid "Learn more about what is public on Bluesky."
-msgstr "Dysgu rhagor am yr hyn sy'n gyhoeddus ar Bluesky."
+msgid "Learn more about what is public on Tellus."
+msgstr "Dysgu rhagor am yr hyn sy'n gyhoeddus ar Tellus."
 
 #: src/components/ageAssurance/AgeAssuranceAdmonition.tsx:86
 msgid "Learn more in your <0>account settings.</0>"
@@ -4813,12 +5032,16 @@ msgstr "Gadael nhw i gyd heb eu dewis i weld unrhyw iaith."
 
 #: src/components/dialogs/LinkWarning.tsx:67
 #: src/components/dialogs/LinkWarning.tsx:75
-msgid "Leaving Bluesky"
-msgstr "Gadael Bluesky"
+msgid "Leaving Tellus"
+msgstr "Gadael Tellus"
 
 #: src/screens/SignupQueued.tsx:155
 msgid "left to go."
 msgstr "chwith i fynd."
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:42
+msgid "Les posts ne seront pas supprimés de Tellus."
+msgstr ""
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:323
 msgid "Let me choose"
@@ -4833,6 +5056,10 @@ msgstr "Gadewch i ni gael ailosod eich cyfrinair!"
 #: src/screens/Onboarding/StepFinished.tsx:591
 msgid "Let's go!"
 msgstr "Ffwrdd â ni!"
+
+#: src/screens/Messages/Invite.tsx:48
+msgid "Lien copié"
+msgstr ""
 
 #: src/components/dialogs/Embed.tsx:162
 #: src/components/dialogs/Embed.tsx:164
@@ -4863,7 +5090,7 @@ msgstr "Hoffi 10 postiad"
 msgid "Like 10 posts to train the Discover feed"
 msgstr "Hoffi 10 postiad i hyfforddi'r ffrwd Darganfod"
 
-#: src/Navigation.tsx:452
+#: src/Navigation.tsx:483
 msgid "Like notifications"
 msgstr "Hysbysiadau hoffi"
 
@@ -4875,8 +5102,8 @@ msgstr "Hoffi'r ffrwd hon"
 msgid "Like this labeler"
 msgstr "Hoffi'r labelwr hwn"
 
-#: src/Navigation.tsx:296
-#: src/Navigation.tsx:301
+#: src/Navigation.tsx:302
+#: src/Navigation.tsx:307
 msgid "Liked by"
 msgstr "Wedi'i hoffi gan"
 
@@ -4911,7 +5138,7 @@ msgstr "Hoffi"
 msgid "Likes of your reposts"
 msgstr "Hoffi eich ail bostiadau"
 
-#: src/Navigation.tsx:476
+#: src/Navigation.tsx:507
 msgid "Likes of your reposts notifications"
 msgstr "Hoffi eich hysbysiadau ail bostio"
 
@@ -4924,7 +5151,7 @@ msgstr "Hoffi ar y postiad hwn"
 msgid "Linear"
 msgstr "Llinol"
 
-#: src/Navigation.tsx:251
+#: src/Navigation.tsx:257
 msgid "List"
 msgstr "Rhestr"
 
@@ -4986,12 +5213,16 @@ msgctxt "toast"
 msgid "List unmuted"
 msgstr "Rhestr heb ei thewi"
 
-#: src/Navigation.tsx:172
+#: src/screens/Saved/components.tsx:149
+msgid "Liste"
+msgstr ""
+
+#: src/Navigation.tsx:178
 #: src/view/screens/Lists.tsx:65
 #: src/view/screens/Profile.tsx:224
 #: src/view/screens/Profile.tsx:232
-#: src/view/shell/desktop/LeftNav.tsx:745
-#: src/view/shell/Drawer.tsx:545
+#: src/view/shell/desktop/LeftNav.tsx:764
+#: src/view/shell/Drawer.tsx:566
 msgid "Lists"
 msgstr "Rhestrau"
 
@@ -5030,16 +5261,20 @@ msgstr "Llwytho hysbysiadau newydd"
 
 #: src/screens/Profile/ProfileFeed/index.tsx:224
 #: src/screens/Profile/Sections/Feed.tsx:98
-#: src/view/com/feeds/FeedPage.tsx:162
+#: src/view/com/feeds/FeedPage.tsx:174
 #: src/view/screens/ProfileList.tsx:878
 msgid "Load new posts"
 msgstr "Llwytho postiadau newydd"
+
+#: src/screens/Messages/Settings.tsx:204
+msgid "Loading Tellus Chat ID..."
+msgstr ""
 
 #: src/view/com/composer/text-input/mobile/Autocomplete.tsx:61
 msgid "Loading..."
 msgstr "Yn llwytho..."
 
-#: src/Navigation.tsx:321
+#: src/Navigation.tsx:327
 msgid "Log"
 msgstr "Cofnod"
 
@@ -5047,14 +5282,14 @@ msgstr "Cofnod"
 msgid "Logged-out visibility"
 msgstr "Gwelededd wedi allgofnodi"
 
-#: src/view/shell/desktop/RightNav.tsx:134
-msgid "Logo by @sawaratsuki.bsky.social"
-msgstr "Logo gan @sawaratsuki.bsky.social"
+#: src/view/shell/desktop/RightNav.tsx:122
+msgid "Logo by @sawaratsuki.tellus.social"
+msgstr "Logo gan @sawaratsuki.tellus.social"
 
-#: src/view/shell/desktop/RightNav.tsx:131
-#: src/view/shell/Drawer.tsx:709
-msgid "Logo by <0>@sawaratsuki.bsky.social</0>"
-msgstr "Logo gan <0>@sawaratsuki.bsky.social</0>"
+#: src/view/shell/desktop/RightNav.tsx:119
+#: src/view/shell/Drawer.tsx:774
+msgid "Logo by <0>@sawaratsuki.tellus.social</0>"
+msgstr "Logo gan <0>@sawaratsuki.tellus.social</0>"
 
 #: src/components/RichTextTag.tsx:53
 msgid "Long press to open tag menu for #{tag}"
@@ -5088,6 +5323,11 @@ msgstr "Gwnewch un i mi"
 msgid "Make sure this is where you intend to go!"
 msgstr "Gwnewch yn siŵr mai dyma lle rydych chi'n bwriadu mynd!"
 
+#: src/components/PostControls/BookmarkButton.web.tsx:45
+msgctxt "Accessibility label for the save button when item already saved"
+msgid "Manage saved collections"
+msgstr ""
+
 #: src/screens/Settings/ContentAndMediaSettings.tsx:60
 #: src/screens/Settings/ContentAndMediaSettings.tsx:63
 msgid "Manage saved feeds"
@@ -5117,6 +5357,11 @@ msgstr "Marcio fel weedi darllen"
 msgid "Marked all as read"
 msgstr "Wedi marcio'r cyfan fel wedi'u darllen"
 
+#: src/screens/MessagesMatrix.web.tsx:1497
+#: src/screens/MessagesMatrix.web.tsx:1506
+msgid "Masquer"
+msgstr ""
+
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:90
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:97
 msgid "Maybe later"
@@ -5130,7 +5375,11 @@ msgstr "Cyfryngau"
 msgid "Media that may be disturbing or inappropriate for some audiences."
 msgstr "Cyfryngau a all fod yn annymunol neu'n amhriodol i rai cynulleidfaoedd."
 
-#: src/Navigation.tsx:436
+#: src/screens/MessagesMatrix.web.tsx:1520
+msgid "Membres du groupe"
+msgstr ""
+
+#: src/Navigation.tsx:467
 msgid "Mention notifications"
 msgstr "Hysbysiadau crybwyll"
 
@@ -5153,9 +5402,14 @@ msgstr "Crybwylliadau"
 msgid "Menu"
 msgstr "Dewislen"
 
-#: src/components/dms/MessageProfileButton.tsx:97
-msgid "Message {0}"
-msgstr "Neges {0}"
+#: src/components/dms/MessageProfileButton.tsx:176
+#: src/components/dms/MessageProfileButton.tsx:204
+msgid "Message (Tellus Chat)"
+msgstr ""
+
+#: src/components/dms/MessageProfileButton.tsx:116
+msgid "Message {normalizedHandle} sur Tellus Chat"
+msgstr ""
 
 #: src/components/dms/MessageContextMenu.tsx:77
 msgctxt "toast"
@@ -5187,16 +5441,16 @@ msgstr "Mae'r neges yn rhy hir"
 msgid "Message options"
 msgstr "Dewisiadau negeseuon"
 
-#: src/Navigation.tsx:769
-msgid "Messages"
-msgstr "Negeseuon"
+#: src/components/dms/MessageProfileButton.tsx:117
+msgid "Message sur Tellus Chat"
+msgstr ""
 
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:111
 msgctxt "Name of app icon variant"
 msgid "Midnight"
 msgstr "Canol Nos"
 
-#: src/Navigation.tsx:500
+#: src/Navigation.tsx:531
 msgid "Miscellaneous notifications"
 msgstr "Hysbysiadau amrywiol"
 
@@ -5210,10 +5464,10 @@ msgstr "Cyfrif Camarweiniol"
 msgid "Misleading Post"
 msgstr "Postiad Camarweiniol"
 
-#: src/Navigation.tsx:177
+#: src/Navigation.tsx:183
 #: src/screens/Moderation/index.tsx:100
-#: src/screens/Settings/Settings.tsx:188
-#: src/screens/Settings/Settings.tsx:191
+#: src/screens/Settings/Settings.tsx:190
+#: src/screens/Settings/Settings.tsx:193
 msgid "Moderation"
 msgstr "Cymedroli"
 
@@ -5249,7 +5503,7 @@ msgstr "Rhestr cymedroli wedi'i diweddaru"
 msgid "Moderation lists"
 msgstr "Rhestrau cymedroli"
 
-#: src/Navigation.tsx:182
+#: src/Navigation.tsx:188
 #: src/view/screens/ModerationModlists.tsx:65
 msgid "Moderation Lists"
 msgstr "Rhestrau Cymedroli"
@@ -5258,7 +5512,7 @@ msgstr "Rhestrau Cymedroli"
 msgid "moderation settings"
 msgstr "gosodiadau cymedroli"
 
-#: src/Navigation.tsx:311
+#: src/Navigation.tsx:317
 msgid "Moderation states"
 msgstr "Cyflyrau cymedroli"
 
@@ -5271,6 +5525,19 @@ msgstr "Offer cymedroli"
 msgid "Moderator has chosen to set a general warning on the content."
 msgstr "Mae'r cymedrolwr wedi dewis gosod rhybudd cyffredinol ar y cynnwys."
 
+#: src/screens/Saved/CollectionDetailPage.tsx:48
+msgid "Modifier"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:43
+#: src/screens/Saved/SavedCollectionsPage.tsx:51
+msgid "Modifier la couverture"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1200
+msgid "Mon groupe"
+msgstr ""
+
 #: src/view/shell/desktop/Feeds.tsx:108
 #: src/view/shell/desktop/Feeds.tsx:118
 msgid "More feeds"
@@ -5281,11 +5548,16 @@ msgstr "Rhagor o ffrydiau"
 msgid "More languages..."
 msgstr "Rhagor o ieithoedd..."
 
-#: src/view/com/profile/ProfileMenu.tsx:223
-#: src/view/com/profile/ProfileMenu.tsx:229
+#: src/view/com/profile/ProfileMenu.tsx:261
+#: src/view/com/profile/ProfileMenu.tsx:267
 #: src/view/screens/ProfileList.tsx:750
 msgid "More options"
 msgstr "Rhagor o ddewisiadau"
+
+#: src/screens/MessagesMatrix.web.tsx:992
+#: src/screens/MessagesMatrix.web.tsx:996
+msgid "Mot de passe"
+msgstr ""
 
 #: src/screens/Onboarding/state.ts:113
 msgid "Movies"
@@ -5308,8 +5580,8 @@ msgstr "Tewi {tag}"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:628
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:634
-#: src/view/com/profile/ProfileMenu.tsx:375
-#: src/view/com/profile/ProfileMenu.tsx:382
+#: src/view/com/profile/ProfileMenu.tsx:430
+#: src/view/com/profile/ProfileMenu.tsx:437
 msgid "Mute account"
 msgstr "Tewi cyfrif"
 
@@ -5372,7 +5644,7 @@ msgstr "Tewi geiriau a thagiau"
 msgid "Muted accounts"
 msgstr "Cyfrifon wedi'u tewi"
 
-#: src/Navigation.tsx:187
+#: src/Navigation.tsx:193
 #: src/view/screens/ModerationMutedAccounts.tsx:118
 msgid "Muted Accounts"
 msgstr "Cyfrifon Wedi'u Tewi"
@@ -5401,6 +5673,10 @@ msgstr "Fy Mhenblwydd"
 #: src/view/screens/Feeds.tsx:704
 msgid "My Feeds"
 msgstr "Fy Ffrydiau"
+
+#: src/screens/Messages/Settings.tsx:183
+msgid "My Tellus Chat ID (Matrix ID)"
+msgstr ""
 
 #: src/view/com/modals/CreateOrEditList.tsx:268
 msgid "Name"
@@ -5440,7 +5716,7 @@ msgstr "Ewch i'r pecyn cychwyn"
 msgid "Navigates to the next screen"
 msgstr "Yn llywio i'r sgrin nesaf"
 
-#: src/view/shell/Drawer.tsx:78
+#: src/view/shell/Drawer.tsx:81
 msgid "Navigates to your profile"
 msgstr "Yn llywio i'ch proffil"
 
@@ -5495,7 +5771,7 @@ msgstr "Cyfeiriad e-bost newydd"
 msgid "New Feature"
 msgstr "Nodwedd Newydd"
 
-#: src/Navigation.tsx:468
+#: src/Navigation.tsx:499
 msgid "New follower notifications"
 msgstr "Hysbysiadau dilynwr newydd"
 
@@ -5539,12 +5815,12 @@ msgstr "Cyfrinair newydd"
 msgid "New post"
 msgstr "Postiad newydd"
 
-#: src/view/com/feeds/FeedPage.tsx:173
+#: src/view/com/feeds/FeedPage.tsx:185
 msgctxt "action"
 msgid "New post"
 msgstr "Postiad newydd"
 
-#: src/view/shell/desktop/LeftNav.tsx:580
+#: src/view/shell/desktop/LeftNav.tsx:582
 msgctxt "action"
 msgid "New Post"
 msgstr "Postiad Newydd"
@@ -5576,9 +5852,12 @@ msgstr "Rhestr Defnyddwyr Newydd"
 msgid "Newest replies first"
 msgstr "Atebion diweddaraf yn gyntaf"
 
+#: src/Navigation.tsx:615
 #: src/screens/Onboarding/index.tsx:36
 #: src/screens/Onboarding/state.ts:116
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:238
+#: src/view/shell/desktop/LeftNav.tsx:746
+#: src/view/shell/Drawer.tsx:614
 msgid "News"
 msgstr "Newyddion"
 
@@ -5610,8 +5889,8 @@ msgid "Next image"
 msgstr "Delwedd nesaf"
 
 #: src/screens/Onboarding/StepFinished.tsx:356
-msgid "No ads, no invasive tracking, no engagement traps. Bluesky respects your time and attention."
-msgstr "Dim hysbysebion, dim tracio ymwthiol, dim maglau ymgysylltu. Mae Bluesky'n parchu'ch amser a'ch sylw."
+msgid "No ads, no invasive tracking, no engagement traps. Tellus respects your time and attention."
+msgstr "Dim hysbysebion, dim tracio ymwthiol, dim maglau ymgysylltu. Mae Tellus'n parchu'ch amser a'ch sylw."
 
 #: src/screens/Settings/AppPasswords.tsx:108
 msgid "No app passwords yet"
@@ -5644,7 +5923,7 @@ msgid "No likes yet"
 msgstr "Dim hoffi eto"
 
 #: src/components/ProfileCard.tsx:496
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:114
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:118
 msgid "No longer following {0}"
 msgstr "Ddim yn dilyn {0} bellach"
 
@@ -5660,8 +5939,8 @@ msgstr "Dim rhagor o algorithmau sgrolio gwae, ofer. Darganfyddwch ffrydiau sy'n
 msgid "No notifications yet!"
 msgstr "Dim hysbysiadau eto!"
 
-#: src/screens/Messages/Settings.tsx:106
-#: src/screens/Messages/Settings.tsx:109
+#: src/screens/Messages/Settings.tsx:278
+#: src/screens/Messages/Settings.tsx:281
 #: src/screens/Settings/ActivityPrivacySettings.tsx:129
 #: src/screens/Settings/ActivityPrivacySettings.tsx:134
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:160
@@ -5750,6 +6029,18 @@ msgstr "Does neb wedi ail-bostio hwn eto. Efallai y dylech chi fod y cyntaf!"
 msgid "Nobody was found. Try searching for someone else."
 msgstr "Heb ddod o hyd i neb. Ceisiwch chwilio am rywun arall."
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:32
+msgid "Nom"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1196
+msgid "Nom du groupe"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:33
+msgid "Nombre d'éléments"
+msgstr ""
+
 #: src/lib/moderation/useGlobalLabelStrings.ts:42
 msgid "Non-sexual Nudity"
 msgstr "Noethni nad yw'n rhywiol"
@@ -5762,7 +6053,7 @@ msgstr "Dim"
 msgid "Not followed by anyone you're following"
 msgstr "Dim yn cael ei ddilyn gan neb rydych chi'n eu dilyn"
 
-#: src/Navigation.tsx:167
+#: src/Navigation.tsx:173
 #: src/view/screens/Profile.tsx:125
 msgid "Not Found"
 msgstr "Heb ei Ganfod"
@@ -5771,13 +6062,13 @@ msgstr "Heb ei Ganfod"
 msgid "Not in Mississippi?"
 msgstr "Ddim ym Mississippi?"
 
-#: src/view/com/profile/ProfileMenu.tsx:497
+#: src/view/com/profile/ProfileMenu.tsx:561
 msgid "Note about sharing"
 msgstr "Nodyn am rannu"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:117
-msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
-msgstr "Nodyn: Mae Bluesky yn rhwydwaith agored a chyhoeddus. Dim ond yn cyfyngu ar welededd eich cynnwys ar ap a gwefan Bluesky y mae'r gosodiad hwn yn ei wneud. Efallai na fydd apiau eraill yn parchu'r gosodiad hwn. Mae'n bosibl y bydd eich cynnwys yn dal i gael ei ddangos i ddefnyddwyr sydd wedi allgofnodi gan apiau a gwefannau eraill."
+msgid "Note: Tellus is an open and public network. This setting only limits the visibility of your content on the Tellus app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
+msgstr "Nodyn: Mae Tellus yn rhwydwaith agored a chyhoeddus. Dim ond yn cyfyngu ar welededd eich cynnwys ar ap a gwefan Tellus y mae'r gosodiad hwn yn ei wneud. Efallai na fydd apiau eraill yn parchu'r gosodiad hwn. Mae'n bosibl y bydd eich cynnwys yn dal i gael ei ddangos i ddefnyddwyr sydd wedi allgofnodi gan apiau a gwefannau eraill."
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:134
 msgid "Note: This post is only visible to logged-in users."
@@ -5791,22 +6082,22 @@ msgstr "Dim byd yma"
 msgid "Nothing saved yet"
 msgstr "Dim wedi'i gadw eto"
 
-#: src/Navigation.tsx:422
-#: src/Navigation.tsx:569
+#: src/Navigation.tsx:453
+#: src/Navigation.tsx:605
 #: src/view/screens/Notifications.tsx:136
 msgid "Notification settings"
 msgstr "Gosodiadau hysbysu"
 
-#: src/screens/Messages/Settings.tsx:128
+#: src/screens/Messages/Settings.tsx:300
 msgid "Notification sounds"
 msgstr "Seiniau hysbysu"
 
-#: src/screens/Messages/Settings.tsx:125
+#: src/screens/Messages/Settings.tsx:297
 msgid "Notification Sounds"
 msgstr "Seiniau Hysbysu"
 
-#: src/Navigation.tsx:564
-#: src/Navigation.tsx:764
+#: src/Navigation.tsx:600
+#: src/Navigation.tsx:822
 #: src/screens/Notifications/ActivityList.tsx:29
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:90
 #: src/screens/Settings/NotificationSettings/index.tsx:92
@@ -5819,18 +6110,37 @@ msgstr "Seiniau Hysbysu"
 #: src/screens/Settings/NotificationSettings/ReplyNotificationSettings.tsx:30
 #: src/screens/Settings/NotificationSettings/RepostNotificationSettings.tsx:30
 #: src/screens/Settings/NotificationSettings/RepostsOnRepostsNotificationSettings.tsx:30
-#: src/screens/Settings/Settings.tsx:196
-#: src/screens/Settings/Settings.tsx:199
+#: src/screens/Settings/Settings.tsx:198
+#: src/screens/Settings/Settings.tsx:201
 #: src/view/screens/Notifications.tsx:130
 #: src/view/shell/bottom-bar/BottomBar.tsx:252
-#: src/view/shell/desktop/LeftNav.tsx:708
-#: src/view/shell/Drawer.tsx:493
+#: src/view/shell/desktop/LeftNav.tsx:709
+#: src/view/shell/Drawer.tsx:514
 msgid "Notifications"
 msgstr "Hysbysiadau"
 
 #: src/screens/Settings/NotificationSettings/MiscellaneousNotificationSettings.tsx:43
 msgid "Notifications for everything else, such as when someone joins via one of your starter packs."
 msgstr "Hysbysiadau am bopeth arall, fel pan fydd rhywun yn ymuno drwy un o'r pecynnau cychwyn."
+
+#: src/screens/MessagesMatrix.web.tsx:724
+#: src/screens/MessagesMatrix.web.tsx:732
+#: src/screens/MessagesMatrix.web.tsx:1191
+msgid "Nouveau groupe"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:28
+#: src/screens/Saved/SavedCollectionsPage.tsx:40
+msgid "Nouvelle collection"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:712
+#: src/screens/MessagesMatrix.web.tsx:720
+#: src/screens/MessagesMatrix.web.tsx:1145
+#: src/screens/MessagesMatrix.web.tsx:1283
+#: src/screens/MessagesMatrix.web.tsx:1290
+msgid "Nouvelle discussion"
+msgstr ""
 
 #: src/lib/hooks/useTimeAgo.ts:135
 msgid "now"
@@ -5889,7 +6199,7 @@ msgstr "Atebion hynaf yn gyntaf"
 msgid "on<0><1/><2><3/></2></0>"
 msgstr "ar <0><1/><2><3/></2></0>"
 
-#: src/screens/Settings/Settings.tsx:388
+#: src/screens/Settings/Settings.tsx:404
 msgid "Onboarding reset"
 msgstr "Ailosod cyflwyno"
 
@@ -5962,6 +6272,7 @@ msgid "Open conversation options"
 msgstr "Agor dewisiadau sgyrsiau"
 
 #: src/components/Layout/Header/index.tsx:160
+#: src/screens/Messages/components/PageShell.tsx:43
 msgid "Open drawer menu"
 msgstr "Agor dewislen drôr"
 
@@ -5991,7 +6302,7 @@ msgstr "Agor dolen i {niceUrl}"
 msgid "Open message options"
 msgstr "Agor dewisiadau neges"
 
-#: src/screens/Settings/Settings.tsx:453
+#: src/screens/Settings/Settings.tsx:469
 msgid "Open moderation debug page"
 msgstr "Agor tudalen dadfygio cymedroli"
 
@@ -6020,12 +6331,12 @@ msgstr "Agor y ddewislen rhannu"
 msgid "Open starter pack menu"
 msgstr "Agor dewislen pecyn cychwyn"
 
-#: src/screens/Settings/Settings.tsx:446
-#: src/screens/Settings/Settings.tsx:460
+#: src/screens/Settings/Settings.tsx:462
+#: src/screens/Settings/Settings.tsx:476
 msgid "Open storybook page"
 msgstr "Agor tudalen llyfr stori"
 
-#: src/screens/Settings/Settings.tsx:439
+#: src/screens/Settings/Settings.tsx:455
 msgid "Open system log"
 msgstr "Agor cofnod system"
 
@@ -6072,19 +6383,19 @@ msgstr "Yn agor y dewisydd emojis"
 
 #: src/view/com/auth/SplashScreen.tsx:49
 #: src/view/com/auth/SplashScreen.web.tsx:111
-msgid "Opens flow to create a new Bluesky account"
-msgstr "Yn agor llif i greu cyfrif Bluesky newydd"
+msgid "Opens flow to create a new Tellus account"
+msgstr "Yn agor llif i greu cyfrif Tellus newydd"
 
 #: src/view/com/auth/SplashScreen.tsx:63
 #: src/view/com/auth/SplashScreen.web.tsx:125
-msgid "Opens flow to sign in to your existing Bluesky account"
-msgstr "Yn agor llif i fewngofnodi i'ch cyfrif Bluesky presennol"
+msgid "Opens flow to sign in to your existing Tellus account"
+msgstr "Yn agor llif i fewngofnodi i'ch cyfrif Tellus presennol"
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:36
 msgid "Opens GIF select dialog"
 msgstr "Yn agor deialog dewis GIF"
 
-#: src/screens/Settings/Settings.tsx:237
+#: src/screens/Settings/Settings.tsx:253
 msgid "Opens helpdesk in browser"
 msgstr "Yn agor desg gymorth yn y porwr"
 
@@ -6169,8 +6480,8 @@ msgid "Our moderation team has received your report."
 msgstr "Mae'n tîm cymedroli wedi derbyn eich adroddiad."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:29
-msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
-msgstr "Mae'n cymedrolwyr wedi adolygu adroddiadau ac wedi penderfynu analluogi eich mynediad at sgyrsiau ar Bluesky."
+msgid "Our moderators have reviewed reports and decided to disable your access to chats on Tellus."
+msgstr "Mae'n cymedrolwyr wedi adolygu adroddiadau ac wedi penderfynu analluogi eich mynediad at sgyrsiau ar Tellus."
 
 #: src/components/Lists.tsx:191
 #: src/view/screens/NotFound.tsx:47
@@ -6180,6 +6491,16 @@ msgstr "Heb ganfod y dudalen"
 #: src/view/screens/NotFound.tsx:44
 msgid "Page Not Found"
 msgstr "Tudalen Heb ei Chanfod"
+
+#: src/screens/Messages/Invite.tsx:99
+#: src/screens/Messages/Invite.tsx:105
+msgid "Partager le lien"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:109
+#: src/screens/Messages/Invite.tsx:115
+msgid "Partager un message"
+msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:228
 #: src/screens/Settings/AccountSettings.tsx:121
@@ -6222,11 +6543,11 @@ msgstr "Oedi fideo"
 msgid "People"
 msgstr "Pobl"
 
-#: src/Navigation.tsx:238
+#: src/Navigation.tsx:244
 msgid "People followed by @{0}"
 msgstr "Pobl yn cael eu dilyn gan @{0}"
 
-#: src/Navigation.tsx:231
+#: src/Navigation.tsx:237
 msgid "People following @{0}"
 msgstr "Pobl yn dilyn @{0}"
 
@@ -6348,8 +6669,8 @@ msgid "Please choose your password."
 msgstr "Dewiswch eich cyfrinair."
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:290
-msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
-msgstr "Cliciwch ar y ddolen yn yr e-bost a anfonwyd atoch i wirio'ch cyfeiriad e-bost newydd. Mae hwn yn gam pwysig i ganiatáu i chi barhau i fwynhau holl nodweddion Bluesky."
+msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Tellus."
+msgstr "Cliciwch ar y ddolen yn yr e-bost a anfonwyd atoch i wirio'ch cyfeiriad e-bost newydd. Mae hwn yn gam pwysig i ganiatáu i chi barhau i fwynhau holl nodweddion Tellus."
 
 #: src/screens/Signup/state.ts:302
 msgid "Please complete the verification captcha."
@@ -6470,6 +6791,14 @@ msgstr "Dilyswch eich e-bost"
 msgid "Please write your message below:"
 msgstr "Ysgrifennwch eich neges isod:"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:38
+msgid "Plus anciens"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:37
+msgid "Plus récents"
+msgstr ""
+
 #: src/screens/Onboarding/index.tsx:50
 #: src/screens/Onboarding/state.ts:119
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:232
@@ -6499,10 +6828,10 @@ msgstr "Postio'r Cyfan"
 msgid "Post blocked"
 msgstr "Postiad wedi'i rwystro"
 
-#: src/Navigation.tsx:264
-#: src/Navigation.tsx:271
-#: src/Navigation.tsx:278
-#: src/Navigation.tsx:285
+#: src/Navigation.tsx:270
+#: src/Navigation.tsx:277
+#: src/Navigation.tsx:284
+#: src/Navigation.tsx:291
 msgid "Post by @{0}"
 msgstr "Postiad gan @{0}"
 
@@ -6536,7 +6865,7 @@ msgstr "Postiad Wedi'i Guddio Gennych Chi"
 msgid "Post interaction settings"
 msgstr "Gosodiadau rhyngweithio postiadau"
 
-#: src/Navigation.tsx:198
+#: src/Navigation.tsx:204
 #: src/screens/ModerationInteractionSettings/index.tsx:34
 msgid "Post Interaction Settings"
 msgstr "Gosodiadau Rhyngweithio Postiadau"
@@ -6594,6 +6923,10 @@ msgstr "Dolen camarweiniol posib"
 msgid "Potentially misleading link warning"
 msgstr "Rhybudd dolen camarweiniol posib"
 
+#: src/screens/Messages/Invite.tsx:123
+msgid "Pourquoi l’inviter ?"
+msgstr ""
+
 #: src/screens/Messages/components/MessageListError.tsx:19
 msgid "Press to attempt reconnection"
 msgstr "Pwyswch i geisio ailgysylltu"
@@ -6622,18 +6955,18 @@ msgstr "Prif Iaith"
 msgid "Prioritize your Follows"
 msgstr "Blaenoriaethu'ch Dilynwyr"
 
-#: src/view/shell/desktop/RightNav.tsx:114
-#: src/view/shell/desktop/RightNav.tsx:115
+#: src/view/shell/desktop/RightNav.tsx:102
+#: src/view/shell/desktop/RightNav.tsx:103
 msgid "Privacy"
 msgstr "Preifatrwydd"
 
-#: src/screens/Settings/Settings.tsx:182
-#: src/screens/Settings/Settings.tsx:185
+#: src/screens/Settings/Settings.tsx:184
+#: src/screens/Settings/Settings.tsx:187
 msgid "Privacy and security"
 msgstr "Preifatrwydd a diogelwch"
 
-#: src/Navigation.tsx:407
-#: src/Navigation.tsx:415
+#: src/Navigation.tsx:438
+#: src/Navigation.tsx:446
 #: src/screens/Settings/ActivityPrivacySettings.tsx:40
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:45
 msgid "Privacy and Security"
@@ -6645,12 +6978,12 @@ msgstr "Gosodiadau Preifatrwydd a Diogelwch"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:35
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:102
-#: src/Navigation.tsx:331
+#: src/Navigation.tsx:337
 #: src/screens/Settings/AboutSettings.tsx:92
 #: src/screens/Settings/AboutSettings.tsx:95
 #: src/view/screens/PrivacyPolicy.tsx:31
-#: src/view/shell/Drawer.tsx:704
-#: src/view/shell/Drawer.tsx:705
+#: src/view/shell/Drawer.tsx:769
+#: src/view/shell/Drawer.tsx:770
 msgid "Privacy Policy"
 msgstr "Polisi Preifatwydd"
 
@@ -6669,9 +7002,9 @@ msgid "profile"
 msgstr "proffil"
 
 #: src/view/shell/bottom-bar/BottomBar.tsx:316
-#: src/view/shell/desktop/LeftNav.tsx:786
-#: src/view/shell/Drawer.tsx:77
-#: src/view/shell/Drawer.tsx:596
+#: src/view/shell/desktop/LeftNav.tsx:825
+#: src/view/shell/Drawer.tsx:80
+#: src/view/shell/Drawer.tsx:661
 msgid "Profile"
 msgstr "Proffil"
 
@@ -6740,7 +7073,12 @@ msgstr "Mae'r cod QR wedi'i lwytho i lawr!"
 msgid "QR code saved to your camera roll!"
 msgstr "Mae'r cod QR wedi'i gadw ar rolyn eich ffolder lluniau!"
 
-#: src/Navigation.tsx:444
+#: src/screens/MessagesMatrix.web.tsx:1597
+#: src/screens/MessagesMatrix.web.tsx:1603
+msgid "Quitter le groupe"
+msgstr ""
+
+#: src/Navigation.tsx:475
 msgid "Quote notifications"
 msgstr "Hysbysiadau dyfynnu"
 
@@ -6825,18 +7163,18 @@ msgid "Read our blog post"
 msgstr "Darllenwch ein cofnod blog"
 
 #: src/view/com/auth/SplashScreen.web.tsx:173
-msgid "Read the Bluesky blog"
-msgstr "Darllenwch y blog Bluesky"
+msgid "Read the Tellus blog"
+msgstr "Darllenwch y blog Tellus"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:88
 #: src/screens/Signup/StepInfo/Policies.tsx:114
-msgid "Read the Bluesky Privacy Policy"
-msgstr "Darllenwch Bolisi Preifatrwydd Bluesky"
+msgid "Read the Tellus Privacy Policy"
+msgstr "Darllenwch Bolisi Preifatrwydd Tellus"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:81
 #: src/screens/Signup/StepInfo/Policies.tsx:101
-msgid "Read the Bluesky Terms of Service"
-msgstr "Darllenwch Delerau Gwasanaeth Bluesky"
+msgid "Read the Tellus Terms of Service"
+msgstr "Darllenwch Delerau Gwasanaeth Tellus"
 
 #: src/components/WelcomeModal.tsx:146
 msgid "Real conversations."
@@ -6867,9 +7205,21 @@ msgstr "Derbyn gwthio hysbysiadau"
 msgid "Recent Searches"
 msgstr "Chwilio Diweddar"
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:31
+msgid "Récentes"
+msgstr ""
+
 #: src/view/com/composer/select-language/PostLanguageSelectDialog.tsx:210
 msgid "Recently used"
 msgstr "Defnyddiwyd yn ddiweddar"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:35
+msgid "Rechercher dans la collection"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:29
+msgid "Rechercher une collection"
+msgstr ""
 
 #: src/screens/Search/modules/ExploreRecommendations.tsx:54
 msgid "Recommended"
@@ -6879,6 +7229,19 @@ msgstr "Argymhellwyd"
 msgid "Reconnect"
 msgstr "Ailgysylltu"
 
+#: src/screens/MessagesMatrix.web.tsx:1631
+msgid "Récupération des messages..."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:947
+#: src/screens/MessagesMatrix.web.tsx:953
+#: src/screens/MessagesMatrix.web.tsx:1124
+#: src/screens/MessagesMatrix.web.tsx:1130
+#: src/screens/MessagesMatrix.web.tsx:1642
+#: src/screens/MessagesMatrix.web.tsx:1648
+msgid "Réessayer"
+msgstr ""
+
 #. Reject a chat request, this opens a menu with options
 #: src/screens/Messages/components/RequestButtons.tsx:124
 msgid "Reject"
@@ -6887,6 +7250,14 @@ msgstr "Gwrthod"
 #: src/screens/Messages/components/RequestButtons.tsx:112
 msgid "Reject chat request"
 msgstr "Gwrthod cais am sgwrs"
+
+#: src/screens/Messages/Invite.tsx:43
+msgid "Rejoins-moi sur Tellus Chat pour discuter : {inviteUrl}"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:40
+msgid "Rejoins-moi sur Tellus Chat pour discuter avec {displayHandle} : {inviteUrl}"
+msgstr ""
 
 #: src/screens/Messages/ChatList.tsx:285
 #: src/screens/Messages/Inbox.tsx:212
@@ -6901,7 +7272,7 @@ msgstr "Ail-lwytho sgyrsiau"
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:104
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:111
 #: src/screens/Bookmarks/index.tsx:255
-#: src/screens/Settings/Settings.tsx:662
+#: src/screens/Settings/Settings.tsx:678
 #: src/view/com/modals/UserAddRemoveLists.tsx:235
 #: src/view/com/posts/PostFeedErrorMessage.tsx:217
 msgid "Remove"
@@ -6915,8 +7286,8 @@ msgstr "Tynnu {displayName} o'r pecyn cychwyn"
 msgid "Remove {historyItem}"
 msgstr "Tynnu {historyItem}"
 
-#: src/screens/Settings/Settings.tsx:641
-#: src/screens/Settings/Settings.tsx:644
+#: src/screens/Settings/Settings.tsx:657
+#: src/screens/Settings/Settings.tsx:660
 msgid "Remove account"
 msgstr "Tynnu cyfrif"
 
@@ -6955,7 +7326,7 @@ msgstr "Tynnu ffrwd?"
 msgid "Remove from my feeds"
 msgstr "Tynnu o fy ffrydiau"
 
-#: src/screens/Settings/Settings.tsx:654
+#: src/screens/Settings/Settings.tsx:670
 msgid "Remove from quick access?"
 msgstr "Tynnu o fynediad cyflym?"
 
@@ -7009,8 +7380,8 @@ msgstr "Dileu defnyddiwr o'r rhestr"
 
 #: src/components/verification/VerificationRemovePrompt.tsx:46
 #: src/components/verification/VerificationsDialog.tsx:252
-#: src/view/com/profile/ProfileMenu.tsx:348
-#: src/view/com/profile/ProfileMenu.tsx:351
+#: src/view/com/profile/ProfileMenu.tsx:403
+#: src/view/com/profile/ProfileMenu.tsx:406
 msgid "Remove verification"
 msgstr "Dileu dilysu"
 
@@ -7053,6 +7424,15 @@ msgstr "Wedi'i dynnu o'ch ffrydiau"
 #: src/components/verification/VerificationRemovePrompt.tsx:32
 msgid "Removed verification"
 msgstr "Dilysiad wedi'i ddileu"
+
+#: src/screens/Saved/CollectionDetailPage.tsx:47
+#: src/screens/Saved/SavedCollectionsPage.tsx:50
+msgid "Renommer"
+msgstr ""
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:39
+msgid "Renommer la collection"
+msgstr ""
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:129
 #: src/view/com/posts/FeedShutdownMsg.tsx:133
@@ -7117,7 +7497,7 @@ msgstr "Ateb Wedi'i Guddio gan Awdur yr Edefyn"
 msgid "Reply Hidden by You"
 msgstr "Ateb Wedi'i Guddio Gennych Chi"
 
-#: src/Navigation.tsx:428
+#: src/Navigation.tsx:459
 msgid "Reply notifications"
 msgstr "Hysbysiadau ateb"
 
@@ -7148,8 +7528,8 @@ msgstr "Cafodd yr ateb ei guddio'n llwyddiannus"
 msgid "Report"
 msgstr "Adroddiadau"
 
-#: src/view/com/profile/ProfileMenu.tsx:415
-#: src/view/com/profile/ProfileMenu.tsx:418
+#: src/view/com/profile/ProfileMenu.tsx:470
+#: src/view/com/profile/ProfileMenu.tsx:473
 msgid "Report account"
 msgstr "Adrodd ar gyfrif"
 
@@ -7243,7 +7623,7 @@ msgstr "Ail-bostio"
 msgid "Repost ({0, plural, one {# repost} other {# reposts}})"
 msgstr "Ail-bostio ({0, plural, one {# ail-bostio} other {# ail-bostio}})"
 
-#: src/Navigation.tsx:460
+#: src/Navigation.tsx:491
 msgid "Repost notifications"
 msgstr "Hysbysiadau ail bostio"
 
@@ -7287,7 +7667,7 @@ msgstr "Ail-bostiadau'r postiad hwn"
 msgid "Reposts of your reposts"
 msgstr "Ail bostiadau eich ail bostiadau"
 
-#: src/Navigation.tsx:484
+#: src/Navigation.tsx:515
 msgid "Reposts of your reposts notifications"
 msgstr "Ail bostiadau eich hysbysiadau ail bostiadau"
 
@@ -7330,8 +7710,8 @@ msgstr "Ail-anfon E-bost"
 msgid "Resend Verification Email"
 msgstr "Ail-anfon E-bost Dilysu"
 
-#: src/screens/Settings/Settings.tsx:482
-#: src/screens/Settings/Settings.tsx:484
+#: src/screens/Settings/Settings.tsx:498
+#: src/screens/Settings/Settings.tsx:500
 msgid "Reset activity subscription nudge"
 msgstr "Ailosod anogaeth tanysgrifio i weithgaredd"
 
@@ -7339,14 +7719,31 @@ msgstr "Ailosod anogaeth tanysgrifio i weithgaredd"
 msgid "Reset code"
 msgstr "Ailosod cod"
 
-#: src/screens/Settings/Settings.tsx:467
-#: src/screens/Settings/Settings.tsx:469
+#: src/screens/Settings/Settings.tsx:483
+#: src/screens/Settings/Settings.tsx:485
 msgid "Reset onboarding state"
 msgstr "Ailosod cyflwr cyflwyno"
 
 #: src/screens/Login/ForgotPasswordForm.tsx:80
 msgid "Reset password"
 msgstr "Ailosod cyfrinair"
+
+#: src/screens/MessagesMatrix.web.tsx:1013
+msgid "Rester connecté"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:55
+msgid "Retirer de la collection"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1458
+#: src/screens/Saved/CollectionDetailPage.tsx:34
+msgid "Retour"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:46
+msgid "Retournez à la bibliothèque pour choisir une autre collection."
+msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:324
 msgid "Retries signing in"
@@ -7413,6 +7810,8 @@ msgstr "Yn mynd nôl i'r cam blaenorol"
 #: src/components/live/EditLiveDialog.tsx:216
 #: src/components/live/EditLiveDialog.tsx:223
 #: src/components/StarterPack/QrCodeDialog.tsx:192
+#: src/screens/Messages/Settings.tsx:210
+#: src/screens/Messages/Settings.tsx:217
 #: src/screens/Profile/Header/EditProfileDialog.tsx:238
 #: src/screens/Profile/Header/EditProfileDialog.tsx:252
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:267
@@ -7461,23 +7860,29 @@ msgstr "Gadw'r enw dangos newydd"
 msgid "Save QR code"
 msgstr "Cadw cod QR"
 
+#: src/components/PostControls/BookmarkButton.web.tsx:51
+msgctxt "Accessibility label for the save button when item not yet saved"
+msgid "Save to collection"
+msgstr ""
+
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:320
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:326
 msgid "Save to my feeds"
 msgstr "Cadw i fy ffrydiau"
 
-#: src/view/shell/desktop/LeftNav.tsx:764
-#: src/view/shell/Drawer.tsx:571
-msgctxt "link to bookmarks screen"
-msgid "Saved"
-msgstr "Wedi cadw"
+#: src/Navigation.tsx:658
+msgid "Saved collection"
+msgstr ""
+
+#: src/Navigation.tsx:649
+msgid "Saved collections"
+msgstr ""
 
 #: src/view/screens/SavedFeeds.tsx:172
 msgid "Saved Feeds"
 msgstr "Ffrydiau wedi'u Cadw"
 
 #: src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:143
-#: src/Navigation.tsx:608
 #: src/screens/Bookmarks/index.tsx:55
 msgid "Saved Posts"
 msgstr "Postiadau Wedi'u Cadw"
@@ -7519,6 +7924,20 @@ msgstr "Sgrolio i'r dde"
 msgid "Scroll to top"
 msgstr "Sgrolio i'r brig"
 
+#: src/screens/MessagesMatrix.web.tsx:1017
+#: src/screens/MessagesMatrix.web.tsx:1024
+msgid "Se connecter"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:973
+msgid "Se connecter à Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:737
+#: src/screens/MessagesMatrix.web.tsx:743
+msgid "Se déconnecter"
+msgstr ""
+
 #: src/components/dialogs/SearchablePeopleList.tsx:514
 #: src/components/forms/SearchInput.tsx:34
 #: src/components/forms/SearchInput.tsx:36
@@ -7528,7 +7947,7 @@ msgstr "Sgrolio i'r brig"
 msgid "Search"
 msgstr "Chwilio"
 
-#: src/Navigation.tsx:257
+#: src/Navigation.tsx:263
 #: src/screens/Profile/ProfileSearch.tsx:37
 msgid "Search @{0}'s posts"
 msgstr "Chwilio postiadau @{0}"
@@ -7592,8 +8011,8 @@ msgstr "Chwilio'r ieithoedd"
 msgid "Search my posts"
 msgstr "Chwiliwch fy mhostiadau"
 
-#: src/view/com/profile/ProfileMenu.tsx:266
-#: src/view/com/profile/ProfileMenu.tsx:269
+#: src/view/com/profile/ProfileMenu.tsx:304
+#: src/view/com/profile/ProfileMenu.tsx:307
 msgid "Search posts"
 msgstr "Chwiliwch am bostiadau"
 
@@ -7636,8 +8055,8 @@ msgid "See #{tag} posts by user"
 msgstr "Gweld #{tag} postiad yn ôl defnyddiwr"
 
 #: src/view/com/auth/SplashScreen.web.tsx:178
-msgid "See jobs at Bluesky"
-msgstr "Gweld swyddi yn Bluesky"
+msgid "See jobs at Tellus"
+msgstr "Gweld swyddi yn Tellus"
 
 #: src/components/FeedInterstitials.tsx:394
 #: src/components/FeedInterstitials.tsx:445
@@ -7802,6 +8221,10 @@ msgstr "Dewiswch eich hoff sianeli hysbysu"
 msgid "Selecting multiple media types is not supported."
 msgstr "Dyw dewis mathau lluosog o gyfryngau ddim yn cael ei gynnal."
 
+#: src/screens/MessagesMatrix.web.tsx:1623
+msgid "Sélectionne une conversation"
+msgstr ""
+
 #: src/components/dms/ChatEmptyPill.tsx:38
 msgid "Send a neat website!"
 msgstr "Anfonwch wefan dda!"
@@ -7818,7 +8241,7 @@ msgctxt "action"
 msgid "Send Email"
 msgstr "Anfon E-bost"
 
-#: src/view/shell/Drawer.tsx:361
+#: src/view/shell/Drawer.tsx:382
 msgid "Send feedback"
 msgstr "Anfonwch adborth"
 
@@ -7871,6 +8294,14 @@ msgstr "Yn anfon e-bost gyda chod cadarnhau er mwyn dileu cyfrif"
 msgid "Server address"
 msgstr "Cyfeiriad gweinydd"
 
+#: src/screens/MessagesMatrix.web.tsx:1067
+msgid "Serveur"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:322
+msgid "Serveur invalide."
+msgstr ""
+
 #: src/screens/Settings/AppIconSettings/index.tsx:178
 msgid "Set app icon to {0}"
 msgstr "Gosod eicon ap i {0}"
@@ -7891,10 +8322,10 @@ msgstr "Gosodwch eich cyfrif"
 msgid "Sets email for password reset"
 msgstr "Yn gosod e-bost ar gyfer ailosod cyfrinair"
 
-#: src/Navigation.tsx:213
-#: src/screens/Settings/Settings.tsx:99
-#: src/view/shell/desktop/LeftNav.tsx:804
-#: src/view/shell/Drawer.tsx:609
+#: src/Navigation.tsx:219
+#: src/screens/Settings/Settings.tsx:101
+#: src/view/shell/desktop/LeftNav.tsx:843
+#: src/view/shell/Drawer.tsx:674
 msgid "Settings"
 msgstr "Gosodiadau"
 
@@ -7976,7 +8407,7 @@ msgstr "Rhannwch stori cŵl!"
 msgid "Share a fun fact!"
 msgstr "Rhannwch ffaith hwyliog!"
 
-#: src/view/com/profile/ProfileMenu.tsx:502
+#: src/view/com/profile/ProfileMenu.tsx:566
 msgid "Share anyway"
 msgstr "Rhannwch beth bynnag"
 
@@ -8015,15 +8446,15 @@ msgid "Share this starter pack"
 msgstr "Rhannwch y pecyn cychwyn hwn"
 
 #: src/components/StarterPack/ShareDialog.tsx:80
-msgid "Share this starter pack and help people join your community on Bluesky."
-msgstr "Rhannwch y pecyn cychwynnol hwn a helpwch bobl i ymuno â'ch cymuned ar Bluesky."
+msgid "Share this starter pack and help people join your community on Tellus."
+msgstr "Rhannwch y pecyn cychwynnol hwn a helpwch bobl i ymuno â'ch cymuned ar Tellus."
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:117
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:120
 #: src/screens/StarterPack/StarterPackScreen.tsx:611
 #: src/screens/StarterPack/StarterPackScreen.tsx:619
-#: src/view/com/profile/ProfileMenu.tsx:246
-#: src/view/com/profile/ProfileMenu.tsx:259
+#: src/view/com/profile/ProfileMenu.tsx:284
+#: src/view/com/profile/ProfileMenu.tsx:297
 msgid "Share via..."
 msgstr "Rhannu drwy..."
 
@@ -8031,7 +8462,7 @@ msgstr "Rhannu drwy..."
 msgid "Share your favorite feed!"
 msgstr "Rhannwch eich hoff ffrwd!"
 
-#: src/Navigation.tsx:316
+#: src/Navigation.tsx:322
 msgid "Shared Preferences Tester"
 msgstr "Profwr Dewisiadau Rhannu"
 
@@ -8137,7 +8568,7 @@ msgstr "Dangos rhybudd a hidlo o ffrydiau"
 msgid "Shows information about when this post was created"
 msgstr "Yn dangos manylion pryd cafodd y postiad hwn ei chreu"
 
-#: src/screens/Settings/Settings.tsx:125
+#: src/screens/Settings/Settings.tsx:127
 msgid "Shows other accounts you can switch to"
 msgstr "Yn dangos cyfrifon eraill y gallwch newid iddyn nhw"
 
@@ -8189,23 +8620,23 @@ msgid "Sign in to account that is not listed"
 msgstr "Mewngofnodwch i gyfrif nad yw wedi'i restru"
 
 #: src/components/dialogs/Signin.tsx:46
-msgid "Sign in to Bluesky or create a new account"
-msgstr "Mewngofnodwch i Bluesky neu crëwch gyfrif newydd"
+msgid "Sign in to Tellus or create a new account"
+msgstr "Mewngofnodwch i Tellus neu crëwch gyfrif newydd"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:461
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:463
 msgid "Sign in to view post"
 msgstr "Mewngofnodwch i weld y postiad"
 
-#: src/screens/Settings/Settings.tsx:254
-#: src/screens/Settings/Settings.tsx:256
-#: src/screens/Settings/Settings.tsx:288
+#: src/screens/Settings/Settings.tsx:270
+#: src/screens/Settings/Settings.tsx:272
+#: src/screens/Settings/Settings.tsx:304
 #: src/screens/SignupQueued.tsx:93
 #: src/screens/SignupQueued.tsx:96
 #: src/screens/Takendown.tsx:85
-#: src/view/shell/desktop/LeftNav.tsx:212
-#: src/view/shell/desktop/LeftNav.tsx:269
-#: src/view/shell/desktop/LeftNav.tsx:272
+#: src/view/shell/desktop/LeftNav.tsx:214
+#: src/view/shell/desktop/LeftNav.tsx:271
+#: src/view/shell/desktop/LeftNav.tsx:274
 msgid "Sign out"
 msgstr "Allgofnodi"
 
@@ -8213,8 +8644,8 @@ msgstr "Allgofnodi"
 msgid "Sign Out"
 msgstr "Allgofnodi"
 
-#: src/screens/Settings/Settings.tsx:285
-#: src/view/shell/desktop/LeftNav.tsx:209
+#: src/screens/Settings/Settings.tsx:301
+#: src/view/shell/desktop/LeftNav.tsx:211
 msgid "Sign out?"
 msgstr "Allgofnodi?"
 
@@ -8325,7 +8756,7 @@ msgid "Something wrong? Let us know."
 msgstr "Rhywbeth o'i le? Rhowch wybod i ni."
 
 #: src/App.native.tsx:126
-#: src/App.web.tsx:102
+#: src/App.web.tsx:106
 msgid "Sorry! Your session expired. Please sign in again."
 msgstr "Sori! Daeth eich sesiwn i ben. Mewngofnodwch eto."
 
@@ -8345,6 +8776,10 @@ msgstr "Trefnu atebion i'r un postiad yn ôl:"
 #: src/components/moderation/ModerationDetailsDialog.tsx:186
 msgid "Source: <0>{sourceName}</0>"
 msgstr "Ffynhonnell: <0>{sourceName}</0>"
+
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:252
+msgid "Soutenir"
+msgstr ""
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:72
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:85
@@ -8386,8 +8821,8 @@ msgstr "Dechreuwch ychwanegu pobl!"
 msgid "Start chat with {displayName}"
 msgstr "Dechreuwch sgwrs gyda {displayName}"
 
-#: src/Navigation.tsx:579
-#: src/Navigation.tsx:584
+#: src/Navigation.tsx:620
+#: src/Navigation.tsx:625
 #: src/screens/StarterPack/Wizard/index.tsx:209
 msgid "Starter Pack"
 msgstr "Pecyn Cychwyn"
@@ -8427,12 +8862,12 @@ msgstr "Tudalen Statws"
 msgid "Step {0} of {1}"
 msgstr "Cam {0} o {1}"
 
-#: src/screens/Settings/Settings.tsx:393
+#: src/screens/Settings/Settings.tsx:409
 msgid "Storage cleared, you need to restart the app now."
 msgstr "Storfa wedi'i chlirio, mae angen i chi ailgychwyn yr ap nawr."
 
-#: src/Navigation.tsx:306
-#: src/screens/Settings/Settings.tsx:448
+#: src/Navigation.tsx:312
+#: src/screens/Settings/Settings.tsx:464
 msgid "Storybook"
 msgstr "Llyfr stori"
 
@@ -8521,16 +8956,26 @@ msgctxt "Name of app icon variant"
 msgid "Sunset"
 msgstr "Machlud Haul"
 
-#: src/Navigation.tsx:326
+#: src/Navigation.tsx:332
 #: src/view/screens/Support.tsx:31
 #: src/view/screens/Support.tsx:34
 msgid "Support"
 msgstr "Cymorth"
 
-#: src/screens/Settings/Settings.tsx:123
-#: src/screens/Settings/Settings.tsx:137
-#: src/screens/Settings/Settings.tsx:604
-#: src/view/shell/desktop/LeftNav.tsx:247
+#: src/screens/Saved/CollectionDetailPage.tsx:49
+#: src/screens/Saved/SavedCollectionsPage.tsx:48
+msgid "Supprimer"
+msgstr ""
+
+#: src/screens/Saved/CollectionDetailPage.tsx:50
+#: src/screens/Saved/SavedCollectionsPage.tsx:41
+msgid "Supprimer la collection"
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:125
+#: src/screens/Settings/Settings.tsx:139
+#: src/screens/Settings/Settings.tsx:620
+#: src/view/shell/desktop/LeftNav.tsx:249
 msgid "Switch account"
 msgstr "Newid cyfrif"
 
@@ -8539,13 +8984,17 @@ msgstr "Newid cyfrif"
 msgid "Switch Account"
 msgstr "Newid Cyfrif"
 
-#: src/view/shell/desktop/LeftNav.tsx:110
+#: src/view/shell/desktop/LeftNav.tsx:112
 msgid "Switch accounts"
 msgstr "Newid cyfrifon"
 
-#: src/view/shell/desktop/LeftNav.tsx:346
+#: src/view/shell/desktop/LeftNav.tsx:348
 msgid "Switch to {0}"
 msgstr "Newid i {0}"
+
+#: src/screens/MessagesMatrix.web.tsx:1108
+msgid "Synchronisation des conversations..."
+msgstr ""
 
 #: src/components/dialogs/Embed.tsx:157
 #: src/components/dialogs/Embed.tsx:159
@@ -8557,7 +9006,7 @@ msgstr "System"
 #: src/screens/Log.tsx:58
 #: src/screens/Settings/AboutSettings.tsx:107
 #: src/screens/Settings/AboutSettings.tsx:110
-#: src/screens/Settings/Settings.tsx:441
+#: src/screens/Settings/Settings.tsx:457
 msgid "System log"
 msgstr "Cofnod system"
 
@@ -8566,8 +9015,8 @@ msgid "Tags only"
 msgstr "Tagiau'n unig"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:116
-msgid "Tap below to allow Bluesky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
-msgstr "Tapiwch isod i ganiatáu i Bluesky gael mynediad i'ch lleolaid. Byddwn yn defnyddio'r data hwnnw i bennu'n fwy cywir y cynnwys a'r nodweddion sydd ar gael yn eich ardal chi."
+msgid "Tap below to allow Tellus to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
+msgstr "Tapiwch isod i ganiatáu i Tellus gael mynediad i'ch lleolaid. Byddwn yn defnyddio'r data hwnnw i bennu'n fwy cywir y cynnwys a'r nodweddion sydd ar gael yn eich ardal chi."
 
 #: src/view/com/feeds/MissingFeed.tsx:89
 msgid "Tap for information"
@@ -8578,8 +9027,8 @@ msgid "Tap for more information"
 msgstr "Tapio am ragor o wybodaeth"
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:164
-msgid "Tap to acknowledge that you understand and agree to these updates and continue using Bluesky"
-msgstr "Tapiwch i gydnabod eich bod yn deall ac yn cytuno i'r diweddariadau hyn a pharhau i ddefnyddio Bluesky"
+msgid "Tap to acknowledge that you understand and agree to these updates and continue using Tellus"
+msgstr "Tapiwch i gydnabod eich bod yn deall ac yn cytuno i'r diweddariadau hyn a pharhau i ddefnyddio Tellus"
 
 #: src/components/ContextMenu/Backdrop.ios.tsx:54
 #: src/components/ContextMenu/Backdrop.ios.tsx:80
@@ -8620,20 +9069,136 @@ msgstr "Dywedwch ychydig wrthym amdanoch chi'ch hun"
 msgid "Tell us a little more"
 msgstr "Dywedwch ychydig mwy wrthym"
 
-#: src/view/shell/desktop/RightNav.tsx:120
-#: src/view/shell/desktop/RightNav.tsx:121
+#: src/view/com/auth/server-input/index.tsx:136
+#: src/view/com/auth/server-input/index.tsx:137
+msgid "Tellus"
+msgstr "Tellus"
+
+#: src/screens/PostThread/components/ThreadItemAnchor.tsx:690
+msgid "Tellus cannot confirm the authenticity of the claimed date."
+msgstr "Dyw Tellus ddim yn gallu cadarnhau dilysrwydd y dyddiad honedig."
+
+#: src/Navigation.tsx:580
+#: src/Navigation.tsx:827
+#: src/screens/Messages/ChatList.tsx:76
+#: src/screens/Messages/ChatList.tsx:394
+#: src/screens/Messages/ChatList.tsx:418
+#: src/screens/Messages/Settings.tsx:173
+#: src/screens/MessagesMatrix.web.tsx:935
+#: src/screens/Settings/Settings.tsx:206
+#: src/screens/Settings/Settings.tsx:209
+#: src/view/shell/bottom-bar/BottomBar.tsx:221
+#: src/view/shell/desktop/LeftNav.tsx:609
+#: src/view/shell/Drawer.tsx:487
+msgid "Tellus Chat"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:1052
+msgid "Tellus Chat est basé sur Matrix."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:146
+msgid "Tellus Chat ID removed."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:125
+msgid "Tellus Chat ID saved."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:941
+#: src/screens/MessagesMatrix.web.tsx:1118
+msgid "Tellus Chat indisponible"
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:620
+msgid "Tellus Chat indisponible."
+msgstr ""
+
+#: src/Navigation.tsx:590
+#: src/screens/Messages/components/InboxPreview.tsx:22
+#: src/screens/Messages/components/InboxPreview.tsx:62
+#: src/screens/Messages/Inbox.tsx:56
+#: src/screens/Messages/Inbox.tsx:98
+msgid "Tellus Chat requests"
+msgstr ""
+
+#: src/components/dms/ConvoMenu.tsx:76
+#: src/Navigation.tsx:585
+#: src/screens/Messages/ChatList.tsx:81
+#: src/screens/Messages/ChatList.tsx:85
+#: src/screens/Messages/ChatList.tsx:378
+#: src/screens/Messages/Settings.tsx:164
+msgid "Tellus Chat settings"
+msgstr ""
+
+#: src/screens/Messages/Invite.tsx:126
+msgid "Tellus Chat te permet de continuer les discussions initiées sur le réseau social, en privé, avec la même simplicité."
+msgstr ""
+
+#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:175
+msgctxt "Name of app icon variant"
+msgid "Tellus Classic™"
+msgstr "Tellus Classic ™"
+
+#: src/view/com/auth/server-input/index.tsx:212
+msgid "Tellus is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+msgstr "Mae Tellus yn rhwydwaith agored lle gallwch ddewis eich darparwr gwesteio. Os ydych chi'n ddatblygwr, gallwch chi gynnal eich gweinydd eich hun."
+
+#: src/view/com/auth/server-input/index.tsx:149
+msgid "Tellus is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Tellus Social option."
+msgstr "Mae Tellus yn rhwydwaith agored lle gallwch ddewis eich darparwr gwesteio. Os ydych chi'n newydd yma, rydym yn argymell cadw at y dewis Tellus Social rhagosodedig."
+
+#: src/components/ProgressGuide/List.tsx:53
+#: src/components/ProgressGuide/List.tsx:70
+msgid "Tellus is better with friends!"
+msgstr "Mae Tellus yn well gyda ffrindiau!"
+
+#: src/screens/Takendown.tsx:217
+msgid "Tellus Social Terms of Service"
+msgstr "Telerau Gwasanaeth Cymdeithasol Tellus"
+
+#: src/components/StarterPack/ProfileStarterPacks.tsx:310
+msgid "Tellus will choose a set of recommended accounts from people in your network."
+msgstr "Bydd Tellus yn dewis set o gyfrifon wedi'u hargymhell gan bobl yn eich rhwydwaith."
+
+#: src/screens/Settings/components/PwiOptOut.tsx:99
+msgid "Tellus will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+msgstr "Ni fydd Tellus yn dangos eich proffil na'ch postiadau i ddefnyddwyr sydd wedi allgofnodi. Mae'n bosibl na fydd apiau eraill yn parchu'r gofyniad hwn. Nid yw hyn yn gwneud eich cyfrif yn breifat."
+
+#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
+msgid "Tellus will proactively verify notable and authentic accounts."
+msgstr "Bydd Tellus yn rhagweithiol yn dilysu cyfrifon nodedig a dilys."
+
+#: src/screens/Signup/StepInfo/Policies.tsx:26
+msgid "Tellus's Community Guidelines"
+msgstr "Canllawiau Cymunedol Tellus"
+
+#: src/screens/Signup/StepInfo/Policies.tsx:32
+msgid "Tellus's Updated Community Guidelines"
+msgstr "Canllawiau Cymunedol Diweddaraf Tellus"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:99
+msgid "Tellus+"
+msgstr "Tellus+"
+
+#: src/screens/Settings/AppIconSettings/index.tsx:102
+msgid "Tellus+ icons"
+msgstr "Eiconau Tellus+"
+
+#: src/view/shell/desktop/RightNav.tsx:108
+#: src/view/shell/desktop/RightNav.tsx:109
 msgid "Terms"
 msgstr "Telerau"
 
 #: src/components/dialogs/BirthDateSettings.tsx:135
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:30
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:97
-#: src/Navigation.tsx:336
+#: src/Navigation.tsx:342
 #: src/screens/Settings/AboutSettings.tsx:84
 #: src/screens/Settings/AboutSettings.tsx:87
 #: src/view/screens/TermsOfService.tsx:31
-#: src/view/shell/Drawer.tsx:697
-#: src/view/shell/Drawer.tsx:699
+#: src/view/shell/Drawer.tsx:762
+#: src/view/shell/Drawer.tsx:764
 msgid "Terms of Service"
 msgstr "Telerau Gwasanaeth"
 
@@ -8703,8 +9268,8 @@ msgstr "Dyna i gyd, bobl!"
 msgid "That's everything!"
 msgstr "Dyna bopeth!"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:324
-#: src/view/com/profile/ProfileMenu.tsx:478
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:382
+#: src/view/com/profile/ProfileMenu.tsx:542
 msgid "The account will be able to interact with you after unblocking."
 msgstr "Bydd y cyfrif yn gallu rhyngweithio â chi ar ôl ei ddadrwystro."
 
@@ -8721,10 +9286,6 @@ msgstr "Mae awdur yr edefyn hwn wedi cuddio'r ateb hwn."
 #: src/components/dialogs/BirthDateSettings.tsx:122
 msgid "The birthdate you've entered means you are under 18 years old. Certain content and features may be unavailable to you."
 msgstr "Mae'r dyddiad geni rydych wedi'i gyflwyno'n golygu eich bod yn iau na 18 oed. Efallai na fydd rhywfaint o gynnwys a nodweddion ar gael i chi."
-
-#: src/screens/Moderation/index.tsx:426
-msgid "The Bluesky web application"
-msgstr "Rhaglen gwe Bluesky"
 
 #: src/view/screens/CommunityGuidelines.tsx:38
 msgid "The Community Guidelines have been moved to <0/>"
@@ -8743,8 +9304,8 @@ msgid "The Discover feed now knows what you like"
 msgstr "Mae ffrwd Darganfod nawr yn gwybod beth rydych chi'n ei hoffi"
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:324
-msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
-msgstr "Mae'r profiad yn well yn yr ap. Llwythwch Bluesky i lawr nawr a byddwn yn dod nôl lle roeddech chi."
+msgid "The experience is better in the app. Download Tellus now and we'll pick back up where you left off."
+msgstr "Mae'r profiad yn well yn yr ap. Llwythwch Tellus i lawr nawr a byddwn yn dod nôl lle roeddech chi."
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:67
 msgid "The feed has been replaced with Discover."
@@ -8763,8 +9324,8 @@ msgid "The following settings will be used as your defaults when creating new po
 msgstr "Bydd y gosodiadau canlynol yn cael eu defnyddio fel eich rhagosodiadau wrth greu postiadau newydd. Gallwch olygu'r rhain ar gyfer postiadau penodol o'r cyfansoddwr."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:11
-msgid "The laws in your location require you to verify you're an adult before accessing certain features on Bluesky, like adult content and direct messaging."
-msgstr "Mae'r gyfraith yn eich gwlad yn gofyn i chi ddilysu eich bod yn oedolyn cyn i chi gael mynediad ar rhai nodweddion, fel cynnwys oedolion a negesu uniongyrchol yn Bluesky."
+msgid "The laws in your location require you to verify you're an adult before accessing certain features on Tellus, like adult content and direct messaging."
+msgstr "Mae'r gyfraith yn eich gwlad yn gofyn i chi ddilysu eich bod yn oedolyn cyn i chi gael mynediad ar rhai nodweddion, fel cynnwys oedolion a negesu uniongyrchol yn Tellus."
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:14
 msgid "The laws in your location require you to verify you're an adult to access certain features. Tap to learn more."
@@ -8799,6 +9360,10 @@ msgstr "Testun y ddewislen cyd-destun"
 #: src/view/screens/Support.tsx:37
 msgid "The support form has been moved. If you need help, please <0/> or visit {HELP_DESK_URL} to get in touch with us."
 msgstr "Mae'r ffurflen cymorth wedi'i symud. Os oes angen help arnoch, <0/> neu ewch i {HELP_DESK_URL} i gysylltu â ni."
+
+#: src/screens/Moderation/index.tsx:426
+msgid "The Tellus web application"
+msgstr "Rhaglen gwe Tellus"
 
 #: src/view/screens/TermsOfService.tsx:35
 msgid "The Terms of Service have been moved to"
@@ -8878,15 +9443,15 @@ msgstr "Bu anhawster wrth ddiweddaru'ch ffrydiau, gwiriwch eich cysylltiad rhyng
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:388
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:90
 #: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:101
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:101
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:123
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:136
-#: src/view/com/profile/ProfileMenu.tsx:131
-#: src/view/com/profile/ProfileMenu.tsx:141
-#: src/view/com/profile/ProfileMenu.tsx:155
-#: src/view/com/profile/ProfileMenu.tsx:165
-#: src/view/com/profile/ProfileMenu.tsx:178
-#: src/view/com/profile/ProfileMenu.tsx:190
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:105
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:127
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:140
+#: src/view/com/profile/ProfileMenu.tsx:139
+#: src/view/com/profile/ProfileMenu.tsx:149
+#: src/view/com/profile/ProfileMenu.tsx:163
+#: src/view/com/profile/ProfileMenu.tsx:173
+#: src/view/com/profile/ProfileMenu.tsx:186
+#: src/view/com/profile/ProfileMenu.tsx:198
 msgid "There was an issue! {0}"
 msgstr "Bu anhawster! {0}"
 
@@ -8908,8 +9473,8 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr "Roedd problem annisgwyl yn y rhaglen. Rhowch wybod i ni os digwyddodd hyn i chi!"
 
 #: src/screens/SignupQueued.tsx:130
-msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
-msgstr "Mae yna ruthr o ddefnyddwyr newydd wedi bod i Bluesky! Byddwn yn agor eich cyfrif cyn gynted ag y gallwn."
+msgid "There's been a rush of new users to Tellus! We'll activate your account as soon as we can."
+msgstr "Mae yna ruthr o ddefnyddwyr newydd wedi bod i Tellus! Byddwn yn agor eich cyfrif cyn gynted ag y gallwn."
 
 #: src/screens/Settings/FollowingFeedPreferences.tsx:65
 msgid "These settings only apply to the Following feed."
@@ -8944,8 +9509,8 @@ msgid "This appeal will be sent to <0>{sourceName}</0>."
 msgstr "Bydd yr apêl hon yn cael ei hanfon at <0>{sourceName}</0>."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:111
-msgid "This appeal will be sent to Bluesky's moderation service."
-msgstr "Bydd yr apêl hon yn cael ei hanfon at wasanaeth cymedroli Bluesky."
+msgid "This appeal will be sent to Tellus's moderation service."
+msgstr "Bydd yr apêl hon yn cael ei hanfon at wasanaeth cymedroli Tellus."
 
 #: src/screens/Messages/components/MessageListError.tsx:18
 msgid "This chat was disconnected"
@@ -8973,8 +9538,8 @@ msgid "This content is not available because one of the users involved has block
 msgstr "Dyw'r cynnwys hwn ddim ar gael oherwydd bod un o'r defnyddwyr dan sylw wedi rhwystro'r llall."
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:118
-msgid "This content is not viewable without a Bluesky account."
-msgstr "Dyw'r cynnwys hwn ddim yn weladwy heb gyfrif Bluesky."
+msgid "This content is not viewable without a Tellus account."
+msgstr "Dyw'r cynnwys hwn ddim yn weladwy heb gyfrif Tellus."
 
 #: src/screens/Messages/components/ChatListItem.tsx:362
 msgid "This conversation is with a deleted or a deactivated account. Press for options"
@@ -9048,12 +9613,12 @@ msgid "This link is taking you to the following website:"
 msgstr "Mae'r ddolen hon yn mynd â chi i'r wefan ganlynol:"
 
 #: src/screens/List/ListHiddenScreen.tsx:151
-msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Mae'r rhestr hon - wedi'i chreu gan <0>{0}</0> – yn cynnwys achosion posibl o dorri canllawiau cymunedol Bluesky yn ei enw neu ddisgrifiad."
+msgid "This list – created by <0>{0}</0> – contains possible violations of Tellus's community guidelines in its name or description."
+msgstr "Mae'r rhestr hon - wedi'i chreu gan <0>{0}</0> – yn cynnwys achosion posibl o dorri canllawiau cymunedol Tellus yn ei enw neu ddisgrifiad."
 
 #: src/screens/List/ListHiddenScreen.tsx:146
-msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Mae'r rhestr hon - a grëwyd gennych chi - yn cynnwys achosion posibl o dorri canllawiau cymunedol Bluesky yn ei enw neu ddisgrifiad."
+msgid "This list – created by you – contains possible violations of Tellus's community guidelines in its name or description."
+msgstr "Mae'r rhestr hon - a grëwyd gennych chi - yn cynnwys achosion posibl o dorri canllawiau cymunedol Tellus yn ei enw neu ddisgrifiad."
 
 #: src/view/screens/ProfileList.tsx:962
 msgid "This list is empty."
@@ -9064,8 +9629,8 @@ msgid "This moderation service is unavailable. See below for more details. If th
 msgstr "Dyw'r gwasanaeth cymedroli hwn ddim ar gael. Gweler isod am ragor o fanylion. Os bydd y mater hwn yn parhau, cysylltwch â ni."
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:676
-msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
-msgstr "Mae'r postiad hwn yn honni iddo gael ei greu ar <0>{0}</0>, ond fe'i gwelwyd gyntaf gan Bluesky ar <1>{1}</1>."
+msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Tellus on <1>{1}</1>."
+msgstr "Mae'r postiad hwn yn honni iddo gael ei greu ar <0>{0}</0>, ond fe'i gwelwyd gyntaf gan Tellus ar <1>{1}</1>."
 
 #: src/components/WhoCanReply.tsx:240
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
@@ -9087,7 +9652,7 @@ msgstr "Bydd y postiad hwn yn cael ei guddio rhag ffrydiau ac edafedd. Nid oes m
 msgid "This post's author has disabled quote posts."
 msgstr "Mae awdur y postiad hwn wedi analluogi postiadau dyfyniadau."
 
-#: src/view/com/profile/ProfileMenu.tsx:499
+#: src/view/com/profile/ProfileMenu.tsx:563
 msgid "This profile is only visible to logged-in users. It won't be visible to people who aren't signed in."
 msgstr "Mae'r proffil hwn yn weladwy dim ond i ddefnyddwyr sydd wedi mewngofnodi. Ni fydd yn weladwy i bobl nad ydyn nhw wedi mewngofnodi."
 
@@ -9148,7 +9713,7 @@ msgstr "Dyw'r defnyddiwr hwn ddim yn dilyn unrhyw un."
 msgid "This will delete \"{0}\" from your muted words. You can always add it back later."
 msgstr "Bydd hyn yn dileu \"{0}\" o'ch geiriau wedi'u tewi. Gallwch bob amser ei ychwanegu nôl yn ddiweddarach."
 
-#: src/screens/Settings/Settings.tsx:656
+#: src/screens/Settings/Settings.tsx:672
 msgid "This will remove @{0} from the quick access list."
 msgstr "Bydd hyn yn tynnu @{0} o'r rhestr mynediad cyflym."
 
@@ -9175,13 +9740,17 @@ msgstr "Dewisiadau Edafedd"
 msgid "Threaded"
 msgstr "Edafwyd"
 
-#: src/Navigation.tsx:369
+#: src/Navigation.tsx:400
 msgid "Threads Preferences"
 msgstr "Dewisiadau Edafedd"
 
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/TimeIndicator.tsx:34
 msgid "Time remaining: {0, plural, one {# second} other {# seconds}}"
 msgstr "Amser yn weddill: {0, plural, one {# eiliad} other {# eiliad}}"
+
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:250
+msgid "Tip this profile"
+msgstr ""
 
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:99
 msgid "To disable the email 2FA method, please verify your access to the email address."
@@ -9225,7 +9794,7 @@ msgstr "Brig"
 msgid "Top replies first"
 msgstr "Prif atebion yn gyntaf"
 
-#: src/Navigation.tsx:544
+#: src/Navigation.tsx:575
 msgid "Topic"
 msgstr "Pwnc"
 
@@ -9251,6 +9820,11 @@ msgstr "Y Tuedd"
 msgid "Trending Videos"
 msgstr "Fideos Tueddol"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:36
+#: src/screens/Saved/SavedCollectionsPage.tsx:30
+msgid "Trier"
+msgstr ""
+
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:138
 msgid "Trust emerges from relationships, communities, and shared context, so we’re also enabling <0>trusted verifiers</0>: organizations that can directly issue verification."
 msgstr "Mae ymddiriedaeth yn deillio o berthnasoedd, cymunedau, a chyd-destun sy'n cael eu rhannu, felly rydym hefyd yn galluogi <0>dilyswyr dibynadwy</0>: sefydliadau sy'n gallu cyhoeddi dilysiad yn uniongyrchol."
@@ -9268,6 +9842,10 @@ msgstr "Teledu"
 msgid "Two-factor authentication (2FA)"
 msgstr "Dilysu dau ffactor (2FA)"
 
+#: src/screens/Saved/CollectionDetailPage.tsx:40
+msgid "Type"
+msgstr ""
+
 #: src/screens/Messages/components/MessageInput.tsx:153
 msgid "Type your message here"
 msgstr "Teipiwch eich neges yma"
@@ -9277,8 +9855,8 @@ msgid "Type:"
 msgstr "Math:"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:92
-msgid "Unable to access location. You'll need to visit your system settings to enable location services for Bluesky."
-msgstr "Methu cael mynediad i'ch lleoliad. Bydd rhaid i chi fynd i osodiadau'ch system i alluogi gwasanaethau lleoliad ar gyfer Bluesky."
+msgid "Unable to access location. You'll need to visit your system settings to enable location services for Tellus."
+msgstr "Methu cael mynediad i'ch lleoliad. Bydd rhaid i chi fynd i osodiadau'ch system i alluogi gwasanaethau lleoliad ar gyfer Tellus."
 
 #: src/lib/hooks/useCleanError.ts:27
 #: src/lib/strings/errors.ts:11
@@ -9302,11 +9880,23 @@ msgstr "Methu cysylltu â'ch gwasanaeth. Gwiriwch eich cysylltiad rhyngrwyd."
 msgid "Unable to delete"
 msgstr "Methu dileu"
 
-#: src/screens/Settings/Settings.tsx:507
+#: src/screens/Messages/Settings.tsx:151
+msgid "Unable to delete Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:95
+msgid "Unable to load Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Messages/Settings.tsx:130
+msgid "Unable to save Tellus Chat ID."
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:523
 msgid "Unapply Pull Request"
 msgstr "Dadosod Cais Tynnu"
 
-#: src/screens/Settings/Settings.tsx:509
+#: src/screens/Settings/Settings.tsx:525
 msgid "Unapply Pull Request {currentChannel}"
 msgstr "Dadosod Cais Tynnu {currentChannel}"
 
@@ -9322,27 +9912,27 @@ msgstr "Manylion ffrwd anhysbys"
 #: src/components/dms/MessagesListBlockedFooter.tsx:104
 #: src/components/dms/MessagesListBlockedFooter.tsx:112
 #: src/components/dms/MessagesListBlockedFooter.tsx:119
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:208
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:328
-#: src/view/com/profile/ProfileMenu.tsx:490
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:223
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:386
+#: src/view/com/profile/ProfileMenu.tsx:554
 #: src/view/screens/ProfileList.tsx:723
 msgid "Unblock"
 msgstr "Dadflocio"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:213
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:228
 msgctxt "action"
 msgid "Unblock"
 msgstr "Dadflocio"
 
 #: src/components/dms/ConvoMenu.tsx:247
 #: src/components/dms/ConvoMenu.tsx:250
-#: src/view/com/profile/ProfileMenu.tsx:395
-#: src/view/com/profile/ProfileMenu.tsx:401
+#: src/view/com/profile/ProfileMenu.tsx:450
+#: src/view/com/profile/ProfileMenu.tsx:456
 msgid "Unblock account"
 msgstr "Dadrwystro cyfrif"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:322
-#: src/view/com/profile/ProfileMenu.tsx:472
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:380
+#: src/view/com/profile/ProfileMenu.tsx:536
 msgid "Unblock Account?"
 msgstr "Dadrwystro Cyfrif?"
 
@@ -9370,12 +9960,12 @@ msgctxt "action"
 msgid "Unfollow"
 msgstr "Dad-ddilyn"
 
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:236
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:266
 msgid "Unfollow {0}"
 msgstr "Dad-ddilyn {0}"
 
-#: src/view/com/profile/ProfileMenu.tsx:286
-#: src/view/com/profile/ProfileMenu.tsx:296
+#: src/view/com/profile/ProfileMenu.tsx:341
+#: src/view/com/profile/ProfileMenu.tsx:351
 msgid "Unfollow account"
 msgstr "Dad-ddilyn y cyfrif"
 
@@ -9383,13 +9973,13 @@ msgstr "Dad-ddilyn y cyfrif"
 msgid "Unfollows the user"
 msgstr "Dad-ddilyn defnyddiwr"
 
-#: src/components/BlockedGeoOverlay.tsx:48
-msgid "Unfortunately, Bluesky is unavailable in Mississippi right now."
-msgstr "Yn anffodus, nid yw Bluesky ar gael yn Mississippi ar hyn o bryd."
-
 #: src/components/moderation/ReportDialog/index.tsx:372
 msgid "Unfortunately, none of your subscribed labelers supports this report type."
 msgstr "Yn anffodus, nid yw un o'ch labelwyr wedi'u tanysgrifio'n cefnogi'r math yma o adroddiad."
+
+#: src/components/BlockedGeoOverlay.tsx:48
+msgid "Unfortunately, Tellus is unavailable in Mississippi right now."
+msgstr "Yn anffodus, nid yw Tellus ar gael yn Mississippi ar hyn o bryd."
 
 #: src/components/verification/VerificationsDialog.tsx:211
 msgid "Unknown verifier"
@@ -9421,8 +10011,8 @@ msgstr "Dad-dewi {tag}"
 
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:627
 #: src/components/PostControls/PostMenu/PostMenuItems.tsx:633
-#: src/view/com/profile/ProfileMenu.tsx:374
-#: src/view/com/profile/ProfileMenu.tsx:380
+#: src/view/com/profile/ProfileMenu.tsx:429
+#: src/view/com/profile/ProfileMenu.tsx:435
 msgid "Unmute account"
 msgstr "Dad-dewi cyfrif"
 
@@ -9478,8 +10068,8 @@ msgstr "Wedi'i ddad-binio {0} o'r Cartref"
 msgid "Unpinned from your feeds"
 msgstr "Wedi'i ddad-binio o'ch ffrydiau"
 
-#: src/screens/Settings/Settings.tsx:474
-#: src/screens/Settings/Settings.tsx:476
+#: src/screens/Settings/Settings.tsx:490
+#: src/screens/Settings/Settings.tsx:492
 msgid "Unsnooze email reminder"
 msgstr "Dad-gysgu atgoffwr e-bost"
 
@@ -9590,9 +10180,13 @@ msgstr "Wrthi'n lwytho dolen llun bach i fyny..."
 msgid "Uploading video..."
 msgstr "Wrthi'n llwytho fideo i fyny..."
 
+#: src/screens/Saved/SavedCollectionsPage.tsx:49
+msgid "URL de la couverture"
+msgstr ""
+
 #: src/screens/Settings/AppPasswords.tsx:67
-msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
-msgstr "Defnyddiwch gyfrineiriau apiau i fewngofnodi i raglenni Bluesky eraill heb roi mynediad llawn i'ch cyfrif neu'ch cyfrinair."
+msgid "Use app passwords to sign in to other Tellus clients without giving full access to your account or password."
+msgstr "Defnyddiwch gyfrineiriau apiau i fewngofnodi i raglenni Tellus eraill heb roi mynediad llawn i'ch cyfrif neu'ch cyfrinair."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:568
 msgid "Use default provider"
@@ -9622,8 +10216,8 @@ msgid "Use this to sign in to the other app along with your handle."
 msgstr "Defnyddio hwn i fewngofnodi i'r ap arall ynghyd â'ch enw dangos."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:279
-msgid "Use your account email address, or another real email address you control, in case KWS or Bluesky needs to contact you."
-msgstr "Defnyddiwch gyfrif e-bost eich cyfrif, neu gyfrif e-bost arall rydych yn ei reoli, rhag ofn y bydd KWS neu Bluesky angen cysylltu â chi."
+msgid "Use your account email address, or another real email address you control, in case KWS or Tellus needs to contact you."
+msgstr "Defnyddiwch gyfrif e-bost eich cyfrif, neu gyfrif e-bost arall rydych yn ei reoli, rhag ofn y bydd KWS neu Tellus angen cysylltu â chi."
 
 #: src/view/com/modals/InviteCodes.tsx:201
 msgid "Used by:"
@@ -9701,8 +10295,8 @@ msgstr "defnyddwyr yn cael eu dilyn gan <0>@{0}</0>"
 msgid "users following <0>@{0}</0>"
 msgstr "defnyddwyr yn dilyn <0>@{0}</0>"
 
-#: src/screens/Messages/Settings.tsx:97
-#: src/screens/Messages/Settings.tsx:100
+#: src/screens/Messages/Settings.tsx:269
+#: src/screens/Messages/Settings.tsx:272
 msgid "Users I follow"
 msgstr "Defnyddwyr rwy'n eu dilyn"
 
@@ -9726,14 +10320,14 @@ msgstr "Methodd y dilysu, ceisiwch eto."
 msgid "Verification settings"
 msgstr "Gosodiadau dilysu"
 
-#: src/Navigation.tsx:206
+#: src/Navigation.tsx:212
 #: src/screens/Moderation/VerificationSettings.tsx:32
 msgid "Verification Settings"
 msgstr "Gosodiadau Dilysu"
 
 #: src/screens/Moderation/VerificationSettings.tsx:41
-msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
-msgstr "Mae dilysiadau ar Bluesky yn gweithio'n wahanol i'r rhai ar lwyfannau eraill. <0> Dysgu ragor yma.</0>"
+msgid "Verifications on Tellus work differently than on other platforms. <0>Learn more here.</0>"
+msgstr "Mae dilysiadau ar Tellus yn gweithio'n wahanol i'r rhai ar lwyfannau eraill. <0> Dysgu ragor yma.</0>"
 
 #: src/components/verification/VerificationsDialog.tsx:103
 msgid "Verified by:"
@@ -9741,8 +10335,8 @@ msgstr "Wedi'i ddilysu gan:"
 
 #: src/components/verification/VerificationCreatePrompt.tsx:84
 #: src/components/verification/VerificationCreatePrompt.tsx:86
-#: src/view/com/profile/ProfileMenu.tsx:358
-#: src/view/com/profile/ProfileMenu.tsx:361
+#: src/view/com/profile/ProfileMenu.tsx:413
+#: src/view/com/profile/ProfileMenu.tsx:416
 msgid "Verify account"
 msgstr "Dilysu cyfrif"
 
@@ -9814,11 +10408,15 @@ msgstr "Fersiwn {0}"
 msgid "Video"
 msgstr "Fideo"
 
+#: src/screens/Saved/components.tsx:457
+msgid "Vidéo"
+msgstr ""
+
 #: src/view/com/composer/state/video.ts:357
 msgid "Video failed to process"
 msgstr "Methodd y fideo â phrosesu"
 
-#: src/Navigation.tsx:600
+#: src/Navigation.tsx:641
 msgid "Video Feed"
 msgstr "Ffrwd Fideo"
 
@@ -10002,9 +10600,36 @@ msgstr "Mynd i'r wefan"
 msgid "Visit your notification settings"
 msgstr "Ewch i'ch gosodiadau hysbysu"
 
+#: src/screens/MessagesMatrix.web.tsx:1498
+#: src/screens/MessagesMatrix.web.tsx:1508
+msgid "Voir membres"
+msgstr ""
+
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/web-controls/VolumeControl.tsx:81
 msgid "Volume"
 msgstr "Sain"
+
+#: src/screens/Saved/SavedCollectionsPage.tsx:27
+msgid "Vos collections, dans un espace calme et organisé."
+msgstr ""
+
+#: src/screens/MessagesMatrix.web.tsx:442
+msgid "Vous: {0}"
+msgstr ""
+
+#: src/Navigation.tsx:368
+#: src/Navigation.tsx:386
+#: src/screens/Settings/Settings.tsx:212
+#: src/screens/Settings/Settings.tsx:215
+#: src/view/shell/desktop/LeftNav.tsx:806
+#: src/view/shell/Drawer.tsx:635
+msgid "Wallet"
+msgstr ""
+
+#: src/view/com/profile/ProfileMenu.tsx:314
+#: src/view/com/profile/ProfileMenu.tsx:320
+msgid "Wallet / Payer"
+msgstr ""
 
 #: src/components/moderation/LabelPreference.tsx:142
 #: src/lib/moderation/useLabelBehaviorDescription.ts:17
@@ -10050,16 +10675,16 @@ msgid "We estimate {estimatedTime} until your account is ready."
 msgstr "Rydym yn amcangyfrif {estimatedTime} nes bod eich cyfrif yn barod."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:196
-msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Bluesky."
-msgstr "Rydym wedi partneru gyda <0>KWS</0> i ddilysu eich bod yn oedolyn. Pan fyddwch yn clicio ar \"Cychwyn\" isod, bydd KWS yn gwirio os ydych wedi gwirio eich oed o'r blaen gan ddefnyddio'r cyfeiriad e-bost yma ar gyfer gemau/gwasanaethau eraill wedi'u pweru gan dechnoleg KWS. Os nad, bydd KWS yn e-bostio cyfarwyddiadau i chi ar gyfer dilysu eich oedran. Ar ôl i chi orffen, byddwch yn dychwelyd i barhau i ddefnyddio Bluesky."
+msgid "We have partnered with <0>KWS</0> to verify that you’re an adult. When you click \"Begin\" below, KWS will check if you have previously verified your age using this email address for other games/services powered by KWS technology. If not, KWS will email you instructions for verifying your age. When you’re done, you'll be brought back to continue using Tellus."
+msgstr "Rydym wedi partneru gyda <0>KWS</0> i ddilysu eich bod yn oedolyn. Pan fyddwch yn clicio ar \"Cychwyn\" isod, bydd KWS yn gwirio os ydych wedi gwirio eich oed o'r blaen gan ddefnyddio'r cyfeiriad e-bost yma ar gyfer gemau/gwasanaethau eraill wedi'u pweru gan dechnoleg KWS. Os nad, bydd KWS yn e-bostio cyfarwyddiadau i chi ar gyfer dilysu eich oedran. Ar ôl i chi orffen, byddwch yn dychwelyd i barhau i ddefnyddio Tellus."
 
 #: src/components/intents/VerifyEmailIntentDialog.tsx:107
 msgid "We have sent another verification email to <0>{0}</0>."
 msgstr "Rydym wedi anfon e-bost dilysu arall at <0>{0}</0>."
 
 #: src/screens/Onboarding/StepFinished.tsx:533
-msgid "We hope you have a wonderful time. Remember, Bluesky is:"
-msgstr "Gobeithiwn y cewch amser bendigedig. Cofiwch, Bluesky yw:"
+msgid "We hope you have a wonderful time. Remember, Tellus is:"
+msgstr "Gobeithiwn y cewch amser bendigedig. Cofiwch, Tellus yw:"
 
 #: src/view/com/posts/DiscoverFallbackHeader.tsx:29
 msgid "We ran out of posts from your follows. Here's the latest from <0/>."
@@ -10127,8 +10752,8 @@ msgid "We're having network issues, try again"
 msgstr "Rydym yn cael problemau rhwydwaith, ceisiwch eto"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:94
-msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
-msgstr "Rydyn ni'n cyflwyno haen newydd o ddilysu ar Bluesky - marc gwirio hawdd ei weld."
+msgid "We’re introducing a new layer of verification on Tellus — an easy-to-see checkmark."
+msgstr "Rydyn ni'n cyflwyno haen newydd o ddilysu ar Tellus - marc gwirio hawdd ei weld."
 
 #: src/screens/Signup/index.tsx:123
 msgid "We're so excited to have you join us!"
@@ -10340,8 +10965,8 @@ msgid "You"
 msgstr "Chi"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:23
-msgid "You also agree to <0>Bluesky’s Community Guidelines</0>. An <1>updated version of our Community Guidelines</1> will take effect on October 15th."
-msgstr "Rydych hefyd yn cytuno i <0>Ganllawiau Cymunedol Bluesky</0>. Bydd fersiwn <1>wedi'i ddiweddaru o'n Canllawiau Cymunedol</1> yn dod i rym ar Hydref 15."
+msgid "You also agree to <0>Tellus’s Community Guidelines</0>. An <1>updated version of our Community Guidelines</1> will take effect on October 15th."
+msgstr "Rydych hefyd yn cytuno i <0>Ganllawiau Cymunedol Tellus</0>. Bydd fersiwn <1>wedi'i ddiweddaru o'n Canllawiau Cymunedol</1> yn dod i rym ar Hydref 15."
 
 #: src/components/verification/VerifierDialog.tsx:59
 msgid "You are a trusted verifier"
@@ -10352,8 +10977,8 @@ msgid "You are creating an account on"
 msgstr "Rydych chi'n creu cyfrif ar"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:128
-msgid "You are currently unable to access Bluesky's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
-msgstr "Does dim modd i chi gael mynediad at lif Sicrwydd Oed Bluesky. Cysylltwch â'n <0>tîm cymedroli</0> os ydych yn teimlo fod hyn yn wall."
+msgid "You are currently unable to access Tellus's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
+msgstr "Does dim modd i chi gael mynediad at lif Sicrwydd Oed Tellus. Cysylltwch â'n <0>tîm cymedroli</0> os ydych yn teimlo fod hyn yn wall."
 
 #: src/screens/SignupQueued.tsx:157
 msgid "You are in line."
@@ -10413,7 +11038,7 @@ msgstr "Gallwch hefyd gau'ch cyfrif dros dro yn lle hynny, a'i ailagor unrhyw br
 msgid "You can choose whether chat notifications have sound in the chat settings within the app"
 msgstr "Gallwch ddewis os oes gan hysbysiadau sgyrsiau sain yn y gosodiadau sgwrsio o fewn yr ap"
 
-#: src/screens/Messages/Settings.tsx:116
+#: src/screens/Messages/Settings.tsx:288
 msgid "You can continue ongoing conversations regardless of which setting you choose."
 msgstr "Gallwch barhau â sgyrsiau parhaus beth bynnag yw'r gosodiad rydych chi'n ei ddewis."
 
@@ -10466,8 +11091,8 @@ msgid "You don't have any chat requests at the moment."
 msgstr "Does gennych chi ddim ceisiadau sgyrsio ar hyn o bryd."
 
 #: src/view/com/modals/InviteCodes.tsx:67
-msgid "You don't have any invite codes yet! We'll send you some when you've been on Bluesky for a little longer."
-msgstr "Nid oes gennych unrhyw godau gwahoddiad eto! Byddwn yn anfon rhai atoch pan fyddwch wedi bod ar Bluesky am ychydig yn hirach."
+msgid "You don't have any invite codes yet! We'll send you some when you've been on Tellus for a little longer."
+msgstr "Nid oes gennych unrhyw godau gwahoddiad eto! Byddwn yn anfon rhai atoch pan fyddwch wedi bod ar Tellus am ychydig yn hirach."
 
 #: src/view/screens/SavedFeeds.tsx:145
 msgid "You don't have any pinned feeds."
@@ -10589,8 +11214,8 @@ msgid "You must be 13 years of age or older to create an account."
 msgstr "Rhaid i chi fod yn 13 oed neu'n hŷn i greu cyfrif."
 
 #: src/components/dialogs/BirthDateSettings.tsx:131
-msgid "You must be at least 13 years old to use Bluesky. Read our <0>Terms of Service</0> for more information."
-msgstr "Rhaid eich bod yn o leiaf 13 oed i ddefnyddio Bluesky. Darllenwch ein <0>Amodau Gwasanaeth</0> am ragor o wybodaeth."
+msgid "You must be at least 13 years old to use Tellus. Read our <0>Terms of Service</0> for more information."
+msgstr "Rhaid eich bod yn o leiaf 13 oed i ddefnyddio Tellus. Darllenwch ein <0>Amodau Gwasanaeth</0> am ragor o wybodaeth."
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:334
 msgid "You must be following at least seven other people to generate a starter pack."
@@ -10629,7 +11254,7 @@ msgstr "Mae angen i chi ddilysu'ch cyfeiriad e-bost cyn y gallwch alluogi 2FA e-
 msgid "You previously deactivated @{0}."
 msgstr "Rydych wedi cau @{0} yn flaenorol."
 
-#: src/screens/Settings/Settings.tsx:404
+#: src/screens/Settings/Settings.tsx:420
 msgid "You probably want to restart the app now."
 msgstr "Mae'n debyg eich bod chi eisiau ailgychwyn yr ap nawr."
 
@@ -10641,8 +11266,8 @@ msgstr "Eich ymateb yw {0}"
 msgid "You reacted {0} to {1}"
 msgstr "Eich ymateb i {0} yw {1}"
 
-#: src/screens/Settings/Settings.tsx:286
-#: src/view/shell/desktop/LeftNav.tsx:210
+#: src/screens/Settings/Settings.tsx:302
+#: src/view/shell/desktop/LeftNav.tsx:212
 msgid "You will be signed out of all your accounts."
 msgstr "Byddwch yn cael eich allgofnodi o'ch holl gyfrifon."
 
@@ -10769,8 +11394,8 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr "Mae modd llwytho eich storfa cyfrif i lawr, sy'n cynnwys yr holl gofnodion data cyhoeddus, fel ffeil \"CAR\". Nid yw'r ffeil hon yn cynnwys mewnblaniadau cyfryngau, megis delweddau, na'ch data preifat, y mae'n rhaid eu nôl nhw ar wahân."
 
 #: src/screens/Takendown.tsx:214
-msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
-msgstr "Cafwyd bod eich cyfrif yn groes i <0>Delerau Gwasanaeth Cymdeithasol Bluesky</0>. Anfonwyd e-bost atoch yn amlinellu'r cyfnod torri ac atal penodol, os yw'n berthnasol. Gallwch apelio yn erbyn y penderfyniad hwn os credwch iddo gael ei wneud ar gam."
+msgid "Your account was found to be in violation of the <0>Tellus Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
+msgstr "Cafwyd bod eich cyfrif yn groes i <0>Delerau Gwasanaeth Cymdeithasol Tellus</0>. Anfonwyd e-bost atoch yn amlinellu'r cyfnod torri ac atal penodol, os yw'n berthnasol. Gallwch apelio yn erbyn y penderfyniad hwn os credwch iddo gael ei wneud ar gam."
 
 #: src/screens/Takendown.tsx:154
 msgid "Your appeal has been submitted. If your appeal succeeds, you will receive an email."
@@ -10814,8 +11439,8 @@ msgid "Your email appears to be invalid."
 msgstr "Mae'n ymddangos bod eich e-bost yn annilys."
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:65
-msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
-msgstr "Dyw eich e-bost heb ei ddilysu eto. Dilyswch eich e-bost er mwyn mwynhau holl nodweddion Bluesky."
+msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Tellus."
+msgstr "Dyw eich e-bost heb ei ddilysu eto. Dilyswch eich e-bost er mwyn mwynhau holl nodweddion Tellus."
 
 #: src/state/shell/progress-guide.tsx:215
 msgid "Your first like!"
@@ -10833,7 +11458,7 @@ msgstr "Mae'r ffrwd ganlynol yn wag! Dilynwch ragor ddefnyddwyr i weld beth sy'n
 msgid "Your full handle will be <0>@{0}</0>"
 msgstr "Eich enw dangos llawn fydd <0>@{0}</0>"
 
-#: src/Navigation.tsx:516
+#: src/Navigation.tsx:547
 #: src/screens/Search/modules/ExploreInterestsCard.tsx:67
 #: src/screens/Settings/ContentAndMediaSettings.tsx:92
 #: src/screens/Settings/ContentAndMediaSettings.tsx:95
@@ -10859,8 +11484,8 @@ msgid "Your muted words"
 msgstr "Eich geiriau wedi'u tewi"
 
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:71
-msgid "Your password has been changed successfully! Please use your new password when you sign in to Bluesky from now on."
-msgstr "Mae eich cyfrinair wedi'i newid yn llwyddiannus! Defnyddiwch eich cyfrinair newydd pan fyddwch yn mewngofnodi i Bluesky o hyn ymlaen."
+msgid "Your password has been changed successfully! Please use your new password when you sign in to Tellus from now on."
+msgstr "Mae eich cyfrinair wedi'i newid yn llwyddiannus! Defnyddiwch eich cyfrinair newydd pan fyddwch yn mewngofnodi i Tellus o hyn ymlaen."
 
 #: src/screens/Signup/StepInfo/index.tsx:130
 msgid "Your password must be at least 8 characters long."
@@ -10891,8 +11516,8 @@ msgid "Your profile picture surrounded by concentric circles of other users' pro
 msgstr "Eich llun proffil wedi ei amgylchynu gan gylchoedd consentrig o luniau proffil defnyddwyr eraill"
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
-msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-msgstr "Ni fydd eich proffil, postiadau, ffrydiau a rhestrau bellach yn weladwy i ddefnyddwyr Bluesky eraill. Gallwch ail agor eich cyfrif unrhyw bryd trwy fewngofnodi."
+msgid "Your profile, posts, feeds, and lists will no longer be visible to other Tellus users. You can reactivate your account at any time by logging in."
+msgstr "Ni fydd eich proffil, postiadau, ffrydiau a rhestrau bellach yn weladwy i ddefnyddwyr Tellus eraill. Gallwch ail agor eich cyfrif unrhyw bryd trwy fewngofnodi."
 
 #: src/view/com/composer/Composer.tsx:536
 msgid "Your reply was sent"
@@ -10903,8 +11528,8 @@ msgid "Your report will be sent to <0>{0}</0>."
 msgstr "Bydd eich adroddiad yn cael ei anfon at <0>{0}</0>."
 
 #: src/components/dms/ReportDialog.tsx:205
-msgid "Your report will be sent to the Bluesky Moderation Service"
-msgstr "Bydd eich adroddiad yn cael ei anfon at Wasanaeth Cymedroli Bluesky"
+msgid "Your report will be sent to the Tellus Moderation Service"
+msgstr "Bydd eich adroddiad yn cael ei anfon at Wasanaeth Cymedroli Tellus"
 
 #: src/screens/Settings/InterestsSettings.tsx:56
 msgid "Your selected interests help us serve you content you care about."

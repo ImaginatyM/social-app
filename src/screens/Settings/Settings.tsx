@@ -48,7 +48,9 @@ import {CodeBrackets_Stroke2_Corner2_Rounded as CodeBracketsIcon} from '#/compon
 import {DotGrid_Stroke2_Corner0_Rounded as DotsHorizontal} from '#/components/icons/DotGrid'
 import {Earth_Stroke2_Corner2_Rounded as EarthIcon} from '#/components/icons/Globe'
 import {Lock_Stroke2_Corner2_Rounded as LockIcon} from '#/components/icons/Lock'
+import {Message_Stroke2_Corner0_Rounded as MessageIcon} from '#/components/icons/Message'
 import {PaintRoller_Stroke2_Corner2_Rounded as PaintRollerIcon} from '#/components/icons/PaintRoller'
+import {Sparkle_Stroke2_Corner0_Rounded as SparkleIcon} from '#/components/icons/Sparkle'
 import {
   Person_Stroke2_Corner2_Rounded as PersonIcon,
   PersonGroup_Stroke2_Corner2_Rounded as PersonGroupIcon,
@@ -197,6 +199,20 @@ export function SettingsScreen({}: Props) {
             <SettingsList.ItemIcon icon={NotificationIcon} />
             <SettingsList.ItemText>
               <Trans>Notifications</Trans>
+            </SettingsList.ItemText>
+          </SettingsList.LinkItem>
+          <SettingsList.LinkItem
+            to="/messages/settings"
+            label={_(msg`Tellus Chat`)}>
+            <SettingsList.ItemIcon icon={MessageIcon} />
+            <SettingsList.ItemText>
+              <Trans>Tellus Chat</Trans>
+            </SettingsList.ItemText>
+          </SettingsList.LinkItem>
+          <SettingsList.LinkItem to="/settings/wallets" label={_(msg`Wallet`)}>
+            <SettingsList.ItemIcon icon={SparkleIcon} />
+            <SettingsList.ItemText>
+              <Trans>Wallet</Trans>
             </SettingsList.ItemText>
           </SettingsList.LinkItem>
           <SettingsList.LinkItem

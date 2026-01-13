@@ -203,7 +203,7 @@ function SubmitStep({
         <Text style={[a.text_2xl, a.font_bold]}>{copy.title}</Text>
         <Text style={[a.text_md, t.atoms.text_contrast_medium]}>
           <Trans>
-            Your report will be sent to the Bluesky Moderation Service
+            Your report will be sent to the Tellus Moderation Service
           </Trans>
         </Text>
       </View>
