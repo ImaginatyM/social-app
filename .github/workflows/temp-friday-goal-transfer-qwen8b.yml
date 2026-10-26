@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'benchmarks/friday_goal_transfer_qwen8b.py'
+      - 'benchmarks/friday_goal_transfer_qwen8b_v2.py'
       - '.github/workflows/temp-friday-goal-transfer-qwen8b.yml'
   workflow_dispatch:
 
@@ -55,9 +56,9 @@ jobs:
           echo 'Timed out waiting for local MLX server'
           cat /tmp/friday-mlx-server.log
           exit 1
-      - name: Run raw vs goal-directed transfer benchmark
+      - name: Run raw vs goal-directed vs proof-repair transfer benchmark
         run: |
-          python benchmarks/friday_goal_transfer_qwen8b.py \
+          python benchmarks/friday_goal_transfer_qwen8b_v2.py \
             --base-url http://127.0.0.1:8080 \
             --model "$MODEL_ID" \
             --max-rounds 6
