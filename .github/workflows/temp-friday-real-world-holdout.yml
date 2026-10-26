@@ -3,9 +3,8 @@ name: TEMP FRIDAY real-world holdout
 on:
   pull_request:
     branches:
-      - main
+      - benchmark/friday-goal-transfer-qwen8b-trigger2-2026-10-26
     paths:
-      - 'benchmarks/friday_goal_transfer_qwen8b.py'
       - 'benchmarks/friday_real_world_holdout.py'
       - 'benchmarks/friday_real_world_holdout_v2.py'
       - 'benchmarks/friday_real_world_holdout_v3.py'
