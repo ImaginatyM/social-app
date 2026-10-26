@@ -1,0 +1,26 @@
+name: TEMP FRIDAY ARC-AGI-3 world model micro
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'benchmarks/friday_arc3_worldmodel.py'
+      - '.github/workflows/temp-friday-arc3-worldmodel.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  world-model-micro:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install official ARC toolkit
+        run: python -m pip install --disable-pip-version-check 'arc-agi==0.9.9'
+      - name: Run click plus keyboard diagnostic
+        run: python benchmarks/friday_arc3_worldmodel.py --games ft09,ls20 --max-actions 100
