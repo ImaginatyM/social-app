@@ -1,0 +1,72 @@
+name: TEMP FRIDAY local ARC-AGI-3
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'benchmarks/friday_arc3_local.py'
+      - '.github/workflows/temp-friday-arc3-local.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: temp-friday-arc3-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  local-qwen-arc3:
+    runs-on: macos-15
+    timeout-minutes: 90
+    env:
+      FRIDAY_MODEL_BASE_URL: http://127.0.0.1:8080/v1
+      FRIDAY_MODEL_ID: Qwen/Qwen3-8B-MLX-4bit
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Record runner evidence
+        shell: bash
+        run: |
+          uname -m
+          sysctl -n machdep.cpu.brand_string || true
+          sysctl -n hw.memsize || true
+          sw_vers
+      - name: Install official ARC and MLX runtime
+        run: python -m pip install --disable-pip-version-check 'arc-agi==0.9.9' 'mlx-lm==0.32.2'
+      - name: Start local Qwen3-8B
+        shell: bash
+        run: |
+          nohup mlx_lm.server --model "$FRIDAY_MODEL_ID" --port 8080 > /tmp/friday-public-arc3-mlx.log 2>&1 &
+          echo $! > /tmp/friday-public-arc3-mlx.pid
+          for attempt in $(seq 1 180); do
+            if curl --fail --silent http://127.0.0.1:8080/v1/models >/tmp/friday-public-arc3-models.json 2>/dev/null; then
+              cat /tmp/friday-public-arc3-models.json
+              exit 0
+            fi
+            if ! kill -0 "$(cat /tmp/friday-public-arc3-mlx.pid)" 2>/dev/null; then
+              tail -n 200 /tmp/friday-public-arc3-mlx.log
+              exit 1
+            fi
+            sleep 5
+          done
+          tail -n 200 /tmp/friday-public-arc3-mlx.log
+          exit 1
+      - name: Run five-environment public gate
+        run: python benchmarks/friday_arc3_local.py --games ar25,ft09,lp85,ls20,dc22 --max-actions 60 --model-every 2
+      - name: Runtime evidence
+        if: always()
+        shell: bash
+        run: |
+          tail -n 250 /tmp/friday-public-arc3-mlx.log || true
+          ps -o pid,rss,vsz,command -p "$(cat /tmp/friday-public-arc3-mlx.pid 2>/dev/null)" || true
+      - name: Stop local model
+        if: always()
+        shell: bash
+        run: |
+          if test -f /tmp/friday-public-arc3-mlx.pid; then
+            kill "$(cat /tmp/friday-public-arc3-mlx.pid)" 2>/dev/null || true
+          fi
