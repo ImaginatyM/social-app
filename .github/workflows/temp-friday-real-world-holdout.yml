@@ -1,0 +1,65 @@
+name: TEMP FRIDAY real-world holdout
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'benchmarks/friday_goal_transfer_qwen8b.py'
+      - 'benchmarks/friday_real_world_holdout.py'
+      - '.github/workflows/temp-friday-real-world-holdout.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  real-world-holdout:
+    runs-on: macos-15
+    timeout-minutes: 45
+    env:
+      MODEL_ID: Qwen/Qwen3-8B-MLX-4bit
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Show Apple Silicon runner
+        run: |
+          uname -a
+          uname -m
+          sysctl -n machdep.cpu.brand_string || true
+          sysctl -n hw.memsize || true
+      - name: Install local MLX inference
+        run: python -m pip install --disable-pip-version-check 'mlx-lm==0.32.2'
+      - name: Start local Qwen3-8B MLX server
+        run: |
+          nohup python -m mlx_lm.server \
+            --model "$MODEL_ID" \
+            --host 127.0.0.1 \
+            --port 8080 \
+            > /tmp/friday-holdout-mlx.log 2>&1 &
+          echo $! > /tmp/friday-holdout-mlx.pid
+          for i in $(seq 1 120); do
+            if curl -fsS http://127.0.0.1:8080/v1/models >/tmp/friday-holdout-models.json 2>/dev/null; then
+              cat /tmp/friday-holdout-models.json
+              exit 0
+            fi
+            if ! kill -0 "$(cat /tmp/friday-holdout-mlx.pid)" 2>/dev/null; then
+              cat /tmp/friday-holdout-mlx.log
+              exit 1
+            fi
+            sleep 5
+          done
+          cat /tmp/friday-holdout-mlx.log
+          exit 1
+      - name: Run raw vs proof-focus real-world holdout
+        run: |
+          python benchmarks/friday_real_world_holdout.py \
+            --base-url http://127.0.0.1:8080 \
+            --model "$MODEL_ID" \
+            --max-rounds 10
+      - name: Print MLX server tail
+        if: always()
+        run: tail -n 80 /tmp/friday-holdout-mlx.log || true
