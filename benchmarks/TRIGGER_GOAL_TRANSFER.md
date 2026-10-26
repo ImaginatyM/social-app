@@ -1,0 +1,1 @@
+Temporary benchmark trigger marker for the local Qwen3-8B goal-transfer evaluation. No FRIDAY private source is included. Do not merge.
