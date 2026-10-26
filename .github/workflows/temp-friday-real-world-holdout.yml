@@ -8,6 +8,7 @@ on:
       - 'benchmarks/friday_goal_transfer_qwen8b.py'
       - 'benchmarks/friday_real_world_holdout.py'
       - 'benchmarks/friday_real_world_holdout_v2.py'
+      - 'benchmarks/friday_real_world_holdout_v3.py'
       - '.github/workflows/temp-friday-real-world-holdout.yml'
   workflow_dispatch:
 
@@ -57,7 +58,7 @@ jobs:
           exit 1
       - name: Run raw vs proof-focus real-world holdout
         run: |
-          python benchmarks/friday_real_world_holdout_v2.py \
+          python benchmarks/friday_real_world_holdout_v3.py \
             --base-url http://127.0.0.1:8080 \
             --model "$MODEL_ID" \
             --max-rounds 10
