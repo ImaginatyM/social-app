@@ -1,0 +1,66 @@
+name: TEMP FRIDAY local goal-transfer Qwen8B
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'benchmarks/friday_goal_transfer_qwen8b.py'
+      - '.github/workflows/temp-friday-goal-transfer-qwen8b.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  local-goal-transfer:
+    runs-on: macos-15
+    timeout-minutes: 45
+    env:
+      MODEL_ID: Qwen/Qwen3-8B-MLX-4bit
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Show Apple Silicon runner
+        run: |
+          uname -a
+          uname -m
+          sysctl -n machdep.cpu.brand_string || true
+          sysctl -n hw.memsize || true
+      - name: Install local MLX inference
+        run: python -m pip install --disable-pip-version-check 'mlx-lm==0.32.2'
+      - name: Start local Qwen3-8B MLX server
+        run: |
+          nohup python -m mlx_lm.server \
+            --model "$MODEL_ID" \
+            --host 127.0.0.1 \
+            --port 8080 \
+            > /tmp/friday-mlx-server.log 2>&1 &
+          echo $! > /tmp/friday-mlx-server.pid
+          for i in $(seq 1 120); do
+            if curl -fsS http://127.0.0.1:8080/v1/models >/tmp/friday-models.json 2>/dev/null; then
+              cat /tmp/friday-models.json
+              exit 0
+            fi
+            if ! kill -0 "$(cat /tmp/friday-mlx-server.pid)" 2>/dev/null; then
+              echo 'MLX server exited early'
+              cat /tmp/friday-mlx-server.log
+              exit 1
+            fi
+            sleep 5
+          done
+          echo 'Timed out waiting for local MLX server'
+          cat /tmp/friday-mlx-server.log
+          exit 1
+      - name: Run raw vs goal-directed transfer benchmark
+        run: |
+          python benchmarks/friday_goal_transfer_qwen8b.py \
+            --base-url http://127.0.0.1:8080 \
+            --model "$MODEL_ID" \
+            --max-rounds 6
+      - name: Print MLX server tail
+        if: always()
+        run: tail -n 80 /tmp/friday-mlx-server.log || true
