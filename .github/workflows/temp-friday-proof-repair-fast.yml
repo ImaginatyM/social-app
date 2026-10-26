@@ -1,0 +1,47 @@
+name: TEMP FRIDAY proof-repair fast
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'benchmarks/friday_goal_transfer_qwen8b.py'
+      - 'benchmarks/friday_goal_transfer_qwen8b_v2.py'
+      - 'benchmarks/friday_proof_repair_fast.py'
+      - '.github/workflows/temp-friday-proof-repair-fast.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  proof-repair-fast:
+    runs-on: macos-15
+    timeout-minutes: 30
+    env:
+      MODEL_ID: Qwen/Qwen3-8B-MLX-4bit
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install MLX
+        run: python -m pip install --disable-pip-version-check 'mlx-lm==0.32.2'
+      - name: Start Qwen3-8B
+        run: |
+          nohup python -m mlx_lm.server --model "$MODEL_ID" --host 127.0.0.1 --port 8080 > /tmp/proof-fast-mlx.log 2>&1 &
+          echo $! >/tmp/proof-fast-mlx.pid
+          for i in $(seq 1 120); do
+            if curl -fsS http://127.0.0.1:8080/v1/models >/dev/null 2>&1; then exit 0; fi
+            if ! kill -0 "$(cat /tmp/proof-fast-mlx.pid)" 2>/dev/null; then cat /tmp/proof-fast-mlx.log; exit 1; fi
+            sleep 5
+          done
+          cat /tmp/proof-fast-mlx.log
+          exit 1
+      - name: Run proof-repair-only gate
+        run: |
+          python benchmarks/friday_proof_repair_fast.py --base-url http://127.0.0.1:8080 --model "$MODEL_ID" --max-rounds 6
+      - name: Server tail
+        if: always()
+        run: tail -n 50 /tmp/proof-fast-mlx.log || true
