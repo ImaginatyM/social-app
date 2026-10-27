@@ -5,18 +5,15 @@ on:
     branches:
       - benchmark/friday-goal-transfer-qwen8b-trigger2-2026-10-26
     paths:
-      - 'benchmarks/friday_real_world_holdout.py'
-      - 'benchmarks/friday_real_world_holdout_v2.py'
-      - 'benchmarks/friday_real_world_holdout_v3.py'
-      - 'benchmarks/friday_real_world_holdout_v4.py'
       - '.github/workflows/temp-friday-real-world-holdout.yml'
+      - 'benchmarks/friday_proof_microplan_v1.py'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  real-world-holdout:
+  proof-microplan:
     runs-on: macos-15
     timeout-minutes: 45
     env:
@@ -24,6 +21,8 @@ jobs:
       PYTHONUNBUFFERED: '1'
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: benchmark/friday-proof-microplan-v1-trigger-2026-10-27
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -41,27 +40,27 @@ jobs:
             --model "$MODEL_ID" \
             --host 127.0.0.1 \
             --port 8080 \
-            > /tmp/friday-holdout-mlx.log 2>&1 &
-          echo $! > /tmp/friday-holdout-mlx.pid
+            > /tmp/friday-microplan-mlx.log 2>&1 &
+          echo $! > /tmp/friday-microplan-mlx.pid
           for i in $(seq 1 120); do
-            if curl -fsS http://127.0.0.1:8080/v1/models >/tmp/friday-holdout-models.json 2>/dev/null; then
-              cat /tmp/friday-holdout-models.json
+            if curl -fsS http://127.0.0.1:8080/v1/models >/tmp/friday-microplan-models.json 2>/dev/null; then
+              cat /tmp/friday-microplan-models.json
               exit 0
             fi
-            if ! kill -0 "$(cat /tmp/friday-holdout-mlx.pid)" 2>/dev/null; then
-              cat /tmp/friday-holdout-mlx.log
+            if ! kill -0 "$(cat /tmp/friday-microplan-mlx.pid)" 2>/dev/null; then
+              cat /tmp/friday-microplan-mlx.log
               exit 1
             fi
             sleep 5
           done
-          cat /tmp/friday-holdout-mlx.log
+          cat /tmp/friday-microplan-mlx.log
           exit 1
-      - name: Run RAW vs proof-scheduler real-world holdout v4
+      - name: Run scheduler vs microplan benchmark
         run: |
-          python benchmarks/friday_real_world_holdout_v4.py \
+          python benchmarks/friday_proof_microplan_v1.py \
             --base-url http://127.0.0.1:8080 \
             --model "$MODEL_ID" \
-            --max-rounds 12
+            --max-rounds 10
       - name: Print MLX server tail
         if: always()
-        run: tail -n 80 /tmp/friday-holdout-mlx.log || true
+        run: tail -n 80 /tmp/friday-microplan-mlx.log || true
